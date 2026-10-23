@@ -1,0 +1,2952 @@
+{
+  "version": "2026-10-22-unified-map-2",
+  "onePersistentWorld": true,
+  "zoneNavigationOnly": true,
+  "sourceFilesUnchanged": true,
+  "inputsSha256": {
+    "东山镇_数据\\working\\dongshan_sources_utm51n.gpkg": "09e81f7e043fb75a7b75c38acac8172e14761f85d6259169b4320ba7b83929b1",
+    "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_utm51n_30m.tif": "b4e020f30c3520bfde93d56928a93f6be1d7ee9cd6e0d0131ac4dd4e84a416e0",
+    "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_utm51n_10m.tif": "45eebe630d3c2cfa30f3c8d54c83b0fe54fd23d37ca335ca671d024471ac31b6",
+    "东山镇_重制版\\data\\design.json": "4c639976e87ed0e04a8fc14b05582c793ae9bd1b5ecabedc0e4fbe7c7e2f6210",
+    "东山镇_重制版\\js\\design.js": "982717563bd20370c14d0a0a7bb1c6b735f2dcadc605276427c2109096fd64f6",
+    "东山镇_重制版\\data\\landscape-revision-audit.json": "a5a57a0d8ea3011757877a142dbf71f6744d1d691af8c6690bad1d786bced24a",
+    "东山镇_重制版\\data\\districts\\dongshan-school.json": "7b42ab015b30ab8267b80a65301dd7f5e71245fece6dde628ed11504d22ec948",
+    "东山镇_重制版\\data\\districts\\chunzailou-garden.json": "525308e2a18be985c01f97a9e187894950ca089a4015c9971aec428f361d2f9b"
+  },
+  "bounds": {
+    "minX": -300,
+    "maxX": 1450,
+    "minZ": -1120,
+    "maxZ": 460
+  },
+  "zones": [
+    {
+      "id": "luxiang",
+      "name": "陆巷街村",
+      "center": [
+        60,
+        0
+      ],
+      "bounds": {
+        "minX": -210,
+        "maxX": 390,
+        "minZ": -270,
+        "maxZ": 270
+      },
+      "sourceOriginWgs84": [
+        120.3564852,
+        31.0762724
+      ],
+      "cameraSuggestions": {
+        "houseId": "LX-014",
+        "houseTarget": [
+          77.5,
+          35.0
+        ],
+        "streetTarget": [
+          77.5,
+          35.0
+        ],
+        "blockTarget": [
+          90,
+          20
+        ],
+        "waterfrontTarget": [
+          -65,
+          40
+        ],
+        "overviewTarget": [
+          85,
+          0
+        ]
+      },
+      "sourceRelationship": "源路水和足迹锚点的街村综合，原C坐标全部保持"
+    },
+    {
+      "id": "dongshan-school",
+      "name": "东山中学",
+      "center": [
+        1050.0,
+        -650.0
+      ],
+      "bounds": {
+        "minX": 865.0,
+        "maxX": 1230.0,
+        "minZ": -785.0,
+        "maxZ": -505.0
+      },
+      "sourceOriginWgs84": [
+        120.39673431197694,
+        31.08703027248432
+      ],
+      "sourceOriginLocal": [
+        3869.26,
+        -1101.99
+      ],
+      "cameraSuggestions": {
+        "overviewTarget": [
+          1040.0,
+          14.6,
+          -650.0
+        ],
+        "distance": 275,
+        "yaw": 0.72,
+        "pitch": 0.8,
+        "blockTarget": [
+          1076.0,
+          -650.0
+        ],
+        "streetTarget": [
+          1094.0,
+          -654.0
+        ],
+        "houseTarget": [
+          1071.1,
+          -663.6
+        ],
+        "houseId": "DSZX-1",
+        "waterfrontTarget": [
+          982.0,
+          -640.0
+        ],
+        "treeTarget": [
+          987.0,
+          -558.0
+        ]
+      },
+      "displayGroundLevel": 14.6,
+      "sourceRelationship": "真实G方向与源地块锚点进入同一分段单调C域；局部完整构件仅刚性平移，不缩放",
+      "provenance": {
+        "sourceFiles": [
+          "东山镇_数据/working/dongshan_sources_utm51n.gpkg"
+        ],
+        "roadWaterSnapshot": "OSM 2026-10-19",
+        "buildingRelease": "Overture 2026-09-23.1; underlying East Asian Buildings sources retained",
+        "licenses": [
+          "OSM © OpenStreetMap contributors, ODbL 1.0",
+          "Overture: see 东山镇_数据/overture/ATTRIBUTION.txt"
+        ],
+        "coordinatePolicy": "一个持续加载的连续世界。陆巷原C坐标保留；两设施按真实G方位进入同一C域，局部完整形制仅刚性平移。各区只做相机导航。",
+        "referenceScope": "OSM校区边界与Overture主楼足迹保留；校园通路、跑道轮廓、立面和楼层为设施制图综合。保留西运动/东教学关系，楼栋具体功能未逐栋确认。",
+        "officialReferences": [
+          {
+            "title": "苏州市吴中区东山中学介绍（2021）",
+            "url": "https://dszx.wxedu.net/xxgk/xxjs1/content_250433",
+            "supports": "校名、独立高中、学校占地39817.31平方米；与2026改造招标本部面积一致"
+          },
+          {
+            "title": "东山中学学校介绍（历史资料）",
+            "url": "https://dszx.wxedu.net/xxgk/xxjs",
+            "supports": "三幢教学楼、综合楼、实验楼、图书馆、田径场等设施类别；历史统计不可当2026逐栋现状"
+          },
+          {
+            "title": "教学楼官方图集",
+            "url": "https://www.dszx.net/tpzx/xyfm/content_1655",
+            "supports": "教学楼外观研究，2014照片"
+          },
+          {
+            "title": "校园风景照官方图集",
+            "url": "https://www.dszx.net/tpzx/xyfm/content_1654",
+            "supports": "实验楼前、田径场与校园植被研究，2016照片"
+          },
+          {
+            "title": "2026年本部改造监理招标",
+            "url": "https://ggzy.suzhou.gov.cn/jyxx/003001/003001001/20260601/d63e67fd-aa44-4d19-8141-44b8d9ec1a0a.html",
+            "supports": "本部39817.31平方米；2026仍有改造，资料时相不等于施工后现状"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chunzailou-garden",
+      "name": "春在楼 · 宅园",
+      "center": [
+        1170.0,
+        -262.54
+      ],
+      "bounds": {
+        "minX": 1045.0,
+        "maxX": 1295.0,
+        "minZ": -347.54,
+        "maxZ": -152.54
+      },
+      "sourceOriginWgs84": [
+        120.39979815070976,
+        31.081071932409532
+      ],
+      "sourceOriginLocal": [
+        4146.13,
+        -434.47
+      ],
+      "cameraSuggestions": {
+        "overviewTarget": [
+          1149.0,
+          7.2,
+          -269.54
+        ],
+        "distance": 150,
+        "yaw": 0.81,
+        "pitch": 0.78,
+        "blockTarget": [
+          1124.0,
+          -271.54
+        ],
+        "streetTarget": [
+          1182.0,
+          -265.54
+        ],
+        "houseTarget": [
+          1142.0,
+          -265.54
+        ],
+        "houseId": "CZL-hall-2",
+        "waterfrontTarget": [
+          1114.0,
+          -299.54
+        ],
+        "treeTarget": [
+          1151.0,
+          -315.54
+        ],
+        "gardenTarget": [
+          1118.0,
+          -299.54
+        ],
+        "gardenDistance": 45
+      },
+      "displayGroundLevel": 7.2,
+      "sourceRelationship": "真实G方向与源地块锚点进入同一分段单调C域；局部完整构件仅刚性平移，不缩放",
+      "provenance": {
+        "sourceFiles": [
+          "东山镇_数据/working/dongshan_sources_utm51n.gpkg"
+        ],
+        "roadWaterSnapshot": "OSM 2026-10-19",
+        "buildingRelease": "Overture 2026-09-23.1; underlying East Asian Buildings sources retained",
+        "licenses": [
+          "OSM © OpenStreetMap contributors, ODbL 1.0",
+          "Overture: see 东山镇_数据/overture/ATTRIBUTION.txt"
+        ],
+        "coordinatePolicy": "一个持续加载的连续世界。陆巷原C坐标保留；两设施按真实G方位进入同一C域，局部完整形制仅刚性平移。各区只做相机导航。",
+        "referenceScope": "OSM雕花楼园区边界只作为场地与真实位置依据；主宅按苏州园林局“坐西朝东、前中后楼、厢楼相连跑马楼、北园池石廊桥”文字作形制综合，不宣称准确总平面。池形与建筑细部无实测尺寸链。",
+        "internalPlanStatus": "轴向、前后序列、宅北置园来自官方文字；具体楼间距、池轮廓、园路与树位为设计。未拿公园边界当主楼轮廓。",
+        "officialReferences": [
+          {
+            "title": "苏州市园林和绿化管理局：园林历史·近代传统园林",
+            "url": "https://ylj.suzhou.gov.cn/szsylj/ylls/wztt.shtml",
+            "supports": "春在楼坐西朝东、前中后楼和厢楼跑马楼；北园近300平方米、假山水池回廊曲桥"
+          },
+          {
+            "title": "苏州地方志：吴中名镇之东山镇",
+            "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+            "supports": "春在楼又称雕花楼、东山苏式砖雕及本地建筑实景参考"
+          },
+          {
+            "title": "苏州市政府：吴文化地名保护名录",
+            "url": "https://www.suzhou.gov.cn/szsrmzf/zfwj/201901/KQ6BCKNZPM1454M1QH250VZXQZUEJC9W.shtml",
+            "supports": "春在楼作为古典园林、公园名的独立保护地名"
+          }
+        ]
+      }
+    }
+  ],
+  "houseCount": 131,
+  "houseTypes": {
+    "courtyard": 4,
+    "gardenCorridor": 3,
+    "gardenGate": 1,
+    "gardenHall": 3,
+    "gardenPavilion": 1,
+    "house": 103,
+    "modern": 6,
+    "schoolGate": 1,
+    "schoolHall": 2,
+    "schoolTeaching": 5,
+    "villageHouse": 2
+  },
+  "originalLuxiangMovedAssets": [],
+  "facilityDimensionsChanged": [],
+  "facilityMetrics": [
+    {
+      "id": "dongshan-school",
+      "center": [
+        1050.0,
+        -650.0
+      ],
+      "sourceCenter": [
+        3869.26,
+        -1101.99
+      ],
+      "groundLevel": 14.6,
+      "buildingCount": 8,
+      "componentScale": 1,
+      "rotationAdded": 0,
+      "dimensionsPreserved": true,
+      "groundMetrics": {
+        "sampleCount": 42,
+        "filteredSourceMedian": 14.6,
+        "filteredSourceRange": [
+          12.06,
+          21.46
+        ],
+        "method": "Median over source facility parcel on the same 3x3 native-pixel median + sigma .65 filtered DSM; subtract common local-lake baseline .5m; quantize .2m"
+      }
+    },
+    {
+      "id": "chunzailou-garden",
+      "center": [
+        1170.0,
+        -262.54
+      ],
+      "sourceCenter": [
+        4146.13,
+        -434.47
+      ],
+      "groundLevel": 7.2,
+      "buildingCount": 10,
+      "componentScale": 1,
+      "rotationAdded": 0,
+      "dimensionsPreserved": true,
+      "groundMetrics": {
+        "sampleCount": 12,
+        "filteredSourceMedian": 7.27,
+        "filteredSourceRange": [
+          6.13,
+          8.68
+        ],
+        "method": "Median over source facility parcel on the same 3x3 native-pixel median + sigma .65 filtered DSM; subtract common local-lake baseline .5m; quantize .2m"
+      }
+    }
+  ],
+  "absoluteElevationTransfers": [
+    {
+      "zoneId": "chunzailou-garden",
+      "id": "CZL-pool-ground",
+      "field": "level",
+      "sourceLocalValue": 0,
+      "sourceFacilityGround": 1.2,
+      "globalGround": 7.2,
+      "globalValue": 6.0
+    },
+    {
+      "zoneId": "chunzailou-garden",
+      "id": "CZL-crooked-bridge",
+      "field": "height",
+      "role": "absolute bridge deck centre",
+      "sourceLocalValue": 1.6,
+      "sourceFacilityGround": 1.2,
+      "globalGround": 7.2,
+      "globalValue": 7.6
+    },
+    {
+      "zoneId": "chunzailou-garden",
+      "id": "CZL-north-pool",
+      "field": "level",
+      "sourceLocalValue": 0,
+      "sourceFacilityGround": 1.2,
+      "globalGround": 7.2,
+      "globalValue": 6.0
+    }
+  ],
+  "relativeWallRockHeightsChanged": [],
+  "facilityElevationAudit": "pond/pond-ground level and gardenBridge absolute deck height translated by globalGround-1.2m; walls/rocks/architecture heights remain relative sizes; zone 3D camera targets translated by the same vertical offset; old standalone facility terrain grids are not included",
+  "schoolGardenBoundsOverlap": false,
+  "duplicateHouseIds": 0,
+  "routeMetrics": [
+    {
+      "id": "luxiang-to-school",
+      "sourceLengthMetres": 6468.87,
+      "sourceIds": [
+        "way/1104698623",
+        "way/1104698624",
+        "way/1104698626",
+        "way/1104698627",
+        "way/1104698629",
+        "way/1097987758",
+        "way/1003014761",
+        "way/1003014760",
+        "way/1003014759",
+        "way/1098860564",
+        "way/1098860566",
+        "way/1003014758",
+        "way/1003014763",
+        "way/1003014762",
+        "way/1098242499",
+        "way/1101928345",
+        "way/1003014807",
+        "way/1003014808",
+        "way/343590974",
+        "way/343590975"
+      ],
+      "sourceContinuity": "连续相邻OSM几何节点；在同一个源道路图中Dijkstra选线",
+      "access": "walking",
+      "terrainRelationship": "源山径与村路连续；不宣称全程可通机动车"
+    },
+    {
+      "id": "school-to-garden",
+      "sourceLengthMetres": 784.11,
+      "sourceIds": [
+        "way/343590975",
+        "way/1104691356"
+      ],
+      "sourceContinuity": "连续相邻OSM几何节点；在同一个源道路图中Dijkstra选线",
+      "access": "walking",
+      "terrainRelationship": "源山径与村路连续；不宣称全程可通机动车"
+    }
+  ],
+  "newSourceRoadSegments": 20,
+  "newSourceRoadBuildingCrossings": [],
+  "renderedRoadNetworkConnected": true,
+  "renderedRoadContinuityCheck": {
+    "method": "Union of rendered width buffers + .2m edge tolerance; one component contains all three frontage anchors",
+    "anchors": [
+      [
+        -7.62,
+        12.63
+      ],
+      [
+        1175.3,
+        -580.83
+      ],
+      [
+        1257.94,
+        -247.16
+      ]
+    ]
+  },
+  "roadContextDisplacements": {
+    "count": 156,
+    "maximumMetres": 138.77,
+    "points": [
+      {
+        "source": [
+          3811.68,
+          -394.54
+        ],
+        "base": [
+          1038.01,
+          -243.38
+        ],
+        "design": [
+          1036.66,
+          -243.24
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 1.36
+      },
+      {
+        "source": [
+          3814.11,
+          -396.5
+        ],
+        "base": [
+          1038.52,
+          -244.32
+        ],
+        "design": [
+          1036.51,
+          -244.12
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 2.02
+      },
+      {
+        "source": [
+          3830.51,
+          -409.69
+        ],
+        "base": [
+          1041.93,
+          -250.65
+        ],
+        "design": [
+          1032.79,
+          -250.02
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 9.16
+      },
+      {
+        "source": [
+          3843.69,
+          -416.35
+        ],
+        "base": [
+          1044.68,
+          -253.85
+        ],
+        "design": [
+          1027.36,
+          -252.93
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 17.34
+      },
+      {
+        "source": [
+          3857.97,
+          -428.28
+        ],
+        "base": [
+          1047.65,
+          -259.57
+        ],
+        "design": [
+          1020.17,
+          -259.04
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 27.49
+      },
+      {
+        "source": [
+          3872.68,
+          -447.14
+        ],
+        "base": [
+          1051.48,
+          -268.63
+        ],
+        "design": [
+          1012.98,
+          -270.27
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 38.54
+      },
+      {
+        "source": [
+          3884.78,
+          -461.63
+        ],
+        "base": [
+          1056.73,
+          -276.78
+        ],
+        "design": [
+          1008.79,
+          -280.96
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 48.12
+      },
+      {
+        "source": [
+          3889.26,
+          -485.49
+        ],
+        "base": [
+          1058.67,
+          -290.68
+        ],
+        "design": [
+          1007.32,
+          -298.75
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 51.98
+      },
+      {
+        "source": [
+          3889.98,
+          -504.41
+        ],
+        "base": [
+          1058.98,
+          -301.71
+        ],
+        "design": [
+          1007.09,
+          -312.71
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 53.05
+      },
+      {
+        "source": [
+          3896.23,
+          -519.86
+        ],
+        "base": [
+          1061.69,
+          -310.72
+        ],
+        "design": [
+          1005.19,
+          -325.57
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 58.41
+      },
+      {
+        "source": [
+          3911.44,
+          -535.94
+        ],
+        "base": [
+          1068.28,
+          -320.09
+        ],
+        "design": [
+          1002.63,
+          -341.78
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 69.14
+      },
+      {
+        "source": [
+          3926.22,
+          -553.78
+        ],
+        "base": [
+          1074.69,
+          -330.49
+        ],
+        "design": [
+          1004.7,
+          -359.34
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 75.71
+      },
+      {
+        "source": [
+          3935.32,
+          -566.16
+        ],
+        "base": [
+          1078.63,
+          -337.7
+        ],
+        "design": [
+          1008.93,
+          -370.69
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 77.11
+      },
+      {
+        "source": [
+          3937.36,
+          -572.81
+        ],
+        "base": [
+          1079.52,
+          -341.58
+        ],
+        "design": [
+          1011.78,
+          -375.54
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 75.77
+      },
+      {
+        "source": [
+          3937.34,
+          -579.81
+        ],
+        "base": [
+          1079.51,
+          -345.66
+        ],
+        "design": [
+          1014.93,
+          -379.63
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 72.97
+      },
+      {
+        "source": [
+          3939.34,
+          -585.2
+        ],
+        "base": [
+          1080.37,
+          -348.8
+        ],
+        "design": [
+          1017.74,
+          -383.26
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 71.48
+      },
+      {
+        "source": [
+          3934.34,
+          -606.73
+        ],
+        "base": [
+          1078.21,
+          -361.35
+        ],
+        "design": [
+          1028.86,
+          -391.56
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 57.86
+      },
+      {
+        "source": [
+          3924.45,
+          -641.28
+        ],
+        "base": [
+          1073.92,
+          -381.48
+        ],
+        "design": [
+          1047.88,
+          -399.7
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 31.79
+      },
+      {
+        "source": [
+          3925.38,
+          -649.04
+        ],
+        "base": [
+          1074.32,
+          -386.01
+        ],
+        "design": [
+          1052.24,
+          -402.1
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 27.32
+      },
+      {
+        "source": [
+          3928.97,
+          -654.44
+        ],
+        "base": [
+          1075.88,
+          -389.15
+        ],
+        "design": [
+          1055.66,
+          -404.49
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 25.38
+      },
+      {
+        "source": [
+          3964.95,
+          -665.76
+        ],
+        "base": [
+          1091.47,
+          -395.75
+        ],
+        "design": [
+          1070.87,
+          -415.43
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 28.49
+      },
+      {
+        "source": [
+          3968.44,
+          -671.04
+        ],
+        "base": [
+          1092.99,
+          -398.83
+        ],
+        "design": [
+          1074.86,
+          -416.88
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 25.58
+      },
+      {
+        "source": [
+          3969.94,
+          -701.4
+        ],
+        "base": [
+          1093.64,
+          -416.52
+        ],
+        "design": [
+          1088.25,
+          -422.62
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 8.14
+      },
+      {
+        "source": [
+          3993.89,
+          -717.3
+        ],
+        "base": [
+          1104.02,
+          -425.79
+        ],
+        "design": [
+          1101.95,
+          -428.66
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 3.53
+      },
+      {
+        "source": [
+          4032.7,
+          -746.98
+        ],
+        "base": [
+          1120.84,
+          -443.09
+        ],
+        "design": [
+          1121.4,
+          -442.2
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 1.05
+      },
+      {
+        "source": [
+          4168.27,
+          -866.2
+        ],
+        "base": [
+          1173.34,
+          -512.58
+        ],
+        "design": [
+          1215.7,
+          -488.86
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 48.55
+      },
+      {
+        "source": [
+          4067.27,
+          -971.06
+        ],
+        "base": [
+          1135.82,
+          -573.69
+        ],
+        "design": [
+          1245.88,
+          -520.11
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 122.41
+      },
+      {
+        "source": [
+          3994.56,
+          -1032.82
+        ],
+        "base": [
+          1104.31,
+          -609.69
+        ],
+        "design": [
+          1175.3,
+          -580.83
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 76.64
+      },
+      {
+        "source": [
+          3994.56,
+          -1032.82
+        ],
+        "base": [
+          1104.31,
+          -609.69
+        ],
+        "design": [
+          1175.3,
+          -580.83
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 76.64
+      },
+      {
+        "source": [
+          4067.27,
+          -971.06
+        ],
+        "base": [
+          1135.82,
+          -573.69
+        ],
+        "design": [
+          1245.88,
+          -520.11
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 122.41
+      },
+      {
+        "source": [
+          4168.27,
+          -866.2
+        ],
+        "base": [
+          1173.34,
+          -512.58
+        ],
+        "design": [
+          1215.7,
+          -488.86
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 48.55
+      },
+      {
+        "source": [
+          4339.26,
+          -709.02
+        ],
+        "base": [
+          1199.17,
+          -420.97
+        ],
+        "design": [
+          1202.48,
+          -423.31
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 4.05
+      },
+      {
+        "source": [
+          4309.13,
+          -656.04
+        ],
+        "base": [
+          1194.62,
+          -390.09
+        ],
+        "design": [
+          1234.67,
+          -417.31
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 48.43
+      },
+      {
+        "source": [
+          4281.69,
+          -602.87
+        ],
+        "base": [
+          1190.47,
+          -359.1
+        ],
+        "design": [
+          1267.98,
+          -407.49
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 91.38
+      },
+      {
+        "source": [
+          4247.05,
+          -477.3
+        ],
+        "base": [
+          1185.24,
+          -285.91
+        ],
+        "design": [
+          1270.92,
+          -305.37
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 87.86
+      },
+      {
+        "source": [
+          4234.07,
+          -419.09
+        ],
+        "base": [
+          1183.28,
+          -255.16
+        ],
+        "design": [
+          1257.94,
+          -247.16
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 75.08
+      },
+      {
+        "source": [
+          3811.68,
+          -394.54
+        ],
+        "base": [
+          1038.01,
+          -243.38
+        ],
+        "design": [
+          1036.66,
+          -243.24
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 1.36
+      },
+      {
+        "source": [
+          3814.11,
+          -396.5
+        ],
+        "base": [
+          1038.52,
+          -244.32
+        ],
+        "design": [
+          1036.51,
+          -244.12
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 2.02
+      },
+      {
+        "source": [
+          3822.31,
+          -403.1
+        ],
+        "base": [
+          1040.22,
+          -247.49
+        ],
+        "design": [
+          1035.17,
+          -247.07
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 5.07
+      },
+      {
+        "source": [
+          3830.51,
+          -409.69
+        ],
+        "base": [
+          1041.93,
+          -250.65
+        ],
+        "design": [
+          1032.79,
+          -250.02
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 9.16
+      },
+      {
+        "source": [
+          3830.51,
+          -409.69
+        ],
+        "base": [
+          1041.93,
+          -250.65
+        ],
+        "design": [
+          1032.79,
+          -250.02
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 9.16
+      },
+      {
+        "source": [
+          3843.69,
+          -416.35
+        ],
+        "base": [
+          1044.68,
+          -253.85
+        ],
+        "design": [
+          1027.36,
+          -252.93
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 17.34
+      },
+      {
+        "source": [
+          3850.83,
+          -422.31
+        ],
+        "base": [
+          1046.16,
+          -256.71
+        ],
+        "design": [
+          1023.86,
+          -255.89
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 22.31
+      },
+      {
+        "source": [
+          3857.97,
+          -428.28
+        ],
+        "base": [
+          1047.65,
+          -259.57
+        ],
+        "design": [
+          1020.17,
+          -259.04
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 27.49
+      },
+      {
+        "source": [
+          3865.32,
+          -437.71
+        ],
+        "base": [
+          1049.18,
+          -264.1
+        ],
+        "design": [
+          1016.27,
+          -264.45
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 32.92
+      },
+      {
+        "source": [
+          3872.68,
+          -447.14
+        ],
+        "base": [
+          1051.48,
+          -268.63
+        ],
+        "design": [
+          1012.98,
+          -270.27
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 38.54
+      },
+      {
+        "source": [
+          3878.73,
+          -454.38
+        ],
+        "base": [
+          1054.11,
+          -272.56
+        ],
+        "design": [
+          1010.86,
+          -275.39
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 43.34
+      },
+      {
+        "source": [
+          3884.78,
+          -461.63
+        ],
+        "base": [
+          1056.73,
+          -276.78
+        ],
+        "design": [
+          1008.79,
+          -280.96
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 48.12
+      },
+      {
+        "source": [
+          3887.02,
+          -473.56
+        ],
+        "base": [
+          1057.7,
+          -283.73
+        ],
+        "design": [
+          1008.04,
+          -289.79
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 50.02
+      },
+      {
+        "source": [
+          3889.26,
+          -485.49
+        ],
+        "base": [
+          1058.67,
+          -290.68
+        ],
+        "design": [
+          1007.32,
+          -298.75
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 51.98
+      },
+      {
+        "source": [
+          3889.62,
+          -494.95
+        ],
+        "base": [
+          1058.83,
+          -296.2
+        ],
+        "design": [
+          1007.21,
+          -305.73
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 52.5
+      },
+      {
+        "source": [
+          3889.98,
+          -504.41
+        ],
+        "base": [
+          1058.98,
+          -301.71
+        ],
+        "design": [
+          1007.09,
+          -312.71
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 53.05
+      },
+      {
+        "source": [
+          3896.23,
+          -519.86
+        ],
+        "base": [
+          1061.69,
+          -310.72
+        ],
+        "design": [
+          1005.19,
+          -325.57
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 58.41
+      },
+      {
+        "source": [
+          3903.84,
+          -527.9
+        ],
+        "base": [
+          1064.99,
+          -315.4
+        ],
+        "design": [
+          1003.45,
+          -333.59
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 64.17
+      },
+      {
+        "source": [
+          3911.44,
+          -535.94
+        ],
+        "base": [
+          1068.28,
+          -320.09
+        ],
+        "design": [
+          1002.63,
+          -341.78
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 69.14
+      },
+      {
+        "source": [
+          3918.83,
+          -544.86
+        ],
+        "base": [
+          1071.49,
+          -325.29
+        ],
+        "design": [
+          1003.06,
+          -350.6
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 72.96
+      },
+      {
+        "source": [
+          3926.22,
+          -553.78
+        ],
+        "base": [
+          1074.69,
+          -330.49
+        ],
+        "design": [
+          1004.7,
+          -359.34
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 75.71
+      },
+      {
+        "source": [
+          3935.32,
+          -566.16
+        ],
+        "base": [
+          1078.63,
+          -337.7
+        ],
+        "design": [
+          1008.93,
+          -370.69
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 77.11
+      },
+      {
+        "source": [
+          3937.36,
+          -572.81
+        ],
+        "base": [
+          1079.52,
+          -341.58
+        ],
+        "design": [
+          1011.78,
+          -375.54
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 75.77
+      },
+      {
+        "source": [
+          3937.34,
+          -579.81
+        ],
+        "base": [
+          1079.51,
+          -345.66
+        ],
+        "design": [
+          1014.93,
+          -379.63
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 72.97
+      },
+      {
+        "source": [
+          3939.34,
+          -585.2
+        ],
+        "base": [
+          1080.37,
+          -348.8
+        ],
+        "design": [
+          1017.74,
+          -383.26
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 71.48
+      },
+      {
+        "source": [
+          3936.84,
+          -595.97
+        ],
+        "base": [
+          1079.29,
+          -355.07
+        ],
+        "design": [
+          1023.09,
+          -387.75
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 65.01
+      },
+      {
+        "source": [
+          3934.34,
+          -606.73
+        ],
+        "base": [
+          1078.21,
+          -361.35
+        ],
+        "design": [
+          1028.86,
+          -391.56
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 57.86
+      },
+      {
+        "source": [
+          3929.39,
+          -624.0
+        ],
+        "base": [
+          1076.06,
+          -371.42
+        ],
+        "design": [
+          1038.44,
+          -396.13
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 45.0
+      },
+      {
+        "source": [
+          3924.45,
+          -641.28
+        ],
+        "base": [
+          1073.92,
+          -381.48
+        ],
+        "design": [
+          1047.88,
+          -399.7
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 31.79
+      },
+      {
+        "source": [
+          3925.38,
+          -649.04
+        ],
+        "base": [
+          1074.32,
+          -386.01
+        ],
+        "design": [
+          1052.24,
+          -402.1
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 27.32
+      },
+      {
+        "source": [
+          3928.97,
+          -654.44
+        ],
+        "base": [
+          1075.88,
+          -389.15
+        ],
+        "design": [
+          1055.66,
+          -404.49
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 25.38
+      },
+      {
+        "source": [
+          3940.96,
+          -658.21
+        ],
+        "base": [
+          1081.08,
+          -391.35
+        ],
+        "design": [
+          1060.01,
+          -408.56
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 27.2
+      },
+      {
+        "source": [
+          3952.96,
+          -661.99
+        ],
+        "base": [
+          1086.28,
+          -393.55
+        ],
+        "design": [
+          1065.09,
+          -412.23
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 28.25
+      },
+      {
+        "source": [
+          3964.95,
+          -665.76
+        ],
+        "base": [
+          1091.47,
+          -395.75
+        ],
+        "design": [
+          1070.87,
+          -415.43
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 28.49
+      },
+      {
+        "source": [
+          3968.44,
+          -671.04
+        ],
+        "base": [
+          1092.99,
+          -398.83
+        ],
+        "design": [
+          1074.86,
+          -416.88
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 25.58
+      },
+      {
+        "source": [
+          3969.19,
+          -686.22
+        ],
+        "base": [
+          1093.31,
+          -407.68
+        ],
+        "design": [
+          1082.29,
+          -419.4
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 16.09
+      },
+      {
+        "source": [
+          3969.94,
+          -701.4
+        ],
+        "base": [
+          1093.64,
+          -416.52
+        ],
+        "design": [
+          1088.25,
+          -422.62
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 8.14
+      },
+      {
+        "source": [
+          3981.91,
+          -709.35
+        ],
+        "base": [
+          1098.83,
+          -421.16
+        ],
+        "design": [
+          1095.21,
+          -425.68
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 5.79
+      },
+      {
+        "source": [
+          3993.89,
+          -717.3
+        ],
+        "base": [
+          1104.02,
+          -425.79
+        ],
+        "design": [
+          1101.95,
+          -428.66
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 3.53
+      },
+      {
+        "source": [
+          3993.89,
+          -717.3
+        ],
+        "base": [
+          1104.02,
+          -425.79
+        ],
+        "design": [
+          1101.95,
+          -428.66
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 3.53
+      },
+      {
+        "source": [
+          4006.83,
+          -727.19
+        ],
+        "base": [
+          1109.62,
+          -431.56
+        ],
+        "design": [
+          1108.97,
+          -432.59
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 1.22
+      },
+      {
+        "source": [
+          4032.7,
+          -746.98
+        ],
+        "base": [
+          1120.84,
+          -443.09
+        ],
+        "design": [
+          1121.4,
+          -442.2
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 1.05
+      },
+      {
+        "source": [
+          4045.02,
+          -757.82
+        ],
+        "base": [
+          1126.18,
+          -449.41
+        ],
+        "design": [
+          1128.69,
+          -445.79
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 4.4
+      },
+      {
+        "source": [
+          4057.35,
+          -768.66
+        ],
+        "base": [
+          1131.52,
+          -455.72
+        ],
+        "design": [
+          1137.45,
+          -447.99
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 9.74
+      },
+      {
+        "source": [
+          4069.67,
+          -779.49
+        ],
+        "base": [
+          1136.86,
+          -462.04
+        ],
+        "design": [
+          1147.38,
+          -449.58
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 16.31
+      },
+      {
+        "source": [
+          4082.0,
+          -790.33
+        ],
+        "base": [
+          1142.2,
+          -468.36
+        ],
+        "design": [
+          1158.14,
+          -451.17
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 23.45
+      },
+      {
+        "source": [
+          4094.32,
+          -801.17
+        ],
+        "base": [
+          1147.54,
+          -474.67
+        ],
+        "design": [
+          1169.32,
+          -453.24
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 30.56
+      },
+      {
+        "source": [
+          4106.65,
+          -812.01
+        ],
+        "base": [
+          1152.89,
+          -480.99
+        ],
+        "design": [
+          1180.47,
+          -456.18
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 37.1
+      },
+      {
+        "source": [
+          4118.97,
+          -822.85
+        ],
+        "base": [
+          1158.23,
+          -487.31
+        ],
+        "design": [
+          1191.11,
+          -460.25
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 42.58
+      },
+      {
+        "source": [
+          4131.3,
+          -833.69
+        ],
+        "base": [
+          1163.57,
+          -493.62
+        ],
+        "design": [
+          1200.78,
+          -465.57
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 46.6
+      },
+      {
+        "source": [
+          4143.62,
+          -844.52
+        ],
+        "base": [
+          1168.91,
+          -499.94
+        ],
+        "design": [
+          1209.08,
+          -472.19
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 48.82
+      },
+      {
+        "source": [
+          4155.95,
+          -855.36
+        ],
+        "base": [
+          1171.48,
+          -506.26
+        ],
+        "design": [
+          1213.63,
+          -480.01
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 49.66
+      },
+      {
+        "source": [
+          4168.27,
+          -866.2
+        ],
+        "base": [
+          1173.34,
+          -512.58
+        ],
+        "design": [
+          1215.7,
+          -488.86
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 48.55
+      },
+      {
+        "source": [
+          3994.56,
+          -1032.82
+        ],
+        "base": [
+          1104.31,
+          -609.69
+        ],
+        "design": [
+          1175.3,
+          -580.83
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 76.64
+      },
+      {
+        "source": [
+          4006.68,
+          -1022.53
+        ],
+        "base": [
+          1109.56,
+          -603.69
+        ],
+        "design": [
+          1187.42,
+          -570.54
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 84.63
+      },
+      {
+        "source": [
+          4018.8,
+          -1012.23
+        ],
+        "base": [
+          1114.81,
+          -597.69
+        ],
+        "design": [
+          1199.54,
+          -560.25
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 92.64
+      },
+      {
+        "source": [
+          4030.91,
+          -1001.94
+        ],
+        "base": [
+          1120.06,
+          -591.69
+        ],
+        "design": [
+          1211.66,
+          -549.95
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 100.66
+      },
+      {
+        "source": [
+          4043.03,
+          -991.65
+        ],
+        "base": [
+          1125.32,
+          -585.69
+        ],
+        "design": [
+          1223.78,
+          -539.66
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 108.69
+      },
+      {
+        "source": [
+          4055.15,
+          -981.35
+        ],
+        "base": [
+          1130.57,
+          -579.69
+        ],
+        "design": [
+          1235.67,
+          -529.47
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 116.48
+      },
+      {
+        "source": [
+          4067.27,
+          -971.06
+        ],
+        "base": [
+          1135.82,
+          -573.69
+        ],
+        "design": [
+          1245.88,
+          -520.11
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 122.41
+      },
+      {
+        "source": [
+          4078.49,
+          -959.41
+        ],
+        "base": [
+          1140.68,
+          -566.9
+        ],
+        "design": [
+          1253.51,
+          -510.29
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 126.23
+      },
+      {
+        "source": [
+          4089.71,
+          -947.76
+        ],
+        "base": [
+          1145.55,
+          -560.11
+        ],
+        "design": [
+          1258.8,
+          -501.77
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 127.39
+      },
+      {
+        "source": [
+          4100.94,
+          -936.11
+        ],
+        "base": [
+          1150.41,
+          -553.32
+        ],
+        "design": [
+          1260.67,
+          -495.19
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 124.64
+      },
+      {
+        "source": [
+          4112.16,
+          -924.46
+        ],
+        "base": [
+          1155.28,
+          -546.53
+        ],
+        "design": [
+          1259.3,
+          -490.55
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 118.13
+      },
+      {
+        "source": [
+          4123.38,
+          -912.8
+        ],
+        "base": [
+          1160.14,
+          -539.74
+        ],
+        "design": [
+          1255.04,
+          -487.72
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 108.23
+      },
+      {
+        "source": [
+          4134.6,
+          -901.15
+        ],
+        "base": [
+          1165.0,
+          -532.95
+        ],
+        "design": [
+          1248.37,
+          -486.49
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 95.44
+      },
+      {
+        "source": [
+          4145.83,
+          -889.5
+        ],
+        "base": [
+          1169.87,
+          -526.16
+        ],
+        "design": [
+          1239.89,
+          -486.55
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 80.44
+      },
+      {
+        "source": [
+          4157.05,
+          -877.85
+        ],
+        "base": [
+          1171.65,
+          -519.37
+        ],
+        "design": [
+          1228.27,
+          -487.51
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 64.97
+      },
+      {
+        "source": [
+          4168.27,
+          -866.2
+        ],
+        "base": [
+          1173.34,
+          -512.58
+        ],
+        "design": [
+          1215.7,
+          -488.86
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 48.55
+      },
+      {
+        "source": [
+          4180.65,
+          -854.17
+        ],
+        "base": [
+          1175.21,
+          -505.56
+        ],
+        "design": [
+          1202.57,
+          -490.37
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 31.29
+      },
+      {
+        "source": [
+          4193.02,
+          -842.14
+        ],
+        "base": [
+          1177.08,
+          -498.55
+        ],
+        "design": [
+          1191.15,
+          -490.8
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 16.06
+      },
+      {
+        "source": [
+          4205.4,
+          -830.1
+        ],
+        "base": [
+          1178.95,
+          -491.54
+        ],
+        "design": [
+          1183.23,
+          -489.2
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 4.88
+      },
+      {
+        "source": [
+          4315.42,
+          -728.58
+        ],
+        "base": [
+          1195.57,
+          -432.36
+        ],
+        "design": [
+          1195.91,
+          -432.66
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 0.45
+      },
+      {
+        "source": [
+          4327.34,
+          -718.8
+        ],
+        "base": [
+          1197.37,
+          -426.66
+        ],
+        "design": [
+          1198.89,
+          -427.85
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 1.93
+      },
+      {
+        "source": [
+          4339.26,
+          -709.02
+        ],
+        "base": [
+          1199.17,
+          -420.97
+        ],
+        "design": [
+          1202.48,
+          -423.31
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 4.05
+      },
+      {
+        "source": [
+          4339.26,
+          -709.02
+        ],
+        "base": [
+          1199.17,
+          -420.97
+        ],
+        "design": [
+          1202.48,
+          -423.31
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 4.05
+      },
+      {
+        "source": [
+          4331.73,
+          -695.77
+        ],
+        "base": [
+          1198.03,
+          -413.25
+        ],
+        "design": [
+          1207.92,
+          -420.19
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 12.08
+      },
+      {
+        "source": [
+          4324.19,
+          -682.53
+        ],
+        "base": [
+          1196.89,
+          -405.53
+        ],
+        "design": [
+          1215.71,
+          -418.61
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 22.91
+      },
+      {
+        "source": [
+          4316.66,
+          -669.28
+        ],
+        "base": [
+          1195.76,
+          -397.81
+        ],
+        "design": [
+          1224.91,
+          -417.86
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 35.38
+      },
+      {
+        "source": [
+          4309.13,
+          -656.04
+        ],
+        "base": [
+          1194.62,
+          -390.09
+        ],
+        "design": [
+          1234.67,
+          -417.31
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 48.43
+      },
+      {
+        "source": [
+          4302.27,
+          -642.75
+        ],
+        "base": [
+          1193.58,
+          -382.34
+        ],
+        "design": [
+          1244.48,
+          -416.32
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 61.2
+      },
+      {
+        "source": [
+          4295.41,
+          -629.45
+        ],
+        "base": [
+          1192.55,
+          -374.59
+        ],
+        "design": [
+          1253.64,
+          -414.57
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 73.01
+      },
+      {
+        "source": [
+          4288.55,
+          -616.16
+        ],
+        "base": [
+          1191.51,
+          -366.85
+        ],
+        "design": [
+          1261.61,
+          -411.72
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 83.23
+      },
+      {
+        "source": [
+          4281.69,
+          -602.87
+        ],
+        "base": [
+          1190.47,
+          -359.1
+        ],
+        "design": [
+          1267.98,
+          -407.49
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 91.38
+      },
+      {
+        "source": [
+          4277.36,
+          -587.17
+        ],
+        "base": [
+          1189.82,
+          -349.95
+        ],
+        "design": [
+          1275.88,
+          -400.39
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 99.75
+      },
+      {
+        "source": [
+          4273.03,
+          -571.48
+        ],
+        "base": [
+          1189.17,
+          -340.8
+        ],
+        "design": [
+          1281.66,
+          -391.24
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 105.35
+      },
+      {
+        "source": [
+          4268.7,
+          -555.78
+        ],
+        "base": [
+          1188.51,
+          -331.65
+        ],
+        "design": [
+          1285.0,
+          -380.06
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 107.95
+      },
+      {
+        "source": [
+          4264.37,
+          -540.09
+        ],
+        "base": [
+          1187.86,
+          -322.5
+        ],
+        "design": [
+          1285.76,
+          -367.03
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 107.55
+      },
+      {
+        "source": [
+          4260.04,
+          -524.39
+        ],
+        "base": [
+          1187.2,
+          -313.36
+        ],
+        "design": [
+          1283.76,
+          -352.41
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 104.16
+      },
+      {
+        "source": [
+          4255.71,
+          -508.69
+        ],
+        "base": [
+          1186.55,
+          -304.21
+        ],
+        "design": [
+          1279.58,
+          -336.77
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 98.56
+      },
+      {
+        "source": [
+          4251.38,
+          -493.0
+        ],
+        "base": [
+          1185.9,
+          -295.06
+        ],
+        "design": [
+          1275.25,
+          -321.07
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 93.06
+      },
+      {
+        "source": [
+          4247.05,
+          -477.3
+        ],
+        "base": [
+          1185.24,
+          -285.91
+        ],
+        "design": [
+          1270.92,
+          -305.37
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 87.86
+      },
+      {
+        "source": [
+          4243.81,
+          -462.75
+        ],
+        "base": [
+          1184.75,
+          -277.43
+        ],
+        "design": [
+          1267.67,
+          -290.82
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 84.0
+      },
+      {
+        "source": [
+          4240.56,
+          -448.19
+        ],
+        "base": [
+          1184.26,
+          -269.13
+        ],
+        "design": [
+          1264.43,
+          -276.27
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 80.48
+      },
+      {
+        "source": [
+          4237.31,
+          -433.64
+        ],
+        "base": [
+          1183.77,
+          -262.15
+        ],
+        "design": [
+          1261.18,
+          -261.72
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 77.41
+      },
+      {
+        "source": [
+          4234.07,
+          -419.09
+        ],
+        "base": [
+          1183.28,
+          -255.16
+        ],
+        "design": [
+          1257.94,
+          -247.16
+        ],
+        "zoneId": "chunzailou-garden",
+        "distance": 75.08
+      },
+      {
+        "source": [
+          3994.56,
+          -1032.82
+        ],
+        "base": [
+          1104.31,
+          -609.69
+        ],
+        "design": [
+          1175.3,
+          -580.83
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 76.64
+      },
+      {
+        "source": [
+          4002.0,
+          -1049.11
+        ],
+        "base": [
+          1107.53,
+          -619.18
+        ],
+        "design": [
+          1182.74,
+          -597.12
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 78.38
+      },
+      {
+        "source": [
+          4009.43,
+          -1065.4
+        ],
+        "base": [
+          1110.75,
+          -628.67
+        ],
+        "design": [
+          1190.18,
+          -613.41
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 80.88
+      },
+      {
+        "source": [
+          4016.87,
+          -1081.68
+        ],
+        "base": [
+          1113.98,
+          -638.17
+        ],
+        "design": [
+          1197.61,
+          -629.7
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 84.06
+      },
+      {
+        "source": [
+          4024.3,
+          -1097.97
+        ],
+        "base": [
+          1117.2,
+          -647.66
+        ],
+        "design": [
+          1205.05,
+          -645.98
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 87.86
+      },
+      {
+        "source": [
+          4031.74,
+          -1114.26
+        ],
+        "base": [
+          1120.42,
+          -652.91
+        ],
+        "design": [
+          1212.48,
+          -662.27
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 92.54
+      },
+      {
+        "source": [
+          4041.05,
+          -1128.85
+        ],
+        "base": [
+          1124.46,
+          -656.37
+        ],
+        "design": [
+          1221.79,
+          -676.86
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 99.47
+      },
+      {
+        "source": [
+          4050.36,
+          -1143.44
+        ],
+        "base": [
+          1128.49,
+          -659.83
+        ],
+        "design": [
+          1231.1,
+          -691.45
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 107.37
+      },
+      {
+        "source": [
+          4059.67,
+          -1158.04
+        ],
+        "base": [
+          1132.53,
+          -663.29
+        ],
+        "design": [
+          1239.71,
+          -705.77
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 115.29
+      },
+      {
+        "source": [
+          4068.98,
+          -1172.63
+        ],
+        "base": [
+          1136.56,
+          -666.75
+        ],
+        "design": [
+          1247.16,
+          -719.42
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 122.5
+      },
+      {
+        "source": [
+          4078.29,
+          -1187.22
+        ],
+        "base": [
+          1140.6,
+          -670.21
+        ],
+        "design": [
+          1253.39,
+          -732.13
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 128.67
+      },
+      {
+        "source": [
+          4087.6,
+          -1201.81
+        ],
+        "base": [
+          1144.63,
+          -673.67
+        ],
+        "design": [
+          1258.38,
+          -743.69
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 133.57
+      },
+      {
+        "source": [
+          4096.91,
+          -1216.4
+        ],
+        "base": [
+          1148.67,
+          -677.13
+        ],
+        "design": [
+          1262.12,
+          -753.9
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 136.99
+      },
+      {
+        "source": [
+          4106.22,
+          -1230.99
+        ],
+        "base": [
+          1152.7,
+          -680.59
+        ],
+        "design": [
+          1264.62,
+          -762.63
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 138.77
+      },
+      {
+        "source": [
+          4115.53,
+          -1245.59
+        ],
+        "base": [
+          1156.74,
+          -684.05
+        ],
+        "design": [
+          1265.47,
+          -769.41
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 138.24
+      },
+      {
+        "source": [
+          4124.84,
+          -1260.18
+        ],
+        "base": [
+          1160.77,
+          -687.51
+        ],
+        "design": [
+          1262.92,
+          -772.64
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 132.97
+      },
+      {
+        "source": [
+          4134.15,
+          -1274.77
+        ],
+        "base": [
+          1164.81,
+          -690.97
+        ],
+        "design": [
+          1257.19,
+          -772.1
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 122.95
+      },
+      {
+        "source": [
+          4143.12,
+          -1290.15
+        ],
+        "base": [
+          1168.69,
+          -694.61
+        ],
+        "design": [
+          1248.53,
+          -768.47
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 108.76
+      },
+      {
+        "source": [
+          4152.09,
+          -1305.53
+        ],
+        "base": [
+          1170.9,
+          -698.26
+        ],
+        "design": [
+          1236.95,
+          -761.6
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 91.51
+      },
+      {
+        "source": [
+          4161.06,
+          -1320.9
+        ],
+        "base": [
+          1172.25,
+          -701.9
+        ],
+        "design": [
+          1223.43,
+          -752.31
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 71.84
+      },
+      {
+        "source": [
+          4170.02,
+          -1336.28
+        ],
+        "base": [
+          1173.61,
+          -705.55
+        ],
+        "design": [
+          1209.52,
+          -741.78
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 51.01
+      },
+      {
+        "source": [
+          4178.99,
+          -1351.66
+        ],
+        "base": [
+          1174.96,
+          -709.2
+        ],
+        "design": [
+          1196.53,
+          -731.43
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 30.98
+      },
+      {
+        "source": [
+          4187.96,
+          -1367.04
+        ],
+        "base": [
+          1176.32,
+          -712.84
+        ],
+        "design": [
+          1185.99,
+          -723.01
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 14.03
+      },
+      {
+        "source": [
+          4198.61,
+          -1380.66
+        ],
+        "base": [
+          1177.93,
+          -716.07
+        ],
+        "design": [
+          1179.88,
+          -718.13
+        ],
+        "zoneId": "dongshan-school",
+        "distance": 2.84
+      }
+    ]
+  },
+  "waterMask": {
+    "cols": 875,
+    "rows": 790,
+    "step": 2,
+    "pixels": 691250,
+    "waterPixels": 205955,
+    "runs": 2080,
+    "rleDecodePixelCount": 691250
+  },
+  "terrainGrid": {
+    "cols": 89,
+    "rows": 80,
+    "step": 20,
+    "heightRange": [
+      0.8,
+      279.18
+    ],
+    "sourcePixelSize": 30
+  },
+  "worldCover": {
+    "cols": 45,
+    "rows": 41,
+    "step": 40,
+    "sourcePixelSize": 10
+  },
+  "sourcePeak": {
+    "id": "node/13800809445",
+    "design": [
+      913.43,
+      -1002.77
+    ],
+    "insideWorld": true
+  },
+  "checksPassed": true
+}

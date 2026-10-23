@@ -1,0 +1,25 @@
+{
+  "request_started_utc": "2026-10-15T16:41:18.308450+00:00",
+  "endpoint": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "bbox_order": "west,south,east,north",
+  "selection_scope": "collection envelope, not an administrative boundary",
+  "query_file": "raw\\dongshan_bbox_query.overpassql",
+  "method": "POST",
+  "server_timeout_seconds": 180,
+  "client_timeout_seconds": 210,
+  "max_response_bytes": 104857600,
+  "attribution": "© OpenStreetMap contributors",
+  "data_license": "ODbL 1.0",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "query_includes_all_tags_on_selected_elements": true,
+  "relation_note": "out geom returns available member geometries; this is not a recursively reference-complete OSM extract",
+  "status": "failed",
+  "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>",
+  "request_finished_utc": "2026-10-15T16:41:21.160369+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "name": "collection_envelope_not_administrative_boundary",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "collection_envelope",
+        "name": "东山数据采集包络",
+        "is_administrative_boundary": false,
+        "date": "2026-10-16"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[120.28,30.98],[120.50,30.98],[120.50,31.22],[120.28,31.22],[120.28,30.98]]]
+      }
+    }
+  ]
+}

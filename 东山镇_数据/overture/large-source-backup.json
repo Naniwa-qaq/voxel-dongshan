@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "source": "buildings_bbox_2026-09-23.1.geojson",
+  "archive": "buildings_bbox_2026-09-23.1.geojson.gz",
+  "sourceBytes": 127348788,
+  "archiveBytes": 6713722,
+  "sourceSha256": "8165673c47941f87251484b043415e64d37c275c690b54a8acf89c085d8fb999",
+  "archiveSha256": "12de5ae89bbe0003bf387c2f8df72be41b1d57db741ebea8e67239e6f01e1c5e",
+  "restoredBytesVerified": 127348788,
+  "restoreCommand": "python scripts/restore_large_sources.py",
+  "note": "Original source is Git-ignored because it exceeds 100MiB. Gzip decoding reproduces its exact bytes; original source remains unchanged locally."
+}

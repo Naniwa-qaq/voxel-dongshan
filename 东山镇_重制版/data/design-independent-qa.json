@@ -1,0 +1,33 @@
+{
+  "directSourceGroupCrossings": [],
+  "widthDepthGridViolations": [],
+  "courtyardWallsCrossRoadOrWater": [],
+  "houses": 113,
+  "types": {
+    "house": 103,
+    "courtyard": 4,
+    "modern": 6
+  },
+  "addedRoles": {
+    "annex": 42,
+    "shop": 5
+  },
+  "compounds": 9,
+  "courtyardWallSegments": 51,
+  "forestMaskClassCounts": {
+    "10": 728,
+    "30": 14,
+    "40": 54,
+    "50": 359,
+    "60": 4,
+    "80": 358
+  },
+  "bounds": {
+    "minX": -210,
+    "maxX": 390,
+    "minZ": -270,
+    "maxZ": 270
+  },
+  "schema": "window.DSDesign",
+  "passed": true
+}

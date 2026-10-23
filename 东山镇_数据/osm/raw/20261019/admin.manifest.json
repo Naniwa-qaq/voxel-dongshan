@@ -1,0 +1,38 @@
+{
+  "started_utc": "2026-10-19T07:28:20.847532+00:00",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "bbox_is_administrative_boundary": false,
+  "query": "[out:json][timeout:180][maxsize:134217728];\n(\nnwr[boundary=administrative](30.98,120.28,31.22,120.50);\n);\nout body geom;\n",
+  "source_license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "all_tags_on_selected_elements_retained": true,
+  "relation_scope": "out body geom; available member geometries, not recursive reference completion",
+  "transport": {
+    "http_code": 200,
+    "content_type": "application/json",
+    "exitcode": 0,
+    "errormsg": null,
+    "size_download": 160086,
+    "time_total": 39.52525,
+    "url_effective": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%5Bmaxsize%3A134217728%5D%3B%0D%0A%28%0D%0Anwr%5Bboundary%3Dadministrative%5D%2830.98%2C120.28%2C31.22%2C120.50%29%3B%0D%0A%29%3B%0D%0Aout+body+geom%3B%0D%0A"
+  },
+  "status": "validated",
+  "file": "admin.json",
+  "bytes": 979044,
+  "sha256": "ed1b4f431b362318559c76db25c73066a28da9a87c3bb404da28a05e1d4fb865",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-19T07:28:05Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "element_counts": {
+    "relation": 72
+  },
+  "finished_utc": "2026-10-19T07:29:00.474769+00:00"
+}

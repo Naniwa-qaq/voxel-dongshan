@@ -1,0 +1,242 @@
+{
+  "date": "2026-10-23",
+  "passed": true,
+  "assertions": {
+    "eightRecords": true,
+    "fiveSourceAnchors": true,
+    "threeUnlocatedRemainNull": true,
+    "allImageChecksumsMatch": true,
+    "reusedImagesUnchanged": true,
+    "threeSourcePlans": true,
+    "allLocalImagesDecode": true,
+    "catalogueHasEightCards": true,
+    "desktopFitsViewport": true,
+    "mobileFitsViewport": true,
+    "searchFiltersCorrectly": true,
+    "noRemoteResourceRequests": true,
+    "noPageErrors": true,
+    "noResourceFailures": true
+  },
+  "counts": {
+    "places": 8,
+    "located": 5,
+    "unlocated": 3,
+    "uniqueSourceUrls": 30,
+    "localImageReferences": 27,
+    "uniqueLocalImages": 25,
+    "newLocalImages": 16,
+    "reusedLocalImages": 9,
+    "sourcePlans": 3
+  },
+  "reused": [
+    {
+      "path": "../../东山镇_数据/references/images/05-huihetang-garden.jpg",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/06-huihetang-01.jpg",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/07-huihetang-03.jpg",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/08-huihetang-04.jpg",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/16-huihetang-overview.jpg",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/17-huihetang-plan.png",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/18-huihetang-courtyard.png",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/04-luxiang-zishi-street.png",
+      "oldChecksumMatches": true
+    },
+    {
+      "path": "../../东山镇_数据/references/images/02-luxiang-hanshan-port.png",
+      "oldChecksumMatches": true
+    }
+  ],
+  "images": [
+    {
+      "src": "images/moli-middle-school-home-1.jpg",
+      "loaded": true,
+      "width": 880,
+      "height": 340
+    },
+    {
+      "src": "images/moli-middle-school-home-2.jpg",
+      "loaded": true,
+      "width": 880,
+      "height": 340
+    },
+    {
+      "src": "images/moli-middle-school-home-3.jpg",
+      "loaded": true,
+      "width": 880,
+      "height": 340
+    },
+    {
+      "src": "images/moli-middle-school-home-4.jpg",
+      "loaded": true,
+      "width": 880,
+      "height": 340
+    },
+    {
+      "src": "images/moli-primary-school-zijin-campus.png",
+      "loaded": true,
+      "width": 554,
+      "height": 295
+    },
+    {
+      "src": "images/moli-primary-school-youshan-campus.png",
+      "loaded": true,
+      "width": 554,
+      "height": 369
+    },
+    {
+      "src": "images/fahai-temple-meet99-reference.jpg",
+      "loaded": true,
+      "width": 242,
+      "height": 150
+    },
+    {
+      "src": "images/moli-viewing-pavilion-forest-trail-20260503.jpg",
+      "loaded": true,
+      "width": 1080,
+      "height": 1385
+    },
+    {
+      "src": "images/moli-viewing-pavilion-lake-view-20260503.jpg",
+      "loaded": true,
+      "width": 1080,
+      "height": 714
+    },
+    {
+      "src": "../../东山镇_数据/references/images/05-huihetang-garden.jpg",
+      "loaded": true,
+      "width": 600,
+      "height": 450
+    },
+    {
+      "src": "../../东山镇_数据/references/images/06-huihetang-01.jpg",
+      "loaded": true,
+      "width": 600,
+      "height": 450
+    },
+    {
+      "src": "../../东山镇_数据/references/images/07-huihetang-03.jpg",
+      "loaded": true,
+      "width": 600,
+      "height": 400
+    },
+    {
+      "src": "../../东山镇_数据/references/images/08-huihetang-04.jpg",
+      "loaded": true,
+      "width": 450,
+      "height": 600
+    },
+    {
+      "src": "../../东山镇_数据/references/images/16-huihetang-overview.jpg",
+      "loaded": true,
+      "width": 3284,
+      "height": 4925
+    },
+    {
+      "src": "../../东山镇_数据/references/images/17-huihetang-plan.png",
+      "loaded": true,
+      "width": 620,
+      "height": 840
+    },
+    {
+      "src": "../../东山镇_数据/references/images/18-huihetang-courtyard.png",
+      "loaded": true,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "images/huihetang-shulou.png",
+      "loaded": true,
+      "width": 1535,
+      "height": 940
+    },
+    {
+      "src": "images/huihetang-heritage-locations.png",
+      "loaded": true,
+      "width": 800,
+      "height": 680
+    },
+    {
+      "src": "images/zishi-street-paper-figure1.png",
+      "loaded": true,
+      "width": 1588,
+      "height": 2200
+    },
+    {
+      "src": "../../东山镇_数据/references/images/04-luxiang-zishi-street.png",
+      "loaded": true,
+      "width": 530,
+      "height": 689
+    },
+    {
+      "src": "images/zishi-street-space-pattern.png",
+      "loaded": true,
+      "width": 800,
+      "height": 463
+    },
+    {
+      "src": "images/zishi-street-streetscape.png",
+      "loaded": true,
+      "width": 800,
+      "height": 600
+    },
+    {
+      "src": "images/zishi-street-paper-figure1.png",
+      "loaded": true,
+      "width": 1588,
+      "height": 2200
+    },
+    {
+      "src": "../../东山镇_数据/references/images/02-luxiang-hanshan-port.png",
+      "loaded": true,
+      "width": 547,
+      "height": 365
+    },
+    {
+      "src": "images/hanshan-port-hangudu-and-well.png",
+      "loaded": true,
+      "width": 800,
+      "height": 307
+    },
+    {
+      "src": "images/hanshan-port-settlement-evolution.png",
+      "loaded": true,
+      "width": 800,
+      "height": 589
+    },
+    {
+      "src": "images/zishi-street-paper-figure1.png",
+      "loaded": true,
+      "width": 1588,
+      "height": 2200
+    }
+  ],
+  "desktop": {
+    "cards": 8,
+    "horizontalOverflow": false
+  },
+  "mobile": {
+    "horizontalOverflow": false
+  },
+  "errors": [],
+  "failed": []
+}

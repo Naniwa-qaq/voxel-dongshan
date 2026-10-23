@@ -1,0 +1,1750 @@
+{
+  "id": "dongshan-school",
+  "name": "东山中学",
+  "title": "东山中学",
+  "subtitle": "真实地理锚点 · 设施形制综合",
+  "originWgs84": [
+    120.39673431197694,
+    31.08703027248432
+  ],
+  "sourceIds": [
+    "way/1101928342",
+    "abb426ec-8108-4a84-a80f-7842862d949c",
+    "f588ebad-f5dc-42d1-ae63-2714d253c5d9",
+    "e3cca4cd-e131-4a35-8146-ecbee01f8f98",
+    "4bfa20c1-6a92-48b9-8b62-2a5990087afd",
+    "38b746af-e366-46f4-9ae6-4370ab8f2f8a",
+    "bac4f241-2389-4ed0-99bd-2184be6404af",
+    "1bd5c4b0-f767-489f-ab8f-b0ac2efc0daf",
+    "ab496e92-33d2-4fca-923d-5eea4126b40e"
+  ],
+  "bounds": {
+    "minX": -185,
+    "maxX": 180,
+    "minZ": -135,
+    "maxZ": 145
+  },
+  "boundary": [
+    [
+      147.56,
+      -10.86
+    ],
+    [
+      108.2,
+      69.05
+    ],
+    [
+      84.86,
+      87.15
+    ],
+    [
+      70.55,
+      75.41
+    ],
+    [
+      60.15,
+      75.16
+    ],
+    [
+      45.23,
+      55.93
+    ],
+    [
+      -25.54,
+      116.32
+    ],
+    [
+      -161.13,
+      -41.05
+    ],
+    [
+      -90.38,
+      -101.42
+    ],
+    [
+      -31.06,
+      -32.59
+    ],
+    [
+      53.86,
+      -100.62
+    ],
+    [
+      147.56,
+      -10.86
+    ]
+  ],
+  "buildings": [
+    {
+      "id": "DSZX-0",
+      "type": "schoolTeaching",
+      "x": -1.69,
+      "z": -38.72,
+      "width": 43.2,
+      "depth": 14.0,
+      "rotation": 0.7,
+      "floors": 3,
+      "seed": 172720330,
+      "sourceIds": [
+        "abb426ec-8108-4a84-a80f-7842862d949c"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          10.04,
+          -58.27
+        ],
+        [
+          -22.98,
+          -30.56
+        ],
+        [
+          -13.43,
+          -19.18
+        ],
+        [
+          19.59,
+          -46.88
+        ],
+        [
+          10.04,
+          -58.27
+        ]
+      ],
+      "sourceFootprintArea": 640.6,
+      "sourceAnchor": [
+        -1.69,
+        -38.72
+      ],
+      "designAnchor": [
+        -1.69,
+        -38.72
+      ],
+      "label": "教学楼组",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-1",
+      "type": "schoolTeaching",
+      "x": 21.1,
+      "z": -13.61,
+      "width": 43.2,
+      "depth": 10.4,
+      "rotation": 0.7,
+      "floors": 3,
+      "seed": 73677059,
+      "sourceIds": [
+        "f588ebad-f5dc-42d1-ae63-2714d253c5d9"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          34.53,
+          -31.24
+        ],
+        [
+          1.1,
+          -4.04
+        ],
+        [
+          7.66,
+          4.03
+        ],
+        [
+          41.1,
+          -23.17
+        ],
+        [
+          34.53,
+          -31.24
+        ]
+      ],
+      "sourceFootprintArea": 448.4,
+      "sourceAnchor": [
+        21.1,
+        -13.61
+      ],
+      "designAnchor": [
+        21.1,
+        -13.61
+      ],
+      "label": "教学楼组",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-2",
+      "type": "schoolTeaching",
+      "x": 44.67,
+      "z": 12.05,
+      "width": 44.0,
+      "depth": 12.0,
+      "rotation": 0.7,
+      "floors": 3,
+      "seed": 149511469,
+      "sourceIds": [
+        "e3cca4cd-e131-4a35-8146-ecbee01f8f98"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          24.38,
+          23.03
+        ],
+        [
+          32.54,
+          31.68
+        ],
+        [
+          64.97,
+          1.08
+        ],
+        [
+          56.8,
+          -7.57
+        ],
+        [
+          24.38,
+          23.03
+        ]
+      ],
+      "sourceFootprintArea": 530.1,
+      "sourceAnchor": [
+        44.67,
+        12.06
+      ],
+      "designAnchor": [
+        44.67,
+        12.05
+      ],
+      "label": "教学楼组",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-3",
+      "type": "schoolHall",
+      "x": 57.7,
+      "z": -22.56,
+      "width": 12.0,
+      "depth": 10.0,
+      "rotation": 2.39473,
+      "floors": 2,
+      "seed": 173071506,
+      "sourceIds": [
+        "4bfa20c1-6a92-48b9-8b62-2a5990087afd"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          59.12,
+          -13.15
+        ],
+        [
+          67.19,
+          -21.87
+        ],
+        [
+          56.29,
+          -31.96
+        ],
+        [
+          48.21,
+          -23.25
+        ],
+        [
+          59.12,
+          -13.15
+        ]
+      ],
+      "sourceFootprintArea": 176.7,
+      "sourceAnchor": [
+        57.7,
+        -22.56
+      ],
+      "designAnchor": [
+        57.7,
+        -22.56
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-4",
+      "type": "schoolHall",
+      "x": 57.23,
+      "z": -70.88,
+      "width": 32.2,
+      "depth": 20.8,
+      "rotation": 2.27816,
+      "floors": 2,
+      "seed": 189768737,
+      "sourceIds": [
+        "38b746af-e366-46f4-9ae6-4370ab8f2f8a"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          77.69,
+          -62.95
+        ],
+        [
+          67.07,
+          -75.38
+        ],
+        [
+          62.54,
+          -71.51
+        ],
+        [
+          48.06,
+          -88.46
+        ],
+        [
+          36.76,
+          -78.8
+        ],
+        [
+          61.87,
+          -49.43
+        ],
+        [
+          77.69,
+          -62.95
+        ]
+      ],
+      "sourceFootprintArea": 671.7,
+      "sourceAnchor": [
+        57.16,
+        -68.7
+      ],
+      "designAnchor": [
+        57.23,
+        -70.88
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-6",
+      "type": "schoolTeaching",
+      "x": 80.1,
+      "z": -24.2,
+      "width": 34.0,
+      "depth": 11.0,
+      "rotation": -2.39756,
+      "floors": 3,
+      "seed": 40726847,
+      "sourceIds": [
+        "bac4f241-2389-4ed0-99bd-2184be6404af"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          85.45,
+          -46.32
+        ],
+        [
+          78.88,
+          -40.29
+        ],
+        [
+          84.93,
+          -33.72
+        ],
+        [
+          59.78,
+          -10.57
+        ],
+        [
+          66.83,
+          -2.92
+        ],
+        [
+          98.53,
+          -32.1
+        ],
+        [
+          85.45,
+          -46.32
+        ]
+      ],
+      "sourceFootprintArea": 528.0,
+      "sourceAnchor": [
+        80.06,
+        -24.15
+      ],
+      "designAnchor": [
+        80.1,
+        -24.2
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-7",
+      "type": "schoolTeaching",
+      "x": 113.93,
+      "z": -12.71,
+      "width": 40.0,
+      "depth": 12.0,
+      "rotation": 0.87909,
+      "floors": 3,
+      "seed": 103204273,
+      "sourceIds": [
+        "1bd5c4b0-f767-489f-ab8f-b0ac2efc0daf"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          109.86,
+          -5.48
+        ],
+        [
+          127.87,
+          -27.22
+        ],
+        [
+          122.15,
+          -31.96
+        ],
+        [
+          96.55,
+          -1.05
+        ],
+        [
+          105.71,
+          6.53
+        ],
+        [
+          113.3,
+          -2.64
+        ],
+        [
+          109.86,
+          -5.48
+        ]
+      ],
+      "sourceFootprintArea": 351.2,
+      "sourceAnchor": [
+        111.54,
+        -11.92
+      ],
+      "designAnchor": [
+        113.93,
+        -12.71
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-gate",
+      "type": "schoolGate",
+      "x": 110,
+      "z": 65,
+      "width": 12,
+      "depth": 5,
+      "rotation": 0.7,
+      "floors": 1,
+      "seed": 142385136,
+      "sourceIds": [
+        "ab496e92-33d2-4fca-923d-5eea4126b40e"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "label": "校门",
+      "sourceGeometryRole": "沿校区临路小足迹与边界接口的设计门区"
+    }
+  ],
+  "grounds": [
+    {
+      "id": "track",
+      "kind": "sportsField",
+      "x": -75,
+      "z": -5,
+      "width": 78,
+      "depth": 156,
+      "rotation": 0.73,
+      "polygon": [
+        [
+          -156.08,
+          -37.12
+        ],
+        [
+          -97.95,
+          -89.13
+        ],
+        [
+          6.08,
+          27.12
+        ],
+        [
+          -52.05,
+          79.13
+        ]
+      ],
+      "lanes": 6,
+      "trackColor": "#b76c50",
+      "fieldColor": "#6c8f58",
+      "role": "保留西侧运动留空与教学组团对比；跑道以方阶边界综合",
+      "geometryStatus": "制图综合的运动区轮廓；未按当前测量平面复原400m标准尺寸"
+    },
+    {
+      "id": "ballcourt",
+      "kind": "basketball",
+      "x": 45,
+      "z": 67,
+      "width": 28,
+      "depth": 15,
+      "rotation": 0.73,
+      "polygon": [
+        [
+          29.57,
+          70.75
+        ],
+        [
+          50.43,
+          52.08
+        ],
+        [
+          60.43,
+          63.25
+        ],
+        [
+          39.57,
+          81.92
+        ]
+      ],
+      "surfaceColor": "#929b8c",
+      "role": "校园球场类型点景；无精确球场线形来源"
+    },
+    {
+      "id": "campus-square",
+      "kind": "court",
+      "x": 90,
+      "z": 48,
+      "width": 28,
+      "depth": 22,
+      "rotation": 0.73,
+      "polygon": [
+        [
+          72.23,
+          49.14
+        ],
+        [
+          93.1,
+          30.47
+        ],
+        [
+          107.77,
+          46.86
+        ],
+        [
+          86.9,
+          65.53
+        ]
+      ],
+      "role": "门内活动空间"
+    },
+    {
+      "id": "teaching-court",
+      "kind": "court",
+      "x": 9.7,
+      "z": -26.2,
+      "width": 40,
+      "depth": 11,
+      "rotation": 0.7,
+      "polygon": [
+        [
+          -9.14,
+          -17.52
+        ],
+        [
+          21.45,
+          -43.29
+        ],
+        [
+          28.54,
+          -34.88
+        ],
+        [
+          -2.05,
+          -9.11
+        ]
+      ],
+      "role": "教学组团间铺地"
+    },
+    {
+      "id": "teaching-court-2",
+      "kind": "court",
+      "x": 32.9,
+      "z": -0.8,
+      "width": 40,
+      "depth": 11,
+      "rotation": 0.7,
+      "polygon": [
+        [
+          14.06,
+          7.88
+        ],
+        [
+          44.65,
+          -17.89
+        ],
+        [
+          51.74,
+          -9.48
+        ],
+        [
+          21.15,
+          16.29
+        ]
+      ],
+      "role": "教学组团间铺地"
+    }
+  ],
+  "paths": [
+    {
+      "id": "way/343590975:0",
+      "points": [
+        [
+          125.3,
+          69.17
+        ],
+        [
+          180.0,
+          115.63
+        ]
+      ],
+      "width": 6.4,
+      "kind": "residential",
+      "sourceIds": [
+        "way/343590975"
+      ],
+      "surface": "asphalt",
+      "name": "",
+      "sourceKind": "tertiary"
+    },
+    {
+      "id": "way/343590978:0",
+      "points": [
+        [
+          125.3,
+          69.17
+        ],
+        [
+          162.48,
+          -12.28
+        ],
+        [
+          180.0,
+          -39.72
+        ]
+      ],
+      "width": 6.4,
+      "kind": "residential",
+      "sourceIds": [
+        "way/343590978"
+      ],
+      "surface": "asphalt",
+      "name": "",
+      "sourceKind": "tertiary"
+    },
+    {
+      "id": "way/1332791314:0",
+      "points": [
+        [
+          125.3,
+          69.17
+        ],
+        [
+          30.98,
+          145.0
+        ]
+      ],
+      "width": 6.4,
+      "kind": "residential",
+      "sourceIds": [
+        "way/1332791314"
+      ],
+      "surface": "asphalt",
+      "name": "",
+      "sourceKind": "residential"
+    },
+    {
+      "id": "campus-main",
+      "points": [
+        [
+          111,
+          65
+        ],
+        [
+          89,
+          47
+        ],
+        [
+          63,
+          36
+        ],
+        [
+          24,
+          35
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          -25,
+          -17
+        ],
+        [
+          -39,
+          -33
+        ]
+      ],
+      "width": 4.8,
+      "kind": "campus-path",
+      "sourceIds": []
+    },
+    {
+      "id": "campus-court1",
+      "points": [
+        [
+          -15,
+          -5
+        ],
+        [
+          -6,
+          -13
+        ],
+        [
+          10,
+          -26
+        ],
+        [
+          25,
+          -39
+        ]
+      ],
+      "width": 2.4,
+      "kind": "campus-path",
+      "sourceIds": []
+    },
+    {
+      "id": "campus-court2",
+      "points": [
+        [
+          10,
+          20
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          33,
+          -1
+        ],
+        [
+          49,
+          -14
+        ]
+      ],
+      "width": 2.4,
+      "kind": "campus-path",
+      "sourceIds": []
+    },
+    {
+      "id": "campus-public",
+      "points": [
+        [
+          89,
+          47
+        ],
+        [
+          96,
+          30
+        ],
+        [
+          91,
+          8
+        ],
+        [
+          72,
+          -7
+        ]
+      ],
+      "width": 3.2,
+      "kind": "campus-path",
+      "sourceIds": []
+    }
+  ],
+  "trees": [
+    {
+      "id": "T-1",
+      "x": -133,
+      "z": -67,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34088,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-2",
+      "x": -111,
+      "z": -91,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34185,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-4",
+      "x": -126,
+      "z": 9,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34379,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-5",
+      "x": -105,
+      "z": 40,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34476,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-6",
+      "x": -86,
+      "z": 67,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 34573,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-7",
+      "x": -63,
+      "z": 92,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34670,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-8",
+      "x": -42,
+      "z": 103,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34767,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-9",
+      "x": -15,
+      "z": 88,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 34864,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-10",
+      "x": 8,
+      "z": 73,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 34961,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-11",
+      "x": 18,
+      "z": 85,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35058,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-13",
+      "x": 66,
+      "z": 93,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35252,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-14",
+      "x": 86,
+      "z": 82,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35349,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-15",
+      "x": 126,
+      "z": 38,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 35446,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-16",
+      "x": 136,
+      "z": 15,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35543,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-17",
+      "x": 137,
+      "z": -6,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35640,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-18",
+      "x": 114,
+      "z": -60,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 35737,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-19",
+      "x": 87,
+      "z": -86,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35834,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-20",
+      "x": 37,
+      "z": -88,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 35931,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-21",
+      "x": 10,
+      "z": -81,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 36028,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-22",
+      "x": -36,
+      "z": -58,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 36125,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-24",
+      "x": 0,
+      "z": 44,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 36319,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-25",
+      "x": 25,
+      "z": 56,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 36416,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-26",
+      "x": 61,
+      "z": 42,
+      "type": "broadleaf",
+      "scale": 1.0,
+      "seed": 36513,
+      "placement": "园林/校园设计树位；非逐株调查"
+    },
+    {
+      "id": "T-27",
+      "x": 75,
+      "z": 65,
+      "type": "broadleaf",
+      "scale": 1.15,
+      "seed": 36610,
+      "placement": "园林/校园设计树位；非逐株调查"
+    }
+  ],
+  "walls": [
+    {
+      "id": "campus-fence",
+      "points": [
+        [
+          147.56,
+          -10.86
+        ],
+        [
+          108.2,
+          69.05
+        ],
+        [
+          84.86,
+          87.15
+        ],
+        [
+          70.55,
+          75.41
+        ],
+        [
+          60.15,
+          75.16
+        ],
+        [
+          45.23,
+          55.93
+        ],
+        [
+          -25.54,
+          116.32
+        ],
+        [
+          -161.13,
+          -41.05
+        ],
+        [
+          -90.38,
+          -101.42
+        ],
+        [
+          -31.06,
+          -32.59
+        ],
+        [
+          53.86,
+          -100.62
+        ],
+        [
+          147.56,
+          -10.86
+        ]
+      ],
+      "height": 1.4,
+      "width": 0.2,
+      "kind": "schoolFence",
+      "gateGap": [
+        102,
+        69,
+        119,
+        58
+      ],
+      "role": "源校区边界的示意围护，非逐段围墙调查"
+    }
+  ],
+  "rocks": [],
+  "bridges": [],
+  "water": {
+    "shore": [],
+    "canals": [],
+    "ponds": []
+  },
+  "terrain": {
+    "grid": {
+      "cols": 2,
+      "rows": 2,
+      "minX": -185,
+      "minZ": -135,
+      "step": 365,
+      "values": [
+        1.2,
+        1.2,
+        1.2,
+        1.2
+      ]
+    },
+    "policy": "设施内部作统一1.2m展示标高；不是DEM新增测量，不表现未核实高差"
+  },
+  "georeference": {
+    "originWgs84": [
+      120.39673431197694,
+      31.08703027248432
+    ],
+    "originUTM51N": [
+      251662.29230410914,
+      3442161.4112690506
+    ],
+    "sourceCRS": "EPSG:32651",
+    "localAxes": "x east, z south",
+    "designTransform": "局部米制；建筑源锚点按原位置，形制综合另有明确标识"
+  },
+  "provenance": {
+    "sourceFiles": [
+      "东山镇_数据/working/dongshan_sources_utm51n.gpkg"
+    ],
+    "roadWaterSnapshot": "OSM 2026-10-19",
+    "buildingRelease": "Overture 2026-09-23.1; underlying East Asian Buildings sources retained",
+    "licenses": [
+      "OSM © OpenStreetMap contributors, ODbL 1.0",
+      "Overture: see 东山镇_数据/overture/ATTRIBUTION.txt"
+    ],
+    "coordinatePolicy": "地区锚点是源地块几何重心；非实测门口；各区在真实东山镇位置独立加载，不能当陆巷相邻街坊",
+    "referenceScope": "OSM校区边界与Overture主楼足迹保留；校园通路、跑道轮廓、立面和楼层为设施制图综合。保留西运动/东教学关系，楼栋具体功能未逐栋确认。",
+    "officialReferences": [
+      {
+        "title": "苏州市吴中区东山中学介绍（2021）",
+        "url": "https://dszx.wxedu.net/xxgk/xxjs1/content_250433",
+        "supports": "校名、独立高中、学校占地39817.31平方米；与2026改造招标本部面积一致"
+      },
+      {
+        "title": "东山中学学校介绍（历史资料）",
+        "url": "https://dszx.wxedu.net/xxgk/xxjs",
+        "supports": "三幢教学楼、综合楼、实验楼、图书馆、田径场等设施类别；历史统计不可当2026逐栋现状"
+      },
+      {
+        "title": "教学楼官方图集",
+        "url": "https://www.dszx.net/tpzx/xyfm/content_1655",
+        "supports": "教学楼外观研究，2014照片"
+      },
+      {
+        "title": "校园风景照官方图集",
+        "url": "https://www.dszx.net/tpzx/xyfm/content_1654",
+        "supports": "实验楼前、田径场与校园植被研究，2016照片"
+      },
+      {
+        "title": "2026年本部改造监理招标",
+        "url": "https://ggzy.suzhou.gov.cn/jyxx/003001/003001001/20260601/d63e67fd-aa44-4d19-8141-44b8d9ec1a0a.html",
+        "supports": "本部39817.31平方米；2026仍有改造，资料时相不等于施工后现状"
+      }
+    ]
+  },
+  "cameraSuggestions": {
+    "overviewTarget": [
+      -10,
+      1.2,
+      0
+    ],
+    "distance": 275,
+    "yaw": 0.72,
+    "pitch": 0.8,
+    "blockTarget": [
+      26,
+      0
+    ],
+    "streetTarget": [
+      44,
+      -4
+    ],
+    "houseTarget": [
+      21.1,
+      -13.6
+    ],
+    "houseId": "DSZX-1",
+    "waterfrontTarget": [
+      -68,
+      10
+    ],
+    "treeTarget": [
+      -63,
+      92
+    ]
+  },
+  "houses": [
+    {
+      "id": "DSZX-0",
+      "type": "schoolTeaching",
+      "x": -1.69,
+      "z": -38.72,
+      "width": 43.2,
+      "depth": 14.0,
+      "rotation": 0.7,
+      "floors": 3,
+      "seed": 172720330,
+      "sourceIds": [
+        "abb426ec-8108-4a84-a80f-7842862d949c"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          10.04,
+          -58.27
+        ],
+        [
+          -22.98,
+          -30.56
+        ],
+        [
+          -13.43,
+          -19.18
+        ],
+        [
+          19.59,
+          -46.88
+        ],
+        [
+          10.04,
+          -58.27
+        ]
+      ],
+      "sourceFootprintArea": 640.6,
+      "sourceAnchor": [
+        -1.69,
+        -38.72
+      ],
+      "designAnchor": [
+        -1.69,
+        -38.72
+      ],
+      "label": "教学楼组",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-1",
+      "type": "schoolTeaching",
+      "x": 21.1,
+      "z": -13.61,
+      "width": 43.2,
+      "depth": 10.4,
+      "rotation": 0.7,
+      "floors": 3,
+      "seed": 73677059,
+      "sourceIds": [
+        "f588ebad-f5dc-42d1-ae63-2714d253c5d9"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          34.53,
+          -31.24
+        ],
+        [
+          1.1,
+          -4.04
+        ],
+        [
+          7.66,
+          4.03
+        ],
+        [
+          41.1,
+          -23.17
+        ],
+        [
+          34.53,
+          -31.24
+        ]
+      ],
+      "sourceFootprintArea": 448.4,
+      "sourceAnchor": [
+        21.1,
+        -13.61
+      ],
+      "designAnchor": [
+        21.1,
+        -13.61
+      ],
+      "label": "教学楼组",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-2",
+      "type": "schoolTeaching",
+      "x": 44.67,
+      "z": 12.05,
+      "width": 44.0,
+      "depth": 12.0,
+      "rotation": 0.7,
+      "floors": 3,
+      "seed": 149511469,
+      "sourceIds": [
+        "e3cca4cd-e131-4a35-8146-ecbee01f8f98"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          24.38,
+          23.03
+        ],
+        [
+          32.54,
+          31.68
+        ],
+        [
+          64.97,
+          1.08
+        ],
+        [
+          56.8,
+          -7.57
+        ],
+        [
+          24.38,
+          23.03
+        ]
+      ],
+      "sourceFootprintArea": 530.1,
+      "sourceAnchor": [
+        44.67,
+        12.06
+      ],
+      "designAnchor": [
+        44.67,
+        12.05
+      ],
+      "label": "教学楼组",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-3",
+      "type": "schoolHall",
+      "x": 57.7,
+      "z": -22.56,
+      "width": 12.0,
+      "depth": 10.0,
+      "rotation": 2.39473,
+      "floors": 2,
+      "seed": 173071506,
+      "sourceIds": [
+        "4bfa20c1-6a92-48b9-8b62-2a5990087afd"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          59.12,
+          -13.15
+        ],
+        [
+          67.19,
+          -21.87
+        ],
+        [
+          56.29,
+          -31.96
+        ],
+        [
+          48.21,
+          -23.25
+        ],
+        [
+          59.12,
+          -13.15
+        ]
+      ],
+      "sourceFootprintArea": 176.7,
+      "sourceAnchor": [
+        57.7,
+        -22.56
+      ],
+      "designAnchor": [
+        57.7,
+        -22.56
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-4",
+      "type": "schoolHall",
+      "x": 57.23,
+      "z": -70.88,
+      "width": 32.2,
+      "depth": 20.8,
+      "rotation": 2.27816,
+      "floors": 2,
+      "seed": 189768737,
+      "sourceIds": [
+        "38b746af-e366-46f4-9ae6-4370ab8f2f8a"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          77.69,
+          -62.95
+        ],
+        [
+          67.07,
+          -75.38
+        ],
+        [
+          62.54,
+          -71.51
+        ],
+        [
+          48.06,
+          -88.46
+        ],
+        [
+          36.76,
+          -78.8
+        ],
+        [
+          61.87,
+          -49.43
+        ],
+        [
+          77.69,
+          -62.95
+        ]
+      ],
+      "sourceFootprintArea": 671.7,
+      "sourceAnchor": [
+        57.16,
+        -68.7
+      ],
+      "designAnchor": [
+        57.23,
+        -70.88
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-6",
+      "type": "schoolTeaching",
+      "x": 80.1,
+      "z": -24.2,
+      "width": 34.0,
+      "depth": 11.0,
+      "rotation": -2.39756,
+      "floors": 3,
+      "seed": 40726847,
+      "sourceIds": [
+        "bac4f241-2389-4ed0-99bd-2184be6404af"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          85.45,
+          -46.32
+        ],
+        [
+          78.88,
+          -40.29
+        ],
+        [
+          84.93,
+          -33.72
+        ],
+        [
+          59.78,
+          -10.57
+        ],
+        [
+          66.83,
+          -2.92
+        ],
+        [
+          98.53,
+          -32.1
+        ],
+        [
+          85.45,
+          -46.32
+        ]
+      ],
+      "sourceFootprintArea": 528.0,
+      "sourceAnchor": [
+        80.06,
+        -24.15
+      ],
+      "designAnchor": [
+        80.1,
+        -24.2
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-7",
+      "type": "schoolTeaching",
+      "x": 113.93,
+      "z": -12.71,
+      "width": 40.0,
+      "depth": 12.0,
+      "rotation": 0.87909,
+      "floors": 3,
+      "seed": 103204273,
+      "sourceIds": [
+        "1bd5c4b0-f767-489f-ab8f-b0ac2efc0daf"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "sourceFootprint": [
+        [
+          109.86,
+          -5.48
+        ],
+        [
+          127.87,
+          -27.22
+        ],
+        [
+          122.15,
+          -31.96
+        ],
+        [
+          96.55,
+          -1.05
+        ],
+        [
+          105.71,
+          6.53
+        ],
+        [
+          113.3,
+          -2.64
+        ],
+        [
+          109.86,
+          -5.48
+        ]
+      ],
+      "sourceFootprintArea": 351.2,
+      "sourceAnchor": [
+        111.54,
+        -11.92
+      ],
+      "designAnchor": [
+        113.93,
+        -12.71
+      ],
+      "label": "校园公共楼",
+      "functionCertainty": "楼栋具体功能未按栋核实；使用学校已证实功能类型",
+      "sourceGeometryRole": "足迹锚点、朝向与体量参照；立面与层数类型化"
+    },
+    {
+      "id": "DSZX-gate",
+      "type": "schoolGate",
+      "x": 110,
+      "z": 65,
+      "width": 12,
+      "depth": 5,
+      "rotation": 0.7,
+      "floors": 1,
+      "seed": 142385136,
+      "sourceIds": [
+        "ab496e92-33d2-4fca-923d-5eea4126b40e"
+      ],
+      "identity": "源锚点与场地约束；构件、层数及立面为形制综合",
+      "label": "校门",
+      "sourceGeometryRole": "沿校区临路小足迹与边界接口的设计门区"
+    }
+  ],
+  "roads": [
+    {
+      "id": "way/343590975:0",
+      "points": [
+        [
+          125.3,
+          69.17
+        ],
+        [
+          180.0,
+          115.63
+        ]
+      ],
+      "width": 6.4,
+      "kind": "residential",
+      "sourceIds": [
+        "way/343590975"
+      ],
+      "surface": "asphalt",
+      "name": "",
+      "sourceKind": "tertiary"
+    },
+    {
+      "id": "way/343590978:0",
+      "points": [
+        [
+          125.3,
+          69.17
+        ],
+        [
+          162.48,
+          -12.28
+        ],
+        [
+          180.0,
+          -39.72
+        ]
+      ],
+      "width": 6.4,
+      "kind": "residential",
+      "sourceIds": [
+        "way/343590978"
+      ],
+      "surface": "asphalt",
+      "name": "",
+      "sourceKind": "tertiary"
+    },
+    {
+      "id": "way/1332791314:0",
+      "points": [
+        [
+          125.3,
+          69.17
+        ],
+        [
+          30.98,
+          145.0
+        ]
+      ],
+      "width": 6.4,
+      "kind": "residential",
+      "sourceIds": [
+        "way/1332791314"
+      ],
+      "surface": "asphalt",
+      "name": "",
+      "sourceKind": "residential"
+    },
+    {
+      "id": "campus-main",
+      "points": [
+        [
+          111,
+          65
+        ],
+        [
+          89,
+          47
+        ],
+        [
+          63,
+          36
+        ],
+        [
+          24,
+          35
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          -25,
+          -17
+        ],
+        [
+          -39,
+          -33
+        ]
+      ],
+      "width": 4.8,
+      "kind": "campus-path",
+      "sourceIds": []
+    },
+    {
+      "id": "campus-court1",
+      "points": [
+        [
+          -15,
+          -5
+        ],
+        [
+          -6,
+          -13
+        ],
+        [
+          10,
+          -26
+        ],
+        [
+          25,
+          -39
+        ]
+      ],
+      "width": 2.4,
+      "kind": "campus-path",
+      "sourceIds": []
+    },
+    {
+      "id": "campus-court2",
+      "points": [
+        [
+          10,
+          20
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          33,
+          -1
+        ],
+        [
+          49,
+          -14
+        ]
+      ],
+      "width": 2.4,
+      "kind": "campus-path",
+      "sourceIds": []
+    },
+    {
+      "id": "campus-public",
+      "points": [
+        [
+          89,
+          47
+        ],
+        [
+          96,
+          30
+        ],
+        [
+          91,
+          8
+        ],
+        [
+          72,
+          -7
+        ]
+      ],
+      "width": 3.2,
+      "kind": "campus-path",
+      "sourceIds": []
+    }
+  ],
+  "version": "2026-10-22-facilities-1",
+  "checks": {
+    "buildingCount": 8,
+    "treeCount": 24,
+    "sourceAreaBoundaryOnly": true,
+    "reusedCopyrightPhotosAsTextures": false,
+    "sourceIdentityPreserved": true,
+    "localMetricUnits": true,
+    "distinctGeographicDistrict": true
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "DateLocal": "2026-10-20",
+  "CompletedUtc": "2026-10-20T08:55:54.9683857Z",
+  "RequestedAction": "自查回滚",
+  "RestoredStage": "verified_source_data_before_scene_implementation",
+  "ArchiveIsRejectedBaseline": true,
+  "ArchivedFiles": [
+    {
+      "Original": "东山镇_原型\\场景表达说明.md",
+      "Archived": "东山镇_原型\\场景表达说明.md",
+      "Bytes": 9921,
+      "SHA256": "d17b81d23b146ebd7eabe0c4c2a6413b366d7e9d7a39d513fa6572c67dbb4ae0"
+    },
+    {
+      "Original": "东山镇_原型\\index.html",
+      "Archived": "东山镇_原型\\index.html",
+      "Bytes": 10422,
+      "SHA256": "a4f7d1eab3b01cc3d043536e57d32ecb622984e2898c4b0d92355a9ce6d706ca"
+    },
+    {
+      "Original": "东山镇_原型\\scene.js",
+      "Archived": "东山镇_原型\\scene.js",
+      "Bytes": 31887,
+      "SHA256": "4225cb9776ab05400bcf7cb496ac831ed1dad5eea8ece7e01f469f589650ff58"
+    },
+    {
+      "Original": "东山镇_原型\\ui.css",
+      "Archived": "东山镇_原型\\ui.css",
+      "Bytes": 16111,
+      "SHA256": "84e4279ff617cc934d32dfef77ac17c90cfab79084bc27bdf20c93b1e01ae5f8"
+    },
+    {
+      "Original": "东山镇_原型\\ui.js",
+      "Archived": "东山镇_原型\\ui.js",
+      "Bytes": 10753,
+      "SHA256": "323a16d6a65c314c6c82fa0f9bd0f66a4b541516dc5772c73bdcd8941844d788"
+    },
+    {
+      "Original": "东山镇_原型\\data\\processing-report.json",
+      "Archived": "东山镇_原型\\data\\processing-report.json",
+      "Bytes": 7461,
+      "SHA256": "a8b51e30b88fa4e22eef6892c223e1f5b083cdea5b562b8b085ce36c41c58c4b"
+    },
+    {
+      "Original": "东山镇_原型\\data\\scene-data.js",
+      "Archived": "东山镇_原型\\data\\scene-data.js",
+      "Bytes": 1542481,
+      "SHA256": "551c73a2bf383bb7f00dff82b5c3b677db1ff77e422df3103c96d5a52aad5599"
+    },
+    {
+      "Original": "东山镇_原型\\data\\scene-data.json",
+      "Archived": "东山镇_原型\\data\\scene-data.json",
+      "Bytes": 1542389,
+      "SHA256": "5b393b9f32294a6cdcb0de3fc5027db37076c53194efa6cc4110f3a56efc31b3"
+    },
+    {
+      "Original": "东山镇_原型\\qa\\first-panorama.png",
+      "Archived": "东山镇_原型\\qa\\first-panorama.png",
+      "Bytes": 1487535,
+      "SHA256": "e085367f9d7fd873b3749b2b83c9596e67b1d084172bb943dfae10eff54b712e"
+    },
+    {
+      "Original": "东山镇_原型\\qa\\first-runtime.json",
+      "Archived": "东山镇_原型\\qa\\first-runtime.json",
+      "Bytes": 3527,
+      "SHA256": "210f972babb0678c1f337b51191f32e1c188c2fef53e12eb2cc936a8ca4d110e"
+    },
+    {
+      "Original": "东山镇_原型\\qa\\rollback-current-state.png",
+      "Archived": "东山镇_原型\\qa\\rollback-current-state.png",
+      "Bytes": 755258,
+      "SHA256": "90196d9c0c2916f4a02a550682dad034733bf30eb4066db85be7cb9808998d6d"
+    },
+    {
+      "Original": "东山镇_原型\\qa\\rollback-diagnostics.json",
+      "Archived": "东山镇_原型\\qa\\rollback-diagnostics.json",
+      "Bytes": 3030,
+      "SHA256": "17d660ec3c99551dfe39ab4cd47ff3706f046ea655d08fe647d2529ff73b65e4"
+    },
+    {
+      "Original": "东山镇_原型\\vendor\\THREE-LICENSE.txt",
+      "Archived": "东山镇_原型\\vendor\\THREE-LICENSE.txt",
+      "Bytes": 1081,
+      "SHA256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+    },
+    {
+      "Original": "东山镇_原型\\vendor\\three.min.js",
+      "Archived": "东山镇_原型\\vendor\\three.min.js",
+      "Bytes": 669884,
+      "SHA256": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa"
+    },
+    {
+      "Original": "scripts\\build_scene_data.py",
+      "Archived": "scripts\\build_scene_data.py",
+      "Bytes": 29298,
+      "SHA256": "b9a90f2df48c62d1bdf40cbe42134a8ab7eaea49319b57094881839559368c66"
+    },
+    {
+      "Original": "work\\ui-integration.md",
+      "Archived": "work\\ui-integration.md",
+      "Bytes": 4358,
+      "SHA256": "625f7c1aea8ac7d7f0688d070669a3d2215cb186f56f8747d4f29ab304bca361"
+    }
+  ],
+  "SourceDataIntegrity": {
+    "Baseline": "东山镇_数据/qa/data-files.json",
+    "CheckedFiles": 106,
+    "ChangedFiles": 0,
+    "ReferenceOriginalSHA256": "afc7dbc36f16b9300679956ca4ef8130afae298ecd4528a792ddcd2a5c3894aa"
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-19T07:25:39.2389260Z",
+  "audited_at_local": "2026-10-19 15:25:39 +08:00",
+  "original_collection_date_local": "2026-10-16",
+  "audit_date_local": "2026-10-19",
+  "downloaded_again": false,
+  "network_requests_this_audit": 0,
+  "pages_verified": 8,
+  "original_html_files": 8,
+  "images_verified": 18,
+  "decoded_images": 18,
+  "gallery_local_image_links": 18,
+  "passed": true,
+  "visual_review_note": "原采集时18图已逐张view_image目视检查；本次重新校验SHA一致，并用GDI+完整解码。惠和堂俯瞰、平面及穿堂可读，但无测绘尺度或坐标。",
+  "pages": [
+    {
+      "id": "luxiang-2026",
+      "file": "pages/luxiang-2026.html",
+      "bytes": 37281,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "陆巷",
+          "present": true
+        },
+        {
+          "token": "紫石街",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:17.617Z",
+      "source_page_date": "2026-09-24",
+      "source_page_date_literal_in_html": true
+    },
+    {
+      "id": "dongshan-2025",
+      "file": "pages/dongshan-2025.html",
+      "bytes": 35191,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "东山",
+          "present": true
+        },
+        {
+          "token": "花果山",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:18.185Z",
+      "source_page_date": "2025-05-07",
+      "source_page_date_literal_in_html": true
+    },
+    {
+      "id": "dongshan-2019",
+      "file": "pages/dongshan-2019.html",
+      "bytes": 22897,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "东山镇",
+          "present": true
+        },
+        {
+          "token": "启园",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:18.314Z",
+      "source_page_date": "2019-05-27",
+      "source_page_date_literal_in_html": true
+    },
+    {
+      "id": "huihetang",
+      "file": "pages/huihetang.html",
+      "bytes": 31226,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "惠和堂",
+          "present": true
+        },
+        {
+          "token": "五进",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:18.66Z",
+      "source_page_date": "2025-10-20",
+      "source_page_date_literal_in_html": true
+    },
+    {
+      "id": "qiyuan",
+      "file": "pages/qiyuan.html",
+      "bytes": 31253,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "启园",
+          "present": true
+        },
+        {
+          "token": "席家花园",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:19.05Z",
+      "source_page_date": "2025-10-17",
+      "source_page_date_literal_in_html": true
+    },
+    {
+      "id": "museum-huihetang",
+      "file": "pages/museum-huihetang.html",
+      "bytes": 42276,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "惠和堂",
+          "present": true
+        },
+        {
+          "token": "平面图",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:34.116Z",
+      "source_page_date": "2021-11-23",
+      "source_page_date_literal_in_html": true
+    },
+    {
+      "id": "heritage-register",
+      "file": "pages/heritage-register.html",
+      "bytes": 2979303,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "东山民居",
+          "present": true
+        },
+        {
+          "token": "轩辕宫",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:34.49Z",
+      "source_page_date": null,
+      "source_page_date_literal_in_html": null
+    },
+    {
+      "id": "dongshan-scenic",
+      "file": "pages/dongshan-scenic.html",
+      "bytes": 30172,
+      "sha256_match": true,
+      "expected_content": [
+        {
+          "token": "东山景区",
+          "present": true
+        },
+        {
+          "token": "花果名茶",
+          "present": true
+        }
+      ],
+      "expected_content_present": true,
+      "original_fetched_at_utc": "2026-10-15T16:37:35.221Z",
+      "source_page_date": "2019-12-24",
+      "source_page_date_literal_in_html": true
+    }
+  ],
+  "images": [
+    {
+      "id": "01-luxiang-setting",
+      "file": "images/01-luxiang-setting.png",
+      "bytes": 562014,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 865,
+      "height": 577,
+      "dimensions_match": true,
+      "source_id": "luxiang-2026",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/758f34ded1d5482fab1ed40c88dc68d2.png",
+      "page_publication_date": "2026-09-24",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:35.262Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "02-luxiang-hanshan-port",
+      "file": "images/02-luxiang-hanshan-port.png",
+      "bytes": 397934,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 547,
+      "height": 365,
+      "dimensions_match": true,
+      "source_id": "luxiang-2026",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/2e1d73198ab543ac92fa2ff4ec340227.png",
+      "page_publication_date": "2026-09-24",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:38.082Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "03-luxiang-huilaotang",
+      "file": "images/03-luxiang-huilaotang.png",
+      "bytes": 362822,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 683,
+      "height": 386,
+      "dimensions_match": true,
+      "source_id": "luxiang-2026",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/4358946423bd434c88abb4c76b991354.png",
+      "page_publication_date": "2026-09-24",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:39.183Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "04-luxiang-zishi-street",
+      "file": "images/04-luxiang-zishi-street.png",
+      "bytes": 593885,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 530,
+      "height": 689,
+      "dimensions_match": true,
+      "source_id": "luxiang-2026",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/6ada305ed88a48a79e457a6a3e8a10b2.png",
+      "page_publication_date": "2026-09-24",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:40.338Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "05-huihetang-garden",
+      "file": "images/05-huihetang-garden.jpg",
+      "bytes": 183966,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 600,
+      "height": 450,
+      "dimensions_match": true,
+      "source_id": "huihetang",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/rzke5cfu3p5.jpg",
+      "page_publication_date": "2025-10-20",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:42.771Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "06-huihetang-01",
+      "file": "images/06-huihetang-01.jpg",
+      "bytes": 135452,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 600,
+      "height": 450,
+      "dimensions_match": true,
+      "source_id": "huihetang",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/acudlphvdmd.jpg",
+      "page_publication_date": "2025-10-20",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:43.356Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "07-huihetang-03",
+      "file": "images/07-huihetang-03.jpg",
+      "bytes": 143203,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 600,
+      "height": 400,
+      "dimensions_match": true,
+      "source_id": "huihetang",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/152brnbggul.jpg",
+      "page_publication_date": "2025-10-20",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:43.808Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "08-huihetang-04",
+      "file": "images/08-huihetang-04.jpg",
+      "bytes": 133221,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 450,
+      "height": 600,
+      "dimensions_match": true,
+      "source_id": "huihetang",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/gxiiofr3q5p.jpg",
+      "page_publication_date": "2025-10-20",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:44.121Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "09-qiyuan-4100",
+      "file": "images/09-qiyuan-4100.jpg",
+      "bytes": 170716,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 600,
+      "height": 397,
+      "dimensions_match": true,
+      "source_id": "qiyuan",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/e8588bd2ca084a0bbb97b907eff35e2f.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/1potqizytfq.jpg",
+      "page_publication_date": "2025-10-17",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:44.447Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "10-qiyuan-4112",
+      "file": "images/10-qiyuan-4112.jpg",
+      "bytes": 203028,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 600,
+      "height": 397,
+      "dimensions_match": true,
+      "source_id": "qiyuan",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/e8588bd2ca084a0bbb97b907eff35e2f.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/zpu35hi51ht.jpg",
+      "page_publication_date": "2025-10-17",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:45.643Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "11-qiyuan-4117",
+      "file": "images/11-qiyuan-4117.jpg",
+      "bytes": 168407,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 600,
+      "height": 397,
+      "dimensions_match": true,
+      "source_id": "qiyuan",
+      "source_page": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/e8588bd2ca084a0bbb97b907eff35e2f.shtml",
+      "image_url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/aoctpip2t0s.jpg",
+      "page_publication_date": "2025-10-17",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:46.58Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "12-chunzailou",
+      "file": "images/12-chunzailou.jpg",
+      "bytes": 243519,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 638,
+      "height": 425,
+      "dimensions_match": true,
+      "source_id": "dongshan-2019",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073724_7978.jpg",
+      "page_publication_date": "2019-05-27",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:47.12Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "13-xuanyuangong",
+      "file": "images/13-xuanyuangong.jpg",
+      "bytes": 137400,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 638,
+      "height": 425,
+      "dimensions_match": true,
+      "source_id": "dongshan-2019",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073734_3450.jpg",
+      "page_publication_date": "2019-05-27",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:48.906Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "14-daixinwan-bridge",
+      "file": "images/14-daixinwan-bridge.jpg",
+      "bytes": 195424,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 638,
+      "height": 340,
+      "dimensions_match": true,
+      "source_id": "dongshan-2019",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073751_5050.jpg",
+      "page_publication_date": "2019-05-27",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:49.544Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "15-nanmuting",
+      "file": "images/15-nanmuting.jpg",
+      "bytes": 225132,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 638,
+      "height": 426,
+      "dimensions_match": true,
+      "source_id": "dongshan-2019",
+      "source_page": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+      "image_url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073807_8383.jpg",
+      "page_publication_date": "2019-05-27",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:50.388Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "16-huihetang-overview",
+      "file": "images/16-huihetang-overview.jpg",
+      "bytes": 3499950,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 3284,
+      "height": 4925,
+      "dimensions_match": true,
+      "source_id": "museum-huihetang",
+      "source_page": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "image_url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/596.jpg",
+      "page_publication_date": "2021-11-23",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:51.352Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "17-huihetang-plan",
+      "file": "images/17-huihetang-plan.png",
+      "bytes": 156874,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 620,
+      "height": 840,
+      "dimensions_match": true,
+      "source_id": "museum-huihetang",
+      "source_page": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "image_url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/602.png",
+      "page_publication_date": "2021-11-23",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:52.142Z",
+      "has_attribution_and_rights": true
+    },
+    {
+      "id": "18-huihetang-courtyard",
+      "file": "images/18-huihetang-courtyard.png",
+      "bytes": 3916159,
+      "sha256_match": true,
+      "decoded": true,
+      "decoder": "System.Drawing/GDI+ DrawImageUnscaled full raster decode",
+      "width": 1920,
+      "height": 1080,
+      "dimensions_match": true,
+      "source_id": "museum-huihetang",
+      "source_page": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "image_url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/639.png",
+      "page_publication_date": "2021-11-23",
+      "image_publication_date": null,
+      "original_fetched_at_utc": "2026-10-15T16:38:52.251Z",
+      "has_attribution_and_rights": true
+    }
+  ],
+  "gallery": [
+    {
+      "src": "images/01-luxiang-setting.png",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/02-luxiang-hanshan-port.png",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/03-luxiang-huilaotang.png",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/04-luxiang-zishi-street.png",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/05-huihetang-garden.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/06-huihetang-01.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/07-huihetang-03.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/08-huihetang-04.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/09-qiyuan-4100.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/10-qiyuan-4112.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/11-qiyuan-4117.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/12-chunzailou.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/13-xuanyuangong.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/14-daixinwan-bridge.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/15-nanmuting.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/16-huihetang-overview.jpg",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/17-huihetang-plan.png",
+      "local_only": true,
+      "exists": true
+    },
+    {
+      "src": "images/18-huihetang-courtyard.png",
+      "local_only": true,
+      "exists": true
+    }
+  ],
+  "rights": "未确认开放许可，仅内部研究参考；不默认允许公开贴图或再分发"
+}

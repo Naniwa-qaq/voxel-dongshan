@@ -1,0 +1,146 @@
+{
+  "id": "dongshan-bus-terminal",
+  "name": "东山首末站",
+  "aliases": [],
+  "category": "公交首末站／公交场站",
+  "summary": "苏州市吴中区东山镇的公交始发、终到与换乘节点。已存WGS84场站面质心和官方线路走向依据；现有证据尚不能重建站房、车道、站台和出入口形态。",
+  "location": {
+    "wgs84": [
+      120.405613266,
+      31.084840747
+    ],
+    "crs": "EPSG:4326 / WGS84，顺序为经度、纬度",
+    "role": "OSM公交场站面way/1327188516的质心；非乘车站杆、非入口、非站房中心",
+    "address": "江苏省苏州市吴中区东山镇，洞庭路沿线（道路关系由官方公交走向确认；门牌未核定）",
+    "sourceId": "bus-osm-way-1327188516",
+    "confidence": "中：场站面可追溯，未经现场测量或独立影像配准",
+    "notes": [
+      "质心使用项目已有2026-10-19 OSM抽取快照；来源文件：东山镇_数据/osm/layers/places_admin_poi.geojson，原始响应poi.json快照时间2026-10-19T10:25:21Z。",
+      "OSM标签amenity=bus_station、public_transport=station、bus=yes；面几何不等于测绘或法定用地边界。",
+      "高德BV10131723页面所列公交站点坐标31.082960,120.411018属于平台站点记录，本批不将其作为场站质心，不与WGS84直接混用。",
+      "后续落模仍需核验场站面与实际入口、站房、停车坪的对应。"
+    ]
+  },
+  "facts": [
+    {
+      "text": "苏州市交通运输局2018年624路调整公告将起始走向写为东山首末站—洞庭路—环山公路，证实场站与洞庭路的道路联系。",
+      "sourceIds": [
+        "bus-official-624-20180404"
+      ],
+      "status": "官方历史文字已核验；不代表2026全线路现状",
+      "asOf": "2018-04-04"
+    },
+    {
+      "text": "苏州市政府转载苏州日报2025年报道：公交集团吴中公司与东山镇政府优化助农专线，东山首末站是拟新增木渎地铁站定制公交的始发节点。",
+      "sourceIds": [
+        "bus-official-lotus-20250808"
+      ],
+      "status": "官方报道已核验；用作站场功能依据",
+      "asOf": "2025-08-08"
+    },
+    {
+      "text": "现有OSM将此对象画为公交场站面，而非单个公交停车站点。",
+      "sourceIds": [
+        "bus-osm-way-1327188516"
+      ],
+      "status": "开源地图标签已核验；非官方测绘",
+      "asOf": "2026-10-19"
+    }
+  ],
+  "sources": [
+    {
+      "id": "bus-osm-way-1327188516",
+      "title": "东山首末站：OpenStreetMap way 1327188516",
+      "url": "https://www.openstreetmap.org/way/1327188516",
+      "publisher": "© OpenStreetMap contributors",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "open_geodata；坐标实际读取本地2026-10-19快照"
+    },
+    {
+      "id": "bus-official-624-20180404",
+      "title": "关于624、581路优化调整的公告",
+      "url": "https://jtj.suzhou.gov.cn/szjt/tzkg/201804/2bb7ccce9fa84e20a96af7c045381c16.shtml",
+      "publisher": "苏州市交通运输局",
+      "publishedOn": "2018-04-04",
+      "accessedOn": "2026-10-23",
+      "kind": "official_transport_notice"
+    },
+    {
+      "id": "bus-official-lotus-20250808",
+      "title": "公交助农专线升级 荷农赶集将有定制公交",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/dstx/202508/4ba4a2a7cfe94d4d8aa9846cc06249f0.shtml",
+      "publisher": "苏州市人民政府；来源苏州日报",
+      "publishedOn": "2025-08-08",
+      "accessedOn": "2026-10-23",
+      "kind": "official_republished_report"
+    },
+    {
+      "id": "bus-gaode-stop-BV10131723",
+      "title": "东山首末站(公交站)",
+      "url": "https://gaode.com/place/BV10131723",
+      "publisher": "高德地图",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "commercial_map_stop_record；仅用于记录同名站点差异"
+    },
+    {
+      "id": "bus-mapcarta-way1327188516",
+      "title": "东山首末站 Map — Bus station",
+      "url": "https://mapcarta.com/W1327188516",
+      "publisher": "Mapcarta / OpenStreetMap",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "secondary_map_view"
+    }
+  ],
+  "references": [
+    {
+      "id": "bus-map-context",
+      "title": "东山首末站OSM面与周边地图查看入口",
+      "sourceId": "bus-mapcarta-way1327188516",
+      "pageUrl": "https://mapcarta.com/W1327188516",
+      "imageUrl": null,
+      "localPath": null,
+      "view": "地图／定位上下文；不是现场照片",
+      "observations": [
+        "可复核OSM对象身份及周边空间关系。",
+        "本批没有下载商业卫星底图；不能据此确认站房外立面。"
+      ],
+      "rightsStatus": "OSM数据为ODbL；网页及卫星底图另有权利，不作为可公开贴图素材",
+      "verificationStatus": "地图对象已匹配；无已核验现场外观图"
+    }
+  ],
+  "gaps": [
+    "可验证的站场全景、站房正面、出入口和候车区照片。",
+    "站房建筑轮廓、层数、屋顶、停车坪与站台布局、车辆出入口方向。",
+    "官方门牌和现状场站边界；高德公交上车点与OSM场站面是否属于同一设施的具体分工。"
+  ],
+  "searchNotes": [
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "\"东山首末站\" \"地址\"",
+        "\"东山首末站\" 照片",
+        "\"东山首末站\" \"站场\"",
+        "\"东山首末站\" site:szgj.org.cn"
+      ],
+      "result": "官方交通公告和助农专线报道可确认功能、洞庭路联系；未检得可核验站房/站坪全景。"
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "\"东山首末站\" \"图片\" -2026版 -妙搜 -站台"
+      ],
+      "result": "多数结果为线路查询、旅行攻略或公交站点聚合；不把公交车辆/荷花市集照片冒充站场照片。"
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "OSM way/1327188516 与本地GeoJSON核对"
+      ],
+      "result": "已读取本地完整面和标签；经纬度保留原始精度仅为溯源，不表明厘米级精度。"
+    }
+  ]
+}
+

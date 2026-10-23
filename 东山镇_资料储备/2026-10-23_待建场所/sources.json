@@ -1,0 +1,384 @@
+[
+  {
+    "id": "moli-middle-home",
+    "title": "莫厘中学官方网站首页",
+    "url": "https://dsmlzx.wxedu.net/",
+    "publisher": "苏州市吴中区莫厘中学",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "学校官方网站；地址与校园原图",
+    "localPath": "sources/moli-middle-school-home.html",
+    "usedBy": [
+      "moli-middle-school"
+    ]
+  },
+  {
+    "id": "moli-middle-intro",
+    "title": "学校简介：流清林香 绝佳书房——苏州市吴中区莫厘中学简介",
+    "url": "https://dsmlzx.wxedu.net/xx/xxgk/xxjj",
+    "publisher": "苏州市吴中区莫厘中学",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "学校官方简介",
+    "localPath": "sources/moli-middle-school-intro.html",
+    "usedBy": [
+      "moli-middle-school"
+    ]
+  },
+  {
+    "id": "moli-middle-scenery",
+    "title": "校园风光_学校概况_学校_莫厘中学",
+    "url": "https://dsmlzx.wxedu.net/xx/xxgk/xyfg",
+    "publisher": "苏州市吴中区莫厘中学",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "学校官方图片目录；访问时暂无资料",
+    "localPath": "sources/moli-middle-school-scenery.html",
+    "usedBy": [
+      "moli-middle-school"
+    ]
+  },
+  {
+    "id": "moli-middle-osm",
+    "title": "OpenStreetMap way 1101928343：莫厘中学",
+    "url": "https://www.openstreetmap.org/way/1101928343",
+    "publisher": "OpenStreetMap contributors",
+    "publishedOn": "2024-10-22（所读取地块版本的编辑日）",
+    "accessedOn": "2026-10-23",
+    "kind": "公众协作地图地块与节点；不属于官方测绘",
+    "apiUrl": "https://api.openstreetmap.org/api/0.6/way/1101928343/full.json",
+    "localPath": "sources/moli-middle-school-osm.json",
+    "usedBy": [
+      "moli-middle-school"
+    ]
+  },
+  {
+    "id": "moli-primary-intro",
+    "title": "学校简介_学校概况_苏州市吴中区莫厘实验小学",
+    "url": "https://dszxxx.wxedu.net/xxgk/xxjj",
+    "publisher": "苏州市吴中区莫厘实验小学",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "学校官方简介与两校区实景原图",
+    "localPath": "sources/moli-primary-school-intro.html",
+    "usedBy": [
+      "moli-primary-school"
+    ]
+  },
+  {
+    "id": "moli-primary-service-2022",
+    "title": "2022年吴中区小学入学服务信息",
+    "url": "https://www.wxedu.net/old/xwzx/jcjy/zcfg/content_257426",
+    "publisher": "吴中教育热线（苏州市吴中区教育部门网站）",
+    "publishedOn": "2022（标题年份，具体日期未显示）",
+    "accessedOn": "2026-10-23",
+    "kind": "官方教育部门入学服务信息；两校区地址",
+    "usedBy": [
+      "moli-primary-school"
+    ]
+  },
+  {
+    "id": "moli-primary-osm",
+    "title": "OpenStreetMap way 1327190550：江苏省实验小学莫厘实验小学",
+    "url": "https://www.openstreetmap.org/way/1327190550",
+    "publisher": "OpenStreetMap contributors",
+    "publishedOn": "2024-10-22（所读取地块版本的编辑日）",
+    "accessedOn": "2026-10-23",
+    "kind": "公众协作地图地块与节点；不属于官方测绘",
+    "apiUrl": "https://api.openstreetmap.org/api/0.6/way/1327190550/full.json",
+    "localPath": "sources/moli-primary-school-osm.json",
+    "usedBy": [
+      "moli-primary-school"
+    ]
+  },
+  {
+    "id": "bus-osm-way-1327188516",
+    "title": "东山首末站：OpenStreetMap way 1327188516",
+    "url": "https://www.openstreetmap.org/way/1327188516",
+    "publisher": "© OpenStreetMap contributors",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "open_geodata；坐标实际读取本地2026-10-19快照",
+    "usedBy": [
+      "dongshan-bus-terminal"
+    ]
+  },
+  {
+    "id": "bus-official-624-20180404",
+    "title": "关于624、581路优化调整的公告",
+    "url": "https://jtj.suzhou.gov.cn/szjt/tzkg/201804/2bb7ccce9fa84e20a96af7c045381c16.shtml",
+    "publisher": "苏州市交通运输局",
+    "publishedOn": "2018-04-04",
+    "accessedOn": "2026-10-23",
+    "kind": "official_transport_notice",
+    "usedBy": [
+      "dongshan-bus-terminal"
+    ]
+  },
+  {
+    "id": "bus-official-lotus-20250808",
+    "title": "公交助农专线升级 荷农赶集将有定制公交",
+    "url": "https://www.suzhou.gov.cn/szsrmzf/dstx/202508/4ba4a2a7cfe94d4d8aa9846cc06249f0.shtml",
+    "publisher": "苏州市人民政府；来源苏州日报",
+    "publishedOn": "2025-08-08",
+    "accessedOn": "2026-10-23",
+    "kind": "official_republished_report",
+    "usedBy": [
+      "dongshan-bus-terminal"
+    ]
+  },
+  {
+    "id": "bus-gaode-stop-BV10131723",
+    "title": "东山首末站(公交站)",
+    "url": "https://gaode.com/place/BV10131723",
+    "publisher": "高德地图",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "commercial_map_stop_record；仅用于记录同名站点差异",
+    "usedBy": [
+      "dongshan-bus-terminal"
+    ]
+  },
+  {
+    "id": "bus-mapcarta-way1327188516",
+    "title": "东山首末站 Map — Bus station",
+    "url": "https://mapcarta.com/W1327188516",
+    "publisher": "Mapcarta / OpenStreetMap",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "secondary_map_view",
+    "usedBy": [
+      "dongshan-bus-terminal"
+    ]
+  },
+  {
+    "id": "fahai-osm-node-13800863490",
+    "title": "法海寺：OpenStreetMap node 13800863490",
+    "url": "https://www.openstreetmap.org/node/13800863490",
+    "publisher": "© OpenStreetMap contributors",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "open_geodata；坐标实际读取本地2026-10-19快照",
+    "usedBy": [
+      "fahai-temple"
+    ]
+  },
+  {
+    "id": "fahai-context-moli-peak-13800809445",
+    "title": "莫厘峰：OpenStreetMap node 13800809445（仅作方位核对）",
+    "url": "https://www.openstreetmap.org/node/13800809445",
+    "publisher": "© OpenStreetMap contributors",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "open_geodata；实际读取东山镇_数据/osm/layers/landuse_natural.geojson，原始landcover.json快照2026-10-19T07:25:03Z",
+    "usedBy": [
+      "fahai-temple"
+    ]
+  },
+  {
+    "id": "fahai-official-heritage-list",
+    "title": "苏州市各级文物保护单位名录（法海寺，第156项）",
+    "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml",
+    "publisher": "苏州市文化广电和旅游局",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "official_heritage_register",
+    "usedBy": [
+      "fahai-temple"
+    ]
+  },
+  {
+    "id": "fahai-meet99-page",
+    "title": "苏州东山景区旅游攻略之法海寺（图文）",
+    "url": "https://www.meet99.com/jingdian-suzhoudongshan-25989.html",
+    "publisher": "相约久久旅游网",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "secondary_travel_photo_page",
+    "usedBy": [
+      "fahai-temple"
+    ]
+  },
+  {
+    "id": "fahai-taihu-resource",
+    "title": "东山景区（太湖风景名胜区资源版）",
+    "url": "https://zyb.taihufengjing.com/Article?Id=7da48b2f-da3d-48f2-bba3-d10e1acb9aac",
+    "publisher": "太湖风景名胜区资源版",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "scenic_area_resource",
+    "usedBy": [
+      "fahai-temple"
+    ]
+  },
+  {
+    "id": "fahai-xianghua-bridge-page",
+    "title": "吴中区东山镇法海寺香花桥",
+    "url": "https://www.china-qiao.com/ql16/szql/szql649.htm",
+    "publisher": "中国桥",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "local_bridge_photo_catalog；本次网页正文未成功载入",
+    "usedBy": [
+      "fahai-temple"
+    ]
+  },
+  {
+    "id": "pavilion-osm-node-13800809431",
+    "title": "莫厘峰观景亭：OpenStreetMap node 13800809431",
+    "url": "https://www.openstreetmap.org/node/13800809431",
+    "publisher": "© OpenStreetMap contributors",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "open_geodata；坐标实际读取本地2026-10-19快照",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "pavilion-official-report-20251008",
+    "title": "徒步莫厘峰郊野公园，太湖风光入画来",
+    "url": "https://www.suzhou.gov.cn/szsrmzf/szyw/202510/f6ddb7f4edc749d18c8c86ba9cebdd81.shtml",
+    "publisher": "苏州市人民政府；来源苏州日报",
+    "publishedOn": "2025-10-08",
+    "accessedOn": "2026-10-23",
+    "kind": "official_republished_report",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "pavilion-report-mirror-20251008",
+    "title": "徒步莫厘峰郊野公园，太湖风光入画来（可读全文转载）",
+    "url": "https://www.zgjssw.gov.cn/shixianchuanzhen/suzhou/202510/t20251008_8527285.shtml",
+    "publisher": "中共江苏省委新闻网；来源苏州日报",
+    "publishedOn": "2025-10-08",
+    "accessedOn": "2026-10-23",
+    "kind": "official_republished_report_same_article",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "pavilion-official-planting-20210330",
+    "title": "东山镇莫里峰（八角亭）林相改造工程，项目SZJL2021-WZ-C-003（采购公告、成交与合同聚合页）",
+    "url": "https://czju.suzhou.gov.cn/zfcg/html/project/1efd9c3abd3145b994924c03766392c2.shtml",
+    "publisher": "苏州政府采购；采购单位苏州市吴中区东山镇农林服务站",
+    "publishedOn": "2021-03-30",
+    "accessedOn": "2026-10-23",
+    "kind": "official_procurement_design；聚合页另含2021-04-14成交及2021-04-21合同",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "pavilion-subao-sina-20260503",
+    "title": "五一来东山徒步，松弛感拿捏~",
+    "url": "https://finance.sina.com.cn/wm/2026-05-03/doc-inhwrnpc1355306.shtml",
+    "publisher": "苏州日报供稿，新浪转载；相关照片朱雪芬摄",
+    "publishedOn": "2026-05-03",
+    "accessedOn": "2026-10-23",
+    "kind": "identified_reporter_photography_republication",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "pavilion-subao-original-20260503",
+    "title": "五一来东山徒步，松弛感拿捏~（转载页链接的原始微信来源）",
+    "url": "https://mp.weixin.qq.com/s/I5ogwwjWS5k0HTTMbmylWg",
+    "publisher": "苏州日报微信公众号",
+    "publishedOn": "2026-05-03",
+    "accessedOn": "2026-10-23",
+    "kind": "original_report_link；本次无法直接读取",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "pavilion-youxiake-candidate",
+    "title": "太湖徒步·莫厘听涛 | 登顶东山莫厘峰",
+    "url": "https://m.youxiake.com/lines.html?id=30131",
+    "publisher": "游侠客",
+    "publishedOn": null,
+    "accessedOn": "2026-10-23",
+    "kind": "commercial_route_photo_candidate",
+    "usedBy": [
+      "moli-viewing-pavilion"
+    ]
+  },
+  {
+    "id": "huihetang-garden-register",
+    "title": "惠和堂",
+    "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+    "publisher": "苏州市园林和绿化管理局",
+    "publishedOn": "2025-10-20",
+    "accessedOn": "2026-10-23",
+    "kind": "government-garden-register",
+    "usedBy": [
+      "huihetang"
+    ]
+  },
+  {
+    "id": "wu-museum-courtyards-2021",
+    "title": "吴县繁华如许｜遍览世间乐土：自适与宅院",
+    "url": "https://www.thepaper.cn/newsDetail_forward_15501667",
+    "publisher": "吴文化博物馆（澎湃号发布）",
+    "publishedOn": "2021-11-23",
+    "accessedOn": "2026-10-23",
+    "kind": "museum-institutional-article",
+    "usedBy": [
+      "huihetang"
+    ]
+  },
+  {
+    "id": "jiangsu-rural-housing-luxiang-2020",
+    "title": "苏州市东山镇陆巷村陆巷",
+    "url": "https://www.c-dwellings.com/news_detail.php?id=380",
+    "publisher": "江苏省住房和城乡建设厅主办·农房建设服务网",
+    "publishedOn": "2020-08-21",
+    "accessedOn": "2026-10-23",
+    "kind": "government-hosted-planning-and-village-archive-summary",
+    "notes": [
+      "页面自列资料来源为《苏州市东山镇陆巷历史文化名村保护规划》《中国传统村落档案》；图件原编制时间未逐图注明。"
+    ],
+    "usedBy": [
+      "huihetang",
+      "zishi-street",
+      "hanshan-port"
+    ]
+  },
+  {
+    "id": "kong-wu-zhang-luxiang-2019",
+    "title": "社区参与模式下的传统村落旅游空间生产及影响初探——基于苏州东山陆巷古村的调研",
+    "url": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+    "publisher": "孔翔、吴栋、张纪娴；《世界地理研究》28(6):156–165；华东师范大学网站托管",
+    "publishedOn": "2019-12",
+    "accessedOn": "2026-10-23",
+    "kind": "primary-field-research-paper",
+    "doi": "10.3969/j.issn.1004-9479.2019.06.2019064",
+    "localPath": "images/zishi-street-commercial-pattern-paper.pdf",
+    "notes": [
+      "图1位于印刷页160、PDF第5页；有北箭头和0–150 m比例尺，无经纬网/坐标系说明。",
+      "研究为2018年调研，图件用于历史相对空间关系，不代表2026现状测绘。"
+    ],
+    "usedBy": [
+      "huihetang",
+      "zishi-street",
+      "hanshan-port"
+    ]
+  },
+  {
+    "id": "luxiang-local-history-2026",
+    "title": "古镇古村系列——吴中区陆巷村：太湖明珠，宰相故里",
+    "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+    "publisher": "苏州市地方志工作办公室",
+    "publishedOn": "2026-09-24",
+    "accessedOn": "2026-10-23",
+    "kind": "government-local-history",
+    "usedBy": [
+      "zishi-street",
+      "hanshan-port"
+    ]
+  }
+]

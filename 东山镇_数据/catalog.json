@@ -1,0 +1,127 @@
+{
+  "title": "东山镇首批数据采集台账",
+  "completed_utc": "2026-10-19T10:42:36.025199+00:00",
+  "original_material_collection_date_local": "2026-10-16",
+  "completion_and_audit_date_local": "2026-10-19",
+  "bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "extent_role": "Collection envelope only; NOT an administrative or final display boundary",
+  "phase": "Acquired and audited before cartographic generalization / modeling",
+  "date_policy": "Original acquisition timestamps retained. Terrain, WorldCover and references reused and audited; OSM and Overture newly acquired on 2026-10-19.",
+  "datasets": [
+    {
+      "name": "地形 DSM",
+      "amount": "原网格 793 × 865；约 30 米级",
+      "entry": "terrain/derived/dongshan_envelope_glo30_2021_wgs84.tif",
+      "use": "山体、坡地与聚落高低关系；另附 4 种质量层"
+    },
+    {
+      "name": "土地覆盖",
+      "amount": "原网格 2640 × 2880；约 10 米级",
+      "entry": "landcover/derived/dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+      "use": "林木、耕地、建成区、水面等大类"
+    },
+    {
+      "name": "OSM 道路",
+      "amount": "3,446 个要素",
+      "entry": "osm/layers/roads.geojson",
+      "use": "路网与桥头关系；保留主次标签，另有道路点"
+    },
+    {
+      "name": "OSM 水系",
+      "amount": "381 个水系对象；2,162 个水面",
+      "entry": "osm/layers/water_polygons.geojson",
+      "use": "湖面、港渠、溪流、坝闸及航道；水道另存一层"
+    },
+    {
+      "name": "OSM 地点与设施",
+      "amount": "366 个要素",
+      "entry": "osm/layers/places_admin_poi.geojson",
+      "use": "聚落、校园和其他地点；面、点按源保留"
+    },
+    {
+      "name": "OSM 建筑",
+      "amount": "330 个要素（329 面、1 点）",
+      "entry": "osm/layers/buildings.geojson",
+      "use": "来源标签与局部建筑语义参考"
+    },
+    {
+      "name": "Overture 建筑",
+      "amount": "60,873 个建筑面",
+      "entry": "overture/raw/buildings_bbox_2026-09-23.1.parquet",
+      "use": "聚落密度、屋顶朝向与后续住宅聚合输入；与 OSM 独立保存"
+    },
+    {
+      "name": "地方图文参考",
+      "amount": "8 个页面、18 张图",
+      "entry": "references/index.html",
+      "use": "陆巷、街巷港道、园林与古建形态；含惠和堂平面/俯瞰"
+    }
+  ],
+  "osm": {
+    "unique_features": 7286,
+    "layer_counts": {
+      "roads": 3446,
+      "road_points": 28,
+      "waterways": 381,
+      "water_polygons": 2162,
+      "buildings": 330,
+      "landuse_natural": 2678,
+      "places_admin_poi": 366,
+      "boundaries": 72,
+      "other_tagged": 0
+    },
+    "layer_counts_overlap": true,
+    "snapshot_range_utc": [
+      "2026-10-19T07:11:51Z",
+      "2026-10-19T10:25:21Z"
+    ],
+    "relation_count": 99,
+    "relations_with_missing_subarea_geometry": 10
+  },
+  "overture": {
+    "release": "2026-09-23.1",
+    "building_polygons": 60873,
+    "with_height": 0,
+    "with_floors": 0,
+    "raw_parquet": "overture/raw/buildings_bbox_2026-09-23.1.parquet"
+  },
+  "working_package": {
+    "file": "working/dongshan_sources_utm51n.gpkg",
+    "epsg": 32651,
+    "bytes": 50503680,
+    "sha256": "09e81f7e043fb75a7b75c38acac8172e14761f85d6259169b4320ba7b83929b1",
+    "source_layers_kept_separate": true,
+    "all_attributes_compared": true
+  },
+  "quality_gaps": [
+    "采集包络含西山及周边区域；它不是东山镇行政边界或最终作品范围。OSM 行政关系仅作候选，需另行核准。",
+    "DSM 取自 AWS 2021 发布版，瓦片观测时段约 2011–2014；含植被和建筑。WorldCover 描述 2021 年，不能当作 2026 年现状。",
+    "Overture 这 60,873 条轮廓以及 OSM 建筑均没有高度/层数。建筑轮廓仅作聚落分析和综合底稿，不对应最终渲染数量；两来源不可直接相加。",
+    "部分地形低于 −10 米，尚未判明真实洼地或源问题；已保留源值和待复核掩膜。DSM 为 EGM2008，不能直接套用太湖镇江吴淞基面水位。",
+    "WorldCover 不区分茶园/果园，InputQuality 尚未取得；重点古建与港道仍需可靠落位。参考图尚未确认开放使用许可，惠和堂平面无比例尺/坐标，不作精测图。"
+  ],
+  "quality_reports": [
+    "qa/integration-checks.json",
+    "qa/data-files.csv",
+    "terrain/qa/terrain_audit.json",
+    "landcover/qa/landcover_audit.json",
+    "osm/extraction_manifest.json",
+    "osm/qa/relation_geometry_audit.json",
+    "overture/provenance/bbox_buildings_manifest.json",
+    "references/qa-audit.json",
+    "working/qa.json"
+  ],
+  "cartographic_generalization_applied": false,
+  "commercial_map_api_used": false,
+  "source_links": {
+    "terrain": "https://registry.opendata.aws/copernicus-dem/",
+    "landcover": "https://registry.opendata.aws/esa-worldcover-vito/",
+    "osm": "https://www.openstreetmap.org/copyright",
+    "overture": "https://docs.overturemaps.org/getting-data/"
+  }
+}

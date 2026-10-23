@@ -1,0 +1,148 @@
+{
+  "type": "FeatureCollection",
+  "name": "POI anchors for research, not final model placement",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "moli-middle-school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.397304905,
+          31.08426756
+        ]
+      },
+      "properties": {
+        "name": "莫厘中学",
+        "address": "江苏省苏州市吴中区东山镇人民街62号",
+        "coordinateRole": "OpenStreetMap学校用地多边形的面积质心",
+        "sourceId": "moli-middle-osm",
+        "confidence": "中：官网确认学校及地址，坐标和地块边界来自公众协作地图，未作测绘核验",
+        "status": "source anchor available",
+        "record": "records/moli-middle-school.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "moli-primary-school",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4017323,
+          31.080852189
+        ]
+      },
+      "properties": {
+        "name": "莫厘实验小学（紫金路校区）",
+        "address": "江苏省苏州市吴中区东山镇紫金路45号（紫金路校区）",
+        "coordinateRole": "OpenStreetMap紫金路校区学校用地多边形的面积质心",
+        "sourceId": "moli-primary-osm",
+        "confidence": "中：官方简介与教育部门入学信息确认校区及地址，坐标和地块边界来自公众协作地图，未作测绘核验",
+        "status": "source anchor available",
+        "record": "records/moli-primary-school.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "dongshan-bus-terminal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.405613266,
+          31.084840747
+        ]
+      },
+      "properties": {
+        "name": "东山首末站",
+        "address": "江苏省苏州市吴中区东山镇，洞庭路沿线（道路关系由官方公交走向确认；门牌未核定）",
+        "coordinateRole": "OSM公交场站面way/1327188516的质心；非乘车站杆、非入口、非站房中心",
+        "sourceId": "bus-osm-way-1327188516",
+        "confidence": "中：场站面可追溯，未经现场测量或独立影像配准",
+        "status": "source anchor available",
+        "record": "records/dongshan-bus-terminal.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fahai-temple",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3918743,
+          31.0950032
+        ]
+      },
+      "properties": {
+        "name": "法海寺",
+        "address": "江苏省苏州市吴中区东山镇（官方名录精度；具体山坡、门牌未核定）",
+        "coordinateRole": "OSM node/13800863490寺庙标签候选点；尚未核定对应文保本体、山门或大殿中心",
+        "sourceId": "fahai-osm-node-13800863490",
+        "confidence": "中低：OSM点可追溯，但与二手西坡记述存在方位冲突；官方名录不足以验证这一具体点位",
+        "status": "source anchor available",
+        "record": "records/fahai-temple.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "moli-viewing-pavilion",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3872325,
+          31.0971525
+        ]
+      },
+      "properties": {
+        "name": "莫厘峰观景亭",
+        "address": "江苏省苏州市吴中区东山镇莫厘峰山地（精确道路门牌不适用）",
+        "coordinateRole": "OSM node/13800809431，tourism=viewpoint标签点；不是经测量的亭柱/台基轮廓",
+        "sourceId": "pavilion-osm-node-13800809431",
+        "confidence": "中低：名称与坐标来自单一OSM点；八角亭名称、具体亭体对应待核验",
+        "status": "source anchor available",
+        "record": "records/moli-viewing-pavilion.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "huihetang",
+      "geometry": null,
+      "properties": {
+        "name": "惠和堂",
+        "address": "江苏省苏州市吴中区东山镇陆巷村文宁巷内",
+        "coordinateRole": "建筑群；当前以文献地址和相对空间关系定位",
+        "sourceId": "wu-museum-courtyards-2021",
+        "confidence": "地址与朝向有机构文字支持；地理坐标/占地界线待核",
+        "status": "unlocated",
+        "record": "records/huihetang.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "zishi-street",
+      "geometry": null,
+      "properties": {
+        "name": "紫石街及三元牌坊组",
+        "address": "江苏省苏州市吴中区东山镇陆巷古村村落中心",
+        "coordinateRole": "街巷线及3个牌坊点；尚无测绘线形",
+        "sourceId": "jiangsu-rural-housing-luxiang-2020",
+        "confidence": "文献起讫与方向明确；现状线形、牌坊坐标待核",
+        "status": "unlocated",
+        "record": "records/zishi-street.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hanshan-port",
+      "geometry": null,
+      "properties": {
+        "name": "寒山港",
+        "address": "江苏省苏州市吴中区东山镇陆巷古村",
+        "coordinateRole": "港道线／水面及岸线；坐标和全线待核",
+        "sourceId": "luxiang-local-history-2026",
+        "confidence": "题注实景与村级归属可靠；全线/入湖接口待核",
+        "status": "unlocated",
+        "record": "records/hanshan-port.json"
+      }
+    }
+  ]
+}

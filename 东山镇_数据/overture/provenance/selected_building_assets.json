@@ -1,0 +1,35 @@
+{
+  "release": "2026-09-23.1",
+  "bbox": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "assets": [
+    "s3://overturemaps-us-west-2/release/2026-09-23.1/theme=buildings/type=building/part-00482-6b9726fa-c325-5248-96d5-c7323b49872a-c000.zstd.parquet",
+    "s3://overturemaps-us-west-2/release/2026-09-23.1/theme=buildings/type=building/part-00483-55216892-fe0d-5099-838e-bba177696dc1-c000.zstd.parquet"
+  ],
+  "stac_matches": [
+    {
+      "id": "00482",
+      "bbox": {
+        "xmin": 115.60717010498047,
+        "ymin": 29.04816246032715,
+        "xmax": 120.3044662475586,
+        "ymax": 31.324363708496094
+      },
+      "collection": "building"
+    },
+    {
+      "id": "00483",
+      "bbox": {
+        "xmin": 120.30254364013672,
+        "ymin": 29.048492431640625,
+        "xmax": 122.33231353759766,
+        "ymax": 31.32466697692871
+      },
+      "collection": "building"
+    }
+  ]
+}

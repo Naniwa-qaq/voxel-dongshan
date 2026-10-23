@@ -1,0 +1,1012 @@
+{
+  "version": "2026-10-23-ecology-assets-1",
+  "passed": true,
+  "source": "东山镇_重制版/js/vegetation.js",
+  "sourceSha256": "89465a7ffb9e6b937cb6a7923f216ff5b2f2bdcd0056dbce4c860e2d01f65684",
+  "command": "node scripts/verify_ecology_assets.cjs",
+  "policy": "源土地覆被约束+宏观坡度/相对高程/冠层/水岸渐变的可复现美术规则；所有硬地排除由场景处理；树种和地被为类型推断",
+  "constraints": {
+    "gridMetres": 0.2,
+    "treeTemplateSeeds": [
+      137,
+      208,
+      279
+    ],
+    "treeScales": [
+      1,
+      1.2
+    ],
+    "newTreeTemplateMaximumBoxes": 450,
+    "groundTemplateMaximumBoxes": 10,
+    "sampledTreeTemplates": 66,
+    "sampledGroundTemplates": 18
+  },
+  "regionalEvidence": [
+    {
+      "title": "苏州市农业农村局：我市“东山白沙枇杷”获农业农村部颁农产品地理标志",
+      "url": "https://nyncj.suzhou.gov.cn/nlj/ywdt/202005/888f8efe37c84f59bc02783fd6d64f1a.shtml",
+      "supports": "东山丘陵果园及陆巷、莫厘等产区的枇杷地域依据；不支持单株树位或树种判断"
+    },
+    {
+      "title": "苏州市农业农村局：今年第一波开采，本周末大量上市！",
+      "url": "https://nyncj.suzhou.gov.cn/nlj/tpxw/202506/cbc7f975d4744fd18e4bdd256af9b601.shtml",
+      "supports": "杨梅传统产区和山区村分布的地域依据；不支持当前场景某一格网的果园判断"
+    },
+    {
+      "title": "苏州市园林和绿化管理局：东山景区",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/fjmsq/201912/ac947bc93b954ecd9f7fe59f441f3329.shtml",
+      "supports": "东山花果与山水景区的地域背景；不支持树种比例或地被群落调查"
+    }
+  ],
+  "artInferences": [
+    "冠型比例及村落、校园、山林分配",
+    "坡度、冠层和水岸的地被密度阈值",
+    "所有生成树位和地被实例均为美术推断，源覆被仅约束大类"
+  ],
+  "ruleChecks": {
+    "shadeKinds": [
+      "fern",
+      "litter",
+      "shrub"
+    ],
+    "forestTreeTypes": [
+      "deciduous",
+      "evergreen",
+      "pine"
+    ],
+    "cropCoverDoesNotAssertFruitTypes": [
+      "camphor",
+      "deciduous",
+      "evergreen",
+      "pine"
+    ],
+    "explicitOrchardArtTypes": [
+      "loquat",
+      "waxberry"
+    ]
+  },
+  "trees": [
+    {
+      "type": "broadleaf",
+      "label": "阔叶乔木",
+      "maximumBoxes": 878,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 875,
+          "height": 9.200000000000001,
+          "radius": 4,
+          "connected": true,
+          "sha256": "9f7dbf2077ffbcdc29d327d10ec19a25bc7a3abe384c6353e40b747711216fff"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 875,
+          "height": 11.200000000000001,
+          "radius": 4.800000000000001,
+          "connected": true,
+          "sha256": "08a630ce9f9cc3c0720aaa0dcb593e6ecb6902a8fce901da7d4ec92b76697a45"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 860,
+          "height": 9.200000000000001,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "b15b1c398d62d11bdb5e3cf649b4c6c3e78a5b013cd7dd35191589381a99a04e"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 860,
+          "height": 11,
+          "radius": 5,
+          "connected": true,
+          "sha256": "5498b2ff46b301b03eefdd84c3ccd4b5864032dfaf6c57df18ade65fde48c4f9"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 878,
+          "height": 9.200000000000001,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "982869eb49303d97930a8b233436141e92ae84efb08881b94ec45f213dc675ba"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 878,
+          "height": 11.200000000000001,
+          "radius": 5.2,
+          "connected": true,
+          "sha256": "f238302f073afe31a70c508f8aa98debb4b47061577c982edde8f03d98ac8d01"
+        }
+      ]
+    },
+    {
+      "type": "willow",
+      "label": "垂柳型",
+      "maximumBoxes": 1361,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 1361,
+          "height": 9,
+          "radius": 4.6000000000000005,
+          "connected": true,
+          "sha256": "60f99982bb67718197be1bbb6be4ad162e46360c3f7e627c4360dc28d20db2ff"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 1361,
+          "height": 10.8,
+          "radius": 5.6000000000000005,
+          "connected": true,
+          "sha256": "4586795fe394af402e1fb6bdfcaa1ec7463bd17c5f82e7fa9e51db205b6a7308"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 1351,
+          "height": 9,
+          "radius": 4.6000000000000005,
+          "connected": true,
+          "sha256": "5e34dc3f0098560da9c2ba05a1deddef7b96ef8d93ea361e302af2c93ed0f16f"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 1351,
+          "height": 10.8,
+          "radius": 5.6000000000000005,
+          "connected": true,
+          "sha256": "769027f974c45ee67edaf116e083b22c8fbf4a2933580a9560874aa7158e304d"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 1357,
+          "height": 9,
+          "radius": 4.6000000000000005,
+          "connected": true,
+          "sha256": "f7bfd5599d69db19a7090f23bec63b60b55dd2df9695fb6527f11d4d9081afc3"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 1357,
+          "height": 10.8,
+          "radius": 5.4,
+          "connected": true,
+          "sha256": "ff222008e43397f638d592ee6e49e3463ec35bf6bf0f7570b5865c232c3de718"
+        }
+      ]
+    },
+    {
+      "type": "orchard",
+      "label": "果园乔木",
+      "maximumBoxes": 372,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 366,
+          "height": 5.800000000000001,
+          "radius": 2.8000000000000003,
+          "connected": true,
+          "sha256": "0f437137385da467a2ece40faa9b4b341bd0a2854762b1208ad832498bacebcf"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 366,
+          "height": 7,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "cb86c47e123651ead4c785d53c7400b05ff28fe8261d969774d63c99763df864"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 372,
+          "height": 5.800000000000001,
+          "radius": 3,
+          "connected": true,
+          "sha256": "05f0d6a802c6ba6776778e2894065b11e95d1f7621670355c9be7d1419283fa4"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 372,
+          "height": 7,
+          "radius": 3.6,
+          "connected": true,
+          "sha256": "1e06abccf8db00795c7828327dab9879161ba2feb2d404bf9839c9bc1c6999ab"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 372,
+          "height": 5.800000000000001,
+          "radius": 3.6,
+          "connected": true,
+          "sha256": "dc97bfea8bffd6bd55150d390ba4a01936552a0ba6243e27c4528d06052a24c5"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 372,
+          "height": 7,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "751a42494a68236e490ba95046faab0a48ded461caefda2f53279f761cee1d74"
+        }
+      ]
+    },
+    {
+      "type": "bamboo",
+      "label": "竹丛型",
+      "maximumBoxes": 612,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 612,
+          "height": 8.4,
+          "radius": 2,
+          "connected": true,
+          "sha256": "102f5da4dc343f819f57f57c472470f6942fe344094e81c7f9e8c46e193dabc8"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 612,
+          "height": 10.200000000000001,
+          "radius": 2.4000000000000004,
+          "connected": true,
+          "sha256": "4ba396792da42abbae84dc4a0a5ddf58151a5f1889f1e85abcb814ec504c7ec7"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 608,
+          "height": 8.6,
+          "radius": 2.4000000000000004,
+          "connected": true,
+          "sha256": "7e73c032c92568304b77d98cd1f370644693ed0d6e71c9310bfbaa1dffdc3b6b"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 608,
+          "height": 10.200000000000001,
+          "radius": 2.8000000000000003,
+          "connected": true,
+          "sha256": "16826a317a4486457a35521dd6155715ea3156b41104f525594ed87c315638e2"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 612,
+          "height": 8.4,
+          "radius": 2,
+          "connected": true,
+          "sha256": "2f2d1b6932e95572a612cc545b7f2a0408d979c710e370b915396decebf31ebc"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 612,
+          "height": 10.200000000000001,
+          "radius": 2.4000000000000004,
+          "connected": true,
+          "sha256": "2ff0a3f07bae0976aee72a2e3ee0761b168203ecd6850d56a423fb779331c22b"
+        }
+      ]
+    },
+    {
+      "type": "pine",
+      "label": "松型",
+      "maximumBoxes": 676,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 663,
+          "height": 9.200000000000001,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "b8b5c1b2a7ae40a70278d10f64695d5bb9f7715bd4271aa178a23019eff24b6f"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 663,
+          "height": 11,
+          "radius": 5.2,
+          "connected": true,
+          "sha256": "21d73549fced9047ac6ebf93428530dc22f633827e6b9bc83363692dcaf65df3"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 673,
+          "height": 9.200000000000001,
+          "radius": 4.4,
+          "connected": true,
+          "sha256": "6c030efbed45b97504b055df9945913675a8cee0e51dd21cb3797a0bd6957b85"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 673,
+          "height": 11,
+          "radius": 5.2,
+          "connected": true,
+          "sha256": "b41d3e61930f438f69dbcccab8817cb20d88f6b5bd9995b4c248f548f7ea2216"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 676,
+          "height": 9.200000000000001,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "160e1c170ca55579a048764c0dde648932bb9edc3a5aaeb030a269a14e4eda8e"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 676,
+          "height": 11,
+          "radius": 5.000000000000001,
+          "connected": true,
+          "sha256": "7cbc37579a5d9b9fc0130ab1a0ad70b57de3ddec9933c3f18667ca72fc717002"
+        }
+      ]
+    },
+    {
+      "type": "camphor",
+      "label": "香樟型",
+      "maximumBoxes": 304,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 304,
+          "height": 8.6,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "301b045474d4d9aa97bab6a1b9957819b8355855572567fe303731c663388757"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 304,
+          "height": 10.4,
+          "radius": 5,
+          "connected": true,
+          "sha256": "6109059afa7dace9816e029667078b3152119356b799a28d0939f58fea17103e"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 294,
+          "height": 8.6,
+          "radius": 4.6000000000000005,
+          "connected": true,
+          "sha256": "4d763115291588e866c5d4666746cd4f0ce7b8037c9e23c0c7788f612138602f"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 294,
+          "height": 10.4,
+          "radius": 5.6000000000000005,
+          "connected": true,
+          "sha256": "0d7d22ad13a3486d3f7072a474fbd2f2cbc5b7d20785c2eeeaf8d8f67c9f015c"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 293,
+          "height": 8.6,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "b4375559d30d51cecd8dab68c10b1ba7b088aa9eb31365ff3945a1480799fdfb"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 293,
+          "height": 10.4,
+          "radius": 5.2,
+          "connected": true,
+          "sha256": "713aa3a951c3ca9148a085ad15d06d9258c12891180fbeb3ea96674f51789431"
+        }
+      ]
+    },
+    {
+      "type": "evergreen",
+      "label": "常绿阔叶型",
+      "maximumBoxes": 282,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 280,
+          "height": 10.4,
+          "radius": 3.6000000000000005,
+          "connected": true,
+          "sha256": "a7d960c13c384af058bafc4fce948200f342443b09944718f3e45b473d783171"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 280,
+          "height": 12.4,
+          "radius": 4.2,
+          "connected": true,
+          "sha256": "1afa9371e44f142ea78cabe5923baef52c19ee9d88813e82c00b19427ddaf488"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 282,
+          "height": 10.4,
+          "radius": 3.8000000000000003,
+          "connected": true,
+          "sha256": "27affaaef8d61a43ca52bf7e7157dfaf430db5ec33bb54da30880d63e21ad935"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 282,
+          "height": 12.4,
+          "radius": 4.4,
+          "connected": true,
+          "sha256": "0ecdfd3ac41d83e7ab1d5f183d3e6c933a2527094685d97585a4e64c5d1d180a"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 280,
+          "height": 10.4,
+          "radius": 3.8000000000000003,
+          "connected": true,
+          "sha256": "7c5ec80b5c2f0b8272a4a2992596dcb8d9d341b8c7ebe0248883032639e1b23a"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 280,
+          "height": 12.4,
+          "radius": 4.4,
+          "connected": true,
+          "sha256": "6aa491b2758ea7310c39ed2d7d50753cdeda81838e35a8ec6969d6ac2fb463a4"
+        }
+      ]
+    },
+    {
+      "type": "deciduous",
+      "label": "落叶阔叶型",
+      "maximumBoxes": 412,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 412,
+          "height": 10.4,
+          "radius": 4.4,
+          "connected": true,
+          "sha256": "b4087ccde08ff9f6e6a82f8c0fa0711f3a882e2e7464249301e4bd7c200827be"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 412,
+          "height": 12.600000000000001,
+          "radius": 5.2,
+          "connected": true,
+          "sha256": "3c4c326784da1cd98a923bd4a3cdca29b884a9d224730f4a346a6245ee9c82ae"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 404,
+          "height": 10.4,
+          "radius": 4.6000000000000005,
+          "connected": true,
+          "sha256": "46498bd5454314b27c0b5ec481e0f9bb50bed4f98b453dd89258dca8342eaea9"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 404,
+          "height": 12.600000000000001,
+          "radius": 5.4,
+          "connected": true,
+          "sha256": "0390e4af14481b225789b4f2d3b2de5fb6630507eba23c237131d5b78f59abe9"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 409,
+          "height": 10.4,
+          "radius": 4,
+          "connected": true,
+          "sha256": "0e5ac958af834c4d07478076f4c84121990d7a7f1e3a84336d32b97a6cc5762c"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 409,
+          "height": 12.600000000000001,
+          "radius": 4.800000000000001,
+          "connected": true,
+          "sha256": "d0d4feb6e80c0d5d7fbbb555da78909ee3959caa54525ffbbfa47a920ae85957"
+        }
+      ]
+    },
+    {
+      "type": "loquat",
+      "label": "枇杷型",
+      "maximumBoxes": 229,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 229,
+          "height": 5.2,
+          "radius": 2.8000000000000003,
+          "connected": true,
+          "sha256": "f71a8787a1748e45cbdc41af7cc80e28ec2f1ec9afa1997e77b5d306983b6a02"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 229,
+          "height": 6.2,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "1cdf11fd7cb80a0a732e67fc80ed0635e4ad0bec1702c4a983da669267d73e99"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 225,
+          "height": 5.2,
+          "radius": 3,
+          "connected": true,
+          "sha256": "5b35e5e27eab016965f0149fadd59b6ec52a08b18aa63e7bf9c5fda020698ca9"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 225,
+          "height": 6.2,
+          "radius": 3.6,
+          "connected": true,
+          "sha256": "e295a5cdd1fdce640deedf3cfb87e359e247395c7593ac73f64020b75b66366b"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 223,
+          "height": 5.2,
+          "radius": 3,
+          "connected": true,
+          "sha256": "5e8f1fa650a714d30203130e15adc81197933c79647f7fd98437e0bc7ca99c31"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 223,
+          "height": 6.2,
+          "radius": 3.6,
+          "connected": true,
+          "sha256": "2bf2cd832aa45638b287d3ff5a0a99dc0d2b8cfe01dba2b9fa9bd4fb1d7771fa"
+        }
+      ]
+    },
+    {
+      "type": "waxberry",
+      "label": "杨梅型",
+      "maximumBoxes": 222,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 222,
+          "height": 5.800000000000001,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "4d301b85a9b64e9291b837629d7264729242ae01f7983a6cc62cf6ae72bfdd3a"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 222,
+          "height": 7,
+          "radius": 4,
+          "connected": true,
+          "sha256": "cee3acceb8ecfc0257945f413c31b7bb647e9a640f8ebcac709e2c9020d19703"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 217,
+          "height": 5.800000000000001,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "b24377bb07270d11ca8e478adc4ba67e1276efe76d99358d72c0964f5a9fdd72"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 217,
+          "height": 7,
+          "radius": 4,
+          "connected": true,
+          "sha256": "6e18c23214a048629570899ac1bb25565110a56f191c6242c62980c64060dee8"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 218,
+          "height": 5.800000000000001,
+          "radius": 3.2,
+          "connected": true,
+          "sha256": "6fc95498691245dd503e9e26969ea290ddead0f5bf756e7ba2226633634415ba"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 218,
+          "height": 7,
+          "radius": 3.8000000000000003,
+          "connected": true,
+          "sha256": "f75662a827be5826bba425867f26b50f9250fd7d1b25e556a3f09a99621b3685"
+        }
+      ]
+    },
+    {
+      "type": "metasequoia",
+      "label": "水杉型",
+      "maximumBoxes": 246,
+      "variants": [
+        {
+          "seed": 137,
+          "scale": 1,
+          "boxes": 246,
+          "height": 12.600000000000001,
+          "radius": 3,
+          "connected": true,
+          "sha256": "d733a64eaad7f2a8ca1f852aa1ebfb5a4313d9caa212170b1148ec008a11fd61"
+        },
+        {
+          "seed": 137,
+          "scale": 1.2,
+          "boxes": 246,
+          "height": 15.200000000000001,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "ce6d199862acb4ac2f1b804a56227e9fb88b3039115650c1fc49677c374ec856"
+        },
+        {
+          "seed": 208,
+          "scale": 1,
+          "boxes": 246,
+          "height": 12.600000000000001,
+          "radius": 3,
+          "connected": true,
+          "sha256": "3b3713c929d74c650ef82fd5664cb79460bf4ff434e44a9eaf330c3569a8bfb2"
+        },
+        {
+          "seed": 208,
+          "scale": 1.2,
+          "boxes": 246,
+          "height": 15.200000000000001,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "9801d0696d293e47a6c587cb163270f9e648a682fd46bfab7904f8aceb2b56ab"
+        },
+        {
+          "seed": 279,
+          "scale": 1,
+          "boxes": 246,
+          "height": 12.600000000000001,
+          "radius": 3,
+          "connected": true,
+          "sha256": "193e90eb57c5c790fcb643e1e1ce1f09719888adc36d787b751aa6271bdad8c5"
+        },
+        {
+          "seed": 279,
+          "scale": 1.2,
+          "boxes": 246,
+          "height": 15.200000000000001,
+          "radius": 3.4000000000000004,
+          "connected": true,
+          "sha256": "a5dada5929a9de0bbfd77c5b4f2c25ad5c151ac2c70bd9565797d943bb10d286"
+        }
+      ]
+    }
+  ],
+  "ground": [
+    {
+      "kind": "grass",
+      "maximumBoxes": 5,
+      "variants": [
+        {
+          "seed": 137,
+          "boxes": 5,
+          "height": 0.6000000000000001,
+          "radius": 0.4,
+          "sha256": "521a5533ea8b3108c84fee84d4661cd4f3df4bc7cb5d9092623554df9c73f355"
+        },
+        {
+          "seed": 208,
+          "boxes": 5,
+          "height": 0.6000000000000001,
+          "radius": 0.4,
+          "sha256": "6aa583302fd9cb878abb876f9568308ab71703716a185c17fa3fb6f5fdfffa64"
+        },
+        {
+          "seed": 279,
+          "boxes": 5,
+          "height": 0.6000000000000001,
+          "radius": 0.4,
+          "sha256": "f422b7ea9d088c49e149a087f7821b03fe0909002c8bdc46501307b25ce9037b"
+        }
+      ]
+    },
+    {
+      "kind": "fern",
+      "maximumBoxes": 9,
+      "variants": [
+        {
+          "seed": 137,
+          "boxes": 9,
+          "height": 0.6000000000000001,
+          "radius": 0.6000000000000001,
+          "sha256": "2f25a19be0e13b171a24954c4ce422a4d47fbbe8fa80f1dba0f431a090c550b7"
+        },
+        {
+          "seed": 208,
+          "boxes": 9,
+          "height": 0.6000000000000001,
+          "radius": 0.6000000000000001,
+          "sha256": "2f25a19be0e13b171a24954c4ce422a4d47fbbe8fa80f1dba0f431a090c550b7"
+        },
+        {
+          "seed": 279,
+          "boxes": 9,
+          "height": 0.6000000000000001,
+          "radius": 0.6000000000000001,
+          "sha256": "2f25a19be0e13b171a24954c4ce422a4d47fbbe8fa80f1dba0f431a090c550b7"
+        }
+      ]
+    },
+    {
+      "kind": "sedge",
+      "maximumBoxes": 7,
+      "variants": [
+        {
+          "seed": 137,
+          "boxes": 7,
+          "height": 1,
+          "radius": 0.4,
+          "sha256": "47f1ac57c136f084057af93d05ef39eab7509ec69fec756f047413c79db5911f"
+        },
+        {
+          "seed": 208,
+          "boxes": 7,
+          "height": 1,
+          "radius": 0.4,
+          "sha256": "be1f051c4df9427a93c5c9e89618c4840c561b4dc882a1d012d976dd10d832aa"
+        },
+        {
+          "seed": 279,
+          "boxes": 7,
+          "height": 1,
+          "radius": 0.4,
+          "sha256": "0872d7817598f7d68f74c7c0e3fab06e4496d1da0b082c0371cb092ca5f4f544"
+        }
+      ]
+    },
+    {
+      "kind": "shrub",
+      "maximumBoxes": 8,
+      "variants": [
+        {
+          "seed": 137,
+          "boxes": 8,
+          "height": 1,
+          "radius": 0.6000000000000001,
+          "sha256": "7d1823db5241ca6415249f8bb5e59dd800a3b747b1deccf06c4c78e31c29cec6"
+        },
+        {
+          "seed": 208,
+          "boxes": 8,
+          "height": 1,
+          "radius": 0.6000000000000001,
+          "sha256": "bfa9104125ba055ce89dee57a9a65a0f7a86425dcf0f3754e74cd3b2350afb85"
+        },
+        {
+          "seed": 279,
+          "boxes": 8,
+          "height": 1,
+          "radius": 0.6000000000000001,
+          "sha256": "5f1aa6b366e56e708ac4d984ceda588b30acd3a45803d4f88c4a1eb7b97fc77a"
+        }
+      ]
+    },
+    {
+      "kind": "litter",
+      "maximumBoxes": 4,
+      "variants": [
+        {
+          "seed": 137,
+          "boxes": 4,
+          "height": 0.2,
+          "radius": 0.8,
+          "sha256": "f8648783f42fcff40171bd3acd86a9d48d7e6dd4e971b6edaaeef52d93aeaa63"
+        },
+        {
+          "seed": 208,
+          "boxes": 4,
+          "height": 0.2,
+          "radius": 0.8,
+          "sha256": "95fcb89cfe907996b606b727d30098877fd8a6f81a84fd858a686cde5542a4d4"
+        },
+        {
+          "seed": 279,
+          "boxes": 4,
+          "height": 0.2,
+          "radius": 0.8,
+          "sha256": "a6b9ce9187c61ba6d79e8e078ffa8aedce32fa13429e553b86e9cfd146137181"
+        }
+      ]
+    },
+    {
+      "kind": "bare",
+      "maximumBoxes": 4,
+      "variants": [
+        {
+          "seed": 137,
+          "boxes": 4,
+          "height": 0.2,
+          "radius": 0.8,
+          "sha256": "1978fb1ab748b4d681979062faf3dc01e81be75cb6eacc4d11053b6a52a47a63"
+        },
+        {
+          "seed": 208,
+          "boxes": 4,
+          "height": 0.2,
+          "radius": 0.8,
+          "sha256": "8c500bc7f6f17914dc307d60dff1201865b7c0aabd07ddbea25b28a47c9fb85f"
+        },
+        {
+          "seed": 279,
+          "boxes": 4,
+          "height": 0.2,
+          "radius": 0.8,
+          "sha256": "9f5014d78431ac4796a02765a8180fd0581ad034d7eb0a431a9d679e1744d1e8"
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "input": {
+        "name": "sunlit-grassland",
+        "cover": 30,
+        "elevation": 20,
+        "slope": 0.1,
+        "wetness": 0.1,
+        "canopy": 0,
+        "x": 12,
+        "z": 18,
+        "seed": 137
+      },
+      "output": {
+        "kind": "grass",
+        "density": 0.5306217247772635,
+        "palette": [
+          7176777,
+          8163666,
+          9411936,
+          10528883
+        ],
+        "patch": 0.580182174334188,
+        "litter": 0,
+        "height": 0.2
+      }
+    },
+    {
+      "input": {
+        "name": "closed-forest-floor",
+        "cover": 10,
+        "elevation": 160,
+        "slope": 0.35,
+        "wetness": 0.4,
+        "canopy": 0.85,
+        "x": 12,
+        "z": 18,
+        "seed": 137
+      },
+      "output": {
+        "kind": "litter",
+        "density": 0.26670285,
+        "palette": [
+          7892043,
+          9010004,
+          10127710,
+          10850920
+        ],
+        "patch": 0.580182174334188,
+        "litter": 0.8075,
+        "height": 0.2
+      }
+    },
+    {
+      "input": {
+        "name": "moist-low-shore",
+        "cover": 30,
+        "elevation": 4,
+        "slope": 0.05,
+        "wetness": 0.9,
+        "canopy": 0,
+        "x": 12,
+        "z": 18,
+        "seed": 137
+      },
+      "output": {
+        "kind": "sedge",
+        "density": 0.5430637610169657,
+        "palette": [
+          6585673,
+          7899470,
+          9148763,
+          11182957
+        ],
+        "patch": 0.580182174334188,
+        "litter": 0,
+        "height": 0.8
+      }
+    },
+    {
+      "input": {
+        "name": "very-steep-exposed-slope",
+        "cover": 10,
+        "elevation": 250,
+        "slope": 1.6,
+        "wetness": 0,
+        "canopy": 0,
+        "x": 12,
+        "z": 18,
+        "seed": 137
+      },
+      "output": {
+        "kind": "bare",
+        "density": 0,
+        "palette": [
+          8485729,
+          9209195,
+          10064244,
+          10853758
+        ],
+        "patch": 0.580182174334188,
+        "litter": 0.17,
+        "height": 0.2
+      }
+    }
+  ],
+  "failures": []
+}

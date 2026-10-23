@@ -1,0 +1,98 @@
+{
+  "broken": [],
+  "checksumMatches": true,
+  "pairs": [
+    {
+      "first": "01-panorama-afternoon",
+      "second": "02-panorama-morning",
+      "sameCamera": true,
+      "sameNearChunks": true,
+      "sameOpaqueTriangles": true
+    },
+    {
+      "first": "01-panorama-afternoon",
+      "second": "03-panorama-noon",
+      "sameCamera": true,
+      "sameNearChunks": true,
+      "sameOpaqueTriangles": true
+    },
+    {
+      "first": "01-panorama-afternoon",
+      "second": "04-panorama-dusk",
+      "sameCamera": true,
+      "sameNearChunks": true,
+      "sameOpaqueTriangles": true
+    },
+    {
+      "first": "01-panorama-afternoon",
+      "second": "05-panorama-night",
+      "sameCamera": true,
+      "sameNearChunks": true,
+      "sameOpaqueTriangles": true
+    },
+    {
+      "first": "07-street-afternoon",
+      "second": "13-street-night",
+      "sameCamera": true,
+      "sameNearChunks": true,
+      "sameOpaqueTriangles": true
+    },
+    {
+      "first": "06-falls-afternoon",
+      "second": "14-falls-atmos-off",
+      "sameCamera": true,
+      "sameNearChunks": true,
+      "sameOpaqueTriangles": true
+    }
+  ],
+  "checks": [
+    {
+      "title": "《云山巨城》深度解析与仿作指南",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": [
+        {
+          "src": "images/18-style-overview.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/16-world-plan.png",
+          "loaded": true
+        },
+        {
+          "src": "images/20-atmos-comparison.jpg",
+          "loaded": true
+        },
+        {
+          "src": "images/19-time-comparison.jpg",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "title": "《云山巨城》源代码美术拆解",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "title": "云山巨城：程序架构与仿作提取笔记",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "title": "《云山巨城》学习与仿作路线",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": []
+    },
+    {
+      "title": "《云山巨城》深度解析与仿作指南",
+      "width": 390,
+      "scrollWidth": 390,
+      "mobile": true
+    }
+  ],
+  "pageErrors": []
+}

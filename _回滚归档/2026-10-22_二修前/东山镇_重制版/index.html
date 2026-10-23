@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>东山 · 山湖之间</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='5' fill='%238b4d38'/%3E%3Ctext x='12' y='45' fill='%23ede1c5' font-size='40'%3E山%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="scene" aria-label="东山镇陆巷体素场景"></canvas>
+<header class="masthead"><div class="seal">东山</div><div><p class="eyebrow">TAIHU · DONGSHAN</p><h1>山湖之间</h1><p class="subtitle">陆巷 · 体素街村习作</p></div></header>
+<div id="loading"><span class="loading-line"></span><p id="loadingText">构筑屋舍与山湖…</p></div>
+<aside class="view-caption"><span id="viewNumber">01 / 06</span><h2 id="viewTitle">湖岸入村</h2><p id="viewDesc">石岸、灰瓦与山前街巷</p></aside>
+<nav class="views" aria-label="固定视角">
+<button data-view="waterfront" class="active"><span>01</span>湖岸</button><button data-view="street"><span>02</span>街巷</button><button data-view="house"><span>03</span>屋舍</button><button data-view="court"><span>04</span>院落</button><button data-view="tree"><span>05</span>树下</button><button data-view="overview"><span>06</span>总览</button>
+</nav>
+<section class="tools"><button id="infoToggle" aria-label="资料与制作说明" title="资料与制作说明">i</button><button id="hideUi" title="隐藏界面 · H" aria-label="隐藏界面">◧</button><button id="resetView" title="重置当前视角" aria-label="重置当前视角">↺</button></section>
+<section class="light-control"><label for="daylight">日光 <span id="lightLabel">午后</span></label><input type="range" id="daylight" min="0" max="100" value="58" aria-label="日光时刻"><div><span>晨</span><span>午</span><span>暮</span></div></section>
+<footer><span class="live-dot"></span><span id="sceneStatus">构筑中</span><span class="controls-hint">拖动环视 · 右键平移 · 滚轮接近 · 双击聚焦 · WASD 移动</span></footer>
+<dialog id="info"><button class="close" id="closeInfo" aria-label="关闭">×</button><p class="eyebrow">THE MAKING OF DONGSHAN</p><h2>把尺度留给每一座屋舍</h2><p>以陆巷一带的岸线、道路、建筑足迹和地形为约束，选择与合并重复内容，重新编排完整房院、街巷和岸边。这里先呈现一个可以近看的连续样区。</p><div class="info-grid"><div><small>构件网格</small><strong>0.2 m</strong><p>分层黛瓦、檐椽、墙厚、洞口和窗格；乔木由枝干与透空叶簇组成。</p></div><div><small>制图综合</small><strong id="houseCount">—</strong><p>减少同质重复，保留临街、临水、院落和山湖层次。房屋构件不随范围机械缩小。</p></div></div><p class="muted">建筑细部为依据本地参考提炼的类型设计；未核实具体位置的古宅、街名与港名，不赋予场景内任意对象。30 米源 DSM 用于宏观地势，细格阶地属于显示重建。</p><p class="links"><a href="README.html" target="_blank">制作与资料记录 ↗</a><a href="../东山镇_数据/数据入口.html" target="_blank">原始数据 ↗</a><a href="../云山巨城_学习档案/学习手册.html" target="_blank">参考研习 ↗</a></p></dialog>
+<div id="error" hidden></div>
+<script src="vendor/three.min.js"></script><script src="js/design.js"></script><script src="js/architecture.js"></script><script src="js/vegetation.js"></script><script src="js/meshing.js"></script><script src="js/scene.js"></script>
+</body></html>

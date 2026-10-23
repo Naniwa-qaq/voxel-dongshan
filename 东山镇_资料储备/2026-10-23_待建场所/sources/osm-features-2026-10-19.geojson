@@ -1,0 +1,310 @@
+{
+  "type": "FeatureCollection",
+  "name": "Five traceable source sites",
+  "coordinateSystem": "WGS84 / longitude,latitude / RFC7946",
+  "sourceFile": "东山镇_数据/osm/selected_features_full_geometry.geojson",
+  "sourceFileRelativeTo": "workspace root",
+  "sourceSha256": "c4d2a9fec5ef8791b4f6f1475cf63c0c9f2acccbd48940045cf502ddeb4a17b7",
+  "sourceSnapshot": "2026-10-19",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "way/1101928343",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.3961839,
+              31.084431
+            ],
+            [
+              120.3964825,
+              31.084166
+            ],
+            [
+              120.3966339,
+              31.0842409
+            ],
+            [
+              120.397202,
+              31.0835775
+            ],
+            [
+              120.3972812,
+              31.083522
+            ],
+            [
+              120.3978712,
+              31.0837655
+            ],
+            [
+              120.3979432,
+              31.0836946
+            ],
+            [
+              120.3982921,
+              31.0838425
+            ],
+            [
+              120.3983065,
+              31.0840119
+            ],
+            [
+              120.3980619,
+              31.0844002
+            ],
+            [
+              120.3975438,
+              31.0848069
+            ],
+            [
+              120.3972776,
+              31.08481
+            ],
+            [
+              120.396943,
+              31.0850349
+            ],
+            [
+              120.3961839,
+              31.084431
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "amenity": "school",
+        "name": "莫厘中学",
+        "_osm_type": "way",
+        "_osm_id": 1101928343,
+        "_all_tags": {
+          "amenity": "school",
+          "name": "莫厘中学"
+        },
+        "_raw_response_files": [
+          "raw\\20261019\\poi.json"
+        ],
+        "_source_snapshots_utc": [
+          "2026-10-19T10:25:21Z"
+        ],
+        "_geometry_valid": true,
+        "_missing_geometry_positions": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1327190550",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.4008254,
+              31.0809079
+            ],
+            [
+              120.4010243,
+              31.0808344
+            ],
+            [
+              120.4009011,
+              31.080487
+            ],
+            [
+              120.4014351,
+              31.0801374
+            ],
+            [
+              120.4014223,
+              31.0800956
+            ],
+            [
+              120.4016277,
+              31.079979
+            ],
+            [
+              120.4018537,
+              31.0803023
+            ],
+            [
+              120.4020026,
+              31.0801901
+            ],
+            [
+              120.402552,
+              31.0805815
+            ],
+            [
+              120.4025751,
+              31.0806651
+            ],
+            [
+              120.4026804,
+              31.0807685
+            ],
+            [
+              120.4028678,
+              31.0809246
+            ],
+            [
+              120.4024391,
+              31.0812104
+            ],
+            [
+              120.4013299,
+              31.081725
+            ],
+            [
+              120.4010937,
+              31.0812082
+            ],
+            [
+              120.4010551,
+              31.0811599
+            ],
+            [
+              120.4008995,
+              31.0812024
+            ],
+            [
+              120.4008254,
+              31.0809079
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "amenity": "school",
+        "name": "江苏省实验小学莫厘实验小学",
+        "_osm_type": "way",
+        "_osm_id": 1327190550,
+        "_all_tags": {
+          "amenity": "school",
+          "name": "江苏省实验小学莫厘实验小学"
+        },
+        "_raw_response_files": [
+          "raw\\20261019\\poi.json"
+        ],
+        "_source_snapshots_utc": [
+          "2026-10-19T10:25:21Z"
+        ],
+        "_geometry_valid": true,
+        "_missing_geometry_positions": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "way/1327188516",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.4055443,
+              31.0851097
+            ],
+            [
+              120.4059808,
+              31.084852
+            ],
+            [
+              120.4056122,
+              31.0845616
+            ],
+            [
+              120.4052789,
+              31.0848495
+            ],
+            [
+              120.4055443,
+              31.0851097
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "东山首末站",
+        "public_transport": "station",
+        "_osm_type": "way",
+        "_osm_id": 1327188516,
+        "_all_tags": {
+          "amenity": "bus_station",
+          "bus": "yes",
+          "name": "东山首末站",
+          "public_transport": "station"
+        },
+        "_raw_response_files": [
+          "raw\\20261019\\poi.json"
+        ],
+        "_source_snapshots_utc": [
+          "2026-10-19T10:25:21Z"
+        ],
+        "_geometry_valid": true,
+        "_missing_geometry_positions": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13800863490",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3918743,
+          31.0950032
+        ]
+      },
+      "properties": {
+        "amenity": "place_of_worship",
+        "name": "法海寺",
+        "religion": "buddhist",
+        "_osm_type": "node",
+        "_osm_id": 13800863490,
+        "_all_tags": {
+          "amenity": "place_of_worship",
+          "name": "法海寺",
+          "religion": "buddhist"
+        },
+        "_raw_response_files": [
+          "raw\\20261019\\poi.json"
+        ],
+        "_source_snapshots_utc": [
+          "2026-10-19T10:25:21Z"
+        ],
+        "_geometry_valid": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "node/13800809431",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3872325,
+          31.0971525
+        ]
+      },
+      "properties": {
+        "direction": "290",
+        "name": "莫厘峰观景亭",
+        "tourism": "viewpoint",
+        "_osm_type": "node",
+        "_osm_id": 13800809431,
+        "_all_tags": {
+          "direction": "290",
+          "name": "莫厘峰观景亭",
+          "tourism": "viewpoint"
+        },
+        "_raw_response_files": [
+          "raw\\20261019\\poi.json"
+        ],
+        "_source_snapshots_utc": [
+          "2026-10-19T10:25:21Z"
+        ],
+        "_geometry_valid": true
+      }
+    }
+  ]
+}

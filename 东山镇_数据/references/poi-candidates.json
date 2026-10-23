@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "audited_on_local": "2026-10-19",
+  "original_collection_on_local": "2026-10-16",
+  "record_count": 10,
+  "point_of_interest_records": 9,
+  "context_layer_records": 1,
+  "coordinate_policy": "本批全部坐标留空，不从照片、院落示意图或模糊地名猜坐标。",
+  "candidates": [
+    {
+      "id": "luxiang-village",
+      "name": "陆巷古村",
+      "category": "聚落组群",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "luxiang-2026"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml"
+      ],
+      "local_image_ids": [
+        "01-luxiang-setting",
+        "02-luxiang-hanshan-port",
+        "03-luxiang-huilaotang",
+        "04-luxiang-zishi-street"
+      ],
+      "identity_evidence_summary": "古街、巷道、港道与太湖及山坞的整体关系",
+      "generalization_design_suggestion": "街坊可聚合、重复民房可删减；保留主要街巷水道骨架",
+      "remaining_evidence_gaps": "现状边界、道路水网落位、普通民房类型样本",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "hanshan-port",
+      "name": "寒山港",
+      "category": "港道与岸线",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "luxiang-2026"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml"
+      ],
+      "local_image_ids": [
+        "02-luxiang-hanshan-port"
+      ],
+      "identity_evidence_summary": "水道、石驳岸、步道和民居的相对关系",
+      "generalization_design_suggestion": "可减小岸线碎折和重复护栏；不凭单幅照片补造全线",
+      "remaining_evidence_gaps": "港道全线、入湖关系、岸线定位与水位",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "huihetang",
+      "name": "惠和堂",
+      "category": "宅园",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "huihetang",
+        "museum-huihetang"
+      ],
+      "evidence_urls": [
+        "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+        "https://www.thepaper.cn/newsDetail_forward_15501667"
+      ],
+      "local_image_ids": [
+        "05-huihetang-garden",
+        "06-huihetang-01",
+        "07-huihetang-03",
+        "08-huihetang-04",
+        "16-huihetang-overview",
+        "17-huihetang-plan",
+        "18-huihetang-courtyard"
+      ],
+      "identity_evidence_summary": "官方文字记述五进、三路；图像可辨多路院落、屋顶与天井",
+      "generalization_design_suggestion": "以院落带、主屋体量、围墙和留空表达；省略细雕、门窗重复",
+      "remaining_evidence_gaps": "可靠占地定位、朝向及粗略高度；现有图无坐标/尺寸链",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "huilaotang",
+      "name": "会老堂",
+      "category": "古宅",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "luxiang-2026"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml"
+      ],
+      "local_image_ids": [
+        "03-luxiang-huilaotang"
+      ],
+      "identity_evidence_summary": "可读围合院落、月洞门、廊檐、灰瓦白墙",
+      "generalization_design_suggestion": "可抽成主屋、围墙、月洞门和院落留空",
+      "remaining_evidence_gaps": "完整总平面、屋顶轮廓、具体位置；单幅图仅为局部",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "zishi-street",
+      "name": "紫石街及三元牌坊组",
+      "category": "历史街巷",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "luxiang-2026"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml"
+      ],
+      "local_image_ids": [
+        "04-luxiang-zishi-street"
+      ],
+      "identity_evidence_summary": "主街及跨街石牌坊是识别对象；图为石板巷道和一处牌坊",
+      "generalization_design_suggestion": "保留主街方向与代表性牌坊；重复街屋可聚合",
+      "remaining_evidence_gaps": "三座牌坊实际坐标、间距、现状尺度；不能将入口牌楼当三元牌坊",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "chunzailou",
+      "name": "春在楼（东山雕花楼）",
+      "category": "近代宅园",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "dongshan-2019",
+        "heritage-register"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+        "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml"
+      ],
+      "local_image_ids": [
+        "12-chunzailou"
+      ],
+      "identity_evidence_summary": "可读两层楼廊围合、天井和突出砖雕门楼",
+      "generalization_design_suggestion": "保留楼廊、天井与门楼体块；雕刻可用层次提示",
+      "remaining_evidence_gaps": "院落整体轮廓、朝向和位置；局部照片不等于全院测绘",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "xuanyuangong-dongshan",
+      "name": "东山轩辕宫",
+      "category": "寺庙建筑",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "dongshan-2019",
+        "heritage-register"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+        "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml"
+      ],
+      "local_image_ids": [
+        "13-xuanyuangong"
+      ],
+      "identity_evidence_summary": "官方名录对象为东山杨湾轩辕宫正殿；外观有深檐、翘角和红黄墙木构",
+      "generalization_design_suggestion": "突出主殿屋顶与檐口、台基和墙面色块；省略饰件",
+      "remaining_evidence_gaps": "具体范围、朝向、正殿体量；不得与洪元弄同名宫观混用",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "qiyuan",
+      "name": "启园",
+      "category": "湖滨园林",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "qiyuan",
+        "dongshan-2019"
+      ],
+      "evidence_urls": [
+        "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/e8588bd2ca084a0bbb97b907eff35e2f.shtml",
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml"
+      ],
+      "local_image_ids": [
+        "09-qiyuan-4100",
+        "10-qiyuan-4112",
+        "11-qiyuan-4117"
+      ],
+      "identity_evidence_summary": "可读园内池岸廊桥、叠石、照壁和庭院",
+      "generalization_design_suggestion": "保留主要建筑、池石与留空；细小假山和园路可聚合",
+      "remaining_evidence_gaps": "整体平面、湖岸接口与主要建筑外观；园池不能当太湖岸线",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "daixinwan-bridge",
+      "name": "岱心湾大桥",
+      "category": "滨湖道路桥梁",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "dongshan-2019"
+      ],
+      "evidence_urls": [
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml"
+      ],
+      "local_image_ids": [
+        "14-daixinwan-bridge"
+      ],
+      "identity_evidence_summary": "可读弯曲桥路、连续桥孔、湖岸植被和山体聚落",
+      "generalization_design_suggestion": "保留转弯、跨水段与岸线关系；桥孔、路灯、车辆可减重复",
+      "remaining_evidence_gaps": "可靠线形、两端连接与高度；照片透视不等于几何线形",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    },
+    {
+      "id": "mountain-orchard-context",
+      "name": "东山山体—茶果园背景层",
+      "category": "主题环境层（不是单个POI）",
+      "coordinates": null,
+      "coordinate_reference_system": null,
+      "geometry": null,
+      "coordinate_status": "本参考包未提供可追溯坐标依据，留空；应与独立地理资料模块匹配后再落位",
+      "evidence_source_ids": [
+        "dongshan-scenic",
+        "dongshan-2019",
+        "dongshan-2025",
+        "luxiang-2026"
+      ],
+      "evidence_urls": [
+        "https://ylj.suzhou.gov.cn/szsylj/fjmsq/201912/ac947bc93b954ecd9f7fe59f441f3329.shtml",
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b.shtml",
+        "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml"
+      ],
+      "local_image_ids": [],
+      "identity_evidence_summary": "官方文字支持山水古镇、花果名茶、茶园及枇杷杨梅柑橘等果树的地域主题",
+      "generalization_design_suggestion": "作为山体轮廓、果林斑块及少量茶垄表达；不逐株种树",
+      "remaining_evidence_gaps": "本批无专门可定位茶果园照片、树种冠形和当前种植范围；不能据文字猜出地块",
+      "research_reference_only": true,
+      "model_accuracy_level": "制图综合参考，不是逐栋测绘复原",
+      "rights_status": "原图未确认开放许可；仅内部研究，不默认可公开贴图或再分发"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{pathToFileURL}=require('node:url');
+const {chromium}=require('C:/Users/YHJ/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const ROOT=path.resolve(__dirname,'..'),OUT=path.join(ROOT,'东山镇_资料储备/2026-10-23_待建场所');
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+(async()=>{const data=read(path.join(OUT,'poi-reserve.json')),manifest=read(path.join(OUT,'image-manifest.json')),old=read(path.join(ROOT,'东山镇_数据/references/index.json'));
+  const reused=manifest.filter(x=>x.path.startsWith('..')).map(x=>{const filename=path.basename(x.path),record=old.images.find(i=>path.basename(i.file)===filename);return{path:x.path,oldChecksumMatches:!!record&&record.sha256===hash(path.resolve(OUT,x.path))}});
+  const assertions={eightRecords:data.records.length===8,fiveSourceAnchors:data.records.filter(r=>r.location.wgs84).length===5,threeUnlocatedRemainNull:['huihetang','zishi-street','hanshan-port'].every(id=>data.records.find(r=>r.id===id).location.wgs84===null),allImageChecksumsMatch:manifest.every(i=>hash(path.resolve(OUT,i.path))===i.sha256),reusedImagesUnchanged:reused.every(i=>i.oldChecksumMatches),threeSourcePlans:data.sourceGeometryReferences.length===3};
+  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--allow-file-access-from-files']});const errors=[],failed=[],requests=[];
+  try{const p=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});p.on('pageerror',e=>errors.push(e.message));p.on('requestfailed',r=>failed.push(r.url()));p.on('request',r=>requests.push(r.url()));await p.goto(pathToFileURL(path.join(OUT,'index.html')).href);
+    const images=await p.evaluate(async()=>{const imgs=[...document.images];imgs.forEach(i=>i.loading='eager');return await Promise.all(imgs.map(async i=>{try{await i.decode();return{src:i.getAttribute('src'),loaded:i.naturalWidth>0,width:i.naturalWidth,height:i.naturalHeight}}catch{return{src:i.getAttribute('src'),loaded:false}}}))});
+    await p.screenshot({path:path.join(OUT,'catalogue-desktop.png')});
+    const desktop=await p.evaluate(()=>({cards:document.querySelectorAll('.poi').length,horizontalOverflow:document.documentElement.scrollWidth>innerWidth+1}));
+    await p.locator('#search').fill('莫厘中学');const filtered=await p.locator('.poi:visible').count();await p.locator('#search').fill('');
+    await p.locator('#moli-middle-school').scrollIntoViewIfNeeded();await p.screenshot({path:path.join(OUT,'catalogue-school.png')});
+    await p.setViewportSize({width:390,height:844});await p.evaluate(()=>scrollTo(0,0));await p.screenshot({path:path.join(OUT,'catalogue-mobile.png')});
+    const mobile=await p.evaluate(()=>({horizontalOverflow:document.documentElement.scrollWidth>innerWidth+1}));
+    Object.assign(assertions,{allLocalImagesDecode:images.length===manifest.length&&images.every(i=>i.loaded),catalogueHasEightCards:desktop.cards===8,desktopFitsViewport:!desktop.horizontalOverflow,mobileFitsViewport:!mobile.horizontalOverflow,searchFiltersCorrectly:filtered===1,noRemoteResourceRequests:requests.every(u=>u.startsWith('file:')||u.startsWith('data:')),noPageErrors:errors.length===0,noResourceFailures:failed.length===0});
+    const result={date:'2026-10-23',passed:Object.values(assertions).every(Boolean),assertions,counts:data.counts,reused,images,desktop,mobile,errors,failed};fs.writeFileSync(path.join(OUT,'browser-qa.json'),JSON.stringify(result,null,2));console.log(JSON.stringify({passed:result.passed,assertions,counts:data.counts,errors,failed},null,2));if(!result.passed)process.exitCode=1;
+  }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

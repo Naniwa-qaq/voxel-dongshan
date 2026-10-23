@@ -1,0 +1,1273 @@
+{
+  "audit_utc": "2026-10-19T07:19:21.267131+00:00",
+  "audit_date_local": "2026-10-19",
+  "operation": "Reuse source files collected 2026-10-16; offline audit and local derivation only; no new downloads",
+  "original_manifest_created_utc": "2026-10-15T16:49:22.157096+00:00",
+  "requested_bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "extent_role": "采集包络；不是行政边界",
+  "python_runtime": "C:\\Program Files\\ArcGIS\\Pro\\bin\\Python\\envs\\arcgispro-py3\\python.exe",
+  "gdal_version": "GDAL 3.12.2e \"for ArcGIS 3.7\", released 2026/02/03; Esri build 34fdbfd31b@build/gdal-merge, built on 2026/04/09",
+  "source_integrity": {
+    "manifest_records_checked": 39,
+    "listed_raw_objects_checked": 32,
+    "science_tiffs_full_read": 10,
+    "failures": [],
+    "files": [
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\aws_registry_copernicus_dem.html",
+        "exists": true,
+        "bytes": 9202,
+        "sha256": "c9215f2e18745ffcb33a2ed16c3f2ef5fab4dce70babace9132afe402c149320",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\aws_copernicus_dem_readme.html",
+        "exists": true,
+        "bytes": 8536,
+        "sha256": "922461d55070e3c7e0cf2903ec54190d69e3773da2dc9e776a3f03566cfd56d2",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\copernicus_product_page.html",
+        "exists": true,
+        "bytes": 110647,
+        "sha256": "66c5820543b5747d79474f043dd9c8ad3de040cd7e95a48931933ec775ffeb05",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\License-COPDEM-30.pdf",
+        "exists": true,
+        "bytes": 113786,
+        "sha256": "9cd37d37ea654bbcaf0a2e059e6a3a5b5f76072824d8dd860ccf274ada8951bd",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\Copernicus_DEM_Product_Handbook_i5.0.pdf",
+        "exists": true,
+        "bytes": 3541026,
+        "sha256": "b5a0b027bddef7122e39de368dba9cf10adce8631a2e3026d246b4be98c3f0c4",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM_listing.xml",
+        "exists": true,
+        "bytes": 4873,
+        "sha256": "256b6a8b93a89080cf31556278e4865828c68a3314f131ae2c60f2838c814765",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\provenance\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM_listing.xml",
+        "exists": true,
+        "bytes": 4873,
+        "sha256": "fcc4db1250f10362cb31c1f7f7a232302bf87850adbd8d27cf46d86c588822b4",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_10_N30_00_E120_00_ACM.kml",
+        "exists": true,
+        "bytes": 677,
+        "sha256": "381c2a3d39f5c8cce09b1d4a7a2d5c0badbd3f22fb44372e1df98634ed126b74",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_EDM.tif",
+        "exists": true,
+        "bytes": 1174167,
+        "sha256": "1ca2afcaf78382823278bed89830d21b03f45785ac34dc2e32a5b3d88f428341",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_FLM.tif",
+        "exists": true,
+        "bytes": 1015509,
+        "sha256": "6090d033bf7f2e618804e8de6acdee8ae6e1c848180b8e9852d6e5bd50baebc7",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_HEM.tif",
+        "exists": true,
+        "bytes": 47107464,
+        "sha256": "dcc6add1233acd7c86005699b366f8f0e25a29937be22313996978b0d9e9ccf6",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true,
+        "source_etag_md5_verified_during_original_collection": true,
+        "md5": "0d8c15eae7c0ad18205effa5563b6ff1",
+        "matches_original_source_etag_md5": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_WBM.tif",
+        "exists": true,
+        "bytes": 860768,
+        "sha256": "16d72a7349cc862db591552e39815dce93e49709aa56a63206a53741ca23f0f6",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_10_N30_00_E120_00.xml",
+        "exists": true,
+        "bytes": 44726,
+        "sha256": "473cae31ca69455756cc9029827be965c28685d861fcb15c91fbff91cf9d064e",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+        "exists": true,
+        "bytes": 47859448,
+        "sha256": "929b54f8bb3a51910e4a6b4ac9f052a607245fd0e43a0846b5501663d18af010",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true,
+        "source_etag_md5_verified_during_original_collection": true,
+        "md5": "f5fa3e46804608a03f85c0fa522a210f",
+        "matches_original_source_etag_md5": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\INFO\\eula_F.pdf",
+        "exists": true,
+        "bytes": 117522,
+        "sha256": "32049914c37f14e7d53b48d13d74a49e77c030236e2acc7a0df426f9344feba2",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_DEM_ABS_QL.tif",
+        "exists": true,
+        "bytes": 1561332,
+        "sha256": "8642df651ac04cc7a7b7eb12ae57ca525f776fc965f7e4d3e624f811dacdbdab",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_DEM_QL.tif",
+        "exists": true,
+        "bytes": 1561332,
+        "sha256": "91528b88ba082b6f8b4402766b95fb58f3286c76e984fc59c1066e95d52dc183",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_EDM_QL.tif",
+        "exists": true,
+        "bytes": 80534,
+        "sha256": "69202864100f3ccc1ebab9a142c9fc0eed5d8acb26b71b768ba59ff5288975ac",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_FLM_QL.tif",
+        "exists": true,
+        "bytes": 75134,
+        "sha256": "fe07c1bc292030653116fff58355da1701af52d83ad5fdedc741193ee55048b9",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_HEM_QL.tif",
+        "exists": true,
+        "bytes": 526030,
+        "sha256": "fe183b222397291627a130a24a34a2dad5762ada1a89354ac99e0b89add8148b",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_QL.kml",
+        "exists": true,
+        "bytes": 2116,
+        "sha256": "26297ad6d3e7149596692c080bbf390c6bfefb0ae4d0f310135e1dbfdad1335c",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_SRC.kml",
+        "exists": true,
+        "bytes": 80333,
+        "sha256": "10d063fd7c0f480b59ade354d89848fbc1ffe06dce17055d3c042e7a5ec70627",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_WBM_QL.tif",
+        "exists": true,
+        "bytes": 77738,
+        "sha256": "8d2e2b995d0c93bea4b6b8ecfe182a629ca128e256726176c31f024f634cf1c2",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_10_N31_00_E120_00_ACM.kml",
+        "exists": true,
+        "bytes": 677,
+        "sha256": "3e3e4c296cd19c76da8e275e53b5ca03626ff4f13af977f88dd24af3e5e3c42d",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_EDM.tif",
+        "exists": true,
+        "bytes": 1184459,
+        "sha256": "6d016e515e8c425313eec5d6aa086ba8867b7bfbc7133c310ceb64cc7d7b69c3",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_FLM.tif",
+        "exists": true,
+        "bytes": 1020460,
+        "sha256": "91ffb35e6da03ee54df16f8624d366a35f861f490267149ae5fb1075862bccb4",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_HEM.tif",
+        "exists": true,
+        "bytes": 39631617,
+        "sha256": "fe7f9f0b19609661a14a35a857f50bae94fe2ea5d4a1652238971b2ac5c2001c",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true,
+        "source_etag_md5_verified_during_original_collection": true,
+        "md5": "81d48ef22ba4da6f2d8fb11f6bcff354",
+        "matches_original_source_etag_md5": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_WBM.tif",
+        "exists": true,
+        "bytes": 800828,
+        "sha256": "7874114851772972144fe95a324a21e4a6fc24864df3e11c2d7f348d2401042c",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_10_N31_00_E120_00.xml",
+        "exists": true,
+        "bytes": 44707,
+        "sha256": "bf1a7f0f21fbad6ebb813c7f5b5a7336a03a22dc92901d89da6ea69272aac029",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+        "exists": true,
+        "bytes": 40599423,
+        "sha256": "9a8f5720819f197227db92b4f2abadb5dcc7ab14652f07c0ce02d59611feab5c",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true,
+        "source_etag_md5_verified_during_original_collection": true,
+        "md5": "6cb1a3707809420a02ebe2961a77e7a6",
+        "matches_original_source_etag_md5": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\INFO\\eula_F.pdf",
+        "exists": true,
+        "bytes": 117522,
+        "sha256": "32049914c37f14e7d53b48d13d74a49e77c030236e2acc7a0df426f9344feba2",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_DEM_ABS_QL.tif",
+        "exists": true,
+        "bytes": 1561332,
+        "sha256": "a428c9a16b327af6149a92c15295618fe72048ec39cf46c7a01d0171352ba80b",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_DEM_QL.tif",
+        "exists": true,
+        "bytes": 1561332,
+        "sha256": "f46b01c0b7cc5105f88d1a415e8b17059cb574378b6e052ceea378ebec1a6519",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_EDM_QL.tif",
+        "exists": true,
+        "bytes": 76388,
+        "sha256": "9644b2dff7f55205f750f3dbe6394202555d29a062088f713d2752e681560a65",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_FLM_QL.tif",
+        "exists": true,
+        "bytes": 74556,
+        "sha256": "9517072dd051eb9c4dedae9ff34b699fe9a6f2b002c8cd36bdaceb874754b57d",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_HEM_QL.tif",
+        "exists": true,
+        "bytes": 526030,
+        "sha256": "b2a63999aeb23551827245f57515baa288061b995fbdce777ee15891f131398d",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_QL.kml",
+        "exists": true,
+        "bytes": 2116,
+        "sha256": "5301d9af4550461fdb4cded41f9b6ebc8478738f2b14afb2703bb366aaedeb84",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_SRC.kml",
+        "exists": true,
+        "bytes": 62656,
+        "sha256": "244449eca1c79584fe9469a5696d3012026e4aa570f5ae228e99c0345f1798cf",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_WBM_QL.tif",
+        "exists": true,
+        "bytes": 72592,
+        "sha256": "3ab4565851ffc7c721307e1a9aada1d8504beaf332d9a14b107f4c7d649d446c",
+        "matches_recorded_bytes": true,
+        "matches_recorded_sha256": true
+      }
+    ],
+    "listed_objects": [
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_10_N30_00_E120_00_ACM.kml",
+        "listed_bytes": 677,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_EDM.tif",
+        "listed_bytes": 1174167,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_FLM.tif",
+        "listed_bytes": 1015509,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_HEM.tif",
+        "listed_bytes": 47107464,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_WBM.tif",
+        "listed_bytes": 860768,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_10_N30_00_E120_00.xml",
+        "listed_bytes": 44726,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+        "listed_bytes": 47859448,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\INFO\\eula_F.pdf",
+        "listed_bytes": 117522,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_DEM_ABS_QL.tif",
+        "listed_bytes": 1561332,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_DEM_QL.tif",
+        "listed_bytes": 1561332,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_EDM_QL.tif",
+        "listed_bytes": 80534,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_FLM_QL.tif",
+        "listed_bytes": 75134,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_HEM_QL.tif",
+        "listed_bytes": 526030,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_QL.kml",
+        "listed_bytes": 2116,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_SRC.kml",
+        "listed_bytes": 80333,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N30_00_E120_00_WBM_QL.tif",
+        "listed_bytes": 77738,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_10_N31_00_E120_00_ACM.kml",
+        "listed_bytes": 677,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_EDM.tif",
+        "listed_bytes": 1184459,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_FLM.tif",
+        "listed_bytes": 1020460,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_HEM.tif",
+        "listed_bytes": 39631617,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_WBM.tif",
+        "listed_bytes": 800828,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_10_N31_00_E120_00.xml",
+        "listed_bytes": 44707,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+        "listed_bytes": 40599423,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\INFO\\eula_F.pdf",
+        "listed_bytes": 117522,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_DEM_ABS_QL.tif",
+        "listed_bytes": 1561332,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_DEM_QL.tif",
+        "listed_bytes": 1561332,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_EDM_QL.tif",
+        "listed_bytes": 76388,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_FLM_QL.tif",
+        "listed_bytes": 74556,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_HEM_QL.tif",
+        "listed_bytes": 526030,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_QL.kml",
+        "listed_bytes": 2116,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_SRC.kml",
+        "listed_bytes": 62656,
+        "matches_listing": true
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\PREVIEW\\Copernicus_DSM_10_N31_00_E120_00_WBM_QL.tif",
+        "listed_bytes": 72592,
+        "matches_listing": true
+      }
+    ],
+    "science_rasters": [
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          31.000138888888888,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 58761,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_EDM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          31.000138888888888,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 25541,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_FLM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          31.000138888888888,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 2155,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_HEM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          31.000138888888888,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 16439,
+        "decoded_all_pixels": true,
+        "nodata": -32767.0
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N30_00_E120_00_WBM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          31.000138888888888,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 19219,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          32.00013888888889,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 65224,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_EDM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          32.00013888888889,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 12099,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_FLM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          32.00013888888889,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 26219,
+        "decoded_all_pixels": true,
+        "nodata": null
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_HEM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          32.00013888888889,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 9046,
+        "decoded_all_pixels": true,
+        "nodata": -32767.0
+      },
+      {
+        "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\AUXFILES\\Copernicus_DSM_COG_10_N31_00_E120_00_WBM.tif",
+        "width": 3600,
+        "height": 3600,
+        "geotransform": [
+          119.99986111111112,
+          0.0002777777777777778,
+          0.0,
+          32.00013888888889,
+          0.0,
+          -0.0002777777777777778
+        ],
+        "gdal_band_checksum": 39241,
+        "decoded_all_pixels": true,
+        "nodata": null
+      }
+    ]
+  },
+  "source_tile_dates": [
+    {
+      "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_10_N30_00_E120_00.xml",
+      "demTileVersion": "1",
+      "generationTime": "2015-06-24T16:48:58.000000Z",
+      "tileVersion": "02",
+      "tsxx_startTime": "2011-02-15T10:00:32.417002Z",
+      "tsxx_stopTime": "2014-09-05T10:01:46.426246Z"
+    },
+    {
+      "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_10_N31_00_E120_00.xml",
+      "demTileVersion": "1",
+      "generationTime": "2015-06-24T20:54:24.000000Z",
+      "tileVersion": "02",
+      "tsxx_startTime": "2011-02-15T10:00:32.417002Z",
+      "tsxx_stopTime": "2014-04-04T10:01:58.178107Z"
+    }
+  ],
+  "native_derivatives": {
+    "DSM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wgs84.tif",
+      "bytes": 823018,
+      "sha256": "fdf0b7348c3e1507e6dd7766ab580d5af93dfff35143ebde6097d891ea0387d2",
+      "width": 793,
+      "height": 865,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_units": "degree",
+      "type": "Float32",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": -62.0,
+      "max": 291.3326110839844,
+      "gdal_band_checksum": 27656,
+      "percentiles_0_25_50_75_95_99_100": [
+        -62.0,
+        0.5,
+        0.5,
+        2.157890796661377,
+        31.51393890380848,
+        118.86388153076157,
+        291.3326110839844
+      ]
+    },
+    "EDM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_edm_wgs84.tif",
+      "bytes": 33515,
+      "sha256": "660e0a82788f401bf32d91f5ec7c138953387a5591023aaa8cd51ab2b75c67e6",
+      "width": 793,
+      "height": 865,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_units": "degree",
+      "type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 1.0,
+      "max": 11.0,
+      "gdal_band_checksum": 56756,
+      "valid_pixel_value_counts": {
+        "1": 209812,
+        "2": 1144,
+        "3": 396,
+        "4": 774,
+        "6": 12,
+        "9": 467710,
+        "10": 2880,
+        "11": 3217
+      }
+    },
+    "FLM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_flm_wgs84.tif",
+      "bytes": 28211,
+      "sha256": "b38ae8a9ca33c19133d1c0cde6552b7e513048f9a3c8bfb85837e75d4ce6f860",
+      "width": 793,
+      "height": 865,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_units": "degree",
+      "type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 1.0,
+      "max": 5.0,
+      "gdal_band_checksum": 48232,
+      "valid_pixel_value_counts": {
+        "1": 474989,
+        "2": 209812,
+        "3": 65,
+        "4": 3,
+        "5": 1076
+      }
+    },
+    "HEM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_hem_wgs84.tif",
+      "bytes": 669167,
+      "sha256": "04fa0bdc28dc56fe7c9ff8d9ad7441daef69acc7a84f23d12f9343030d34b3e5",
+      "width": 793,
+      "height": 865,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_units": "degree",
+      "type": "Float32",
+      "nodata": -32767.0,
+      "valid_pixels": 209812,
+      "total_pixels": 685945,
+      "valid_fraction": 0.305872919840512,
+      "min": 0.1372811496257782,
+      "max": 38.072872161865234,
+      "gdal_band_checksum": 5875,
+      "percentiles_0_25_50_75_95_99_100": [
+        0.1372811496257782,
+        0.39540945738554,
+        0.494712233543396,
+        0.6384694427251816,
+        1.3572459280490863,
+        2.8385008454322613,
+        38.072872161865234
+      ]
+    },
+    "WBM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wbm_wgs84.tif",
+      "bytes": 27571,
+      "sha256": "2f5274c90897b1ecc5b009019c46b89bc8ed8b2c1511b99adb0b2404b3ca6a38",
+      "width": 793,
+      "height": 865,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_units": "degree",
+      "type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 0.0,
+      "max": 3.0,
+      "gdal_band_checksum": 26556,
+      "valid_pixel_value_counts": {
+        "0": 215355,
+        "2": 467710,
+        "3": 2880
+      }
+    }
+  },
+  "metric_derivatives": {
+    "DSM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_utm51n_30m.tif",
+      "bytes": 845712,
+      "sha256": "b4e020f30c3520bfde93d56928a93f6be1d7ee9cd6e0d0131ac4dd4e84a416e0",
+      "width": 722,
+      "height": 905,
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 51N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": null,
+      "geotransform": [
+        240210.0,
+        30.0,
+        0.0,
+        3457200.0,
+        0.0,
+        -30.0
+      ],
+      "bounds": [
+        240210.0,
+        3430050.0,
+        261870.0,
+        3457200.0
+      ],
+      "pixel_size": [
+        30.0,
+        30.0
+      ],
+      "pixel_units": "metre",
+      "type": "Float32",
+      "nodata": -9999.0,
+      "valid_pixels": 622538,
+      "total_pixels": 653410,
+      "valid_fraction": 0.95275248312698,
+      "min": -62.0,
+      "max": 290.0906982421875,
+      "gdal_band_checksum": 4325,
+      "percentiles_0_25_50_75_95_99_100": [
+        -62.0,
+        0.5,
+        0.5,
+        2.181527614593506,
+        31.480762195587207,
+        118.76036880493167,
+        290.0906982421875
+      ]
+    },
+    "EDM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_edm_utm51n_30m.tif",
+      "bytes": 38916,
+      "sha256": "4d55cc8221122af31cf97094997e19c6f8b1b9afeb142371f7da6a274cc9b59a",
+      "width": 722,
+      "height": 905,
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 51N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": null,
+      "geotransform": [
+        240210.0,
+        30.0,
+        0.0,
+        3457200.0,
+        0.0,
+        -30.0
+      ],
+      "bounds": [
+        240210.0,
+        3430050.0,
+        261870.0,
+        3457200.0
+      ],
+      "pixel_size": [
+        30.0,
+        30.0
+      ],
+      "pixel_units": "metre",
+      "type": "UInt16",
+      "nodata": 65535.0,
+      "valid_pixels": 622538,
+      "total_pixels": 653410,
+      "valid_fraction": 0.95275248312698,
+      "min": 1.0,
+      "max": 11.0,
+      "gdal_band_checksum": 14559,
+      "valid_pixel_value_counts": {
+        "1": 190398,
+        "2": 1015,
+        "3": 356,
+        "4": 706,
+        "6": 11,
+        "9": 424529,
+        "10": 2619,
+        "11": 2904
+      }
+    },
+    "FLM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_flm_utm51n_30m.tif",
+      "bytes": 33486,
+      "sha256": "6a39376fb7836c8b228a77a059bc12dae4c725de1ea14801d643d9f82d72e4f7",
+      "width": 722,
+      "height": 905,
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 51N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": null,
+      "geotransform": [
+        240210.0,
+        30.0,
+        0.0,
+        3457200.0,
+        0.0,
+        -30.0
+      ],
+      "bounds": [
+        240210.0,
+        3430050.0,
+        261870.0,
+        3457200.0
+      ],
+      "pixel_size": [
+        30.0,
+        30.0
+      ],
+      "pixel_units": "metre",
+      "type": "UInt16",
+      "nodata": 65535.0,
+      "valid_pixels": 622538,
+      "total_pixels": 653410,
+      "valid_fraction": 0.95275248312698,
+      "min": 1.0,
+      "max": 5.0,
+      "gdal_band_checksum": 47172,
+      "valid_pixel_value_counts": {
+        "1": 431125,
+        "2": 190398,
+        "3": 59,
+        "4": 3,
+        "5": 953
+      }
+    },
+    "HEM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_hem_utm51n_30m.tif",
+      "bytes": 609228,
+      "sha256": "d5d9c7bf634d08b06a2f058059630dc6930e3249fc605558fbd401784770c741",
+      "width": 722,
+      "height": 905,
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 51N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": null,
+      "geotransform": [
+        240210.0,
+        30.0,
+        0.0,
+        3457200.0,
+        0.0,
+        -30.0
+      ],
+      "bounds": [
+        240210.0,
+        3430050.0,
+        261870.0,
+        3457200.0
+      ],
+      "pixel_size": [
+        30.0,
+        30.0
+      ],
+      "pixel_units": "metre",
+      "type": "Float32",
+      "nodata": -9999.0,
+      "valid_pixels": 190398,
+      "total_pixels": 653410,
+      "valid_fraction": 0.2913913163251251,
+      "min": 0.1372811496257782,
+      "max": 38.072872161865234,
+      "gdal_band_checksum": 63199,
+      "percentiles_0_25_50_75_95_99_100": [
+        0.1372811496257782,
+        0.3954322040081024,
+        0.494718074798584,
+        0.6382527351379395,
+        1.3580504834651945,
+        2.8474257445335387,
+        38.072872161865234
+      ]
+    },
+    "WBM": {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wbm_utm51n_30m.tif",
+      "bytes": 33722,
+      "sha256": "0849d2e723d7a807557413b4a420a3579cee8070b48d79358eef798aafdf34c8",
+      "width": 722,
+      "height": 905,
+      "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 51N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": null,
+      "geotransform": [
+        240210.0,
+        30.0,
+        0.0,
+        3457200.0,
+        0.0,
+        -30.0
+      ],
+      "bounds": [
+        240210.0,
+        3430050.0,
+        261870.0,
+        3457200.0
+      ],
+      "pixel_size": [
+        30.0,
+        30.0
+      ],
+      "pixel_units": "metre",
+      "type": "UInt16",
+      "nodata": 65535.0,
+      "valid_pixels": 622538,
+      "total_pixels": 653410,
+      "valid_fraction": 0.95275248312698,
+      "min": 0.0,
+      "max": 3.0,
+      "gdal_band_checksum": 21676,
+      "valid_pixel_value_counts": {
+        "0": 195390,
+        "2": 424529,
+        "3": 2619
+      }
+    }
+  },
+  "metric_grid_epsg": 32651,
+  "metric_grid_bounds": [
+    240210,
+    3430050,
+    261870,
+    3457200
+  ],
+  "native_grids_aligned": true,
+  "elevation_review": {
+    "height_below_0m": {
+      "pixels": 2617,
+      "fraction": 0.0038151746860171005,
+      "range_metres": [
+        -62.0,
+        -0.0004987764405086637
+      ],
+      "quality_value_counts": {
+        "EDM": {
+          "1": 1257,
+          "2": 77,
+          "3": 10,
+          "4": 21,
+          "9": 1236,
+          "11": 16
+        },
+        "FLM": {
+          "1": 1283,
+          "2": 1257,
+          "5": 77
+        },
+        "WBM": {
+          "0": 1381,
+          "2": 1236
+        }
+      },
+      "bbox_pixel_centres_wgs84": [
+        120.28833333333334,
+        30.982222222222223,
+        120.5,
+        31.216944444444447
+      ]
+    },
+    "height_below_minus10m_review": {
+      "pixels": 900,
+      "fraction": 0.0013120585469680514,
+      "range_metres": [
+        -62.0,
+        -10.018691062927246
+      ],
+      "quality_value_counts": {
+        "EDM": {
+          "1": 303,
+          "2": 51,
+          "3": 4,
+          "4": 4,
+          "9": 530,
+          "11": 8
+        },
+        "FLM": {
+          "1": 546,
+          "2": 303,
+          "5": 51
+        },
+        "WBM": {
+          "0": 370,
+          "2": 530
+        }
+      },
+      "bbox_pixel_centres_wgs84": [
+        120.33527777777779,
+        31.12638888888889,
+        120.35055555555556,
+        31.14527777777778
+      ]
+    },
+    "review_mask": {
+      "path": "东山镇_数据\\terrain\\qa\\dongshan_envelope_glo30_2021_height_review_wgs84.tif",
+      "bytes": 3679,
+      "sha256": "ec2dab73d293ef336c8f17acbea57e22b057fe252e65db8816a2ae68002319fa",
+      "width": 793,
+      "height": 865,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "epsg": null,
+      "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_units": "degree",
+      "type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 0.0,
+      "max": 1.0,
+      "gdal_band_checksum": 900,
+      "valid_pixel_value_counts": {
+        "0": 685045,
+        "1": 900
+      }
+    },
+    "interpretation": "Low elevations are retained exactly. They may represent pits/depressions or source artefacts; no independent ground truth establishes which. Do not flatten automatically.",
+    "dsm_semantic_void_pixels_from_edm": 0,
+    "hem_unavailable_fraction": 0.694127080159488
+  },
+  "quality_interpretation_source": "https://dataspace.copernicus.eu/sites/default/files/media/files/2024-06/geo1988-copernicusdem-spe-002_producthandbook_i5.0.pdf",
+  "quality_notes": [
+    "EDM/FLM 0 means semantic void even where source has no GeoTIFF nodata tag; WBM 0 is valid non-water.",
+    "HEM -32767 is masked by the source tag; edited water/terrain often has no HEM, which does not mean DSM has a void.",
+    "HEM is random-error standard deviation, excluding systematic errors and phase-unwrapping errors.",
+    "The one-arcsecond native grid is about 26.5 m east-west and 30.8 m north-south at Dongshan; a 30 m target grid adds no detail.",
+    "DSM includes roofs/vegetation. No surveyed local vertical/horizontal accuracy validation has been performed.",
+    "Only horizontal CRS was transformed; heights remain EGM2008 metres, not the Taihu Zhenjiang-Wusong gauge datum.",
+    "A globally edited water surface is not a current lake waterline; GLO30 does not guarantee hydrological connectivity."
+  ]
+}

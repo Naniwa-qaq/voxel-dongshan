@@ -1,0 +1,126 @@
+{
+  "audit_utc": "2026-10-19T07:19:21.267131+00:00",
+  "audit_date_local": "2026-10-19",
+  "operation": "Reuse 2026-10-16 HTTP-range subset; offline audit and nearest-neighbour reprojection; no new downloads",
+  "original_validation_created_utc": "2026-10-15T16:39:09.043112+00:00",
+  "existing_clip_matches_recorded_sha256": true,
+  "source_url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30E120_Map.tif",
+  "source_observation_interval": [
+    "2021-01-01",
+    "2021-12-31"
+  ],
+  "source_product": "ESA WorldCover 2021 v200",
+  "license": "CC BY 4.0",
+  "requested_bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "extent_role": "采集包络；不是行政边界",
+  "native_derivative": {
+    "path": "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+    "bytes": 330549,
+    "sha256": "1d4a9d9a9996edd24b498da0caf61d25e4f835b60bee273a98159d81ff5fa6de",
+    "width": 2640,
+    "height": 2880,
+    "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+    "epsg": null,
+    "source_horizontal_crs_from_product_metadata": "EPSG:4326",
+    "geotransform": [
+      120.28,
+      8.333333333333333e-05,
+      0.0,
+      31.22,
+      0.0,
+      -8.333333333333333e-05
+    ],
+    "bounds": [
+      120.28,
+      30.98,
+      120.5,
+      31.22
+    ],
+    "pixel_size": [
+      8.333333333333333e-05,
+      8.333333333333333e-05
+    ],
+    "pixel_units": "degree",
+    "type": "Byte",
+    "nodata": 0.0,
+    "valid_pixels": 7603200,
+    "total_pixels": 7603200,
+    "valid_fraction": 1.0,
+    "min": 10.0,
+    "max": 90.0,
+    "gdal_band_checksum": 35087,
+    "valid_pixel_value_counts": {
+      "10": 1143635,
+      "30": 163657,
+      "40": 721927,
+      "50": 577991,
+      "60": 32075,
+      "80": 4787965,
+      "90": 175950
+    }
+  },
+  "metric_derivative": {
+    "path": "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_utm51n_10m.tif",
+    "bytes": 277641,
+    "sha256": "45eebe630d3c2cfa30f3c8d54c83b0fe54fd23d37ca335ca671d024471ac31b6",
+    "width": 2166,
+    "height": 2715,
+    "crs_wkt": "PROJCS[\"WGS 84 / UTM zone 51N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "epsg": null,
+    "source_horizontal_crs_from_product_metadata": null,
+    "geotransform": [
+      240210.0,
+      10.0,
+      0.0,
+      3457200.0,
+      0.0,
+      -10.0
+    ],
+    "bounds": [
+      240210.0,
+      3430050.0,
+      261870.0,
+      3457200.0
+    ],
+    "pixel_size": [
+      10.0,
+      10.0
+    ],
+    "pixel_units": "metre",
+    "type": "Byte",
+    "nodata": 0.0,
+    "valid_pixels": 5589105,
+    "total_pixels": 5880690,
+    "valid_fraction": 0.9504165327538096,
+    "min": 10.0,
+    "max": 90.0,
+    "gdal_band_checksum": 64983,
+    "valid_pixel_value_counts": {
+      "10": 840633,
+      "30": 120490,
+      "40": 530443,
+      "50": 424524,
+      "60": 23816,
+      "80": 3519521,
+      "90": 129678
+    }
+  },
+  "shared_utm51n_outer_bounds_with_terrain": [
+    240210,
+    3430050,
+    261870,
+    3457200
+  ],
+  "resampling": "nearest neighbour; categorical codes preserved; 10 m target does not improve effective source resolution",
+  "quality_gaps": [
+    "InputQuality not obtained: official provider says it is available only through login-required Viewer/Terrascope paths.",
+    "11 broad land-cover classes do not distinguish orchards, tea gardens, local forest species, or current-year land use.",
+    "Permanent-water classification is not a legal shoreline nor a current-date waterline."
+  ],
+  "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium"
+}

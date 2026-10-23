@@ -1,0 +1,168 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>《云山巨城》学习与仿作路线</title><style>
+  :root{color-scheme:light;--paper:#f4f0e6;--ink:#233730;--muted:#61736a;--accent:#2a6c58;--line:#d8dfd5}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Microsoft YaHei','Noto Sans SC',sans-serif;line-height:1.85;font-size:16px}
+  header{padding:22px 32px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}header strong{font-size:19px}header span{font-size:13px;color:var(--muted)}
+  .layout{max-width:1320px;margin:auto;display:grid;grid-template-columns:240px minmax(0,1fr);gap:38px;padding:34px 28px 80px}
+  aside{align-self:start;position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;font-size:13px}aside nav{display:flex;flex-direction:column;gap:9px}aside a{line-height:1.6;color:var(--muted)}aside b{display:block;margin:22px 0 10px;color:var(--ink)}
+  main{min-width:0;max-width:960px}h1{font-size:32px;line-height:1.35;letter-spacing:.02em;margin:0 0 24px}h2{font-size:24px;line-height:1.5;margin:52px 0 18px;padding-top:12px;border-top:1px solid var(--line)}h3{font-size:19px;margin:30px 0 12px}p{margin:16px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  img{display:block;max-width:100%;height:auto;margin:24px auto}main img[src*='17-interface-mobile']{max-width:390px}code{font-family:Consolas,'Microsoft YaHei',monospace;font-size:.87em;overflow-wrap:anywhere}pre{overflow:auto;background:#e7eae0;padding:20px;line-height:1.65;border-radius:5px}pre code{overflow-wrap:normal}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.75;margin:22px 0}th{text-align:left;background:#e6ebdf;font-weight:600}th,td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}.table-scroll{overflow:auto}ul,ol{padding-left:26px}li{margin:7px 0}blockquote{margin:22px 0;padding:2px 22px;border-left:3px solid var(--accent);color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 32px;color:var(--muted);font-size:13px}.swatch{display:inline-block;width:13px;height:13px;margin-right:5px;vertical-align:-1px;border:1px solid rgba(0,0,0,.15)}
+  @media(max-width:900px){.layout{grid-template-columns:1fr;padding:24px 18px 50px;gap:24px}aside{position:static;max-height:none}aside .toc{display:none}aside nav{flex-direction:row;flex-wrap:wrap;gap:8px 18px}aside b{margin:0 0 10px}header{padding:18px}h1{font-size:27px}h2{font-size:22px}table{min-width:570px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style></head><body><header><strong>云山巨城 · 学习档案</strong><span>源码事实 / 实际画面 / 仿作方法 · 2026-10-14</span></header><div class="layout"><aside><b>阅读入口</b><nav><a href="../学习手册.html">综合解析</a><a href="../notes/01-美术风格详解.html">美术详解</a><a href="../notes/02-程序架构详解.html">架构详解</a><a href="../notes/03-学习与仿作练习.html">练习路线</a><a href="../source/云山巨城.html">打开原作</a><a href="03-学习与仿作练习.md">Markdown 源稿</a></nav><div class="toc"><b>本页目录</b><nav><a href="#section-1">1. 先学什么</a><a href="#section-2">2. 循序练习与验收</a><a href="#section-3">3. 值得优先调整的参数</a><a href="#section-4">4. 容易误学的技术点</a><a href="#section-5">5. 仿风格，同时改变构图</a><a href="#section-6">6. 开始仿作时的组织建议</a></nav></div></aside><main><h1>《云山巨城》学习与仿作路线</h1>
+<p>本笔记依据附件 <code>云山巨城.html</code> 的静态源码，行号对应原文件。没有运行浏览器，没有修改原文件，也没有完成仿作。下面的画面评价和练习验收属于从源码推导的学习设计，实际效果需在固定画面上确认。</p>
+<h2 id="section-1">1. 先学什么</h2>
+<p>优先学四种关系：山水与建筑的大小关系、灰瓦白墙与局部朱红金黄的颜色关系、近景细节与远景雾的层次关系、规则构件与有限随机的重复关系。先让一个小场景具备这些关系，再追求整座城市的数量。</p>
+<p>建议第一个独立仿作是“溪湾小镇”：约 160–240 米见方的构图区，一段弯曲溪流、一座桥、6–10 间民居、一座小亭、两层山体、三组树。建筑主要用灰瓦白墙，暖色只集中在小亭或少量灯笼。它是练习范围，不是要求直接把原文件的 <code>WN</code> 改成此数值。</p>
+<p>第一张画面只要固定一个相机、固定下午或傍晚即可。先做到山体、聚落、水面彼此可辨，主景清楚，再增加时间轴、游览与远景生成。</p>
+<h2 id="section-2">2. 循序练习与验收</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>实际练习</th>
+<th>本阶段验收</th>
+<th>对应源码入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0：观察档案</td>
+<td>记录全景、建筑近景、清晨、午间、傍晚、夜景；保持同一相机以比较时间</td>
+<td>每张记录能指出主景、留白、最亮与最暗区域；区分是几何、底色还是光照造成差异</td>
+<td><code>VIEWS</code> L3439；<code>App.hours</code> L3376；<code>App.snap</code> L3760</td>
+</tr>
+<tr>
+<td>1：构件实验台</td>
+<td>只做台基、墙身、柱子、门窗、一个屋顶；在同一光照下比较双坡、歇山、攒尖</td>
+<td>缩小画面仍能靠轮廓分辨类型；0.2 米量化没有产生零厚度消失或裂缝</td>
+<td><code>MeshBuilder</code> L723；<code>Frame</code> L804；<code>roof</code> L980；<code>columns</code> L1082；<code>windowsRow</code> L1096</td>
+</tr>
+<tr>
+<td>2：一间民居</td>
+<td>重做一间 8×10 米左右的灰瓦白墙民居，再做尺寸和楼层不同的三例</td>
+<td>三例属于同一家族；墙、瓦、木、台基的明度层级保持一致；屋顶和马头墙关系清楚</td>
+<td><code>PAL</code> L960；<code>ROOFSETS</code> L968；<code>houseHui</code> L1142</td>
+</tr>
+<tr>
+<td>3：一段街区</td>
+<td>将 6–10 间民居沿一条道路排列，先手工摆放；再加入尺寸、间距与类型的有限随机</td>
+<td>从主相机看有密集处和停顿处；建筑门面朝向道路；台基与道路没有明显悬空；有一条通向小亭的视线</td>
+<td><code>City.lotsAlong</code> L1649；<code>placeBuilding</code> L1694；<code>LOTS_RES</code> L1915</td>
+</tr>
+<tr>
+<td>4：小型山水场景</td>
+<td>增加弯水、两层山体、桥、三组树；先用简单确定形状，再叠少量噪声</td>
+<td>灰度缩略图里主景不会淹没；遮挡建立前、中、后景；水面或天空提供连续留白</td>
+<td><code>RIDGES</code> L351；<code>RIVER</code> L371；<code>TC</code> L839；<code>terrainTop</code> L846；树形 L2443</td>
+</tr>
+<tr>
+<td>5：光照与气氛</td>
+<td>固定相机，比较 6.3、12、18.2、22.5 时；雾、灯火、曝光逐项调整</td>
+<td>四时变化连贯；夜景有暗部但建筑轮廓可读；傍晚暖色集中；雾能拉开距离而非抹掉主景</td>
+<td><code>SKY_KEYS</code> L2671；<code>computeEnv</code> L2698；<code>applyFog</code> L2770；发光 L2859</td>
+</tr>
+<tr>
+<td>6：交互与规模</td>
+<td>增加自由相机与两三个景点，再按需要加入游览；规模增大后才上分块与 LOD</td>
+<td>所有景点能看到有效构图；切换无明显穿地；靠近细化、离开简化；记录目标设备的帧率与分辨率</td>
+<td><code>applyOrbit</code> L3458；<code>flyTo</code> L3474；<code>Scene.update</code> L3344；<code>adapt</code> L3742</td>
+</tr>
+</tbody></table></div>
+<p>初学时每一阶段保存一个版本，只改变一组因素。审美判断和性能判断分开：前者用固定时间、相机和分辨率；后者用同一设备与同一移动路径。不要把自适应降分辨率后的模糊画面当作“远处自动减少细节”的全部结果。</p>
+<p>原文件的 <code>App.snap</code> 可固定时间和相机并返回 JPEG 数据 URL，源码 L3760–3770；<code>?test</code> 分支在 L3421–3422 跳过连续动画。截图仍需确认场景已就绪，若大量近景块刚进入范围，应再推进若干帧再做比较，避免把正在构建的 LOD 当作最终画面。</p>
+<h2 id="section-3">3. 值得优先调整的参数</h2>
+<p>下面的试验范围是学习建议，并非源码中的统一默认值。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>目标</th>
+<th>原文件位置与真实参数</th>
+<th>建议的第一次试验</th>
+<th>观察重点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学构图而不碰生成逻辑</td>
+<td><code>VIEWS</code> L3439，<code>t/yaw/pitch/dist</code>；相机 FOV L3452、L3465</td>
+<td>保持时间 16.3，只改变 <code>yaw</code> 与 <code>pitch</code>，各做三张</td>
+<td>主景与山体是否互相遮挡；水平水面是否提供留白；注意这里是透视相机</td>
+</tr>
+<tr>
+<td>学配色</td>
+<td><code>PAL</code> L960；<code>ROOFSETS</code> L968；<code>TC</code> L839；<code>TREE_COL</code> L2386</td>
+<td>先做灰瓦、白墙、木色、青绿山体、一个暖色点的五类色卡；单次只改一类</td>
+<td>底色不同于最终屏幕色：还受光、雾、曝光、色调映射影响</td>
+</tr>
+<tr>
+<td>学屋顶轮廓</td>
+<td><code>roof</code> L980，<code>type/pitch/lift/rs</code>；<code>rise</code> L985、檐角 L1032</td>
+<td>在同一 10×8 米基底上比较 <code>gable</code>、<code>xs</code>、<code>pyr</code>；<code>pitch</code> 试 0.5/0.7/0.9；非双坡屋顶的 <code>lift</code> 试 0/2/4</td>
+<td>先比大轮廓，再比脊饰；<code>gable</code> 不走檐角起翘分支</td>
+</tr>
+<tr>
+<td>学聚落节奏</td>
+<td>类型权重 L1908–1913；<code>LOTS_MARKET/RES/SLOPE/UPPER</code> L1914–1917</td>
+<td>以 <code>LOTS_RES</code> 为参考，缩小尺寸变化范围，然后改 <code>gap</code>、<code>setback</code>，最后才改类型权重</td>
+<td>重复中有变化；密度来自成功落地的地块，并不等于权重或间距单独决定</td>
+</tr>
+<tr>
+<td>学树的组织</td>
+<td><code>plantTrees</code> L2397；采样间距 <code>S=5.2</code> L2400；材料概率 L2416–2423；形态 L2443</td>
+<td>小景先指定 3 组树，每组少量，使用柳、松、阔叶三类；再加入自动密度</td>
+<td>树服务于道路与主景，不遮掉门面；树冠由盒子组织，不是逐叶建模</td>
+</tr>
+<tr>
+<td>学远近层次</td>
+<td><code>computeEnv</code> L2698；<code>fogDen</code> L2735，<code>fogBase/fogFall</code> L2736，<code>haze</code> L2737</td>
+<td>固定时刻，雾密度先乘 0.75/1/1.25，再改雾高度</td>
+<td>前景保留对比，远山接近天空色；不同尺度场景需要不同雾密度</td>
+</tr>
+<tr>
+<td>学时间叙事</td>
+<td><code>App.hours/playing</code> L3376；<code>SKY_KEYS</code> L2671；灯火 L2742、窗点亮比例 L2745</td>
+<td>先停止时间，做四张固定时刻；再恢复 480 秒昼夜 L3379</td>
+<td>灯亮不等于真实局部照明；夜景可通过曝光与发光表现</td>
+</tr>
+<tr>
+<td>扩大场景后学性能</td>
+<td><code>CH</code> L3290；<code>NEAR_IN/OUT</code> L3291；细节范围 L3366；分辨率档 L3746</td>
+<td>先记录自己的设备，保持图像分辨率不变比较不同近景范围；再启用分辨率自适应</td>
+<td>比较应同时记录画质和速度；不要最初就调世界尺寸与顶点布局</td>
+</tr>
+</tbody></table></div>
+<h2 id="section-4">4. 容易误学的技术点</h2>
+<ol>
+<li><p><strong>“每体素 0.2 米”是视觉与构件约定，不是一个完整 0.2 米体素数据库。</strong> <code>VOX</code> 在 L156；<code>snap</code> 在 L160 直接使用 <code>*5 /5</code>。世界高程用二维数组，横向格子是 1 米（L340），自然地形高度在 L604 取整到 1 米。建筑由对齐网格的长方体与四边形组成（L777），着色器再加 0.2 米格纹（L2814）。真正要学的是多尺度量化，而不是对每个小体素创建一个对象。</p>
+</li>
+<li><p><strong>不要只改 <code>VOX</code> 就宣称切换网格尺度。</strong> <code>snap</code> L160、台阶 L1134–1136、着色器 L2814、瀑布 L2837–2839、水面 L2933 等都有 0.2 或 5 的约定。要迁移尺度，先集中这些常量，再同时改几何与着色器。</p>
+</li>
+<li><p><strong>不要只改 <code>WN/WH</code> 来裁小地图。</strong> L340 的世界尺寸被水着色器 L2929 中的 <code>640.0</code> 与 <code>1279</code> 硬编码，城区、山脊、河道、景点与路线也采用固定世界坐标。独立小场景需要重新配置这些关联项；为了首轮观察，仅改变相机和时间风险更低。</p>
+</li>
+<li><p><strong>程序化不等于完全随机。</strong> 主山脊、河流、湖、台地由人工坐标设计（L351、L371、L382、L387）；城市按预定步骤营造（L1875）；随机主要用在尺寸、类型、位置扰动与局部细节。换一个城市种子 L1443，不会自动得到新山水构图。建筑内部的 RNG 又由坐标生成（L1703），树的独立种子在 L2398。</p>
+</li>
+<li><p><strong>AO 与物理真实感要分开理解。</strong> 盒子底部 AO 多为经验值（L782–795），主材质采用方向光、上下半球环境色、顶点 AO 与阴影相乘（L2857–2858）。这很适合风格化画面，但不是完整的全局光照或 PBR 材质系统。</p>
+</li>
+<li><p><strong>灯光与倒影是分层模拟。</strong> 发光材质由 <code>uLamp</code> 及随机窗口比例控制（L2869–2872）；灯晕另建（L1119–1124）。水面反射天空 <code>skyCol(R)</code>（L2940），另有灯火倒影效果，不能把它理解成整座城市的实时平面反射，更不能把亮灯理解成自动照亮周围所有墙面。</p>
+</li>
+<li><p><strong>地形是高度场，适合山坡、台地与崖壁；不能直接表达任意洞穴或悬空岩桥。</strong> 每格只有一个地表高度 L528，复杂悬空部分需额外建筑网格。</p>
+</li>
+<li><p><strong>建筑朝向仅四个直角方向。</strong> <code>Frame</code> 的 <code>rot &amp;3</code> 在 L805，转换表 L807；<code>lotsAlong</code> L1663–1665 选择最接近道路的轴向。原来的屋顶和盒子写法不能直接通过一个角度参数变成任意旋转建筑。</p>
+</li>
+<li><p><strong>LOD 的美术内容是两套形态，不只是减少三角形。</strong> 近树 L2443、远树 L2508；地形近景 1 米 L3333、远景 2 米 L3327；细节和阴影也有不同距离 L3366。先设计远景可辨认轮廓，再做细节，才能避免近远跳变破坏风格。</p>
+</li>
+<li><p><strong>单文件可离线生成场景，但字体仍有外部请求。</strong> 字体链接在 L7–8，CSS L13 提供系统回退。<code>util.js/world.js/arch.js</code> 等是注释划分，并非真实 JS 模块。学习时可按这些职责拆分，不能把“无第三方 WebGL 引擎”理解成全部资源完全无联网依赖。</p>
+</li>
+</ol>
+<h2 id="section-5">5. 仿风格，同时改变构图</h2>
+<p>可保留的风格规则：台阶化山体、青绿与土石混色、白墙灰瓦、轮廓鲜明的中式屋顶、由雾与环境色统一的大面积背景、局部暖色视觉中心、近繁远简、低处雾、昼夜冷暖变化。</p>
+<p>应重新设计的内容：主景位置、地标高度、河流方向、山脊数量、聚落密度、留白位置、进入画面的视角、观景顺序。原作把瀑布旁多层金瓦阁与台地形成连续上升关系（<code>buildLandmark</code> L1919；九层主楼 L1938），仿作不必保留“中心巨阁 + 瀑布 + 上城 + 宫城”的组合。</p>
+<p>三个不同构图练习：</p>
+<ul>
+<li><strong>溪湾横卷：</strong> 两岸低层民居、侧边小桥、远处单座小亭，水面作为中部留白。保留原作材质和阶梯屋顶，减少竖向宏大叙事。</li>
+<li><strong>山口层城：</strong> 主景设在画面一侧的山口，聚落沿两三级坡台上升；另一侧用松树与岩壁压住边框。保留层级，不沿用原作瀑布坐标与地标形制。</li>
+<li><strong>湖岛夜渡：</strong> 湖面占主要空间，少量码头、船、柳树围住一个低矮水榭，暖灯集中于水榭；远山只作为低对比轮廓。保留冷暖关系，改变建筑数量和主景尺度。</li>
+</ul>
+<p>最实用的检查：把原作和仿作都缩成同样大小的灰度缩略图。如果主景位置、河流走向和山体大轮廓几乎重合，则构图仍过度相似；如果构图明显不同，且材质关系、轮廓语言、雾层与冷暖关系仍相通，则已在学习风格规律。这个检查用于判断是否已理解风格与构图之间的区别。</p>
+<h2 id="section-6">6. 开始仿作时的组织建议</h2>
+<p>先建立自己的 <code>sceneConfig</code>：地形控制点、河流控制点、建筑清单、相机、色卡、时间与雾参数分别存放。第一版建筑清单手工确定位置；第二版才让“道路 → 地块筛选 → 建筑类型选择 → 构件生成”自动执行。</p>
+<p>若直接借用原文件代码，构件实验台优先整理 <code>RNG/颜色/snap</code>、<code>MeshBuilder/Frame</code>、<code>PAL/ROOFSETS/roof</code> 与一种建筑，渲染和相机另做最小调用层；不要一开始就搬入整套 <code>buildCity</code>、游览路线与所有大气效果。若采用现成三维库，也可沿用这些几何与配色思想，但要重新匹配色彩空间、色调映射、阴影与雾，避免默认渲染设置改变风格。</p>
+<p>最终应留下五种可复用资料：风格规则表、材料色卡、屋顶与建筑构件库、地形与聚落配置表、同一相机四时截图。它们比直接保存一份巨大 HTML 副本更容易用于下一次独立创作。</p>
+</main></div><footer>本阅读版仅使用本地资源。原作备份、截图及运行记录随档案保存。</footer></body></html>

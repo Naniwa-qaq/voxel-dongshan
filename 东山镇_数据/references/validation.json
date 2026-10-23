@@ -1,0 +1,177 @@
+{
+  "checked_at_utc": "2026-10-19T07:25:37.434Z",
+  "method": "重新读取每个落盘文件核对SHA-256；图片逐张view_image目视检查",
+  "passed": true,
+  "sources_downloaded": 8,
+  "images_downloaded": 18,
+  "failed": [],
+  "total_bytes": 14638705,
+  "checks": [
+    {
+      "file": "pages/luxiang-2026.html",
+      "ok": true,
+      "bytes": 37281
+    },
+    {
+      "file": "pages/dongshan-2025.html",
+      "ok": true,
+      "bytes": 35191
+    },
+    {
+      "file": "pages/dongshan-2019.html",
+      "ok": true,
+      "bytes": 22897
+    },
+    {
+      "file": "pages/huihetang.html",
+      "ok": true,
+      "bytes": 31226
+    },
+    {
+      "file": "pages/qiyuan.html",
+      "ok": true,
+      "bytes": 31253
+    },
+    {
+      "file": "pages/museum-huihetang.html",
+      "ok": true,
+      "bytes": 42276
+    },
+    {
+      "file": "pages/heritage-register.html",
+      "ok": true,
+      "bytes": 2979303
+    },
+    {
+      "file": "pages/dongshan-scenic.html",
+      "ok": true,
+      "bytes": 30172
+    },
+    {
+      "file": "images/01-luxiang-setting.png",
+      "ok": true,
+      "bytes": 562014,
+      "width": 865,
+      "height": 577
+    },
+    {
+      "file": "images/02-luxiang-hanshan-port.png",
+      "ok": true,
+      "bytes": 397934,
+      "width": 547,
+      "height": 365
+    },
+    {
+      "file": "images/03-luxiang-huilaotang.png",
+      "ok": true,
+      "bytes": 362822,
+      "width": 683,
+      "height": 386
+    },
+    {
+      "file": "images/04-luxiang-zishi-street.png",
+      "ok": true,
+      "bytes": 593885,
+      "width": 530,
+      "height": 689
+    },
+    {
+      "file": "images/05-huihetang-garden.jpg",
+      "ok": true,
+      "bytes": 183966,
+      "width": 600,
+      "height": 450
+    },
+    {
+      "file": "images/06-huihetang-01.jpg",
+      "ok": true,
+      "bytes": 135452,
+      "width": 600,
+      "height": 450
+    },
+    {
+      "file": "images/07-huihetang-03.jpg",
+      "ok": true,
+      "bytes": 143203,
+      "width": 600,
+      "height": 400
+    },
+    {
+      "file": "images/08-huihetang-04.jpg",
+      "ok": true,
+      "bytes": 133221,
+      "width": 450,
+      "height": 600
+    },
+    {
+      "file": "images/09-qiyuan-4100.jpg",
+      "ok": true,
+      "bytes": 170716,
+      "width": 600,
+      "height": 397
+    },
+    {
+      "file": "images/10-qiyuan-4112.jpg",
+      "ok": true,
+      "bytes": 203028,
+      "width": 600,
+      "height": 397
+    },
+    {
+      "file": "images/11-qiyuan-4117.jpg",
+      "ok": true,
+      "bytes": 168407,
+      "width": 600,
+      "height": 397
+    },
+    {
+      "file": "images/12-chunzailou.jpg",
+      "ok": true,
+      "bytes": 243519,
+      "width": 638,
+      "height": 425
+    },
+    {
+      "file": "images/13-xuanyuangong.jpg",
+      "ok": true,
+      "bytes": 137400,
+      "width": 638,
+      "height": 425
+    },
+    {
+      "file": "images/14-daixinwan-bridge.jpg",
+      "ok": true,
+      "bytes": 195424,
+      "width": 638,
+      "height": 340
+    },
+    {
+      "file": "images/15-nanmuting.jpg",
+      "ok": true,
+      "bytes": 225132,
+      "width": 638,
+      "height": 426
+    },
+    {
+      "file": "images/16-huihetang-overview.jpg",
+      "ok": true,
+      "bytes": 3499950,
+      "width": 3284,
+      "height": 4925
+    },
+    {
+      "file": "images/17-huihetang-plan.png",
+      "ok": true,
+      "bytes": 156874,
+      "width": 620,
+      "height": 840
+    },
+    {
+      "file": "images/18-huihetang-courtyard.png",
+      "ok": true,
+      "bytes": 3916159,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

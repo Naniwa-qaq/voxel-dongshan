@@ -1,0 +1,6194 @@
+{
+  "groups": [
+    {
+      "id": "LX-001",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-001"
+      ],
+      "sourceIds": [
+        "d1034c58-2a02-476f-97cf-ecd9b50abf3c",
+        "a7736dc7-ab01-4e7f-9826-d0d316179adf",
+        "51be9e28-e6d3-47c7-8bd2-c9097e31bf35",
+        "6b1ccafd-58ec-4a24-8f94-ded4317ad68a"
+      ],
+      "sourceArea": 794.4
+    },
+    {
+      "id": "LX-002",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-002"
+      ],
+      "sourceIds": [
+        "95cff3ed-ddde-4732-87a7-f8bfc6f4a5bd",
+        "a40b8841-0640-4725-977c-48914939953d",
+        "e9bb70cb-bafc-4d3a-af0b-ce8d545d5d0b",
+        "1f119571-148f-4562-9d4c-d200c805da37",
+        "31e5ac24-2efb-4e24-82a6-9a25fd45621d",
+        "b40b382d-eac6-4297-82e6-5d27c08cea36",
+        "6efb4065-e613-47d6-81bc-df0a2c4f231b",
+        "286f32ae-3b4e-4437-8139-23f565232049",
+        "b3a85ecb-7cc7-4b8f-aa58-290eaa4fb012"
+      ],
+      "sourceArea": 730.45
+    },
+    {
+      "id": "LX-003",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-003"
+      ],
+      "sourceIds": [
+        "4a2ed372-7d06-4350-8440-574698a15c9c",
+        "e2727c2b-bc8d-45ad-b993-711c916427d5",
+        "053d3fe1-cefa-4ef3-921e-ff0209221064",
+        "e6dd9cfc-1a9c-468c-b3dc-6d57146c506f",
+        "4b3de87a-2aab-4db8-8331-e113c7195d1a",
+        "66b4e15c-b851-40ad-8b45-00fcf70a489e"
+      ],
+      "sourceArea": 705.02
+    },
+    {
+      "id": "LX-004",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-004"
+      ],
+      "sourceIds": [
+        "7152052c-4e28-46bd-8532-6079d7220587",
+        "dd6f816f-0258-45f0-8506-2ecd62f73f3c",
+        "d4853e39-9eab-440f-b88c-346cf7ac76e9",
+        "eeb584b7-454a-4132-be51-1073b5568701",
+        "42a95a77-3a7f-4a78-8b3d-5c1c20e2df07",
+        "0c81c1c9-c6e1-44e8-984d-71b73ae13cd5",
+        "046637e7-e417-401c-aee8-4ab6aa7dcdb7",
+        "c5c83f6f-07e4-4a09-85b7-c4632106be49",
+        "1a1f8564-77a7-42d8-875f-8817740f95ba",
+        "25941e45-3dac-4abc-9acb-72a1c0ca006e",
+        "5a85d03d-2e0a-443e-9697-b114713ee796",
+        "eea25fdf-b862-4fe1-b757-ddf4b14ab4e8",
+        "2aa19b08-5e6a-4805-96b2-3ee1f20ef8cb",
+        "1a20ca55-f5cb-4725-ad2a-a61023a06ff5",
+        "b5a2ad89-731e-44c5-b43d-5b36f581402e",
+        "47a99fd6-a6ab-453a-9a27-59724e3260a1",
+        "1b688476-2b4a-4870-93cc-b54f1955b27e",
+        "85c0f102-b91b-4a6c-81e3-c576fe5eb4ad",
+        "1ea4df80-3837-462f-8f8b-418ce744530d",
+        "7e395b5a-ac78-4337-bcf9-a82c3db49086",
+        "36961179-3343-4854-bbee-ed366f1252e7",
+        "80d2f683-1ff3-46f3-b655-cc75fdbb12f5",
+        "10bdec43-bfda-47c6-9170-ae1eef326032",
+        "3effcc80-6559-403f-be8b-264a4bf70cd1",
+        "ecb0a7f5-4d87-4656-9ccd-8e8de8a88365",
+        "8f21f238-6922-4be1-9d51-204f1981cfd6",
+        "63b0355c-a041-47a8-9f85-c1dbad00b47f",
+        "3ff189d4-f120-4780-a4a7-124289e9bc27",
+        "4caec412-ace9-4ce5-90ce-b27093303a32",
+        "9ba4facf-0442-4d60-8127-294d7837582a",
+        "09ecd324-daa8-4be5-946a-e120489f29bd",
+        "7bd4ac4f-53a6-4c1c-99ea-4d08dc15a0f5",
+        "c61e232d-b4d6-4e38-b2c8-cd72243c0032",
+        "d1c6cdc8-f0ce-4790-a59d-014c337ad200",
+        "f14fd824-fdfa-44ba-be24-89c2975e45b1",
+        "e44e7778-155c-4bcb-91b9-9160c20eebe7",
+        "f97f15cb-e196-4d4e-ae17-13faaf29b55f",
+        "6133a67e-a383-4dba-92fb-2b4828f829d9",
+        "e17e18eb-4180-4f9e-ac54-e29094d57f57",
+        "8dd53422-de13-4933-b923-31e0a6d96f94",
+        "2962edb6-8913-4bb2-87d0-83dfe23c3cb9",
+        "b6b1f1ed-77a1-4b0f-8de6-f9e920f25c2a",
+        "cc13dcb4-fabe-4cf5-a944-f0800fa6db3a",
+        "907cbf86-7759-4399-8f20-82dfeca0bfa6",
+        "c8dd4704-39dc-42f7-886f-fb7078664bd7",
+        "73133f1f-e01d-433d-a4d4-c0b8d863c0dd",
+        "78f8cd96-cb7a-4ec2-9b56-a3f8917a6e3c",
+        "48030487-0751-4ea4-896b-878736493cbb",
+        "18e5a17c-1ca4-4217-926a-9a51db9b22f0",
+        "e51613fd-e447-4b16-99dd-32ca8893261a",
+        "9fc8df46-9335-40ba-af06-7354bb5baff3",
+        "9802ae04-72b0-4246-a7e3-ffda29567f0f",
+        "0d0ddc91-707f-4440-8bb3-ddc4ce72113a",
+        "635877af-d400-4506-bbdf-8afbe88642c3"
+      ],
+      "sourceArea": 6675.66
+    },
+    {
+      "id": "LX-005",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-005"
+      ],
+      "sourceIds": [
+        "09dfbfe0-0c84-4397-84a6-e02a0a3410e8",
+        "ee972d74-2d45-4e20-8758-0c855bbe1484",
+        "7eb8aee1-5933-4e17-8b90-a70e57a7e591"
+      ],
+      "sourceArea": 718.08
+    },
+    {
+      "id": "LX-006",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-006"
+      ],
+      "sourceIds": [
+        "646155ea-a2d9-4c44-9204-8cd0e95d83da"
+      ],
+      "sourceArea": 37.66
+    },
+    {
+      "id": "LX-007",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-007"
+      ],
+      "sourceIds": [
+        "4421b778-4fb2-43b4-8b39-0e94b82d5227",
+        "01186b23-a48b-4ff3-a2b4-2c894114e87a"
+      ],
+      "sourceArea": 154.67
+    },
+    {
+      "id": "LX-008",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-008"
+      ],
+      "sourceIds": [
+        "807a7899-3367-4a01-81c8-a28f7b692d53",
+        "ff166ad1-520d-4e37-850b-e438f9de5cbe",
+        "d57301ae-a556-4455-a70c-a938412d5d53"
+      ],
+      "sourceArea": 382.15
+    },
+    {
+      "id": "LX-009",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-009"
+      ],
+      "sourceIds": [
+        "2a5d5c63-501d-4de3-ac8d-a9d14d0341f2"
+      ],
+      "sourceArea": 86.14
+    },
+    {
+      "id": "LX-010",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-010"
+      ],
+      "sourceIds": [
+        "a44d5b6b-a864-4110-8614-7048d35df428",
+        "3d7930a1-09c9-45ae-b740-647b15c0c532"
+      ],
+      "sourceArea": 249.47
+    },
+    {
+      "id": "LX-011",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-011"
+      ],
+      "sourceIds": [
+        "7c7c4c3f-df65-46ab-b371-d2598bcb9d73",
+        "376d4710-c9b0-4375-b573-f5d5fc377c54",
+        "6a77581c-af86-4738-a182-dc8181c1d279",
+        "7c028ff5-03c1-4ed4-9232-26df51cbbd15"
+      ],
+      "sourceArea": 371.29
+    },
+    {
+      "id": "LX-012",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-012"
+      ],
+      "sourceIds": [
+        "6d45170c-cf7c-4e63-a25a-a1303b6c3b88",
+        "beba8e41-11bd-442e-8a22-089ba57f5053"
+      ],
+      "sourceArea": 615.13
+    },
+    {
+      "id": "LX-013",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-013"
+      ],
+      "sourceIds": [
+        "fa00890f-09da-46ca-b95b-924d018e748c"
+      ],
+      "sourceArea": 106.08
+    },
+    {
+      "id": "LX-014",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-014"
+      ],
+      "sourceIds": [
+        "6f62e104-ec4e-4613-99f2-50cd1fe64498",
+        "72a1f8ef-6073-406d-bf99-0da753302d26"
+      ],
+      "sourceArea": 468.79
+    },
+    {
+      "id": "LX-015",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-015"
+      ],
+      "sourceIds": [
+        "e659e7ca-08be-4359-a289-4a3ffb3ebceb"
+      ],
+      "sourceArea": 66.25
+    },
+    {
+      "id": "LX-016",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-016"
+      ],
+      "sourceIds": [
+        "657c6e8c-3079-4e80-9da2-3a1f062fcb10"
+      ],
+      "sourceArea": 75.19
+    },
+    {
+      "id": "LX-017",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-017"
+      ],
+      "sourceIds": [
+        "f49e2fed-d507-43f4-ac68-7316d30fd1d8",
+        "d9308363-a842-4f95-b335-387737b6f547"
+      ],
+      "sourceArea": 274.91
+    },
+    {
+      "id": "LX-018",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-018"
+      ],
+      "sourceIds": [
+        "db895b26-ee9f-414c-9100-de02f99be339"
+      ],
+      "sourceArea": 198.8
+    },
+    {
+      "id": "LX-019",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-019"
+      ],
+      "sourceIds": [
+        "6c170d28-d90a-4277-80ec-ef5c02bb190e",
+        "18d821d7-b883-4d5a-9456-16d3ba48fdef"
+      ],
+      "sourceArea": 154.63
+    },
+    {
+      "id": "LX-020",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-020"
+      ],
+      "sourceIds": [
+        "ed950ca4-0a86-4cbb-8e68-33f872436313"
+      ],
+      "sourceArea": 813.18
+    },
+    {
+      "id": "LX-021",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-021"
+      ],
+      "sourceIds": [
+        "1a78fad8-180d-4643-b366-04464705254f"
+      ],
+      "sourceArea": 97.21
+    },
+    {
+      "id": "LX-022",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-022"
+      ],
+      "sourceIds": [
+        "8476d9b1-64fb-40a7-8a43-48a773348bfa"
+      ],
+      "sourceArea": 72.9
+    },
+    {
+      "id": "LX-023",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-023"
+      ],
+      "sourceIds": [
+        "9bf32963-abc8-46bd-a62f-d1a7b8b79cf2",
+        "fb0df07a-fb96-46c6-8ca2-63e9297b25b1"
+      ],
+      "sourceArea": 180.59
+    },
+    {
+      "id": "LX-024",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-024"
+      ],
+      "sourceIds": [
+        "ae521c38-2d2f-4364-9e93-6e7e15d5fe75"
+      ],
+      "sourceArea": 99.51
+    },
+    {
+      "id": "LX-025",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-025"
+      ],
+      "sourceIds": [
+        "db3663d8-71ab-4ef8-b8de-f7d9981c9f5b"
+      ],
+      "sourceArea": 125.47
+    },
+    {
+      "id": "LX-026",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-026"
+      ],
+      "sourceIds": [
+        "de97617b-159a-4b75-bd92-fd519f8a4a30",
+        "d892b451-af28-4289-bb24-8660534aae42"
+      ],
+      "sourceArea": 319.2
+    },
+    {
+      "id": "LX-027",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-027"
+      ],
+      "sourceIds": [
+        "3efd6d37-bd0d-4474-b23b-261a16361926",
+        "173bb6e3-45f8-435d-98e7-85db85c4490f"
+      ],
+      "sourceArea": 289.28
+    },
+    {
+      "id": "LX-028",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-028"
+      ],
+      "sourceIds": [
+        "ab23d002-60b0-40fb-abff-cbf33c0e5aa8"
+      ],
+      "sourceArea": 132.56
+    },
+    {
+      "id": "LX-029",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-029"
+      ],
+      "sourceIds": [
+        "7d028c97-c3ae-4a76-a86f-5c1074329307",
+        "9e821ee1-3114-4b73-af05-dcfd457591a8",
+        "a82d53a4-88b2-42bf-9e23-8a2635535184"
+      ],
+      "sourceArea": 313.78
+    },
+    {
+      "id": "LX-030",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-030"
+      ],
+      "sourceIds": [
+        "a6a8752c-dbd8-4ef9-9fc4-1e8a6c1978fe"
+      ],
+      "sourceArea": 79.53
+    },
+    {
+      "id": "LX-031",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-031"
+      ],
+      "sourceIds": [
+        "50166080-7237-46f5-8778-67a3e96c6e69"
+      ],
+      "sourceArea": 53.07
+    },
+    {
+      "id": "LX-032",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-032"
+      ],
+      "sourceIds": [
+        "efa3dc17-8e00-4f62-a50e-15741c38c525"
+      ],
+      "sourceArea": 712.44
+    },
+    {
+      "id": "LX-033",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-033"
+      ],
+      "sourceIds": [
+        "9aceb6a8-6920-4d05-ab4e-2d28fb5adcc3"
+      ],
+      "sourceArea": 48.6
+    },
+    {
+      "id": "LX-034",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-034"
+      ],
+      "sourceIds": [
+        "68893520-e525-4b39-9f72-6e13efa610c7",
+        "45408b80-2ce4-4b81-ac07-e44dd1738f15",
+        "4e205c2e-a3ea-4bc3-a9bf-3d18b16fb6e8"
+      ],
+      "sourceArea": 348.05
+    },
+    {
+      "id": "LX-035",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-035"
+      ],
+      "sourceIds": [
+        "0b3a638d-57b1-4411-ba7f-0c397166f06b",
+        "f440406f-13da-4e8a-87b9-9402530a05e2"
+      ],
+      "sourceArea": 236.46
+    },
+    {
+      "id": "LX-036",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-036"
+      ],
+      "sourceIds": [
+        "66fcb3b6-07b3-41cb-977b-2763d8118144",
+        "2c083e35-70a8-4875-af88-78d4a53be349"
+      ],
+      "sourceArea": 229.74
+    },
+    {
+      "id": "LX-037",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-037"
+      ],
+      "sourceIds": [
+        "6f015f1a-9ac3-4158-beb7-6a4b8e25c2d0"
+      ],
+      "sourceArea": 251.92
+    },
+    {
+      "id": "LX-038",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-038"
+      ],
+      "sourceIds": [
+        "8411556e-8bc6-49c5-a5f5-19223cd00861",
+        "54048dc3-aa43-4ed2-be43-0244993d4aac",
+        "ef6d32bf-cae3-4064-9b68-da0f126cf3c9"
+      ],
+      "sourceArea": 260.83
+    },
+    {
+      "id": "LX-039",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-039"
+      ],
+      "sourceIds": [
+        "6a92b85d-2d87-4ff9-9141-b9356a7fcfa8",
+        "ec52c7f6-f200-499e-a8ce-1a4c3b81f5d1",
+        "65bbbc2e-e9e2-4ee7-8bd3-ba42084f4da6"
+      ],
+      "sourceArea": 355.74
+    },
+    {
+      "id": "LX-040",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-040"
+      ],
+      "sourceIds": [
+        "ee14142a-4c91-49d5-8bba-d3008a17b7fb",
+        "e716fd33-5aba-44dd-b28c-c84edb809be1"
+      ],
+      "sourceArea": 282.73
+    },
+    {
+      "id": "LX-041",
+      "block": "block-03",
+      "renderObjectIds": [
+        "LX-041"
+      ],
+      "sourceIds": [
+        "d7a7aaaa-51bf-4a89-91c8-ed745174a9b3"
+      ],
+      "sourceArea": 1086.0
+    },
+    {
+      "id": "LX-042",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-042"
+      ],
+      "sourceIds": [
+        "13c13f62-cd1e-40c4-8901-332fbeb35884",
+        "6d59bb02-01b4-4a6b-97c6-d8f65669f3e1",
+        "28329760-5625-498a-bab8-a0c4b1fc37d2",
+        "1c4c092d-c3ff-4e59-83f1-48340b630504"
+      ],
+      "sourceArea": 547.92
+    },
+    {
+      "id": "LX-043",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-043"
+      ],
+      "sourceIds": [
+        "15865667-25ad-4d14-8383-95f5950ad8e0",
+        "92acd244-0d88-4e36-bada-d5d3f3012765"
+      ],
+      "sourceArea": 133.75
+    },
+    {
+      "id": "LX-044",
+      "block": "block-03",
+      "renderObjectIds": [
+        "LX-044"
+      ],
+      "sourceIds": [
+        "610a226e-17f3-4564-a2b6-b9710e7ed2f7"
+      ],
+      "sourceArea": 216.48
+    },
+    {
+      "id": "LX-045",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-045"
+      ],
+      "sourceIds": [
+        "220c08d5-055e-494a-b098-47daa9269ad7",
+        "6285c00b-2bc2-4988-af55-f521856e3038"
+      ],
+      "sourceArea": 183.36
+    },
+    {
+      "id": "LX-046",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-046"
+      ],
+      "sourceIds": [
+        "ddcf9071-ed96-4206-b805-9c71034c7a41",
+        "3af762c2-ccd3-4eb8-bc8a-3b9f25a5956b",
+        "55e8f1f5-811e-4013-a8d6-a812bc7c0c1c"
+      ],
+      "sourceArea": 342.72
+    },
+    {
+      "id": "LX-047",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-047"
+      ],
+      "sourceIds": [
+        "65e7b94e-2b3e-4209-9a60-dffa737aafad"
+      ],
+      "sourceArea": 66.26
+    },
+    {
+      "id": "LX-048",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-048"
+      ],
+      "sourceIds": [
+        "74064f05-ed99-44fe-b5c0-1571b0d445f5",
+        "cd837281-e41a-46e0-9845-d1388e4946bb",
+        "d280df01-8052-426e-8acb-671f7f28df85"
+      ],
+      "sourceArea": 278.33
+    },
+    {
+      "id": "LX-049",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-049"
+      ],
+      "sourceIds": [
+        "8458acb1-7d40-481d-94ca-eb6929074332",
+        "80d87fc5-3183-44e7-9d8f-9aa2876238f4",
+        "de745bdd-fac5-4569-b7fe-0c17b0293ace"
+      ],
+      "sourceArea": 185.58
+    },
+    {
+      "id": "LX-050",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-050"
+      ],
+      "sourceIds": [
+        "e696724f-75df-4e77-83cd-7cbfedec3642"
+      ],
+      "sourceArea": 88.34
+    },
+    {
+      "id": "LX-051",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-051"
+      ],
+      "sourceIds": [
+        "646e6bc3-248c-40f4-8be3-24c24bc36a30"
+      ],
+      "sourceArea": 70.64
+    },
+    {
+      "id": "LX-052",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-052"
+      ],
+      "sourceIds": [
+        "ee19adde-e3db-4956-aebd-710e8c898c86",
+        "c13dfb31-900b-4d53-a43a-e5b092d1e1ed"
+      ],
+      "sourceArea": 123.72
+    },
+    {
+      "id": "LX-053",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-053"
+      ],
+      "sourceIds": [
+        "3f38246b-8284-4eee-a6d9-73dfc1d1dd33",
+        "bc369b47-887b-431e-b92c-c8de62dd556d"
+      ],
+      "sourceArea": 229.73
+    },
+    {
+      "id": "LX-054",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-054"
+      ],
+      "sourceIds": [
+        "d9f50f02-b4f2-451e-9441-7b86e02bfa08",
+        "678aae6e-178f-4b6f-86ad-49f35ae79ffc"
+      ],
+      "sourceArea": 173.48
+    },
+    {
+      "id": "LX-055",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-055"
+      ],
+      "sourceIds": [
+        "a72eacca-50c6-45cb-8b4f-6ea0384e6517",
+        "671f18cf-16e5-4a9d-8f41-446eeabfc5ea"
+      ],
+      "sourceArea": 304.86
+    },
+    {
+      "id": "LX-056",
+      "block": "block-02",
+      "renderObjectIds": [
+        "LX-056"
+      ],
+      "sourceIds": [
+        "fc48d77c-acd8-4b91-8ad3-1ab22e52dcd0",
+        "6a7cea78-fd0b-44ee-ae7b-cafbc16d91b5"
+      ],
+      "sourceArea": 322.43
+    },
+    {
+      "id": "LX-057",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-057"
+      ],
+      "sourceIds": [
+        "58ebfcc8-3ae7-493b-b6c8-dd27c5f0c034",
+        "b91a642d-fe3e-49dc-ae65-30aee8a0d164"
+      ],
+      "sourceArea": 176.79
+    },
+    {
+      "id": "LX-058",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-058"
+      ],
+      "sourceIds": [
+        "f8981743-e570-4e34-8b8f-7ddfe51e6c8d"
+      ],
+      "sourceArea": 39.77
+    },
+    {
+      "id": "LX-059",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-059"
+      ],
+      "sourceIds": [
+        "d2c887e3-1f4f-4e72-bd65-4f710cd0f3a5",
+        "241ab8ab-1f5d-4f70-8ead-4773a89064e9"
+      ],
+      "sourceArea": 223.16
+    },
+    {
+      "id": "LX-060",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-060"
+      ],
+      "sourceIds": [
+        "df77d71d-ad9f-4ebd-9f53-d85896d5d851"
+      ],
+      "sourceArea": 212.22
+    },
+    {
+      "id": "LX-061",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-061"
+      ],
+      "sourceIds": [
+        "44edd37c-8542-4cb3-8579-ab8fd7e3fa44",
+        "c5bebe88-d435-4e1a-a0c4-ea995067cb33"
+      ],
+      "sourceArea": 291.51
+    },
+    {
+      "id": "LX-062",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-062"
+      ],
+      "sourceIds": [
+        "21cdd3ff-9da9-4d7a-bdf4-b18455cd63be"
+      ],
+      "sourceArea": 159.21
+    },
+    {
+      "id": "LX-063",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-063"
+      ],
+      "sourceIds": [
+        "d60aa10f-216e-4a98-8322-8be88189d5db"
+      ],
+      "sourceArea": 110.49
+    },
+    {
+      "id": "LX-064",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-064"
+      ],
+      "sourceIds": [
+        "b5e2e760-6c5a-4cec-9c27-159a9f8f33a9",
+        "848874ac-9e34-4632-b9be-685d754fa8f0",
+        "65d92f3d-cb27-4c41-b227-da1a40f5af51"
+      ],
+      "sourceArea": 254.1
+    },
+    {
+      "id": "LX-065",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-065"
+      ],
+      "sourceIds": [
+        "ad01dd79-d32a-4bdd-87d4-2ad6f3eb44ad"
+      ],
+      "sourceArea": 88.38
+    },
+    {
+      "id": "LX-066",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-066"
+      ],
+      "sourceIds": [
+        "9223f116-285f-416a-ae04-db53feeb1638"
+      ],
+      "sourceArea": 88.39
+    },
+    {
+      "id": "LX-067",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-067"
+      ],
+      "sourceIds": [
+        "6e6ed085-3ee7-435a-b0ef-edbcf8f4803b",
+        "fa31a274-495e-4226-9c67-3df39f4f1f85",
+        "4da8cc10-846f-4c1b-a8d5-be04cc1f4f20"
+      ],
+      "sourceArea": 265.14
+    },
+    {
+      "id": "LX-068",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-068"
+      ],
+      "sourceIds": [
+        "ea718601-f656-45fc-aef2-1b217f1dad79",
+        "a28b2de7-b67a-447d-aafe-c3077aa99053"
+      ],
+      "sourceArea": 467.5
+    },
+    {
+      "id": "LX-069",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-069"
+      ],
+      "sourceIds": [
+        "bdb5d665-288a-444d-bcfe-e46be567ffdd",
+        "7894951a-ee70-4edd-b460-439c969698f1"
+      ],
+      "sourceArea": 1239.56
+    },
+    {
+      "id": "LX-070",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-070"
+      ],
+      "sourceIds": [
+        "aae92fc0-c091-4e37-8694-b4e35dc37502"
+      ],
+      "sourceArea": 1544.61
+    },
+    {
+      "id": "LX-071",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-071"
+      ],
+      "sourceIds": [
+        "27c27180-c76c-4318-a65d-9fab71d14382",
+        "d75f596c-c80f-47db-97d0-77131528bdfc",
+        "610941ed-0134-49e2-bad2-e3072c3a49cc"
+      ],
+      "sourceArea": 351.31
+    },
+    {
+      "id": "LX-072",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-072"
+      ],
+      "sourceIds": [
+        "4950f0ff-03fc-4773-a390-b2b22f2ebbb5"
+      ],
+      "sourceArea": 218.61
+    },
+    {
+      "id": "LX-073",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-073"
+      ],
+      "sourceIds": [
+        "e4053ad7-64c7-4754-b3aa-15df872c6cf0",
+        "9613d23a-9804-4a2a-b890-cc29347afa0c",
+        "d343af78-2d73-4acb-a5bf-ea4b3f4c2298",
+        "72550830-e9e3-4705-8158-80f169af495f",
+        "976e70b3-b954-4023-a56b-f8d1788ebdb2"
+      ],
+      "sourceArea": 722.38
+    },
+    {
+      "id": "LX-074",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-074"
+      ],
+      "sourceIds": [
+        "0570cfbc-61dd-493d-b8de-650578249c71",
+        "2075b03e-f3da-4c8e-85d5-b0164411e647"
+      ],
+      "sourceArea": 167.95
+    },
+    {
+      "id": "LX-075",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-075"
+      ],
+      "sourceIds": [
+        "73ad18ce-647d-48d7-a8b2-864223c585f9",
+        "bf39f978-0932-41e3-93de-35bb97ab8614",
+        "b52e6c5d-8c67-43b3-8d61-1b774a0c255d",
+        "531598af-eba0-42b5-8498-1eb8a9485c15"
+      ],
+      "sourceArea": 471.77
+    },
+    {
+      "id": "LX-076",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-076"
+      ],
+      "sourceIds": [
+        "19bab740-b346-44b6-9d24-1669704d0aac",
+        "c9068072-1252-45bf-8db6-ecac35116f5a",
+        "8f18668f-45c7-41c3-8543-ab4f30d00b66",
+        "2a220874-b0f5-4043-ae3d-8161e313eb89",
+        "f82aecc2-de2d-4d07-abc7-5808eb75e464"
+      ],
+      "sourceArea": 714.46
+    },
+    {
+      "id": "LX-077",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-077"
+      ],
+      "sourceIds": [
+        "3fdf46dc-3b25-46e8-92cf-075d2f211271"
+      ],
+      "sourceArea": 255.25
+    },
+    {
+      "id": "LX-078",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-078"
+      ],
+      "sourceIds": [
+        "adc13659-441b-4950-beff-cab983a9c25c",
+        "48e7d7ad-15c2-4707-8924-eee1bfe9e1ac"
+      ],
+      "sourceArea": 162.48
+    },
+    {
+      "id": "LX-079",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-079"
+      ],
+      "sourceIds": [
+        "6b1a4942-1f5e-47d1-ac3b-4c5acd05c1af"
+      ],
+      "sourceArea": 293.83
+    },
+    {
+      "id": "LX-080",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-080"
+      ],
+      "sourceIds": [
+        "7c534052-3f9e-4d3b-9dc5-f50266a6fcc7",
+        "813e08ca-1e58-4930-bc01-1d78f2795cbb"
+      ],
+      "sourceArea": 311.12
+    },
+    {
+      "id": "LX-081",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-081"
+      ],
+      "sourceIds": [
+        "6b98166b-9109-423f-aaf6-790474ae272b"
+      ],
+      "sourceArea": 109.31
+    },
+    {
+      "id": "LX-082",
+      "block": "block-03",
+      "renderObjectIds": [
+        "LX-082"
+      ],
+      "sourceIds": [
+        "234ca987-3b43-4c2e-bc0d-f5845fe0dbb5",
+        "045bde23-304a-4a2d-91d8-0f20cb799a58",
+        "38a1365d-4a0a-4e42-9b42-0f9b9f3b3a2b"
+      ],
+      "sourceArea": 375.67
+    },
+    {
+      "id": "LX-083",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-083"
+      ],
+      "sourceIds": [
+        "2521a1d3-906d-4042-81f5-5e2f21d25b85",
+        "f314814d-18da-4c9d-ab44-79bbec5de340",
+        "666bb1a6-63e4-4291-8667-018362a2f7a5"
+      ],
+      "sourceArea": 563.45
+    },
+    {
+      "id": "LX-084",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-084"
+      ],
+      "sourceIds": [
+        "5370757e-76c9-435b-9863-f7df60ef763a"
+      ],
+      "sourceArea": 39.81
+    },
+    {
+      "id": "LX-085",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-085"
+      ],
+      "sourceIds": [
+        "5db53192-e303-426d-a637-042ae7b7fff4"
+      ],
+      "sourceArea": 139.28
+    },
+    {
+      "id": "LX-086",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-086"
+      ],
+      "sourceIds": [
+        "1cc90400-7187-41a5-8dca-5a2847b09e51",
+        "01932fef-8f33-48f9-93a7-c8f4dfc2cc21"
+      ],
+      "sourceArea": 349.07
+    },
+    {
+      "id": "LX-087",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-087"
+      ],
+      "sourceIds": [
+        "43902ed2-4872-4f3c-abc1-298e0f3ca717"
+      ],
+      "sourceArea": 72.9
+    },
+    {
+      "id": "LX-088",
+      "block": "block-03",
+      "renderObjectIds": [
+        "LX-088"
+      ],
+      "sourceIds": [
+        "2fb289cf-dc23-4e85-87aa-ac9a461a9aa2",
+        "6072b66e-48cb-4c6b-bafa-ebd5a6f01487",
+        "cdc21b92-ab93-4d42-9386-eb491b5a2fa4"
+      ],
+      "sourceArea": 357.93
+    },
+    {
+      "id": "LX-089",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-089"
+      ],
+      "sourceIds": [
+        "3dfffb6e-f7bf-42b1-bcc4-7bb96a95c175"
+      ],
+      "sourceArea": 66.34
+    },
+    {
+      "id": "LX-090",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-090"
+      ],
+      "sourceIds": [
+        "e014155d-09bb-4085-927d-43973bc99b84"
+      ],
+      "sourceArea": 185.21
+    },
+    {
+      "id": "LX-091",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-091"
+      ],
+      "sourceIds": [
+        "a1418da3-eaa7-4d26-95cd-a38adbffbe25",
+        "d673fe6a-ee7d-4298-a978-29df6c2db24a",
+        "ab2459f9-28d0-48c1-805f-1b25750476b3",
+        "0c01984a-83cc-4890-92dd-bb210892a7df"
+      ],
+      "sourceArea": 307.15
+    },
+    {
+      "id": "LX-092",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-092"
+      ],
+      "sourceIds": [
+        "e3bf588d-c1cd-4c24-a43a-acf74bcd85a4",
+        "db408d86-8be5-48b1-87ec-2d4fb17ed742",
+        "ff577aa5-ce74-45f2-8922-e9bdcacad5db"
+      ],
+      "sourceArea": 464.17
+    },
+    {
+      "id": "LX-093",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-093"
+      ],
+      "sourceIds": [
+        "9bc46341-4248-4fa0-9597-18a3efd1d67f",
+        "5ad343a9-c176-44d6-b63d-a5219f893585"
+      ],
+      "sourceArea": 399.9
+    },
+    {
+      "id": "LX-094",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-094"
+      ],
+      "sourceIds": [
+        "d4eb2768-67bd-49b7-8662-7aaa895a6894"
+      ],
+      "sourceArea": 66.33
+    },
+    {
+      "id": "LX-095",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-095"
+      ],
+      "sourceIds": [
+        "4acae4ec-4953-4101-8d19-9aca466a048e"
+      ],
+      "sourceArea": 375.57
+    },
+    {
+      "id": "LX-096",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-096"
+      ],
+      "sourceIds": [
+        "685149ff-bf00-42e2-ac9b-b1dc7673f7bb"
+      ],
+      "sourceArea": 232.08
+    },
+    {
+      "id": "LX-097",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-097"
+      ],
+      "sourceIds": [
+        "56e715bf-7832-441e-aa11-254d273145ac"
+      ],
+      "sourceArea": 395.56
+    },
+    {
+      "id": "LX-098",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-098"
+      ],
+      "sourceIds": [
+        "675d72e2-8d96-4a63-b5fe-dbb461c3c861"
+      ],
+      "sourceArea": 66.31
+    },
+    {
+      "id": "LX-099",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-099"
+      ],
+      "sourceIds": [
+        "517940db-524f-4dee-8d0a-5302ed5c79cc",
+        "477c2b8a-3883-419b-a0f4-249d1dcb0c1b"
+      ],
+      "sourceArea": 293.3
+    },
+    {
+      "id": "LX-100",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-100"
+      ],
+      "sourceIds": [
+        "d03291cf-2aaa-489a-bbc3-2f634d70ff2a"
+      ],
+      "sourceArea": 449.57
+    },
+    {
+      "id": "LX-101",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-101"
+      ],
+      "sourceIds": [
+        "89fdb362-eafa-4802-8bb9-7e86015715e9",
+        "4fcb777f-346c-465f-992e-1ff8c89a36c7"
+      ],
+      "sourceArea": 243.1
+    },
+    {
+      "id": "LX-102",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-102"
+      ],
+      "sourceIds": [
+        "0d1d44dc-d807-4006-b204-5f694f8a4bf6"
+      ],
+      "sourceArea": 356.74
+    },
+    {
+      "id": "LX-103",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-103"
+      ],
+      "sourceIds": [
+        "cb366d62-7656-4596-b976-0188703b39e1",
+        "2856d261-988b-4a09-a717-53705c6cca72",
+        "0b43844e-2a72-413a-bc5c-61ccdd72e862",
+        "3e84684b-3f26-4996-92dd-96b178c8039c",
+        "621d84d8-d1a0-447c-81f7-f52c92050129",
+        "bff6e7e3-c404-4b82-8ebd-e67c95e1d9d1",
+        "e2bfcae7-419c-4297-a35f-6965e765ad62",
+        "9f80cf2b-4bc4-478e-b9eb-cf209f07c6b3",
+        "91b61d3e-9bb6-46c7-b6b7-7ec70c3fc58e",
+        "5dd5c46f-527a-4368-ae29-2309aa03ba00",
+        "b8ae1221-a5d1-4c4a-848b-c8f67a2a1e98",
+        "ea043e45-9280-428d-a648-eefbab280c59",
+        "8d38bb49-4dd9-4b32-82ba-d43e819e2919",
+        "eeec5fa0-fe5b-4f17-ba04-dd6f6c005d1d",
+        "ff346069-e511-4e7e-9122-e49fd6dfb82e",
+        "dc8b0b80-d853-4154-b536-7761b5370fbe",
+        "0e148c0e-5fec-47b1-bc2e-19c895020acb",
+        "7a560056-69c6-4e11-b37a-356582d23198"
+      ],
+      "sourceArea": 1762.59
+    },
+    {
+      "id": "LX-104",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-104"
+      ],
+      "sourceIds": [
+        "e7cf4167-665f-4b37-8ee3-41eea3da7961",
+        "c8dfb807-04a8-4ad7-9e4f-f0c9c40c8159"
+      ],
+      "sourceArea": 220.97
+    },
+    {
+      "id": "LX-105",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-105"
+      ],
+      "sourceIds": [
+        "94686b51-6d09-493e-a0aa-d2338efa7527"
+      ],
+      "sourceArea": 53.05
+    },
+    {
+      "id": "LX-106",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-106"
+      ],
+      "sourceIds": [
+        "5f221fa4-284e-4a3c-92ed-76fed90f21a6",
+        "fbe3d498-1212-4513-9781-e0dbd398ad9a",
+        "6cd9bfd9-e8ac-414c-a9d5-efc21f1f1556"
+      ],
+      "sourceArea": 278.27
+    },
+    {
+      "id": "LX-107",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-107"
+      ],
+      "sourceIds": [
+        "b948dbe2-798b-4a81-ad97-0625eacd19e5"
+      ],
+      "sourceArea": 79.57
+    },
+    {
+      "id": "LX-108",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-108"
+      ],
+      "sourceIds": [
+        "baff320a-5217-47b4-bf76-578803f58c83",
+        "82a56480-1719-459f-8597-8792b5448976",
+        "fea0fbc9-3b83-4e46-8662-7b1b98adde13",
+        "84f31daa-0a6b-4a47-8c2a-b2a08b49f97c",
+        "16a4aa13-0a19-4115-acb1-466f10049e45",
+        "43e89928-30ea-4bf0-8a6f-a418e07d59c0",
+        "bce68ddc-b7c5-4934-a469-9755f9231d02",
+        "64144e46-046c-4989-a7b6-e8bc004b45e4",
+        "9b15d48e-c089-459e-a0d2-5da2b0afdc3d",
+        "1b31d332-04f1-453b-b80c-435b2413b2cc",
+        "9c03bac7-2f7c-4477-8f2a-0f50e6233998",
+        "e4930dc0-fd03-4b61-9990-c78a6cb05acb",
+        "a272d06b-f94a-4a3a-885b-d22530528dce",
+        "a2252996-b015-4bf6-b6cb-e3d567f780c8",
+        "5632aa09-48f8-4a4e-9a18-b1bce5b8ce0d",
+        "5a22ae6d-f82a-43ec-b642-f71d06306d8b",
+        "2044b65a-8be7-40fa-9fcc-569e7bc89a59",
+        "eeaffee9-990e-4b12-bdf0-7a8af9922b9f",
+        "44170851-6e18-4f07-b7e1-8dedaf1ab6a4",
+        "1bec0494-cf3a-45ec-85dc-2e2fb60e6ac8",
+        "db948760-8dae-402a-b783-fbc0566010c8",
+        "dc414d66-df19-4dbf-b70c-ff792188fb5d",
+        "48321734-df27-4a61-9002-2c33266311a7",
+        "31de062d-ffd1-424d-b3ec-31910bd97176",
+        "5f996612-9acf-49f0-b76f-c3b8345d16d8",
+        "24cca4b4-ba19-42df-b11d-e39076bd9c78",
+        "f70a3ba2-2525-4bd5-bacc-b77d8b760e56",
+        "a9fc23f6-50ba-40ec-b47c-ac1051527596",
+        "fd2881f4-0fcf-4a54-b9db-356546c6a3d0",
+        "19fb67ab-2947-4445-8b4c-155f4a5df7da",
+        "0768d880-de6d-45da-8ecc-2a20154f2c80",
+        "7a9b36c4-c498-4f4b-9b7a-cc921fcfc8bc",
+        "9adad021-04f2-45b4-a567-5ca0ebbac5b8",
+        "e05f9418-2d47-44ae-986d-8a7a051339c4",
+        "dee8c784-29eb-4907-8782-26c8f2f04132",
+        "460df8d7-e0ef-4d74-801b-ea4be9b4daa8",
+        "719cbaa9-66c0-4094-bc0a-1fb5b3f36a4c",
+        "ffeb99c5-2226-48fc-82de-08b3d05bbbab",
+        "36f8a785-ded9-4c6b-9aa7-89e7aafb0aac",
+        "aa6b33ba-dc27-4054-bc72-532bdeb1aad5",
+        "6cb1cdbf-d0de-4496-936d-ad8028e67d35",
+        "cc3fe524-3e58-4326-bebf-cb5e35e0e3a0",
+        "70dea043-6c06-4080-8403-d790110f512c",
+        "abf61f3e-9527-4dc1-89bb-b7d66910e5bb",
+        "73b09991-6884-44db-80ec-2c48dd92f5e8",
+        "29f929c5-d50f-4598-a30c-3b028f994525",
+        "73645771-3d57-4aeb-9d5a-a9c02aaf3f70",
+        "1d972608-78a5-4005-90d9-2b175af1d68d",
+        "abf45227-002d-4708-85cf-8b645305b093",
+        "48c030cc-85a9-4c15-83fb-a6e34744c68b",
+        "219b019b-7436-4f7d-9785-88ee40a72c52",
+        "8c05c71e-9d31-41d7-b38f-574226870a0c",
+        "c69cdccb-fb9c-42a1-bae5-383afb364b49",
+        "0289e10f-0dc0-4af0-9bd8-02ded4adca78",
+        "44e45d0b-c592-44dc-a36b-232b57fdc3d2",
+        "e567b911-b971-4a83-b137-c79099a7fac8",
+        "b2555a53-1c9a-4958-ad5c-285a559a1fbf",
+        "c5e76c3c-64c8-4b97-bf58-bd19e0785ba2",
+        "0a643667-3dd9-4eb1-bbb0-55f8a6dd064e"
+      ],
+      "sourceArea": 8494.93
+    },
+    {
+      "id": "LX-109",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-109"
+      ],
+      "sourceIds": [
+        "f35c1b8b-52ff-4a8c-9f85-fbfc6173d466"
+      ],
+      "sourceArea": 121.56
+    },
+    {
+      "id": "LX-110",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-110"
+      ],
+      "sourceIds": [
+        "c70dac67-c331-451a-bb96-d467ca2ec87d"
+      ],
+      "sourceArea": 100.63
+    },
+    {
+      "id": "LX-111",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-111"
+      ],
+      "sourceIds": [
+        "7615a812-72c4-4878-8d8e-c08ee3b8dcc2",
+        "0df70bf7-7e9f-460f-91de-68ad2768daa7",
+        "ef7e024e-d7ff-4189-a12e-0fc3e65531ad"
+      ],
+      "sourceArea": 236.36
+    },
+    {
+      "id": "LX-112",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-112"
+      ],
+      "sourceIds": [
+        "780b30d5-7fff-4cbd-8eab-fc7bd8f7b22f"
+      ],
+      "sourceArea": 324.78
+    },
+    {
+      "id": "LX-113",
+      "block": "block-01",
+      "renderObjectIds": [
+        "LX-113"
+      ],
+      "sourceIds": [
+        "92e06c91-7857-4fe3-a70e-23b6412e76ce"
+      ],
+      "sourceArea": 77.32
+    }
+  ],
+  "sourceFootprints": [
+    {
+      "id": "7152052c-4e28-46bd-8532-6079d7220587",
+      "gx": 111.8,
+      "gz": -312.03,
+      "x": 126.14,
+      "z": -203.77,
+      "area": 59.62,
+      "width": 9.46,
+      "depth": 6.3,
+      "rotation": 0.01372,
+      "block": "block-01"
+    },
+    {
+      "id": "dd6f816f-0258-45f0-8506-2ecd62f73f3c",
+      "gx": 143.82,
+      "gz": -309.57,
+      "x": 142.79,
+      "z": -202.59,
+      "area": 88.37,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 3.10722,
+      "block": "block-01"
+    },
+    {
+      "id": "baff320a-5217-47b4-bf76-578803f58c83",
+      "gx": 248.43,
+      "gz": -307.25,
+      "x": 193.96,
+      "z": -201.48,
+      "area": 88.37,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 3.09457,
+      "block": "block-01"
+    },
+    {
+      "id": "82a56480-1719-459f-8597-8792b5448976",
+      "gx": 410.72,
+      "gz": -306.82,
+      "x": 264.29,
+      "z": -201.27,
+      "area": 77.4,
+      "width": 10.42,
+      "depth": 7.44,
+      "rotation": 2.91066,
+      "block": "block-01"
+    },
+    {
+      "id": "fea0fbc9-3b83-4e46-8662-7b1b98adde13",
+      "gx": 271.72,
+      "gz": -306.65,
+      "x": 204.51,
+      "z": -201.19,
+      "area": 132.52,
+      "width": 17.84,
+      "depth": 7.43,
+      "rotation": 1.05052,
+      "block": "block-01"
+    },
+    {
+      "id": "84f31daa-0a6b-4a47-8c2a-b2a08b49f97c",
+      "gx": 330.19,
+      "gz": -305.91,
+      "x": 231.02,
+      "z": -200.83,
+      "area": 59.61,
+      "width": 9.46,
+      "depth": 6.31,
+      "rotation": 0.58794,
+      "block": "block-01"
+    },
+    {
+      "id": "16a4aa13-0a19-4115-acb1-466f10049e45",
+      "gx": 189.0,
+      "gz": -304.14,
+      "x": 166.28,
+      "z": -199.99,
+      "area": 114.91,
+      "width": 13.66,
+      "depth": 8.41,
+      "rotation": 3.06093,
+      "block": "block-01"
+    },
+    {
+      "id": "d4853e39-9eab-440f-b88c-346cf7ac76e9",
+      "gx": 24.45,
+      "gz": -297.29,
+      "x": 74.67,
+      "z": -196.46,
+      "area": 53.04,
+      "width": 8.92,
+      "depth": 5.95,
+      "rotation": 1.28164,
+      "block": "block-01"
+    },
+    {
+      "id": "43e89928-30ea-4bf0-8a6f-a418e07d59c0",
+      "gx": 217.54,
+      "gz": -295.51,
+      "x": 179.95,
+      "z": -195.45,
+      "area": 53.02,
+      "width": 8.92,
+      "depth": 5.95,
+      "rotation": 3.02937,
+      "block": "block-01"
+    },
+    {
+      "id": "eeb584b7-454a-4132-be51-1073b5568701",
+      "gx": 71.51,
+      "gz": -294.34,
+      "x": 102.91,
+      "z": -194.79,
+      "area": 150.29,
+      "width": 17.87,
+      "depth": 8.41,
+      "rotation": 3.08859,
+      "block": "block-01"
+    },
+    {
+      "id": "bce68ddc-b7c5-4934-a469-9755f9231d02",
+      "gx": 296.8,
+      "gz": -293.89,
+      "x": 215.88,
+      "z": -194.54,
+      "area": 324.91,
+      "width": 24.18,
+      "depth": 18.93,
+      "rotation": 0.18879,
+      "block": "block-01"
+    },
+    {
+      "id": "42a95a77-3a7f-4a78-8b3d-5c1c20e2df07",
+      "gx": 8.28,
+      "gz": -293.05,
+      "x": 64.97,
+      "z": -194.06,
+      "area": 77.36,
+      "width": 10.41,
+      "depth": 7.43,
+      "rotation": 2.9713,
+      "block": "block-01"
+    },
+    {
+      "id": "0c81c1c9-c6e1-44e8-984d-71b73ae13cd5",
+      "gx": 38.63,
+      "gz": -292.77,
+      "x": 83.18,
+      "z": -193.9,
+      "area": 77.36,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 2.62837,
+      "block": "block-01"
+    },
+    {
+      "id": "046637e7-e417-401c-aee8-4ab6aa7dcdb7",
+      "gx": 93.36,
+      "gz": -292.65,
+      "x": 116.02,
+      "z": -193.84,
+      "area": 88.39,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 3.09983,
+      "block": "block-01"
+    },
+    {
+      "id": "64144e46-046c-4989-a7b6-e8bc004b45e4",
+      "gx": 336.03,
+      "gz": -292.41,
+      "x": 233.67,
+      "z": -193.7,
+      "area": 132.66,
+      "width": 12.62,
+      "depth": 10.52,
+      "rotation": 0.54126,
+      "block": "block-01"
+    },
+    {
+      "id": "9b15d48e-c089-459e-a0d2-5da2b0afdc3d",
+      "gx": 229.61,
+      "gz": -290.69,
+      "x": 185.43,
+      "z": -192.73,
+      "area": 79.5,
+      "width": 8.93,
+      "depth": 8.91,
+      "rotation": 1.3761,
+      "block": "block-01"
+    },
+    {
+      "id": "c5c83f6f-07e4-4a09-85b7-c4632106be49",
+      "gx": 51.65,
+      "gz": -290.47,
+      "x": 90.99,
+      "z": -192.6,
+      "area": 53.07,
+      "width": 8.92,
+      "depth": 5.95,
+      "rotation": 2.79118,
+      "block": "block-01"
+    },
+    {
+      "id": "1b31d332-04f1-453b-b80c-435b2413b2cc",
+      "gx": 260.14,
+      "gz": -290.45,
+      "x": 199.26,
+      "z": -192.59,
+      "area": 77.36,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 3.02922,
+      "block": "block-01"
+    },
+    {
+      "id": "9c03bac7-2f7c-4477-8f2a-0f50e6233998",
+      "gx": 186.99,
+      "gz": -290.05,
+      "x": 165.24,
+      "z": -192.36,
+      "area": 88.35,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 3.06286,
+      "block": "block-01"
+    },
+    {
+      "id": "e4930dc0-fd03-4b61-9990-c78a6cb05acb",
+      "gx": 199.83,
+      "gz": -290.04,
+      "x": 171.91,
+      "z": -192.36,
+      "area": 35.34,
+      "width": 5.95,
+      "depth": 5.94,
+      "rotation": 2.69557,
+      "block": "block-01"
+    },
+    {
+      "id": "1a1f8564-77a7-42d8-875f-8817740f95ba",
+      "gx": 126.36,
+      "gz": -288.89,
+      "x": 133.71,
+      "z": -191.7,
+      "area": 39.71,
+      "width": 6.31,
+      "depth": 6.3,
+      "rotation": 0.13347,
+      "block": "block-01"
+    },
+    {
+      "id": "a272d06b-f94a-4a3a-885b-d22530528dce",
+      "gx": 274.53,
+      "gz": -287.16,
+      "x": 205.79,
+      "z": -190.72,
+      "area": 77.29,
+      "width": 10.4,
+      "depth": 7.44,
+      "rotation": 1.45888,
+      "block": "block-01"
+    },
+    {
+      "id": "a2252996-b015-4bf6-b6cb-e3d567f780c8",
+      "gx": 315.49,
+      "gz": -286.69,
+      "x": 224.36,
+      "z": -190.46,
+      "area": 85.07,
+      "width": 11.57,
+      "depth": 7.36,
+      "rotation": 1.81846,
+      "block": "block-01"
+    },
+    {
+      "id": "25941e45-3dac-4abc-9acb-72a1c0ca006e",
+      "gx": 110.48,
+      "gz": -285.82,
+      "x": 125.45,
+      "z": -189.96,
+      "area": 92.82,
+      "width": 12.62,
+      "depth": 7.36,
+      "rotation": 0.10882,
+      "block": "block-01"
+    },
+    {
+      "id": "cb366d62-7656-4596-b976-0188703b39e1",
+      "gx": 172.24,
+      "gz": -285.12,
+      "x": 157.56,
+      "z": -189.57,
+      "area": 38.68,
+      "width": 7.36,
+      "depth": 5.26,
+      "rotation": 1.59109,
+      "block": "block-01"
+    },
+    {
+      "id": "5632aa09-48f8-4a4e-9a18-b1bce5b8ce0d",
+      "gx": 241.73,
+      "gz": -284.28,
+      "x": 190.92,
+      "z": -189.09,
+      "area": 66.29,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 0.11807,
+      "block": "block-01"
+    },
+    {
+      "id": "5a22ae6d-f82a-43ec-b642-f71d06306d8b",
+      "gx": 367.11,
+      "gz": -280.13,
+      "x": 246.84,
+      "z": -186.74,
+      "area": 53.05,
+      "width": 8.42,
+      "depth": 6.31,
+      "rotation": 2.98956,
+      "block": "block-01"
+    },
+    {
+      "id": "5a85d03d-2e0a-443e-9697-b114713ee796",
+      "gx": 32.18,
+      "gz": -278.23,
+      "x": 79.31,
+      "z": -185.66,
+      "area": 59.71,
+      "width": 9.46,
+      "depth": 6.31,
+      "rotation": 3.11308,
+      "block": "block-01"
+    },
+    {
+      "id": "2044b65a-8be7-40fa-9fcc-569e7bc89a59",
+      "gx": 400.67,
+      "gz": -277.94,
+      "x": 260.27,
+      "z": -185.5,
+      "area": 92.75,
+      "width": 10.4,
+      "depth": 8.91,
+      "rotation": 0.77789,
+      "block": "block-01"
+    },
+    {
+      "id": "eeaffee9-990e-4b12-bdf0-7a8af9922b9f",
+      "gx": 351.03,
+      "gz": -276.63,
+      "x": 240.41,
+      "z": -184.76,
+      "area": 170.16,
+      "width": 16.36,
+      "depth": 10.41,
+      "rotation": 1.03265,
+      "block": "block-01"
+    },
+    {
+      "id": "eea25fdf-b862-4fe1-b757-ddf4b14ab4e8",
+      "gx": 123.48,
+      "gz": -276.53,
+      "x": 132.21,
+      "z": -184.7,
+      "area": 97.22,
+      "width": 11.57,
+      "depth": 8.41,
+      "rotation": 1.48004,
+      "block": "block-01"
+    },
+    {
+      "id": "44170851-6e18-4f07-b7e1-8dedaf1ab6a4",
+      "gx": 285.53,
+      "gz": -276.42,
+      "x": 210.77,
+      "z": -184.64,
+      "area": 53.06,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 0.19835,
+      "block": "block-01"
+    },
+    {
+      "id": "1bec0494-cf3a-45ec-85dc-2e2fb60e6ac8",
+      "gx": 424.43,
+      "gz": -275.19,
+      "x": 269.77,
+      "z": -183.94,
+      "area": 132.51,
+      "width": 15.77,
+      "depth": 8.41,
+      "rotation": 0.67397,
+      "block": "block-01"
+    },
+    {
+      "id": "db948760-8dae-402a-b783-fbc0566010c8",
+      "gx": 199.68,
+      "gz": -271.49,
+      "x": 171.83,
+      "z": -181.84,
+      "area": 55.24,
+      "width": 7.44,
+      "depth": 7.43,
+      "rotation": 2.59425,
+      "block": "block-01"
+    },
+    {
+      "id": "2aa19b08-5e6a-4805-96b2-3ee1f20ef8cb",
+      "gx": 49.11,
+      "gz": -271.45,
+      "x": 89.47,
+      "z": -181.82,
+      "area": 106.07,
+      "width": 11.89,
+      "depth": 8.92,
+      "rotation": 3.02999,
+      "block": "block-01"
+    },
+    {
+      "id": "2856d261-988b-4a09-a717-53705c6cca72",
+      "gx": 176.67,
+      "gz": -271.34,
+      "x": 159.87,
+      "z": -181.76,
+      "area": 92.82,
+      "width": 14.71,
+      "depth": 6.31,
+      "rotation": 2.98698,
+      "block": "block-01"
+    },
+    {
+      "id": "dc414d66-df19-4dbf-b70c-ff792188fb5d",
+      "gx": 310.1,
+      "gz": -268.81,
+      "x": 221.91,
+      "z": -180.33,
+      "area": 55.21,
+      "width": 7.44,
+      "depth": 7.42,
+      "rotation": 2.94995,
+      "block": "block-01"
+    },
+    {
+      "id": "48321734-df27-4a61-9002-2c33266311a7",
+      "gx": 372.42,
+      "gz": -266.37,
+      "x": 248.97,
+      "z": -178.95,
+      "area": 159.09,
+      "width": 17.84,
+      "depth": 8.92,
+      "rotation": 0.95264,
+      "block": "block-01"
+    },
+    {
+      "id": "31de062d-ffd1-424d-b3ec-31910bd97176",
+      "gx": 292.28,
+      "gz": -265.08,
+      "x": 213.83,
+      "z": -178.21,
+      "area": 39.75,
+      "width": 6.31,
+      "depth": 6.3,
+      "rotation": 0.01315,
+      "block": "block-01"
+    },
+    {
+      "id": "1a20ca55-f5cb-4725-ad2a-a61023a06ff5",
+      "gx": 28.41,
+      "gz": -265.0,
+      "x": 77.05,
+      "z": -178.17,
+      "area": 77.3,
+      "width": 10.41,
+      "depth": 7.43,
+      "rotation": 3.02708,
+      "block": "block-01"
+    },
+    {
+      "id": "5f996612-9acf-49f0-b76f-c3b8345d16d8",
+      "gx": 386.27,
+      "gz": -264.9,
+      "x": 254.51,
+      "z": -178.11,
+      "area": 77.36,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 2.66807,
+      "block": "block-01"
+    },
+    {
+      "id": "24cca4b4-ba19-42df-b11d-e39076bd9c78",
+      "gx": 254.97,
+      "gz": -263.91,
+      "x": 196.92,
+      "z": -177.55,
+      "area": 53.06,
+      "width": 8.93,
+      "depth": 5.95,
+      "rotation": 1.06935,
+      "block": "block-01"
+    },
+    {
+      "id": "f70a3ba2-2525-4bd5-bacc-b77d8b760e56",
+      "gx": 215.37,
+      "gz": -263.78,
+      "x": 178.97,
+      "z": -177.47,
+      "area": 59.67,
+      "width": 9.47,
+      "depth": 6.31,
+      "rotation": 1.51707,
+      "block": "block-01"
+    },
+    {
+      "id": "b5a2ad89-731e-44c5-b43d-5b36f581402e",
+      "gx": 101.75,
+      "gz": -263.54,
+      "x": 120.91,
+      "z": -177.34,
+      "area": 105.99,
+      "width": 12.61,
+      "depth": 8.4,
+      "rotation": 3.03591,
+      "block": "block-01"
+    },
+    {
+      "id": "0b43844e-2a72-413a-bc5c-61ccdd72e862",
+      "gx": 189.84,
+      "gz": -262.45,
+      "x": 166.72,
+      "z": -176.72,
+      "area": 106.08,
+      "width": 11.9,
+      "depth": 8.92,
+      "rotation": 0.9039,
+      "block": "block-01"
+    },
+    {
+      "id": "a9fc23f6-50ba-40ec-b47c-ac1051527596",
+      "gx": 272.52,
+      "gz": -261.72,
+      "x": 204.87,
+      "z": -176.31,
+      "area": 170.17,
+      "width": 16.35,
+      "depth": 10.41,
+      "rotation": 2.90719,
+      "block": "block-01"
+    },
+    {
+      "id": "fd2881f4-0fcf-4a54-b9db-356546c6a3d0",
+      "gx": 342.91,
+      "gz": -260.64,
+      "x": 236.79,
+      "z": -175.7,
+      "area": 79.6,
+      "width": 8.93,
+      "depth": 8.92,
+      "rotation": 2.80975,
+      "block": "block-01"
+    },
+    {
+      "id": "47a99fd6-a6ab-453a-9a27-59724e3260a1",
+      "gx": 121.32,
+      "gz": -260.34,
+      "x": 131.09,
+      "z": -175.53,
+      "area": 132.56,
+      "width": 14.87,
+      "depth": 8.92,
+      "rotation": 2.79352,
+      "block": "block-01"
+    },
+    {
+      "id": "19fb67ab-2947-4445-8b4c-155f4a5df7da",
+      "gx": 318.29,
+      "gz": -259.65,
+      "x": 225.62,
+      "z": -175.14,
+      "area": 77.31,
+      "width": 10.41,
+      "depth": 7.43,
+      "rotation": 1.23468,
+      "block": "block-01"
+    },
+    {
+      "id": "0768d880-de6d-45da-8ecc-2a20154f2c80",
+      "gx": 233.2,
+      "gz": -259.31,
+      "x": 187.05,
+      "z": -174.94,
+      "area": 139.13,
+      "width": 22.08,
+      "depth": 6.3,
+      "rotation": 3.0821,
+      "block": "block-01"
+    },
+    {
+      "id": "7a9b36c4-c498-4f4b-9b7a-cc921fcfc8bc",
+      "gx": 304.86,
+      "gz": -258.96,
+      "x": 219.54,
+      "z": -174.75,
+      "area": 70.7,
+      "width": 8.41,
+      "depth": 8.41,
+      "rotation": 1.50501,
+      "block": "block-01"
+    },
+    {
+      "id": "9adad021-04f2-45b4-a567-5ca0ebbac5b8",
+      "gx": 395.35,
+      "gz": -256.63,
+      "x": 258.14,
+      "z": -173.42,
+      "area": 61.86,
+      "width": 10.41,
+      "depth": 5.94,
+      "rotation": 1.12166,
+      "block": "block-01"
+    },
+    {
+      "id": "e05f9418-2d47-44ae-986d-8a7a051339c4",
+      "gx": 380.59,
+      "gz": -256.44,
+      "x": 252.24,
+      "z": -173.32,
+      "area": 77.35,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 2.84586,
+      "block": "block-01"
+    },
+    {
+      "id": "dee8c784-29eb-4907-8782-26c8f2f04132",
+      "gx": 406.78,
+      "gz": -254.52,
+      "x": 262.71,
+      "z": -172.23,
+      "area": 39.82,
+      "width": 9.46,
+      "depth": 4.21,
+      "rotation": 3.06972,
+      "block": "block-01"
+    },
+    {
+      "id": "1b688476-2b4a-4870-93cc-b54f1955b27e",
+      "gx": 49.12,
+      "gz": -253.66,
+      "x": 89.47,
+      "z": -171.74,
+      "area": 55.24,
+      "width": 7.44,
+      "depth": 7.43,
+      "rotation": 1.13468,
+      "block": "block-01"
+    },
+    {
+      "id": "460df8d7-e0ef-4d74-801b-ea4be9b4daa8",
+      "gx": 215.59,
+      "gz": -253.45,
+      "x": 179.07,
+      "z": -171.62,
+      "area": 46.45,
+      "width": 7.37,
+      "depth": 6.32,
+      "rotation": 3.00873,
+      "block": "block-01"
+    },
+    {
+      "id": "719cbaa9-66c0-4094-bc0a-1fb5b3f36a4c",
+      "gx": 266.19,
+      "gz": -249.45,
+      "x": 202.01,
+      "z": -169.36,
+      "area": 132.51,
+      "width": 14.86,
+      "depth": 8.92,
+      "rotation": 2.76639,
+      "block": "block-01"
+    },
+    {
+      "id": "85c0f102-b91b-4a6c-81e3-c576fe5eb4ad",
+      "gx": 88.4,
+      "gz": -246.1,
+      "x": 113.04,
+      "z": -167.46,
+      "area": 55.24,
+      "width": 7.44,
+      "depth": 7.44,
+      "rotation": 2.79928,
+      "block": "block-01"
+    },
+    {
+      "id": "ffeb99c5-2226-48fc-82de-08b3d05bbbab",
+      "gx": 245.53,
+      "gz": -245.3,
+      "x": 192.64,
+      "z": -167.0,
+      "area": 66.36,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 1.87907,
+      "block": "block-01"
+    },
+    {
+      "id": "1ea4df80-3837-462f-8f8b-418ce744530d",
+      "gx": 103.61,
+      "gz": -244.26,
+      "x": 121.88,
+      "z": -166.41,
+      "area": 88.36,
+      "width": 10.52,
+      "depth": 8.4,
+      "rotation": 3.07559,
+      "block": "block-01"
+    },
+    {
+      "id": "3e84684b-3f26-4996-92dd-96b178c8039c",
+      "gx": 178.73,
+      "gz": -243.74,
+      "x": 160.94,
+      "z": -166.12,
+      "area": 165.86,
+      "width": 22.3,
+      "depth": 7.44,
+      "rotation": 2.58498,
+      "block": "block-01"
+    },
+    {
+      "id": "7e395b5a-ac78-4337-bcf9-a82c3db49086",
+      "gx": 116.47,
+      "gz": -242.73,
+      "x": 128.56,
+      "z": -165.55,
+      "area": 55.22,
+      "width": 7.43,
+      "depth": 7.43,
+      "rotation": 2.67677,
+      "block": "block-01"
+    },
+    {
+      "id": "36f8a785-ded9-4c6b-9aa7-89e7aafb0aac",
+      "gx": 258.45,
+      "gz": -239.18,
+      "x": 198.5,
+      "z": -163.54,
+      "area": 79.52,
+      "width": 8.92,
+      "depth": 8.92,
+      "rotation": 1.37378,
+      "block": "block-01"
+    },
+    {
+      "id": "aa6b33ba-dc27-4054-bc72-532bdeb1aad5",
+      "gx": 213.83,
+      "gz": -237.17,
+      "x": 178.27,
+      "z": -162.39,
+      "area": 77.32,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 3.02922,
+      "block": "block-01"
+    },
+    {
+      "id": "621d84d8-d1a0-447c-81f7-f52c92050129",
+      "gx": 166.69,
+      "gz": -236.42,
+      "x": 154.68,
+      "z": -161.97,
+      "area": 79.52,
+      "width": 13.38,
+      "depth": 5.95,
+      "rotation": 2.45634,
+      "block": "block-01"
+    },
+    {
+      "id": "6cb1cdbf-d0de-4496-936d-ad8028e67d35",
+      "gx": 289.34,
+      "gz": -235.52,
+      "x": 212.5,
+      "z": -161.46,
+      "area": 79.55,
+      "width": 8.93,
+      "depth": 8.92,
+      "rotation": 1.24738,
+      "block": "block-01"
+    },
+    {
+      "id": "cc3fe524-3e58-4326-bebf-cb5e35e0e3a0",
+      "gx": 344.02,
+      "gz": -235.37,
+      "x": 237.29,
+      "z": -161.38,
+      "area": 79.51,
+      "width": 8.92,
+      "depth": 8.92,
+      "rotation": 1.16175,
+      "block": "block-01"
+    },
+    {
+      "id": "70dea043-6c06-4080-8403-d790110f512c",
+      "gx": 313.6,
+      "gz": -235.34,
+      "x": 223.5,
+      "z": -161.36,
+      "area": 212.12,
+      "width": 17.85,
+      "depth": 11.89,
+      "rotation": 2.87615,
+      "block": "block-01"
+    },
+    {
+      "id": "abf61f3e-9527-4dc1-89bb-b7d66910e5bb",
+      "gx": 238.32,
+      "gz": -233.66,
+      "x": 189.37,
+      "z": -160.41,
+      "area": 159.09,
+      "width": 18.92,
+      "depth": 8.41,
+      "rotation": 3.04504,
+      "block": "block-01"
+    },
+    {
+      "id": "73b09991-6884-44db-80ec-2c48dd92f5e8",
+      "gx": 395.54,
+      "gz": -227.03,
+      "x": 258.22,
+      "z": -156.65,
+      "area": 315.91,
+      "width": 31.22,
+      "depth": 14.86,
+      "rotation": 1.10343,
+      "block": "block-01"
+    },
+    {
+      "id": "36961179-3343-4854-bbee-ed366f1252e7",
+      "gx": 47.56,
+      "gz": -224.52,
+      "x": 88.54,
+      "z": -155.23,
+      "area": 116.07,
+      "width": 15.77,
+      "depth": 7.36,
+      "rotation": 0.34217,
+      "block": "block-01"
+    },
+    {
+      "id": "29f929c5-d50f-4598-a30c-3b028f994525",
+      "gx": 256.64,
+      "gz": -223.34,
+      "x": 197.68,
+      "z": -154.56,
+      "area": 129.34,
+      "width": 15.78,
+      "depth": 11.57,
+      "rotation": 2.24436,
+      "block": "block-01"
+    },
+    {
+      "id": "bff6e7e3-c404-4b82-8ebd-e67c95e1d9d1",
+      "gx": 165.63,
+      "gz": -223.1,
+      "x": 154.13,
+      "z": -154.42,
+      "area": 35.39,
+      "width": 5.95,
+      "depth": 5.95,
+      "rotation": 1.30563,
+      "block": "block-01"
+    },
+    {
+      "id": "73645771-3d57-4aeb-9d5a-a9c02aaf3f70",
+      "gx": 283.91,
+      "gz": -223.06,
+      "x": 210.04,
+      "z": -154.4,
+      "area": 159.08,
+      "width": 17.84,
+      "depth": 8.92,
+      "rotation": 2.98372,
+      "block": "block-01"
+    },
+    {
+      "id": "1d972608-78a5-4005-90d9-2b175af1d68d",
+      "gx": 238.68,
+      "gz": -220.55,
+      "x": 189.54,
+      "z": -152.98,
+      "area": 139.13,
+      "width": 13.38,
+      "depth": 10.4,
+      "rotation": 3.02979,
+      "block": "block-01"
+    },
+    {
+      "id": "abf45227-002d-4708-85cf-8b645305b093",
+      "gx": 412.5,
+      "gz": -218.66,
+      "x": 265.0,
+      "z": -151.91,
+      "area": 186.78,
+      "width": 16.82,
+      "depth": 14.72,
+      "rotation": 1.60919,
+      "block": "block-01"
+    },
+    {
+      "id": "48c030cc-85a9-4c15-83fb-a6e34744c68b",
+      "gx": 325.47,
+      "gz": -217.17,
+      "x": 228.88,
+      "z": -151.06,
+      "area": 35.34,
+      "width": 8.41,
+      "depth": 4.2,
+      "rotation": 1.57538,
+      "block": "block-01"
+    },
+    {
+      "id": "80d2f683-1ff3-46f3-b655-cc75fdbb12f5",
+      "gx": 152.27,
+      "gz": -213.83,
+      "x": 147.18,
+      "z": -149.17,
+      "area": 92.86,
+      "width": 14.71,
+      "depth": 6.31,
+      "rotation": 3.13135,
+      "block": "block-01"
+    },
+    {
+      "id": "10bdec43-bfda-47c6-9170-ae1eef326032",
+      "gx": 98.82,
+      "gz": -213.68,
+      "x": 119.29,
+      "z": -149.09,
+      "area": 35.3,
+      "width": 5.95,
+      "depth": 5.94,
+      "rotation": 1.25061,
+      "block": "block-01"
+    },
+    {
+      "id": "219b019b-7436-4f7d-9785-88ee40a72c52",
+      "gx": 354.0,
+      "gz": -213.45,
+      "x": 241.6,
+      "z": -148.95,
+      "area": 66.33,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 0.09355,
+      "block": "block-01"
+    },
+    {
+      "id": "3effcc80-6559-403f-be8b-264a4bf70cd1",
+      "gx": 52.36,
+      "gz": -211.25,
+      "x": 91.42,
+      "z": -147.71,
+      "area": 88.34,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 0.02899,
+      "block": "block-01"
+    },
+    {
+      "id": "ecb0a7f5-4d87-4656-9ccd-8e8de8a88365",
+      "gx": 116.48,
+      "gz": -209.99,
+      "x": 128.57,
+      "z": -147.0,
+      "area": 35.34,
+      "width": 11.9,
+      "depth": 2.97,
+      "rotation": 2.84584,
+      "block": "block-01"
+    },
+    {
+      "id": "8c05c71e-9d31-41d7-b38f-574226870a0c",
+      "gx": 282.54,
+      "gz": -208.26,
+      "x": 209.42,
+      "z": -146.01,
+      "area": 353.72,
+      "width": 21.03,
+      "depth": 16.83,
+      "rotation": 0.03849,
+      "block": "block-01"
+    },
+    {
+      "id": "8f21f238-6922-4be1-9d51-204f1981cfd6",
+      "gx": 69.67,
+      "gz": -207.64,
+      "x": 101.8,
+      "z": -145.66,
+      "area": 59.62,
+      "width": 9.46,
+      "depth": 6.3,
+      "rotation": 0.01371,
+      "block": "block-01"
+    },
+    {
+      "id": "63b0355c-a041-47a8-9f85-c1dbad00b47f",
+      "gx": 133.69,
+      "gz": -206.55,
+      "x": 137.52,
+      "z": -145.04,
+      "area": 77.28,
+      "width": 10.41,
+      "depth": 7.43,
+      "rotation": 2.97777,
+      "block": "block-01"
+    },
+    {
+      "id": "c69cdccb-fb9c-42a1-bae5-383afb364b49",
+      "gx": 245.52,
+      "gz": -205.23,
+      "x": 192.63,
+      "z": -144.3,
+      "area": 53.03,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 3.12232,
+      "block": "block-01"
+    },
+    {
+      "id": "e2bfcae7-419c-4297-a35f-6965e765ad62",
+      "gx": 196.46,
+      "gz": -205.19,
+      "x": 170.16,
+      "z": -144.28,
+      "area": 75.2,
+      "width": 16.36,
+      "depth": 8.92,
+      "rotation": 2.58857,
+      "block": "block-01"
+    },
+    {
+      "id": "0289e10f-0dc0-4af0-9bd8-02ded4adca78",
+      "gx": 265.57,
+      "gz": -204.61,
+      "x": 201.72,
+      "z": -143.95,
+      "area": 39.74,
+      "width": 6.31,
+      "depth": 6.3,
+      "rotation": 0.14588,
+      "block": "block-01"
+    },
+    {
+      "id": "44e45d0b-c592-44dc-a36b-232b57fdc3d2",
+      "gx": 317.51,
+      "gz": -202.52,
+      "x": 225.27,
+      "z": -142.76,
+      "area": 327.06,
+      "width": 38.9,
+      "depth": 8.41,
+      "rotation": 3.13718,
+      "block": "block-01"
+    },
+    {
+      "id": "9f80cf2b-4bc4-478e-b9eb-cf209f07c6b3",
+      "gx": 161.91,
+      "gz": -201.33,
+      "x": 152.19,
+      "z": -142.09,
+      "area": 85.08,
+      "width": 11.56,
+      "depth": 7.36,
+      "rotation": 0.47425,
+      "block": "block-01"
+    },
+    {
+      "id": "3ff189d4-f120-4780-a4a7-124289e9bc27",
+      "gx": 37.26,
+      "gz": -198.96,
+      "x": 82.36,
+      "z": -140.74,
+      "area": 132.61,
+      "width": 12.62,
+      "depth": 10.51,
+      "rotation": 1.56968,
+      "block": "block-01"
+    },
+    {
+      "id": "4caec412-ace9-4ce5-90ce-b27093303a32",
+      "gx": 125.38,
+      "gz": -197.19,
+      "x": 133.2,
+      "z": -139.74,
+      "area": 39.76,
+      "width": 6.31,
+      "depth": 6.31,
+      "rotation": 1.83388,
+      "block": "block-01"
+    },
+    {
+      "id": "9ba4facf-0442-4d60-8127-294d7837582a",
+      "gx": 90.72,
+      "gz": -197.16,
+      "x": 114.43,
+      "z": -139.72,
+      "area": 77.28,
+      "width": 10.4,
+      "depth": 7.43,
+      "rotation": 1.16124,
+      "block": "block-01"
+    },
+    {
+      "id": "91b61d3e-9bb6-46c7-b6b7-7ec70c3fc58e",
+      "gx": 175.63,
+      "gz": -196.64,
+      "x": 159.33,
+      "z": -139.43,
+      "area": 199.02,
+      "width": 22.3,
+      "depth": 8.92,
+      "rotation": 0.67337,
+      "block": "block-01"
+    },
+    {
+      "id": "5dd5c46f-527a-4368-ae29-2309aa03ba00",
+      "gx": 215.45,
+      "gz": -192.64,
+      "x": 179.0,
+      "z": -137.16,
+      "area": 39.77,
+      "width": 6.31,
+      "depth": 6.31,
+      "rotation": 0.13869,
+      "block": "block-01"
+    },
+    {
+      "id": "b8ae1221-a5d1-4c4a-848b-c8f67a2a1e98",
+      "gx": 189.82,
+      "gz": -185.52,
+      "x": 166.71,
+      "z": -133.13,
+      "area": 92.78,
+      "width": 10.41,
+      "depth": 8.92,
+      "rotation": 0.80292,
+      "block": "block-01"
+    },
+    {
+      "id": "09ecd324-daa8-4be5-946a-e120489f29bd",
+      "gx": 73.39,
+      "gz": -184.16,
+      "x": 104.03,
+      "z": -132.36,
+      "area": 66.32,
+      "width": 8.93,
+      "depth": 7.43,
+      "rotation": 1.41614,
+      "block": "block-01"
+    },
+    {
+      "id": "7bd4ac4f-53a6-4c1c-99ea-4d08dc15a0f5",
+      "gx": 35.37,
+      "gz": -183.99,
+      "x": 81.22,
+      "z": -132.26,
+      "area": 79.58,
+      "width": 8.93,
+      "depth": 8.92,
+      "rotation": 3.02939,
+      "block": "block-01"
+    },
+    {
+      "id": "c61e232d-b4d6-4e38-b2c8-cd72243c0032",
+      "gx": 86.83,
+      "gz": -180.3,
+      "x": 112.1,
+      "z": -130.17,
+      "area": 110.48,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 1.48609,
+      "block": "block-01"
+    },
+    {
+      "id": "ea043e45-9280-428d-a648-eefbab280c59",
+      "gx": 227.84,
+      "gz": -176.64,
+      "x": 184.62,
+      "z": -127.78,
+      "area": 88.43,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 0.011,
+      "block": "block-01"
+    },
+    {
+      "id": "d1c6cdc8-f0ce-4790-a59d-014c337ad200",
+      "gx": 127.24,
+      "gz": -176.48,
+      "x": 134.17,
+      "z": -127.68,
+      "area": 110.45,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 3.04811,
+      "block": "block-01"
+    },
+    {
+      "id": "e567b911-b971-4a83-b137-c79099a7fac8",
+      "gx": 277.13,
+      "gz": -174.18,
+      "x": 206.97,
+      "z": -126.16,
+      "area": 2029.3,
+      "width": 90.4,
+      "depth": 57.82,
+      "rotation": 0.00179,
+      "block": "block-01"
+    },
+    {
+      "id": "f14fd824-fdfa-44ba-be24-89c2975e45b1",
+      "gx": 103.7,
+      "gz": -173.66,
+      "x": 121.93,
+      "z": -125.82,
+      "area": 243.09,
+      "width": 23.13,
+      "depth": 10.52,
+      "rotation": 1.44401,
+      "block": "block-01"
+    },
+    {
+      "id": "8d38bb49-4dd9-4b32-82ba-d43e819e2919",
+      "gx": 195.94,
+      "gz": -172.31,
+      "x": 169.89,
+      "z": -124.93,
+      "area": 139.17,
+      "width": 13.38,
+      "depth": 10.4,
+      "rotation": 2.41897,
+      "block": "block-01"
+    },
+    {
+      "id": "b2555a53-1c9a-4958-ad5c-285a559a1fbf",
+      "gx": 312.76,
+      "gz": -168.06,
+      "x": 223.12,
+      "z": -122.12,
+      "area": 281.89,
+      "width": 27.33,
+      "depth": 17.88,
+      "rotation": 3.02676,
+      "block": "block-01"
+    },
+    {
+      "id": "e44e7778-155c-4bcb-91b9-9160c20eebe7",
+      "gx": 78.78,
+      "gz": -166.84,
+      "x": 107.27,
+      "z": -121.31,
+      "area": 145.8,
+      "width": 23.12,
+      "depth": 6.31,
+      "rotation": 0.03521,
+      "block": "block-01"
+    },
+    {
+      "id": "c5e76c3c-64c8-4b97-bf58-bd19e0785ba2",
+      "gx": 286.45,
+      "gz": -166.33,
+      "x": 211.19,
+      "z": -120.98,
+      "area": 92.74,
+      "width": 12.61,
+      "depth": 7.35,
+      "rotation": 3.11251,
+      "block": "block-01"
+    },
+    {
+      "id": "f97f15cb-e196-4d4e-ae17-13faaf29b55f",
+      "gx": 144.81,
+      "gz": -163.24,
+      "x": 143.3,
+      "z": -118.94,
+      "area": 441.65,
+      "width": 37.17,
+      "depth": 11.88,
+      "rotation": 1.30257,
+      "block": "block-01"
+    },
+    {
+      "id": "eeec5fa0-fe5b-4f17-ba04-dd6f6c005d1d",
+      "gx": 233.05,
+      "gz": -161.5,
+      "x": 186.98,
+      "z": -117.79,
+      "area": 131.49,
+      "width": 17.87,
+      "depth": 7.36,
+      "rotation": 0.09377,
+      "block": "block-01"
+    },
+    {
+      "id": "ff346069-e511-4e7e-9122-e49fd6dfb82e",
+      "gx": 171.74,
+      "gz": -160.81,
+      "x": 157.31,
+      "z": -117.33,
+      "area": 106.01,
+      "width": 11.89,
+      "depth": 8.92,
+      "rotation": 0.99889,
+      "block": "block-01"
+    },
+    {
+      "id": "dc8b0b80-d853-4154-b536-7761b5370fbe",
+      "gx": 185.58,
+      "gz": -159.62,
+      "x": 164.5,
+      "z": -116.55,
+      "area": 70.65,
+      "width": 11.9,
+      "depth": 5.94,
+      "rotation": 1.27813,
+      "block": "block-01"
+    },
+    {
+      "id": "6133a67e-a383-4dba-92fb-2b4828f829d9",
+      "gx": 120.56,
+      "gz": -158.61,
+      "x": 130.69,
+      "z": -115.89,
+      "area": 353.57,
+      "width": 21.03,
+      "depth": 16.82,
+      "rotation": 1.49884,
+      "block": "block-01"
+    },
+    {
+      "id": "e17e18eb-4180-4f9e-ac54-e29094d57f57",
+      "gx": 43.29,
+      "gz": -156.89,
+      "x": 85.97,
+      "z": -114.75,
+      "area": 512.61,
+      "width": 30.49,
+      "depth": 16.82,
+      "rotation": 0.25632,
+      "block": "block-01"
+    },
+    {
+      "id": "0a643667-3dd9-4eb1-bbb0-55f8a6dd064e",
+      "gx": 298.14,
+      "gz": -156.88,
+      "x": 216.49,
+      "z": -114.74,
+      "area": 143.66,
+      "width": 13.68,
+      "depth": 10.51,
+      "rotation": 3.05689,
+      "block": "block-01"
+    },
+    {
+      "id": "db3663d8-71ab-4ef8-b8de-f7d9981c9f5b",
+      "gx": -119.33,
+      "gz": -156.31,
+      "x": -13.56,
+      "z": -114.36,
+      "area": 125.47,
+      "width": 16.79,
+      "depth": 7.53,
+      "rotation": 3.12899,
+      "block": "block-01"
+    },
+    {
+      "id": "8dd53422-de13-4933-b923-31e0a6d96f94",
+      "gx": 85.86,
+      "gz": -154.1,
+      "x": 111.52,
+      "z": -112.9,
+      "area": 70.76,
+      "width": 8.42,
+      "depth": 8.41,
+      "rotation": 1.64596,
+      "block": "block-01"
+    },
+    {
+      "id": "2962edb6-8913-4bb2-87d0-83dfe23c3cb9",
+      "gx": 72.68,
+      "gz": -153.53,
+      "x": 103.61,
+      "z": -112.53,
+      "area": 110.46,
+      "width": 10.51,
+      "depth": 10.51,
+      "rotation": 1.55424,
+      "block": "block-01"
+    },
+    {
+      "id": "b6b1f1ed-77a1-4b0f-8de6-f9e920f25c2a",
+      "gx": 103.02,
+      "gz": -153.24,
+      "x": 121.57,
+      "z": -112.34,
+      "area": 106.04,
+      "width": 12.61,
+      "depth": 8.41,
+      "rotation": 3.10282,
+      "block": "block-01"
+    },
+    {
+      "id": "0e148c0e-5fec-47b1-bc2e-19c895020acb",
+      "gx": 194.46,
+      "gz": -146.81,
+      "x": 169.12,
+      "z": -108.09,
+      "area": 176.88,
+      "width": 23.79,
+      "depth": 7.44,
+      "rotation": 1.0112,
+      "block": "block-01"
+    },
+    {
+      "id": "cc13dcb4-fabe-4cf5-a944-f0800fa6db3a",
+      "gx": 6.67,
+      "gz": -145.51,
+      "x": 64.0,
+      "z": -107.24,
+      "area": 276.2,
+      "width": 21.03,
+      "depth": 17.87,
+      "rotation": 1.83626,
+      "block": "block-01"
+    },
+    {
+      "id": "907cbf86-7759-4399-8f20-82dfeca0bfa6",
+      "gx": 24.83,
+      "gz": -142.72,
+      "x": 74.9,
+      "z": -105.39,
+      "area": 66.28,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 0.15537,
+      "block": "block-01"
+    },
+    {
+      "id": "9bf32963-abc8-46bd-a62f-d1a7b8b79cf2",
+      "gx": -18.19,
+      "gz": -139.65,
+      "x": 49.08,
+      "z": -103.37,
+      "area": 99.44,
+      "width": 10.52,
+      "depth": 9.46,
+      "rotation": 0.2748,
+      "block": "block-01"
+    },
+    {
+      "id": "c8dd4704-39dc-42f7-886f-fb7078664bd7",
+      "gx": 108.34,
+      "gz": -138.77,
+      "x": 124.34,
+      "z": -102.79,
+      "area": 132.5,
+      "width": 12.61,
+      "depth": 10.51,
+      "rotation": 3.08522,
+      "block": "block-01"
+    },
+    {
+      "id": "2a5d5c63-501d-4de3-ac8d-a9d14d0341f2",
+      "gx": -127.03,
+      "gz": -137.77,
+      "x": -18.57,
+      "z": -102.13,
+      "area": 86.14,
+      "width": 19.32,
+      "depth": 4.46,
+      "rotation": 2.91314,
+      "block": "block-01"
+    },
+    {
+      "id": "5f221fa4-284e-4a3c-92ed-76fed90f21a6",
+      "gx": 271.35,
+      "gz": -137.0,
+      "x": 204.35,
+      "z": -101.62,
+      "area": 53.04,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 3.12834,
+      "block": "block-01"
+    },
+    {
+      "id": "7a560056-69c6-4e11-b37a-356582d23198",
+      "gx": 208.9,
+      "gz": -136.44,
+      "x": 176.04,
+      "z": -101.25,
+      "area": 39.76,
+      "width": 6.31,
+      "depth": 6.31,
+      "rotation": 0.33531,
+      "block": "block-01"
+    },
+    {
+      "id": "73133f1f-e01d-433d-a4d4-c0b8d863c0dd",
+      "gx": 123.3,
+      "gz": -136.37,
+      "x": 132.12,
+      "z": -101.2,
+      "area": 170.14,
+      "width": 14.72,
+      "depth": 11.56,
+      "rotation": 1.71054,
+      "block": "block-01"
+    },
+    {
+      "id": "78f8cd96-cb7a-4ec2-9b56-a3f8917a6e3c",
+      "gx": 92.35,
+      "gz": -136.06,
+      "x": 115.41,
+      "z": -101.0,
+      "area": 165.68,
+      "width": 15.77,
+      "depth": 10.51,
+      "rotation": 1.68306,
+      "block": "block-01"
+    },
+    {
+      "id": "48030487-0751-4ea4-896b-878736493cbb",
+      "gx": 78.06,
+      "gz": -134.08,
+      "x": 106.83,
+      "z": -99.69,
+      "area": 88.44,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 1.75648,
+      "block": "block-01"
+    },
+    {
+      "id": "18e5a17c-1ca4-4217-926a-9a51db9b22f0",
+      "gx": 39.88,
+      "gz": -126.0,
+      "x": 83.93,
+      "z": -94.36,
+      "area": 357.78,
+      "width": 33.63,
+      "depth": 17.87,
+      "rotation": 0.18277,
+      "block": "block-01"
+    },
+    {
+      "id": "fbe3d498-1212-4513-9781-e0dbd398ad9a",
+      "gx": 271.94,
+      "gz": -124.48,
+      "x": 204.61,
+      "z": -93.36,
+      "area": 154.56,
+      "width": 14.71,
+      "depth": 10.51,
+      "rotation": 3.10045,
+      "block": "block-01"
+    },
+    {
+      "id": "6cd9bfd9-e8ac-414c-a9d5-efc21f1f1556",
+      "gx": 258.33,
+      "gz": -124.32,
+      "x": 198.44,
+      "z": -93.25,
+      "area": 70.67,
+      "width": 8.41,
+      "depth": 8.41,
+      "rotation": 3.11251,
+      "block": "block-01"
+    },
+    {
+      "id": "fb0df07a-fb96-46c6-8ca2-63e9297b25b1",
+      "gx": -82.0,
+      "gz": -123.92,
+      "x": 10.7,
+      "z": -92.99,
+      "area": 81.15,
+      "width": 9.67,
+      "depth": 8.45,
+      "rotation": 3.02841,
+      "block": "block-01"
+    },
+    {
+      "id": "e51613fd-e447-4b16-99dd-32ca8893261a",
+      "gx": 81.72,
+      "gz": -121.74,
+      "x": 109.03,
+      "z": -91.55,
+      "area": 70.69,
+      "width": 8.42,
+      "depth": 8.41,
+      "rotation": 1.75392,
+      "block": "block-01"
+    },
+    {
+      "id": "a1418da3-eaa7-4d26-95cd-a38adbffbe25",
+      "gx": 148.32,
+      "gz": -121.69,
+      "x": 145.13,
+      "z": -91.52,
+      "area": 53.02,
+      "width": 8.42,
+      "depth": 6.3,
+      "rotation": 2.18533,
+      "block": "block-01"
+    },
+    {
+      "id": "d673fe6a-ee7d-4298-a978-29df6c2db24a",
+      "gx": 179.14,
+      "gz": -121.66,
+      "x": 161.15,
+      "z": -91.5,
+      "area": 108.28,
+      "width": 10.42,
+      "depth": 10.4,
+      "rotation": 1.08495,
+      "block": "block-01"
+    },
+    {
+      "id": "ab2459f9-28d0-48c1-805f-1b25750476b3",
+      "gx": 162.37,
+      "gz": -120.73,
+      "x": 152.43,
+      "z": -90.88,
+      "area": 39.77,
+      "width": 6.31,
+      "depth": 6.31,
+      "rotation": 1.41499,
+      "block": "block-01"
+    },
+    {
+      "id": "9fc8df46-9335-40ba-af06-7354bb5baff3",
+      "gx": 66.67,
+      "gz": -119.21,
+      "x": 100.0,
+      "z": -89.88,
+      "area": 72.91,
+      "width": 11.57,
+      "depth": 6.31,
+      "rotation": 1.77426,
+      "block": "block-01"
+    },
+    {
+      "id": "2521a1d3-906d-4042-81f5-5e2f21d25b85",
+      "gx": 129.91,
+      "gz": -117.56,
+      "x": 135.55,
+      "z": -88.79,
+      "area": 265.08,
+      "width": 25.23,
+      "depth": 10.51,
+      "rotation": 0.07216,
+      "block": "block-01"
+    },
+    {
+      "id": "9802ae04-72b0-4246-a7e3-ffda29567f0f",
+      "gx": 99.79,
+      "gz": -111.55,
+      "x": 119.88,
+      "z": -84.82,
+      "area": 225.33,
+      "width": 17.87,
+      "depth": 12.62,
+      "rotation": 0.514,
+      "block": "block-01"
+    },
+    {
+      "id": "e4053ad7-64c7-4754-b3aa-15df872c6cf0",
+      "gx": 15.21,
+      "gz": -111.33,
+      "x": 69.13,
+      "z": -84.67,
+      "area": 79.6,
+      "width": 9.47,
+      "depth": 8.41,
+      "rotation": 1.9222,
+      "block": "block-01"
+    },
+    {
+      "id": "0c01984a-83cc-4890-92dd-bb210892a7df",
+      "gx": 171.09,
+      "gz": -109.43,
+      "x": 156.97,
+      "z": -83.42,
+      "area": 106.08,
+      "width": 11.9,
+      "depth": 8.92,
+      "rotation": 2.57901,
+      "block": "block-01"
+    },
+    {
+      "id": "0d0ddc91-707f-4440-8bb3-ddc4ce72113a",
+      "gx": 56.85,
+      "gz": -108.75,
+      "x": 94.11,
+      "z": -82.97,
+      "area": 99.47,
+      "width": 10.51,
+      "depth": 9.47,
+      "rotation": 0.09037,
+      "block": "block-01"
+    },
+    {
+      "id": "19bab740-b346-44b6-9d24-1669704d0aac",
+      "gx": -10.35,
+      "gz": -106.63,
+      "x": 53.79,
+      "z": -81.57,
+      "area": 185.51,
+      "width": 14.72,
+      "depth": 12.61,
+      "rotation": 1.80619,
+      "block": "block-01"
+    },
+    {
+      "id": "f314814d-18da-4c9d-ab44-79bbec5de340",
+      "gx": 138.63,
+      "gz": -105.54,
+      "x": 140.09,
+      "z": -80.86,
+      "area": 132.52,
+      "width": 21.03,
+      "depth": 6.3,
+      "rotation": 0.4406,
+      "block": "block-01"
+    },
+    {
+      "id": "635877af-d400-4506-bbdf-8afbe88642c3",
+      "gx": 78.17,
+      "gz": -104.31,
+      "x": 106.9,
+      "z": -80.04,
+      "area": 232.03,
+      "width": 22.3,
+      "depth": 10.41,
+      "rotation": 2.89508,
+      "block": "block-01"
+    },
+    {
+      "id": "44edd37c-8542-4cb3-8579-ab8fd7e3fa44",
+      "gx": 275.14,
+      "gz": -102.7,
+      "x": 206.06,
+      "z": -78.99,
+      "area": 132.44,
+      "width": 12.61,
+      "depth": 10.51,
+      "rotation": 1.5788,
+      "block": "block-01"
+    },
+    {
+      "id": "58ebfcc8-3ae7-493b-b6c8-dd27c5f0c034",
+      "gx": 293.4,
+      "gz": -101.92,
+      "x": 214.34,
+      "z": -78.47,
+      "area": 141.44,
+      "width": 11.9,
+      "depth": 11.89,
+      "rotation": 3.02908,
+      "block": "block-01"
+    },
+    {
+      "id": "c5bebe88-d435-4e1a-a0c4-ea995067cb33",
+      "gx": 260.62,
+      "gz": -100.42,
+      "x": 199.48,
+      "z": -77.48,
+      "area": 159.07,
+      "width": 12.62,
+      "depth": 12.61,
+      "rotation": 0.03514,
+      "block": "block-01"
+    },
+    {
+      "id": "de97617b-159a-4b75-bd92-fd519f8a4a30",
+      "gx": 341.87,
+      "gz": -98.43,
+      "x": 236.32,
+      "z": -76.17,
+      "area": 66.28,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 0.16506,
+      "block": "block-01"
+    },
+    {
+      "id": "666bb1a6-63e4-4291-8667-018362a2f7a5",
+      "gx": 142.62,
+      "gz": -95.99,
+      "x": 142.16,
+      "z": -74.55,
+      "area": 165.85,
+      "width": 26.29,
+      "depth": 6.31,
+      "rotation": 0.44659,
+      "block": "block-01"
+    },
+    {
+      "id": "95cff3ed-ddde-4732-87a7-f8bfc6f4a5bd",
+      "gx": 62.87,
+      "gz": -94.49,
+      "x": 97.72,
+      "z": -73.57,
+      "area": 44.23,
+      "width": 10.52,
+      "depth": 4.21,
+      "rotation": 2.24389,
+      "block": "block-01"
+    },
+    {
+      "id": "517940db-524f-4dee-8d0a-5302ed5c79cc",
+      "gx": -95.69,
+      "gz": -94.4,
+      "x": 1.8,
+      "z": -73.5,
+      "area": 145.88,
+      "width": 12.18,
+      "depth": 12.08,
+      "rotation": 2.9793,
+      "block": "block-01"
+    },
+    {
+      "id": "c9068072-1252-45bf-8db6-ecac35116f5a",
+      "gx": 6.55,
+      "gz": -93.48,
+      "x": 63.93,
+      "z": -72.89,
+      "area": 35.36,
+      "width": 5.95,
+      "depth": 5.95,
+      "rotation": 0.85453,
+      "block": "block-01"
+    },
+    {
+      "id": "d892b451-af28-4289-bb24-8660534aae42",
+      "gx": 376.0,
+      "gz": -92.95,
+      "x": 250.4,
+      "z": -72.55,
+      "area": 252.92,
+      "width": 18.92,
+      "depth": 13.67,
+      "rotation": 0.16134,
+      "block": "block-01"
+    },
+    {
+      "id": "a40b8841-0640-4725-977c-48914939953d",
+      "gx": 94.91,
+      "gz": -92.04,
+      "x": 116.95,
+      "z": -71.95,
+      "area": 119.32,
+      "width": 18.93,
+      "depth": 6.31,
+      "rotation": 0.30559,
+      "block": "block-01"
+    },
+    {
+      "id": "9613d23a-9804-4a2a-b890-cc29347afa0c",
+      "gx": 48.63,
+      "gz": -89.0,
+      "x": 89.18,
+      "z": -69.94,
+      "area": 258.47,
+      "width": 18.92,
+      "depth": 13.66,
+      "rotation": 0.39124,
+      "block": "block-01"
+    },
+    {
+      "id": "8458acb1-7d40-481d-94ca-eb6929074332",
+      "gx": 276.47,
+      "gz": -88.33,
+      "x": 206.66,
+      "z": -69.5,
+      "area": 66.24,
+      "width": 10.51,
+      "depth": 6.3,
+      "rotation": 0.01104,
+      "block": "block-01"
+    },
+    {
+      "id": "b91a642d-fe3e-49dc-ae65-30aee8a0d164",
+      "gx": 302.79,
+      "gz": -88.01,
+      "x": 218.6,
+      "z": -69.29,
+      "area": 35.35,
+      "width": 5.95,
+      "depth": 5.95,
+      "rotation": 0.76235,
+      "block": "block-01"
+    },
+    {
+      "id": "8f18668f-45c7-41c3-8543-ab4f30d00b66",
+      "gx": -12.01,
+      "gz": -87.96,
+      "x": 52.8,
+      "z": -69.25,
+      "area": 97.24,
+      "width": 11.57,
+      "depth": 8.42,
+      "rotation": 0.38563,
+      "block": "block-01"
+    },
+    {
+      "id": "80d87fc5-3183-44e7-9d8f-9aa2876238f4",
+      "gx": 262.61,
+      "gz": -87.92,
+      "x": 200.38,
+      "z": -69.23,
+      "area": 66.34,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 0.03001,
+      "block": "block-01"
+    },
+    {
+      "id": "de745bdd-fac5-4569-b7fe-0c17b0293ace",
+      "gx": 290.69,
+      "gz": -87.34,
+      "x": 213.11,
+      "z": -68.85,
+      "area": 53.0,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 0.02928,
+      "block": "block-01"
+    },
+    {
+      "id": "ddcf9071-ed96-4206-b805-9c71034c7a41",
+      "gx": 221.17,
+      "gz": -86.34,
+      "x": 181.6,
+      "z": -68.19,
+      "area": 171.34,
+      "width": 20.33,
+      "depth": 8.49,
+      "rotation": 0.18126,
+      "block": "block-01"
+    },
+    {
+      "id": "7c534052-3f9e-4d3b-9dc5-f50266a6fcc7",
+      "gx": 146.07,
+      "gz": -85.89,
+      "x": 143.95,
+      "z": -67.88,
+      "area": 139.31,
+      "width": 22.08,
+      "depth": 6.31,
+      "rotation": 0.46182,
+      "block": "block-01"
+    },
+    {
+      "id": "c70dac67-c331-451a-bb96-d467ca2ec87d",
+      "gx": -227.84,
+      "gz": -84.74,
+      "x": -90.88,
+      "z": -67.13,
+      "area": 100.63,
+      "width": 17.87,
+      "depth": 11.57,
+      "rotation": 0.0199,
+      "block": "block-01"
+    },
+    {
+      "id": "e9bb70cb-bafc-4d3a-af0b-ce8d545d5d0b",
+      "gx": 112.0,
+      "gz": -84.64,
+      "x": 126.24,
+      "z": -67.06,
+      "area": 106.09,
+      "width": 12.62,
+      "depth": 8.41,
+      "rotation": 0.38206,
+      "block": "block-01"
+    },
+    {
+      "id": "813e08ca-1e58-4930-bc01-1d78f2795cbb",
+      "gx": 165.53,
+      "gz": -84.0,
+      "x": 154.07,
+      "z": -66.64,
+      "area": 171.81,
+      "width": 16.35,
+      "depth": 10.55,
+      "rotation": 0.30315,
+      "block": "block-01"
+    },
+    {
+      "id": "477c2b8a-3883-419b-a0f4-249d1dcb0c1b",
+      "gx": -94.77,
+      "gz": -80.15,
+      "x": 2.4,
+      "z": -64.1,
+      "area": 147.42,
+      "width": 12.23,
+      "depth": 12.12,
+      "rotation": 1.42183,
+      "block": "block-01"
+    },
+    {
+      "id": "1f119571-148f-4562-9d4c-d200c805da37",
+      "gx": 96.28,
+      "gz": -79.86,
+      "x": 117.77,
+      "z": -63.89,
+      "area": 53.03,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 0.25665,
+      "block": "block-01"
+    },
+    {
+      "id": "3af762c2-ccd3-4eb8-bc8a-3b9f25a5956b",
+      "gx": 242.42,
+      "gz": -78.71,
+      "x": 191.23,
+      "z": -62.97,
+      "area": 92.59,
+      "width": 12.49,
+      "depth": 7.43,
+      "rotation": 0.22063,
+      "block": "block-01"
+    },
+    {
+      "id": "df77d71d-ad9f-4ebd-9f53-d85896d5d851",
+      "gx": -184.17,
+      "gz": -76.78,
+      "x": -58.12,
+      "z": -61.42,
+      "area": 212.22,
+      "width": 23.73,
+      "depth": 10.68,
+      "rotation": 0.21879,
+      "block": "block-01"
+    },
+    {
+      "id": "d343af78-2d73-4acb-a5bf-ea4b3f4c2298",
+      "gx": 15.81,
+      "gz": -75.02,
+      "x": 69.48,
+      "z": -60.02,
+      "area": 141.32,
+      "width": 16.82,
+      "depth": 8.4,
+      "rotation": 2.15204,
+      "block": "block-01"
+    },
+    {
+      "id": "2a220874-b0f5-4043-ae3d-8161e313eb89",
+      "gx": -12.16,
+      "gz": -72.27,
+      "x": 52.7,
+      "z": -57.81,
+      "area": 193.14,
+      "width": 26.27,
+      "depth": 7.35,
+      "rotation": 0.55412,
+      "block": "block-01"
+    },
+    {
+      "id": "6f015f1a-9ac3-4158-beb7-6a4b8e25c2d0",
+      "gx": 195.79,
+      "gz": -69.78,
+      "x": 169.81,
+      "z": -55.83,
+      "area": 251.92,
+      "width": 22.78,
+      "depth": 12.46,
+      "rotation": 0.37975,
+      "block": "block-01"
+    },
+    {
+      "id": "31e5ac24-2efb-4e24-82a6-9a25fd45621d",
+      "gx": 97.98,
+      "gz": -68.24,
+      "x": 118.79,
+      "z": -54.59,
+      "area": 35.39,
+      "width": 5.95,
+      "depth": 5.95,
+      "rotation": 2.56652,
+      "block": "block-01"
+    },
+    {
+      "id": "b40b382d-eac6-4297-82e6-5d27c08cea36",
+      "gx": 114.98,
+      "gz": -66.18,
+      "x": 127.79,
+      "z": -52.95,
+      "area": 169.06,
+      "width": 17.87,
+      "depth": 9.46,
+      "rotation": 1.87019,
+      "block": "block-01"
+    },
+    {
+      "id": "6efb4065-e613-47d6-81bc-df0a2c4f231b",
+      "gx": 74.06,
+      "gz": -65.39,
+      "x": 104.44,
+      "z": -52.31,
+      "area": 35.37,
+      "width": 5.95,
+      "depth": 5.95,
+      "rotation": 2.31122,
+      "block": "block-01"
+    },
+    {
+      "id": "a72eacca-50c6-45cb-8b4f-6ea0384e6517",
+      "gx": -153.63,
+      "gz": -62.04,
+      "x": -35.86,
+      "z": -49.63,
+      "area": 79.51,
+      "width": 8.92,
+      "depth": 8.92,
+      "rotation": 2.75676,
+      "block": "block-01"
+    },
+    {
+      "id": "73ad18ce-647d-48d7-a8b2-864223c585f9",
+      "gx": 139.82,
+      "gz": -60.86,
+      "x": 140.71,
+      "z": -48.68,
+      "area": 146.95,
+      "width": 19.97,
+      "depth": 7.36,
+      "rotation": 0.34844,
+      "block": "block-01"
+    },
+    {
+      "id": "f82aecc2-de2d-4d07-abc7-5808eb75e464",
+      "gx": -8.62,
+      "gz": -59.83,
+      "x": 54.83,
+      "z": -47.86,
+      "area": 203.21,
+      "width": 24.17,
+      "depth": 8.41,
+      "rotation": 0.45247,
+      "block": "block-01"
+    },
+    {
+      "id": "72550830-e9e3-4705-8158-80f169af495f",
+      "gx": 25.76,
+      "gz": -59.13,
+      "x": 75.45,
+      "z": -47.3,
+      "area": 110.52,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 0.37582,
+      "block": "block-01"
+    },
+    {
+      "id": "55e8f1f5-811e-4013-a8d6-a812bc7c0c1c",
+      "gx": 246.07,
+      "gz": -57.08,
+      "x": 192.88,
+      "z": -45.66,
+      "area": 78.79,
+      "width": 11.85,
+      "depth": 6.66,
+      "rotation": 0.16655,
+      "block": "block-01"
+    },
+    {
+      "id": "286f32ae-3b4e-4437-8139-23f565232049",
+      "gx": 102.45,
+      "gz": -56.01,
+      "x": 121.27,
+      "z": -44.81,
+      "area": 79.52,
+      "width": 12.61,
+      "depth": 6.31,
+      "rotation": 1.79945,
+      "block": "block-01"
+    },
+    {
+      "id": "d2c887e3-1f4f-4e72-bd65-4f710cd0f3a5",
+      "gx": 377.88,
+      "gz": -52.41,
+      "x": 251.15,
+      "z": -41.93,
+      "area": 176.75,
+      "width": 14.87,
+      "depth": 11.89,
+      "rotation": 1.25053,
+      "block": "block-01"
+    },
+    {
+      "id": "976e70b3-b954-4023-a56b-f8d1788ebdb2",
+      "gx": 11.63,
+      "gz": -51.99,
+      "x": 66.98,
+      "z": -41.59,
+      "area": 132.47,
+      "width": 12.61,
+      "depth": 10.5,
+      "rotation": 0.43737,
+      "block": "block-01"
+    },
+    {
+      "id": "27c27180-c76c-4318-a65d-9fab71d14382",
+      "gx": 62.88,
+      "gz": -51.56,
+      "x": 97.73,
+      "z": -41.24,
+      "area": 55.24,
+      "width": 7.44,
+      "depth": 7.43,
+      "rotation": 1.11935,
+      "block": "block-01"
+    },
+    {
+      "id": "ee19adde-e3db-4956-aebd-710e8c898c86",
+      "gx": 335.64,
+      "gz": -49.78,
+      "x": 233.49,
+      "z": -39.83,
+      "area": 53.01,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 0.02617,
+      "block": "block-01"
+    },
+    {
+      "id": "241ab8ab-1f5d-4f70-8ead-4773a89064e9",
+      "gx": 356.84,
+      "gz": -49.12,
+      "x": 242.74,
+      "z": -39.3,
+      "area": 46.41,
+      "width": 7.36,
+      "depth": 6.31,
+      "rotation": 0.3546,
+      "block": "block-01"
+    },
+    {
+      "id": "d03291cf-2aaa-489a-bbc3-2f634d70ff2a",
+      "gx": 282.9,
+      "gz": -48.66,
+      "x": 209.58,
+      "z": -38.93,
+      "area": 449.57,
+      "width": 55.71,
+      "depth": 23.12,
+      "rotation": 0.13662,
+      "block": "block-01"
+    },
+    {
+      "id": "c13dfb31-900b-4d53-a43a-e5b092d1e1ed",
+      "gx": 320.72,
+      "gz": -48.6,
+      "x": 226.73,
+      "z": -38.88,
+      "area": 70.71,
+      "width": 11.89,
+      "depth": 5.95,
+      "rotation": 1.45929,
+      "block": "block-01"
+    },
+    {
+      "id": "bf39f978-0932-41e3-93de-35bb97ab8614",
+      "gx": 139.02,
+      "gz": -47.69,
+      "x": 140.29,
+      "z": -38.16,
+      "area": 66.27,
+      "width": 10.52,
+      "depth": 6.3,
+      "rotation": 0.32371,
+      "block": "block-01"
+    },
+    {
+      "id": "671f18cf-16e5-4a9d-8f41-446eeabfc5ea",
+      "gx": -144.02,
+      "gz": -47.56,
+      "x": -29.62,
+      "z": -38.05,
+      "area": 225.35,
+      "width": 17.58,
+      "depth": 12.82,
+      "rotation": 2.1211,
+      "block": "block-01"
+    },
+    {
+      "id": "b3a85ecb-7cc7-4b8f-aa58-290eaa4fb012",
+      "gx": 93.83,
+      "gz": -47.56,
+      "x": 116.3,
+      "z": -38.04,
+      "area": 88.44,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 0.33944,
+      "block": "block-01"
+    },
+    {
+      "id": "b52e6c5d-8c67-43b3-8d61-1b774a0c255d",
+      "gx": 120.56,
+      "gz": -47.11,
+      "x": 130.69,
+      "z": -37.69,
+      "area": 159.13,
+      "width": 12.62,
+      "depth": 12.62,
+      "rotation": 0.35141,
+      "block": "block-01"
+    },
+    {
+      "id": "d75f596c-c80f-47db-97d0-77131528bdfc",
+      "gx": 34.02,
+      "gz": -43.01,
+      "x": 80.41,
+      "z": -34.41,
+      "area": 110.47,
+      "width": 10.51,
+      "depth": 10.51,
+      "rotation": 0.3913,
+      "block": "block-01"
+    },
+    {
+      "id": "db895b26-ee9f-414c-9100-de02f99be339",
+      "gx": 177.69,
+      "gz": -42.24,
+      "x": 160.4,
+      "z": -33.79,
+      "area": 198.8,
+      "width": 18.92,
+      "depth": 10.51,
+      "rotation": 3.11251,
+      "block": "block-01"
+    },
+    {
+      "id": "4acae4ec-4953-4101-8d19-9aca466a048e",
+      "gx": -115.83,
+      "gz": -40.1,
+      "x": -11.29,
+      "z": -32.08,
+      "area": 375.57,
+      "width": 22.86,
+      "depth": 19.68,
+      "rotation": 2.8011,
+      "block": "block-01"
+    },
+    {
+      "id": "ab23d002-60b0-40fb-abff-cbf33c0e5aa8",
+      "gx": -7.48,
+      "gz": -39.22,
+      "x": 55.51,
+      "z": -31.38,
+      "area": 132.56,
+      "width": 12.61,
+      "depth": 10.51,
+      "rotation": 1.96553,
+      "block": "block-01"
+    },
+    {
+      "id": "220c08d5-055e-494a-b098-47daa9269ad7",
+      "gx": 262.74,
+      "gz": -35.9,
+      "x": 200.44,
+      "z": -28.72,
+      "area": 112.66,
+      "width": 17.87,
+      "depth": 6.31,
+      "rotation": 0.25932,
+      "block": "block-01"
+    },
+    {
+      "id": "b948dbe2-798b-4a81-ad97-0625eacd19e5",
+      "gx": 383.24,
+      "gz": -35.31,
+      "x": 253.3,
+      "z": -28.25,
+      "area": 79.57,
+      "width": 18.92,
+      "depth": 4.21,
+      "rotation": 0.23524,
+      "block": "block-01"
+    },
+    {
+      "id": "d1034c58-2a02-476f-97cf-ecd9b50abf3c",
+      "gx": 100.09,
+      "gz": -34.7,
+      "x": 120.05,
+      "z": -27.76,
+      "area": 110.53,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 0.39426,
+      "block": "block-01"
+    },
+    {
+      "id": "610941ed-0134-49e2-bad2-e3072c3a49cc",
+      "gx": 17.81,
+      "gz": -34.48,
+      "x": 70.69,
+      "z": -27.58,
+      "area": 185.6,
+      "width": 14.72,
+      "depth": 12.62,
+      "rotation": 0.44308,
+      "block": "block-01"
+    },
+    {
+      "id": "e7cf4167-665f-4b37-8ee3-41eea3da7961",
+      "gx": 351.9,
+      "gz": -32.35,
+      "x": 240.76,
+      "z": -25.88,
+      "area": 185.63,
+      "width": 14.72,
+      "depth": 12.62,
+      "rotation": 0.20423,
+      "block": "block-01"
+    },
+    {
+      "id": "531598af-eba0-42b5-8498-1eb8a9485c15",
+      "gx": 126.74,
+      "gz": -32.11,
+      "x": 133.91,
+      "z": -25.68,
+      "area": 99.42,
+      "width": 15.77,
+      "depth": 6.31,
+      "rotation": 0.44951,
+      "block": "block-01"
+    },
+    {
+      "id": "ea32c2a4-a23a-4483-b91f-fbc3d4a1264a",
+      "gx": 207.13,
+      "gz": -30.36,
+      "x": 175.23,
+      "z": -24.29,
+      "area": 38.7,
+      "width": 7.36,
+      "depth": 5.26,
+      "rotation": 0.62132,
+      "block": null
+    },
+    {
+      "id": "a7736dc7-ab01-4e7f-9826-d0d316179adf",
+      "gx": 83.86,
+      "gz": -28.54,
+      "x": 110.31,
+      "z": -22.83,
+      "area": 187.78,
+      "width": 17.87,
+      "depth": 10.51,
+      "rotation": 0.25603,
+      "block": "block-01"
+    },
+    {
+      "id": "6285c00b-2bc2-4988-af55-f521856e3038",
+      "gx": 276.87,
+      "gz": -27.17,
+      "x": 206.85,
+      "z": -21.73,
+      "area": 70.7,
+      "width": 8.41,
+      "depth": 8.41,
+      "rotation": 1.68592,
+      "block": "block-01"
+    },
+    {
+      "id": "c8dfb807-04a8-4ad7-9e4f-f0c9c40c8159",
+      "gx": 335.7,
+      "gz": -26.79,
+      "x": 233.52,
+      "z": -21.43,
+      "area": 35.34,
+      "width": 5.95,
+      "depth": 5.94,
+      "rotation": 0.73271,
+      "block": "block-01"
+    },
+    {
+      "id": "ea718601-f656-45fc-aef2-1b217f1dad79",
+      "gx": 66.11,
+      "gz": -25.85,
+      "x": 99.66,
+      "z": -20.68,
+      "area": 149.2,
+      "width": 15.77,
+      "depth": 9.47,
+      "rotation": 1.70814,
+      "block": "block-01"
+    },
+    {
+      "id": "ee14142a-4c91-49d5-8bba-d3008a17b7fb",
+      "gx": 255.64,
+      "gz": -24.79,
+      "x": 197.22,
+      "z": -19.83,
+      "area": 70.69,
+      "width": 8.42,
+      "depth": 8.4,
+      "rotation": 1.71344,
+      "block": "block-01"
+    },
+    {
+      "id": "e716fd33-5aba-44dd-b28c-c84edb809be1",
+      "gx": 240.27,
+      "gz": -24.43,
+      "x": 190.25,
+      "z": -19.54,
+      "area": 212.04,
+      "width": 16.82,
+      "depth": 12.62,
+      "rotation": 0.17963,
+      "block": "block-01"
+    },
+    {
+      "id": "89fdb362-eafa-4802-8bb9-7e86015715e9",
+      "gx": 318.51,
+      "gz": -22.58,
+      "x": 225.72,
+      "z": -18.06,
+      "area": 110.5,
+      "width": 14.87,
+      "depth": 7.43,
+      "rotation": 1.32092,
+      "block": "block-01"
+    },
+    {
+      "id": "50166080-7237-46f5-8778-67a3e96c6e69",
+      "gx": 176.99,
+      "gz": -22.46,
+      "x": 160.03,
+      "z": -17.97,
+      "area": 53.07,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 0.33871,
+      "block": "block-01"
+    },
+    {
+      "id": "4fcb777f-346c-465f-992e-1ff8c89a36c7",
+      "gx": 294.4,
+      "gz": -20.41,
+      "x": 214.79,
+      "z": -16.33,
+      "area": 132.6,
+      "width": 12.62,
+      "depth": 10.51,
+      "rotation": 1.82761,
+      "block": "block-01"
+    },
+    {
+      "id": "6d45170c-cf7c-4e63-a25a-a1303b6c3b88",
+      "gx": 2.2,
+      "gz": -19.81,
+      "x": 61.32,
+      "z": -15.85,
+      "area": 154.61,
+      "width": 14.71,
+      "depth": 10.51,
+      "rotation": 2.04201,
+      "block": "block-01"
+    },
+    {
+      "id": "beba8e41-11bd-442e-8a22-089ba57f5053",
+      "gx": -21.03,
+      "gz": -19.42,
+      "x": 47.38,
+      "z": -15.54,
+      "area": 460.52,
+      "width": 35.73,
+      "depth": 13.66,
+      "rotation": 2.0326,
+      "block": "block-01"
+    },
+    {
+      "id": "a28b2de7-b67a-447d-aafe-c3077aa99053",
+      "gx": 41.34,
+      "gz": -18.73,
+      "x": 84.8,
+      "z": -14.98,
+      "area": 318.3,
+      "width": 25.24,
+      "depth": 12.62,
+      "rotation": 0.43721,
+      "block": "block-01"
+    },
+    {
+      "id": "51be9e28-e6d3-47c7-8bd2-c9097e31bf35",
+      "gx": 102.91,
+      "gz": -16.86,
+      "x": 121.51,
+      "z": -13.49,
+      "area": 92.8,
+      "width": 10.41,
+      "depth": 8.92,
+      "rotation": 1.36349,
+      "block": "block-01"
+    },
+    {
+      "id": "68893520-e525-4b39-9f72-6e13efa610c7",
+      "gx": 264.2,
+      "gz": -12.22,
+      "x": 201.1,
+      "z": -9.77,
+      "area": 66.29,
+      "width": 10.51,
+      "depth": 6.31,
+      "rotation": 0.22568,
+      "block": "block-01"
+    },
+    {
+      "id": "9bc46341-4248-4fa0-9597-18a3efd1d67f",
+      "gx": 329.96,
+      "gz": -8.48,
+      "x": 230.92,
+      "z": -6.79,
+      "area": 232.0,
+      "width": 22.08,
+      "depth": 10.52,
+      "rotation": 0.25309,
+      "block": "block-01"
+    },
+    {
+      "id": "45408b80-2ce4-4b81-ac07-e44dd1738f15",
+      "gx": 244.51,
+      "gz": -7.81,
+      "x": 192.18,
+      "z": -6.24,
+      "area": 139.16,
+      "width": 22.08,
+      "depth": 6.3,
+      "rotation": 0.2935,
+      "block": "block-01"
+    },
+    {
+      "id": "bdb5d665-288a-444d-bcfe-e46be567ffdd",
+      "gx": 16.58,
+      "gz": -6.56,
+      "x": 69.95,
+      "z": -5.25,
+      "area": 232.07,
+      "width": 22.08,
+      "depth": 10.52,
+      "rotation": 0.34519,
+      "block": "block-01"
+    },
+    {
+      "id": "5ad343a9-c176-44d6-b63d-a5219f893585",
+      "gx": 300.15,
+      "gz": -5.76,
+      "x": 217.4,
+      "z": -4.61,
+      "area": 167.9,
+      "width": 19.97,
+      "depth": 8.41,
+      "rotation": 3.11557,
+      "block": "block-01"
+    },
+    {
+      "id": "e659e7ca-08be-4359-a289-4a3ffb3ebceb",
+      "gx": 189.67,
+      "gz": -2.7,
+      "x": 166.63,
+      "z": -2.16,
+      "area": 66.25,
+      "width": 10.51,
+      "depth": 6.31,
+      "rotation": 1.80311,
+      "block": "block-01"
+    },
+    {
+      "id": "15865667-25ad-4d14-8383-95f5950ad8e0",
+      "gx": 266.99,
+      "gz": -1.73,
+      "x": 202.37,
+      "z": -1.39,
+      "area": 73.0,
+      "width": 11.57,
+      "depth": 6.32,
+      "rotation": 0.31438,
+      "block": "block-01"
+    },
+    {
+      "id": "6b1ccafd-58ec-4a24-8f94-ded4317ad68a",
+      "gx": 83.86,
+      "gz": -1.68,
+      "x": 110.32,
+      "z": -1.34,
+      "area": 403.29,
+      "width": 28.39,
+      "depth": 15.76,
+      "rotation": 0.45581,
+      "block": "block-01"
+    },
+    {
+      "id": "92acd244-0d88-4e36-bada-d5d3f3012765",
+      "gx": 279.67,
+      "gz": 2.6,
+      "x": 208.12,
+      "z": 1.77,
+      "area": 60.75,
+      "width": 11.56,
+      "depth": 5.26,
+      "rotation": 0.07518,
+      "block": "block-01"
+    },
+    {
+      "id": "4e205c2e-a3ea-4bc3-a9bf-3d18b16fb6e8",
+      "gx": 240.36,
+      "gz": 6.74,
+      "x": 190.3,
+      "z": 4.58,
+      "area": 142.6,
+      "width": 28.38,
+      "depth": 7.36,
+      "rotation": 0.21974,
+      "block": "block-01"
+    },
+    {
+      "id": "66fcb3b6-07b3-41cb-977b-2763d8118144",
+      "gx": 122.85,
+      "gz": 6.79,
+      "x": 131.88,
+      "z": 4.61,
+      "area": 119.28,
+      "width": 13.38,
+      "depth": 8.92,
+      "rotation": 2.71041,
+      "block": "block-01"
+    },
+    {
+      "id": "4950f0ff-03fc-4773-a390-b2b22f2ebbb5",
+      "gx": 156.61,
+      "gz": 9.22,
+      "x": 149.44,
+      "z": 6.27,
+      "area": 218.61,
+      "width": 27.33,
+      "depth": 12.61,
+      "rotation": 0.34832,
+      "block": "block-01"
+    },
+    {
+      "id": "6c170d28-d90a-4277-80ec-ef5c02bb190e",
+      "gx": 196.63,
+      "gz": 11.69,
+      "x": 170.25,
+      "z": 7.95,
+      "area": 66.24,
+      "width": 10.51,
+      "depth": 6.3,
+      "rotation": 0.28725,
+      "block": "block-01"
+    },
+    {
+      "id": "675d72e2-8d96-4a63-b5fe-dbb461c3c861",
+      "gx": 350.39,
+      "gz": 17.08,
+      "x": 240.15,
+      "z": 11.62,
+      "area": 66.31,
+      "width": 10.51,
+      "depth": 6.32,
+      "rotation": 0.37358,
+      "block": "block-01"
+    },
+    {
+      "id": "4421b778-4fb2-43b4-8b39-0e94b82d5227",
+      "gx": 56.86,
+      "gz": 18.3,
+      "x": 94.12,
+      "z": 12.44,
+      "area": 66.27,
+      "width": 10.52,
+      "depth": 6.3,
+      "rotation": 1.87907,
+      "block": "block-01"
+    },
+    {
+      "id": "2c083e35-70a8-4875-af88-78d4a53be349",
+      "gx": 98.59,
+      "gz": 18.79,
+      "x": 119.15,
+      "z": 12.78,
+      "area": 110.46,
+      "width": 10.51,
+      "depth": 10.51,
+      "rotation": 1.66804,
+      "block": "block-01"
+    },
+    {
+      "id": "6e6ed085-3ee7-435a-b0ef-edbcf8f4803b",
+      "gx": 42.65,
+      "gz": 19.85,
+      "x": 85.59,
+      "z": 13.5,
+      "area": 70.66,
+      "width": 8.41,
+      "depth": 8.4,
+      "rotation": 2.10041,
+      "block": "block-01"
+    },
+    {
+      "id": "13c13f62-cd1e-40c4-8901-332fbeb35884",
+      "gx": 170.57,
+      "gz": 20.01,
+      "x": 156.7,
+      "z": 13.6,
+      "area": 273.87,
+      "width": 32.58,
+      "depth": 8.41,
+      "rotation": 0.31774,
+      "block": "block-01"
+    },
+    {
+      "id": "18d821d7-b883-4d5a-9456-16d3ba48fdef",
+      "gx": 209.98,
+      "gz": 20.72,
+      "x": 176.52,
+      "z": 14.09,
+      "area": 88.39,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 0.24418,
+      "block": "block-01"
+    },
+    {
+      "id": "228eb541-3e60-40b2-913c-8ab7fa17d093",
+      "gx": -140.08,
+      "gz": 22.23,
+      "x": -27.05,
+      "z": 15.12,
+      "area": 106.05,
+      "width": 16.82,
+      "depth": 6.31,
+      "rotation": 0.19484,
+      "block": null
+    },
+    {
+      "id": "1a78fad8-180d-4643-b366-04464705254f",
+      "gx": 249.02,
+      "gz": 23.39,
+      "x": 194.22,
+      "z": 15.91,
+      "area": 97.21,
+      "width": 11.56,
+      "depth": 8.42,
+      "rotation": 2.01454,
+      "block": "block-01"
+    },
+    {
+      "id": "9aceb6a8-6920-4d05-ab4e-2d28fb5adcc3",
+      "gx": 81.43,
+      "gz": 24.32,
+      "x": 108.86,
+      "z": 16.54,
+      "area": 48.6,
+      "width": 11.56,
+      "depth": 4.2,
+      "rotation": 1.75327,
+      "block": "block-01"
+    },
+    {
+      "id": "e714eac1-95a2-4106-9366-a6fb6ef42f2c",
+      "gx": 126.26,
+      "gz": 25.14,
+      "x": 133.66,
+      "z": 17.1,
+      "area": 132.51,
+      "width": 21.02,
+      "depth": 6.31,
+      "rotation": 0.37915,
+      "block": null
+    },
+    {
+      "id": "fa31a274-495e-4226-9c67-3df39f4f1f85",
+      "gx": 32.87,
+      "gz": 29.04,
+      "x": 79.72,
+      "z": 19.74,
+      "area": 141.41,
+      "width": 16.82,
+      "depth": 8.41,
+      "rotation": 2.11865,
+      "block": "block-01"
+    },
+    {
+      "id": "6d59bb02-01b4-4a6b-97c6-d8f65669f3e1",
+      "gx": 172.95,
+      "gz": 31.86,
+      "x": 157.93,
+      "z": 21.66,
+      "area": 35.4,
+      "width": 5.96,
+      "depth": 5.95,
+      "rotation": 2.20177,
+      "block": "block-01"
+    },
+    {
+      "id": "6f62e104-ec4e-4613-99f2-50cd1fe64498",
+      "gx": 17.34,
+      "gz": 35.86,
+      "x": 70.4,
+      "z": 24.38,
+      "area": 149.12,
+      "width": 15.76,
+      "depth": 9.47,
+      "rotation": 0.33582,
+      "block": "block-01"
+    },
+    {
+      "id": "fc48d77c-acd8-4b91-8ad3-1ab22e52dcd0",
+      "gx": -124.97,
+      "gz": 36.58,
+      "x": -17.23,
+      "z": 24.87,
+      "area": 216.37,
+      "width": 21.1,
+      "depth": 10.25,
+      "rotation": 2.25044,
+      "block": "block-02"
+    },
+    {
+      "id": "28329760-5625-498a-bab8-a0c4b1fc37d2",
+      "gx": 151.23,
+      "gz": 38.04,
+      "x": 146.64,
+      "z": 25.87,
+      "area": 53.07,
+      "width": 8.41,
+      "depth": 6.31,
+      "rotation": 1.83948,
+      "block": "block-01"
+    },
+    {
+      "id": "1c4c092d-c3ff-4e59-83f1-48340b630504",
+      "gx": 138.18,
+      "gz": 38.63,
+      "x": 139.85,
+      "z": 26.27,
+      "area": 185.58,
+      "width": 14.72,
+      "depth": 12.61,
+      "rotation": 1.97423,
+      "block": "block-01"
+    },
+    {
+      "id": "4da8cc10-846f-4c1b-a8d5-be04cc1f4f20",
+      "gx": 51.02,
+      "gz": 40.96,
+      "x": 90.61,
+      "z": 27.85,
+      "area": 53.07,
+      "width": 8.42,
+      "depth": 6.31,
+      "rotation": 2.17933,
+      "block": "block-01"
+    },
+    {
+      "id": "be912461-c627-48f4-b4b7-4a59afdf9d2a",
+      "gx": 88.93,
+      "gz": 41.45,
+      "x": 113.36,
+      "z": 28.19,
+      "area": 70.7,
+      "width": 11.9,
+      "depth": 5.94,
+      "rotation": 2.94725,
+      "block": null
+    },
+    {
+      "id": "7894951a-ee70-4edd-b460-439c969698f1",
+      "gx": -25.62,
+      "gz": 41.67,
+      "x": 44.63,
+      "z": 28.34,
+      "area": 1007.49,
+      "width": 56.49,
+      "depth": 17.84,
+      "rotation": 0.75022,
+      "block": "block-01"
+    },
+    {
+      "id": "01186b23-a48b-4ff3-a2b4-2c894114e87a",
+      "gx": 71.6,
+      "gz": 43.14,
+      "x": 102.96,
+      "z": 29.34,
+      "area": 88.4,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 2.13698,
+      "block": "block-01"
+    },
+    {
+      "id": "e014155d-09bb-4085-927d-43973bc99b84",
+      "gx": 336.39,
+      "gz": 45.04,
+      "x": 233.83,
+      "z": 30.63,
+      "area": 185.21,
+      "width": 18.48,
+      "depth": 10.09,
+      "rotation": 0.31583,
+      "block": "block-01"
+    },
+    {
+      "id": "6a92b85d-2d87-4ff9-9141-b9356a7fcfa8",
+      "gx": 4.47,
+      "gz": 47.72,
+      "x": 62.68,
+      "z": 32.45,
+      "area": 88.37,
+      "width": 11.9,
+      "depth": 7.43,
+      "rotation": 2.38565,
+      "block": "block-01"
+    },
+    {
+      "id": "4a2ed372-7d06-4350-8440-574698a15c9c",
+      "gx": 121.2,
+      "gz": 49.1,
+      "x": 131.02,
+      "z": 33.39,
+      "area": 79.59,
+      "width": 12.62,
+      "depth": 6.31,
+      "rotation": 1.76845,
+      "block": "block-01"
+    },
+    {
+      "id": "646e6bc3-248c-40f4-8be3-24c24bc36a30",
+      "gx": 262.57,
+      "gz": 49.79,
+      "x": 200.36,
+      "z": 33.86,
+      "area": 70.64,
+      "width": 8.41,
+      "depth": 8.4,
+      "rotation": 0.08727,
+      "block": "block-01"
+    },
+    {
+      "id": "7c7c4c3f-df65-46ab-b371-d2598bcb9d73",
+      "gx": 93.87,
+      "gz": 51.93,
+      "x": 116.32,
+      "z": 35.32,
+      "area": 88.44,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 0.47782,
+      "block": "block-01"
+    },
+    {
+      "id": "e2727c2b-bc8d-45ad-b993-711c916427d5",
+      "gx": 109.48,
+      "gz": 53.52,
+      "x": 124.93,
+      "z": 36.39,
+      "area": 141.43,
+      "width": 16.82,
+      "depth": 8.41,
+      "rotation": 1.98676,
+      "block": "block-01"
+    },
+    {
+      "id": "72a1f8ef-6073-406d-bf99-0da753302d26",
+      "gx": 34.25,
+      "gz": 55.81,
+      "x": 80.55,
+      "z": 37.95,
+      "area": 319.67,
+      "width": 23.58,
+      "depth": 13.67,
+      "rotation": 2.00605,
+      "block": "block-01"
+    },
+    {
+      "id": "d647ec35-d64a-433d-a434-694b4c083ad5",
+      "gx": -19.03,
+      "gz": 56.44,
+      "x": 48.58,
+      "z": 38.38,
+      "area": 57.39,
+      "width": 13.66,
+      "depth": 4.2,
+      "rotation": 0.63691,
+      "block": null
+    },
+    {
+      "id": "053d3fe1-cefa-4ef3-921e-ff0209221064",
+      "gx": 147.18,
+      "gz": 59.31,
+      "x": 144.53,
+      "z": 40.33,
+      "area": 185.68,
+      "width": 14.72,
+      "depth": 12.62,
+      "rotation": 0.40031,
+      "block": "block-01"
+    },
+    {
+      "id": "376d4710-c9b0-4375-b573-f5d5fc377c54",
+      "gx": 100.82,
+      "gz": 62.01,
+      "x": 120.43,
+      "z": 42.17,
+      "area": 35.35,
+      "width": 8.41,
+      "depth": 4.2,
+      "rotation": 1.9127,
+      "block": "block-01"
+    },
+    {
+      "id": "ec52c7f6-f200-499e-a8ce-1a4c3b81f5d1",
+      "gx": -4.33,
+      "gz": 62.12,
+      "x": 57.4,
+      "z": 42.24,
+      "area": 110.5,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 0.46823,
+      "block": "block-01"
+    },
+    {
+      "id": "e6dd9cfc-1a9c-468c-b3dc-6d57146c506f",
+      "gx": 132.98,
+      "gz": 65.95,
+      "x": 137.15,
+      "z": 44.85,
+      "area": 77.35,
+      "width": 10.52,
+      "depth": 7.36,
+      "rotation": 0.60016,
+      "block": "block-01"
+    },
+    {
+      "id": "4b3de87a-2aab-4db8-8331-e113c7195d1a",
+      "gx": 167.23,
+      "gz": 68.43,
+      "x": 154.96,
+      "z": 46.53,
+      "area": 88.4,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 0.367,
+      "block": "block-01"
+    },
+    {
+      "id": "d9f50f02-b4f2-451e-9441-7b86e02bfa08",
+      "gx": 271.13,
+      "gz": 69.01,
+      "x": 204.24,
+      "z": 46.93,
+      "area": 93.95,
+      "width": 17.87,
+      "depth": 5.26,
+      "rotation": 3.13144,
+      "block": "block-01"
+    },
+    {
+      "id": "678aae6e-178f-4b6f-86ad-49f35ae79ffc",
+      "gx": 252.22,
+      "gz": 70.42,
+      "x": 195.67,
+      "z": 47.89,
+      "area": 79.53,
+      "width": 12.62,
+      "depth": 6.3,
+      "rotation": 0.16718,
+      "block": "block-01"
+    },
+    {
+      "id": "6a77581c-af86-4738-a182-dc8181c1d279",
+      "gx": 73.24,
+      "gz": 71.15,
+      "x": 103.94,
+      "z": 48.38,
+      "area": 212.1,
+      "width": 16.81,
+      "depth": 12.61,
+      "rotation": 2.04477,
+      "block": "block-01"
+    },
+    {
+      "id": "0146ff2f-e0ad-4a1d-adcf-ec598f1d2149",
+      "gx": -40.01,
+      "gz": 72.28,
+      "x": 35.99,
+      "z": 49.15,
+      "area": 39.8,
+      "width": 8.92,
+      "depth": 4.47,
+      "rotation": 0.96474,
+      "block": null
+    },
+    {
+      "id": "66b4e15c-b851-40ad-8b45-00fcf70a489e",
+      "gx": 150.77,
+      "gz": 76.4,
+      "x": 146.4,
+      "z": 51.95,
+      "area": 132.57,
+      "width": 12.62,
+      "depth": 10.51,
+      "rotation": 1.82372,
+      "block": "block-01"
+    },
+    {
+      "id": "f49e2fed-d507-43f4-ac68-7316d30fd1d8",
+      "gx": 58.75,
+      "gz": 77.59,
+      "x": 95.25,
+      "z": 52.76,
+      "area": 133.62,
+      "width": 11.57,
+      "depth": 11.56,
+      "rotation": 1.7904,
+      "block": "block-01"
+    },
+    {
+      "id": "65bbbc2e-e9e2-4ee7-8bd3-ba42084f4da6",
+      "gx": -27.2,
+      "gz": 81.84,
+      "x": 43.68,
+      "z": 55.65,
+      "area": 156.87,
+      "width": 16.36,
+      "depth": 13.38,
+      "rotation": 2.25942,
+      "block": "block-01"
+    },
+    {
+      "id": "d9308363-a842-4f95-b335-387737b6f547",
+      "gx": 40.11,
+      "gz": 84.75,
+      "x": 84.07,
+      "z": 57.63,
+      "area": 141.29,
+      "width": 11.89,
+      "depth": 11.89,
+      "rotation": 2.30272,
+      "block": "block-01"
+    },
+    {
+      "id": "74064f05-ed99-44fe-b5c0-1571b0d445f5",
+      "gx": 222.6,
+      "gz": 85.09,
+      "x": 182.25,
+      "z": 57.86,
+      "area": 66.26,
+      "width": 10.52,
+      "depth": 6.3,
+      "rotation": 0.25609,
+      "block": "block-01"
+    },
+    {
+      "id": "cd837281-e41a-46e0-9845-d1388e4946bb",
+      "gx": 172.22,
+      "gz": 87.12,
+      "x": 157.55,
+      "z": 59.24,
+      "area": 88.33,
+      "width": 10.51,
+      "depth": 8.4,
+      "rotation": 0.15226,
+      "block": "block-01"
+    },
+    {
+      "id": "d280df01-8052-426e-8acb-671f7f28df85",
+      "gx": 205.37,
+      "gz": 88.15,
+      "x": 174.43,
+      "z": 59.94,
+      "area": 123.74,
+      "width": 14.72,
+      "depth": 8.41,
+      "rotation": 0.21361,
+      "block": "block-01"
+    },
+    {
+      "id": "7c028ff5-03c1-4ed4-9232-26df51cbbd15",
+      "gx": 68.11,
+      "gz": 90.48,
+      "x": 100.86,
+      "z": 61.53,
+      "area": 35.4,
+      "width": 5.95,
+      "depth": 5.95,
+      "rotation": 2.54234,
+      "block": "block-01"
+    },
+    {
+      "id": "f8981743-e570-4e34-8b8f-7ddfe51e6c8d",
+      "gx": 280.15,
+      "gz": 93.74,
+      "x": 208.33,
+      "z": 63.75,
+      "area": 39.77,
+      "width": 9.47,
+      "depth": 4.2,
+      "rotation": 1.51069,
+      "block": "block-01"
+    },
+    {
+      "id": "8411556e-8bc6-49c5-a5f5-19223cd00861",
+      "gx": 226.75,
+      "gz": 99.02,
+      "x": 184.13,
+      "z": 67.33,
+      "area": 110.52,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 1.78158,
+      "block": "block-01"
+    },
+    {
+      "id": "aae92fc0-c091-4e37-8694-b4e35dc37502",
+      "gx": 98.59,
+      "gz": 99.17,
+      "x": 119.16,
+      "z": 67.43,
+      "area": 1544.61,
+      "width": 93.55,
+      "depth": 18.92,
+      "rotation": 0.40371,
+      "block": "block-01"
+    },
+    {
+      "id": "ed950ca4-0a86-4cbb-8e68-33f872436313",
+      "gx": 5.68,
+      "gz": 101.11,
+      "x": 63.41,
+      "z": 68.71,
+      "area": 813.18,
+      "width": 48.35,
+      "depth": 16.82,
+      "rotation": 0.41595,
+      "block": "block-01"
+    },
+    {
+      "id": "54048dc3-aa43-4ed2-be43-0244993d4aac",
+      "gx": 213.74,
+      "gz": 104.08,
+      "x": 178.23,
+      "z": 70.62,
+      "area": 110.49,
+      "width": 10.51,
+      "depth": 10.51,
+      "rotation": 1.67719,
+      "block": "block-01"
+    },
+    {
+      "id": "0d1d44dc-d807-4006-b204-5f694f8a4bf6",
+      "gx": 332.29,
+      "gz": 106.23,
+      "x": 231.97,
+      "z": 72.0,
+      "area": 356.74,
+      "width": 19.97,
+      "depth": 17.87,
+      "rotation": 1.53583,
+      "block": "block-01"
+    },
+    {
+      "id": "ef6d32bf-cae3-4064-9b68-da0f126cf3c9",
+      "gx": 202.16,
+      "gz": 106.8,
+      "x": 172.98,
+      "z": 72.37,
+      "area": 39.82,
+      "width": 6.31,
+      "depth": 6.31,
+      "rotation": 1.5727,
+      "block": "block-01"
+    },
+    {
+      "id": "facbff21-d023-42ab-bdb5-1c4af59cc5d0",
+      "gx": -68.43,
+      "gz": 106.86,
+      "x": 18.94,
+      "z": 72.4,
+      "area": 99.44,
+      "width": 13.38,
+      "depth": 7.44,
+      "rotation": 0.64589,
+      "block": null
+    },
+    {
+      "id": "3fdf46dc-3b25-46e8-92cf-075d2f211271",
+      "gx": 181.57,
+      "gz": 108.13,
+      "x": 162.42,
+      "z": 73.22,
+      "area": 255.25,
+      "width": 22.08,
+      "depth": 11.56,
+      "rotation": 0.14888,
+      "block": "block-01"
+    },
+    {
+      "id": "610a226e-17f3-4564-a2b6-b9710e7ed2f7",
+      "gx": -56.67,
+      "gz": 119.34,
+      "x": 26.0,
+      "z": 80.41,
+      "area": 216.48,
+      "width": 20.82,
+      "depth": 10.4,
+      "rotation": 0.76279,
+      "block": "block-03"
+    },
+    {
+      "id": "e696724f-75df-4e77-83cd-7cbfedec3642",
+      "gx": 287.57,
+      "gz": 120.33,
+      "x": 211.7,
+      "z": 81.05,
+      "area": 88.34,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 0.07771,
+      "block": "block-01"
+    },
+    {
+      "id": "6a7cea78-fd0b-44ee-ae7b-cafbc16d91b5",
+      "gx": -146.01,
+      "gz": 120.96,
+      "x": -30.9,
+      "z": 81.45,
+      "area": 106.06,
+      "width": 11.9,
+      "depth": 8.92,
+      "rotation": 2.49291,
+      "block": "block-02"
+    },
+    {
+      "id": "94686b51-6d09-493e-a0aa-d2338efa7527",
+      "gx": 345.85,
+      "gz": 125.37,
+      "x": 238.12,
+      "z": 84.28,
+      "area": 53.05,
+      "width": 8.42,
+      "depth": 6.31,
+      "rotation": 1.622,
+      "block": "block-01"
+    },
+    {
+      "id": "adc13659-441b-4950-beff-cab983a9c25c",
+      "gx": 172.78,
+      "gz": 130.3,
+      "x": 157.85,
+      "z": 87.44,
+      "area": 109.43,
+      "width": 11.57,
+      "depth": 9.46,
+      "rotation": 0.2045,
+      "block": "block-01"
+    },
+    {
+      "id": "234ca987-3b43-4c2e-bc0d-f5845fe0dbb5",
+      "gx": -77.96,
+      "gz": 131.57,
+      "x": 13.23,
+      "z": 88.26,
+      "area": 243.06,
+      "width": 23.13,
+      "depth": 10.52,
+      "rotation": 0.42833,
+      "block": "block-03"
+    },
+    {
+      "id": "0570cfbc-61dd-493d-b8de-650578249c71",
+      "gx": 152.47,
+      "gz": 134.19,
+      "x": 147.28,
+      "z": 89.94,
+      "area": 70.68,
+      "width": 8.41,
+      "depth": 8.41,
+      "rotation": 0.21921,
+      "block": "block-01"
+    },
+    {
+      "id": "65e7b94e-2b3e-4209-9a60-dffa737aafad",
+      "gx": 213.6,
+      "gz": 134.73,
+      "x": 178.17,
+      "z": 90.29,
+      "area": 66.26,
+      "width": 10.51,
+      "depth": 6.31,
+      "rotation": 1.67629,
+      "block": "block-01"
+    },
+    {
+      "id": "2075b03e-f3da-4c8e-85d5-b0164411e647",
+      "gx": 140.07,
+      "gz": 137.88,
+      "x": 140.84,
+      "z": 92.3,
+      "area": 97.27,
+      "width": 11.57,
+      "depth": 8.41,
+      "rotation": 1.87903,
+      "block": "block-01"
+    },
+    {
+      "id": "09dfbfe0-0c84-4397-84a6-e02a0a3410e8",
+      "gx": 72.33,
+      "gz": 140.25,
+      "x": 103.4,
+      "z": 93.83,
+      "area": 238.63,
+      "width": 18.92,
+      "depth": 12.62,
+      "rotation": 0.31814,
+      "block": "block-01"
+    },
+    {
+      "id": "045bde23-304a-4a2d-91d8-0f20cb799a58",
+      "gx": -66.14,
+      "gz": 140.39,
+      "x": 20.31,
+      "z": 93.91,
+      "area": 53.07,
+      "width": 8.42,
+      "depth": 6.31,
+      "rotation": 2.2439,
+      "block": "block-03"
+    },
+    {
+      "id": "48e7d7ad-15c2-4707-8924-eee1bfe9e1ac",
+      "gx": 187.32,
+      "gz": 141.86,
+      "x": 165.41,
+      "z": 94.86,
+      "area": 53.05,
+      "width": 8.42,
+      "depth": 6.31,
+      "rotation": 0.52069,
+      "block": "block-01"
+    },
+    {
+      "id": "d7a7aaaa-51bf-4a89-91c8-ed745174a9b3",
+      "gx": -41.0,
+      "gz": 145.27,
+      "x": 35.4,
+      "z": 97.05,
+      "area": 1086.0,
+      "width": 43.1,
+      "depth": 36.79,
+      "rotation": 2.09731,
+      "block": "block-03"
+    },
+    {
+      "id": "38a1365d-4a0a-4e42-9b42-0f9b9f3b3a2b",
+      "gx": -75.82,
+      "gz": 145.82,
+      "x": 14.51,
+      "z": 97.4,
+      "area": 79.54,
+      "width": 9.46,
+      "depth": 8.41,
+      "rotation": 0.65159,
+      "block": "block-03"
+    },
+    {
+      "id": "ee972d74-2d45-4e20-8758-0c855bbe1484",
+      "gx": 45.31,
+      "gz": 149.36,
+      "x": 87.19,
+      "z": 99.68,
+      "area": 201.07,
+      "width": 23.13,
+      "depth": 9.46,
+      "rotation": 0.38189,
+      "block": "block-01"
+    },
+    {
+      "id": "6b1a4942-1f5e-47d1-ac3b-4c5acd05c1af",
+      "gx": 166.23,
+      "gz": 149.41,
+      "x": 154.44,
+      "z": 99.7,
+      "area": 293.83,
+      "width": 29.43,
+      "depth": 16.82,
+      "rotation": 0.09061,
+      "block": "block-01"
+    },
+    {
+      "id": "efa3dc17-8e00-4f62-a50e-15741c38c525",
+      "gx": 116.1,
+      "gz": 150.99,
+      "x": 128.37,
+      "z": 100.72,
+      "area": 712.44,
+      "width": 36.79,
+      "depth": 25.23,
+      "rotation": 0.31754,
+      "block": "block-01"
+    },
+    {
+      "id": "2fb289cf-dc23-4e85-87aa-ac9a461a9aa2",
+      "gx": -71.59,
+      "gz": 158.74,
+      "x": 17.05,
+      "z": 105.69,
+      "area": 66.29,
+      "width": 12.61,
+      "depth": 5.26,
+      "rotation": 0.47452,
+      "block": "block-03"
+    },
+    {
+      "id": "7eb8aee1-5933-4e17-8b90-a70e57a7e591",
+      "gx": 74.26,
+      "gz": 163.83,
+      "x": 104.56,
+      "z": 108.96,
+      "area": 278.38,
+      "width": 18.93,
+      "depth": 14.71,
+      "rotation": 0.32379,
+      "block": "block-01"
+    },
+    {
+      "id": "807a7899-3367-4a01-81c8-a28f7b692d53",
+      "gx": 24.36,
+      "gz": 164.92,
+      "x": 74.62,
+      "z": 109.66,
+      "area": 198.85,
+      "width": 15.77,
+      "depth": 12.61,
+      "rotation": 1.91611,
+      "block": "block-01"
+    },
+    {
+      "id": "6072b66e-48cb-4c6b-bafa-ebd5a6f01487",
+      "gx": -101.04,
+      "gz": 169.46,
+      "x": -1.67,
+      "z": 112.57,
+      "area": 106.05,
+      "width": 12.62,
+      "depth": 8.41,
+      "rotation": 2.24388,
+      "block": "block-03"
+    },
+    {
+      "id": "cdc21b92-ab93-4d42-9386-eb491b5a2fa4",
+      "gx": -65.19,
+      "gz": 171.7,
+      "x": 20.89,
+      "z": 114.01,
+      "area": 185.59,
+      "width": 14.71,
+      "depth": 12.62,
+      "rotation": 0.35456,
+      "block": "block-03"
+    },
+    {
+      "id": "56e715bf-7832-441e-aa11-254d273145ac",
+      "gx": 237.49,
+      "gz": 172.31,
+      "x": 188.99,
+      "z": 114.4,
+      "area": 395.56,
+      "width": 29.43,
+      "depth": 27.34,
+      "rotation": 1.82397,
+      "block": "block-01"
+    },
+    {
+      "id": "0b3a638d-57b1-4411-ba7f-0c397166f06b",
+      "gx": 133.52,
+      "gz": 173.18,
+      "x": 137.43,
+      "z": 114.96,
+      "area": 70.68,
+      "width": 8.41,
+      "depth": 8.41,
+      "rotation": 1.64019,
+      "block": "block-01"
+    },
+    {
+      "id": "f440406f-13da-4e8a-87b9-9402530a05e2",
+      "gx": 111.08,
+      "gz": 177.86,
+      "x": 125.76,
+      "z": 117.96,
+      "area": 165.78,
+      "width": 15.78,
+      "depth": 10.51,
+      "rotation": 0.21326,
+      "block": "block-01"
+    },
+    {
+      "id": "5370757e-76c9-435b-9863-f7df60ef763a",
+      "gx": 166.9,
+      "gz": 181.41,
+      "x": 154.79,
+      "z": 120.24,
+      "area": 39.81,
+      "width": 6.32,
+      "depth": 6.31,
+      "rotation": 1.48041,
+      "block": "block-01"
+    },
+    {
+      "id": "7d028c97-c3ae-4a76-a86f-5c1074329307",
+      "gx": 89.91,
+      "gz": 183.8,
+      "x": 113.94,
+      "z": 121.77,
+      "area": 119.35,
+      "width": 18.93,
+      "depth": 6.31,
+      "rotation": 1.75017,
+      "block": "block-01"
+    },
+    {
+      "id": "fa00890f-09da-46ca-b95b-924d018e748c",
+      "gx": -2.78,
+      "gz": 184.72,
+      "x": 58.33,
+      "z": 122.36,
+      "area": 106.08,
+      "width": 12.62,
+      "depth": 8.41,
+      "rotation": 0.44006,
+      "block": "block-01"
+    },
+    {
+      "id": "9e821ee1-3114-4b73-af05-dcfd457591a8",
+      "gx": 74.01,
+      "gz": 189.67,
+      "x": 104.4,
+      "z": 125.54,
+      "area": 88.32,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 0.13346,
+      "block": "block-01"
+    },
+    {
+      "id": "6b98166b-9109-423f-aaf6-790474ae272b",
+      "gx": 148.57,
+      "gz": 191.16,
+      "x": 145.26,
+      "z": 126.5,
+      "area": 109.31,
+      "width": 11.57,
+      "depth": 9.45,
+      "rotation": 2.98697,
+      "block": "block-01"
+    },
+    {
+      "id": "ff166ad1-520d-4e37-850b-e438f9de5cbe",
+      "gx": 40.64,
+      "gz": 195.07,
+      "x": 84.38,
+      "z": 129.0,
+      "area": 61.82,
+      "width": 8.41,
+      "depth": 7.36,
+      "rotation": 1.77503,
+      "block": "block-01"
+    },
+    {
+      "id": "3dfffb6e-f7bf-42b1-bcc4-7bb96a95c175",
+      "gx": 173.3,
+      "gz": 196.07,
+      "x": 158.12,
+      "z": 129.64,
+      "area": 66.34,
+      "width": 10.52,
+      "depth": 6.31,
+      "rotation": 0.24088,
+      "block": "block-01"
+    },
+    {
+      "id": "1cc90400-7187-41a5-8dca-5a2847b09e51",
+      "gx": -38.52,
+      "gz": 198.51,
+      "x": 36.89,
+      "z": 131.21,
+      "area": 287.25,
+      "width": 27.33,
+      "depth": 10.51,
+      "rotation": 0.28418,
+      "block": "block-01"
+    },
+    {
+      "id": "3f38246b-8284-4eee-a6d9-73dfc1d1dd33",
+      "gx": 230.87,
+      "gz": 200.63,
+      "x": 185.99,
+      "z": 132.57,
+      "area": 123.74,
+      "width": 14.72,
+      "depth": 8.41,
+      "rotation": 0.26574,
+      "block": "block-01"
+    },
+    {
+      "id": "bc369b47-887b-431e-b92c-c8de62dd556d",
+      "gx": 211.58,
+      "gz": 200.67,
+      "x": 177.25,
+      "z": 132.59,
+      "area": 105.99,
+      "width": 12.61,
+      "depth": 8.41,
+      "rotation": 0.09677,
+      "block": "block-01"
+    },
+    {
+      "id": "d57301ae-a556-4455-a70c-a938412d5d53",
+      "gx": 44.68,
+      "gz": 206.2,
+      "x": 86.81,
+      "z": 136.15,
+      "area": 121.48,
+      "width": 11.56,
+      "depth": 10.51,
+      "rotation": 0.31789,
+      "block": "block-01"
+    },
+    {
+      "id": "657c6e8c-3079-4e80-9da2-3a1f062fcb10",
+      "gx": 8.66,
+      "gz": 209.22,
+      "x": 65.19,
+      "z": 138.08,
+      "area": 75.19,
+      "width": 17.87,
+      "depth": 4.21,
+      "rotation": 1.91927,
+      "block": "block-01"
+    },
+    {
+      "id": "43902ed2-4872-4f3c-abc1-298e0f3ca717",
+      "gx": -30.15,
+      "gz": 211.09,
+      "x": 41.91,
+      "z": 139.28,
+      "area": 72.9,
+      "width": 11.57,
+      "depth": 6.3,
+      "rotation": 0.58462,
+      "block": "block-01"
+    },
+    {
+      "id": "01932fef-8f33-48f9-93a7-c8f4dfc2cc21",
+      "gx": -66.7,
+      "gz": 218.16,
+      "x": 19.98,
+      "z": 143.82,
+      "area": 61.82,
+      "width": 8.42,
+      "depth": 7.35,
+      "rotation": 2.98691,
+      "block": "block-01"
+    },
+    {
+      "id": "d4eb2768-67bd-49b7-8662-7aaa895a6894",
+      "gx": 177.6,
+      "gz": 226.16,
+      "x": 160.35,
+      "z": 148.56,
+      "area": 66.33,
+      "width": 15.76,
+      "depth": 4.21,
+      "rotation": 1.86425,
+      "block": "block-01"
+    },
+    {
+      "id": "e3bf588d-c1cd-4c24-a43a-acf74bcd85a4",
+      "gx": -31.76,
+      "gz": 236.85,
+      "x": 40.94,
+      "z": 154.72,
+      "area": 209.88,
+      "width": 19.97,
+      "depth": 10.52,
+      "rotation": 1.98654,
+      "block": "block-01"
+    },
+    {
+      "id": "21cdd3ff-9da9-4d7a-bdf4-b18455cd63be",
+      "gx": -4.11,
+      "gz": 253.99,
+      "x": 57.53,
+      "z": 164.61,
+      "area": 159.21,
+      "width": 12.63,
+      "depth": 12.61,
+      "rotation": 0.18325,
+      "block": "block-01"
+    },
+    {
+      "id": "db408d86-8be5-48b1-87ec-2d4fb17ed742",
+      "gx": -25.5,
+      "gz": 255.84,
+      "x": 44.7,
+      "z": 165.68,
+      "area": 66.33,
+      "width": 10.51,
+      "depth": 6.31,
+      "rotation": 3.05442,
+      "block": "block-01"
+    },
+    {
+      "id": "a82d53a4-88b2-42bf-9e23-8a2635535184",
+      "gx": 100.42,
+      "gz": 259.05,
+      "x": 120.22,
+      "z": 167.53,
+      "area": 106.11,
+      "width": 16.81,
+      "depth": 6.31,
+      "rotation": 1.70436,
+      "block": "block-01"
+    },
+    {
+      "id": "8476d9b1-64fb-40a7-8a43-48a773348bfa",
+      "gx": 146.71,
+      "gz": 263.89,
+      "x": 144.29,
+      "z": 170.32,
+      "area": 72.9,
+      "width": 11.57,
+      "depth": 6.3,
+      "rotation": 0.10023,
+      "block": "block-01"
+    },
+    {
+      "id": "646155ea-a2d9-4c44-9204-8cd0e95d83da",
+      "gx": 295.79,
+      "gz": 271.77,
+      "x": 215.43,
+      "z": 174.87,
+      "area": 37.66,
+      "width": 7.64,
+      "depth": 4.99,
+      "rotation": 0.03556,
+      "block": "block-01"
+    },
+    {
+      "id": "3efd6d37-bd0d-4474-b23b-261a16361926",
+      "gx": 256.93,
+      "gz": 274.74,
+      "x": 197.81,
+      "z": 176.58,
+      "area": 178.87,
+      "width": 13.38,
+      "depth": 13.37,
+      "rotation": 2.52984,
+      "block": "block-01"
+    },
+    {
+      "id": "685149ff-bf00-42e2-ac9b-b1dc7673f7bb",
+      "gx": -14.7,
+      "gz": 280.92,
+      "x": 51.18,
+      "z": 180.15,
+      "area": 232.08,
+      "width": 22.08,
+      "depth": 10.52,
+      "rotation": 0.38532,
+      "block": "block-01"
+    },
+    {
+      "id": "b5e2e760-6c5a-4cec-9c27-159a9f8f33a9",
+      "gx": 194.93,
+      "gz": 283.85,
+      "x": 169.37,
+      "z": 181.84,
+      "area": 46.4,
+      "width": 7.36,
+      "depth": 6.31,
+      "rotation": 3.05422,
+      "block": "block-01"
+    },
+    {
+      "id": "ff577aa5-ce74-45f2-8922-e9bdcacad5db",
+      "gx": -72.06,
+      "gz": 285.5,
+      "x": 16.76,
+      "z": 182.79,
+      "area": 187.96,
+      "width": 17.87,
+      "depth": 10.52,
+      "rotation": 0.46807,
+      "block": "block-01"
+    },
+    {
+      "id": "848874ac-9e34-4632-b9be-685d754fa8f0",
+      "gx": 212.64,
+      "gz": 287.4,
+      "x": 177.73,
+      "z": 183.89,
+      "area": 172.37,
+      "width": 13.67,
+      "depth": 12.62,
+      "rotation": 1.41919,
+      "block": "block-01"
+    },
+    {
+      "id": "780b30d5-7fff-4cbd-8eab-fc7bd8f7b22f",
+      "gx": 378.13,
+      "gz": 288.49,
+      "x": 251.25,
+      "z": 184.51,
+      "area": 324.78,
+      "width": 22.08,
+      "depth": 14.71,
+      "rotation": 1.73232,
+      "block": "block-01"
+    },
+    {
+      "id": "65d92f3d-cb27-4c41-b227-da1a40f5af51",
+      "gx": 180.75,
+      "gz": 289.21,
+      "x": 161.99,
+      "z": 184.93,
+      "area": 35.33,
+      "width": 5.95,
+      "depth": 5.94,
+      "rotation": 2.86111,
+      "block": "block-01"
+    },
+    {
+      "id": "5db53192-e303-426d-a637-042ae7b7fff4",
+      "gx": 82.73,
+      "gz": 290.11,
+      "x": 109.64,
+      "z": 185.45,
+      "area": 139.28,
+      "width": 22.08,
+      "depth": 6.31,
+      "rotation": 0.09354,
+      "block": "block-01"
+    },
+    {
+      "id": "173bb6e3-45f8-435d-98e7-85db85c4490f",
+      "gx": 237.7,
+      "gz": 291.01,
+      "x": 189.09,
+      "z": 185.97,
+      "area": 110.41,
+      "width": 10.51,
+      "depth": 10.5,
+      "rotation": 3.10935,
+      "block": "block-01"
+    },
+    {
+      "id": "f35c1b8b-52ff-4a8c-9f85-fbfc6173d466",
+      "gx": 338.26,
+      "gz": 291.2,
+      "x": 234.68,
+      "z": 186.08,
+      "area": 121.56,
+      "width": 11.57,
+      "depth": 10.51,
+      "rotation": 0.34002,
+      "block": "block-01"
+    },
+    {
+      "id": "ad01dd79-d32a-4bdd-87d4-2ad6f3eb44ad",
+      "gx": 194.31,
+      "gz": 302.75,
+      "x": 169.04,
+      "z": 192.74,
+      "area": 88.38,
+      "width": 10.51,
+      "depth": 8.41,
+      "rotation": 3.10618,
+      "block": "block-01"
+    },
+    {
+      "id": "d60aa10f-216e-4a98-8322-8be88189d5db",
+      "gx": 163.31,
+      "gz": 303.58,
+      "x": 152.92,
+      "z": 193.22,
+      "area": 110.49,
+      "width": 10.52,
+      "depth": 10.51,
+      "rotation": 0.011,
+      "block": "block-01"
+    },
+    {
+      "id": "7615a812-72c4-4878-8d8e-c08ee3b8dcc2",
+      "gx": 347.53,
+      "gz": 304.22,
+      "x": 238.88,
+      "z": 193.59,
+      "area": 77.32,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 3.03027,
+      "block": "block-01"
+    },
+    {
+      "id": "ae521c38-2d2f-4364-9e93-6e7e15d5fe75",
+      "gx": 123.52,
+      "gz": 304.45,
+      "x": 132.23,
+      "z": 193.72,
+      "area": 99.51,
+      "width": 10.52,
+      "depth": 9.46,
+      "rotation": 1.48066,
+      "block": "block-01"
+    },
+    {
+      "id": "a44d5b6b-a864-4110-8614-7048d35df428",
+      "gx": 290.03,
+      "gz": 306.59,
+      "x": 212.81,
+      "z": 194.96,
+      "area": 61.86,
+      "width": 8.41,
+      "depth": 7.36,
+      "rotation": 1.77837,
+      "block": "block-01"
+    },
+    {
+      "id": "a6a8752c-dbd8-4ef9-9fc4-1e8a6c1978fe",
+      "gx": 318.61,
+      "gz": 309.53,
+      "x": 225.77,
+      "z": 196.65,
+      "area": 79.53,
+      "width": 12.62,
+      "depth": 6.31,
+      "rotation": 1.55987,
+      "block": "block-01"
+    },
+    {
+      "id": "3d7930a1-09c9-45ae-b740-647b15c0c532",
+      "gx": 304.86,
+      "gz": 313.52,
+      "x": 219.54,
+      "z": 198.95,
+      "area": 187.61,
+      "width": 16.41,
+      "depth": 11.5,
+      "rotation": 1.65853,
+      "block": "block-01"
+    },
+    {
+      "id": "0df70bf7-7e9f-460f-91de-68ad2768daa7",
+      "gx": 344.62,
+      "gz": 314.52,
+      "x": 237.56,
+      "z": 199.53,
+      "area": 70.67,
+      "width": 8.41,
+      "depth": 8.41,
+      "rotation": 3.12176,
+      "block": "block-01"
+    },
+    {
+      "id": "ef7e024e-d7ff-4189-a12e-0fc3e65531ad",
+      "gx": 363.85,
+      "gz": 315.63,
+      "x": 245.54,
+      "z": 200.17,
+      "area": 88.37,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 3.11886,
+      "block": "block-01"
+    },
+    {
+      "id": "92e06c91-7857-4fe3-a70e-23b6412e76ce",
+      "gx": 380.36,
+      "gz": 318.82,
+      "x": 252.14,
+      "z": 202.01,
+      "area": 77.32,
+      "width": 10.41,
+      "depth": 7.44,
+      "rotation": 3.02924,
+      "block": "block-01"
+    },
+    {
+      "id": "9223f116-285f-416a-ae04-db53feeb1638",
+      "gx": 210.29,
+      "gz": 322.92,
+      "x": 176.67,
+      "z": 204.38,
+      "area": 88.39,
+      "width": 10.52,
+      "depth": 8.41,
+      "rotation": 3.06397,
+      "block": "block-01"
+    }
+  ],
+  "shoreSource": [
+    [
+      -307.28,
+      -450
+    ],
+    [
+      -303.99,
+      -440
+    ],
+    [
+      -300.7,
+      -430
+    ],
+    [
+      -297.4,
+      -420
+    ],
+    [
+      -294.42,
+      -410
+    ],
+    [
+      -293.78,
+      -400
+    ],
+    [
+      -293.15,
+      -390
+    ],
+    [
+      -292.51,
+      -380
+    ],
+    [
+      -291.87,
+      -370
+    ],
+    [
+      -291.24,
+      -360
+    ],
+    [
+      -296.63,
+      -350
+    ],
+    [
+      -305.74,
+      -340
+    ],
+    [
+      -308.95,
+      -330
+    ],
+    [
+      -308.96,
+      -320
+    ],
+    [
+      -308.98,
+      -310
+    ],
+    [
+      -308.39,
+      -300
+    ],
+    [
+      -304.24,
+      -290
+    ],
+    [
+      -300.09,
+      -280
+    ],
+    [
+      -292.57,
+      -270
+    ],
+    [
+      -280.43,
+      -260
+    ],
+    [
+      -277.17,
+      -250
+    ],
+    [
+      -296.38,
+      -240
+    ],
+    [
+      -305.71,
+      -230
+    ],
+    [
+      -309.7,
+      -220
+    ],
+    [
+      -311.0,
+      -210
+    ],
+    [
+      -308.61,
+      -200
+    ],
+    [
+      -306.22,
+      -190
+    ],
+    [
+      -303.83,
+      -180
+    ],
+    [
+      -301.44,
+      -170
+    ],
+    [
+      -299.05,
+      -160
+    ],
+    [
+      -296.66,
+      -150
+    ],
+    [
+      -294.27,
+      -140
+    ],
+    [
+      -291.88,
+      -130
+    ],
+    [
+      -289.49,
+      -120
+    ],
+    [
+      -287.1,
+      -110
+    ],
+    [
+      -284.71,
+      -100
+    ],
+    [
+      -282.32,
+      -90
+    ],
+    [
+      -279.92,
+      -80
+    ],
+    [
+      -277.53,
+      -70
+    ],
+    [
+      -275.14,
+      -60
+    ],
+    [
+      -279.55,
+      -50
+    ],
+    [
+      -276.79,
+      -40
+    ],
+    [
+      -252.3,
+      -30
+    ],
+    [
+      -235.74,
+      -20
+    ],
+    [
+      -227.88,
+      -10
+    ],
+    [
+      -220.02,
+      0
+    ],
+    [
+      -200.41,
+      10
+    ],
+    [
+      -175.37,
+      20
+    ],
+    [
+      -170.54,
+      30
+    ],
+    [
+      -172.62,
+      40
+    ],
+    [
+      -183.89,
+      50
+    ],
+    [
+      -192.2,
+      60
+    ],
+    [
+      -196.24,
+      70
+    ],
+    [
+      -200.28,
+      80
+    ],
+    [
+      -199.35,
+      90
+    ],
+    [
+      -196.7,
+      100
+    ],
+    [
+      -189.55,
+      110
+    ],
+    [
+      -179.99,
+      120
+    ],
+    [
+      -170.43,
+      130
+    ],
+    [
+      -160.87,
+      140
+    ],
+    [
+      -151.3,
+      150
+    ],
+    [
+      -141.74,
+      160
+    ],
+    [
+      -132.18,
+      170
+    ],
+    [
+      -122.62,
+      180
+    ],
+    [
+      -113.06,
+      190
+    ],
+    [
+      -103.49,
+      200
+    ],
+    [
+      -99.08,
+      210
+    ],
+    [
+      -96.75,
+      220
+    ],
+    [
+      -99.24,
+      230
+    ],
+    [
+      -109.86,
+      240
+    ],
+    [
+      -114.76,
+      250
+    ],
+    [
+      -116.51,
+      260
+    ],
+    [
+      -115.1,
+      270
+    ],
+    [
+      -113.61,
+      280
+    ],
+    [
+      -112.11,
+      290
+    ],
+    [
+      -110.62,
+      300
+    ],
+    [
+      -1.29,
+      310
+    ],
+    [
+      0.87,
+      320
+    ],
+    [
+      3.02,
+      330
+    ],
+    [
+      5.18,
+      340
+    ],
+    [
+      7.34,
+      350
+    ],
+    [
+      9.5,
+      360
+    ],
+    [
+      11.66,
+      370
+    ],
+    [
+      12.7,
+      380
+    ],
+    [
+      10.86,
+      390
+    ],
+    [
+      9.01,
+      400
+    ],
+    [
+      -56.11,
+      410
+    ],
+    [
+      -56.42,
+      420
+    ],
+    [
+      -56.73,
+      430
+    ],
+    [
+      -61.63,
+      440
+    ],
+    [
+      -48.64,
+      450
+    ]
+  ],
+  "roadMetrics": [
+    {
+      "id": "way/1003014761",
+      "sourceLength": 704.77,
+      "designLength": 399.48
+    },
+    {
+      "id": "way/1094233030",
+      "sourceLength": 90.86,
+      "designLength": 51.03
+    },
+    {
+      "id": "way/1098577061",
+      "sourceLength": 187.57,
+      "designLength": 113.16
+    },
+    {
+      "id": "way/1003014760",
+      "sourceLength": 326.2,
+      "designLength": 149.09
+    },
+    {
+      "id": "way/1098577062",
+      "sourceLength": 200.03,
+      "designLength": 119.29
+    },
+    {
+      "id": "way/1098577063",
+      "sourceLength": 121.74,
+      "designLength": 82.03
+    },
+    {
+      "id": "way/1094233028",
+      "sourceLength": 27.12,
+      "designLength": 20.24
+    },
+    {
+      "id": "way/1094233028",
+      "sourceLength": 117.41,
+      "designLength": 91.2
+    },
+    {
+      "id": "way/1098577064",
+      "sourceLength": 78.56,
+      "designLength": 52.03
+    },
+    {
+      "id": "way/1098577064",
+      "sourceLength": 99.16,
+      "designLength": 64.8
+    },
+    {
+      "id": "way/1098579387",
+      "sourceLength": 44.69,
+      "designLength": 21.38
+    },
+    {
+      "id": "way/1100869380",
+      "sourceLength": 389.43,
+      "designLength": 170.31
+    },
+    {
+      "id": "way/1104698620",
+      "sourceLength": 480.57,
+      "designLength": 294.99
+    },
+    {
+      "id": "way/1104698621",
+      "sourceLength": 29.9,
+      "designLength": 20.23
+    },
+    {
+      "id": "way/1104698623",
+      "sourceLength": 72.73,
+      "designLength": 47.83
+    },
+    {
+      "id": "way/1104698624",
+      "sourceLength": 29.02,
+      "designLength": 18.7
+    },
+    {
+      "id": "way/1104698626",
+      "sourceLength": 62.8,
+      "designLength": 39.51
+    },
+    {
+      "id": "way/1104698627",
+      "sourceLength": 28.96,
+      "designLength": 18.29
+    },
+    {
+      "id": "way/1104698629",
+      "sourceLength": 295.47,
+      "designLength": 166.67
+    }
+  ],
+  "checks": {
+    "houseCount": 113,
+    "courtyardGroups": 4,
+    "sourceFootprints": 352,
+    "selectedSourceAnchors": 113,
+    "groupedSourceFootprints": 345,
+    "unrepresentedSourceIds": [
+      "ea32c2a4-a23a-4483-b91f-fbc3d4a1264a",
+      "228eb541-3e60-40b2-913c-8ab7fa17d093",
+      "e714eac1-95a2-4106-9366-a6fb6ef42f2c",
+      "be912461-c627-48f4-b4b7-4a59afdf9d2a",
+      "d647ec35-d64a-433d-a434-694b4c083ad5",
+      "0146ff2f-e0ad-4a1d-adcf-ec598f1d2149",
+      "facbff21-d023-42ab-bdb5-1c4af59cc5d0"
+    ],
+    "sourceBlocksRepresented": 3,
+    "maximumRepairDisplacement": 4.24,
+    "buildingRoadWaterCrossings": 0,
+    "mergeGroupsCrossMandatoryNetworks": 0,
+    "overlappingParcelBuffers": 0,
+    "treeRootsInsideBuildingBuffers": 0,
+    "terrainHeightRange": [
+      -1.4,
+      100.28
+    ]
+  }
+}

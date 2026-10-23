@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-23",
+  "passed": true,
+  "counts": {
+    "places": 8,
+    "located": 5,
+    "unlocated": 3,
+    "uniqueSourceUrls": 30,
+    "localImageReferences": 27,
+    "uniqueLocalImages": 25,
+    "newLocalImages": 16,
+    "reusedLocalImages": 9,
+    "sourcePlans": 3
+  },
+  "protectedInputs": [
+    {
+      "file": "东山镇_数据/osm/selected_features_full_geometry.geojson",
+      "sha256": "c4d2a9fec5ef8791b4f6f1475cf63c0c9f2acccbd48940045cf502ddeb4a17b7",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_重制版/data/unified-map.json",
+      "sha256": "49d5cb6ad6b43eb1c7613653b54cad9ce2d22110d830037bfd827f787628d3aa",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_数据/references/index.json",
+      "sha256": "187d2240d11615ce4a968c6fd27073853ceccec8b71a462b895657acd230464d",
+      "unchanged": true
+    }
+  ],
+  "localReferencesChecked": 71,
+  "images": [
+    {
+      "path": "images/moli-middle-school-home-1.jpg",
+      "width": 880,
+      "height": 340,
+      "sha256": "8619e57c560ba99ce81d8b0fdee5248cadca79cf235598bb64f8a84d7f9d85fb"
+    },
+    {
+      "path": "images/moli-middle-school-home-2.jpg",
+      "width": 880,
+      "height": 340,
+      "sha256": "5832547e0bb29ec8a9979d637739ab9f909716f35631cb1d77455ae2519151f0"
+    },
+    {
+      "path": "images/moli-middle-school-home-3.jpg",
+      "width": 880,
+      "height": 340,
+      "sha256": "40d90bbb66235754b3cc2ee743a57726e48d978d3ff376d8ef34789f4f60578b"
+    },
+    {
+      "path": "images/moli-middle-school-home-4.jpg",
+      "width": 880,
+      "height": 340,
+      "sha256": "9a739191940a75b00005927857f6e0861ce5ddbe83674afff673c8533d8262b3"
+    },
+    {
+      "path": "images/moli-primary-school-zijin-campus.png",
+      "width": 554,
+      "height": 295,
+      "sha256": "aea8e11e3e55ff9e99413150e84b7ef6e2ee2a16117e30f600e2bea6b3fbeba1"
+    },
+    {
+      "path": "images/moli-primary-school-youshan-campus.png",
+      "width": 554,
+      "height": 369,
+      "sha256": "f1a23120e924667dac2a3134e9b2da97391a7c6f1091240178438f2daf0c897a"
+    },
+    {
+      "path": "images/fahai-temple-meet99-reference.jpg",
+      "width": 242,
+      "height": 150,
+      "sha256": "13b02c399ed4d05f9aaf782a55793835154ee8b69fe51a7bc0113002ada2285f"
+    },
+    {
+      "path": "images/moli-viewing-pavilion-forest-trail-20260503.jpg",
+      "width": 1080,
+      "height": 1385,
+      "sha256": "0b6473dd6a70ff63a74dbc8afbbda0bb1647b0dd53a605185b6d234f1421c41c"
+    },
+    {
+      "path": "images/moli-viewing-pavilion-lake-view-20260503.jpg",
+      "width": 1080,
+      "height": 714,
+      "sha256": "14ddb7f6869ed55eafbdd0d8dbaa902fa05d8ff1cbff84ad98ade486b9c38390"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/05-huihetang-garden.jpg",
+      "width": 600,
+      "height": 450,
+      "sha256": "7f515738e879cab71c9826b91669eb038ee9892bbcb5ccfc9b7c4fd6939f8500"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/06-huihetang-01.jpg",
+      "width": 600,
+      "height": 450,
+      "sha256": "6483956aafb3ec4b8999653d435fe0a133b11d69cee8675db341823d29607d81"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/07-huihetang-03.jpg",
+      "width": 600,
+      "height": 400,
+      "sha256": "61a8b1b47fdb801dbfd143021021bcae4932aa6abebebd7ba154ff284ddeaf60"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/08-huihetang-04.jpg",
+      "width": 450,
+      "height": 600,
+      "sha256": "7d1c7965192963eda2ae19d07819c0abc849ca90026203551ca900ee96fcb3b7"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/16-huihetang-overview.jpg",
+      "width": 3284,
+      "height": 4925,
+      "sha256": "bf593c438bf9866c2346484ac6fa3c71076fb10de1bd0019e8ddb9843cc6de4e"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/17-huihetang-plan.png",
+      "width": 620,
+      "height": 840,
+      "sha256": "37338a96b830b9fffd08e53c681e496acbf6153b308877bfc97ce4a224440a49"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/18-huihetang-courtyard.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "c6e732588a94753d61d525a4164bbca1f8e567d8cdffb3d7650704f77aba1dff"
+    },
+    {
+      "path": "images/huihetang-shulou.png",
+      "width": 1535,
+      "height": 940,
+      "sha256": "1c55c594cd830c67336f8b683bc509c21b8e8456c638e5ec952d1a0e91dd3933"
+    },
+    {
+      "path": "images/huihetang-heritage-locations.png",
+      "width": 800,
+      "height": 680,
+      "sha256": "c7f83bcfed324a24d75fc89a6e22d036bb0a7cdb0454b0cd81ce60dc53937f8f"
+    },
+    {
+      "path": "images/zishi-street-paper-figure1.png",
+      "width": 1588,
+      "height": 2200,
+      "sha256": "ee38cc589db573f957f7b46e9715ce7bf585393e687327c5ae6ce4c9ef498186"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/04-luxiang-zishi-street.png",
+      "width": 530,
+      "height": 689,
+      "sha256": "a063ff467b4a3af58147f3010938ecf4563dc9938ef9ffd9872277d02f0e19a8"
+    },
+    {
+      "path": "images/zishi-street-space-pattern.png",
+      "width": 800,
+      "height": 463,
+      "sha256": "b8217881171756e6f673da8df1c0b1137550c8eaba88cc9621f0dd0c27ed07f8"
+    },
+    {
+      "path": "images/zishi-street-streetscape.png",
+      "width": 800,
+      "height": 600,
+      "sha256": "4c1440c5e90bcafa766766d6689b3862e8456ab75b23d6d0faf032d00bf35b93"
+    },
+    {
+      "path": "images/zishi-street-paper-figure1.png",
+      "width": 1588,
+      "height": 2200,
+      "sha256": "ee38cc589db573f957f7b46e9715ce7bf585393e687327c5ae6ce4c9ef498186"
+    },
+    {
+      "path": "../../东山镇_数据/references/images/02-luxiang-hanshan-port.png",
+      "width": 547,
+      "height": 365,
+      "sha256": "b2f4d23451a7a9d92ec790970d5e11656580e8fa7ea4acbb159b080be9c6a7f5"
+    },
+    {
+      "path": "images/hanshan-port-hangudu-and-well.png",
+      "width": 800,
+      "height": 307,
+      "sha256": "5a26b02894ed75e7a0dd48d97d26c3f34183daa67b0028bbec6ced8e005772db"
+    },
+    {
+      "path": "images/hanshan-port-settlement-evolution.png",
+      "width": 800,
+      "height": 589,
+      "sha256": "6f11d3c4a661cc024e5e36d631d7e5de20542eb38d2b3d6a27f6b4a49018b621"
+    },
+    {
+      "path": "images/zishi-street-paper-figure1.png",
+      "width": 1588,
+      "height": 2200,
+      "sha256": "ee38cc589db573f957f7b46e9715ce7bf585393e687327c5ae6ce4c9ef498186"
+    }
+  ],
+  "errors": []
+}

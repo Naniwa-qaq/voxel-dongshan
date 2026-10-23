@@ -1,0 +1,40 @@
+{
+  "checkedOn": "2026-10-22",
+  "districts": [
+    {
+      "id": "dongshan-school",
+      "originWgs84": [
+        120.39673431197694,
+        31.08703027248432
+      ],
+      "boundaryArea": 36983.59,
+      "buildingCount": 8,
+      "sourceIds": 9,
+      "treeCount": 24,
+      "copyrightImagesCopied": 0,
+      "sourceBoundaryRole": "园区或校区地块，不当主建筑轮廓",
+      "sourceCoordinatesAndDesignCoordinatesSeparate": true,
+      "unintendedBuildingIntersections": [],
+      "roadBuildingIntersections": [],
+      "trackOutsideSchoolBoundaryArea": 0.0,
+      "gateBoundaryCrossing": "校门沿边界接口，作为有意开口处理"
+    },
+    {
+      "id": "chunzailou-garden",
+      "originWgs84": [
+        120.39979815070976,
+        31.081071932409532
+      ],
+      "boundaryArea": 12713.29,
+      "buildingCount": 10,
+      "sourceIds": 3,
+      "treeCount": 22,
+      "copyrightImagesCopied": 0,
+      "sourceBoundaryRole": "园区或校区地块，不当主建筑轮廓",
+      "sourceCoordinatesAndDesignCoordinatesSeparate": true,
+      "gardenExplanatoryArea": 336,
+      "pondSource": "官方园林历史证实北园水池；实际池形未测，明确形制综合",
+      "intendedConnections": "三进楼厅与南北跑马廊衔接；节点交接不当体块误碰撞"
+    }
+  ]
+}

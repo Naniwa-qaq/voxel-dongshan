@@ -1,0 +1,27 @@
+{
+  "dsm": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wgs84.tif",
+  "landcover": "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+  "vectors": [
+    "东山镇_数据\\osm\\layers\\roads.geojson",
+    "东山镇_数据\\osm\\layers\\waterways.geojson",
+    "东山镇_数据\\osm\\layers\\water_polygons.geojson",
+    "东山镇_数据\\overture\\buildings_bbox_2026-09-23.1.geojson"
+  ],
+  "overlay_feature_counts": {
+    "roads": 3446,
+    "water": 2543,
+    "buildings": 60873
+  },
+  "bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "purpose": "Actual-data QA preview; not cartographic generalization or reconstruction",
+  "preview_resampling": {
+    "dsm": "bilinear",
+    "landcover": "nearest"
+  },
+  "dsm_display_upper_limit_m": 300
+}

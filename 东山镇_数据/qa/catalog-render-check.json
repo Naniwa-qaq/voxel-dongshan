@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-10-19T10:44:37.339Z",
+  "checks": [
+    {
+      "title": "东山镇 · 首批数据档案",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "images": [
+        {
+          "src": "qa/collection-overview.png",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "title": "东山镇 · 首批数据档案",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "src": "qa/collection-overview.png",
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "page_errors": []
+}

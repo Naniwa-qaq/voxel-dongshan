@@ -1,0 +1,204 @@
+{
+  "auditedAt": "2026-10-23",
+  "scope": "Read-only inventory of workspace before initial GitHub upload. No files other than this report changed.",
+  "totalFiles": 4711,
+  "totalBytes": 845954414.0,
+  "topLevel": [
+    {
+      "path": "_回滚归档",
+      "files": 57,
+      "bytes": 22796270.0
+    },
+    {
+      "path": "东山镇_数据",
+      "files": 4415,
+      "bytes": 732815176.0
+    },
+    {
+      "path": "东山镇_项目筹备",
+      "files": 7,
+      "bytes": 51735.0
+    },
+    {
+      "path": "东山镇_原型",
+      "files": 1,
+      "bytes": 693.0
+    },
+    {
+      "path": "东山镇_重制版",
+      "files": 84,
+      "bytes": 58748659.0
+    },
+    {
+      "path": "东山镇_资料储备",
+      "files": 57,
+      "bytes": 12526098.0
+    },
+    {
+      "path": "云山巨城_学习档案",
+      "files": 40,
+      "bytes": 9389460.0
+    },
+    {
+      "path": "云山巨城_学习档案.zip",
+      "files": 1,
+      "bytes": 9083284.0
+    },
+    {
+      "path": "scripts",
+      "files": 26,
+      "bytes": 359353.0
+    },
+    {
+      "path": "work",
+      "files": 23,
+      "bytes": 183686.0
+    }
+  ],
+  "filesAtLeast50MB": [
+    {
+      "path": "东山镇_数据/overture/buildings_bbox_2026-09-23.1.geojson",
+      "bytes": 127348788
+    },
+    {
+      "path": "东山镇_数据/working/dongshan_sources_utm51n.gpkg",
+      "bytes": 50503680
+    }
+  ],
+  "largestNonRuntimeFiles": [
+    {
+      "path": "东山镇_数据/overture/buildings_bbox_2026-09-23.1.geojson",
+      "bytes": 127348788
+    },
+    {
+      "path": "东山镇_数据/working/dongshan_sources_utm51n.gpkg",
+      "bytes": 50503680
+    },
+    {
+      "path": "东山镇_数据/terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+      "bytes": 47859448
+    },
+    {
+      "path": "东山镇_数据/terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_HEM.tif",
+      "bytes": 47107464
+    },
+    {
+      "path": "东山镇_数据/terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+      "bytes": 40599423
+    },
+    {
+      "path": "东山镇_数据/terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_HEM.tif",
+      "bytes": 39631617
+    },
+    {
+      "path": "云山巨城_学习档案.zip",
+      "bytes": 9083284
+    },
+    {
+      "path": "东山镇_数据/osm/selected_original_objects.jsonl",
+      "bytes": 6933853
+    },
+    {
+      "path": "东山镇_数据/overture/raw/buildings_bbox_2026-09-23.1.parquet",
+      "bytes": 5875233
+    },
+    {
+      "path": "东山镇_数据/osm/selected_features_full_geometry.geojson",
+      "bytes": 5802033
+    },
+    {
+      "path": "东山镇_数据/landcover/provenance/WorldCover_PUM_V2.0.pdf",
+      "bytes": 4102952
+    },
+    {
+      "path": "东山镇_资料储备/2026-10-23_待建场所/images/huihetang-shulou.png",
+      "bytes": 4035507
+    },
+    {
+      "path": "东山镇_数据/references/images/18-huihetang-courtyard.png",
+      "bytes": 3916159
+    },
+    {
+      "path": "东山镇_数据/terrain/provenance/Copernicus_DEM_Product_Handbook_i5.0.pdf",
+      "bytes": 3541026
+    },
+    {
+      "path": "东山镇_数据/references/images/16-huihetang-overview.jpg",
+      "bytes": 3499950
+    },
+    {
+      "path": "东山镇_数据/osm/raw/20261019/water.json",
+      "bytes": 3400594
+    },
+    {
+      "path": "东山镇_数据/references/pages/heritage-register.html",
+      "bytes": 2979303
+    },
+    {
+      "path": "东山镇_重制版/qa/ecology-school-hardscape.png",
+      "bytes": 2765247
+    },
+    {
+      "path": "东山镇_数据/osm/raw/20261019/roads.json",
+      "bytes": 2720096
+    },
+    {
+      "path": "东山镇_重制版/qa/ecology-grassland.png",
+      "bytes": 2453911
+    }
+  ],
+  "recommendedVisibility": "private",
+  "visibilityReason": "Existing source README limits unverified-rights reference imagery to current internal research.",
+  "recommendedInclude": "Keep current runnable remake, all new POI reserve, source datasets in compact formats and GIS work package, all attribution/provenance/QA/scripts/docs. Rollback archive is only 22.8MB and has linked historical manifests; retaining it preserves history.",
+  "recommendedExcludes": [
+    {
+      "pattern": "东山镇_数据/_runtime/",
+      "reason": "Installed local Python runtime dependencies, reproducible and not source data."
+    },
+    {
+      "pattern": "**/__pycache__/",
+      "reason": "Compiled Python caches."
+    },
+    {
+      "pattern": "东山镇_数据/terrain/range_cache/",
+      "reason": "Download range cache; explicitly not delivered geographic data."
+    },
+    {
+      "pattern": "东山镇_数据/overture/buildings_bbox_2026-09-23.1.geojson",
+      "reason": "127MB interoperability duplicate; compact original GeoParquet and EPSG:32651 GeoPackage preserve provenance and features. Existing source and hash manifests should remain."
+    },
+    {
+      "pattern": "云山巨城_学习档案.zip",
+      "reason": "Duplicate compressed archive of existing directory."
+    },
+    {
+      "pattern": "*.log",
+      "reason": "Collection diagnostic logs; formal source and QA manifests remain."
+    },
+    {
+      "pattern": "*.part",
+      "reason": "Incomplete downloaded artifact; download metadata remains."
+    }
+  ],
+  "recommendedExcludedFiles": 4220,
+  "recommendedExcludedBytes": 437017730.0,
+  "expectedIncludedFiles": 491,
+  "expectedIncludedBytes": 408936684.0,
+  "optionalFurtherReduction": {
+    "path": "东山镇_数据/terrain/raw/",
+    "files": 32,
+    "bytes": 189481525,
+    "reason": "Full source tiles; cropped derived rasters and download manifests remain sufficient to run and trace current scene, but keeping source tiles best preserves complete offline raw data."
+  },
+  "dependencies": {
+    "runtimeScene": "Remake index.html uses local JS, CSS and vendored Three.js; no secret or network dependency required.",
+    "sourceRebuild": "Python processing scripts read working/dongshan_sources_utm51n.gpkg and derived terrain/landcover rasters. build_working_gpkg.py reads the excluded large GeoJSON when rebuilding the GeoPackage; regenerate from compact source parquet first or document restoration."
+  },
+  "credentialsAudit": {
+    "highSignalScan": "No matches in non-runtime textual files for GitHub tokens, OpenAI secret token formats, AWS access key IDs, or private key headers.",
+    "nameScan": "No .env, id_rsa, private-key container, or token/credential-named files found.",
+    "benignPEM": "东山镇_数据/_runtime/certifi/cacert.pem is a public CA bundle; excluded with runtime.",
+    "scope": "Text-format pattern and filename checks; binary datasets were inventoried but not semantically inspected for secrets."
+  },
+  "excludedLargeFileSHA256": "8165673c47941f87251484b043415e64d37c275c690b54a8acf89c085d8fb999"
+}

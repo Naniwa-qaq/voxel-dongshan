@@ -1,0 +1,472 @@
+{
+  "version": "2026-10-23-ecology-runtime-1",
+  "date": "2026-10-23",
+  "url": "file:///D:/My%20Data/Desktop/%E4%BD%93%E7%B4%A0%E4%B8%9C%E5%B1%B1%E9%95%87/%E4%B8%9C%E5%B1%B1%E9%95%87_%E9%87%8D%E5%88%B6%E7%89%88/index.html",
+  "viewport": {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1
+  },
+  "checks": {
+    "originalAuditedInputsUnchanged": true,
+    "localFileEntry": true,
+    "singleContinuousWorld": true,
+    "worldNeverReplaced": true,
+    "residentObjectsNeverReplaced": true,
+    "allPlacesResidentInitially": true,
+    "noResourceLoadsOnNavigation": true,
+    "noSceneSwitchApi": true,
+    "buttonViewsCorrect": true,
+    "allSelectedBuildingsResident": true,
+    "noTreesInPlayingFields": true,
+    "groundCoverPopulated": true,
+    "allGroundInstancesPassSceneHardMask": true,
+    "allGroundInstancesClearIndependentGeometry": true,
+    "shadeUsesNonGrass": true,
+    "atLeastEightTreeTypes": true,
+    "allSixNewTreeTypesPresent": true,
+    "shadersCompileAndLink": true,
+    "noRuntimeErrors": true,
+    "noResourceFailures": true,
+    "geographicDialogRenders": true,
+    "allRequiredVisualsCaptured": true
+  },
+  "sourceHashes": [
+    {
+      "file": "东山镇_数据\\working\\dongshan_sources_utm51n.gpkg",
+      "expected": "09e81f7e043fb75a7b75c38acac8172e14761f85d6259169b4320ba7b83929b1",
+      "actual": "09e81f7e043fb75a7b75c38acac8172e14761f85d6259169b4320ba7b83929b1",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_utm51n_30m.tif",
+      "expected": "b4e020f30c3520bfde93d56928a93f6be1d7ee9cd6e0d0131ac4dd4e84a416e0",
+      "actual": "b4e020f30c3520bfde93d56928a93f6be1d7ee9cd6e0d0131ac4dd4e84a416e0",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_utm51n_10m.tif",
+      "expected": "45eebe630d3c2cfa30f3c8d54c83b0fe54fd23d37ca335ca671d024471ac31b6",
+      "actual": "45eebe630d3c2cfa30f3c8d54c83b0fe54fd23d37ca335ca671d024471ac31b6",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_重制版\\data\\design.json",
+      "expected": "4c639976e87ed0e04a8fc14b05582c793ae9bd1b5ecabedc0e4fbe7c7e2f6210",
+      "actual": "4c639976e87ed0e04a8fc14b05582c793ae9bd1b5ecabedc0e4fbe7c7e2f6210",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_重制版\\js\\design.js",
+      "expected": "982717563bd20370c14d0a0a7bb1c6b735f2dcadc605276427c2109096fd64f6",
+      "actual": "982717563bd20370c14d0a0a7bb1c6b735f2dcadc605276427c2109096fd64f6",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_重制版\\data\\landscape-revision-audit.json",
+      "expected": "a5a57a0d8ea3011757877a142dbf71f6744d1d691af8c6690bad1d786bced24a",
+      "actual": "a5a57a0d8ea3011757877a142dbf71f6744d1d691af8c6690bad1d786bced24a",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_重制版\\data\\districts\\dongshan-school.json",
+      "expected": "7b42ab015b30ab8267b80a65301dd7f5e71245fece6dde628ed11504d22ec948",
+      "actual": "7b42ab015b30ab8267b80a65301dd7f5e71245fece6dde628ed11504d22ec948",
+      "unchanged": true
+    },
+    {
+      "file": "东山镇_重制版\\data\\districts\\chunzailou-garden.json",
+      "expected": "525308e2a18be985c01f97a9e187894950ca089a4015c9971aec428f361d2f9b",
+      "actual": "525308e2a18be985c01f97a9e187894950ca089a4015c9971aec428f361d2f9b",
+      "unchanged": true
+    }
+  ],
+  "geometryChecks": {
+    "checkedInstances": 49398,
+    "independentSourceGeometry": {
+      "waterRleCells": 691250,
+      "waterRleDecodeComplete": true,
+      "roadAndCanalSegments": 647,
+      "orientedBuildingFootprints": 171,
+      "hardGroundPolygons": 10,
+      "playingFieldPolygons": 2,
+      "method": "winding-number polygons, independent distance-to-segment road/canal buffers, inverse-rotated building rectangles; direct source water RLE"
+    },
+    "violations": {
+      "lake": 0,
+      "pond": 0,
+      "road": 0,
+      "canal": 0,
+      "hardGround": 0,
+      "building": 0,
+      "playingField": 0,
+      "sceneHardMask": 0,
+      "grassUnderClosedCanopy": 0
+    },
+    "firstViolations": [],
+    "shadeSamples": 2921,
+    "shadeNonGrass": 2921,
+    "minimumSampledRoadCentreClearance": 0.900426796052082,
+    "noTreesInPlayingFields": true,
+    "fieldTrees": 0,
+    "allSourceObjectsResident": true
+  },
+  "inventory": {
+    "version": "2026-10-23-ecology-geography",
+    "ready": true,
+    "mode": "single-continuous-world",
+    "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61",
+    "loadedZoneIds": [
+      "luxiang",
+      "dongshan-school",
+      "chunzailou-garden"
+    ],
+    "houseCount": 171,
+    "residentHouseCount": 171,
+    "treeCount": 6694,
+    "treeTypeCounts": {
+      "evergreen": 2850,
+      "deciduous": 1797,
+      "willow": 10,
+      "camphor": 968,
+      "waxberry": 4,
+      "pine": 1048,
+      "loquat": 7,
+      "metasequoia": 10
+    },
+    "groundCover": {
+      "count": 49398,
+      "counts": {
+        "grass": 42681,
+        "sedge": 470,
+        "litter": 4953,
+        "shrub": 1094,
+        "fern": 187,
+        "bare": 13
+      },
+      "candidates": 238496,
+      "hardMaskRejected": 78063,
+      "templates": 12,
+      "spacing": 3.4,
+      "sourceMask": "2026-10-23-ecology-1",
+      "policy": "源土地覆被约束+宏观坡度/相对高程/冠层/水岸渐变的可复现美术规则；所有硬地排除由场景处理；树种和地被为类型推断",
+      "artRules": "低冠开敞草丛增加2个不规则邻簇；建成区中通过硬地排除的空隙适度加密；阴坡与冠层提高相对湿润权重。"
+    },
+    "generatedMs": 19262,
+    "terrainFaces": 1107765,
+    "treeChunks": 38,
+    "surface": "WorldCover与源DSM坡度的柔和生态遮罩；林下枯叶/蕨、草丛、湿岸莎草、灌丛；排除硬地/房院/水体/运动场；无逐屋地坪染色",
+    "shaderAudit": {
+      "compiled": 18,
+      "linked": 9,
+      "errors": []
+    },
+    "hasSceneSwitchApi": false,
+    "errors": []
+  },
+  "targets": {
+    "grass": {
+      "x": -63.4,
+      "z": -25.6,
+      "y": 1.399999976158142,
+      "kind": "grass",
+      "cover": 30,
+      "slope": 0.0392156862745098,
+      "canopy": 0,
+      "wetness": 0.008136127372549025
+    },
+    "shade": {
+      "x": 113.8,
+      "z": -318,
+      "y": 27.600000381469727,
+      "kind": "litter",
+      "cover": 10,
+      "slope": 0.10588235294117647,
+      "canopy": 0.5408575928031985,
+      "wetness": 0.20405556598489558
+    },
+    "wet": {
+      "x": 55.8,
+      "z": 26.8,
+      "y": 1.399999976158142,
+      "kind": "sedge",
+      "cover": 50,
+      "slope": 0.027450980392156862,
+      "canopy": 0,
+      "wetness": 0.9273587797281923
+    },
+    "fruit": {
+      "x": 5.8,
+      "z": -43.7,
+      "type": "loquat",
+      "baseY": 1.600000023841858,
+      "height": 5.2
+    }
+  },
+  "dialog": {
+    "open": true,
+    "plotCount": 2,
+    "priorityRows": 5,
+    "distanceRows": 6,
+    "summary": "源锚点有地理依据；当前场景是分段压缩后的设计地图，距离和方位角有形变。春在楼采用园区锚点，主楼具体落位仍缺实测总平面。",
+    "horizontalOverflow": false,
+    "scrollHeight": 1706,
+    "clientHeight": 950
+  },
+  "records": [
+    {
+      "name": "ecology-overview",
+      "camera": {
+        "position": [
+          252.22212027841016,
+          2508.0199959388574,
+          1113.425072515988
+        ],
+        "target": [
+          575,
+          45,
+          -330
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": -0.22,
+        "pitch": 1.03,
+        "distance": 2873
+      },
+      "render": {
+        "drawCalls": 474,
+        "triangles": 8059966,
+        "geometries": 474,
+        "textures": 2
+      },
+      "groundVisible": 0,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    },
+    {
+      "name": "ecology-grassland",
+      "camera": {
+        "position": [
+          -93.02446673069568,
+          20.16855240882981,
+          -2.091470421639915
+        ],
+        "target": [
+          -63.4,
+          1.899999976158142,
+          -25.6
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": -0.9,
+        "pitch": 0.45,
+        "distance": 42
+      },
+      "render": {
+        "drawCalls": 146,
+        "triangles": 1317334,
+        "geometries": 525,
+        "textures": 2
+      },
+      "groundVisible": 999,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    },
+    {
+      "name": "ecology-understory",
+      "camera": {
+        "position": [
+          90.16847684207323,
+          38.77158732997579,
+          -299.2471776727649
+        ],
+        "target": [
+          113.8,
+          28.100000381469727,
+          -318
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": -0.9,
+        "pitch": 0.34,
+        "distance": 32
+      },
+      "render": {
+        "drawCalls": 210,
+        "triangles": 3865316,
+        "geometries": 541,
+        "textures": 2
+      },
+      "groundVisible": 627,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    },
+    {
+      "name": "ecology-fruit-trees",
+      "camera": {
+        "position": [
+          -14.803405876007435,
+          13.801138632594496,
+          -27.350143617633165
+        ],
+        "target": [
+          5.8,
+          4.2000000238418576,
+          -43.7
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": -0.9,
+        "pitch": 0.35,
+        "distance": 28
+      },
+      "render": {
+        "drawCalls": 309,
+        "triangles": 4804814,
+        "geometries": 544,
+        "textures": 2
+      },
+      "groundVisible": 1354,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    },
+    {
+      "name": "ecology-wet-shore",
+      "camera": {
+        "position": [
+          28.383309243593473,
+          16.697896983886864,
+          48.55654641978424
+        ],
+        "target": [
+          55.8,
+          1.899999976158142,
+          26.8
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": -0.9,
+        "pitch": 0.4,
+        "distance": 38
+      },
+      "render": {
+        "drawCalls": 319,
+        "triangles": 3596492,
+        "geometries": 545,
+        "textures": 2
+      },
+      "groundVisible": 1140,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    },
+    {
+      "name": "ecology-school-hardscape",
+      "camera": {
+        "position": [
+          1145.0319245534074,
+          207.28471972474233,
+          -530.2465298657078
+        ],
+        "target": [
+          1040,
+          14.6,
+          -650
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": 0.72,
+        "pitch": 0.88,
+        "distance": 250
+      },
+      "render": {
+        "drawCalls": 92,
+        "triangles": 1332126,
+        "geometries": 548,
+        "textures": 2
+      },
+      "groundVisible": 531,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    },
+    {
+      "name": "ecology-geography-background",
+      "camera": {
+        "position": [
+          252.22212027841016,
+          2508.0199959388574,
+          1113.425072515988
+        ],
+        "target": [
+          575,
+          45,
+          -330
+        ],
+        "fov": 45,
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1,
+        "yaw": -0.22,
+        "pitch": 1.03,
+        "distance": 2873
+      },
+      "render": {
+        "drawCalls": 474,
+        "triangles": 8059966,
+        "geometries": 548,
+        "textures": 2
+      },
+      "groundVisible": 0,
+      "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61"
+    }
+  ],
+  "nav": [
+    {
+      "place": "dongshan-school",
+      "expected": "school",
+      "active": "school",
+      "signature": {
+        "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61",
+        "ids": "LX-001|LX-002|LX-003|LX-004|LX-005|LX-006|LX-007|LX-008|LX-009|LX-010|LX-011|LX-012|LX-013|LX-014|LX-015|LX-016|LX-017|LX-018|LX-019|LX-020|LX-021|LX-022|LX-023|LX-024|LX-025|LX-026|LX-027|LX-028|LX-029|LX-030|LX-031|LX-032|LX-033|LX-034|LX-035|LX-036|LX-037|LX-038|LX-039|LX-040|LX-041|LX-042|LX-043|LX-044|LX-045|LX-046|LX-047|LX-048|LX-049|LX-050|LX-051|LX-052|LX-053|LX-054|LX-055|LX-056|LX-057|LX-058|LX-059|LX-060|LX-061|LX-062|LX-063|LX-064|LX-065|LX-066|LX-067|LX-068|LX-069|LX-070|LX-071|LX-072|LX-073|LX-074|LX-075|LX-076|LX-077|LX-078|LX-079|LX-080|LX-081|LX-082|LX-083|LX-084|LX-085|LX-086|LX-087|LX-088|LX-089|LX-090|LX-091|LX-092|LX-093|LX-094|LX-095|LX-096|LX-097|LX-098|LX-099|LX-100|LX-101|LX-102|LX-103|LX-104|LX-105|LX-106|LX-107|LX-108|LX-109|LX-110|LX-111|LX-112|LX-113|DSZX-0|DSZX-1|DSZX-2|DSZX-3|DSZX-4|DSZX-6|DSZX-7|DSZX-gate|CZL-hall-0|CZL-hall-1|CZL-hall-2|CZL-wing--15.6|CZL-wing-9.6|CZL-gate|CZL-north-gallery|CZL-pavilion|CZL-context-7|CZL-context-9|TC-3e27c83c|TC-c8d1ae05|TC-9f2f7b2d|TC-57b9519a|TC-0209c19f|TC-b5899c41|TC-23d2c33f|TC-1cfb82f6|TC-e336e08f|TC-eb75ac7c|TC-4133d6ab|TC-b432fcfe|TC-1030d001|TC-5b12742b|TC-f83b8aa5|TC-cc90c03b|TC-0081fd50|TC-bec21ee8|TC-9e12efb9|TC-51bc45c6|TC-e3edc022|TC-004ed98c|TC-efc75782|TC-1ff412cf|TC-b2c32d8d|TC-b08f2468|TC-7fac4193|TC-f7c41654|TC-a57ff73a|TC-176cabb7|TC-9c2d83c4|TC-9d3bbc1e|TC-e8663935|TC-5e5c4674|TC-27854f2f|TC-6c33ff49|TC-afd3a1dc|chunzailou-garden::CZL-rock-1|chunzailou-garden::CZL-rock-2|chunzailou-garden::CZL-rock-3",
+        "count": 171
+      }
+    },
+    {
+      "place": "chunzailou-garden",
+      "expected": "garden",
+      "active": "garden",
+      "signature": {
+        "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61",
+        "ids": "LX-001|LX-002|LX-003|LX-004|LX-005|LX-006|LX-007|LX-008|LX-009|LX-010|LX-011|LX-012|LX-013|LX-014|LX-015|LX-016|LX-017|LX-018|LX-019|LX-020|LX-021|LX-022|LX-023|LX-024|LX-025|LX-026|LX-027|LX-028|LX-029|LX-030|LX-031|LX-032|LX-033|LX-034|LX-035|LX-036|LX-037|LX-038|LX-039|LX-040|LX-041|LX-042|LX-043|LX-044|LX-045|LX-046|LX-047|LX-048|LX-049|LX-050|LX-051|LX-052|LX-053|LX-054|LX-055|LX-056|LX-057|LX-058|LX-059|LX-060|LX-061|LX-062|LX-063|LX-064|LX-065|LX-066|LX-067|LX-068|LX-069|LX-070|LX-071|LX-072|LX-073|LX-074|LX-075|LX-076|LX-077|LX-078|LX-079|LX-080|LX-081|LX-082|LX-083|LX-084|LX-085|LX-086|LX-087|LX-088|LX-089|LX-090|LX-091|LX-092|LX-093|LX-094|LX-095|LX-096|LX-097|LX-098|LX-099|LX-100|LX-101|LX-102|LX-103|LX-104|LX-105|LX-106|LX-107|LX-108|LX-109|LX-110|LX-111|LX-112|LX-113|DSZX-0|DSZX-1|DSZX-2|DSZX-3|DSZX-4|DSZX-6|DSZX-7|DSZX-gate|CZL-hall-0|CZL-hall-1|CZL-hall-2|CZL-wing--15.6|CZL-wing-9.6|CZL-gate|CZL-north-gallery|CZL-pavilion|CZL-context-7|CZL-context-9|TC-3e27c83c|TC-c8d1ae05|TC-9f2f7b2d|TC-57b9519a|TC-0209c19f|TC-b5899c41|TC-23d2c33f|TC-1cfb82f6|TC-e336e08f|TC-eb75ac7c|TC-4133d6ab|TC-b432fcfe|TC-1030d001|TC-5b12742b|TC-f83b8aa5|TC-cc90c03b|TC-0081fd50|TC-bec21ee8|TC-9e12efb9|TC-51bc45c6|TC-e3edc022|TC-004ed98c|TC-efc75782|TC-1ff412cf|TC-b2c32d8d|TC-b08f2468|TC-7fac4193|TC-f7c41654|TC-a57ff73a|TC-176cabb7|TC-9c2d83c4|TC-9d3bbc1e|TC-e8663935|TC-5e5c4674|TC-27854f2f|TC-6c33ff49|TC-afd3a1dc|chunzailou-garden::CZL-rock-1|chunzailou-garden::CZL-rock-2|chunzailou-garden::CZL-rock-3",
+        "count": 171
+      }
+    },
+    {
+      "place": "luxiang",
+      "expected": "waterfront",
+      "active": "waterfront",
+      "signature": {
+        "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61",
+        "ids": "LX-001|LX-002|LX-003|LX-004|LX-005|LX-006|LX-007|LX-008|LX-009|LX-010|LX-011|LX-012|LX-013|LX-014|LX-015|LX-016|LX-017|LX-018|LX-019|LX-020|LX-021|LX-022|LX-023|LX-024|LX-025|LX-026|LX-027|LX-028|LX-029|LX-030|LX-031|LX-032|LX-033|LX-034|LX-035|LX-036|LX-037|LX-038|LX-039|LX-040|LX-041|LX-042|LX-043|LX-044|LX-045|LX-046|LX-047|LX-048|LX-049|LX-050|LX-051|LX-052|LX-053|LX-054|LX-055|LX-056|LX-057|LX-058|LX-059|LX-060|LX-061|LX-062|LX-063|LX-064|LX-065|LX-066|LX-067|LX-068|LX-069|LX-070|LX-071|LX-072|LX-073|LX-074|LX-075|LX-076|LX-077|LX-078|LX-079|LX-080|LX-081|LX-082|LX-083|LX-084|LX-085|LX-086|LX-087|LX-088|LX-089|LX-090|LX-091|LX-092|LX-093|LX-094|LX-095|LX-096|LX-097|LX-098|LX-099|LX-100|LX-101|LX-102|LX-103|LX-104|LX-105|LX-106|LX-107|LX-108|LX-109|LX-110|LX-111|LX-112|LX-113|DSZX-0|DSZX-1|DSZX-2|DSZX-3|DSZX-4|DSZX-6|DSZX-7|DSZX-gate|CZL-hall-0|CZL-hall-1|CZL-hall-2|CZL-wing--15.6|CZL-wing-9.6|CZL-gate|CZL-north-gallery|CZL-pavilion|CZL-context-7|CZL-context-9|TC-3e27c83c|TC-c8d1ae05|TC-9f2f7b2d|TC-57b9519a|TC-0209c19f|TC-b5899c41|TC-23d2c33f|TC-1cfb82f6|TC-e336e08f|TC-eb75ac7c|TC-4133d6ab|TC-b432fcfe|TC-1030d001|TC-5b12742b|TC-f83b8aa5|TC-cc90c03b|TC-0081fd50|TC-bec21ee8|TC-9e12efb9|TC-51bc45c6|TC-e3edc022|TC-004ed98c|TC-efc75782|TC-1ff412cf|TC-b2c32d8d|TC-b08f2468|TC-7fac4193|TC-f7c41654|TC-a57ff73a|TC-176cabb7|TC-9c2d83c4|TC-9d3bbc1e|TC-e8663935|TC-5e5c4674|TC-27854f2f|TC-6c33ff49|TC-afd3a1dc|chunzailou-garden::CZL-rock-1|chunzailou-garden::CZL-rock-2|chunzailou-garden::CZL-rock-3",
+        "count": 171
+      }
+    },
+    {
+      "place": "all",
+      "expected": "overview",
+      "active": "overview",
+      "signature": {
+        "world": "96efaee9-b846-4d3b-ba71-63fe698c1b61",
+        "ids": "LX-001|LX-002|LX-003|LX-004|LX-005|LX-006|LX-007|LX-008|LX-009|LX-010|LX-011|LX-012|LX-013|LX-014|LX-015|LX-016|LX-017|LX-018|LX-019|LX-020|LX-021|LX-022|LX-023|LX-024|LX-025|LX-026|LX-027|LX-028|LX-029|LX-030|LX-031|LX-032|LX-033|LX-034|LX-035|LX-036|LX-037|LX-038|LX-039|LX-040|LX-041|LX-042|LX-043|LX-044|LX-045|LX-046|LX-047|LX-048|LX-049|LX-050|LX-051|LX-052|LX-053|LX-054|LX-055|LX-056|LX-057|LX-058|LX-059|LX-060|LX-061|LX-062|LX-063|LX-064|LX-065|LX-066|LX-067|LX-068|LX-069|LX-070|LX-071|LX-072|LX-073|LX-074|LX-075|LX-076|LX-077|LX-078|LX-079|LX-080|LX-081|LX-082|LX-083|LX-084|LX-085|LX-086|LX-087|LX-088|LX-089|LX-090|LX-091|LX-092|LX-093|LX-094|LX-095|LX-096|LX-097|LX-098|LX-099|LX-100|LX-101|LX-102|LX-103|LX-104|LX-105|LX-106|LX-107|LX-108|LX-109|LX-110|LX-111|LX-112|LX-113|DSZX-0|DSZX-1|DSZX-2|DSZX-3|DSZX-4|DSZX-6|DSZX-7|DSZX-gate|CZL-hall-0|CZL-hall-1|CZL-hall-2|CZL-wing--15.6|CZL-wing-9.6|CZL-gate|CZL-north-gallery|CZL-pavilion|CZL-context-7|CZL-context-9|TC-3e27c83c|TC-c8d1ae05|TC-9f2f7b2d|TC-57b9519a|TC-0209c19f|TC-b5899c41|TC-23d2c33f|TC-1cfb82f6|TC-e336e08f|TC-eb75ac7c|TC-4133d6ab|TC-b432fcfe|TC-1030d001|TC-5b12742b|TC-f83b8aa5|TC-cc90c03b|TC-0081fd50|TC-bec21ee8|TC-9e12efb9|TC-51bc45c6|TC-e3edc022|TC-004ed98c|TC-efc75782|TC-1ff412cf|TC-b2c32d8d|TC-b08f2468|TC-7fac4193|TC-f7c41654|TC-a57ff73a|TC-176cabb7|TC-9c2d83c4|TC-9d3bbc1e|TC-e8663935|TC-5e5c4674|TC-27854f2f|TC-6c33ff49|TC-afd3a1dc|chunzailou-garden::CZL-rock-1|chunzailou-garden::CZL-rock-2|chunzailou-garden::CZL-rock-3",
+        "count": 171
+      }
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

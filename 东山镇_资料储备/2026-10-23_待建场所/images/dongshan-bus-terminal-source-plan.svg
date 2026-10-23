@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="860" viewBox="0 0 1120 860"><title>东山首末站源几何参考平面</title>
+<desc>北向上；源地块与邻近道路中心线示意；不是实景图，非测绘总平面；未绘制未经证实的建筑。</desc>
+<defs><clipPath id="map"><rect x="141.0" y="174" width="570" height="570"/></clipPath></defs>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<rect width="1120" height="860" fill="#f5f5ef"/>
+<text x="48" y="54" font-size="15" fill="#54716b" text-anchor="start" font-weight="700">源几何参考平面</text>
+<text x="48" y="96" font-size="30" fill="#263a46" text-anchor="start" font-weight="700">东山首末站</text>
+<text x="48" y="130" font-size="16" fill="#52646a" text-anchor="start" font-weight="400">东山镇洞庭路沿线（门牌待核）</text>
+<rect x="838" y="38" rx="10" width="234" height="70" fill="#e6ece7"/>
+<text x="858" y="67" font-size="15" fill="#263a46" text-anchor="start" font-weight="600">资料生成 2026-10-23</text>
+<text x="858" y="91" font-size="14" fill="#536b65" text-anchor="start" font-weight="400">内部建模定位参考</text>
+<rect x="141.0" y="174" width="570" height="570" fill="#ffffff" stroke="#d2dad3"/>
+<g clip-path="url(#map)">
+<path d="M80.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M194.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M308.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M422.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M536.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M650.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M764.39,174 V744" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,799.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,685.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,571.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,457.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,343.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,229.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M141.00,115.71 h570" stroke="#e9eeea" stroke-width="1"/>
+<path d="M173.65,166.36 L969.95,750.06 L1484.91,1127.10 L1636.54,1234.76 L1720.52,1278.86 L1789.99,1302.04" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+<path d="M173.65,166.36 L969.95,750.06 L1484.91,1127.10 L1636.54,1234.76 L1720.52,1278.86 L1789.99,1302.04" fill="none" stroke="#aeb9b7" stroke-width="4" stroke-linejoin="round"/>
+<path d="M1400.18,186.64 L1215.25,40.01 L1066.01,-64.82 L914.50,-186.05 L821.73,-270.86 L638.60,-450.84" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+<path d="M1400.18,186.64 L1215.25,40.01 L1066.01,-64.82 L914.50,-186.05 L821.73,-270.86 L638.60,-450.84" fill="none" stroke="#aeb9b7" stroke-width="4" stroke-linejoin="round"/>
+<path d="M173.65,166.36 L75.97,232.74 L-65.08,343.79 L-133.65,398.59 L-205.17,476.47 L-327.35,644.09 L-417.36,774.50 L-483.20,896.82 L-542.88,1019.44 L-615.12,1307.39 L-641.58,1440.73 L-752.41,1767.07 L-769.27,1824.38 L-783.11,1863.64 L-955.96,2157.62 L-968.02,2177.76 L-1005.49,2257.06 L-1050.49,2410.22 L-1077.93,2511.99 L-1103.22,2573.04 L-1231.30,2815.90 L-1387.05,3190.37 L-1477.28,3398.05 L-1488.09,3436.62 L-1537.94,3723.00 L-1618.79,4182.61" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+<path d="M173.65,166.36 L75.97,232.74 L-65.08,343.79 L-133.65,398.59 L-205.17,476.47 L-327.35,644.09 L-417.36,774.50 L-483.20,896.82 L-542.88,1019.44 L-615.12,1307.39 L-641.58,1440.73 L-752.41,1767.07 L-769.27,1824.38 L-783.11,1863.64 L-955.96,2157.62 L-968.02,2177.76 L-1005.49,2257.06 L-1050.49,2410.22 L-1077.93,2511.99 L-1103.22,2573.04 L-1231.30,2815.90 L-1387.05,3190.37 L-1477.28,3398.05 L-1488.09,3436.62 L-1537.94,3723.00 L-1618.79,4182.61" fill="none" stroke="#aeb9b7" stroke-width="4" stroke-linejoin="round"/>
+<path d="M1793.31,1285.36 L1786.92,1283.23 L1725.48,1262.73 L1646.76,1221.59 L981.81,734.52 L186.29,150.66" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
+<path d="M1793.31,1285.36 L1786.92,1283.23 L1725.48,1262.73 L1646.76,1221.59 L981.81,734.52 L186.29,150.66" fill="none" stroke="#aeb9b7" stroke-width="4" stroke-linejoin="round"/>
+<path d="M407.39,389.72 L502.35,454.87 L422.16,528.28 L349.65,455.50 L407.39,389.72 Z" fill="#c7e0cf" fill-opacity="0.8" fill-rule="evenodd" stroke="#33795f" stroke-width="3"/>
+<circle cx="422.39" cy="457.71" r="5" fill="#a34a35" stroke="#fff" stroke-width="2"/>
+<text x="434.392041119708" y="447.71155506354603" font-size="14" fill="#883e2e" text-anchor="start" font-weight="600">源地块质心</text>
+</g>
+<text x="838" y="183" font-size="18" fill="#263a46" text-anchor="start" font-weight="700">N · 北</text>
+<path d="M865,207 l-10,28 10,-7 10,7 Z" fill="#263a46"/>
+<text x="838" y="277" font-size="14" fill="#687c77" text-anchor="start" font-weight="400">源对象</text>
+<text x="838" y="302" font-size="16" fill="#263a46" text-anchor="start" font-weight="600">OSM way/1327188516</text>
+<text x="838" y="343" font-size="14" fill="#687c77" text-anchor="start" font-weight="400">源快照 / 访问日期</text>
+<text x="838" y="368" font-size="15" fill="#263a46" text-anchor="start" font-weight="400">地块 2026-10-19</text>
+<text x="838" y="394" font-size="15" fill="#263a46" text-anchor="start" font-weight="400">邻路 2026-10-19</text>
+<text x="838" y="436" font-size="14" fill="#687c77" text-anchor="start" font-weight="400">几何说明</text>
+<text x="838" y="463" font-size="15" fill="#263a46" text-anchor="start" font-weight="400">绿色面：源地块范围</text>
+<text x="838" y="490" font-size="15" fill="#263a46" text-anchor="start" font-weight="400">灰线：OSM道路中心线</text>
+<text x="838" y="517" font-size="15" fill="#263a46" text-anchor="start" font-weight="400">红点：源地块面积质心</text>
+<text x="838" y="558" font-size="14" fill="#687c77" text-anchor="start" font-weight="400">坐标与比例</text>
+<text x="838" y="585" font-size="14" fill="#263a46" text-anchor="start" font-weight="400">WGS84 → 局部等距投影</text>
+<text x="838" y="612" font-size="14" fill="#263a46" text-anchor="start" font-weight="400">北向上 · 网格间距50米</text>
+<text x="838" y="639" font-size="14" fill="#263a46" text-anchor="start" font-weight="400">道路线宽仅为符号</text>
+<rect x="151.00" y="687" width="154.00" height="48" fill="#fff" fill-opacity="0.94"/>
+<path d="M159.00,708 V715 H273.00 V708" fill="none" stroke="#263a46" stroke-width="2"/>
+<text x="159.0" y="703" font-size="12" fill="#263a46" text-anchor="start" font-weight="400">0</text>
+<text x="273.0" y="703" font-size="12" fill="#263a46" text-anchor="end" font-weight="400">50 m</text>
+<text x="48" y="786" font-size="18" fill="#853c2e" text-anchor="start" font-weight="700">源地块与邻路示意 · 非测绘总平面 · 不是实景图</text>
+<text x="48" y="817" font-size="13" fill="#5a7069" text-anchor="start" font-weight="400">© OpenStreetMap contributors · ODbL 1.0 | 边界不等于法定用地边界；未绘制建筑与真实出入口。</text>
+</g></svg>

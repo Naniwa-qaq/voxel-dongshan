@@ -1,0 +1,7 @@
+© OpenStreetMap contributors
+Open Database License (ODbL) 1.0
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+Source: Overpass API, https://overpass-api.de/api/interpreter
+Collection bbox is not an administrative boundary.
+Source snapshots: 2026-10-19T07:11:51Z, 2026-10-19T07:12:51Z, 2026-10-19T07:24:01Z, 2026-10-19T07:25:03Z, 2026-10-19T07:28:05Z, 2026-10-19T10:25:21Z

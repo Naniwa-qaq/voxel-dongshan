@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-10-15T16:39:09.043112+00:00",
+  "requested_bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "extent_role": "采集包络；不是行政边界",
+  "source": {
+    "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30E120_Map.tif",
+    "width": 36000,
+    "height": 36000,
+    "bands": 1,
+    "geotransform": [
+      120.0,
+      8.333333333333333e-05,
+      0.0,
+      33.0,
+      0.0,
+      -8.333333333333333e-05
+    ],
+    "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+    "metadata": {
+      "algorithm_version": "V2.0.0",
+      "copyright": "ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+      "creation_time": "2022-10-21 07:35:40.236136",
+      "legend": "10  Tree cover\n20  Shrubland\n30  Grassland\n40  Cropland\n50  Built-up\n60  Bare/sparse vegetation\n70  Snow and ice\n80  Permanent water bodies\n90  Herbaceous wetland\n95  Mangroves\n100 Moss and lichen\n",
+      "license": "CC-BY 4.0 - https://creativecommons.org/licenses/by/4.0/",
+      "product_crs": "EPSG:4326",
+      "product_grid": "3x3 degree tiling grid",
+      "product_tile": "N30E120",
+      "product_type": "LandCover Map",
+      "product_version": "V2.0.0",
+      "reference": "https://esa-worldcover.org",
+      "time_end": "2021-12-31T23:59:59Z",
+      "time_start": "2021-01-01T00:00:00Z",
+      "title": "ESA WorldCover product at 10m resolution for year 2021",
+      "AREA_OR_POINT": "Area"
+    },
+    "http_headers": {
+      "x-amz-id-2": "fDamM97R1kH0vGCxGBFY7BxWd6j1rVl+pDegekhx5/g5V9kHv+O67FY+KVZwX3oGpfNvIIMDbmnrYEWCCS1npVifjdG//9wl",
+      "x-amz-request-id": "CC0VV3F9A2VJQZNR",
+      "Server": "AmazonS3",
+      "Date": "Thu, 15 Oct 2026 16:39:06 GMT",
+      "Last-Modified": "Wed, 26 Oct 2022 12:44:33 GMT",
+      "ETag": "\"3739f18c325092dcc8bd061c094a1c64-12\"",
+      "x-amz-server-side-encryption": "AES256",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "93443932",
+      "Content-Type": "binary/octet-stream",
+      "Connection": "close"
+    }
+  },
+  "clipped": {
+    "width": 2640,
+    "height": 2880,
+    "bands": 1,
+    "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+    "authority": [
+      null,
+      null
+    ],
+    "geotransform": [
+      120.28,
+      8.333333333333333e-05,
+      0.0,
+      31.22,
+      0.0,
+      -8.333333333333333e-05
+    ],
+    "bounds": [
+      120.28,
+      30.98,
+      120.5,
+      31.22
+    ],
+    "pixel_size_degrees": [
+      8.333333333333333e-05,
+      8.333333333333333e-05
+    ],
+    "pixel_type": "Byte",
+    "nodata": 0.0,
+    "valid_pixels": 7603200,
+    "total_pixels": 7603200,
+    "valid_fraction": 1.0,
+    "min": 10.0,
+    "max": 90.0,
+    "dataset_metadata": {
+      "DATASET": "ESA WorldCover 2021 v200",
+      "EXTENT_ROLE": "Collection envelope, NOT administrative boundary",
+      "LICENSE": "CC BY 4.0",
+      "PROCESSING": "Native grid pixel-window subset; NO RESAMPLING; NO WARPING",
+      "REQUESTED_BBOX_WGS84": "[120.28, 30.98, 120.5, 31.22]",
+      "SOURCE_URL": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30E120_Map.tif",
+      "VERTICAL_DATUM": "Not applicable (categorical land cover)"
+    },
+    "band_metadata": {},
+    "path": "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+    "bytes": 330549,
+    "sha256": "1d4a9d9a9996edd24b498da0caf61d25e4f835b60bee273a98159d81ff5fa6de",
+    "source_pixel_window": [
+      3360,
+      21360,
+      2640,
+      2880
+    ]
+  },
+  "class_pixel_counts": {
+    "10": 1143635,
+    "30": 163657,
+    "40": 721927,
+    "50": 577991,
+    "60": 32075,
+    "80": 4787965,
+    "90": 175950
+  },
+  "provenance_downloads": [
+    {
+      "url": "https://esa-worldcover.org/en/data-access",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+      "retrieved": false
+    },
+    {
+      "path": "东山镇_数据\\landcover\\provenance\\aws_registry_worldcover.html",
+      "url": "https://registry.opendata.aws/esa-worldcover-vito/index.html",
+      "bytes": 12413,
+      "sha256": "90f417590c11506b0280f8b89d0c00fb44a53817e1aa2ae70d0ef814134e54b1",
+      "accessed_utc": "2026-10-15T16:37:59.107990+00:00",
+      "http_headers": {
+        "Content-Type": "text/html",
+        "Content-Length": "12413",
+        "Connection": "close",
+        "Server": "AmazonS3",
+        "Date": "Thu, 15 Oct 2026 16:38:00 GMT",
+        "Last-Modified": "Wed, 14 Oct 2026 22:12:30 GMT",
+        "x-amz-version-id": "BGNEYuoD_nvsulyoBnTPaMf1UrXzuH0c",
+        "ETag": "\"1805f104c0a11b177d11d70ba0c0807b\"",
+        "Strict-Transport-Security": "max-age= 63072000; includeSubdomains; preload",
+        "Content-Security-Policy": "default-src 'self' studiolab.sagemaker.aws assets.opendata.aws a0.awsstatic.com; object-src 'none'",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1; mode=block",
+        "Referrer-Policy": "same-origin",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 c4787040c2480313930e17ab3d5a72a8.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "HKG62-P1",
+        "X-Amz-Cf-Id": "nSjVXzABegqX5TeswtAxdZISkQqYl_CzEU6OF3-Ff8RzDw9ii6iYYQ=="
+      }
+    },
+    {
+      "path": "东山镇_数据\\landcover\\provenance\\WorldCover_PUM_V2.0.pdf",
+      "url": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf",
+      "bytes": 4102952,
+      "sha256": "4301a3d95260d88bd4315f43ccf2a12ef74ad391109b9f36e22b6e51d8490107",
+      "accessed_utc": "2026-10-15T16:39:03.523404+00:00",
+      "http_headers": {
+        "x-amz-id-2": "OuGQOk1HleybSdjzPPECs90nQ8tgXXYIw0YMIz2fZIoLnp2uDLcQHdfkpnRV2/l1nQxXsMVSyTcw0CFi6ikst0ougxLd4Chg",
+        "x-amz-request-id": "ZD9H8RB3RXM0KY7Y",
+        "Server": "AmazonS3",
+        "Date": "Thu, 15 Oct 2026 16:38:02 GMT",
+        "Last-Modified": "Fri, 28 Oct 2022 11:14:54 GMT",
+        "ETag": "\"71ca55602b949188917b77c6eab00cb7\"",
+        "Accept-Ranges": "bytes",
+        "Content-Type": "application/pdf",
+        "Content-Length": "4102952",
+        "Connection": "close"
+      }
+    }
+  ],
+  "retrieval": "HTTP-range subset of a single public COG; full 3x3 degree tile NOT downloaded",
+  "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+  "quality_gaps": [
+    "InputQuality not obtained: official provider says it is available only through login-required Viewer/Terrascope paths.",
+    "11 broad land-cover classes do not distinguish orchards, tea gardens, local forest species, or current-year land use.",
+    "Permanent-water classification is not a legal shoreline nor a current-date waterline."
+  ]
+}

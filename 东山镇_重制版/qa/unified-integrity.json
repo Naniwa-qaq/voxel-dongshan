@@ -1,0 +1,1595 @@
+{
+  "checkedOn": "2026-10-22",
+  "checkedUtc": "2026-10-22T11:25:11.267Z",
+  "scope": "Read-only SHA-256 audit of the 2026-10-19 selected data inventory and original Yunshan source; static file references in remake HTML and README.",
+  "inventory": {
+    "file": "东山镇_数据/qa/data-files.json",
+    "sha256": "f0e4b91cf4889bbc9771662e5033ddbff9b51c25bd0563245495ca5ec68dcdad",
+    "declaredFiles": 106
+  },
+  "sourceFiles": [
+    {
+      "file": "collection_envelope.geojson",
+      "exists": true,
+      "expectedSha256": "16d5933ea74dda3e1124aaa2b742a6478d9406d6ec97a924aa3e2fbef880499c",
+      "actualSha256": "16d5933ea74dda3e1124aaa2b742a6478d9406d6ec97a924aa3e2fbef880499c",
+      "expectedBytes": 498,
+      "actualBytes": 498,
+      "unchanged": true
+    },
+    {
+      "file": "landcover/derived/dongshan_envelope_worldcover_2021_v200_utm51n_10m.tif",
+      "exists": true,
+      "expectedSha256": "45eebe630d3c2cfa30f3c8d54c83b0fe54fd23d37ca335ca671d024471ac31b6",
+      "actualSha256": "45eebe630d3c2cfa30f3c8d54c83b0fe54fd23d37ca335ca671d024471ac31b6",
+      "expectedBytes": 277641,
+      "actualBytes": 277641,
+      "unchanged": true
+    },
+    {
+      "file": "landcover/derived/dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+      "exists": true,
+      "expectedSha256": "1d4a9d9a9996edd24b498da0caf61d25e4f835b60bee273a98159d81ff5fa6de",
+      "actualSha256": "1d4a9d9a9996edd24b498da0caf61d25e4f835b60bee273a98159d81ff5fa6de",
+      "expectedBytes": 330549,
+      "actualBytes": 330549,
+      "unchanged": true
+    },
+    {
+      "file": "landcover/provenance/aws_registry_worldcover.html",
+      "exists": true,
+      "expectedSha256": "90f417590c11506b0280f8b89d0c00fb44a53817e1aa2ae70d0ef814134e54b1",
+      "actualSha256": "90f417590c11506b0280f8b89d0c00fb44a53817e1aa2ae70d0ef814134e54b1",
+      "expectedBytes": 12413,
+      "actualBytes": 12413,
+      "unchanged": true
+    },
+    {
+      "file": "landcover/provenance/WorldCover_PUM_V2.0.pdf",
+      "exists": true,
+      "expectedSha256": "4301a3d95260d88bd4315f43ccf2a12ef74ad391109b9f36e22b6e51d8490107",
+      "actualSha256": "4301a3d95260d88bd4315f43ccf2a12ef74ad391109b9f36e22b6e51d8490107",
+      "expectedBytes": 4102952,
+      "actualBytes": 4102952,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/boundaries.geojson",
+      "exists": true,
+      "expectedSha256": "d9144fe8d72db82860e5128cdb989f20cc42b7d611b7d91daa5b0dc1e1b2f6fd",
+      "actualSha256": "d9144fe8d72db82860e5128cdb989f20cc42b7d611b7d91daa5b0dc1e1b2f6fd",
+      "expectedBytes": 186638,
+      "actualBytes": 186638,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/buildings.geojson",
+      "exists": true,
+      "expectedSha256": "07e715154c0e57fb83f302f8e54a6d12003890aa13c4e821cd4534645abc3876",
+      "actualSha256": "07e715154c0e57fb83f302f8e54a6d12003890aa13c4e821cd4534645abc3876",
+      "expectedBytes": 194740,
+      "actualBytes": 194740,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/landuse_natural.geojson",
+      "exists": true,
+      "expectedSha256": "dedda0faae1dd368525ab9556d6487e180ae1b39f70e286edce65896ead84c0c",
+      "actualSha256": "dedda0faae1dd368525ab9556d6487e180ae1b39f70e286edce65896ead84c0c",
+      "expectedBytes": 2308542,
+      "actualBytes": 2308542,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/other_tagged.geojson",
+      "exists": true,
+      "expectedSha256": "e10cfe37e40928ded78bd96008f56ee78233535b71ae427db9923645fc96761f",
+      "actualSha256": "e10cfe37e40928ded78bd96008f56ee78233535b71ae427db9923645fc96761f",
+      "expectedBytes": 474,
+      "actualBytes": 474,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/places_admin_poi.geojson",
+      "exists": true,
+      "expectedSha256": "db18c33d6ab801c7cf274cc3b7b9f0912463f85ee47c83a313e3f846c84c3384",
+      "actualSha256": "db18c33d6ab801c7cf274cc3b7b9f0912463f85ee47c83a313e3f846c84c3384",
+      "expectedBytes": 235614,
+      "actualBytes": 235614,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/road_points.geojson",
+      "exists": true,
+      "expectedSha256": "0f36b92a820c53e82bd11b43a8fe45a2269a398c58512bbe1f7558a9b9828867",
+      "actualSha256": "0f36b92a820c53e82bd11b43a8fe45a2269a398c58512bbe1f7558a9b9828867",
+      "expectedBytes": 13058,
+      "actualBytes": 13058,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/roads.geojson",
+      "exists": true,
+      "expectedSha256": "4c1177e120341edbc994d0965aa5e7c7908f4206b9816e92ee9f9c080daf4755",
+      "actualSha256": "4c1177e120341edbc994d0965aa5e7c7908f4206b9816e92ee9f9c080daf4755",
+      "expectedBytes": 2277624,
+      "actualBytes": 2277624,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/water_polygons.geojson",
+      "exists": true,
+      "expectedSha256": "77aa177d3c506a222f5fbadfc09379815a8a9da53ad2c085bd6fc398b38228f6",
+      "actualSha256": "77aa177d3c506a222f5fbadfc09379815a8a9da53ad2c085bd6fc398b38228f6",
+      "expectedBytes": 1785231,
+      "actualBytes": 1785231,
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/waterways.geojson",
+      "exists": true,
+      "expectedSha256": "410fea64342793025906369feeaa077b873d9e228df87826fc6445b106920049",
+      "actualSha256": "410fea64342793025906369feeaa077b873d9e228df87826fc6445b106920049",
+      "expectedBytes": 282491,
+      "actualBytes": 282491,
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/admin.json",
+      "exists": true,
+      "expectedSha256": "ed1b4f431b362318559c76db25c73066a28da9a87c3bb404da28a05e1d4fb865",
+      "actualSha256": "ed1b4f431b362318559c76db25c73066a28da9a87c3bb404da28a05e1d4fb865",
+      "expectedBytes": 979044,
+      "actualBytes": 979044,
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/buildings.json",
+      "exists": true,
+      "expectedSha256": "08190b544d461454d1aa8d1d8ea737e5f4c2ef0c328b2a0fc41cc1cde94055b4",
+      "actualSha256": "08190b544d461454d1aa8d1d8ea737e5f4c2ef0c328b2a0fc41cc1cde94055b4",
+      "expectedBytes": 209699,
+      "actualBytes": 209699,
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/landcover.json",
+      "exists": true,
+      "expectedSha256": "f376b499765e0a043e532eed724c64c8930f250817c9fafaa7ca0f42e5740283",
+      "actualSha256": "f376b499765e0a043e532eed724c64c8930f250817c9fafaa7ca0f42e5740283",
+      "expectedBytes": 965696,
+      "actualBytes": 965696,
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/poi.json",
+      "exists": true,
+      "expectedSha256": "f58b27716472256dcd00e0db6164666e0f15233fa3249d5783ef0a436972dffe",
+      "actualSha256": "f58b27716472256dcd00e0db6164666e0f15233fa3249d5783ef0a436972dffe",
+      "expectedBytes": 249521,
+      "actualBytes": 249521,
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/roads.json",
+      "exists": true,
+      "expectedSha256": "bfd0030a23dd414bced1444de909f81adcd225a58b9cef80565f1329f86ec623",
+      "actualSha256": "bfd0030a23dd414bced1444de909f81adcd225a58b9cef80565f1329f86ec623",
+      "expectedBytes": 2720096,
+      "actualBytes": 2720096,
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/water.json",
+      "exists": true,
+      "expectedSha256": "3dcfd4e5c6e91f754971ae3daa552e6035918d14bd65eb67bf36cb3244203eb9",
+      "actualSha256": "3dcfd4e5c6e91f754971ae3daa552e6035918d14bd65eb67bf36cb3244203eb9",
+      "expectedBytes": 3400594,
+      "actualBytes": 3400594,
+      "unchanged": true
+    },
+    {
+      "file": "overture/buildings_bbox_2026-09-23.1.geojson",
+      "exists": true,
+      "expectedSha256": "8165673c47941f87251484b043415e64d37c275c690b54a8acf89c085d8fb999",
+      "actualSha256": "8165673c47941f87251484b043415e64d37c275c690b54a8acf89c085d8fb999",
+      "expectedBytes": 127348788,
+      "actualBytes": 127348788,
+      "unchanged": true
+    },
+    {
+      "file": "overture/raw/buildings_bbox_2026-09-23.1.parquet",
+      "exists": true,
+      "expectedSha256": "c45bc4cf0c04766c100bb3582bebb0abad914c30ae7a8a739b33c32c88f1d484",
+      "actualSha256": "c45bc4cf0c04766c100bb3582bebb0abad914c30ae7a8a739b33c32c88f1d484",
+      "expectedBytes": 5875233,
+      "actualBytes": 5875233,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/01-luxiang-setting.png",
+      "exists": true,
+      "expectedSha256": "2b6ad09bd07683f6872106b2b9bf22ea3dff0a15146096073084a3d9e7299cc2",
+      "actualSha256": "2b6ad09bd07683f6872106b2b9bf22ea3dff0a15146096073084a3d9e7299cc2",
+      "expectedBytes": 562014,
+      "actualBytes": 562014,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/02-luxiang-hanshan-port.png",
+      "exists": true,
+      "expectedSha256": "b2f4d23451a7a9d92ec790970d5e11656580e8fa7ea4acbb159b080be9c6a7f5",
+      "actualSha256": "b2f4d23451a7a9d92ec790970d5e11656580e8fa7ea4acbb159b080be9c6a7f5",
+      "expectedBytes": 397934,
+      "actualBytes": 397934,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/03-luxiang-huilaotang.png",
+      "exists": true,
+      "expectedSha256": "83e8d04a8fb89099e75814f9c802bf457d344b3e19f4a497b286a256f6a641a9",
+      "actualSha256": "83e8d04a8fb89099e75814f9c802bf457d344b3e19f4a497b286a256f6a641a9",
+      "expectedBytes": 362822,
+      "actualBytes": 362822,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/04-luxiang-zishi-street.png",
+      "exists": true,
+      "expectedSha256": "a063ff467b4a3af58147f3010938ecf4563dc9938ef9ffd9872277d02f0e19a8",
+      "actualSha256": "a063ff467b4a3af58147f3010938ecf4563dc9938ef9ffd9872277d02f0e19a8",
+      "expectedBytes": 593885,
+      "actualBytes": 593885,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/05-huihetang-garden.jpg",
+      "exists": true,
+      "expectedSha256": "7f515738e879cab71c9826b91669eb038ee9892bbcb5ccfc9b7c4fd6939f8500",
+      "actualSha256": "7f515738e879cab71c9826b91669eb038ee9892bbcb5ccfc9b7c4fd6939f8500",
+      "expectedBytes": 183966,
+      "actualBytes": 183966,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/06-huihetang-01.jpg",
+      "exists": true,
+      "expectedSha256": "6483956aafb3ec4b8999653d435fe0a133b11d69cee8675db341823d29607d81",
+      "actualSha256": "6483956aafb3ec4b8999653d435fe0a133b11d69cee8675db341823d29607d81",
+      "expectedBytes": 135452,
+      "actualBytes": 135452,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/07-huihetang-03.jpg",
+      "exists": true,
+      "expectedSha256": "61a8b1b47fdb801dbfd143021021bcae4932aa6abebebd7ba154ff284ddeaf60",
+      "actualSha256": "61a8b1b47fdb801dbfd143021021bcae4932aa6abebebd7ba154ff284ddeaf60",
+      "expectedBytes": 143203,
+      "actualBytes": 143203,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/08-huihetang-04.jpg",
+      "exists": true,
+      "expectedSha256": "7d1c7965192963eda2ae19d07819c0abc849ca90026203551ca900ee96fcb3b7",
+      "actualSha256": "7d1c7965192963eda2ae19d07819c0abc849ca90026203551ca900ee96fcb3b7",
+      "expectedBytes": 133221,
+      "actualBytes": 133221,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/09-qiyuan-4100.jpg",
+      "exists": true,
+      "expectedSha256": "f63593ea4dcd0f79590d0a02ca9afb4b9f456114bd2189cbd73fa2d52f4ff0c7",
+      "actualSha256": "f63593ea4dcd0f79590d0a02ca9afb4b9f456114bd2189cbd73fa2d52f4ff0c7",
+      "expectedBytes": 170716,
+      "actualBytes": 170716,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/10-qiyuan-4112.jpg",
+      "exists": true,
+      "expectedSha256": "22ce330cee48c76fb2110dea2cbd0a1d76f8993de6a9399a4fd42abf2c47fd4e",
+      "actualSha256": "22ce330cee48c76fb2110dea2cbd0a1d76f8993de6a9399a4fd42abf2c47fd4e",
+      "expectedBytes": 203028,
+      "actualBytes": 203028,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/11-qiyuan-4117.jpg",
+      "exists": true,
+      "expectedSha256": "42a034a22414001784d9022a6faa09a803865aa03aae1a426cf7da028169121e",
+      "actualSha256": "42a034a22414001784d9022a6faa09a803865aa03aae1a426cf7da028169121e",
+      "expectedBytes": 168407,
+      "actualBytes": 168407,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/12-chunzailou.jpg",
+      "exists": true,
+      "expectedSha256": "9588d4b7125bc84bca85fdf666d58ac6176358b811bc94a388ac0fb2edbd9b34",
+      "actualSha256": "9588d4b7125bc84bca85fdf666d58ac6176358b811bc94a388ac0fb2edbd9b34",
+      "expectedBytes": 243519,
+      "actualBytes": 243519,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/13-xuanyuangong.jpg",
+      "exists": true,
+      "expectedSha256": "ee113230c5125a39bbaa322910a0df711d351ed1eedf85d009286872da2c12aa",
+      "actualSha256": "ee113230c5125a39bbaa322910a0df711d351ed1eedf85d009286872da2c12aa",
+      "expectedBytes": 137400,
+      "actualBytes": 137400,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/14-daixinwan-bridge.jpg",
+      "exists": true,
+      "expectedSha256": "24587f40d5a18996e27bce7762d13ecba3c5c1dfd2774fe22711a130bc402f82",
+      "actualSha256": "24587f40d5a18996e27bce7762d13ecba3c5c1dfd2774fe22711a130bc402f82",
+      "expectedBytes": 195424,
+      "actualBytes": 195424,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/15-nanmuting.jpg",
+      "exists": true,
+      "expectedSha256": "7d3ee6250c06025ce4b92e4e9865d6589dd19d2cce890bc3a5b795f951940318",
+      "actualSha256": "7d3ee6250c06025ce4b92e4e9865d6589dd19d2cce890bc3a5b795f951940318",
+      "expectedBytes": 225132,
+      "actualBytes": 225132,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/16-huihetang-overview.jpg",
+      "exists": true,
+      "expectedSha256": "bf593c438bf9866c2346484ac6fa3c71076fb10de1bd0019e8ddb9843cc6de4e",
+      "actualSha256": "bf593c438bf9866c2346484ac6fa3c71076fb10de1bd0019e8ddb9843cc6de4e",
+      "expectedBytes": 3499950,
+      "actualBytes": 3499950,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/17-huihetang-plan.png",
+      "exists": true,
+      "expectedSha256": "37338a96b830b9fffd08e53c681e496acbf6153b308877bfc97ce4a224440a49",
+      "actualSha256": "37338a96b830b9fffd08e53c681e496acbf6153b308877bfc97ce4a224440a49",
+      "expectedBytes": 156874,
+      "actualBytes": 156874,
+      "unchanged": true
+    },
+    {
+      "file": "references/images/18-huihetang-courtyard.png",
+      "exists": true,
+      "expectedSha256": "c6e732588a94753d61d525a4164bbca1f8e567d8cdffb3d7650704f77aba1dff",
+      "actualSha256": "c6e732588a94753d61d525a4164bbca1f8e567d8cdffb3d7650704f77aba1dff",
+      "expectedBytes": 3916159,
+      "actualBytes": 3916159,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2019.html",
+      "exists": true,
+      "expectedSha256": "ec245b1498f19870c4ad311b08445042379f04cf3aab96184d5464c5d20f5a3f",
+      "actualSha256": "ec245b1498f19870c4ad311b08445042379f04cf3aab96184d5464c5d20f5a3f",
+      "expectedBytes": 22897,
+      "actualBytes": 22897,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2019.txt",
+      "exists": true,
+      "expectedSha256": "8f1e6343e9b20f7ffa25e53fcb2402574f8f8e93a71e7e4f02342e267ed6d27a",
+      "actualSha256": "8f1e6343e9b20f7ffa25e53fcb2402574f8f8e93a71e7e4f02342e267ed6d27a",
+      "expectedBytes": 8127,
+      "actualBytes": 8127,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2025.html",
+      "exists": true,
+      "expectedSha256": "d8aaa126e01a95f31f746fcb41264a6a056b799c84c11e737f380fb3b856adf9",
+      "actualSha256": "d8aaa126e01a95f31f746fcb41264a6a056b799c84c11e737f380fb3b856adf9",
+      "expectedBytes": 35191,
+      "actualBytes": 35191,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2025.txt",
+      "exists": true,
+      "expectedSha256": "34923bc46a07713b251573066b559027e9982d64eb9d03163d8e2254328b0341",
+      "actualSha256": "34923bc46a07713b251573066b559027e9982d64eb9d03163d8e2254328b0341",
+      "expectedBytes": 8424,
+      "actualBytes": 8424,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-scenic.html",
+      "exists": true,
+      "expectedSha256": "2d4438c5ce99621648caff1857648c61a597ce54897213f96c85dfd91cee2f6a",
+      "actualSha256": "2d4438c5ce99621648caff1857648c61a597ce54897213f96c85dfd91cee2f6a",
+      "expectedBytes": 30172,
+      "actualBytes": 30172,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-scenic.txt",
+      "exists": true,
+      "expectedSha256": "6fa1855e3b9826b0d6cd2b500aa65faddd14d682b0f4df08901580f90151b72e",
+      "actualSha256": "6fa1855e3b9826b0d6cd2b500aa65faddd14d682b0f4df08901580f90151b72e",
+      "expectedBytes": 3937,
+      "actualBytes": 3937,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/heritage-register.html",
+      "exists": true,
+      "expectedSha256": "9342ef44d47005fff627e9db25b790cc8c02a0dacb8327d03b73dc73d65318eb",
+      "actualSha256": "9342ef44d47005fff627e9db25b790cc8c02a0dacb8327d03b73dc73d65318eb",
+      "expectedBytes": 2979303,
+      "actualBytes": 2979303,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/heritage-register.txt",
+      "exists": true,
+      "expectedSha256": "608ba7f08fb011c02343a25fd760283ce56e4d6147c49a77f0af7a140bcf8cac",
+      "actualSha256": "608ba7f08fb011c02343a25fd760283ce56e4d6147c49a77f0af7a140bcf8cac",
+      "expectedBytes": 84319,
+      "actualBytes": 84319,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/huihetang.html",
+      "exists": true,
+      "expectedSha256": "e8a18169295fb3b2bb7b9f18fe815f3cb154673fcc381e93aa4a1262fadd6898",
+      "actualSha256": "e8a18169295fb3b2bb7b9f18fe815f3cb154673fcc381e93aa4a1262fadd6898",
+      "expectedBytes": 31226,
+      "actualBytes": 31226,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/huihetang.txt",
+      "exists": true,
+      "expectedSha256": "824b1046fee8f9980cca43743aeee694a598956bb50b0b64c976a15e73e799fa",
+      "actualSha256": "824b1046fee8f9980cca43743aeee694a598956bb50b0b64c976a15e73e799fa",
+      "expectedBytes": 3191,
+      "actualBytes": 3191,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/luxiang-2026.html",
+      "exists": true,
+      "expectedSha256": "b6308d217c45e16dde3a67e448d4574e43497415917397592b0d77e4bb198828",
+      "actualSha256": "b6308d217c45e16dde3a67e448d4574e43497415917397592b0d77e4bb198828",
+      "expectedBytes": 37281,
+      "actualBytes": 37281,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/luxiang-2026.txt",
+      "exists": true,
+      "expectedSha256": "aa71f1d3618c6d8f2913e24fcbded0e5bb9d753b3037d3cfd7e5a66444a6032d",
+      "actualSha256": "aa71f1d3618c6d8f2913e24fcbded0e5bb9d753b3037d3cfd7e5a66444a6032d",
+      "expectedBytes": 7665,
+      "actualBytes": 7665,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/museum-huihetang.html",
+      "exists": true,
+      "expectedSha256": "4a3674045b128aecc0d07689ff36b863cb8f2b791834e3a59756b0d06801f8c3",
+      "actualSha256": "4a3674045b128aecc0d07689ff36b863cb8f2b791834e3a59756b0d06801f8c3",
+      "expectedBytes": 42276,
+      "actualBytes": 42276,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/museum-huihetang.txt",
+      "exists": true,
+      "expectedSha256": "3d0c4120cf91a454f3e0fa81ae14269b3d0686c8e1ff29f59b19d30195c2af6d",
+      "actualSha256": "3d0c4120cf91a454f3e0fa81ae14269b3d0686c8e1ff29f59b19d30195c2af6d",
+      "expectedBytes": 5603,
+      "actualBytes": 5603,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/qiyuan.html",
+      "exists": true,
+      "expectedSha256": "e720697d7ac38c4a1b533243c131c73c27ab27e5155ae2bd914850ae1d091e0d",
+      "actualSha256": "e720697d7ac38c4a1b533243c131c73c27ab27e5155ae2bd914850ae1d091e0d",
+      "expectedBytes": 31253,
+      "actualBytes": 31253,
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/qiyuan.txt",
+      "exists": true,
+      "expectedSha256": "6ccc07cd0b81fa826be2cb3e3d771b4ee1f1943c4365802c9db6409cf9917a7f",
+      "actualSha256": "6ccc07cd0b81fa826be2cb3e3d771b4ee1f1943c4365802c9db6409cf9917a7f",
+      "expectedBytes": 3029,
+      "actualBytes": 3029,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_edm_utm51n_30m.tif",
+      "exists": true,
+      "expectedSha256": "4d55cc8221122af31cf97094997e19c6f8b1b9afeb142371f7da6a274cc9b59a",
+      "actualSha256": "4d55cc8221122af31cf97094997e19c6f8b1b9afeb142371f7da6a274cc9b59a",
+      "expectedBytes": 38916,
+      "actualBytes": 38916,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_edm_wgs84.tif",
+      "exists": true,
+      "expectedSha256": "660e0a82788f401bf32d91f5ec7c138953387a5591023aaa8cd51ab2b75c67e6",
+      "actualSha256": "660e0a82788f401bf32d91f5ec7c138953387a5591023aaa8cd51ab2b75c67e6",
+      "expectedBytes": 33515,
+      "actualBytes": 33515,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_flm_utm51n_30m.tif",
+      "exists": true,
+      "expectedSha256": "6a39376fb7836c8b228a77a059bc12dae4c725de1ea14801d643d9f82d72e4f7",
+      "actualSha256": "6a39376fb7836c8b228a77a059bc12dae4c725de1ea14801d643d9f82d72e4f7",
+      "expectedBytes": 33486,
+      "actualBytes": 33486,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_flm_wgs84.tif",
+      "exists": true,
+      "expectedSha256": "b38ae8a9ca33c19133d1c0cde6552b7e513048f9a3c8bfb85837e75d4ce6f860",
+      "actualSha256": "b38ae8a9ca33c19133d1c0cde6552b7e513048f9a3c8bfb85837e75d4ce6f860",
+      "expectedBytes": 28211,
+      "actualBytes": 28211,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_hem_utm51n_30m.tif",
+      "exists": true,
+      "expectedSha256": "d5d9c7bf634d08b06a2f058059630dc6930e3249fc605558fbd401784770c741",
+      "actualSha256": "d5d9c7bf634d08b06a2f058059630dc6930e3249fc605558fbd401784770c741",
+      "expectedBytes": 609228,
+      "actualBytes": 609228,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_hem_wgs84.tif",
+      "exists": true,
+      "expectedSha256": "04fa0bdc28dc56fe7c9ff8d9ad7441daef69acc7a84f23d12f9343030d34b3e5",
+      "actualSha256": "04fa0bdc28dc56fe7c9ff8d9ad7441daef69acc7a84f23d12f9343030d34b3e5",
+      "expectedBytes": 669167,
+      "actualBytes": 669167,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_utm51n_30m.tif",
+      "exists": true,
+      "expectedSha256": "b4e020f30c3520bfde93d56928a93f6be1d7ee9cd6e0d0131ac4dd4e84a416e0",
+      "actualSha256": "b4e020f30c3520bfde93d56928a93f6be1d7ee9cd6e0d0131ac4dd4e84a416e0",
+      "expectedBytes": 845712,
+      "actualBytes": 845712,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_wbm_utm51n_30m.tif",
+      "exists": true,
+      "expectedSha256": "0849d2e723d7a807557413b4a420a3579cee8070b48d79358eef798aafdf34c8",
+      "actualSha256": "0849d2e723d7a807557413b4a420a3579cee8070b48d79358eef798aafdf34c8",
+      "expectedBytes": 33722,
+      "actualBytes": 33722,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_wbm_wgs84.tif",
+      "exists": true,
+      "expectedSha256": "2f5274c90897b1ecc5b009019c46b89bc8ed8b2c1511b99adb0b2404b3ca6a38",
+      "actualSha256": "2f5274c90897b1ecc5b009019c46b89bc8ed8b2c1511b99adb0b2404b3ca6a38",
+      "expectedBytes": 27571,
+      "actualBytes": 27571,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_wgs84.tif",
+      "exists": true,
+      "expectedSha256": "fdf0b7348c3e1507e6dd7766ab580d5af93dfff35143ebde6097d891ea0387d2",
+      "actualSha256": "fdf0b7348c3e1507e6dd7766ab580d5af93dfff35143ebde6097d891ea0387d2",
+      "expectedBytes": 823018,
+      "actualBytes": 823018,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/aws_copernicus_dem_readme.html",
+      "exists": true,
+      "expectedSha256": "922461d55070e3c7e0cf2903ec54190d69e3773da2dc9e776a3f03566cfd56d2",
+      "actualSha256": "922461d55070e3c7e0cf2903ec54190d69e3773da2dc9e776a3f03566cfd56d2",
+      "expectedBytes": 8536,
+      "actualBytes": 8536,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/aws_registry_copernicus_dem.html",
+      "exists": true,
+      "expectedSha256": "c9215f2e18745ffcb33a2ed16c3f2ef5fab4dce70babace9132afe402c149320",
+      "actualSha256": "c9215f2e18745ffcb33a2ed16c3f2ef5fab4dce70babace9132afe402c149320",
+      "expectedBytes": 9202,
+      "actualBytes": 9202,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/Copernicus_DEM_Product_Handbook_i5.0.pdf",
+      "exists": true,
+      "expectedSha256": "b5a0b027bddef7122e39de368dba9cf10adce8631a2e3026d246b4be98c3f0c4",
+      "actualSha256": "b5a0b027bddef7122e39de368dba9cf10adce8631a2e3026d246b4be98c3f0c4",
+      "expectedBytes": 3541026,
+      "actualBytes": 3541026,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/Copernicus_DSM_COG_10_N30_00_E120_00_DEM_listing.xml",
+      "exists": true,
+      "expectedSha256": "256b6a8b93a89080cf31556278e4865828c68a3314f131ae2c60f2838c814765",
+      "actualSha256": "256b6a8b93a89080cf31556278e4865828c68a3314f131ae2c60f2838c814765",
+      "expectedBytes": 4873,
+      "actualBytes": 4873,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/Copernicus_DSM_COG_10_N31_00_E120_00_DEM_listing.xml",
+      "exists": true,
+      "expectedSha256": "fcc4db1250f10362cb31c1f7f7a232302bf87850adbd8d27cf46d86c588822b4",
+      "actualSha256": "fcc4db1250f10362cb31c1f7f7a232302bf87850adbd8d27cf46d86c588822b4",
+      "expectedBytes": 4873,
+      "actualBytes": 4873,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/copernicus_product_page.html",
+      "exists": true,
+      "expectedSha256": "66c5820543b5747d79474f043dd9c8ad3de040cd7e95a48931933ec775ffeb05",
+      "actualSha256": "66c5820543b5747d79474f043dd9c8ad3de040cd7e95a48931933ec775ffeb05",
+      "expectedBytes": 110647,
+      "actualBytes": 110647,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/License-COPDEM-30.pdf",
+      "exists": true,
+      "expectedSha256": "9cd37d37ea654bbcaf0a2e059e6a3a5b5f76072824d8dd860ccf274ada8951bd",
+      "actualSha256": "9cd37d37ea654bbcaf0a2e059e6a3a5b5f76072824d8dd860ccf274ada8951bd",
+      "expectedBytes": 113786,
+      "actualBytes": 113786,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_10_N30_00_E120_00_ACM.kml",
+      "exists": true,
+      "expectedSha256": "381c2a3d39f5c8cce09b1d4a7a2d5c0badbd3f22fb44372e1df98634ed126b74",
+      "actualSha256": "381c2a3d39f5c8cce09b1d4a7a2d5c0badbd3f22fb44372e1df98634ed126b74",
+      "expectedBytes": 677,
+      "actualBytes": 677,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_EDM.tif",
+      "exists": true,
+      "expectedSha256": "1ca2afcaf78382823278bed89830d21b03f45785ac34dc2e32a5b3d88f428341",
+      "actualSha256": "1ca2afcaf78382823278bed89830d21b03f45785ac34dc2e32a5b3d88f428341",
+      "expectedBytes": 1174167,
+      "actualBytes": 1174167,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_FLM.tif",
+      "exists": true,
+      "expectedSha256": "6090d033bf7f2e618804e8de6acdee8ae6e1c848180b8e9852d6e5bd50baebc7",
+      "actualSha256": "6090d033bf7f2e618804e8de6acdee8ae6e1c848180b8e9852d6e5bd50baebc7",
+      "expectedBytes": 1015509,
+      "actualBytes": 1015509,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_HEM.tif",
+      "exists": true,
+      "expectedSha256": "dcc6add1233acd7c86005699b366f8f0e25a29937be22313996978b0d9e9ccf6",
+      "actualSha256": "dcc6add1233acd7c86005699b366f8f0e25a29937be22313996978b0d9e9ccf6",
+      "expectedBytes": 47107464,
+      "actualBytes": 47107464,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_WBM.tif",
+      "exists": true,
+      "expectedSha256": "16d72a7349cc862db591552e39815dce93e49709aa56a63206a53741ca23f0f6",
+      "actualSha256": "16d72a7349cc862db591552e39815dce93e49709aa56a63206a53741ca23f0f6",
+      "expectedBytes": 860768,
+      "actualBytes": 860768,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/Copernicus_DSM_10_N30_00_E120_00.xml",
+      "exists": true,
+      "expectedSha256": "473cae31ca69455756cc9029827be965c28685d861fcb15c91fbff91cf9d064e",
+      "actualSha256": "473cae31ca69455756cc9029827be965c28685d861fcb15c91fbff91cf9d064e",
+      "expectedBytes": 44726,
+      "actualBytes": 44726,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+      "exists": true,
+      "expectedSha256": "929b54f8bb3a51910e4a6b4ac9f052a607245fd0e43a0846b5501663d18af010",
+      "actualSha256": "929b54f8bb3a51910e4a6b4ac9f052a607245fd0e43a0846b5501663d18af010",
+      "expectedBytes": 47859448,
+      "actualBytes": 47859448,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/INFO/eula_F.pdf",
+      "exists": true,
+      "expectedSha256": "32049914c37f14e7d53b48d13d74a49e77c030236e2acc7a0df426f9344feba2",
+      "actualSha256": "32049914c37f14e7d53b48d13d74a49e77c030236e2acc7a0df426f9344feba2",
+      "expectedBytes": 117522,
+      "actualBytes": 117522,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_DEM_ABS_QL.tif",
+      "exists": true,
+      "expectedSha256": "8642df651ac04cc7a7b7eb12ae57ca525f776fc965f7e4d3e624f811dacdbdab",
+      "actualSha256": "8642df651ac04cc7a7b7eb12ae57ca525f776fc965f7e4d3e624f811dacdbdab",
+      "expectedBytes": 1561332,
+      "actualBytes": 1561332,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_DEM_QL.tif",
+      "exists": true,
+      "expectedSha256": "91528b88ba082b6f8b4402766b95fb58f3286c76e984fc59c1066e95d52dc183",
+      "actualSha256": "91528b88ba082b6f8b4402766b95fb58f3286c76e984fc59c1066e95d52dc183",
+      "expectedBytes": 1561332,
+      "actualBytes": 1561332,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_EDM_QL.tif",
+      "exists": true,
+      "expectedSha256": "69202864100f3ccc1ebab9a142c9fc0eed5d8acb26b71b768ba59ff5288975ac",
+      "actualSha256": "69202864100f3ccc1ebab9a142c9fc0eed5d8acb26b71b768ba59ff5288975ac",
+      "expectedBytes": 80534,
+      "actualBytes": 80534,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_FLM_QL.tif",
+      "exists": true,
+      "expectedSha256": "fe07c1bc292030653116fff58355da1701af52d83ad5fdedc741193ee55048b9",
+      "actualSha256": "fe07c1bc292030653116fff58355da1701af52d83ad5fdedc741193ee55048b9",
+      "expectedBytes": 75134,
+      "actualBytes": 75134,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_HEM_QL.tif",
+      "exists": true,
+      "expectedSha256": "fe183b222397291627a130a24a34a2dad5762ada1a89354ac99e0b89add8148b",
+      "actualSha256": "fe183b222397291627a130a24a34a2dad5762ada1a89354ac99e0b89add8148b",
+      "expectedBytes": 526030,
+      "actualBytes": 526030,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_QL.kml",
+      "exists": true,
+      "expectedSha256": "26297ad6d3e7149596692c080bbf390c6bfefb0ae4d0f310135e1dbfdad1335c",
+      "actualSha256": "26297ad6d3e7149596692c080bbf390c6bfefb0ae4d0f310135e1dbfdad1335c",
+      "expectedBytes": 2116,
+      "actualBytes": 2116,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_SRC.kml",
+      "exists": true,
+      "expectedSha256": "10d063fd7c0f480b59ade354d89848fbc1ffe06dce17055d3c042e7a5ec70627",
+      "actualSha256": "10d063fd7c0f480b59ade354d89848fbc1ffe06dce17055d3c042e7a5ec70627",
+      "expectedBytes": 80333,
+      "actualBytes": 80333,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_WBM_QL.tif",
+      "exists": true,
+      "expectedSha256": "8d2e2b995d0c93bea4b6b8ecfe182a629ca128e256726176c31f024f634cf1c2",
+      "actualSha256": "8d2e2b995d0c93bea4b6b8ecfe182a629ca128e256726176c31f024f634cf1c2",
+      "expectedBytes": 77738,
+      "actualBytes": 77738,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_10_N31_00_E120_00_ACM.kml",
+      "exists": true,
+      "expectedSha256": "3e3e4c296cd19c76da8e275e53b5ca03626ff4f13af977f88dd24af3e5e3c42d",
+      "actualSha256": "3e3e4c296cd19c76da8e275e53b5ca03626ff4f13af977f88dd24af3e5e3c42d",
+      "expectedBytes": 677,
+      "actualBytes": 677,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_EDM.tif",
+      "exists": true,
+      "expectedSha256": "6d016e515e8c425313eec5d6aa086ba8867b7bfbc7133c310ceb64cc7d7b69c3",
+      "actualSha256": "6d016e515e8c425313eec5d6aa086ba8867b7bfbc7133c310ceb64cc7d7b69c3",
+      "expectedBytes": 1184459,
+      "actualBytes": 1184459,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_FLM.tif",
+      "exists": true,
+      "expectedSha256": "91ffb35e6da03ee54df16f8624d366a35f861f490267149ae5fb1075862bccb4",
+      "actualSha256": "91ffb35e6da03ee54df16f8624d366a35f861f490267149ae5fb1075862bccb4",
+      "expectedBytes": 1020460,
+      "actualBytes": 1020460,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_HEM.tif",
+      "exists": true,
+      "expectedSha256": "fe7f9f0b19609661a14a35a857f50bae94fe2ea5d4a1652238971b2ac5c2001c",
+      "actualSha256": "fe7f9f0b19609661a14a35a857f50bae94fe2ea5d4a1652238971b2ac5c2001c",
+      "expectedBytes": 39631617,
+      "actualBytes": 39631617,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_WBM.tif",
+      "exists": true,
+      "expectedSha256": "7874114851772972144fe95a324a21e4a6fc24864df3e11c2d7f348d2401042c",
+      "actualSha256": "7874114851772972144fe95a324a21e4a6fc24864df3e11c2d7f348d2401042c",
+      "expectedBytes": 800828,
+      "actualBytes": 800828,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/Copernicus_DSM_10_N31_00_E120_00.xml",
+      "exists": true,
+      "expectedSha256": "bf1a7f0f21fbad6ebb813c7f5b5a7336a03a22dc92901d89da6ea69272aac029",
+      "actualSha256": "bf1a7f0f21fbad6ebb813c7f5b5a7336a03a22dc92901d89da6ea69272aac029",
+      "expectedBytes": 44707,
+      "actualBytes": 44707,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+      "exists": true,
+      "expectedSha256": "9a8f5720819f197227db92b4f2abadb5dcc7ab14652f07c0ce02d59611feab5c",
+      "actualSha256": "9a8f5720819f197227db92b4f2abadb5dcc7ab14652f07c0ce02d59611feab5c",
+      "expectedBytes": 40599423,
+      "actualBytes": 40599423,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/INFO/eula_F.pdf",
+      "exists": true,
+      "expectedSha256": "32049914c37f14e7d53b48d13d74a49e77c030236e2acc7a0df426f9344feba2",
+      "actualSha256": "32049914c37f14e7d53b48d13d74a49e77c030236e2acc7a0df426f9344feba2",
+      "expectedBytes": 117522,
+      "actualBytes": 117522,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_DEM_ABS_QL.tif",
+      "exists": true,
+      "expectedSha256": "a428c9a16b327af6149a92c15295618fe72048ec39cf46c7a01d0171352ba80b",
+      "actualSha256": "a428c9a16b327af6149a92c15295618fe72048ec39cf46c7a01d0171352ba80b",
+      "expectedBytes": 1561332,
+      "actualBytes": 1561332,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_DEM_QL.tif",
+      "exists": true,
+      "expectedSha256": "f46b01c0b7cc5105f88d1a415e8b17059cb574378b6e052ceea378ebec1a6519",
+      "actualSha256": "f46b01c0b7cc5105f88d1a415e8b17059cb574378b6e052ceea378ebec1a6519",
+      "expectedBytes": 1561332,
+      "actualBytes": 1561332,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_EDM_QL.tif",
+      "exists": true,
+      "expectedSha256": "9644b2dff7f55205f750f3dbe6394202555d29a062088f713d2752e681560a65",
+      "actualSha256": "9644b2dff7f55205f750f3dbe6394202555d29a062088f713d2752e681560a65",
+      "expectedBytes": 76388,
+      "actualBytes": 76388,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_FLM_QL.tif",
+      "exists": true,
+      "expectedSha256": "9517072dd051eb9c4dedae9ff34b699fe9a6f2b002c8cd36bdaceb874754b57d",
+      "actualSha256": "9517072dd051eb9c4dedae9ff34b699fe9a6f2b002c8cd36bdaceb874754b57d",
+      "expectedBytes": 74556,
+      "actualBytes": 74556,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_HEM_QL.tif",
+      "exists": true,
+      "expectedSha256": "b2a63999aeb23551827245f57515baa288061b995fbdce777ee15891f131398d",
+      "actualSha256": "b2a63999aeb23551827245f57515baa288061b995fbdce777ee15891f131398d",
+      "expectedBytes": 526030,
+      "actualBytes": 526030,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_QL.kml",
+      "exists": true,
+      "expectedSha256": "5301d9af4550461fdb4cded41f9b6ebc8478738f2b14afb2703bb366aaedeb84",
+      "actualSha256": "5301d9af4550461fdb4cded41f9b6ebc8478738f2b14afb2703bb366aaedeb84",
+      "expectedBytes": 2116,
+      "actualBytes": 2116,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_SRC.kml",
+      "exists": true,
+      "expectedSha256": "244449eca1c79584fe9469a5696d3012026e4aa570f5ae228e99c0345f1798cf",
+      "actualSha256": "244449eca1c79584fe9469a5696d3012026e4aa570f5ae228e99c0345f1798cf",
+      "expectedBytes": 62656,
+      "actualBytes": 62656,
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_WBM_QL.tif",
+      "exists": true,
+      "expectedSha256": "3ab4565851ffc7c721307e1a9aada1d8504beaf332d9a14b107f4c7d649d446c",
+      "actualSha256": "3ab4565851ffc7c721307e1a9aada1d8504beaf332d9a14b107f4c7d649d446c",
+      "expectedBytes": 72592,
+      "actualBytes": 72592,
+      "unchanged": true
+    },
+    {
+      "file": "working/dongshan_sources_utm51n.gpkg",
+      "exists": true,
+      "expectedSha256": "09e81f7e043fb75a7b75c38acac8172e14761f85d6259169b4320ba7b83929b1",
+      "actualSha256": "09e81f7e043fb75a7b75c38acac8172e14761f85d6259169b4320ba7b83929b1",
+      "expectedBytes": 50503680,
+      "actualBytes": 50503680,
+      "unchanged": true
+    }
+  ],
+  "referenceFiles": [
+    {
+      "file": "D:\\My Data\\Desktop\\体素东山镇\\云山巨城_学习档案\\source\\云山巨城.html",
+      "exists": true,
+      "expectedSha256": "afc7dbc36f16b9300679956ca4ef8130afae298ecd4528a792ddcd2a5c3894aa",
+      "actualSha256": "afc7dbc36f16b9300679956ca4ef8130afae298ecd4528a792ddcd2a5c3894aa",
+      "unchanged": true
+    },
+    {
+      "file": "C:/Users/YHJ/.codex/attachments/c80f289b-3ff1-429b-be36-156a9470fa95/云山巨城.html",
+      "exists": true,
+      "expectedSha256": "afc7dbc36f16b9300679956ca4ef8130afae298ecd4528a792ddcd2a5c3894aa",
+      "actualSha256": "afc7dbc36f16b9300679956ca4ef8130afae298ecd4528a792ddcd2a5c3894aa",
+      "unchanged": true
+    }
+  ],
+  "summary": {
+    "sourceFileCount": 106,
+    "sourceBytes": 415440830,
+    "sourceFilesUnchanged": true,
+    "originalReferenceUnchanged": true,
+    "staticReferencesPassed": true,
+    "checksPassed": true,
+    "readingPagePassed": true
+  },
+  "staticReferences": {
+    "files": [
+      "index.html",
+      "README.html",
+      "data/source-design-comparison.html",
+      "README.md"
+    ],
+    "references": [
+      {
+        "file": "index.html",
+        "target": "style.css",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\style.css"
+      },
+      {
+        "file": "index.html",
+        "target": "README.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\README.html"
+      },
+      {
+        "file": "index.html",
+        "target": "../东山镇_数据/数据入口.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\数据入口.html"
+      },
+      {
+        "file": "index.html",
+        "target": "../云山巨城_学习档案/学习手册.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\云山巨城_学习档案\\学习手册.html"
+      },
+      {
+        "file": "index.html",
+        "target": "vendor/three.min.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\vendor\\three.min.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/unified-map.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\unified-map.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/town-context.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\town-context.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/architecture.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\architecture.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/content.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\content.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/vegetation.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\vegetation.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/meshing.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\meshing.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/baked.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\baked.js"
+      },
+      {
+        "file": "index.html",
+        "target": "js/scene.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\scene.js"
+      },
+      {
+        "file": "README.html",
+        "target": "index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\index.html"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/数据入口.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\数据入口.html"
+      },
+      {
+        "file": "README.html",
+        "target": "data/landscape-revision-audit.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\landscape-revision-audit.json"
+      },
+      {
+        "file": "README.html",
+        "target": "../云山巨城_学习档案/学习手册.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\云山巨城_学习档案\\学习手册.html"
+      },
+      {
+        "file": "README.html",
+        "target": "data/town-context-qa.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\town-context-qa.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/unified-map-qa.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\unified-map-qa.json"
+      },
+      {
+        "file": "README.html",
+        "target": "qa/unified-integrity.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\unified-integrity.json"
+      },
+      {
+        "file": "README.html",
+        "target": "qa/unified-runtime.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\unified-runtime.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/unified-map.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\unified-map.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/landscape-revision-audit.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\landscape-revision-audit.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/layout-qa.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\layout-qa.json"
+      },
+      {
+        "file": "README.html",
+        "target": "qa/unified-runtime.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\unified-runtime.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/unified-map.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\unified-map.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/source-design-comparison.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\source-design-comparison.html"
+      },
+      {
+        "file": "README.html",
+        "target": "data/design.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\design.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/cartographic-groups.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\cartographic-groups.json"
+      },
+      {
+        "file": "README.html",
+        "target": "qa/runtime.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\runtime.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/dongshan-school.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\dongshan-school.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/dongshan-school-sources.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\dongshan-school-sources.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/dongshan-school-design-plan.png",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\dongshan-school-design-plan.png"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/chunzailou-garden.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\chunzailou-garden.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/chunzailou-garden-sources.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\chunzailou-garden-sources.json"
+      },
+      {
+        "file": "README.html",
+        "target": "data/districts/chunzailou-garden-design-plan.png",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\chunzailou-garden-design-plan.png"
+      },
+      {
+        "file": "README.html",
+        "target": "../work/景观二修_真实设施.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\work\\景观二修_真实设施.md"
+      },
+      {
+        "file": "README.html",
+        "target": "index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\index.html"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/osm/README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\osm\\README.md"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/osm/ATTRIBUTION.txt",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\osm\\ATTRIBUTION.txt"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/overture/README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\overture\\README.md"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/overture/ATTRIBUTION.txt",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\overture\\ATTRIBUTION.txt"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/terrain/README_地形审计.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\terrain\\README_地形审计.md"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/terrain/provenance/License-COPDEM-30.pdf",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\terrain\\provenance\\License-COPDEM-30.pdf"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/landcover/README_土地覆盖审计.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\landcover\\README_土地覆盖审计.md"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/references/index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\references\\index.html"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_数据/references/README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\references\\README.md"
+      },
+      {
+        "file": "README.html",
+        "target": "../云山巨城_学习档案/学习手册.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\云山巨城_学习档案\\学习手册.html"
+      },
+      {
+        "file": "README.html",
+        "target": "vendor/THREE-LICENSE.txt",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\vendor\\THREE-LICENSE.txt"
+      },
+      {
+        "file": "README.html",
+        "target": "../_回滚归档/2026-10-20_失败原型/rollback-manifest.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\_回滚归档\\2026-10-20_失败原型\\rollback-manifest.json"
+      },
+      {
+        "file": "README.html",
+        "target": "../东山镇_项目筹备/06_重规划_完整体素与制图综合.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_项目筹备\\06_重规划_完整体素与制图综合.md"
+      },
+      {
+        "file": "README.html",
+        "target": "README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\README.md"
+      },
+      {
+        "file": "README.html",
+        "target": "index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\index.html"
+      },
+      {
+        "file": "README.html",
+        "target": "js/design.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\design.js"
+      },
+      {
+        "file": "README.html",
+        "target": "js/landscape-revision.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\landscape-revision.js"
+      },
+      {
+        "file": "README.html",
+        "target": "js/districts.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\districts.js"
+      },
+      {
+        "file": "README.html",
+        "target": "js/unified-map.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\unified-map.js"
+      },
+      {
+        "file": "README.html",
+        "target": "js/town-context.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\town-context.js"
+      },
+      {
+        "file": "README.html",
+        "target": "js/architecture.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\architecture.js"
+      },
+      {
+        "file": "README.html",
+        "target": "js/content.js",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\js\\content.js"
+      },
+      {
+        "file": "data/source-design-comparison.html",
+        "target": "source-plan.svg",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\source-plan.svg"
+      },
+      {
+        "file": "data/source-design-comparison.html",
+        "target": "design-plan.svg",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\design-plan.svg"
+      },
+      {
+        "file": "README.md",
+        "target": "index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\index.html"
+      },
+      {
+        "file": "README.md",
+        "target": "README.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\README.html"
+      },
+      {
+        "file": "README.md",
+        "target": "data/town-context-qa.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\town-context-qa.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/source-design-comparison.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\source-design-comparison.html"
+      },
+      {
+        "file": "README.md",
+        "target": "data/design.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\design.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/cartographic-groups.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\cartographic-groups.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/unified-map.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\unified-map.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/unified-map-qa.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\unified-map-qa.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/landscape-revision-audit.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\landscape-revision-audit.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/districts/layout-qa.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\layout-qa.json"
+      },
+      {
+        "file": "README.md",
+        "target": "qa/unified-integrity.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\unified-integrity.json"
+      },
+      {
+        "file": "README.md",
+        "target": "qa/unified-runtime.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\unified-runtime.json"
+      },
+      {
+        "file": "README.md",
+        "target": "qa/runtime.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\qa\\runtime.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/districts/dongshan-school.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\dongshan-school.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/districts/dongshan-school-design-plan.png",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\dongshan-school-design-plan.png"
+      },
+      {
+        "file": "README.md",
+        "target": "data/districts/chunzailou-garden.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\chunzailou-garden.json"
+      },
+      {
+        "file": "README.md",
+        "target": "data/districts/chunzailou-garden-design-plan.png",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\data\\districts\\chunzailou-garden-design-plan.png"
+      },
+      {
+        "file": "README.md",
+        "target": "../work/景观二修_真实设施.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\work\\景观二修_真实设施.md"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/osm/README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\osm\\README.md"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/osm/ATTRIBUTION.txt",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\osm\\ATTRIBUTION.txt"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/overture/README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\overture\\README.md"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/overture/ATTRIBUTION.txt",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\overture\\ATTRIBUTION.txt"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/terrain/README_地形审计.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\terrain\\README_地形审计.md"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/terrain/provenance/License-COPDEM-30.pdf",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\terrain\\provenance\\License-COPDEM-30.pdf"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/landcover/README_土地覆盖审计.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\landcover\\README_土地覆盖审计.md"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/references/index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\references\\index.html"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/references/README.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\references\\README.md"
+      },
+      {
+        "file": "README.md",
+        "target": "../云山巨城_学习档案/学习手册.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\云山巨城_学习档案\\学习手册.html"
+      },
+      {
+        "file": "README.md",
+        "target": "vendor/THREE-LICENSE.txt",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\vendor\\THREE-LICENSE.txt"
+      },
+      {
+        "file": "README.md",
+        "target": "../_回滚归档/2026-10-20_失败原型/rollback-manifest.json",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\_回滚归档\\2026-10-20_失败原型\\rollback-manifest.json"
+      },
+      {
+        "file": "README.md",
+        "target": "index.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_重制版\\index.html"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_数据/数据入口.html",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_数据\\数据入口.html"
+      },
+      {
+        "file": "README.md",
+        "target": "../东山镇_项目筹备/06_重规划_完整体素与制图综合.md",
+        "exists": true,
+        "resolved": "D:\\My Data\\Desktop\\体素东山镇\\东山镇_项目筹备\\06_重规划_完整体素与制图综合.md"
+      }
+    ],
+    "checked": 95,
+    "missing": []
+  },
+  "staticCheckedUtc": "2026-10-22T12:00:18.493Z",
+  "readingPage": {
+    "scriptOrder": [
+      "js/design.js",
+      "js/landscape-revision.js",
+      "js/districts.js",
+      "js/unified-map.js",
+      "js/town-context.js",
+      "js/architecture.js",
+      "js/content.js"
+    ],
+    "scriptExecutionPassed": true,
+    "display": {
+      "count": "168 个",
+      "types": "其中陆巷 113 个房院项：4 完整院落组 · 9 L形侧院 · 26 传统民居 · 6 现代平顶房 · 31 前廊现状民房 · 18 相连低排屋 · 5 窄深屋 · 14 木门作坊。陆巷类型由 DSContent.varied 按街段与地块参数分配；这是内容生成统计，不是实测建筑分类。学校与宅园设施另见下文，均与陆巷同时驻留。",
+      "townContextSummary": "学校、宅园周边及连接村路新增 37 个完整房屋项。",
+      "schoolCount": "8 个设施项",
+      "gardenCount": "10 个建筑设施项与 3 组叠石"
+    },
+    "unifiedHouseCount": 168,
+    "townHouseCount": 37
+  }
+}

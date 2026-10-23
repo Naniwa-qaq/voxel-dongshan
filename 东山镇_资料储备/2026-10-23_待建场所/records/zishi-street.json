@@ -1,0 +1,197 @@
+{
+  "id": "zishi-street",
+  "name": "紫石街及三元牌坊组",
+  "aliases": [
+    "紫石街（陆巷）",
+    "解元、会元、探花牌坊组"
+  ],
+  "category": "历史街巷／石牌坊组",
+  "summary": "陆巷古村的主街与道路枢纽，文献记为南北走向，与六条横巷组成街巷骨架。街上保留纪念王鏊科举经历的解元、会元、探花三座牌坊。",
+  "location": {
+    "wgs84": null,
+    "crs": null,
+    "role": "街巷线及3个牌坊点；尚无测绘线形",
+    "address": "江苏省苏州市吴中区东山镇陆巷古村村落中心",
+    "sourceId": "jiangsu-rural-housing-luxiang-2020",
+    "confidence": "文献起讫与方向明确；现状线形、牌坊坐标待核",
+    "notes": [
+      "2020住建厅主办网页记：南起蒋湾浜场，北至寒山庵，呈南北走向；六条横巷在紫石街东侧，与其顺序相接。",
+      "同页列六巷为古西巷、旗杆巷、姜家巷、韩家巷、文宁巷、康庄巷；论文图1可辨这套骨架。",
+      "不得将陆巷入口牌楼、木构过街楼和三元石牌坊合并为同一对象。"
+    ]
+  },
+  "facts": [
+    {
+      "text": "2020文献称紫石街始建于明代中期，南北向，长约里许、宽约2米；该尺寸是文献概述，不作为全街恒定净宽或2026实测。",
+      "sourceIds": [
+        "jiangsu-rural-housing-luxiang-2020"
+      ],
+      "status": "source-reported-historical-dimensions",
+      "asOf": "2020-08-21"
+    },
+    {
+      "text": "主街与其东侧六条横巷组成“一街六巷”格局，是古村道路枢纽。",
+      "sourceIds": [
+        "jiangsu-rural-housing-luxiang-2020"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2020-08-21"
+    },
+    {
+      "text": "地方志列紫石街上的三座牌坊为解元、会元、探花，纪念王鏊的科举经历。",
+      "sourceIds": [
+        "luxiang-local-history-2026"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2026-09-24"
+    },
+    {
+      "text": "2026地方志记保护整治曾修复紫石街及六条古巷，并修缮三座明代牌坊；当前可见状态含保护修缮成果。",
+      "sourceIds": [
+        "luxiang-local-history-2026"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2026-09-24"
+    },
+    {
+      "text": "旧参考图04可见石板路、连续墙面和牌坊，牌坊正面可辨“解元”字样；该图仅覆盖单处牌坊局部。",
+      "sourceIds": [
+        "luxiang-local-history-2026"
+      ],
+      "status": "visual-observation",
+      "asOf": "影像拍摄日期未注明"
+    },
+    {
+      "text": "论文图1带北箭头、0–150 m比例尺，可读主街与巷道、港道、环山公路的相对关系；未绘出三座牌坊的逐个可靠坐标。",
+      "sourceIds": [
+        "kong-wu-zhang-luxiang-2019"
+      ],
+      "status": "cartographic-relative-observation",
+      "asOf": "2019-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "luxiang-local-history-2026",
+      "title": "古镇古村系列——吴中区陆巷村：太湖明珠，宰相故里",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "publisher": "苏州市地方志工作办公室",
+      "publishedOn": "2026-09-24",
+      "accessedOn": "2026-10-23",
+      "kind": "government-local-history"
+    },
+    {
+      "id": "jiangsu-rural-housing-luxiang-2020",
+      "title": "苏州市东山镇陆巷村陆巷",
+      "url": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "publisher": "江苏省住房和城乡建设厅主办·农房建设服务网",
+      "publishedOn": "2020-08-21",
+      "accessedOn": "2026-10-23",
+      "kind": "government-hosted-planning-and-village-archive-summary",
+      "notes": [
+        "页面自列资料来源为《苏州市东山镇陆巷历史文化名村保护规划》《中国传统村落档案》；图件原编制时间未逐图注明。"
+      ]
+    },
+    {
+      "id": "kong-wu-zhang-luxiang-2019",
+      "title": "社区参与模式下的传统村落旅游空间生产及影响初探——基于苏州东山陆巷古村的调研",
+      "url": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+      "publisher": "孔翔、吴栋、张纪娴；《世界地理研究》28(6):156–165；华东师范大学网站托管",
+      "publishedOn": "2019-12",
+      "accessedOn": "2026-10-23",
+      "kind": "primary-field-research-paper",
+      "doi": "10.3969/j.issn.1004-9479.2019.06.2019064",
+      "localPath": "images/zishi-street-commercial-pattern-paper.pdf",
+      "notes": [
+        "图1位于印刷页160、PDF第5页；有北箭头和0–150 m比例尺，无经纬网/坐标系说明。",
+        "研究为2018年调研，图件用于历史相对空间关系，不代表2026现状测绘。"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "04-luxiang-zishi-street",
+      "title": "紫石街石板巷道与牌坊",
+      "sourceId": "luxiang-local-history-2026",
+      "pageUrl": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "imageUrl": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/6ada305ed88a48a79e457a6a3e8a10b2.png",
+      "localPath": "../../东山镇_数据/references/images/04-luxiang-zishi-street.png",
+      "view": "紫石街局部／解元牌坊正面",
+      "observations": [
+        "石板巷道、连续墙面、门廊和跨街石牌坊；牌坊字样可辨为“解元”。",
+        "单幅透视不能量测巷宽；未包括会元、探花两坊完整立面，也未给三坊间距。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页并重新目视本地原图；复用旧参考包，不重复下载。",
+      "imageDate": null,
+      "bytes": 593885,
+      "sha256": "a063ff467b4a3af58147f3010938ecf4563dc9938ef9ffd9872277d02f0e19a8"
+    },
+    {
+      "id": "luxiang-street-pattern-and-overstreet-building",
+      "title": "陆巷街巷格局图及过街楼照片",
+      "sourceId": "jiangsu-rural-housing-luxiang-2020",
+      "pageUrl": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "imageUrl": "https://www.c-dwellings.com/images/article/237_content_1598005519032377.png",
+      "localPath": "images/zishi-street-space-pattern.png",
+      "view": "街巷格局示意图与窄巷过街楼照片组合",
+      "observations": [
+        "左图以蓝色突出主巷骨架，标北入口、南入口与若干节点；可比对街巷与滨湖一侧的关系。",
+        "右图是跨巷的木构过街楼，不能替代解元、会元、探花三座石牌坊的造型证据。",
+        "组合图无坐标、可读比例尺，不能据此直接定位WGS84顶点。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23已核对来源上下文、下载原图并目视检查；无登录/错误页。",
+      "imageDate": null,
+      "bytes": 502743,
+      "sha256": "b8217881171756e6f673da8df1c0b1137550c8eaba88cc9621f0dd0c27ed07f8"
+    },
+    {
+      "id": "luxiang-lane-streetscapes",
+      "title": "陆巷传统街巷风貌（两幅）",
+      "sourceId": "jiangsu-rural-housing-luxiang-2020",
+      "pageUrl": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "imageUrl": "https://www.c-dwellings.com/images/article/237_content_1598005702352223.png",
+      "localPath": "images/zishi-street-streetscape.png",
+      "view": "村内窄巷实景",
+      "observations": [
+        "可见高墙围合的窄巷、石板/石条路缘、门窗与局部坡阶，可作街巷材质和空间比例参考。",
+        "原图未逐幅标明确切巷名，不能将两幅都确定标为紫石街，也不能以行人推算精确宽度。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23已核对来源上下文、下载原图并目视检查；无登录/错误页。",
+      "imageDate": null,
+      "bytes": 642689,
+      "sha256": "4c1440c5e90bcafa766766d6689b3862e8456ab75b23d6d0faf032d00bf35b93"
+    },
+    {
+      "id": "luxiang-paper-figure1",
+      "title": "陆巷古村“一街六巷”格局与商业分布（论文图1，完整第160页）",
+      "sourceId": "kong-wu-zhang-luxiang-2019",
+      "pageUrl": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+      "imageUrl": null,
+      "localPath": "images/zishi-street-paper-figure1.png",
+      "view": "PDF第5页渲染；图1及上下文",
+      "observations": [
+        "图1有北箭头和0–150 m比例尺；红线标一街六巷，蓝线标水岸，橙线为环山公路。",
+        "可辨紫石街、文宁巷、康庄巷及惠和堂位置；村落西侧为太湖，三个港道分别通向湖侧。",
+        "这是2019论文中的示意地图，未给CRS、基准点或测绘精度；可做历史相对空间关系，不输出精确WGS84线形。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23下载PDF；用Poppler渲染并目视完整第1页和第5页，核实标题、作者、图1、北箭头及比例尺。",
+      "imageDate": null,
+      "bytes": 891580,
+      "sha256": "ee38cc589db573f957f7b46e9715ce7bf585393e687327c5ae6ce4c9ef498186"
+    }
+  ],
+  "gaps": [
+    "主街准确起讫点、2026现状中心线与转折点。",
+    "解元、会元、探花三坊逐座坐标、实际排列与间距。",
+    "三坊正面/背面/侧面完整清晰照片和构件尺寸。",
+    "文献“约里许”的长度解释与现存可游览路段长度。"
+  ],
+  "searchNotes": [
+    "仅使用陆巷对象；搜索存在阳谷、无锡水浒城、吴江同名紫石街，均排除。",
+    "已补规划来源的方向、起讫描述、文献尺度和街巷格局图；未把示意图当精确地理底图。"
+  ]
+}

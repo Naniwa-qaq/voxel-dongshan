@@ -1,0 +1,12 @@
+# Preserve exact source snapshot bytes and SHA-256 checksums on every platform.
+* -text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.tiff binary
+*.pdf binary
+*.gpkg binary
+*.parquet binary
+*.gz binary

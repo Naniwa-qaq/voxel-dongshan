@@ -1,0 +1,202 @@
+{
+  "createdUtc": "2026-10-19T17:14:56.862733+00:00",
+  "script": "scripts/build_scene_data.py",
+  "displayBboxWgs84": [
+    120.28,
+    31.008,
+    120.449,
+    31.138
+  ],
+  "selectionReason": "Covers Dongshan peninsula and Sanshan islands; OSM Dongshan display mask excludes Xishan and neighbouring-town land within the rectangular viewport.",
+  "focusBoundarySource": "relation/7760656",
+  "focusBoundaryReview": "OSM polygon geometry validated by independent review; 13 unavailable relation members are subarea children rather than outer boundary segments; display selection only, not a legal boundary assertion",
+  "validation": {
+    "passed": true,
+    "terrainArrayLengths": {
+      "heights": 24585,
+      "heightValidMask": 24585,
+      "landcover": 24585,
+      "landMask": 24585,
+      "focusMask": 24585
+    },
+    "finiteHeightValues": true,
+    "landRequiresSourceHeight": true,
+    "networkWithinBounds": true,
+    "uniqueRoofGroupIds": true,
+    "roofSourceCountConserved": true,
+    "representedSourceBuildings": 17119,
+    "requiredSourceLandmarksPresent": true,
+    "schoolPolygonsPreserved": 4,
+    "allRoofHeightsExplicitlyTypological": true
+  },
+  "projectedBounds": [
+    240300.0,
+    3433200.0,
+    256800.0,
+    3448100.0
+  ],
+  "originEastingNorthing": [
+    248600,
+    3440600
+  ],
+  "terrain": {
+    "dimensions": [
+      165,
+      149
+    ],
+    "stepM": 100.0,
+    "sampling": "nearest original DSM pixel, rounded to 0.01 m for payload; no vertical datum conversion or exaggeration",
+    "landMaskRule": "land iff WorldCover class is nonzero and not 80 AND not within any OSM water polygon; conservative union of water evidence. Coarse ALL_TOUCHED polygon rasterization can omit thin shore strips; no created land.",
+    "landPixels": 9218,
+    "focusLandPixels": 6142,
+    "heightValidPixels": 24342,
+    "heightNoDataPixels": 243,
+    "heightNoDataPolicy": "Source NoData stored as 0 only as numeric placeholder, flagged by heightValidMask=0 and not land; never treat as a measured zero height",
+    "prevalentMappedWaterHeightM": 0.5,
+    "prevalentMappedWaterPixelCount": 13126,
+    "sourceHeightRangeM": [
+      -62.0,
+      283.6189270019531
+    ],
+    "focusLandHeightRangeM": [
+      -3.098452568054199,
+      283.6189270019531
+    ]
+  },
+  "roads": {
+    "input_features": 3446,
+    "selected_features": 643,
+    "display_parts": 658,
+    "source_vertices": 7970,
+    "display_vertices": 3187,
+    "omitted_by_rule": {
+      "raceway": 1,
+      "construction": 3,
+      "short_minor_road": 86
+    },
+    "junction_policy": "Shared source vertices and part endpoints retained; bridge/layer attributes retained; no arbitrary network snapping or claim of complete topology"
+  },
+  "waterways": {
+    "input_features": 381,
+    "selected_features": 68,
+    "display_parts": 70,
+    "source_vertices": 920,
+    "display_vertices": 307,
+    "omitted_by_rule": {
+      "lock_gate": 2,
+      "ditch": 9,
+      "fairway": 1,
+      "drain": 6,
+      "short_unnamed_stream": 2,
+      "dam": 7
+    },
+    "junction_policy": "Shared source vertices and part endpoints retained; bridge/layer attributes retained; no arbitrary network snapping or claim of complete topology"
+  },
+  "waterPolygons": {
+    "sourceFeatures": 2162,
+    "displayParts": 1183,
+    "minimumAreaM2": 3000.0,
+    "simplificationM": 12,
+    "holesRetained": true
+  },
+  "settlements": {
+    "source_file_features": 60873,
+    "selection_counts": {
+      "outside_display_bbox": 27635,
+      "outside_focus": 15758,
+      "eligible_source_buildings": 17119,
+      "source_centroid_water_masked": 118,
+      "implausible_area": 215,
+      "on_barrier_no_free_cell_within42m": 28
+    },
+    "representative_roof_groups": 1826,
+    "sum_represented_source_count": 17119,
+    "density_cell_m": 160.0,
+    "barrier_grid_m": 20.0,
+    "barriers": "Roads excluding path/track/footway/cycleway, waterways and water polygons; four-neighbour connected regions within each 160 m density cell",
+    "anchor_policy": "Actual source footprint anchor, moved only to nearest free 20 m cell when its centroid lies on the coarse barrier raster; maximum eligible assignment distance 42 m",
+    "height_policy": "All displayed roof-group heights inferred from a low-rise typology/density formula. Not a height measurement; source heights not substituted.",
+    "limitations": [
+      "Not one-to-one building reproduction; groups are cartographic symbols, not parcel/building claims.",
+      "Coarse road/water barriers constrain grouping but are not a certified street-block topology.",
+      "Footprint angle is an area-weighted axial mean; dimensions are reduced symbols and do not preserve total built area."
+    ]
+  },
+  "pois": {
+    "count": 32,
+    "byCategory": {
+      "port": 4,
+      "town": 1,
+      "village": 12,
+      "neighbourhood": 1,
+      "temple": 4,
+      "attraction": 1,
+      "hamlet": 1,
+      "heritage": 1,
+      "viewpoint": 1,
+      "school": 4,
+      "cultural_site": 1,
+      "peak": 1
+    },
+    "source": "Only source OSM positions/polygons within display focus; no geocoded guesses"
+  },
+  "inputs": [
+    {
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wgs84.tif",
+      "bytes": 823018,
+      "sha256": "fdf0b7348c3e1507e6dd7766ab580d5af93dfff35143ebde6097d891ea0387d2"
+    },
+    {
+      "path": "东山镇_数据\\landcover\\derived\\dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+      "bytes": 330549,
+      "sha256": "1d4a9d9a9996edd24b498da0caf61d25e4f835b60bee273a98159d81ff5fa6de"
+    },
+    {
+      "path": "东山镇_数据\\overture\\buildings_bbox_2026-09-23.1.geojson",
+      "bytes": 127348788,
+      "sha256": "8165673c47941f87251484b043415e64d37c275c690b54a8acf89c085d8fb999"
+    },
+    {
+      "path": "东山镇_数据\\osm\\layers\\boundaries.geojson",
+      "bytes": 186638,
+      "sha256": "d9144fe8d72db82860e5128cdb989f20cc42b7d611b7d91daa5b0dc1e1b2f6fd"
+    },
+    {
+      "path": "东山镇_数据\\osm\\layers\\roads.geojson",
+      "bytes": 2277624,
+      "sha256": "4c1177e120341edbc994d0965aa5e7c7908f4206b9816e92ee9f9c080daf4755"
+    },
+    {
+      "path": "东山镇_数据\\osm\\layers\\waterways.geojson",
+      "bytes": 282491,
+      "sha256": "410fea64342793025906369feeaa077b873d9e228df87826fc6445b106920049"
+    },
+    {
+      "path": "东山镇_数据\\osm\\layers\\water_polygons.geojson",
+      "bytes": 1785231,
+      "sha256": "77aa177d3c506a222f5fbadfc09379815a8a9da53ad2c085bd6fc398b38228f6"
+    },
+    {
+      "path": "东山镇_数据\\osm\\layers\\places_admin_poi.geojson",
+      "bytes": 235614,
+      "sha256": "db18c33d6ab801c7cf274cc3b7b9f0912463f85ee47c83a313e3f846c84c3384"
+    },
+    {
+      "path": "东山镇_数据\\osm\\layers\\landuse_natural.geojson",
+      "bytes": 2308542,
+      "sha256": "dedda0faae1dd368525ab9556d6487e180ae1b39f70e286edce65896ead84c0c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "东山镇_原型\\data\\scene-data.json",
+      "bytes": 1542389,
+      "sha256": "5b393b9f32294a6cdcb0de3fc5027db37076c53194efa6cc4110f3a56efc31b3"
+    },
+    {
+      "path": "东山镇_原型\\data\\scene-data.js",
+      "bytes": 1542481,
+      "sha256": "551c73a2bf383bb7f00dff82b5c3b677db1ff77e422df3103c96d5a52aad5599"
+    }
+  ]
+}

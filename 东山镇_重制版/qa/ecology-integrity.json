@@ -1,0 +1,786 @@
+{
+  "date": "2026-10-23",
+  "passed": true,
+  "sourceFilesChecked": 106,
+  "jsFilesParsed": 15,
+  "localReferencesChecked": 70,
+  "missing": [],
+  "sourceFiles": [
+    {
+      "file": "collection_envelope.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "landcover/derived/dongshan_envelope_worldcover_2021_v200_utm51n_10m.tif",
+      "unchanged": true
+    },
+    {
+      "file": "landcover/derived/dongshan_envelope_worldcover_2021_v200_wgs84.tif",
+      "unchanged": true
+    },
+    {
+      "file": "landcover/provenance/aws_registry_worldcover.html",
+      "unchanged": true
+    },
+    {
+      "file": "landcover/provenance/WorldCover_PUM_V2.0.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/boundaries.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/buildings.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/landuse_natural.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/other_tagged.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/places_admin_poi.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/road_points.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/roads.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/water_polygons.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/layers/waterways.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/admin.json",
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/buildings.json",
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/landcover.json",
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/poi.json",
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/roads.json",
+      "unchanged": true
+    },
+    {
+      "file": "osm/raw/20261019/water.json",
+      "unchanged": true
+    },
+    {
+      "file": "overture/buildings_bbox_2026-09-23.1.geojson",
+      "unchanged": true
+    },
+    {
+      "file": "overture/raw/buildings_bbox_2026-09-23.1.parquet",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/01-luxiang-setting.png",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/02-luxiang-hanshan-port.png",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/03-luxiang-huilaotang.png",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/04-luxiang-zishi-street.png",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/05-huihetang-garden.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/06-huihetang-01.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/07-huihetang-03.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/08-huihetang-04.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/09-qiyuan-4100.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/10-qiyuan-4112.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/11-qiyuan-4117.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/12-chunzailou.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/13-xuanyuangong.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/14-daixinwan-bridge.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/15-nanmuting.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/16-huihetang-overview.jpg",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/17-huihetang-plan.png",
+      "unchanged": true
+    },
+    {
+      "file": "references/images/18-huihetang-courtyard.png",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2019.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2019.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2025.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-2025.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-scenic.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/dongshan-scenic.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/heritage-register.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/heritage-register.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/huihetang.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/huihetang.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/luxiang-2026.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/luxiang-2026.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/museum-huihetang.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/museum-huihetang.txt",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/qiyuan.html",
+      "unchanged": true
+    },
+    {
+      "file": "references/pages/qiyuan.txt",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_edm_utm51n_30m.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_edm_wgs84.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_flm_utm51n_30m.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_flm_wgs84.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_hem_utm51n_30m.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_hem_wgs84.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_utm51n_30m.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_wbm_utm51n_30m.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_wbm_wgs84.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/derived/dongshan_envelope_glo30_2021_wgs84.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/aws_copernicus_dem_readme.html",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/aws_registry_copernicus_dem.html",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/Copernicus_DEM_Product_Handbook_i5.0.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/Copernicus_DSM_COG_10_N30_00_E120_00_DEM_listing.xml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/Copernicus_DSM_COG_10_N31_00_E120_00_DEM_listing.xml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/copernicus_product_page.html",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/provenance/License-COPDEM-30.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_10_N30_00_E120_00_ACM.kml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_EDM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_FLM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_HEM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N30_00_E120_00_WBM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/Copernicus_DSM_10_N30_00_E120_00.xml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/INFO/eula_F.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_DEM_ABS_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_DEM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_EDM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_FLM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_HEM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_QL.kml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_SRC.kml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N30_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N30_00_E120_00_WBM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_10_N31_00_E120_00_ACM.kml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_EDM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_FLM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_HEM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N31_00_E120_00_WBM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/Copernicus_DSM_10_N31_00_E120_00.xml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/INFO/eula_F.pdf",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_DEM_ABS_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_DEM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_EDM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_FLM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_HEM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_QL.kml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_SRC.kml",
+      "unchanged": true
+    },
+    {
+      "file": "terrain/raw/Copernicus_DSM_COG_10_N31_00_E120_00_DEM/PREVIEW/Copernicus_DSM_10_N31_00_E120_00_WBM_QL.tif",
+      "unchanged": true
+    },
+    {
+      "file": "working/dongshan_sources_utm51n.gpkg",
+      "unchanged": true
+    }
+  ],
+  "references": [
+    {
+      "page": "index.html",
+      "reference": "style.css",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "README.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "../东山镇_数据/数据入口.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "../云山巨城_学习档案/学习手册.html",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "data/geographic-audit.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "../work/地理核查_2026-10-23.md",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "qa/ecology-assets.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "qa/ecology-runtime.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "vendor/three.min.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/unified-map.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/town-context.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/ecology-mask.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/architecture.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/content.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/vegetation.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/meshing.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/baked.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/scene.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/geographic-audit-data.js",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "reference": "js/geographic-audit.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "index.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/数据入口.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/landscape-revision-audit.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../云山巨城_学习档案/学习手册.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/geographic-audit.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../work/地理核查_2026-10-23.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "qa/ecology-assets.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/town-context-qa.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/unified-map-qa.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "qa/unified-integrity.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "qa/unified-runtime.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/unified-map.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/landscape-revision-audit.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/layout-qa.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "qa/unified-runtime.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/unified-map.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/source-design-comparison.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/design.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/cartographic-groups.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "qa/runtime.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/dongshan-school.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/dongshan-school-sources.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/dongshan-school-design-plan.png",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/chunzailou-garden.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/chunzailou-garden-sources.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "data/districts/chunzailou-garden-design-plan.png",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../work/景观二修_真实设施.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "index.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/osm/README.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/osm/ATTRIBUTION.txt",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/overture/README.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/overture/ATTRIBUTION.txt",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/terrain/README_地形审计.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/terrain/provenance/License-COPDEM-30.pdf",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/landcover/README_土地覆盖审计.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/references/index.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_数据/references/README.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../云山巨城_学习档案/学习手册.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "vendor/THREE-LICENSE.txt",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../_回滚归档/2026-10-20_失败原型/rollback-manifest.json",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "../东山镇_项目筹备/06_重规划_完整体素与制图综合.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "README.md",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "index.html",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/design.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/landscape-revision.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/districts.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/unified-map.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/town-context.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/architecture.js",
+      "exists": true
+    },
+    {
+      "page": "README.html",
+      "reference": "js/content.js",
+      "exists": true
+    }
+  ]
+}

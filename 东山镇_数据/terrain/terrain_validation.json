@@ -1,0 +1,393 @@
+{
+  "created_utc": "2026-10-19T07:15:37.017361+00:00",
+  "requested_bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "extent_role": "采集包络；不是行政边界",
+  "original_tiles": [
+    {
+      "width": 3600,
+      "height": 3600,
+      "bands": 1,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "authority": [
+        "EPSG",
+        "4326"
+      ],
+      "geotransform": [
+        119.99986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.000138888888888,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        119.99986111111112,
+        30.000138888888888,
+        120.99986111111112,
+        31.000138888888888
+      ],
+      "pixel_size_degrees": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_type": "Float32",
+      "nodata": null,
+      "valid_pixels": 12960000,
+      "total_pixels": 12960000,
+      "valid_fraction": 1.0,
+      "min": -81.94249725341797,
+      "max": 755.4362182617188,
+      "dataset_metadata": {
+        "AREA_OR_POINT": "Point"
+      },
+      "band_metadata": {},
+      "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM\\Copernicus_DSM_COG_10_N30_00_E120_00_DEM.tif",
+      "sha256": "929b54f8bb3a51910e4a6b4ac9f052a607245fd0e43a0846b5501663d18af010"
+    },
+    {
+      "width": 3600,
+      "height": 3600,
+      "bands": 1,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "authority": [
+        "EPSG",
+        "4326"
+      ],
+      "geotransform": [
+        119.99986111111112,
+        0.0002777777777777778,
+        0.0,
+        32.00013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        119.99986111111112,
+        31.00013888888889,
+        120.99986111111112,
+        32.00013888888889
+      ],
+      "pixel_size_degrees": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_type": "Float32",
+      "nodata": null,
+      "valid_pixels": 12960000,
+      "total_pixels": 12960000,
+      "valid_fraction": 1.0,
+      "min": -62.0,
+      "max": 338.0646057128906,
+      "dataset_metadata": {
+        "AREA_OR_POINT": "Point"
+      },
+      "band_metadata": {},
+      "path": "东山镇_数据\\terrain\\raw\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM\\Copernicus_DSM_COG_10_N31_00_E120_00_DEM.tif",
+      "sha256": "9a8f5720819f197227db92b4f2abadb5dcc7ab14652f07c0ce02d59611feab5c"
+    }
+  ],
+  "clipped": {
+    "width": 793,
+    "height": 865,
+    "bands": 1,
+    "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+    "authority": [
+      null,
+      null
+    ],
+    "geotransform": [
+      120.27986111111112,
+      0.0002777777777777778,
+      0.0,
+      31.22013888888889,
+      0.0,
+      -0.0002777777777777778
+    ],
+    "bounds": [
+      120.27986111111112,
+      30.979861111111113,
+      120.5001388888889,
+      31.22013888888889
+    ],
+    "pixel_size_degrees": [
+      0.0002777777777777778,
+      0.0002777777777777778
+    ],
+    "pixel_type": "Float32",
+    "nodata": null,
+    "valid_pixels": 685945,
+    "total_pixels": 685945,
+    "valid_fraction": 1.0,
+    "min": -62.0,
+    "max": 291.3326110839844,
+    "dataset_metadata": {
+      "DATASET": "Copernicus GLO-30 Public AWS 2021 release",
+      "EXTENT_ROLE": "Collection envelope, NOT administrative boundary",
+      "HEIGHT_TYPE": "DSM",
+      "HEIGHT_UNIT": "metre",
+      "PROCESSING": "Native grid pixel-window subset; NO RESAMPLING; NO WARPING",
+      "REQUESTED_BBOX_WGS84": "[120.28, 30.98, 120.5, 31.22]",
+      "SOURCE_ATTRIBUTION": "produced using Copernicus WorldDEM-30; see provenance/License-COPDEM-30.pdf",
+      "VERTICAL_DATUM": "EGM2008"
+    },
+    "band_metadata": {},
+    "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wgs84.tif",
+    "bytes": 823018,
+    "sha256": "fdf0b7348c3e1507e6dd7766ab580d5af93dfff35143ebde6097d891ea0387d2",
+    "source_pixel_window": [
+      1008,
+      2808,
+      793,
+      865
+    ]
+  },
+  "quality_layers_clipped": {
+    "EDM": {
+      "width": 793,
+      "height": 865,
+      "bands": 1,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "authority": [
+        null,
+        null
+      ],
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size_degrees": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 1.0,
+      "max": 11.0,
+      "dataset_metadata": {
+        "DATASET": "Copernicus GLO-30 Public AWS 2021 release",
+        "EXTENT_ROLE": "Collection envelope, NOT administrative boundary",
+        "INTERPRETATION": "See accompanying original product metadata and product handbook",
+        "PROCESSING": "Native grid pixel-window subset; NO RESAMPLING; NO WARPING",
+        "QUALITY_LAYER": "EDM",
+        "REQUESTED_BBOX_WGS84": "[120.28, 30.98, 120.5, 31.22]"
+      },
+      "band_metadata": {},
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_edm_wgs84.tif",
+      "bytes": 33515,
+      "sha256": "660e0a82788f401bf32d91f5ec7c138953387a5591023aaa8cd51ab2b75c67e6",
+      "source_pixel_window": [
+        1008,
+        2808,
+        793,
+        865
+      ],
+      "available": true,
+      "pixel_value_counts": {
+        "1": 209812,
+        "2": 1144,
+        "3": 396,
+        "4": 774,
+        "6": 12,
+        "9": 467710,
+        "10": 2880,
+        "11": 3217
+      }
+    },
+    "FLM": {
+      "width": 793,
+      "height": 865,
+      "bands": 1,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "authority": [
+        null,
+        null
+      ],
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size_degrees": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 1.0,
+      "max": 5.0,
+      "dataset_metadata": {
+        "DATASET": "Copernicus GLO-30 Public AWS 2021 release",
+        "EXTENT_ROLE": "Collection envelope, NOT administrative boundary",
+        "INTERPRETATION": "See accompanying original product metadata and product handbook",
+        "PROCESSING": "Native grid pixel-window subset; NO RESAMPLING; NO WARPING",
+        "QUALITY_LAYER": "FLM",
+        "REQUESTED_BBOX_WGS84": "[120.28, 30.98, 120.5, 31.22]"
+      },
+      "band_metadata": {},
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_flm_wgs84.tif",
+      "bytes": 28211,
+      "sha256": "b38ae8a9ca33c19133d1c0cde6552b7e513048f9a3c8bfb85837e75d4ce6f860",
+      "source_pixel_window": [
+        1008,
+        2808,
+        793,
+        865
+      ],
+      "available": true,
+      "pixel_value_counts": {
+        "1": 474989,
+        "2": 209812,
+        "3": 65,
+        "4": 3,
+        "5": 1076
+      }
+    },
+    "HEM": {
+      "width": 793,
+      "height": 865,
+      "bands": 1,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "authority": [
+        null,
+        null
+      ],
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size_degrees": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_type": "Float32",
+      "nodata": -32767.0,
+      "valid_pixels": 209812,
+      "total_pixels": 685945,
+      "valid_fraction": 0.305872919840512,
+      "min": 0.1372811496257782,
+      "max": 38.072872161865234,
+      "dataset_metadata": {
+        "DATASET": "Copernicus GLO-30 Public AWS 2021 release",
+        "EXTENT_ROLE": "Collection envelope, NOT administrative boundary",
+        "INTERPRETATION": "See accompanying original product metadata and product handbook",
+        "PROCESSING": "Native grid pixel-window subset; NO RESAMPLING; NO WARPING",
+        "QUALITY_LAYER": "HEM",
+        "REQUESTED_BBOX_WGS84": "[120.28, 30.98, 120.5, 31.22]"
+      },
+      "band_metadata": {},
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_hem_wgs84.tif",
+      "bytes": 669167,
+      "sha256": "04fa0bdc28dc56fe7c9ff8d9ad7441daef69acc7a84f23d12f9343030d34b3e5",
+      "source_pixel_window": [
+        1008,
+        2808,
+        793,
+        865
+      ],
+      "available": true
+    },
+    "WBM": {
+      "width": 793,
+      "height": 865,
+      "bands": 1,
+      "crs_wkt": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]",
+      "authority": [
+        null,
+        null
+      ],
+      "geotransform": [
+        120.27986111111112,
+        0.0002777777777777778,
+        0.0,
+        31.22013888888889,
+        0.0,
+        -0.0002777777777777778
+      ],
+      "bounds": [
+        120.27986111111112,
+        30.979861111111113,
+        120.5001388888889,
+        31.22013888888889
+      ],
+      "pixel_size_degrees": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "pixel_type": "Byte",
+      "nodata": null,
+      "valid_pixels": 685945,
+      "total_pixels": 685945,
+      "valid_fraction": 1.0,
+      "min": 0.0,
+      "max": 3.0,
+      "dataset_metadata": {
+        "DATASET": "Copernicus GLO-30 Public AWS 2021 release",
+        "EXTENT_ROLE": "Collection envelope, NOT administrative boundary",
+        "INTERPRETATION": "See accompanying original product metadata and product handbook",
+        "PROCESSING": "Native grid pixel-window subset; NO RESAMPLING; NO WARPING",
+        "QUALITY_LAYER": "WBM",
+        "REQUESTED_BBOX_WGS84": "[120.28, 30.98, 120.5, 31.22]"
+      },
+      "band_metadata": {},
+      "path": "东山镇_数据\\terrain\\derived\\dongshan_envelope_glo30_2021_wbm_wgs84.tif",
+      "bytes": 27571,
+      "sha256": "2f5274c90897b1ecc5b009019c46b89bc8ed8b2c1511b99adb0b2404b3ca6a38",
+      "source_pixel_window": [
+        1008,
+        2808,
+        793,
+        865
+      ],
+      "available": true,
+      "pixel_value_counts": {
+        "0": 215355,
+        "2": 467710,
+        "3": 2880
+      }
+    }
+  },
+  "quality_gaps": [
+    "Global DSM includes vegetation/buildings; no claim of local bare-earth or street-level accuracy.",
+    "EGM2008 heights must not be directly assigned Taihu gauge values in Zhenjiang Wusong datum."
+  ]
+}

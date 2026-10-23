@@ -1,0 +1,207 @@
+{
+  "id": "fahai-temple",
+  "name": "法海寺",
+  "aliases": [
+    "东山法海寺"
+  ],
+  "category": "佛教寺庙／历史古建筑",
+  "summary": "资料对象为苏州东山法海寺，官方文保名录仅确认东山镇、清代古建筑、市级文物保护单位。本批保留OSM候选点位及一张正面照候选；二手资料的西坡记述与OSM点相对峰顶的方位不一致，点位、文保本体和照片尚未完成对应核验。",
+  "location": {
+    "wgs84": [
+      120.3918743,
+      31.0950032
+    ],
+    "crs": "EPSG:4326 / WGS84，顺序为经度、纬度",
+    "role": "OSM node/13800863490寺庙标签候选点；尚未核定对应文保本体、山门或大殿中心",
+    "address": "江苏省苏州市吴中区东山镇（官方名录精度；具体山坡、门牌未核定）",
+    "sourceId": "fahai-osm-node-13800863490",
+    "confidence": "中低：OSM点可追溯，但与二手西坡记述存在方位冲突；官方名录不足以验证这一具体点位",
+    "notes": [
+      "项目已有2026-10-19 OSM快照将其标为amenity=place_of_worship、religion=buddhist。",
+      "官方文保名录地址精度到东山镇；相约久久记述西坡下法海坞，不能据此直接给OSM点赋西坡地址。",
+      "本地莫厘峰峰顶OSM node/13800809445为[120.3894991,31.1003028]；法海寺候选点相对该峰顶约向东226米、向南588米，属于东南方向，与二手西坡字面记述不一致。",
+      "本轮未找到可解释该冲突的带坐标官方寺址、现场导览图或可配准影像；山域名称差异、地名沿革或OSM误标均未证实，不任选一种解释。",
+      "本条不采用北京石景山法海寺、福州法海寺、青岛法海寺的图文。",
+      "不把相传隋代创寺视为现存殿宇建造年代。"
+    ]
+  },
+  "facts": [
+    {
+      "text": "苏州市文化广电和旅游局文物保护单位名录：法海寺，市保，吴中区，清代，东山镇，公布日期1986年3月25日，类型古建筑。",
+      "sourceIds": [
+        "fahai-official-heritage-list"
+      ],
+      "status": "官方名录已核验",
+      "asOf": "2026-10-23"
+    },
+    {
+      "text": "相约久久苏州东山景区法海寺图文页将该寺置于莫厘峰西坡下法海坞，并讲述隋代莫厘将军舍宅建寺的传说；本批仅将其作为地理和历史线索。",
+      "sourceIds": [
+        "fahai-meet99-page"
+      ],
+      "status": "二手记述；西坡方位与OSM候选点相对峰顶的位置冲突，传说不视为可核实建造事实",
+      "asOf": null
+    },
+    {
+      "text": "低分辨率图像可见灰瓦坡屋顶、外露檐部、红褐色门柱、居中的门洞与前部台阶；只能辅助外观研究，不能据此量取尺寸或确认全寺布局。",
+      "sourceIds": [
+        "fahai-meet99-page"
+      ],
+      "status": "已下载并目视核验；照片与OSM点尚未配准，拍摄年代未知",
+      "asOf": "2026-10-23"
+    },
+    {
+      "text": "OSM点标明佛教礼拜场所；官方风景资源介绍亦列举东山现存法海寺。",
+      "sourceIds": [
+        "fahai-osm-node-13800863490",
+        "fahai-taihu-resource"
+      ],
+      "status": "支持东山存在此名称的寺庙；不能据此证明文保本体与OSM候选点相同",
+      "asOf": "2026-10-23"
+    },
+    {
+      "text": "按本地WGS84坐标比较，法海寺候选点位于莫厘峰峰顶标签点东南约630米；向东约226米、向南约588米。该计算只描述两个OSM点的相对方位，不判断哪一来源正确。",
+      "sourceIds": [
+        "fahai-osm-node-13800863490",
+        "fahai-context-moli-peak-13800809445"
+      ],
+      "status": "本地坐标比较；发现与二手西坡记述的冲突，待交叉核验",
+      "asOf": "2026-10-23"
+    }
+  ],
+  "sources": [
+    {
+      "id": "fahai-osm-node-13800863490",
+      "title": "法海寺：OpenStreetMap node 13800863490",
+      "url": "https://www.openstreetmap.org/node/13800863490",
+      "publisher": "© OpenStreetMap contributors",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "open_geodata；坐标实际读取本地2026-10-19快照"
+    },
+    {
+      "id": "fahai-context-moli-peak-13800809445",
+      "title": "莫厘峰：OpenStreetMap node 13800809445（仅作方位核对）",
+      "url": "https://www.openstreetmap.org/node/13800809445",
+      "publisher": "© OpenStreetMap contributors",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "open_geodata；实际读取东山镇_数据/osm/layers/landuse_natural.geojson，原始landcover.json快照2026-10-19T07:25:03Z"
+    },
+    {
+      "id": "fahai-official-heritage-list",
+      "title": "苏州市各级文物保护单位名录（法海寺，第156项）",
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml",
+      "publisher": "苏州市文化广电和旅游局",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "official_heritage_register"
+    },
+    {
+      "id": "fahai-meet99-page",
+      "title": "苏州东山景区旅游攻略之法海寺（图文）",
+      "url": "https://www.meet99.com/jingdian-suzhoudongshan-25989.html",
+      "publisher": "相约久久旅游网",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "secondary_travel_photo_page"
+    },
+    {
+      "id": "fahai-taihu-resource",
+      "title": "东山景区（太湖风景名胜区资源版）",
+      "url": "https://zyb.taihufengjing.com/Article?Id=7da48b2f-da3d-48f2-bba3-d10e1acb9aac",
+      "publisher": "太湖风景名胜区资源版",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "scenic_area_resource"
+    },
+    {
+      "id": "fahai-xianghua-bridge-page",
+      "title": "吴中区东山镇法海寺香花桥",
+      "url": "https://www.china-qiao.com/ql16/szql/szql649.htm",
+      "publisher": "中国桥",
+      "publishedOn": null,
+      "accessedOn": "2026-10-23",
+      "kind": "local_bridge_photo_catalog；本次网页正文未成功载入"
+    }
+  ],
+  "references": [
+    {
+      "id": "fahai-meet99-front-candidate",
+      "title": "法海寺正面照候选（低分辨率）",
+      "sourceId": "fahai-meet99-page",
+      "pageUrl": "https://www.meet99.com/jingdian-suzhoudongshan-25989.html",
+      "imageUrl": "https://i.meet99.cn/image/19/59/69af1beec34b7bd53264718904bc.jpg",
+      "localPath": "images/fahai-temple-meet99-reference.jpg",
+      "view": "殿宇正面，拍摄方位和日期未知",
+      "observations": [
+        "图片由明确标注苏州东山法海寺的图文页链接，文件242×150像素。",
+        "可见灰瓦坡屋顶、红褐门柱、中央门洞、台阶及两侧植被。",
+        "图片存在网站水印；低分辨率不足以可靠读匾额、分析斗拱或认定现存建筑年代。"
+      ],
+      "rightsStatus": "未见开放许可；保留来源和水印，仅内部研究参考，不作为公开贴图或再分发素材",
+      "verificationStatus": "已下载、已目视；页面地点标签匹配，未用地面标志或坐标独立验证"
+    },
+    {
+      "id": "fahai-xianghua-bridge-candidate",
+      "title": "法海寺香花桥现场照片候选",
+      "sourceId": "fahai-xianghua-bridge-page",
+      "pageUrl": "https://www.china-qiao.com/ql16/szql/szql649.htm",
+      "imageUrl": null,
+      "localPath": null,
+      "view": "寺周边香花桥；待打开核验",
+      "observations": [
+        "搜索索引明确题为吴中区东山镇法海寺香花桥，并列两幅图片。",
+        "页面索引称桥初为明代所建、现为新建；本批未获得可目视图像，不写入实证外观。"
+      ],
+      "rightsStatus": "版权未核定；候选链接备用",
+      "verificationStatus": "仅索引候选；web抓取超时，普通HTTPS请求证书名称/链错误，未绕过验证"
+    }
+  ],
+  "gaps": [
+    "优先核验位置冲突：二手图文的莫厘峰西坡下法海坞，与OSM候选点相对峰顶位于东南不一致。需官方寺址或文保范围图、现场带定位照片等建立同一性，当前点位不得直接作为已确认法海寺落模锚点。",
+    "官方精确地址、院落边界、山门／主殿锚点、主轴方向和殿宇尺寸。",
+    "现状多角度高清照片、拍摄年份，以及低分辨率照片所示殿宇与现存主殿的对应。",
+    "香花桥、泉池、寺与周边墓区的现状空间关系；不能用古代繁盛描述复原当代建筑群。",
+    "文保本体与寺庙登记/开放状态的完整官方说明。"
+  ],
+  "searchNotes": [
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "\"法海寺\" \"莫厘\" \"图\"",
+        "\"法海寺\" \"东山\" 照片",
+        "site.suzhou.gov.cn \"法海寺\"",
+        "site.szwz.gov.cn \"法海寺\"",
+        "\"法海寺\" \"碧螺村\" 文物",
+        "\"法海寺\" \"东山\" \"文物保护\" \"苏州市\""
+      ],
+      "result": "找到市文旅局官方文保名录，以及相约久久与中国桥候选图；严格排除北京、福州、青岛同名寺庙。"
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "相约久久法海寺图像链接提取与普通公开图片下载"
+      ],
+      "result": "下载到images/fahai-temple-meet99-reference.jpg并目视核验；图像仅242×150，定位和现状仍需补证。"
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "中国桥香花桥候选页普通HTTPS读取"
+      ],
+      "result": "web工具多次超时，普通请求提示证书名称/链错误；未跳过TLS验证，保留页面候选。"
+    },
+    {
+      "date": "2026-10-23",
+      "queries": [
+        "本地landuse_natural.geojson峰顶node/13800809445与法海寺node/13800863490坐标方位比较",
+        "\"法海寺\" \"法海坞\" \"莫厘峰\" 西坡",
+        "\"法海寺\" \"莫厘峰\" \"东南\"",
+        "\"法海寺\" \"莫厘峰\" site:suzhou.gov.cn"
+      ],
+      "result": "确认候选寺点相对本地峰顶在东南约630米，与meet99西坡记述存在字面冲突；未找到带坐标的一手依据可解释冲突。已下调定位可信度，官方地址只保留东山镇，不将猜测解释写为事实。"
+    }
+  ]
+}
+

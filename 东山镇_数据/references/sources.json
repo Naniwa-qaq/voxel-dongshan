@@ -1,0 +1,1456 @@
+{
+  "schema_version": 1,
+  "fetched_at_utc": "2026-10-15T16:37:36.011Z",
+  "fetched_at_local": "2026-10-16 00:37:36 +08:00",
+  "purpose": "制图综合的风格化东山；地方风貌和重点POI内部研究参考",
+  "sources": [
+    {
+      "id": "luxiang-2026",
+      "title": "古镇古村系列——吴中区陆巷村：太湖明珠，宰相故里",
+      "publisher": "苏州市地方志工作办公室",
+      "date": "2026-09-24",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:17.617Z",
+      "fetched_at_local": "2026-10-16 00:37:17 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "content_type": "text/html",
+      "bytes": 37281,
+      "sha256": "b6308d217c45e16dde3a67e448d4574e43497415917397592b0d77e4bb198828",
+      "raw_html": "pages/luxiang-2026.html",
+      "page_title": "\r\n\t\t\t古镇古村系列——吴中区陆巷村：太湖明珠，宰相故里 - 苏州市地方志编纂委员会办公室\r\n\t\t",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_logo_title.gif",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "a href=\"javascript:;\" onclick=\"aria.start()\" title=\"无障碍阅读\">网站无障碍 适老版",
+          "context_after": "<a href=\"/dfzb/"
+        },
+        {
+          "index": 1,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_logo.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ria.oldFixedStart()\" title=\"适老版\" style=\"margin-left: 20px;\">适老版",
+          "context_after": "首页 走进苏州 </"
+        },
+        {
+          "index": 2,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/758f34ded1d5482fab1ed40c88dc68d2.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; </"
+        },
+        {
+          "index": 3,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/2e1d73198ab543ac92fa2ff4ec340227.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; <span style=\"font-family: 宋体; font-size: 12pt;"
+        },
+        {
+          "index": 4,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/4358946423bd434c88abb4c76b991354.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; <span style=\"font-family: 宋体; font-size: 12pt;"
+        },
+        {
+          "index": 5,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/6ada305ed88a48a79e457a6a3e8a10b2.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "太湖烟波，构成江南古村独有的画卷。",
+          "context_after": "&ensp; <font face=\""
+        },
+        {
+          "index": 6,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/61b72f8239294392843eb5b271e7ab36.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; <span style=\"font-family: 宋体; font-size: 12pt;"
+        },
+        {
+          "index": 7,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/690984bb6c3c4e559d07ece7a4a9c9fb.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; <span style=\"font-family: 宋体; font-size: 12pt;"
+        },
+        {
+          "index": 8,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/abc9e44541784f8bb8619a8c95b503b5.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; <font face=\"宋体\" st"
+        },
+        {
+          "index": 9,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/1cdd72bb09f44e10aab5129ca7560c90.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; &ensp;"
+        },
+        {
+          "index": 10,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/5312c0728e574342bad4a1a6b6f1ca69.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "&ensp; <font face=\"宋体\" st"
+        },
+        {
+          "index": 11,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/f7de83e4b43a4af48c817ef82f210225.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt; text-align: center;\">",
+          "context_after": "相关文件："
+        },
+        {
+          "index": 12,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_danhui.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ref=\"/dfzb/xhtml/static/css/footer.css\" />",
+          "context_after": "江苏省人民政府 | 苏州市人民政府 Copyright® 2002-2011 dfzb.suzhou.gov.cn All Rights Re"
+        },
+        {
+          "index": 13,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_danhui.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ref=\"http://www.jiangsu.gov.cn/\" target=\"_blank\"> 江苏省人民政府 |",
+          "context_after": "苏州市人民政府 Copyright® 2002-2011 dfzb.suzhou.gov.cn All Rights Reserved. 主办单位：苏州市地方志工作办公室 （苏州市三香路998号5号楼西二楼 邮编：215004 电话：0512-68617302） 苏州市方志馆 （姑苏区廖"
+        },
+        {
+          "index": 14,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_beian.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "：0512-68617351） 苏ICP备10219514号-1 网站标识码：3205000051",
+          "context_after": "苏公网安备 32050802010735号 网站地图 网站支持 IPV6"
+        },
+        {
+          "index": 15,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/images/icon_mail_96.jpg",
+          "alt": "领导信箱",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "s:4px;\">IPV6",
+          "context_after": "<i"
+        },
+        {
+          "index": 16,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_ewm.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "zf/hd_xjly/xjly.shtml#/xjly/bmmail/write?dept_id=22d2be79e8fc4a3fbbe4651acaae3ce1\" target=\"_blank\">",
+          "context_after": "<img class="
+        },
+        {
+          "index": 17,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/footer_jiucuo.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\" href=\"/dfzb/xhtml/\">",
+          "context_after": "<img src=\"/dfzb/xhtml/stat"
+        },
+        {
+          "index": 18,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/images/footer_slh.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"jiucuo\" href=\"http://121.43.68.40/exposure/jiucuo.html?site_code=3205000051&url=http%3A%2F%2Fdfzb.suzhou.gov.cn%2F\">",
+          "context_after": "<img src=\"/dfzb/xhtml/static/images/new_footer_gat.p"
+        },
+        {
+          "index": 19,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_sydw.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"script\"); hm.src = \"https://hm.baidu.com/hm.js?cdc4685137fa0"
+        },
+        {
+          "index": 20,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_gat.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "mages/footer_slh.png\">",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"script\"); hm.src = \"https://hm.baidu.com/hm.js?cdc4685137fa072f64367a096232feeb\"; var s = document.getElementsByTagName(\"script\")"
+        }
+      ],
+      "extracted_text": "pages/luxiang-2026.txt"
+    },
+    {
+      "id": "dongshan-2025",
+      "title": "古镇古村系列——吴中区东山镇",
+      "publisher": "苏州市地方志工作办公室",
+      "date": "2025-05-07",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:18.185Z",
+      "fetched_at_local": "2026-10-16 00:37:18 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b.shtml",
+      "content_type": "text/html",
+      "bytes": 35191,
+      "sha256": "d8aaa126e01a95f31f746fcb41264a6a056b799c84c11e737f380fb3b856adf9",
+      "raw_html": "pages/dongshan-2025.html",
+      "page_title": "\r\n\t\t\t古镇古村系列——吴中区东山镇 - 苏州市地方志编纂委员会办公室\r\n\t\t",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_logo_title.gif",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "a href=\"javascript:;\" onclick=\"aria.start()\" title=\"无障碍阅读\">网站无障碍 适老版",
+          "context_after": "<a href=\"/dfzb/"
+        },
+        {
+          "index": 1,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_logo.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ria.oldFixedStart()\" title=\"适老版\" style=\"margin-left: 20px;\">适老版",
+          "context_after": "首页 走进苏州 </"
+        },
+        {
+          "index": 2,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/4e17f9602f4e4597b8db7e2813bab71f.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ze: 12pt; text-indent: 2em;\">&ensp;",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 3,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/ba544a6e4e8a4aa59ee49df4f8157205.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 4,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/2824e26245d045dfb18e343a8ef51e5c.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": ": 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<img src=\"5abc61edcad04b828dc08cc7a5b8ec9b/images/55a6f12a72f6484"
+        },
+        {
+          "index": 5,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/55a6f12a72f64843a095ec974ff9a023.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "px; height: 332px;\" align=\"center\">",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋"
+        },
+        {
+          "index": 6,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/4bbb448aeebd4522a9f6f49cf98bbb5d.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "叶梦得画像 <p style=\"margin-top: 0.5em; margin-bott"
+        },
+        {
+          "index": 7,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/57f0ffed14ab40b28d23c705887ae08a.png",
+          "alt": "图片",
+          "title": "",
+          "html_width": "191",
+          "html_height": "257",
+          "context_before": "-family: 宋体; font-size: 12pt;\">叶梦得画像",
+          "context_after": "王守武 <p style=\"margin-top: 0.5em; margin-bottom"
+        },
+        {
+          "index": 8,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/cf0341890de44f009d56c4ff8f44b272.jpg",
+          "alt": "图片",
+          "title": "图片",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 9,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/5c18e9cc87c94520bbd8fddf8b85b3cf.png",
+          "alt": "图片",
+          "title": "图片",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 10,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/a7b73d6cf2f74cd5b920546da6da9bf9.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 11,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/47f892e3955b488b9b20902540876b2b.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "元赵孟頫《洞庭东山图》（局部）上海博物馆藏 <p style=\"margin-top: 0.5em; ma"
+        },
+        {
+          "index": 12,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/d0611744d21e4304876696fa1e8bc5a8.jpg",
+          "alt": "图片",
+          "title": "图片",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ly: 宋体; font-size: 12pt;\">绿水青山就是金山银山",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 13,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202505/5abc61edcad04b828dc08cc7a5b8ec9b/images/bcc837aa58044e37ab9dbb42fe4ac5d5.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "eight: 1.5; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 0.5em; margin-bottom: 0.5em; text-indent: 2em; line-height: 1.5; font-family: 宋体; font-"
+        },
+        {
+          "index": 14,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_danhui.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ref=\"/dfzb/xhtml/static/css/footer.css\" />",
+          "context_after": "江苏省人民政府 | 苏州市人民政府 Copyright® 2002-2011 dfzb.suzhou.gov.cn All Rights Re"
+        },
+        {
+          "index": 15,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_danhui.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ref=\"http://www.jiangsu.gov.cn/\" target=\"_blank\"> 江苏省人民政府 |",
+          "context_after": "苏州市人民政府 Copyright® 2002-2011 dfzb.suzhou.gov.cn All Rights Reserved. 主办单位：苏州市地方志工作办公室 （苏州市三香路998号5号楼西二楼 邮编：215004 电话：0512-68617302） 苏州市方志馆 （姑苏区廖"
+        },
+        {
+          "index": 16,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_beian.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "：0512-68617351） 苏ICP备10219514号-1 网站标识码：3205000051",
+          "context_after": "苏公网安备 32050802010735号 网站地图 网站支持 IPV6"
+        },
+        {
+          "index": 17,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/images/icon_mail_96.jpg",
+          "alt": "领导信箱",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "s:4px;\">IPV6",
+          "context_after": "<i"
+        },
+        {
+          "index": 18,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_ewm.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "zf/hd_xjly/xjly.shtml#/xjly/bmmail/write?dept_id=22d2be79e8fc4a3fbbe4651acaae3ce1\" target=\"_blank\">",
+          "context_after": "<img class="
+        },
+        {
+          "index": 19,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/footer_jiucuo.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\" href=\"/dfzb/xhtml/\">",
+          "context_after": "<img src=\"/dfzb/xhtml/stat"
+        },
+        {
+          "index": 20,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/images/footer_slh.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"jiucuo\" href=\"http://121.43.68.40/exposure/jiucuo.html?site_code=3205000051&url=http%3A%2F%2Fdfzb.suzhou.gov.cn%2F\">",
+          "context_after": "<img src=\"/dfzb/xhtml/static/images/new_footer_gat.p"
+        },
+        {
+          "index": 21,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_sydw.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"script\"); hm.src = \"https://hm.baidu.com/hm.js?cdc4685137fa0"
+        },
+        {
+          "index": 22,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_gat.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "mages/footer_slh.png\">",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"script\"); hm.src = \"https://hm.baidu.com/hm.js?cdc4685137fa072f64367a096232feeb\"; var s = document.getElementsByTagName(\"script\")"
+        }
+      ],
+      "extracted_text": "pages/dongshan-2025.txt"
+    },
+    {
+      "id": "dongshan-2019",
+      "title": "吴中名镇之东山镇",
+      "publisher": "苏州市地方志编纂委员会办公室",
+      "date": "2019-05-27",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:18.314Z",
+      "fetched_at_local": "2026-10-16 00:37:18 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/201905/4169ddc4eb2c49f18279bd6bca53351f.shtml",
+      "content_type": "text/html",
+      "bytes": 22897,
+      "sha256": "ec245b1498f19870c4ad311b08445042379f04cf3aab96184d5464c5d20f5a3f",
+      "raw_html": "pages/dongshan-2019.html",
+      "page_title": "\r\n\t\t\t『吴中名镇』之东山镇 - 苏州市地方志编纂委员会办公室\r\n\t\t",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_logo_title.gif",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "a href=\"javascript:;\" onclick=\"aria.start()\" title=\"无障碍阅读\">网站无障碍 适老版",
+          "context_after": "<a href=\"/dfzb/"
+        },
+        {
+          "index": 1,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_logo.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ria.oldFixedStart()\" title=\"适老版\" style=\"margin-left: 20px;\">适老版",
+          "context_after": "首页 走进苏州 </"
+        },
+        {
+          "index": 2,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073644_9241.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "b> 访问量：",
+          "context_after": "东山镇是著名的花果山、渔米乡，享有“中国碧螺春之乡”“中国太湖蟹之乡”的美誉。东山镇更是中国历史文化名镇、全国环境优美镇、国家4A级旅游景区、国家卫生镇、全国影视指定拍摄景地、中国纪录片小镇等多个国家级荣誉。 东山镇共有12个行政村、184个自然村，其中陆巷村、杨湾村、三山村为中国历史文化名村，陆巷村、杨湾村、三山村、翁巷村是中国传统村落。 <p st"
+        },
+        {
+          "index": 3,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073701_2573.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "山村为中国历史文化名村，陆巷村、杨湾村、三山村、翁巷村是中国传统村落。 方位 东山镇位于太湖东南岸，苏州西南部，距苏州古城区37千米。东山镇三面临水，一面连陆，东与吴江、南与浙江省湖州市、西与苏州市吴中区西山岛、北与苏州太湖国家旅游度假区隔湖相望，东北与临湖镇接壤。",
+          "context_after": "东山镇区位图 历史沿革 东周敬王十一年（前509），伍子胥筑苏州城，东山属吴国之地。秦王政二十五年（前222）置会稽郡，治吴县，东山为吴县辖地。唐代，东山成为建制镇。清乾隆元年（1736），在东山设太湖厅。1921年，废太湖厅，东山归属吴县。1953年，设震泽县，治东山。1959年，撤震泽县建置，并入吴县，东山属吴县。2001年2月，撤吴县市"
+        },
+        {
+          "index": 4,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073724_7978.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "中区、相城区，东山隶属苏州市吴中区。 名胜古迹 东山镇历史悠久，文化底蕴深厚，至今仍保存着启园、楠木厅、惠和堂、灵源寺等古建筑、古遗址，有春在楼、轩辕宫、紫金庵彩塑罗汉、明善堂、怀荫堂、凝德堂等全国重点文物保护单位，更有雨花胜境、莫厘峰等自然景观。",
+          "context_after": "春在楼，俗称雕花楼，主楼到处是雕刻，是典型的东山苏式砖雕 <p style=\"text-align:c"
+        },
+        {
+          "index": 5,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073734_3450.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "/p> 春在楼，俗称雕花楼，主楼到处是雕刻，是典型的东山苏式砖雕",
+          "context_after": "轩辕宫，始建于唐贞观二年，兴盛于南宋绍兴年间 <p style=\"text-align:center;"
+        },
+        {
+          "index": 6,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073742_2542.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "r;\"> 轩辕宫，始建于唐贞观二年，兴盛于南宋绍兴年间",
+          "context_after": "紫金庵彩塑罗汉，相传为南宋民间雕塑家雷潮夫妇雕刻 <p style=\"text-align:cente"
+        },
+        {
+          "index": 7,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073751_5050.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"> 紫金庵彩塑罗汉，相传为南宋民间雕塑家雷潮夫妇雕刻",
+          "context_after": "岱心湾大桥，蜿蜒曲折，宛如太湖边的一条玉带 <p style=\"text-align:center;\""
+        },
+        {
+          "index": 8,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073758_5094.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "er;\"> 岱心湾大桥，蜿蜒曲折，宛如太湖边的一条玉带",
+          "context_after": "启园主建筑镜湖楼 <p st"
+        },
+        {
+          "index": 9,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527073807_8383.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "xt-align:center;\"> 启园主建筑镜湖楼",
+          "context_after": "楠木厅，明代建筑 东山名人 东山人文荟萃、人才辈出，素以“进士之乡，教授之镇”著称，明清时期，出了2名状元、1名探花、56名进士，当代东山有4名 中国"
+        },
+        {
+          "index": 10,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074233_0075.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "align:left;\"> 王鏊（1449—1524） 字济之，号守溪，明成化十年（1474）中乡试第一名，第二年会试又第一，殿试为探花，授翰林院编修，后升任武英殿大学士、少傅兼太子太傅。正德四年（1509）因不满刘瑾专权辞官归里。王鏊墓地至今尚在，现被列为苏州市文物保护单位。",
+          "context_after": "王鏊 叶梦得（1077—1148） 字少蕴，号石林居士，东山叶氏先祖。北宋绍圣四年（1097）进士，著名政治家、军事家、文学家。叶梦得仕历哲宗、徽宗、钦宗、高宗四朝，官至左丞相，著有《建康集》《石林词》《石林诗话》等。 <span style=\"text"
+        },
+        {
+          "index": 11,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074247_6404.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "gn:left;\"> 叶梦得（1077—1148） 字少蕴，号石林居士，东山叶氏先祖。北宋绍圣四年（1097）进士，著名政治家、军事家、文学家。叶梦得仕历哲宗、徽宗、钦宗、高宗四朝，官至左丞相，著有《建康集》《石林词》《石林诗话》等。",
+          "context_after": "&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &en"
+        },
+        {
+          "index": 12,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074320_8372.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "text-align:center;\">吴有性（1582—1652） 字又可，洞庭东山人，明末医学家。明崇祯十四年（1641），南北各省瘟疫流行，吴有性倡言“守古法不合今病”，创立疠气病因学说，认为瘟疫的病因是一种不能见、闻、触到的疠气，疠气由口鼻而入。著有《瘟疫论》一书，对丰富瘟病学内容、促进瘟病学发展贡献很大。",
+          "context_after": "吴有性像 文学创作 东山的文化积淀自唐宋开始，至明清时盛极。古往今来，东山大家创作的诗集、文集数以千计。 <i"
+        },
+        {
+          "index": 13,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074333_3796.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "enter;\">吴有性像 文学创作 东山的文化积淀自唐宋开始，至明清时盛极。古往今来，东山大家创作的诗集、文集数以千计。",
+          "context_after": "东山作家部分作品 席时珞书法作品"
+        },
+        {
+          "index": 14,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074340_1500.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "xt-align:center;\"> 东山作家部分作品",
+          "context_after": "席时珞书法作品 <p sty"
+        },
+        {
+          "index": 15,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074346_4681.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ext-align:center;\"> 席时珞书法作品",
+          "context_after": "吴继涛油画《江南水乡》 东山风物 洞庭碧螺春 东山栽茶已有1000多年的历史，被誉为中国碧螺春之乡。洞庭碧螺春原名“吓煞人”香，自清康熙帝赐名后，声名日盛。2003年，洞庭碧螺春茶原产地获得了国家权威部门的"
+        },
+        {
+          "index": 16,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074404_3301.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "碧螺春原名“吓煞人”香，自清康熙帝赐名后，声名日盛。2003年，洞庭碧螺春茶原产地获得了国家权威部门的认证。为更好地做好碧螺春原产地保护，东山镇制定碧螺春原产地域品牌管理办法，开发“防伪监督”措施，成立专业合作社、注册商标。2009年，洞庭碧螺春成为地理标志驰名商标。洞庭碧螺春醇香怡人，享誉海内外。东山制作碧螺春要经过6道工艺，人工量大，成本高，是真正的“功夫茶”。",
+          "context_after": "▲碧螺春茶 枇杷 东山是中国四大枇杷产区之一，东山的枇杷栽培可以追溯到宋代。东山白沙枇杷果肉洁白，形态整齐，皮薄汁多，肉质细嫩，入口爽而不腻，古时就有“金银蜜罐”之称。东山白沙枇杷有照种、青种、灰种、白玉、冠玉等10多个品种。东山白玉枇杷在2007年获得江苏省农产品名牌产品称号，在第四届全国枇杷学会学术年会上获得“太湖东山杯"
+        },
+        {
+          "index": 17,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074414_8445.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "代。东山白沙枇杷果肉洁白，形态整齐，皮薄汁多，肉质细嫩，入口爽而不腻，古时就有“金银蜜罐”之称。东山白沙枇杷有照种、青种、灰种、白玉、冠玉等10多个品种。东山白玉枇杷在2007年获得江苏省农产品名牌产品称号，在第四届全国枇杷学会学术年会上获得“太湖东山杯”全国十大优质枇杷称号。2010~2012年，东山冠玉枇杷连续三年获江苏省优质水果评比金奖。",
+          "context_after": "▲东山白玉枇杷 杨梅 东山杨梅栽种历史悠久，有12个品种，其中乌紫杨梅最大、最甜、最紫，品质极佳。东山杨梅2008年获评“全国十大精品杨梅”。 <p style=\"tex"
+        },
+        {
+          "index": 18,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074424_0641.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "杨梅 东山杨梅栽种历史悠久，有12个品种，其中乌紫杨梅最大、最甜、最紫，品质极佳。东山杨梅2008年获评“全国十大精品杨梅”。",
+          "context_after": "▲东山杨梅 太湖蟹 东山的太湖蟹是中国有名的淡水蟹之一。东山养殖太湖蟹面积广、产量大，是“中国太湖蟹之乡”。太湖蟹体态丰腴，肉质饱满，膏黄细腻，鲜香味美，营养价值很高。 <img src=\"/szdoc/szsdfz/resource/attached/"
+        },
+        {
+          "index": 19,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074438_6034.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "border=\"0\"> ▲东山杨梅 太湖蟹 东山的太湖蟹是中国有名的淡水蟹之一。东山养殖太湖蟹面积广、产量大，是“中国太湖蟹之乡”。太湖蟹体态丰腴，肉质饱满，膏黄细腻，鲜香味美，营养价值很高。",
+          "context_after": "▲太湖蟹 太湖莼菜 太湖莼菜属于湖沼草本植物，是东山特有的水生植物，被誉为水中“碧螺春”。莼菜的嫩茎、嫩叶富含淀粉、蛋白质、脂肪、维生素等成分，营养价值很高，还可以药用。1999年被列为国家重点保护农业野生植物名录。 <img src=\"/szdoc/s"
+        },
+        {
+          "index": 20,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074448_1038.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "le=\"text-align:center;\">▲太湖蟹 太湖莼菜 太湖莼菜属于湖沼草本植物，是东山特有的水生植物，被誉为水中“碧螺春”。莼菜的嫩茎、嫩叶富含淀粉、蛋白质、脂肪、维生素等成分，营养价值很高，还可以药用。1999年被列为国家重点保护农业野生植物名录。",
+          "context_after": "▲太湖莼菜 东山湖羊 东山湖羊，肉质细嫩鲜美，膻味少，是东山的一大特产。2008年，东山湖羊入选首批国家级畜禽遗传资源保护名录，2014年，“东山湖羊”获国家地理标志商标。 <img src=\"/szdoc/szsdfz/resource/attache"
+        },
+        {
+          "index": 21,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074504_3746.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "order=\"0\"> ▲太湖莼菜 东山湖羊 东山湖羊，肉质细嫩鲜美，膻味少，是东山的一大特产。2008年，东山湖羊入选首批国家级畜禽遗传资源保护名录，2014年，“东山湖羊”获国家地理标志商标。",
+          "context_after": "▲东山湖羊 特色风俗 “猛将会” 传说猛将姓刘，曾奋不顾身驱赶蝗虫，后当上将军，封号为“猛将”。东山有猛将神像，始于明代，东山人的猛将神为“会”，村村都有，家家供奉，祈求他驱除灾害、风调雨顺。东山出“猛将会”活动主要集中在春节期间。2013年6月，东山“猛将会”被列入苏州市<sp"
+        },
+        {
+          "index": 22,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074533_6402.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ext-align:left;\">“猛将会” 传说猛将姓刘，曾奋不顾身驱赶蝗虫，后当上将军，封号为“猛将”。东山有猛将神像，始于明代，东山人的猛将神为“会”，村村都有，家家供奉，祈求他驱除灾害、风调雨顺。东山出“猛将会”活动主要集中在春节期间。2013年6月，东山“猛将会”被列入苏州市 非物质文化遗产 名录。",
+          "context_after": "正月“猛将会” 台阁 又名抬阁，是抬在肩上的戏台，流动在大街上的戏文，是一种以高空杂技表演为主的古老戏剧，表演者为5—8岁的孩童。东山台阁起源于宋代，盛行于清康熙年间（1662—1722），是东山民间艺术的瑰宝。2006年6月，被列入江苏省非物质文化遗产保护名录。 <p style=\"text-align:cent"
+        },
+        {
+          "index": 23,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074546_1515.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": ">正月“猛将会” 台阁 又名抬阁，是抬在肩上的戏台，流动在大街上的戏文，是一种以高空杂技表演为主的古老戏剧，表演者为5—8岁的孩童。东山台阁起源于宋代，盛行于清康熙年间（1662—1722），是东山民间艺术的瑰宝。2006年6月，被列入江苏省非物质文化遗产保护名录。",
+          "context_after": "台阁《珍珠塔》 莫厘峰庙会，每年农历六月十"
+        },
+        {
+          "index": 24,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074557_6487.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "质文化遗产保护名录。 台阁《珍珠塔》",
+          "context_after": "莫厘峰庙会，每年农历六月十八开始，游客都集中在莫厘峰朝拜观音、祈求幸福 <p style=\"text-"
+        },
+        {
+          "index": 25,
+          "url": "https://dfzb.suzhou.gov.cn/szdoc/szsdfz/resource/attached/20190527074606_6343.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"/szdoc/szsdfz/resource/attached/20190527074557_6487.jpg\" alt=\"\" border=\"0\"> 莫厘峰庙会，每年农历六月十八开始，游客都集中在莫厘峰朝拜观音、祈求幸福",
+          "context_after": "葑山寺荷花节，东山人每年农历六月二十四在东山葑山寺举办荷花节 得天独厚的环境让东山镇美得浑然天成，不论是作为底蕴深厚的历史文化名镇，还是物产丰饶的鱼米之乡，东山镇都是让人心旷神奇、身心向往的所在。 <div class=\"a"
+        },
+        {
+          "index": 26,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_danhui.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ref=\"/dfzb/xhtml/static/css/footer.css\" />",
+          "context_after": "江苏省人民政府 | 苏州市人民政府 Copyright® 2002-2011 dfzb.suzhou.gov.cn All Rights Re"
+        },
+        {
+          "index": 27,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_danhui.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ref=\"http://www.jiangsu.gov.cn/\" target=\"_blank\"> 江苏省人民政府 |",
+          "context_after": "苏州市人民政府 Copyright® 2002-2011 dfzb.suzhou.gov.cn All Rights Reserved. 主办单位：苏州市地方志工作办公室 （苏州市三香路998号5号楼西二楼 邮编：215004 电话：0512-68617302） 苏州市方志馆 （姑苏区廖"
+        },
+        {
+          "index": 28,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_beian.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "：0512-68617351） 苏ICP备10219514号-1 网站标识码：3205000051",
+          "context_after": "苏公网安备 32050802010735号 网站地图 网站支持 IPV6"
+        },
+        {
+          "index": 29,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/images/icon_mail_96.jpg",
+          "alt": "领导信箱",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "s:4px;\">IPV6",
+          "context_after": "<i"
+        },
+        {
+          "index": 30,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_ewm.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "zf/hd_xjly/xjly.shtml#/xjly/bmmail/write?dept_id=22d2be79e8fc4a3fbbe4651acaae3ce1\" target=\"_blank\">",
+          "context_after": "<img class="
+        },
+        {
+          "index": 31,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/footer_jiucuo.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\" href=\"/dfzb/xhtml/\">",
+          "context_after": "<img src=\"/dfzb/xhtml/stat"
+        },
+        {
+          "index": 32,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/images/footer_slh.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"jiucuo\" href=\"http://121.43.68.40/exposure/jiucuo.html?site_code=3205000051&url=http%3A%2F%2Fdfzb.suzhou.gov.cn%2F\">",
+          "context_after": "<img src=\"/dfzb/xhtml/static/images/new_footer_gat.p"
+        },
+        {
+          "index": 33,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_sydw.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"script\"); hm.src = \"https://hm.baidu.com/hm.js?cdc4685137fa0"
+        },
+        {
+          "index": 34,
+          "url": "https://dfzb.suzhou.gov.cn/dfzb/xhtml/static/images/new_footer_gat.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "mages/footer_slh.png\">",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"script\"); hm.src = \"https://hm.baidu.com/hm.js?cdc4685137fa072f64367a096232feeb\"; var s = document.getElementsByTagName(\"script\")"
+        }
+      ],
+      "extracted_text": "pages/dongshan-2019.txt"
+    },
+    {
+      "id": "huihetang",
+      "title": "惠和堂",
+      "publisher": "苏州市园林和绿化管理局",
+      "date": "2025-10-20",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:18.660Z",
+      "fetched_at_local": "2026-10-16 00:37:18 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "content_type": "text/html",
+      "bytes": 31226,
+      "sha256": "e8a18169295fb3b2bb7b9f18fe815f3cb154673fcc381e93aa4a1262fadd6898",
+      "raw_html": "pages/huihetang.html",
+      "page_title": "\t惠和堂 -\r\n        苏州市园林局",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/rzke5cfu3p5.jpg",
+          "alt": "",
+          "title": "后花园9.JPG",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "em; margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 1em; margin-bot"
+        },
+        {
+          "index": 1,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/acudlphvdmd.jpg",
+          "alt": "",
+          "title": "惠和堂1.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ign=\"center\">",
+          "context_after": "<p style=\"margin-top: 1em; margin-bot"
+        },
+        {
+          "index": 2,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/152brnbggul.jpg",
+          "alt": "",
+          "title": "惠和堂3.JPG",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ign=\"center\">",
+          "context_after": ""
+        },
+        {
+          "index": 3,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/gxiiofr3q5p.jpg",
+          "alt": "",
+          "title": "惠和堂4.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ign=\"center\">",
+          "context_after": "相关稿件"
+        }
+      ],
+      "extracted_text": "pages/huihetang.txt"
+    },
+    {
+      "id": "qiyuan",
+      "title": "启园",
+      "publisher": "苏州市园林和绿化管理局",
+      "date": "2025-10-17",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/e8588bd2ca084a0bbb97b907eff35e2f.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:19.050Z",
+      "fetched_at_local": "2026-10-16 00:37:19 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201903/e8588bd2ca084a0bbb97b907eff35e2f.shtml",
+      "content_type": "text/html",
+      "bytes": 31253,
+      "sha256": "e720697d7ac38c4a1b533243c131c73c27ab27e5155ae2bd914850ae1d091e0d",
+      "raw_html": "pages/qiyuan.html",
+      "page_title": "\t启园 -\r\n        苏州市园林局",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/1potqizytfq.jpg",
+          "alt": "",
+          "title": "DSC_4100.JPG",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "em; margin-bottom: 1em; text-indent: 2em; line-height: 1.875; font-family: 宋体; font-size: 12pt;\">",
+          "context_after": "<p style=\"margin-top: 1em; margin"
+        },
+        {
+          "index": 1,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/zpu35hi51ht.jpg",
+          "alt": "",
+          "title": "DSC_4112.JPG",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"center\">",
+          "context_after": ""
+        },
+        {
+          "index": 2,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/aoctpip2t0s.jpg",
+          "alt": "",
+          "title": "DSC_4117.JPG",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"center\">",
+          "context_after": "相关稿件"
+        }
+      ],
+      "extracted_text": "pages/qiyuan.txt"
+    },
+    {
+      "id": "museum-huihetang",
+      "title": "吴县繁华如许｜遍览世间乐土：自适与宅院",
+      "publisher": "吴文化博物馆（澎湃号机构发布）",
+      "date": "2021-11-23",
+      "url": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "fetched_at_utc": "2026-10-15T16:37:34.116Z",
+      "fetched_at_local": "2026-10-16 00:37:34 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 42276,
+      "sha256": "4a3674045b128aecc0d07689ff36b863cb8f2b791834e3a59756b0d06801f8c3",
+      "raw_html": "pages/museum-huihetang.html",
+      "page_title": "吴县繁华如许 | 遍览世间乐土：自适与宅院_澎湃号·湃客_澎湃新闻-The Paper",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://www.thepaper.cn/_next/static/media/logo_light.4da59bed.png",
+          "alt": "澎湃Logo",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "d1b2e62bf/_ssgManifest.js\" defer=\"\">",
+          "context_after": "<input class=\"ant-input search__hEmay\" type=\"text\" val"
+        },
+        {
+          "index": 1,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/596.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "an> 惠和堂 ，位于东山镇陆巷村文宁巷内。宅院坐北面南，四周高墙环围，是一处封闭式的群体民居建筑。单体建筑可分 东、中、西三路 。中路依次有轿厅、大厅、前住楼、后住楼；西路有客房、花厅、书楼及附房；东路有门第、仆房、账房、东小楼及下房。",
+          "context_after": "惠和堂俯瞰   <img alt=\"\" style=\"width:600px;\" loading=\"lazy\" data-src=\"https://imagepphcloud.thepaper.cn/pph/image/165/326/602.png\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" dat"
+        },
+        {
+          "index": 2,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/602.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "-src=\"https://imagepphcloud.thepaper.cn/pph/image/165/326/596.jpg\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" data-imageid=\"165326596\"> 惠和堂俯瞰",
+          "context_after": "平面图 三路建筑分别 承担起居、生活、杂务功能 ，相互配合，通过路与路间的备弄钩连，共同组织起整座大宅的勃勃生机。进与进间有天井相隔，形成单独的建筑单元。一个合适的 天井 ，可为宅院的神来之笔。   <img alt=\"\" style=\""
+        },
+        {
+          "index": 3,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/621.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "mage_desc\">平面图 三路建筑分别 承担起居、生活、杂务功能 ，相互配合，通过路与路间的备弄钩连，共同组织起整座大宅的勃勃生机。进与进间有天井相隔，形成单独的建筑单元。一个合适的 天井 ，可为宅院的神来之笔。",
+          "context_after": "怀荫堂天井 天井的大小需要相当的讲究，太近会影响到房屋采光，太远又徒增住宅长度。且由于冬夏之间太阳入射的角度会产生变化，好的天井需要做到夏天天井里尚有阴蔽，冬天廊檐下还得阳光。   <img alt=\"\" style=\"width:600px;\" loading=\"lazy\" data-src=\"https://imagepphcloud.thepaper.cn/pph/"
+        },
+        {
+          "index": 4,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/622.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "QABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" data-imageid=\"165326621\"> 怀荫堂天井 天井的大小需要相当的讲究，太近会影响到房屋采光，太远又徒增住宅长度。且由于冬夏之间太阳入射的角度会产生变化，好的天井需要做到夏天天井里尚有阴蔽，冬天廊檐下还得阳光。",
+          "context_after": "天井与日照的关系 工匠们自然不可能有现代技术手段的精确计算，营造天井时全凭自身功底，但他们每次都能寻到最优解。部分天井内设 叠石假山、盆景花木、建筑小品 ，形式丰富多变，一路数进厅堂，每跨一重皆是不同景致。   <img alt=\"\" style=\"width:600px;\" loading=\"lazy\""
+        },
+        {
+          "index": 5,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/638.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "geid=\"165326622\"> 天井与日照的关系 工匠们自然不可能有现代技术手段的精确计算，营造天井时全凭自身功底，但他们每次都能寻到最优解。部分天井内设 叠石假山、盆景花木、建筑小品 ，形式丰富多变，一路数进厅堂，每跨一重皆是不同景致。",
+          "context_after": "萧宅天井 惠和堂 的正厅与前住楼间的天井为 穿堂形式 ，留出两方较小的蟹眼天井，站在正厅内向后看，投下的光刚刚好目力所及的范围打亮，提供了自然的观景视角。   <img alt=\"\" style=\"width:600px;\" loadi"
+        },
+        {
+          "index": 6,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/639.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "326638\"> 萧宅天井 惠和堂 的正厅与前住楼间的天井为 穿堂形式 ，留出两方较小的蟹眼天井，站在正厅内向后看，投下的光刚刚好目力所及的范围打亮，提供了自然的观景视角。",
+          "context_after": "惠和堂穿堂 吴县作为文人汇聚之地，在宅院设计时书斋与书楼的地位自是非同寻常， 惠和堂的书楼 静观楼，位于西路第三进，居于中路的正厅和前住楼间； 木渎冯桂芬故居的书楼 同样靠在住楼一侧。如此靠近生活区域，房屋主人可在最短距离内投入学习状态。  <"
+        },
+        {
+          "index": 7,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/659.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "> 吴县作为文人汇聚之地，在宅院设计时书斋与书楼的地位自是非同寻常， 惠和堂的书楼 静观楼，位于西路第三进，居于中路的正厅和前住楼间； 木渎冯桂芬故居的书楼 同样靠在住楼一侧。如此靠近生活区域，房屋主人可在最短距离内投入学习状态。",
+          "context_after": "惠和堂书楼   <img alt=\"\" style=\"width:600px;\" loading=\"lazy\" data-src=\"https://imagepphcloud.thepaper.cn/pph/image/165/326/667.png\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" dat"
+        },
+        {
+          "index": 8,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/667.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "-src=\"https://imagepphcloud.thepaper.cn/pph/image/165/326/659.png\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" data-imageid=\"165326659\"> 惠和堂书楼",
+          "context_after": "冯桂芬故居书楼 而春在楼作为一座单路住宅，两个书斋位于第一进的二楼，东侧书斋为老爷所用，西侧为少爷书房，两间书斋隔着天井相望，老爷只需抬头，便可随时监督少爷学习。此等歹毒手段，当叫每个有过相似经历的学子脊背生寒。   <img alt=\"\" style=\"width:600px;\" loading=\"lazy\" data-src=\"https://imagepphclou"
+        },
+        {
+          "index": 9,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/669.gif",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "AAAAAAQABAAACAUwAOw==\" data-imageid=\"165326667\"> 冯桂芬故居书楼 而春在楼作为一座单路住宅，两个书斋位于第一进的二楼，东侧书斋为老爷所用，西侧为少爷书房，两间书斋隔着天井相望，老爷只需抬头，便可随时监督少爷学习。此等歹毒手段，当叫每个有过相似经历的学子脊背生寒。",
+          "context_after": "春在楼书房，动图 吴县地域，有着整个苏州市里罕有的山丘，从太湖起源，一路向北一路向东。地势上的变化，造就了 最为工于设计的住宅。 三祝堂 ，位于东山镇陆巷村嵩下。该堂建成年代无考，从现存建筑的梁架形 制与装饰看，当为明代晚期建筑。该堂整座宅院依山坡而"
+        },
+        {
+          "index": 10,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/684.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "，从现存建筑的梁架形 制与装饰看，当为明代晚期建筑。该堂整座宅院依山坡而建，单体建筑逐进得升，实测楼厅台基高54厘米，楼厅室内地坪比大厅基址地坪高46厘米，后进附房室内地坪比楼厅高1.6米，最后一进柴房的室内地坪竟比楼厅高出2.28米。 借着山势，后楼不为前楼遮挡，雨水就坡而下，为 采光与排水 两大难题提供了天然的解决方案。",
+          "context_after": "三祝堂线图 在 西山明月湾的敦伦堂 ，同样有一定的高差，从进门至正厅再到住楼，每过一进都需要跨上数级台阶。但敦伦堂给人的感觉，却和三祝堂完全不同。洞庭东山与洞庭西山，仅隔盈盈一水，却发展出了各有特色的民居样式。   <img alt=\"\" style=\"width:600px;\" loading=\"laz"
+        },
+        {
+          "index": 11,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/691.JPG",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "id=\"165326684\"> 三祝堂线图 在 西山明月湾的敦伦堂 ，同样有一定的高差，从进门至正厅再到住楼，每过一进都需要跨上数级台阶。但敦伦堂给人的感觉，却和三祝堂完全不同。洞庭东山与洞庭西山，仅隔盈盈一水，却发展出了各有特色的民居样式。",
+          "context_after": "敦伦堂 东山地势更为平坦，村镇规模较大，同样造就了更为舒展的民居；西山村落集中于山坳之中，村落本身细长，民居占地也显得紧凑。 敦伦堂相比 杨湾的怀荫堂 ，其面积缩小了近一半，正厅与住楼的高度也各削减了一米，可以说是村村皆不同。   <img alt=\"\" style=\"width:600px;"
+        },
+        {
+          "index": 12,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/706.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "> 敦伦堂 东山地势更为平坦，村镇规模较大，同样造就了更为舒展的民居；西山村落集中于山坳之中，村落本身细长，民居占地也显得紧凑。 敦伦堂相比 杨湾的怀荫堂 ，其面积缩小了近一半，正厅与住楼的高度也各削减了一米，可以说是村村皆不同。",
+          "context_after": "怀荫堂模型   <img alt=\"\" style=\"width:600px;\" loading=\"lazy\" data-src=\"https://imagepphcloud.thepaper.cn/pph/image/165/326/711.jpg\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" dat"
+        },
+        {
+          "index": 13,
+          "url": "https://imagepphcloud.thepaper.cn/pph/image/165/326/711.jpg",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "-src=\"https://imagepphcloud.thepaper.cn/pph/image/165/326/706.jpg\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==\" data-imageid=\"165326706\"> 怀荫堂模型",
+          "context_after": "敦伦堂模型 这便是吴县的住宅了，星散在村镇的各处，沿着水岸或匿于巷弄，源自明清又更向未来流淌。迎来送往的客人从衣着长衫到手持单反，不管怀着何种时代的思潮与审美，在看到古宅古建的一瞬间皆是惊异，能造就这等奇迹的根源，在于匠人只追求了一条真理：建造住宅，是为了生活。 <div class=\"wrapper__y"
+        },
+        {
+          "index": 14,
+          "url": "https://www.thepaper.cn/_next/static/media/logo_rebang.0c68301c.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "MoVAJ commonCursor\"># 博物馆",
+          "context_after": "<img src=\"/_next/static/media/pp_rep"
+        },
+        {
+          "index": 15,
+          "url": "https://www.thepaper.cn/_next/static/media/pp_report.644295c3.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "png\"/>",
+          "context_after": "查看更多 <div class=\""
+        },
+        {
+          "index": 16,
+          "url": "https://www.thepaper.cn/_next/static/media/logo_kuaixun.d8f19ada.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"/_next/static/media/pp_report.644295c3.png\"/> 查看更多",
+          "context_after": "查看更多"
+        },
+        {
+          "index": 17,
+          "url": "https://www.thepaper.cn/_next/static/media/logo_104x44_tianzi_white@2x.b88d1296.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "t/static/media/logo_kuaixun.d8f19ada.png\"/> 查看更多",
+          "context_after": "开始答题 <div class=\"handpick_top__XAAfk\""
+        },
+        {
+          "index": 18,
+          "url": "https://www.thepaper.cn/_next/static/media/logo_bjjx.667644a5.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "7\"> 开始答题",
+          "context_after": "查看更多 <im"
+        },
+        {
+          "index": 19,
+          "url": "https://www.thepaper.cn/_next/static/media/scalecode.ed629179.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "content__ZKMJ4\"> 查看更多",
+          "context_after": "扫码下载 澎湃新闻客户端 Android版 iPhone版 <a href=\""
+        },
+        {
+          "index": 20,
+          "url": "https://www.thepaper.cn/_next/static/media/wechat.ebe50fdd.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "/span> 澎湃新闻微博 澎湃新闻公众号",
+          "context_after": "澎湃新闻抖音号 派生万物开放平台 <"
+        },
+        {
+          "index": 21,
+          "url": "https://www.thepaper.cn/_next/static/media/label_sm_90030.2e849b63.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "电信业务经营许可证：沪B2-2017116 © 2014- 2026 上海东方报业有限公司",
+          "context_after": "反馈 <d"
+        },
+        {
+          "index": 22,
+          "url": "https://www.thepaper.cn/_next/static/media/wuzhangai.a66118af.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "lass=\"renzheng__e4Lym\">",
+          "context_after": "反馈 <script i"
+        }
+      ],
+      "extracted_text": "pages/museum-huihetang.txt"
+    },
+    {
+      "id": "heritage-register",
+      "title": "苏州市各级文物保护单位名录",
+      "publisher": "苏州市文化广电和旅游局",
+      "date": null,
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:34.490Z",
+      "fetched_at_local": "2026-10-16 00:37:34 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml",
+      "content_type": "text/html",
+      "bytes": 2979303,
+      "sha256": "9342ef44d47005fff627e9db25b790cc8c02a0dacb8327d03b73dc73d65318eb",
+      "raw_html": "pages/heritage-register.html",
+      "page_title": "",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/xhtml/images/logo.png",
+          "alt": "",
+          "title": "",
+          "html_width": "755",
+          "html_height": "70",
+          "context_before": "适老版",
+          "context_after": "首页  |  <a href=\"h"
+        },
+        {
+          "index": 1,
+          "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/xhtml/images/beian.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "联系我们：0512-69823030（夜间及休息日） 苏ICP备10219514号-1 网站标识码：3205000008",
+          "context_after": "苏公网安备 32050802011059号 document.write(unescape(\"%3Cspan id='_ideCona"
+        },
+        {
+          "index": 2,
+          "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/xhtml/images/zfwzjc.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "ext/javascript'%3E%3C/script%3E\"));",
+          "context_after": "$(function () { $(\"#fy\").smartFloat(); });"
+        },
+        {
+          "index": 3,
+          "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/xhtml/images/footer_slh.png",
+          "alt": "",
+          "title": "",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "5px;\">",
+          "context_after": "var _hmt = _hmt || []; (function() { var hm = document.createElement(\"sc"
+        }
+      ],
+      "extracted_text": "pages/heritage-register.txt"
+    },
+    {
+      "id": "dongshan-scenic",
+      "title": "东山景区",
+      "publisher": "苏州市园林和绿化管理局",
+      "date": "2019-12-24",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/fjmsq/201912/ac947bc93b954ecd9f7fe59f441f3329.shtml",
+      "fetched_at_utc": "2026-10-15T16:37:35.221Z",
+      "fetched_at_local": "2026-10-16 00:37:35 +08:00",
+      "license_status": "未确认开放许可；仅内部研究参考",
+      "http_status": 200,
+      "final_url": "https://ylj.suzhou.gov.cn/szsylj/fjmsq/201912/ac947bc93b954ecd9f7fe59f441f3329.shtml",
+      "content_type": "text/html",
+      "bytes": 30172,
+      "sha256": "2d4438c5ce99621648caff1857648c61a597ce54897213f96c85dfd91cee2f6a",
+      "raw_html": "pages/dongshan-scenic.html",
+      "page_title": "\t东山景区 -\r\n        苏州市园林局",
+      "status": "downloaded",
+      "image_candidates": [
+        {
+          "index": 0,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/fle20kkuexg.png",
+          "alt": "64B03396DFB39D8923E5A3417255C687.png",
+          "title": "64B03396DFB39D8923E5A3417255C687.png",
+          "html_width": "600",
+          "html_height": "449",
+          "context_before": "下遗迹，今存胥王庙、紫金庵、灵源寺、法海寺、白雪居、葑山禅院及近代园林启园等，紫金庵现为国家级文保单位。境内现存大量明、清民居古建筑群，造型、木雕、砖刻、彩绘等各具地方特色。",
+          "context_after": ""
+        },
+        {
+          "index": 1,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/roqam21zd1r.jpg",
+          "alt": "",
+          "title": "DSC_0003_副本.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "text-align: center\">",
+          "context_after": ""
+        },
+        {
+          "index": 2,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/2lntocsdctb.jpg",
+          "alt": "",
+          "title": "ce0b9c8e26684289a42c087a70bd591c[1].jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": ".png\" alt=\"64B03396DFB39D8923E5A3417255C687.png\" width=\"600\" height=\"449\"/>",
+          "context_after": "<p style=\"text-align: ce"
+        },
+        {
+          "index": 3,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/cj0gtf1iibb.jpg",
+          "alt": "",
+          "title": "DSC_0002_副本.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "loadfile/roqam21zd1r.jpg\" title=\"DSC_0003_副本.jpg\"/>",
+          "context_after": "<p"
+        },
+        {
+          "index": 4,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/cezn3np0ren.jpg",
+          "alt": "",
+          "title": "DSC_0008_副本.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "loadfile/2lntocsdctb.jpg\" title=\"ce0b9c8e26684289a42c087a70bd591c[1].jpg\"/>",
+          "context_after": "<p st"
+        },
+        {
+          "index": 5,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/2ugo5zsg1rw.jpg",
+          "alt": "DSC_0008_副本.jpg",
+          "title": "DSC_0008_副本.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "mg src=\"/szdoc/szsylj/uploadfile/cj0gtf1iibb.jpg\" title=\"DSC_0002_副本.jpg\"/>",
+          "context_after": "<p style=\"text-align: cente"
+        },
+        {
+          "index": 6,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/p43iamrxvlw.jpg",
+          "alt": "",
+          "title": "DSC_0528.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "uploadfile/cezn3np0ren.jpg\" title=\"DSC_0008_副本.jpg\"/>",
+          "context_after": "<p"
+        },
+        {
+          "index": 7,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/y5rocu2jdn2.jpg",
+          "alt": "",
+          "title": "DSC_0081_副本.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "lj/uploadfile/2ugo5zsg1rw.jpg\" title=\"DSC_0008_副本.jpg\" alt=\"DSC_0008_副本.jpg\"/>",
+          "context_after": "<p st"
+        },
+        {
+          "index": 8,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/5y5ssf2syh5.jpg",
+          "alt": "DSC_0081_副本.jpg",
+          "title": "DSC_0081_副本.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": ">",
+          "context_after": "<p style=\"text-al"
+        },
+        {
+          "index": 9,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/4ptl2emdm40.jpg",
+          "alt": "",
+          "title": "DSC05855.JPG",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "uploadfile/y5rocu2jdn2.jpg\" title=\"DSC_0081_副本.jpg\"/>",
+          "context_after": "<p style=\"text-al"
+        },
+        {
+          "index": 10,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/q5kz2cnw5ns.jpg",
+          "alt": "",
+          "title": "mmexport1452584767841.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "lj/uploadfile/5y5ssf2syh5.jpg\" title=\"DSC_0081_副本.jpg\" alt=\"DSC_0081_副本.jpg\"/>",
+          "context_after": "<img"
+        },
+        {
+          "index": 11,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/zvbz1wi4qap.jpg",
+          "alt": "",
+          "title": "太湖蓬莱三山岛4.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"/szdoc/szsylj/uploadfile/4ptl2emdm40.jpg\" title=\"DSC05855.JPG\"/>",
+          "context_after": "<p style=\"text-align: c"
+        },
+        {
+          "index": 12,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/oqp2nkuq31q.jpg",
+          "alt": "",
+          "title": "图片13.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "\"/szdoc/szsylj/uploadfile/q5kz2cnw5ns.jpg\" title=\"mmexport1452584767841.jpg\"/>",
+          "context_after": ""
+        },
+        {
+          "index": 13,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/j2xn0mk4nf5.jpg",
+          "alt": "图片13.jpg",
+          "title": "图片13.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "center\">",
+          "context_after": "<sp"
+        },
+        {
+          "index": 14,
+          "url": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/lhmpehxfcd0.jpg",
+          "alt": "",
+          "title": "中景.jpg",
+          "html_width": null,
+          "html_height": null,
+          "context_before": "src=\"/szdoc/szsylj/uploadfile/oqp2nkuq31q.jpg\" title=\"图片13.jpg\"/>",
+          "context_after": "相关稿件"
+        }
+      ],
+      "extracted_text": "pages/dongshan-scenic.txt"
+    }
+  ]
+}

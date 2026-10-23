@@ -1,0 +1,20 @@
+[
+  {"id":"01-luxiang-setting","source_id":"luxiang-2026","candidate_index":2,"label":"陆巷湖山与聚落图（待目视核验）","topic":"聚落与湖山"},
+  {"id":"02-luxiang-hanshan-port","source_id":"luxiang-2026","candidate_index":3,"label":"寒山港","topic":"河港与街巷"},
+  {"id":"03-luxiang-huilaotang","source_id":"luxiang-2026","candidate_index":4,"label":"会老堂","topic":"古建体量与构件"},
+  {"id":"04-luxiang-zishi-street","source_id":"luxiang-2026","candidate_index":5,"label":"紫石街","topic":"街巷与牌坊"},
+  {"id":"05-huihetang-garden","source_id":"huihetang","candidate_index":0,"label":"惠和堂后花园","topic":"院落与园林"},
+  {"id":"06-huihetang-01","source_id":"huihetang","candidate_index":1,"label":"惠和堂图1","topic":"院落与屋顶"},
+  {"id":"07-huihetang-03","source_id":"huihetang","candidate_index":2,"label":"惠和堂图3","topic":"建筑外观"},
+  {"id":"08-huihetang-04","source_id":"huihetang","candidate_index":3,"label":"惠和堂图4","topic":"建筑外观"},
+  {"id":"09-qiyuan-4100","source_id":"qiyuan","candidate_index":0,"label":"启园图4100","topic":"湖滨园林"},
+  {"id":"10-qiyuan-4112","source_id":"qiyuan","candidate_index":1,"label":"启园图4112","topic":"湖滨园林"},
+  {"id":"11-qiyuan-4117","source_id":"qiyuan","candidate_index":2,"label":"启园图4117","topic":"湖滨园林"},
+  {"id":"12-chunzailou","source_id":"dongshan-2019","candidate_index":4,"label":"春在楼（雕花楼）","topic":"古建与门楼"},
+  {"id":"13-xuanyuangong","source_id":"dongshan-2019","candidate_index":5,"label":"东山轩辕宫","topic":"寺庙建筑"},
+  {"id":"14-daixinwan-bridge","source_id":"dongshan-2019","candidate_index":7,"label":"岱心湾大桥","topic":"湖岸与道路"},
+  {"id":"15-nanmuting","source_id":"dongshan-2019","candidate_index":9,"label":"楠木厅","topic":"古建门墙"},
+  {"id":"16-huihetang-overview","source_id":"museum-huihetang","candidate_index":1,"label":"惠和堂俯瞰","topic":"院落与屋顶总貌"},
+  {"id":"17-huihetang-plan","source_id":"museum-huihetang","candidate_index":2,"label":"惠和堂平面图","topic":"院落平面"},
+  {"id":"18-huihetang-courtyard","source_id":"museum-huihetang","candidate_index":6,"label":"惠和堂穿堂","topic":"天井与穿堂"}
+]

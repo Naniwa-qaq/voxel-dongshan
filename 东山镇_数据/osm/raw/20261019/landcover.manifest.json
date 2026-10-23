@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-10-19T07:26:07.898274+00:00",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "bbox_is_administrative_boundary": false,
+  "query": "[out:json][timeout:180][maxsize:134217728];\n(\nnwr[landuse](30.98,120.28,31.22,120.50);\nnwr[natural][natural!=water](30.98,120.28,31.22,120.50);\n);\nout body geom;\n",
+  "source_license": "ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "all_tags_on_selected_elements_retained": true,
+  "relation_scope": "out body geom; available member geometries, not recursive reference completion",
+  "transport": {
+    "http_code": 200,
+    "content_type": "application/json",
+    "exitcode": 0,
+    "errormsg": null,
+    "size_download": 190779,
+    "time_total": 42.013501,
+    "url_effective": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%5Bmaxsize%3A134217728%5D%3B%0D%0A%28%0D%0Anwr%5Blanduse%5D%2830.98%2C120.28%2C31.22%2C120.50%29%3B%0D%0Anwr%5Bnatural%5D%5Bnatural%21%3Dwater%5D%2830.98%2C120.28%2C31.22%2C120.50%29%3B%0D%0A%29%3B%0D%0Aout+body+geom%3B%0D%0A"
+  },
+  "status": "validated",
+  "file": "landcover.json",
+  "bytes": 965696,
+  "sha256": "f376b499765e0a043e532eed724c64c8930f250817c9fafaa7ca0f42e5740283",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-19T07:25:03Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "element_counts": {
+    "node": 5,
+    "way": 505,
+    "relation": 6
+  },
+  "finished_utc": "2026-10-19T07:26:50.050524+00:00"
+}

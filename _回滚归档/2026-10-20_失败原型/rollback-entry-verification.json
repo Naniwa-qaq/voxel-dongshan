@@ -1,0 +1,16 @@
+{
+  "dateLocal": "2026-10-20",
+  "activePrototypeDirectoryFiles": ["index.html"],
+  "activeSceneJsExists": false,
+  "activeSceneBuilderExists": false,
+  "oldEntryImportsSceneOrVendorScripts": false,
+  "oldEntryRedirectTarget": "东山镇_数据/数据入口.html",
+  "redirectTargetFileExists": true,
+  "redirectNavigationObservedInBrowserLog": true,
+  "browserCheckCaveat": "The test wait used a raw Chinese URL glob and timed out against the percent-encoded file URL. The navigation log recorded the expected data-entry destination. No further UI navigation attempted after the browser tool rejected file-protocol authority.",
+  "userBrowserTabReloadedByAgent": false,
+  "archiveFileHashesVerified": true,
+  "archivedFiles": 16,
+  "sourceDataFilesChecked": 106,
+  "sourceDataFilesChanged": 0
+}

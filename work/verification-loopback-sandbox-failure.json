@@ -1,0 +1,4 @@
+{
+  "error": "Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at http://127.0.0.1:8876/%E4%B8%9C%E5%B1%B1%E9%95%87_%E9%87%8D%E5%88%B6%E7%89%88/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8876/%E4%B8%9C%E5%B1%B1%E9%95%87_%E9%87%8D%E5%88%B6%E7%89%88/\", waiting until \"load\"\u001b[22m\n",
+  "debug": null
+}

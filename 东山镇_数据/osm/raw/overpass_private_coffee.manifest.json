@@ -1,0 +1,33 @@
+{
+  "request_started_utc": "2026-10-15T16:40:28.589113+00:00",
+  "endpoint": "https://overpass.private.coffee/api/interpreter",
+  "bbox_wgs84": [
+    120.28,
+    30.98,
+    120.5,
+    31.22
+  ],
+  "bbox_order": "west,south,east,north",
+  "selection_scope": "collection envelope, not an administrative boundary",
+  "query_file": "raw\\dongshan_bbox_query.overpassql",
+  "method": "POST",
+  "server_timeout_seconds": 180,
+  "client_timeout_seconds": 210,
+  "max_response_bytes": 104857600,
+  "attribution": "© OpenStreetMap contributors",
+  "data_license": "ODbL 1.0",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "query_includes_all_tags_on_selected_elements": true,
+  "relation_note": "out geom returns available member geometries; this is not a recursively reference-complete OSM extract",
+  "status": "failed",
+  "error": "HTTPError: HTTP Error 500: Internal Server Error",
+  "http_status": 500,
+  "response_headers": {
+    "Server": "nginx/1.26.3",
+    "Date": "Thu, 15 Oct 2026 16:40:31 GMT",
+    "Content-Type": "text/html; charset=iso-8859-1",
+    "Content-Length": "646",
+    "Connection": "close"
+  },
+  "request_finished_utc": "2026-10-15T16:40:30.743895+00:00"
+}

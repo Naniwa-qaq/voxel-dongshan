@@ -1,0 +1,96 @@
+{
+  "errors": [],
+  "diagnostics": {
+    "quality": {
+      "canopyCount": 9680,
+      "roofGroups": 1826,
+      "roofUnits": 1826,
+      "sourceBuildings": 17119
+    },
+    "info": {
+      "triangles": 491354,
+      "calls": 49,
+      "geometries": 49
+    },
+    "camera": {
+      "position": [
+        399.35215996089005,
+        9909.279883531011,
+        17299.610445563438
+      ],
+      "target": [
+        1200,
+        70,
+        1300
+      ],
+      "distance": 18800
+    },
+    "fps": 2,
+    "data": {
+      "schemaVersion": 1,
+      "title": "太湖东山 · 制图综合三维原型",
+      "crs": "EPSG:32651",
+      "origin": [
+        248600,
+        3440600
+      ],
+      "bounds": [
+        -8300,
+        -7500,
+        8200,
+        7400
+      ],
+      "displayBboxWgs84": [
+        120.28,
+        31.008,
+        120.449,
+        31.138
+      ],
+      "focusCenter": [
+        2198.7,
+        868.3
+      ],
+      "landBounds": [
+        -8200,
+        -6700,
+        8200,
+        7400
+      ],
+      "minHeight": -3.1,
+      "maxHeight": 283.62,
+      "coordinateConvention": "x=easting-originE; z=originN-northing; y=source height metres; terrain rows advance south (+z)",
+      "verticalDatum": "EGM2008 (EPSG:3855), metres",
+      "terrainType": "DSM includes roofs and vegetation; not bare-earth DTM",
+      "verticalExaggerationApplied": false,
+      "focusBoundary": {
+        "osmId": "relation/7760656",
+        "name": "东山镇",
+        "role": "display selection using OSM boundary, not authoritative cadastral/legal boundary"
+      },
+      "focusMaskPolicy": "landMask is actual source-derived land/water classification. focusMask separately flags Dongshan display focus. Hide or fade land outside focusMask without changing it to water.",
+      "waterLevelHint": {
+        "value": 0.5,
+        "datum": "EGM2008",
+        "type": "static visual reference from prevalent source DSM mapped-water pixel height; not current observed lake level"
+      },
+      "sources": {
+        "terrain": "Copernicus GLO30 AWS 2021 release; underlying tile acquisitions 2011–2014",
+        "landcover": "ESA WorldCover 2021 v200",
+        "roadsWaterPois": "OSM snapshot 2026-10-19",
+        "buildings": "Overture Maps release 2026-09-23.1"
+      },
+      "attribution": [
+        "© OpenStreetMap contributors (ODbL 1.0)",
+        "Overture Maps Foundation; see source per-feature attribution and local data ledger",
+        "Copernicus DEM: produced using Copernicus WorldDEM-30",
+        "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium"
+      ],
+      "limitations": [
+        "Roof groups and inferred heights are display symbols, not measured buildings.",
+        "Water/road network completeness and full topology are not certified.",
+        "No missing historic landmark or playground geometry has been invented.",
+        "Land cover and DSM reflect older source periods, not a 2026 ground survey."
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "project": "东山镇制图综合三维景观",
+  "collection_date_local": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "phase": "data_collection_before_cartographic_generalization_and_modeling",
+  "aoi": {
+    "crs": "EPSG:4326",
+    "bbox_west_south_east_north": [
+      120.28,
+      30.98,
+      120.5,
+      31.22
+    ],
+    "role": "collection_envelope",
+    "description": "覆盖东山主体及周边的工作包络；不是行政边界、景区边界或最终作品范围。包含周边数据，后续按实际对象与作品范围筛选。"
+  },
+  "principles": [
+    "保留原始资料与标签，派生文件单独保存",
+    "当前不执行民房聚合、水系删减或三维建模",
+    "建筑矢量用于聚落统计、参考与后续概括，不要求逐栋复原",
+    "原始数据与显示几何分开，来源日期、许可、坐标与质量缺口可追溯",
+    "不下载商业底图瓦片、不提取封闭服务内部资产、不申请新账号或付费"
+  ],
+  "subdirectories": {
+    "terrain": "高程原始数据、区域裁剪与质量记录",
+    "landcover": "土地覆盖区域资料",
+    "osm": "OSM原始资料与区域矢量",
+    "overture": "Overture区域建筑、地点及来源记录",
+    "references": "重点对象公开网页与内部研究参考图",
+    "qa": "实际数据范围、计数、空值与空间关系检查",
+    "_runtime": "项目独立处理库，不属于地理数据，不应作为交付数据打包"
+  },
+  "current_completion_and_audit_date_local": "2026-10-19",
+  "status": "first_batch_acquired_and_audited",
+  "catalog": "catalog.json",
+  "entry_page": "数据入口.html",
+  "working_package": "working/dongshan_sources_utm51n.gpkg",
+  "acquisition_date_policy": "Original acquisition timestamps retained. Terrain, WorldCover and references reused and audited; OSM and Overture newly acquired on 2026-10-19."
+}

@@ -1,0 +1,20 @@
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Length: 182960
+Connection: keep-alive
+Accept-Ranges: bytes
+Server: AmazonS3
+Last-Modified: Tue, 13 Oct 2026 20:14:56 GMT
+x-amz-server-side-encryption: AES256
+x-amz-storage-class: INTELLIGENT_TIERING
+Date: Sun, 18 Oct 2026 21:39:38 GMT
+ETag: "bddb75a82a1a831bff847c16ce0be524"
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 f5d031970cd78be20ddd6e0bb21ea2b0.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: LAX53-P5
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: gYNg92LniZbHOHrLoLBu7ABgwQy4lPcE_VDX91RrWBN4M4pCxUKfJw==
+Age: 34554
+Vary: Origin
+

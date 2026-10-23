@@ -1,0 +1,274 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>云山巨城：程序架构与仿作提取笔记</title><style>
+  :root{color-scheme:light;--paper:#f4f0e6;--ink:#233730;--muted:#61736a;--accent:#2a6c58;--line:#d8dfd5}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Microsoft YaHei','Noto Sans SC',sans-serif;line-height:1.85;font-size:16px}
+  header{padding:22px 32px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}header strong{font-size:19px}header span{font-size:13px;color:var(--muted)}
+  .layout{max-width:1320px;margin:auto;display:grid;grid-template-columns:240px minmax(0,1fr);gap:38px;padding:34px 28px 80px}
+  aside{align-self:start;position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;font-size:13px}aside nav{display:flex;flex-direction:column;gap:9px}aside a{line-height:1.6;color:var(--muted)}aside b{display:block;margin:22px 0 10px;color:var(--ink)}
+  main{min-width:0;max-width:960px}h1{font-size:32px;line-height:1.35;letter-spacing:.02em;margin:0 0 24px}h2{font-size:24px;line-height:1.5;margin:52px 0 18px;padding-top:12px;border-top:1px solid var(--line)}h3{font-size:19px;margin:30px 0 12px}p{margin:16px 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  img{display:block;max-width:100%;height:auto;margin:24px auto}main img[src*='17-interface-mobile']{max-width:390px}code{font-family:Consolas,'Microsoft YaHei',monospace;font-size:.87em;overflow-wrap:anywhere}pre{overflow:auto;background:#e7eae0;padding:20px;line-height:1.65;border-radius:5px}pre code{overflow-wrap:normal}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.75;margin:22px 0}th{text-align:left;background:#e6ebdf;font-weight:600}th,td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}.table-scroll{overflow:auto}ul,ol{padding-left:26px}li{margin:7px 0}blockquote{margin:22px 0;padding:2px 22px;border-left:3px solid var(--accent);color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 32px;color:var(--muted);font-size:13px}.swatch{display:inline-block;width:13px;height:13px;margin-right:5px;vertical-align:-1px;border:1px solid rgba(0,0,0,.15)}
+  @media(max-width:900px){.layout{grid-template-columns:1fr;padding:24px 18px 50px;gap:24px}aside{position:static;max-height:none}aside .toc{display:none}aside nav{flex-direction:row;flex-wrap:wrap;gap:8px 18px}aside b{margin:0 0 10px}header{padding:18px}h1{font-size:27px}h2{font-size:22px}table{min-width:570px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style></head><body><header><strong>云山巨城 · 学习档案</strong><span>源码事实 / 实际画面 / 仿作方法 · 2026-10-14</span></header><div class="layout"><aside><b>阅读入口</b><nav><a href="../学习手册.html">综合解析</a><a href="../notes/01-美术风格详解.html">美术详解</a><a href="../notes/02-程序架构详解.html">架构详解</a><a href="../notes/03-学习与仿作练习.html">练习路线</a><a href="../source/云山巨城.html">打开原作</a><a href="02-程序架构详解.md">Markdown 源稿</a></nav><div class="toc"><b>本页目录</b><nav><a href="#section-1">1. 核心定位</a><a href="#section-2">2. 单文件中的逻辑模块</a><a href="#section-3">3. 启动数据流</a><a href="#section-4">4. 世界、地理和城市布局</a><a href="#section-5">5. 网格、材质和渲染机制</a><a href="#section-6">6. 时间、相机和交互</a><a href="#section-7">7. 性能策略与维护限制</a><a href="#section-8">8. 学习和仿作的提取顺序</a></nav></div></aside><main><h1>云山巨城：程序架构与仿作提取笔记</h1>
+<p>分析对象：<code>C:\Users\YHJ\.codex\attachments\c80f289b-3ff1-429b-be36-156a9470fa95\云山巨城.html</code>。下文行号均指这份原始文件，采用从 1 开始的源码行号。本笔记仅依据静态代码；没有浏览器运行结果，也不把源码中的阈值当作实际性能测量。</p>
+<h2 id="section-1">1. 核心定位</h2>
+<p>作品可以理解为一个手工设计的山城空间，经过程序化细化和原生 WebGL2 着色，成为可游览的动态景观。它不是先导入一个现成城市模型再展示，而是在启动时生成地形、道路、建筑、植物、云与灯光数据。</p>
+<p>“体素”主要是一套造型和采样语言，不是贯穿全系统的三维体素存储：</p>
+<ul>
+<li>自然地形用 1280 × 1280 的二维高度场，每个平面格为 1m；初始自然高度向 1m 量化（340、528–534、603–604）。一个 <code>(x,z)</code> 只有一个地表高度，因此天然不表达洞穴或地形悬挑。</li>
+<li>建筑构件统一对齐 0.2m 网格，但通常直接生成一个跨多个体素的长方体表面，而不是保存每个体素占用值（156、160、777–790）。</li>
+<li>近看时的 0.2m 表面颗粒、边线、砌石与屋瓦纹路主要来自片元着色器（2814–2833），不需要为每格建立实体几何。</li>
+<li>云是少量局部三维占用采样的例外：椭球团合成占用，随后只发出暴露的面（2572–2593）。</li>
+</ul>
+<p>这套“较粗几何 + 细颗粒着色 + 人工主构图”的组合，比整座城逐块方砖存储更适合学习本作的视觉机制。</p>
+<h2 id="section-2">2. 单文件中的逻辑模块</h2>
+<p>所有 JavaScript 包在一个立即执行函数中；注释中的 <code>.js</code> 是逻辑分区名，并非实际独立文件。<code>window.YS = App</code> 是唯一显式公开的调试入口（3777）。</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>逻辑分区</th>
+<th align="right">起始行</th>
+<th>责任与主要入口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>util.js</td>
+<td align="right">154</td>
+<td>网格量化、确定性随机、噪声、路径、矩阵；<code>RNG</code> 173，<code>noise2</code> 196，<code>fbm</code> 204，<code>ridged</code> 209，<code>smoothPath</code> 248，<code>M4</code> 276</td>
+</tr>
+<tr>
+<td>world.js</td>
+<td align="right">339</td>
+<td>地理控制数据、地形塑形、水域和用地栅格；<code>World</code> 525</td>
+</tr>
+<tr>
+<td>mesh.js</td>
+<td align="right">718</td>
+<td>20 字节顶点、四边形、轴向盒、局部坐标和地形/水网格；<code>MeshBuilder</code> 723，<code>Frame</code> 804</td>
+</tr>
+<tr>
+<td>arch.js</td>
+<td align="right">958</td>
+<td>可复用构件及建筑类型；<code>roof</code> 980，民居/商铺/殿/楼/亭/塔/牌坊 1142–1422</td>
+</tr>
+<tr>
+<td>city.js</td>
+<td align="right">1437</td>
+<td>道路、台阶、桥、城墙、地块放置和各城区域；<code>City</code> 1440，<code>buildCity</code> 1875</td>
+</tr>
+<tr>
+<td>flora.js</td>
+<td align="right">2385</td>
+<td>生态布树与近/远树模型；<code>plantTrees</code> 2397，<code>buildTreeNear</code> 2443，<code>buildTreeFar</code> 2508</td>
+</tr>
+<tr>
+<td>atmos.js</td>
+<td align="right">2526</td>
+<td>点灯晕、水中灯晕、瀑布水汽、云、两层云海、远山；<code>buildAtmos</code> 2527</td>
+</tr>
+<tr>
+<td>env.js</td>
+<td align="right">2662</td>
+<td>将时刻转化为天空、主光、雾、曝光和灯火环境；<code>computeEnv</code> 2698</td>
+</tr>
+<tr>
+<td>render.js</td>
+<td align="right">2751</td>
+<td>6 组 GLSL 程序、GPU 上传、视锥和多阶段绘制；<code>Renderer</code> 3021</td>
+</tr>
+<tr>
+<td>scene.js</td>
+<td align="right">3289</td>
+<td>64m 分块、地形与树的 LOD、可绘制列表；<code>Scene</code> 3293</td>
+</tr>
+<tr>
+<td>app.js</td>
+<td align="right">3374</td>
+<td>启动、状态、自由/导览相机、界面、主循环和截图钩子；<code>boot</code> 3383，<code>frame</code> 3717</td>
+</tr>
+</tbody></table></div>
+<p>模块关系是数据逐层变换，当前实现靠同一词法作用域共享常量和函数。方便作为单文件分发，但从中单独复制一个函数时，必须追踪其依赖。</p>
+<h2 id="section-3">3. 启动数据流</h2>
+<p><code>boot()</code>（3383–3422）的顺序具有实际语义：</p>
+<ol>
+<li>初始化 WebGL2 渲染器，编译主材质、阴影、天空、水、点精灵、雾六组程序。</li>
+<li><code>World.generate()</code> 生成自然地形、地表量化、水位、材质和森林倾向。</li>
+<li><code>buildCity(world)</code> 改造高度与占用栅格，同时产生分块的建筑主结构、细节网格、灯晕记录、指定树位和导览段。</li>
+<li><code>world.retainPass()</code> 把人工切削区旁的较高天然边缘改成挡土墙材质。</li>
+<li><code>plantTrees()</code> 在地形及城市留下的空地布树；因此树避让道路/建筑，而不是事后清除。</li>
+<li><code>Scene.makeLOD2()</code> 从改造后的地形生成 2m 远景数据；<code>Renderer.heightTexture()</code> 上传改造后的 1m 地表高度供水与雾使用。</li>
+<li>建立全部远景地形/树网格和水网格，上传城市网格，建立大气和导览，再初始化相机与界面。</li>
+<li>进入动画循环；<code>?test</code> 会禁止正常 <code>requestAnimationFrame</code>，保留手动抓帧入口。</li>
+</ol>
+<p>如果仿作时调整地形/城市生成顺序，需重新考虑用地冲突、LOD、挡土墙与高度纹理的同步。当前作品以启动后静态地形为前提，没有自动维护这些派生数据的编辑系统。</p>
+<h2 id="section-4">4. 世界、地理和城市布局</h2>
+<h3>高度场是城市和自然景物之间的共同接口</h3>
+<p><code>World</code> 维护七个等尺寸数组（528–534）：<code>H</code> 为当前地表，<code>nat</code> 为未改造自然地表，<code>W</code> 为水位，<code>M</code> 为材质，<code>occ</code> 为用地占用，<code>mod</code> 为改造掩码，<code>forest</code> 为森林倾向。</p>
+<p>这七个数组按声明尺寸共 31,129,600 字节，约 29.69 MiB，仅是静态尺寸计算；尚不包括 <code>wnear</code>、暂存宏观网格、LOD、顶点、索引、GPU 纹理和运行时对象。不能用这个值推断整页实际内存。</p>
+<p>保留 <code>nat</code> 与 <code>H</code> 很有价值：道路可以依自然地形采样，建筑可以修改当前地形，材质判定仍可利用自然坡度。占用码是一个简易的空间规划系统（532），不是三维碰撞系统。</p>
+<h3>主体山势先设计，再加噪声</h3>
+<ul>
+<li>山脊由折线控制点 <code>[x,z,高度,宽度]</code> 指定（351）；<code>ridgeHeight</code> 计算到各段的距离，沿线插值高度和宽度，用 <code>shapeF</code> 衰减，再用平滑最大值合成（419–439）。</li>
+<li><code>ridgeSpire</code> 先扭曲采样坐标，避免山脊过于规则（464–466）。</li>
+<li><code>macroFrom</code> 在已设计山势上添加 ridged/fbm 细节，并叠加手工指定的孤峰（458–482）。</li>
+<li><code>carveHeight</code> 再切出台地、上下游河道、瀑潭和湖盆（487–521）。</li>
+<li>多级采样依次为 4m 山脊/谷底、2m 宏观细化、1m 最终地表（554–604）。这不是递归的体素八叉树。</li>
+</ul>
+<p>学习时首先提取控制数据和形状函数；只复制 <code>fbm</code> 会得到随机地形，却丢失这座山城的视觉骨架。</p>
+<h3>城市是一套带约束的生成语法</h3>
+<p><code>buildCity</code> 按云瀑阁、宫城、上城、下城、西山台城、湖岸、山顶、城墙、道路地块填充、空隙补建、街灯、导览的顺序构造（1875–1904）。主要地标与区域都是明确坐标的人工编排，不是随机城市规划器。</p>
+<p><code>City</code> 提供几类可重用操作：</p>
+<ul>
+<li><code>plat</code>：改造矩形地表；<code>flight</code>：按 0.2m 高差划分台阶、先切地形再建立踏步；<code>trail</code>：把路径转成轴向折线登山梯（1468、1472、1530）。</li>
+<li><code>road</code>：Catmull-Rom 平面路径采样、读取自然高程、平滑/限坡/锚点修正，然后向用地栅格写路面（1582–1644）。</li>
+<li><code>lotsAlong</code>：计算道路切线和法线，按加权类型抽取楼房，限制四个朝向，检查用地、水域与挖填高差，再放置（1649–1692）。</li>
+<li><code>placeBuilding</code>：根据普通台基或吊脚楼决定是否整平台，采用坐标生成种子，添加门前台阶和灯晕（1694–1724）。</li>
+<li><code>archBridge</code>、<code>coveredBridge</code>、<code>wall</code>：分段轴向几何和局部屋顶构件的组合（1738、1785、1822）。</li>
+</ul>
+<p>权重配置 <code>LOTS_MARKET</code> / <code>LOTS_RES</code> / <code>LOTS_SLOPE</code> / <code>LOTS_UPPER</code>（1914–1917）是值得保留的风格接口：同一套建筑库通过类型权重、间距、退界、挖填限制、是否吊脚来形成不同片区。</p>
+<h3>程序化建筑的抽象层</h3>
+<p><code>MeshBuilder.box</code> 负责几何，<code>Frame</code> 负责建筑局部坐标，建筑函数负责语义。局部 <code>+z</code> 是建筑正面；只支持 90° 的四种旋转，兼顾网格一致性和简化的轴向法线（797–835）。</p>
+<p><code>Frame</code> 可以同时写入主结构 <code>mb</code> 和细节 <code>md</code>。<code>F.box</code> 是主结构，<code>F.d</code> 或 <code>detail</code> 参数把栏杆、翘角等写进细节网格。细节不只是代码分类，它直接连接 360m 绘制距离和 200m 阴影距离（3366）。</p>
+<p><code>roof()</code> 最有学习价值（980–1057）：以 0.2m 垂直层堆叠，横向收缩使用 <code>t^0.62</code> 而非线性斜坡；<code>gable</code> 为双坡，<code>hip</code>/<code>pyr</code> 同时缩 x/z，<code>xs</code> 让 x 收缩在一定处停止以呈现歇山特征。再分别叠加檐板、屋脊/宝顶、鸱吻和逐级檐角上扬。无需导入曲面屋顶模型，便能保留中式轮廓的几个识别点。</p>
+<p>仿作时应保留“台基 → 柱/墙 → 檐 → 屋顶 → 屋脊 → 门窗灯火”的组合层级，让比例、屋顶参数和材质有明确配置，而不是复制散落盒子坐标。</p>
+<h2 id="section-5">5. 网格、材质和渲染机制</h2>
+<h3>压缩顶点与几何批次</h3>
+<p>顶点格式为 20 字节：<code>position</code> 3 个 float32，<code>color RGB + AO</code> 4 个 byte，<code>normalIndex + glow + flags + random</code> 4 个 byte（719、742–750）。法线只保存 0–5 六个轴向编号，在 GLSL 展开（2799）。四边形用 4 顶点、6 索引；AO 不对称时选择不同三角剖分，减弱阴影插值对角痕迹（756–762）。</p>
+<p>这比通用 position/normal/uv/material-id 顶点更紧凑，但它依赖纯轴向面。若需要自由旋转建筑、斜面或有机曲面，应更换顶点法线方案，而不能只增加 <code>rot</code> 的取值。</p>
+<p>地形只生成顶面和比邻格更高的暴露侧面；同高、同材质、同色且无需 AO 变化的一行顶面可以合并（894–939）。这是单方向条带合并，不是完整二维贪心网格。分块边缘加 3m 裙边遮蔽不同 LOD 接缝（929–930）。水面也沿行合并相同水位连续段（942–955）。</p>
+<p>建筑网格按“中心点所在块”分配主结构和细节批次（1452–1461）。一个跨块的建筑仍完整留在一个批次里；不会沿块边界裁开。几何包围盒仍记录实际范围，可供视锥判断，但细节距离依据所属块，不是逐构件距离。</p>
+<h3>纹理不是主要美术资源</h3>
+<p>本作没有导入模型贴图。基础色来自顶点颜色和调色板，表面信息由 <code>FS_MAIN</code> 用世界坐标生成：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>效果</th>
+<th>实现机制</th>
+<th align="right">源码行</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0.2m 颗粒与体素缝</td>
+<td><code>floor(vPos*5)</code> 哈希变色、<code>fract</code> 近边暗化，随距离淡出</td>
+<td align="right">2814–2821</td>
+</tr>
+<tr>
+<td>瓦片节律</td>
+<td>ROOF 标记与顶面法线触发奇偶条纹</td>
+<td align="right">2822</td>
+</tr>
+<tr>
+<td>岩层</td>
+<td>高度行和横向低频哈希形成色带</td>
+<td align="right">2823</td>
+</tr>
+<tr>
+<td>石墙/地坪</td>
+<td>MASON 标记触发错缝行列、砌块变色、灰缝暗化</td>
+<td align="right">2824–2833</td>
+</tr>
+<tr>
+<td>瀑布</td>
+<td>FALL 标记让纵向分段色纹按时间移动；几何自身静态</td>
+<td align="right">2836–2844</td>
+</tr>
+<tr>
+<td>泡沫</td>
+<td>FOAM 标记用随时间改变的空间哈希变色</td>
+<td align="right">2845–2847</td>
+</tr>
+<tr>
+<td>树叶亮度</td>
+<td>LEAF 标记把背光与正光响应压缩成柔和分布</td>
+<td align="right">2853</td>
+</tr>
+<tr>
+<td>夜窗/灯笼</td>
+<td>byte glow 控强度、随机阈值控制亮窗比例、时间函数控制闪烁</td>
+<td align="right">2859–2872</td>
+</tr>
+</tbody></table></div>
+<p><code>FL</code> 的 8 个位（720）相当于材质行为标签；同一个主 shader 根据标签组合行为。这是紧凑的效果系统，但 byte 全部用满，扩展类别前应规划更宽字段或新的材质映射。</p>
+<p>光照不是 PBR：主光采用法线点积，环境光在地面色和天空色之间按法线 y 分量插值，顶点 AO 只调制环境项；无 roughness/metallic 或 BRDF 材质（2849–2858）。屋瓦看起来有明暗层次，并不意味着存在真实瓦片法线贴图。</p>
+<h3>多阶段绘制</h3>
+<p><code>Renderer.render</code>（3134–3285）的顺序：</p>
+<p><code>主光阴影 → 全屏天空 → 不透明地形/建筑/树/远山 → 透明水 → 加色倒影灯晕 → 半透明体素云 → 两层云海 → 瀑布水雾点精灵 → 加色灯晕</code>。</p>
+<p>阴影是单张跟随相机焦点的正交深度贴图，默认 4096²，硬件最大纹理尺寸较小时使用 2048²（3032–3034）。光源相机的中心对齐到阴影 texel，减少移动时抖动；表面法线偏移、固定深度 bias、polygon offset 和四次比较采样共同缓解阴影痤疮（2800–2807、3147–3172）。它不是级联阴影，范围变大时阴影分辨率会被摊薄。</p>
+<p>各对象包围盒经视锥剔除（3114–3131、3200）。<code>stats.drawn</code>/<code>tris</code> 只统计不透明主 pass 的绘制和三角形（3198–3204、3284），不能当作全部 pass 总绘制量。</p>
+<h3>水、云、雾的视觉近似</h3>
+<ul>
+<li>水面高度不做物理模拟。高度纹理提供水深；两层噪声有限差分生成波面法线，Fresnel 混合浅绿/深青水色和程序化天空，叠加太阳高光与浅水泡沫（2929–2954）。</li>
+<li>水中反射的天空是真正使用 <code>reflect</code> 计算的程序化环境色，但建筑/山体不进入反射贴图。水中灯光来自附近灯晕按水位分组、镜像 y 的点精灵（2533–2547、2971、3231–3234），不是完整场景平面反射。</li>
+<li>体素云预生成静态网格，以 uniform 位移水平漂浮与轻微上下运动；按云中心距离从远到近排序，靠近相机时降低透明度（2606–2618）。</li>
+<li>云海只有 y=46m、148m 两层大平面；噪声、距地高度、距相机距离、清晰区域椭圆掩码决定 alpha（2600–2602、3005–3018）。它不是三维体积散射。</li>
+<li>常规空气透视使用高度衰减雾的沿视线积分，再叠加距离 haze，并让面向太阳的雾偏暖（2770–2779）。这是空间层次的主力效果。</li>
+<li><code>finish</code> 在各材质片元中分别做 ACES 近似、1.14 饱和度和 gamma 输出（2781）；没有独立 HDR 后处理链、真实 bloom 或景深 pass。灯火的柔晕由加色点精灵直接提供。</li>
+</ul>
+<h2 id="section-6">6. 时间、相机和交互</h2>
+<h3>两个时钟</h3>
+<p><code>App.hours</code> 是一天内的时刻，用来控制日月、光照、天空、雾、灯火；<code>App.clock</code> 是持续动画时间，用来控制水、瀑布、云、星星和灯火闪烁（3375–3379、3718–3719）。暂停时间只停止 <code>hours</code>，<code>clock</code> 仍然前进。因此可以冻结落日的光照，同时水与云继续运动。</p>
+<p><code>computeEnv(hours, clock)</code> 用固定纬度 30° 和固定太阳赤纬 12° 算太阳方向，再按太阳高度插值设计好的天空色关键帧；根据太阳/月亮强度选择唯一主光，计算清晨/傍晚雾、夜间曝光和亮窗比例（2663–2748）。这些参数构成艺术性日夜系统，不是日期/地点精确天文模拟。</p>
+<p>一天在 ×1 下由 <code>DAY_SECONDS=480</code> 指定为约 8 分钟（3379）。这是代码参数，不是观察得到的运行数据。</p>
+<h3>相机不是自由飞行控制器</h3>
+<p>自由模式其实是围绕目标点的 orbit 相机（3458–3468）：yaw、pitch、dist 决定位置，拖动旋转、右键/Shift 平移、滚轮指数缩放，WASD 移动目标，QE 调目标高度（3636–3655、3723–3731）。相机位置至少在高度场/水位之上 1.5m，但没有建筑碰撞。</p>
+<p>8 个预设景点保存在 <code>VIEWS</code>（3439–3448）。<code>flyTo</code> 做最短角度变化，三次缓入缓出，距离采用对数插值并增加跨场景升高（3474–3488）。这是观看节奏的一部分，仿作时可把它保留为“镜头配置”，而不要和城市硬编码混合。</p>
+<p>双击聚焦通过反投影产生射线，然后每 1.5m 前进一次寻找高度场命中（3685–3698）。它只选地面/水面，不选建筑表面；这是近似射线采样，精度与步长相关。</p>
+<p>导览不是导航网格寻路。它由作者指定的道路、台阶与山径拼接并以约 1m 重采样（2359–2382），再做 11 点平滑与弧长索引（3492–3502）。相机以约 4.2m/s × 倍速沿路径前进，朝前方 14m 看，同时在若干区段把视线引向地标；拖动产生临时偏移，2.5 秒后自动衰减归位（3535–3564）。</p>
+<p>这一“路径 + 地标注意力区间”结构非常适合仿作：它将空间展示变成叙事。需要注意导览路径与建筑布局目前靠人工同步，路径平滑后没有逐帧碰撞修正。</p>
+<h2 id="section-7">7. 性能策略与维护限制</h2>
+<p>已明确实现的优化：</p>
+<ul>
+<li>多级地形采样，减少昂贵的山脊距离运算次数（554–579）。</li>
+<li>64m 网格分块，共 20 × 20 块；全部远景先生成，近景按需生成（3290、3297）。</li>
+<li>近景 1m 地形/详细树，远景 2m 地形/简化树；250m 进入、330m 释放的滞回避免边界抖动（3291、3331–3357）。</li>
+<li>常规每帧最多建立 2 块近景（3736）；主结构保留，建筑细节随距离剔除。</li>
+<li>视锥剔除、顶面条带合并、水面行合并、短索引自动选择、顶点压缩（894、942、3086–3089、3114）。</li>
+<li>90 帧平均间隔超过 38ms 就逐级降低 DPR 上限，低于 18ms 才逐级恢复，上限序列 1.5/1.25/1.0/0.8/0.66（3742–3749）。这是反馈规则，不证明任何设备上的帧率。</li>
+</ul>
+<p>仿作前值得处理的限制：</p>
+<ol>
+<li><strong>启动主线程阻塞。</strong> <code>boot</code> 是 async，但 <code>world.generate</code>、<code>buildCity</code>、<code>plantTrees</code> 均同步；只是阶段之间和每 50 个远景块之间让出事件循环（3381、3393、3396、3401、3407）。扩城后可把纯数据生成移到 Worker，或按时间预算分批执行。</li>
+<li><strong>几何是烘焙结果。</strong> 上传完成即 <code>city.builders=null</code>（3435）；没有按建筑 id 保留对象/编辑接口。地形运行时变更也不会自动更新高度纹理、LOD 和网格。若做编辑器，需设计增量失效与重建。</li>
+<li><strong>世界尺寸多处硬编码。</strong> CPU 使用 WN/WH，而水和雾 GLSL 写死 640/1279（2929、3005）；雾清晰区、各城坐标、镜头、导览注意力也写死。单改 WN 不足以扩展世界。</li>
+<li><strong>坐标数组约定混用。</strong> 道路点为 <code>[x,z,y]</code>（1623），导览为 <code>[x,y,z]</code>（2363、2367）。应显式类型化或统一记录字段，减少拼接错误。</li>
+<li><strong>可复现但有顺序耦合。</strong> 城市主 RNG 固定种子（1443），建筑的局部 RNG 常由位置产生（1703），植物/云也固定种子。新增前置随机抽样会改变后续布局；按区域/地块派生独立 seed 能缩小这种变化。</li>
+<li><strong>几何假设强。</strong> <code>Frame</code> 只支持四向，法线只支持轴向，盒子内面除手工 <code>skip</code> 外并不做全局剔除。自由旋转、斜向道路建模或大量重复建筑应重新考虑普通法线、实例化或几何合并。</li>
+<li><strong>透明排序有限。</strong> 只有云按中心距离排序，云的内部面、水块、两层雾固定顺序；复杂交叠或进入云层后可能出现透明近似。需用实际画面验证，而不是静态判断一定发生。</li>
+<li><strong>灯反射没有水域裁剪。</strong> 灯晕根据附近存在水位而加入镜像组，绘制点精灵不使用水域掩码（2533–2547、3231–3234），所以岸边复杂构图值得检查。</li>
+<li><strong>GPU 生命周期不完整。</strong> 有 mesh <code>free</code>（3091），但没有上下文丢失/恢复、完整程序/纹理/点精灵释放、阴影 FBO 完整性检测；单次页面使用通常不受重建影响，做组件反复挂载时需补充。</li>
+<li><strong>源码注释有少量漂移。</strong> <code>H</code> 注释称 0.2m 精度（528），初始自然地形实际 1m 量化、改造才可用 0.2m（603–604、1468）；远山注释称 16m（2622），实际平面步长 12m、高度量化 4m（2634、2641）。阅读时应以代码为准。</li>
+<li><strong>减弱动态偏好只影响 CSS。</strong> <code>prefers-reduced-motion</code> 只关掉载入/提示的 CSS transition（98），不会暂停云、水和导览。做公共可访问版本可以接入动画系统。</li>
+</ol>
+<h2 id="section-8">8. 学习和仿作的提取顺序</h2>
+<p>建议分三次提取，而不是先大改整座城市：</p>
+<p><strong>第一阶段：单体构件实验。</strong> 提取 <code>RNG</code>、<code>snap</code>、调色板、<code>MeshBuilder</code>、<code>Frame</code>、<code>roof</code> 和一种建筑；只做一个台基/殿/亭，调整檐宽、起翘、屋顶坡度和层高。产物应是可配置组件，输入尺寸/朝向/配色，输出主结构和细节网格。能解释每个轮廓由哪一层产生后，再扩展民居与高楼。</p>
+<p><strong>第二阶段：小场景验证完整风格。</strong> 做约 128m 或 256m 的小地图，先手工放山脊、台地、河流和一个主地标，再用道路/地块规则补若干建筑和树。保留主材质 shader、雾、天空和夜灯；先不追求整城密度，因为空气透视与色调联动才是本作规模感的重要来源。</p>
+<p><strong>第三阶段：可复用生成架构。</strong> 将源码的伪模块拆成真正模块，并把地理控制点、城域布局、片区地块规则、镜头和导览注意力变为配置数据。待重复小场景稳定后，再引入分块 LOD、Worker 和质量自适应。</p>
+<p>可以采用以下设计接口；它们是仿作建议，不是原文件现有 API：</p>
+<pre><code class="language-ts">type WorldSpec = {
+  sizeMeters: number; cellMeters: number; voxelMeters: number; seed: number;
+  ridges: RidgeSpec[]; rivers: RiverSpec[]; plateaus: PlateauSpec[]; lakes: LakeSpec[];
+};
+type DistrictSpec = {
+  roads: RoadSpec[]; lotRules: LotRule[]; landmarks: BuildingPlacement[];
+};
+type BuildingSpec = {
+  kind: string; width: number; depth: number; floors: number;
+  roof: { kind: string; pitch: number; lift: number; palette: string };
+  seed: number;
+};
+type EnvironmentState = {
+  hours: number; animationSeconds: number;
+  // 太阳、天空、雾、灯火等由统一环境模型计算。
+};
+type TourSpec = {
+  path: Vec3[]; stations: Station[]; attention: AttentionInterval[];
+};
+
+generateTerrain(spec: WorldSpec): WorldData;
+planCity(world: WorldData, districts: DistrictSpec[]): CityPlan;
+buildArchitecture(frame: Frame, spec: BuildingSpec): GeometryPair;
+computeEnvironment(state: EnvironmentState): EnvironmentUniforms;
+updateTour(tour: TourSpec, progressMeters: number, dt: number): CameraState;
+</code></pre>
+<p><code>CityPlan</code> 最好先保存建筑 id、地块、局部 frame 和配置，再由 <code>buildArchitecture</code> 转几何；原文件现在把规划和几何发射放在一起。这样更容易学习、保存、调参、导出和重新生成。</p>
+<p>如果仿作题材换成另一个山镇，应换掉山脊/水系/地标布局和屋顶比例等显著设计，保留“主构图先行、规则补密度、细部按距离淡出、统一环境驱动”的机制。机械复用整城坐标只会得到原图的变体，无法真正验证对构图与架构的理解。</p>
+</main></div><footer>本阅读版仅使用本地资源。原作备份、截图及运行记录随档案保存。</footer></body></html>

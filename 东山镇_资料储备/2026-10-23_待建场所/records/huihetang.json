@@ -1,0 +1,314 @@
+{
+  "id": "huihetang",
+  "name": "惠和堂",
+  "aliases": [
+    "王鏊故居",
+    "王鏊纪念馆"
+  ],
+  "category": "传统宅园／纪念馆",
+  "summary": "位于东山镇陆巷古村文宁巷内，坐北面南，三路五进的大型厅堂宅园。已取得来源明确的平面图、俯瞰、局部书楼与园林参考。",
+  "location": {
+    "wgs84": null,
+    "crs": null,
+    "role": "建筑群；当前以文献地址和相对空间关系定位",
+    "address": "江苏省苏州市吴中区东山镇陆巷村文宁巷内",
+    "sourceId": "wu-museum-courtyards-2021",
+    "confidence": "地址与朝向有机构文字支持；地理坐标/占地界线待核",
+    "notes": [
+      "吴文化博物馆文字明示文宁巷及坐北面南；机构来源足以支持朝向，区别于从照片推测。",
+      "论文图1将惠和堂标在紫石街东侧、文宁巷附近；住建厅主办网站的传统建筑分布图亦标出惠和堂及邻近怀古堂。",
+      "两张分布图和旧平面/俯瞰均无可用CRS，未把示意图坐标或像素坐标转写成经纬度。"
+    ]
+  },
+  "facts": [
+    {
+      "text": "官方园林名录认定为王鏊故居；现为王鏊纪念馆。",
+      "sourceIds": [
+        "huihetang-garden-register"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2025-10-20"
+    },
+    {
+      "text": "园林名录给出占地5000平方米、建筑面积3000平方米，三路五进；这些是文字资料面积，非本次量测。",
+      "sourceIds": [
+        "huihetang-garden-register"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2025-10-20"
+    },
+    {
+      "text": "宅院坐北面南，高墙围合；分东、中、西三路，各进以天井相隔，路间有备弄相通。",
+      "sourceIds": [
+        "wu-museum-courtyards-2021"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2021-11-23"
+    },
+    {
+      "text": "中路为轿厅、大厅、前后住楼；西路有客房、花厅与书楼，东路有门第、仆房、账房等。",
+      "sourceIds": [
+        "wu-museum-courtyards-2021"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2021-11-23"
+    },
+    {
+      "text": "书楼名静观楼，在西路第三进；正厅与前住楼之间用穿堂和两方蟹眼天井组织空间。",
+      "sourceIds": [
+        "wu-museum-courtyards-2021"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2021-11-23"
+    },
+    {
+      "text": "论文图1及传统建筑分布图可互证惠和堂、文宁巷、紫石街的相对关系；这不是已验证的现状坐标。",
+      "sourceIds": [
+        "kong-wu-zhang-luxiang-2019",
+        "jiangsu-rural-housing-luxiang-2020"
+      ],
+      "status": "cartographic-relative-observation",
+      "asOf": "2019–2020文献图件"
+    }
+  ],
+  "sources": [
+    {
+      "id": "huihetang-garden-register",
+      "title": "惠和堂",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "publisher": "苏州市园林和绿化管理局",
+      "publishedOn": "2025-10-20",
+      "accessedOn": "2026-10-23",
+      "kind": "government-garden-register"
+    },
+    {
+      "id": "wu-museum-courtyards-2021",
+      "title": "吴县繁华如许｜遍览世间乐土：自适与宅院",
+      "url": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "publisher": "吴文化博物馆（澎湃号发布）",
+      "publishedOn": "2021-11-23",
+      "accessedOn": "2026-10-23",
+      "kind": "museum-institutional-article"
+    },
+    {
+      "id": "jiangsu-rural-housing-luxiang-2020",
+      "title": "苏州市东山镇陆巷村陆巷",
+      "url": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "publisher": "江苏省住房和城乡建设厅主办·农房建设服务网",
+      "publishedOn": "2020-08-21",
+      "accessedOn": "2026-10-23",
+      "kind": "government-hosted-planning-and-village-archive-summary",
+      "notes": [
+        "页面自列资料来源为《苏州市东山镇陆巷历史文化名村保护规划》《中国传统村落档案》；图件原编制时间未逐图注明。"
+      ]
+    },
+    {
+      "id": "kong-wu-zhang-luxiang-2019",
+      "title": "社区参与模式下的传统村落旅游空间生产及影响初探——基于苏州东山陆巷古村的调研",
+      "url": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+      "publisher": "孔翔、吴栋、张纪娴；《世界地理研究》28(6):156–165；华东师范大学网站托管",
+      "publishedOn": "2019-12",
+      "accessedOn": "2026-10-23",
+      "kind": "primary-field-research-paper",
+      "doi": "10.3969/j.issn.1004-9479.2019.06.2019064",
+      "localPath": "images/zishi-street-commercial-pattern-paper.pdf",
+      "notes": [
+        "图1位于印刷页160、PDF第5页；有北箭头和0–150 m比例尺，无经纬网/坐标系说明。",
+        "研究为2018年调研，图件用于历史相对空间关系，不代表2026现状测绘。"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "05-huihetang-garden",
+      "title": "惠和堂后花园池石与小桥",
+      "sourceId": "huihetang-garden-register",
+      "pageUrl": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "imageUrl": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/rzke5cfu3p5.jpg",
+      "localPath": "../../东山镇_数据/references/images/05-huihetang-garden.jpg",
+      "view": "园内局部实景",
+      "observations": [
+        "可见园池、叠石、小桥、廊亭、树木。",
+        "用于园林水石植被关系，允许合并小构件。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页；旧参考包已有逐图目视与SHA审计，复用原文件。",
+      "imageDate": null,
+      "bytes": 183966,
+      "sha256": "7f515738e879cab71c9826b91669eb038ee9892bbcb5ccfc9b7c4fd6939f8500"
+    },
+    {
+      "id": "06-huihetang-01",
+      "title": "惠和堂园内廊檐与山墙",
+      "sourceId": "huihetang-garden-register",
+      "pageUrl": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "imageUrl": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/acudlphvdmd.jpg",
+      "localPath": "../../东山镇_数据/references/images/06-huihetang-01.jpg",
+      "view": "园内局部实景",
+      "observations": [
+        "可见灰瓦屋面、山墙轮廓、木栏与植物攀覆。",
+        "优先提取屋顶/山墙轮廓；攀覆植物不等同永久建筑形态。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页；旧参考包已有逐图目视与SHA审计，复用原文件。",
+      "imageDate": null,
+      "bytes": 135452,
+      "sha256": "6483956aafb3ec4b8999653d435fe0a133b11d69cee8675db341823d29607d81"
+    },
+    {
+      "id": "07-huihetang-03",
+      "title": "惠和堂池边亭廊",
+      "sourceId": "huihetang-garden-register",
+      "pageUrl": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "imageUrl": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/152brnbggul.jpg",
+      "localPath": "../../东山镇_数据/references/images/07-huihetang-03.jpg",
+      "view": "园内局部实景",
+      "observations": [
+        "可见开敞柱间、飞檐、栏杆、池岸叠石。",
+        "可压缩为檐顶、立柱、栏杆和池岸四类体块。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页；旧参考包已有逐图目视与SHA审计，复用原文件。",
+      "imageDate": null,
+      "bytes": 143203,
+      "sha256": "61a8b1b47fdb801dbfd143021021bcae4932aa6abebebd7ba154ff284ddeaf60"
+    },
+    {
+      "id": "08-huihetang-04",
+      "title": "惠和堂园内墙檐与花木",
+      "sourceId": "huihetang-garden-register",
+      "pageUrl": "https://ylj.suzhou.gov.cn/szsylj/ylml/201912/d3d1a3a77c9d40acaa97f641111d8481.shtml",
+      "imageUrl": "https://ylj.suzhou.gov.cn/szdoc/szsylj/uploadfile/gxiiofr3q5p.jpg",
+      "localPath": "../../东山镇_数据/references/images/08-huihetang-04.jpg",
+      "view": "园内局部实景",
+      "observations": [
+        "可见连续墙檐、山墙、叠石、铺地与开花植物。",
+        "供局部材质和植物点景参考，拍摄季节未确认。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页；旧参考包已有逐图目视与SHA审计，复用原文件。",
+      "imageDate": null,
+      "bytes": 133221,
+      "sha256": "7d1c7965192963eda2ae19d07819c0abc849ca90026203551ca900ee96fcb3b7"
+    },
+    {
+      "id": "16-huihetang-overview",
+      "title": "惠和堂俯瞰",
+      "sourceId": "wu-museum-courtyards-2021",
+      "pageUrl": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "imageUrl": "https://imagepphcloud.thepaper.cn/pph/image/165/326/596.jpg",
+      "localPath": "../../东山镇_数据/references/images/16-huihetang-overview.jpg",
+      "view": "俯瞰；非正射测绘",
+      "observations": [
+        "清楚显示多路院落、天井、屋顶和侧园；图有吴文化博物馆水印。",
+        "可提取相对布局、轮廓和粗略长宽关系；无坐标、比例尺，不是正射测绘成果。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页并重新目视本地原图；复用旧参考包，不重复下载。",
+      "imageDate": null,
+      "bytes": 3499950,
+      "sha256": "bf593c438bf9866c2346484ac6fa3c71076fb10de1bd0019e8ddb9843cc6de4e"
+    },
+    {
+      "id": "17-huihetang-plan",
+      "title": "惠和堂平面图",
+      "sourceId": "wu-museum-courtyards-2021",
+      "pageUrl": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "imageUrl": "https://imagepphcloud.thepaper.cn/pph/image/165/326/602.png",
+      "localPath": "../../东山镇_数据/references/images/17-huihetang-plan.png",
+      "view": "院落平面图；无尺寸链/比例尺",
+      "observations": [
+        "平面线条、院落和部分建筑标注可读；图有吴文化博物馆水印。",
+        "可读院落关系，未见尺寸链、坐标和比例尺；不作为精确测绘图。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页并重新目视本地原图；复用旧参考包，不重复下载。",
+      "imageDate": null,
+      "bytes": 156874,
+      "sha256": "37338a96b830b9fffd08e53c681e496acbf6153b308877bfc97ce4a224440a49"
+    },
+    {
+      "id": "18-huihetang-courtyard",
+      "title": "惠和堂穿堂",
+      "sourceId": "wu-museum-courtyards-2021",
+      "pageUrl": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "imageUrl": "https://imagepphcloud.thepaper.cn/pph/image/165/326/639.png",
+      "localPath": "../../东山镇_数据/references/images/18-huihetang-courtyard.png",
+      "view": "穿堂、天井与廊道",
+      "observations": [
+        "清楚显示木柱、廊道、天井留空、墙面和室内外关系；图有博物馆水印。",
+        "用于体块留空、材质和穿堂关系，不要求逐件建模。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页；旧参考包已有逐图目视与SHA审计，复用原文件。",
+      "imageDate": null,
+      "bytes": 3916159,
+      "sha256": "c6e732588a94753d61d525a4164bbca1f8e567d8cdffb3d7650704f77aba1dff"
+    },
+    {
+      "id": "huihetang-shulou-new",
+      "title": "惠和堂书楼附近屋顶与院落斜俯视",
+      "sourceId": "wu-museum-courtyards-2021",
+      "pageUrl": "https://www.thepaper.cn/newsDetail_forward_15501667",
+      "imageUrl": "https://imagepphcloud.thepaper.cn/pph/image/165/326/659.png",
+      "localPath": "images/huihetang-shulou.png",
+      "view": "斜俯视局部",
+      "observations": [
+        "原页面题注为惠和堂书楼；可见高低错落的瓦屋顶、山墙和院内藤蔓。",
+        "图带吴文化博物馆水印，无比例尺；拍摄日期和镜头方向未明，不从画面量测高度或真北。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23已核对来源上下文、下载原图并目视检查；无登录/错误页。",
+      "imageDate": null,
+      "bytes": 4035507,
+      "sha256": "1c55c594cd830c67336f8b683bc509c21b8e8456c638e5ec952d1a0e91dd3933"
+    },
+    {
+      "id": "luxiang-traditional-building-distribution",
+      "title": "陆巷传统建筑分布图",
+      "sourceId": "jiangsu-rural-housing-luxiang-2020",
+      "pageUrl": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "imageUrl": "https://www.c-dwellings.com/images/article/237_content_1598005940998250.png",
+      "localPath": "images/huihetang-heritage-locations.png",
+      "view": "带地形和建筑底图的传统建筑分布图",
+      "observations": [
+        "惠和堂、怀古堂、三有堂、宝俭堂等以文字和着色建筑范围标出；可查相对位置与院落轮廓。",
+        "底图有港道和街巷，但无可读坐标、北箭头或比例尺；原图字形小，不能当精确地籍边界。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23已核对来源上下文、下载原图并目视检查；无登录/错误页。",
+      "imageDate": null,
+      "bytes": 817457,
+      "sha256": "c7f83bcfed324a24d75fc89a6e22d036bb0a7cdb0454b0cd81ce60dc53937f8f"
+    },
+    {
+      "id": "luxiang-paper-figure1",
+      "title": "陆巷古村“一街六巷”格局与商业分布（论文图1，完整第160页）",
+      "sourceId": "kong-wu-zhang-luxiang-2019",
+      "pageUrl": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+      "imageUrl": null,
+      "localPath": "images/zishi-street-paper-figure1.png",
+      "view": "PDF第5页渲染；图1及上下文",
+      "observations": [
+        "图1有北箭头和0–150 m比例尺；红线标一街六巷，蓝线标水岸，橙线为环山公路。",
+        "可辨紫石街、文宁巷、康庄巷及惠和堂位置；村落西侧为太湖，三个港道分别通向湖侧。",
+        "这是2019论文中的示意地图，未给CRS、基准点或测绘精度；可做历史相对空间关系，不输出精确WGS84线形。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23下载PDF；用Poppler渲染并目视完整第1页和第5页，核实标题、作者、图1、北箭头及比例尺。",
+      "imageDate": null,
+      "bytes": 891580,
+      "sha256": "ee38cc589db573f957f7b46e9715ce7bf585393e687327c5ae6ce4c9ef498186"
+    }
+  ],
+  "gaps": [
+    "可靠的WGS84/CGCS2000锚点或已明确坐标系的地图POI。",
+    "现状建筑群围墙/占地界线、入口精确位置。",
+    "各单体高度、屋脊标高与尺寸链。",
+    "俯瞰/平面图与2026现状的一致性，尤其园林及附房变化。"
+  ],
+  "searchNotes": [
+    "2026-10-23已重新打开园林局名录、吴文化博物馆原文及住建厅主办图文，复用7张旧图而不重复下载。",
+    "新增1张书楼视角与2种空间分布图；未找到有明确CRS的本场所精确坐标，wgs84留空。"
+  ]
+}

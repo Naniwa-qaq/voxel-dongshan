@@ -1,0 +1,3783 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>云山巨城</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600&display=swap">
+<style>
+:root{
+  --ink:rgba(17,21,22,.62); --ink2:rgba(17,21,22,.8); --line:rgba(236,226,204,.16);
+  --paper:#efe7d6; --muted:#b8af9b; --seal:#b3422c; --jade:#7fb08a; --jadeD:#3f6e55;
+  --serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif; --brush:"Ma Shan Zheng","STKaiti","KaiTi","Noto Serif SC",serif;
+  color-scheme:dark;
+}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0;background:#11161a;overflow:hidden;color:var(--paper);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;outline:none}
+#veil{position:fixed;inset:0;pointer-events:none;z-index:3;background:radial-gradient(ellipse 420px 160px at 0 0,rgba(10,14,16,.55),transparent 70%),linear-gradient(to top,rgba(10,14,16,.42),transparent 150px);transition:opacity .4s}
+body.bare #veil{opacity:0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--jade);outline-offset:2px}
+/* 载入 */
+#loading{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:radial-gradient(ellipse at 50% 60%,#26302f 0%,#12171a 70%);z-index:20;transition:opacity 1.2s ease}
+body.ready #loading{opacity:0;pointer-events:none}
+#loadtxt{letter-spacing:.4em;font-size:15px;color:var(--muted)}
+#loadtrack{width:min(260px,70vw);height:2px;background:rgba(255,255,255,.12)}
+#loadbar{height:100%;width:0;background:var(--seal);transition:width .3s}
+.loadnote{margin:0;font-size:12px;color:#7d776a;letter-spacing:.1em}
+body.failed #loadtxt{color:#e39a86;letter-spacing:.05em;max-width:80vw;text-align:center}
+.seal{font-family:var(--brush);background:var(--seal);color:#f6ead6;border-radius:3px;line-height:1.02;text-align:center;box-shadow:inset 0 0 0 2px rgba(246,234,214,.35)}
+.seal.big{font-size:40px;padding:12px 12px 10px;writing-mode:horizontal-tb}
+/* 标题 */
+#title{position:fixed;left:max(16px,env(safe-area-inset-left));top:calc(14px + env(safe-area-inset-top,0px));display:flex;gap:12px;align-items:center;z-index:5;pointer-events:none}
+#title .seal{font-size:19px;padding:6px 6px 5px}
+#title .name{font-family:var(--brush);font-size:26px;letter-spacing:.12em;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+#title .sub{font-size:12px;letter-spacing:.14em;color:#d7cfbd;text-shadow:0 1px 4px rgba(0,0,0,.8)}
+/* 右上 */
+#topright{position:fixed;right:max(16px,env(safe-area-inset-right));top:calc(14px + env(safe-area-inset-top,0px));display:flex;gap:8px;z-index:5}
+.seg{display:flex;background:var(--ink);border:1px solid var(--line);border-radius:999px;padding:3px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.seg button{background:none;border:0;padding:7px 14px;border-radius:999px;font-size:14px;letter-spacing:.08em;color:var(--muted)}
+.seg button.on{background:var(--paper);color:#1b1f1f}
+.icon{width:36px;height:36px;border-radius:50%;background:var(--ink);border:1px solid var(--line);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:15px}
+/* 底部 */
+#dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));width:min(860px,calc(100vw - 32px));display:flex;flex-direction:column;gap:8px;z-index:5}
+#views{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chip{background:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:13px;letter-spacing:.08em;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background .2s}
+.chip:hover{background:var(--ink2);border-color:rgba(127,176,138,.6)}
+#timebar,#tourbar{display:flex;align-items:center;gap:12px;background:var(--ink);border:1px solid var(--line);border-radius:14px;padding:8px 12px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#timePlay,#tourPlay{width:34px;height:34px;flex:none;border-radius:50%;border:1px solid var(--line);background:rgba(239,231,214,.08);font-size:12px}
+#tourPlay{width:auto;min-width:34px;padding:0 8px;border-radius:17px}
+.clock{display:flex;flex-direction:column;align-items:flex-start;min-width:52px;line-height:1.15}
+#timeLbl{font-size:18px;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+#shichen{font-size:12px;color:var(--muted);letter-spacing:.2em}
+#timeSlider{flex:1;min-width:120px;-webkit-appearance:none;appearance:none;height:6px;border-radius:3px;
+  background:linear-gradient(90deg,#141a2e 0%,#1d2744 18%,#c98a6a 26%,#9cc0d8 34%,#b6d2e0 50%,#a9c6d6 68%,#e0a070 75%,#43406a 80%,#161c34 88%,#10152a 100%)}
+#timeSlider::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--seal);box-shadow:0 1px 4px rgba(0,0,0,.5)}
+#timeSlider::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--seal)}
+.presets,.speeds{display:flex;gap:2px}
+.presets button,.speeds button{background:none;border:0;padding:5px 7px;border-radius:7px;font-size:13px;color:var(--muted)}
+.presets button:hover,.speeds button:hover{color:var(--paper)}
+.speeds button.on{color:var(--paper);background:rgba(239,231,214,.12)}
+.speeds{border-left:1px solid var(--line);padding-left:8px}
+#tourTrack{position:relative;flex:1;height:30px;cursor:pointer}
+#tourLine{position:absolute;left:0;right:0;top:14px;height:2px;background:rgba(239,231,214,.18)}
+#tourFill{height:100%;width:0;background:var(--jade)}
+.st{position:absolute;top:9px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:#1b2020;border:2px solid var(--muted);padding:0;font-size:0}
+.st.on{border-color:var(--jade);background:var(--jade)}
+.st::after{content:attr(data-n);position:absolute;bottom:14px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;color:var(--muted);letter-spacing:.06em;opacity:0;transition:opacity .2s;pointer-events:none}
+.st:hover::after,.st:focus-visible::after{opacity:1}
+#tourName{min-width:4.5em;font-size:14px;letter-spacing:.1em}
+#tourSpeed{background:none;border:1px solid var(--line);border-radius:8px;padding:4px 8px;font-size:13px;font-variant-numeric:tabular-nums}
+.touronly{display:none!important}
+body.touring .touronly{display:flex!important}
+body.touring .freeonly{display:none!important}
+#hint{position:fixed;left:50%;transform:translateX(-50%);top:calc(64px + env(safe-area-inset-top,0px));font-size:12px;color:var(--muted);letter-spacing:.1em;background:var(--ink);padding:5px 12px;border-radius:999px;transition:opacity 1.5s;z-index:4;white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis}
+body.hint-gone #hint,body.touring #hint{opacity:0;pointer-events:none}
+#help{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(8,10,12,.45);z-index:10;padding:16px}
+.hcard{background:#171c1d;border:1px solid var(--line);border-radius:14px;padding:22px 24px;max-width:520px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.hcard h2{font-family:var(--brush);font-weight:400;font-size:26px;margin:0 0 12px;letter-spacing:.1em}
+.hcard dl{margin:0;display:grid;grid-template-columns:5.5em 1fr;gap:10px 14px;font-size:14px;line-height:1.7}
+.hcard dt{color:var(--jade);letter-spacing:.08em}
+.hcard dd{margin:0;color:#ddd4c2}
+#helpClose{margin-top:16px;background:var(--paper);color:#1b1f1f;border:0;border-radius:999px;padding:7px 18px}
+body.bare #title,body.bare #dock,body.bare #hint{opacity:0;pointer-events:none}
+body.bare #topright .seg,body.bare #helpBtn{opacity:0;pointer-events:none}
+#title,#dock,#topright .seg,#helpBtn{transition:opacity .4s}
+body:not(.ready) #title,body:not(.ready) #dock,body:not(.ready) #topright{opacity:0}
+@media (max-width:640px){
+  #title .tt{display:none}
+  .seg button{padding:6px 10px;font-size:13px}
+  #timebar{flex-wrap:wrap;gap:8px 10px}
+  #timeSlider{order:5;flex-basis:100%}
+  .presets{margin-left:auto}
+  #hint{display:none}
+  .hcard dl{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){#loading,#hint{transition:none}}
+
+</style>
+</head>
+<body>
+<canvas id="gl" aria-label="云山巨城三维场景"></canvas>
+<div id="veil"></div>
+<div id="loading">
+  <div class="seal big">云山<br>巨城</div>
+  <div id="loadtxt">载入中</div>
+  <div id="loadtrack"><div id="loadbar"></div></div>
+  <p class="loadnote">城池与山水在本机即时生成，约需数秒</p>
+</div>
+<header id="title">
+  <div class="seal">云山<br>巨城</div>
+  <div class="tt"><div class="name">云山巨城</div><div class="sub">体素山水长卷 · 每体素 0.2 米</div></div>
+</header>
+<div id="topright">
+  <div class="seg" role="group" aria-label="观看方式">
+    <button id="modeTour" type="button" aria-pressed="false">沿路游览</button><button id="modeFree" type="button" class="on" aria-pressed="true">自由观景</button>
+  </div>
+  <button id="helpBtn" class="icon" type="button" aria-label="操作说明" title="操作说明">?</button>
+  <button id="hideBtn" class="icon" type="button" aria-label="隐藏界面" title="隐藏界面（H）">◱</button>
+</div>
+<div id="dock">
+  <div id="views" class="freeonly" role="group" aria-label="景点"></div>
+  <div id="tourbar" class="touronly">
+    <button id="tourPlay" type="button" aria-label="暂停或继续游览">❚❚</button>
+    <div id="tourTrack" title="点击跳转"><div id="tourLine"><div id="tourFill"></div></div><div id="stations"></div></div>
+    <span id="tourName">湖畔码头</span>
+    <button id="tourSpeed" type="button" aria-label="游览速度">×1</button>
+  </div>
+  <div id="timebar">
+    <button id="timePlay" type="button" aria-label="暂停时间">❚❚</button>
+    <div class="clock"><span id="timeLbl">16:18</span><span id="shichen">申时</span></div>
+    <input id="timeSlider" type="range" min="0" max="23.99" step="0.01" value="16.3" aria-label="一天中的时刻">
+    <div class="presets" role="group" aria-label="时刻"><button type="button" data-preset="6.3">晨</button><button type="button" data-preset="12">午</button><button type="button" data-preset="18.2">昏</button><button type="button" data-preset="22.5">夜</button></div>
+    <div class="speeds" role="group" aria-label="时间流速"><button type="button" data-speed="1" class="on">×1</button><button type="button" data-speed="6">×6</button><button type="button" data-speed="24">×24</button></div>
+  </div>
+</div>
+<div id="hint">拖动旋转 · 右键 / Shift 拖动平移 · 滚轮缩放 · WASD 移动 · 双击聚焦</div>
+<div id="help" hidden>
+  <div class="hcard">
+    <h2>游览说明</h2>
+    <dl>
+      <dt>沿路游览</dt><dd>从湖畔码头出发，走长街、过云瀑阁、攀天梯、穿上城，登揽云亭。拖动可环顾，松手后视线回正；滚轮调节步速；空格暂停。</dd>
+      <dt>自由观景</dt><dd>左键拖动旋转，右键或 Shift 拖动平移，滚轮缩放，WASD / QE 移动，双击地面聚焦。下方可一键飞往各处景点。</dd>
+      <dt>时间</dt><dd>拖动时间轴选择任意时刻；▶/❚❚ 暂停或继续，×1 约八分钟一昼夜。[ 与 ] 键前后调一小时。</dd>
+      <dt>其他</dt><dd>H 隐藏界面，T 切换游览 / 自由。</dd>
+    </dl>
+    <button id="helpClose" type="button">知道了</button>
+  </div>
+</div>
+
+<script>
+(function(){"use strict";
+// ===== util.js — 数学、随机、噪声、矩阵 =====
+const TAU = Math.PI * 2;
+const VOX = 0.2;                      // 体素单位 0.2 m
+function clamp(x, a, b) { return x < a ? a : x > b ? b : x; }
+function lerp(a, b, t) { return a + (b - a) * t; }
+function smoothstep(a, b, x) { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); }
+function snap(v) { return Math.round(v * 5) / 5; }        // 对齐 0.2m 网格
+function snapDown(v) { return Math.floor(v * 5 + 1e-6) / 5; }
+function smax(a, b, k) { const h = clamp(0.5 + 0.5 * (b - a) / k, 0, 1); return lerp(a, b, h) + k * h * (1 - h); }
+function smin(a, b, k) { return -smax(-a, -b, k); }
+
+function mulberry32(a) {
+  return function () {
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+class RNG {
+  constructor(seed) { this.r = mulberry32(seed | 0); }
+  f() { return this.r(); }
+  range(a, b) { return a + (b - a) * this.r(); }
+  int(a, b) { return a + Math.floor(this.r() * (b - a + 1)); }
+  pick(arr) { return arr[Math.floor(this.r() * arr.length)]; }
+  chance(p) { return this.r() < p; }
+  wpick(items) { // [[item, weight],...]
+    let s = 0; for (const it of items) s += it[1];
+    let r = this.r() * s;
+    for (const it of items) { r -= it[1]; if (r <= 0) return it[0]; }
+    return items[items.length - 1][0];
+  }
+}
+
+// ---- 值噪声 ----
+function ihash(x, z) {
+  let h = (x * 374761393 + z * 668265263) | 0;
+  h = Math.imul(h ^ (h >>> 13), 1274126177);
+  h = h ^ (h >>> 16);
+  return (h >>> 0) / 4294967296;
+}
+function ihash3(x, y, z) { return ihash(x * 31 + y * 1013, z * 17 - y * 7); }
+function noise2(x, z) {
+  const ix = Math.floor(x), iz = Math.floor(z);
+  const fx = x - ix, fz = z - iz;
+  const ux = fx * fx * fx * (fx * (fx * 6 - 15) + 10);
+  const uz = fz * fz * fz * (fz * (fz * 6 - 15) + 10);
+  const a = ihash(ix, iz), b = ihash(ix + 1, iz), c = ihash(ix, iz + 1), d = ihash(ix + 1, iz + 1);
+  return lerp(lerp(a, b, ux), lerp(c, d, ux), uz) * 2 - 1;
+}
+function fbm(x, z, oct) {
+  let s = 0, a = 0.5, f = 1, n = 0;
+  for (let i = 0; i < oct; i++) { s += a * noise2(x * f + i * 17.3, z * f - i * 9.1); n += a; a *= 0.5; f *= 2.03; }
+  return s / n;
+}
+function ridged(x, z, oct) {
+  let s = 0, a = 0.5, f = 1, n = 0, w = 1;
+  for (let i = 0; i < oct; i++) {
+    let v = 1 - Math.abs(noise2(x * f + i * 5.7, z * f + i * 3.3));
+    v *= v; v *= w; w = clamp(v * 1.6, 0, 1);
+    s += a * v; n += a; a *= 0.5; f *= 2.1;
+  }
+  return s / n;
+}
+
+// ---- 几何 ----
+let _segT = 0;
+function distSegT(px, pz, ax, az, bx, bz) { // 不分配内存版本，参数 t 存于 _segT
+  const dx = bx - ax, dz = bz - az;
+  const l2 = dx * dx + dz * dz;
+  let t = l2 > 0 ? ((px - ax) * dx + (pz - az) * dz) / l2 : 0;
+  t = t < 0 ? 0 : t > 1 ? 1 : t; _segT = t;
+  const qx = ax + dx * t - px, qz = az + dz * t - pz;
+  return Math.sqrt(qx * qx + qz * qz);
+}
+function distSeg(px, pz, ax, az, bx, bz) {
+  const dx = bx - ax, dz = bz - az;
+  const l2 = dx * dx + dz * dz;
+  let t = l2 > 0 ? ((px - ax) * dx + (pz - az) * dz) / l2 : 0;
+  t = clamp(t, 0, 1);
+  const qx = ax + dx * t, qz = az + dz * t;
+  return [Math.hypot(px - qx, pz - qz), t];
+}
+// 折线最近点：返回 [dist, 累计参数 u(0..n-1)]
+function distPoly(px, pz, pts) {
+  let best = 1e9, bu = 0;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const a = pts[i], b = pts[i + 1];
+    const [d, t] = distSeg(px, pz, a[0], a[1], b[0], b[1]);
+    if (d < best) { best = d; bu = i + t; }
+  }
+  return [best, bu];
+}
+// Catmull-Rom 细分折线（xz 或 xyz），step 为采样间距
+function smoothPath(pts, step) {
+  const out = [];
+  const n = pts.length;
+  const P = (i) => pts[clamp(i, 0, n - 1)];
+  for (let i = 0; i < n - 1; i++) {
+    const p0 = P(i - 1), p1 = P(i), p2 = P(i + 1), p3 = P(i + 2);
+    const len = Math.hypot(p2[0] - p1[0], p2[1] - p1[1]);
+    const segs = Math.max(1, Math.ceil(len / step));
+    for (let s = 0; s < segs; s++) {
+      const t = s / segs, t2 = t * t, t3 = t2 * t;
+      const pt = [];
+      for (let k = 0; k < p1.length; k++) {
+        pt.push(0.5 * ((2 * p1[k]) + (-p0[k] + p2[k]) * t + (2 * p0[k] - 5 * p1[k] + 4 * p2[k] - p3[k]) * t2 + (-p0[k] + 3 * p1[k] - 3 * p2[k] + p3[k]) * t3));
+      }
+      out.push(pt);
+    }
+  }
+  out.push(pts[n - 1].slice());
+  return out;
+}
+function pathLength(pts) { let L = 0; for (let i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); return L; }
+
+// ---- 颜色 ----
+function hex(h) { return [(h >> 16) & 255, (h >> 8) & 255, h & 255]; }
+function mixc(a, b, t) { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t]; }
+function shade(c, k) { return [clamp(c[0] * k, 0, 255), clamp(c[1] * k, 0, 255), clamp(c[2] * k, 0, 255)]; }
+
+// ---- mat4（列主序） ----
+const M4 = {
+  ident() { const m = new Float32Array(16); m[0] = m[5] = m[10] = m[15] = 1; return m; },
+  mul(a, b) {
+    const o = new Float32Array(16);
+    for (let c = 0; c < 4; c++) for (let r = 0; r < 4; r++) {
+      o[c * 4 + r] = a[r] * b[c * 4] + a[4 + r] * b[c * 4 + 1] + a[8 + r] * b[c * 4 + 2] + a[12 + r] * b[c * 4 + 3];
+    }
+    return o;
+  },
+  persp(fovy, asp, n, f) {
+    const t = 1 / Math.tan(fovy / 2), m = new Float32Array(16);
+    m[0] = t / asp; m[5] = t; m[10] = (f + n) / (n - f); m[11] = -1; m[14] = 2 * f * n / (n - f);
+    return m;
+  },
+  ortho(l, r, b, t, n, f) {
+    const m = new Float32Array(16);
+    m[0] = 2 / (r - l); m[5] = 2 / (t - b); m[10] = -2 / (f - n);
+    m[12] = -(r + l) / (r - l); m[13] = -(t + b) / (t - b); m[14] = -(f + n) / (f - n); m[15] = 1;
+    return m;
+  },
+  lookAt(e, c, up) {
+    let zx = e[0] - c[0], zy = e[1] - c[1], zz = e[2] - c[2];
+    let l = Math.hypot(zx, zy, zz); zx /= l; zy /= l; zz /= l;
+    let xx = up[1] * zz - up[2] * zy, xy = up[2] * zx - up[0] * zz, xz = up[0] * zy - up[1] * zx;
+    l = Math.hypot(xx, xy, xz) || 1; xx /= l; xy /= l; xz /= l;
+    const yx = zy * xz - zz * xy, yy = zz * xx - zx * xz, yz = zx * xy - zy * xx;
+    const m = new Float32Array(16);
+    m[0] = xx; m[1] = yx; m[2] = zx; m[4] = xy; m[5] = yy; m[6] = zy; m[8] = xz; m[9] = yz; m[10] = zz;
+    m[12] = -(xx * e[0] + xy * e[1] + xz * e[2]);
+    m[13] = -(yx * e[0] + yy * e[1] + yz * e[2]);
+    m[14] = -(zx * e[0] + zy * e[1] + zz * e[2]);
+    m[15] = 1;
+    return m;
+  },
+  invert(m) {
+    const inv = new Float32Array(16);
+    const a = m;
+    inv[0] = a[5] * a[10] * a[15] - a[5] * a[11] * a[14] - a[9] * a[6] * a[15] + a[9] * a[7] * a[14] + a[13] * a[6] * a[11] - a[13] * a[7] * a[10];
+    inv[4] = -a[4] * a[10] * a[15] + a[4] * a[11] * a[14] + a[8] * a[6] * a[15] - a[8] * a[7] * a[14] - a[12] * a[6] * a[11] + a[12] * a[7] * a[10];
+    inv[8] = a[4] * a[9] * a[15] - a[4] * a[11] * a[13] - a[8] * a[5] * a[15] + a[8] * a[7] * a[13] + a[12] * a[5] * a[11] - a[12] * a[7] * a[9];
+    inv[12] = -a[4] * a[9] * a[14] + a[4] * a[10] * a[13] + a[8] * a[5] * a[14] - a[8] * a[6] * a[13] - a[12] * a[5] * a[10] + a[12] * a[6] * a[9];
+    inv[1] = -a[1] * a[10] * a[15] + a[1] * a[11] * a[14] + a[9] * a[2] * a[15] - a[9] * a[3] * a[14] - a[13] * a[2] * a[11] + a[13] * a[3] * a[10];
+    inv[5] = a[0] * a[10] * a[15] - a[0] * a[11] * a[14] - a[8] * a[2] * a[15] + a[8] * a[3] * a[14] + a[12] * a[2] * a[11] - a[12] * a[3] * a[10];
+    inv[9] = -a[0] * a[9] * a[15] + a[0] * a[11] * a[13] + a[8] * a[1] * a[15] - a[8] * a[3] * a[13] - a[12] * a[1] * a[11] + a[12] * a[3] * a[9];
+    inv[13] = a[0] * a[9] * a[14] - a[0] * a[10] * a[13] - a[8] * a[1] * a[14] + a[8] * a[2] * a[13] + a[12] * a[1] * a[10] - a[12] * a[2] * a[9];
+    inv[2] = a[1] * a[6] * a[15] - a[1] * a[7] * a[14] - a[5] * a[2] * a[15] + a[5] * a[3] * a[14] + a[13] * a[2] * a[7] - a[13] * a[3] * a[6];
+    inv[6] = -a[0] * a[6] * a[15] + a[0] * a[7] * a[14] + a[4] * a[2] * a[15] - a[4] * a[3] * a[14] - a[12] * a[2] * a[7] + a[12] * a[3] * a[6];
+    inv[10] = a[0] * a[5] * a[15] - a[0] * a[7] * a[13] - a[4] * a[1] * a[15] + a[4] * a[3] * a[13] + a[12] * a[1] * a[7] - a[12] * a[3] * a[5];
+    inv[14] = -a[0] * a[5] * a[14] + a[0] * a[6] * a[13] + a[4] * a[1] * a[14] - a[4] * a[2] * a[13] - a[12] * a[1] * a[6] + a[12] * a[2] * a[5];
+    inv[3] = -a[1] * a[6] * a[11] + a[1] * a[7] * a[10] + a[5] * a[2] * a[11] - a[5] * a[3] * a[10] - a[9] * a[2] * a[7] + a[9] * a[3] * a[6];
+    inv[7] = a[0] * a[6] * a[11] - a[0] * a[7] * a[10] - a[4] * a[2] * a[11] + a[4] * a[3] * a[10] + a[8] * a[2] * a[7] - a[8] * a[3] * a[6];
+    inv[11] = -a[0] * a[5] * a[11] + a[0] * a[7] * a[9] + a[4] * a[1] * a[11] - a[4] * a[3] * a[9] - a[8] * a[1] * a[7] + a[8] * a[3] * a[5];
+    inv[15] = a[0] * a[5] * a[10] - a[0] * a[6] * a[9] - a[4] * a[1] * a[10] + a[4] * a[2] * a[9] + a[8] * a[1] * a[6] - a[8] * a[2] * a[5];
+    let det = a[0] * inv[0] + a[1] * inv[4] + a[2] * inv[8] + a[3] * inv[12];
+    det = 1 / det;
+    for (let i = 0; i < 16; i++) inv[i] *= det;
+    return inv;
+  },
+  xform(m, x, y, z) { // 返回裁剪空间 [x,y,z,w]
+    return [m[0] * x + m[4] * y + m[8] * z + m[12], m[1] * x + m[5] * y + m[9] * z + m[13], m[2] * x + m[6] * y + m[10] * z + m[14], m[3] * x + m[7] * y + m[11] * z + m[15]];
+  }
+};
+
+// ===== world.js — 地形、水系、材质 =====
+const WN = 1280, WH = 640;            // 世界 1280m × 1280m，1m 地形格（=5×5 体素）
+const NOWATER = -1000;
+
+// 材质编号
+const MAT = {
+  GRASS: 0, MEADOW: 1, FOREST: 2, ROCK: 3, CLIFF: 4, SAND: 5, DIRT: 6,
+  PAVE: 7, PLAZA: 8, PLATFORM: 9, RETAIN: 10, BED: 11, FIELD: 12, GARDEN: 13, MOSS: 14, PAVE2: 15
+};
+
+// ---------- 地理设计 ----------
+// 山脊：每点 [x, z, 高度, 宽度]
+const RIDGES = [
+  // 栖霞峰（西峰，山顶亭）及其北脊、西南脊
+  [[-330, -40, 238, 82], [-285, -150, 175, 80], [-240, -225, 150, 80], [-250, -330, 215, 95], [-270, -430, 268, 120], [-360, -560, 285, 150]],
+  [[-330, -40, 238, 95], [-430, 90, 180, 120], [-540, 280, 150, 140], [-600, 520, 120, 160]],
+  // 西峰东侧余脉（西山台城所在坡）
+  [[-330, -40, 200, 90], [-215, 30, 105, 85], [-150, 120, 58, 70]],
+  // 北侧群峰（上城之后），中有峡谷供上游河道穿过
+  [[-160, -610, 245, 120], [-40, -660, 230, 110]],
+  [[180, -660, 240, 120], [300, -600, 262, 130]],
+  // 东北峰 → 东岭（城墙所在）
+  [[300, -600, 262, 130], [305, -430, 250, 110], [290, -290, 190, 90], [300, -140, 150, 85], [320, 30, 128, 85], [340, 190, 96, 90], [380, 330, 62, 90], [440, 470, 48, 90]],
+  // 远东群山
+  [[600, -420, 250, 160], [560, -120, 210, 140], [620, 180, 180, 150], [620, 520, 140, 150]],
+  // 南岸丘陵
+  [[-360, 380, 78, 110], [-200, 600, 64, 120], [60, 660, 58, 110], [260, 620, 70, 110]],
+  // 湖东小山（塔山）
+  [[262, 402, 46, 55]],
+];
+
+// 下游河道：[x, z, 水位, 宽度]
+const RIVER = [
+  [42, -168, 44, 34], [34, -130, 44, 24], [24, -95, 44, 22],
+  [16, -78, 36, 24], [6, -20, 36, 26], [4, 36, 36, 28],
+  [12, 58, 26, 28], [36, 120, 26, 30], [60, 180, 26, 30],
+  [74, 214, 16, 34], [84, 262, 10, 38], [90, 300, 10, 44],
+];
+// 上游河道（台地之上）
+const RIVER_UP = [
+  [72, -660, 128, 18], [86, -560, 128, 18], [60, -470, 126, 18], [26, -390, 126, 20],
+  [44, -318, 123, 20], [44, -262, 123, 22], [42, -206, 123, 24],
+];
+const LAKE = { x: 80, z: 392, rx: 190, rz: 112, level: 10 };
+const POOL = { x: 42, z: -180, r: 27, level: 44 };
+const FALLS = { x0: 30, x1: 54, z: -203.5, top: 123, bottom: 44 };
+const PLATEAU_H = 126;
+// 台地（上城）边界多边形（顺时针），南缘为悬崖
+const PLATEAU_POLY = [
+  [-170, -250], [-110, -262], [-70, -268], [-8, -256], [14, -214], [26, -204], [60, -204], [84, -214], [118, -232],
+  [200, -246], [248, -300], [250, -560], [150, -600], [-60, -600], [-190, -540], [-200, -400]
+];
+
+function riverInfo(px, pz, R) {
+  // 返回 [距离, 水位, 半宽]
+  let best = 1e9, lv = 0, hw = 10, bi = 0;
+  for (let i = 0; i < R.length - 1; i++) {
+    const a = R[i], b = R[i + 1];
+    const d = distSegT(px, pz, a[0], a[1], b[0], b[1]), t = _segT;
+    if (d < best) { best = d; lv = a[2]; hw = lerp(a[3], b[3], t) / 2; bi = i + t; }
+  }
+  return [best, lv, hw, bi];
+}
+function polySD(px, pz, poly) { // 多边形有符号距离（内部为负）
+  let d = 1e9, inside = false;
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const a = poly[i], b = poly[j];
+    const dd = distSegT(px, pz, a[0], a[1], b[0], b[1]);
+    if (dd < d) d = dd;
+    if (((a[1] > pz) !== (b[1] > pz)) && (px < (b[0] - a[0]) * (pz - a[1]) / (b[1] - a[1]) + a[0])) inside = !inside;
+  }
+  return inside ? -d : d;
+}
+function lakeSD(x, z) {
+  const a = Math.atan2((z - LAKE.z) / LAKE.rz, (x - LAKE.x) / LAKE.rx);
+  const r = Math.hypot((x - LAKE.x) / LAKE.rx, (z - LAKE.z) / LAKE.rz);
+  const wob = 1 + 0.12 * Math.sin(a * 3 + 1.3) + 0.07 * Math.sin(a * 5 - 0.4) + 0.05 * noise2(Math.cos(a) * 2, Math.sin(a) * 2);
+  return (r - wob) * Math.min(LAKE.rx, LAKE.rz);
+}
+
+function ridgeHeight(x, z) {
+  let h = 0;
+  for (const R of RIDGES) {
+    if (R.length === 1) {
+      const p = R[0], d = Math.hypot(x - p[0], z - p[1]) / p[3];
+      h = smax(h, p[2] * shapeF(d), 10);
+      continue;
+    }
+    let best = 0;
+    for (let i = 0; i < R.length - 1; i++) {
+      const a = R[i], b = R[i + 1];
+      const d = distSegT(x, z, a[0], a[1], b[0], b[1]), t = _segT;
+      const hh = lerp(a[2], b[2], t), w = lerp(a[3], b[3], t);
+      const v = hh * shapeF(d / w);
+      if (v > best) best = v;
+    }
+    h = smax(h, best, 12);
+  }
+  return h;
+}
+function shapeF(u) { return 0.55 * Math.exp(-0.75 * u * u) + 0.45 * Math.exp(-1.35 * u); }
+
+function valleyFloor(x, z) {
+  // 以下游河道水位为基准的谷底：远处平滑过渡，近岸不低于上游水位
+  let best = 1e9, fl = 0, bank = 0, hw = 10;
+  for (let i = 0; i < RIVER.length - 1; i++) {
+    const a = RIVER[i], b = RIVER[i + 1];
+    const d = distSegT(x, z, a[0], a[1], b[0], b[1]), t = _segT;
+    if (d < best) { best = d; fl = lerp(a[2], b[2], smoothstep(0.2, 1, t)); bank = a[2]; hw = lerp(a[3], b[3], t) / 2; }
+  }
+  let base = fl + 2.2 + Math.min(best, 260) * 0.05;
+  const nb = bank + 1.6 - Math.max(0, best - hw) * 0.12;
+  base = Math.max(base, nb);
+  const ls = lakeSD(x, z);
+  const lakeBase = LAKE.level + 2.0 + Math.max(0, ls) * 0.1;
+  base = smin(base, lakeBase, 8);
+  return base;
+}
+// 石峰（山水画中的孤峰）
+const SPIRES = [
+  [150, -212, 178, 17], [-112, -222, 168, 15], [-178, -300, 190, 20], [215, -290, 196, 19],
+  [-150, -470, 222, 24], [190, -470, 212, 22], [-420, -200, 238, 26], [420, -300, 236, 28],
+  [420, 60, 186, 24], [-380, 220, 158, 22], [-480, -40, 218, 28], [-235, 95, 150, 20],
+  [470, -500, 250, 30], [-470, -470, 262, 30], [360, 520, 110, 22], [-500, 420, 130, 26]
+];
+function ridgeSpire(x, z) {
+  const wx = x + 22 * fbm(x / 210, z / 210, 3), wz = z + 22 * fbm(x / 210 + 7, z / 210 - 3, 3);
+  return ridgeHeight(wx, wz);
+}
+function macroFrom(x, z, rh, vf) {
+  const rug = ridged(x / 72, z / 72, 5);
+  const mf = smoothstep(30, 170, rh);
+  rh += (rug - 0.45) * 72 * mf + fbm(x / 26, z / 26, 3) * 11 * mf;
+  for (const s of SPIRES) {
+    const dx = x - s[0], dz = z - s[1];
+    if (Math.abs(dx) > s[3] * 3 || Math.abs(dz) > s[3] * 3) continue;
+    const r = Math.hypot(dx, dz);
+    const u = r / (s[3] * (0.7 + 0.3 * (noise2(x / 7 + s[0], z / 7) + 1)));
+    let sh = s[2] * Math.exp(-u * u * u);
+    sh += (ridged(x / 14 + s[1], z / 14, 3) - 0.5) * 22 * Math.exp(-u * u);
+    rh = smax(rh, sh, 5);
+  }
+  let h = smax(vf, rh, 14);
+  h += fbm(x / 60, z / 60, 2) * 2.2;
+  return h;
+}
+function macroHeight(x, z) { return macroFrom(x, z, ridgeSpire(x, z), valleyFloor(x, z)); }
+// 对单格施加台地、河道、潭、湖的塑形
+function carveHeight(x, z, h) {
+  if (x > -215 && x < 265 && z < -190) {
+    const sd = polySD(x, z, PLATEAU_POLY);
+    if (sd < 16) {
+      const pH = PLATEAU_H + fbm(x / 90, z / 90, 2) * 3 + Math.max(0, -z - 420) * 0.03;
+      const edgeW = (z > -280 && x > -90 && x < 150) ? 2.0 : 14;
+      const pm = 1 - smoothstep(-edgeW, edgeW * 0.3, sd);
+      if (pm > 0) h = Math.max(h, lerp(h, pH, pm));
+    }
+  }
+  if (x > -10 && x < 130 && z < -190) h = carveRiver(x, z, h, RIVER_UP, 2.5);
+  if (x > -50 && x < 160 && z > -225 && z < 330) h = carveRiver(x, z, h, RIVER, 3);
+  {
+    const d = Math.hypot(x - POOL.x, z - POOL.z);
+    if (d < POOL.r + 8) {
+      const t = smoothstep(POOL.r + 8, POOL.r * 0.7, d);
+      h = lerp(h, Math.min(h, POOL.level - 6 + d / POOL.r * 4), t);
+    }
+  }
+  if (Math.abs(x - LAKE.x) < LAKE.rx * 1.4 && Math.abs(z - LAKE.z) < LAKE.rz * 1.4) {
+    const s = lakeSD(x, z);
+    if (s < 10) {
+      const t = smoothstep(10, -6, s);
+      h = lerp(h, Math.min(h, LAKE.level - 1.5 - smoothstep(0, 60, -s) * 5), t);
+    }
+  }
+  return h;
+}
+function carveRiver(x, z, h, R, depth) {
+  const [d, lv, hw] = riverInfo(x, z, R);
+  if (d >= hw + 26) return h;
+  const bank = Math.max(h, lv + 0.8 - Math.max(0, d - hw - 12) * 0.15);
+  if (d <= hw) return Math.min(h, lv - depth + (d / hw) * (depth - 0.8));
+  if (d < hw + 4) return lerp(Math.min(h, lv - 0.8), bank, (d - hw) / 4);
+  return bank;
+}
+function naturalHeight(x, z) { return carveHeight(x, z, macroHeight(x, z)); }
+
+class World {
+  constructor() {
+    this.N = WN;
+    this.H = new Float32Array(WN * WN);      // 地表高度（0.2m 精度）
+    this.nat = new Float32Array(WN * WN);    // 自然地形（未改造，浮点）
+    this.W = new Float32Array(WN * WN).fill(NOWATER); // 水面高度
+    this.M = new Uint8Array(WN * WN);        // 材质
+    this.occ = new Uint8Array(WN * WN);      // 占用：0 空 1 路 2 建筑 3 水 4 保留 5 园林
+    this.mod = new Uint8Array(WN * WN);      // 是否人工改造
+    this.forest = new Float32Array(WN * WN);
+  }
+  idx(x, z) { return (Math.floor(z) + WH) * WN + (Math.floor(x) + WH); }
+  inside(x, z) { return x >= -WH && x < WH && z >= -WH && z < WH; }
+  h(x, z) { // 最近格高度
+    const i = Math.floor(x) + WH, j = Math.floor(z) + WH;
+    if (i < 0 || j < 0 || i >= WN || j >= WN) return 0;
+    return this.H[j * WN + i];
+  }
+  hn(x, z) { // 自然地形双线性
+    const fx = x - 0.5 + WH, fz = z - 0.5 + WH;
+    const i = clamp(Math.floor(fx), 0, WN - 2), j = clamp(Math.floor(fz), 0, WN - 2);
+    const tx = clamp(fx - i, 0, 1), tz = clamp(fz - j, 0, 1);
+    const a = this.nat[j * WN + i], b = this.nat[j * WN + i + 1], c = this.nat[(j + 1) * WN + i], d = this.nat[(j + 1) * WN + i + 1];
+    return lerp(lerp(a, b, tx), lerp(c, d, tx), tz);
+  }
+  waterAt(x, z) { const i = this.idx(x, z); return this.W[i]; }
+
+  generate(progress) {
+    const N = WN;
+    // 4m 网格：山脊与谷底
+    const C4 = N / 4 + 1, rh4 = new Float32Array(C4 * C4), vf4 = new Float32Array(C4 * C4);
+    for (let j = 0; j < C4; j++) for (let i = 0; i < C4; i++) {
+      const x = i * 4 - WH, z = j * 4 - WH;
+      rh4[j * C4 + i] = ridgeSpire(x, z); vf4[j * C4 + i] = valleyFloor(x, z);
+    }
+    const bil = (arr, C, s, x, z) => {
+      const fx = (x + WH) / s, fz = (z + WH) / s;
+      const i = clamp(Math.floor(fx), 0, C - 2), j = clamp(Math.floor(fz), 0, C - 2), tx = fx - i, tz = fz - j;
+      return lerp(lerp(arr[j * C + i], arr[j * C + i + 1], tx), lerp(arr[(j + 1) * C + i], arr[(j + 1) * C + i + 1], tx), tz);
+    };
+    // 2m 网格：加入岩脊细节
+    const C = N / 2 + 1;
+    const mac = new Float32Array(C * C);
+    for (let j = 0; j < C; j++) for (let i = 0; i < C; i++) {
+      const x = i * 2 - WH, z = j * 2 - WH;
+      mac[j * C + i] = macroFrom(x, z, bil(rh4, C4, 4, x, z), bil(vf4, C4, 4, x, z));
+    }
+    this.macro = mac; this.macroC = C;
+    for (let j = 0; j < N; j++) {
+      const z = j - WH + 0.5, fj = (j + 0.5) / 2, j0 = Math.min(C - 2, Math.floor(fj)), tj = fj - j0;
+      for (let i = 0; i < N; i++) {
+        const x = i - WH + 0.5, fi = (i + 0.5) / 2, i0 = Math.min(C - 2, Math.floor(fi)), ti = fi - i0;
+        const a = mac[j0 * C + i0], b = mac[j0 * C + i0 + 1], c = mac[(j0 + 1) * C + i0], d = mac[(j0 + 1) * C + i0 + 1];
+        const h = lerp(lerp(a, b, ti), lerp(c, d, ti), tj);
+        this.nat[j * N + i] = carveHeight(x, z, h);
+      }
+    }
+    // 水面
+    for (let j = 0; j < N; j++) {
+      const z = j - WH + 0.5;
+      for (let i = 0; i < N; i++) {
+        const x = i - WH + 0.5, k = j * N + i;
+        const hN = this.nat[k];
+        let wl = NOWATER;
+        if (x > -40 && x < 150 && z > -215 && z < 320) {
+          const [d, lv, hw] = riverInfo(x, z, RIVER);
+          if (d < hw + 6 && hN < lv) wl = lv;
+        }
+        if (x > 0 && x < 120 && z < -190) {
+          const [d, lv, hw] = riverInfo(x, z, RIVER_UP);
+          if (d < hw + 6 && hN < lv) wl = lv;
+        }
+        if (Math.abs(x - POOL.x) < 40 && Math.abs(z - POOL.z) < 40 && Math.hypot(x - POOL.x, z - POOL.z) < POOL.r + 6 && hN < POOL.level) wl = POOL.level;
+        if (hN < LAKE.level && Math.abs(x - LAKE.x) < LAKE.rx * 1.4 && Math.abs(z - LAKE.z) < LAKE.rz * 1.4 && lakeSD(x, z) < 12) wl = LAKE.level;
+        this.W[k] = wl;
+        if (wl > NOWATER) this.occ[k] = 3;
+      }
+    }
+    // 量化：自然地形取整到 1m（=5 体素）
+    for (let k = 0; k < N * N; k++) this.H[k] = Math.round(this.nat[k]);
+    // 瀑布口保持竖直的崖面
+    this.assignMaterials();
+  }
+
+  slopeAt(i, j) {
+    const N = WN, H = this.nat;
+    const i0 = Math.max(0, i - 1), i1 = Math.min(N - 1, i + 1), j0 = Math.max(0, j - 1), j1 = Math.min(N - 1, j + 1);
+    const dx = (H[j * N + i1] - H[j * N + i0]) / (i1 - i0);
+    const dz = (H[j1 * N + i] - H[j0 * N + i]) / (j1 - j0);
+    return Math.hypot(dx, dz);
+  }
+
+  assignMaterials() {
+    const N = WN;
+    if (!this.wnear) {
+      const a = new Uint8Array(N * N);
+      for (let j = 0; j < N; j++) for (let i = 0; i < N; i++) if (this.W[j * N + i] > NOWATER) {
+        for (let dj = -2; dj <= 2; dj++) for (let di = -2; di <= 2; di++) {
+          const ii = i + di, jj = j + dj; if (ii >= 0 && jj >= 0 && ii < N && jj < N) a[jj * N + ii] = 1;
+        }
+      }
+      this.wnear = a;
+    }
+    for (let j = 0; j < N; j++) {
+      const z = j - WH + 0.5;
+      for (let i = 0; i < N; i++) {
+        const k = j * N + i, x = i - WH + 0.5;
+        if (this.mod[k]) continue;
+        const h = this.H[k], s = this.slopeAt(i, j);
+        const n1 = noise2(x / 23, z / 23), n2 = noise2(x / 7 + 40, z / 7);
+        let m;
+        const wl = this.W[k];
+        if (wl > NOWATER && h < wl) m = MAT.BED;
+        else if (wl > NOWATER || this.nearWater(i, j)) m = (h < 30 && n2 > -0.2) ? MAT.SAND : MAT.MOSS;
+        else if (s > 2.1 + n1 * 0.5) m = MAT.CLIFF;
+        else if (s > 1.15 + n1 * 0.4) m = MAT.ROCK;
+        else if (s > 0.8 + n2 * 0.2 && h > 90) m = MAT.MOSS;
+        else {
+          const f = fbm(x / 70, z / 70, 3) + (h > 60 ? 0.15 : 0) - (h < 25 ? 0.25 : 0);
+          this.forest[k] = f;
+          m = f > 0.12 ? MAT.FOREST : (n1 > 0.25 ? MAT.MEADOW : MAT.GRASS);
+        }
+        this.M[k] = m;
+      }
+    }
+  }
+  nearWater(i, j) {
+    const N = WN;
+    if (this.wnear) return this.wnear[j * N + i] === 1;
+    for (let dj = -2; dj <= 2; dj++) for (let di = -2; di <= 2; di++) {
+      const ii = i + di, jj = j + dj;
+      if (ii < 0 || jj < 0 || ii >= N || jj >= N) continue;
+      if (this.W[jj * N + ii] > NOWATER) return true;
+    }
+    return false;
+  }
+
+  // ---- 改造工具 ----
+  setCell(i, j, h, mat, occ) {
+    if (i < 0 || j < 0 || i >= WN || j >= WN) return;
+    const k = j * WN + i;
+    this.H[k] = h; if (mat !== undefined && mat !== null) this.M[k] = mat;
+    this.mod[k] = 1;
+    if (occ) this.occ[k] = occ;
+  }
+  // 矩形平台（世界坐标，整数米边界）
+  platform(x0, z0, x1, z1, h, mat, occ) {
+    for (let z = Math.floor(z0); z < Math.ceil(z1); z++)
+      for (let x = Math.floor(x0); x < Math.ceil(x1); x++)
+        this.setCell(x + WH, z + WH, h, mat, occ);
+  }
+  rectStats(x0, z0, x1, z1) {
+    let mn = 1e9, mx = -1e9, occ = 0, water = false;
+    for (let z = Math.floor(z0); z < Math.ceil(z1); z++)
+      for (let x = Math.floor(x0); x < Math.ceil(x1); x++) {
+        if (!this.inside(x, z)) { occ = 99; continue; }
+        const k = this.idx(x, z);
+        const h = this.H[k];
+        if (h < mn) mn = h; if (h > mx) mx = h;
+        if (this.occ[k]) occ = Math.max(occ, this.occ[k]);
+        if (this.W[k] > NOWATER) water = true;
+      }
+    return { mn, mx, occ, water };
+  }
+  rectFree(x0, z0, x1, z1) {
+    for (let z = Math.floor(z0); z < Math.ceil(z1); z++)
+      for (let x = Math.floor(x0); x < Math.ceil(x1); x++) {
+        if (!this.inside(x, z)) return false;
+        const k = this.idx(x, z);
+        if (this.occ[k] && this.occ[k] !== 5) return false;
+      }
+    return true;
+  }
+  markOcc(x0, z0, x1, z1, v) {
+    for (let z = Math.floor(z0); z < Math.ceil(z1); z++)
+      for (let x = Math.floor(x0); x < Math.ceil(x1); x++)
+        if (this.inside(x, z)) this.occ[this.idx(x, z)] = v;
+  }
+  // 挡土墙：改造区相邻的天然高差边变为石壁
+  retainPass() {
+    const N = WN;
+    for (let j = 1; j < N - 1; j++) for (let i = 1; i < N - 1; i++) {
+      const k = j * N + i;
+      if (this.mod[k]) continue;
+      const h = this.H[k];
+      const nb = [k - 1, k + 1, k - N, k + N];
+      for (const q of nb) {
+        if (this.mod[q] && h - this.H[q] > 0.9) { this.M[k] = MAT.RETAIN; break; }
+      }
+    }
+  }
+}
+
+// ===== mesh.js — 网格构建、局部坐标系、地形/水面网格 =====
+// 顶点格式（20 字节）：pos f32×3 | 颜色 rgb + AO (u8×4) | 法线索引, 发光, 标志, 随机 (u8×4)
+const FL = { ROOF: 1, LEAF: 2, FALL: 4, STRATA: 8, MASON: 16, LANTERN: 32, CLOUD: 64, FOAM: 128 };
+
+// 面的顶点顺序（BL, BR, TR, TL），与法线编号 0:+x 1:-x 2:+y 3:-y 4:+z 5:-z 对应
+class MeshBuilder {
+  constructor(cap) {
+    this.cap = cap || 2048; this.nv = 0; this.ni = 0;
+    this.buf = new ArrayBuffer(this.cap * 20); this.f32 = new Float32Array(this.buf); this.u8 = new Uint8Array(this.buf);
+    this.icap = this.cap * 1.5 | 0; this.idx = new Uint32Array(this.icap);
+    this.min = [1e9, 1e9, 1e9]; this.max = [-1e9, -1e9, -1e9];
+  }
+  ensure(nv, ni) {
+    if (this.nv + nv > this.cap) {
+      let c = this.cap * 2; while (c < this.nv + nv) c *= 2;
+      const nb = new ArrayBuffer(c * 20); new Uint8Array(nb).set(this.u8.subarray(0, this.nv * 20));
+      this.buf = nb; this.f32 = new Float32Array(nb); this.u8 = new Uint8Array(nb); this.cap = c;
+    }
+    if (this.ni + ni > this.icap) {
+      let c = this.icap * 2; while (c < this.ni + ni) c *= 2;
+      const ni2 = new Uint32Array(c); ni2.set(this.idx.subarray(0, this.ni)); this.idx = ni2; this.icap = c;
+    }
+  }
+  // 发出一个四边形；P = 12 个坐标，ao = 4 个 AO 值（0..1）
+  quad(P, n, col, ao, glow, flags, rnd) {
+    this.ensure(4, 6);
+    const base = this.nv, f = this.f32, u = this.u8;
+    for (let v = 0; v < 4; v++) {
+      const o = (base + v) * 5, x = P[v * 3], y = P[v * 3 + 1], z = P[v * 3 + 2];
+      f[o] = x; f[o + 1] = y; f[o + 2] = z;
+      const b = o * 4 + 12;
+      u[b] = col[0]; u[b + 1] = col[1]; u[b + 2] = col[2]; u[b + 3] = (ao ? ao[v] : 1) * 255;
+      u[b + 4] = n; u[b + 5] = glow || 0; u[b + 6] = flags || 0; u[b + 7] = rnd || 0;
+      if (x < this.min[0]) this.min[0] = x; if (y < this.min[1]) this.min[1] = y; if (z < this.min[2]) this.min[2] = z;
+      if (x > this.max[0]) this.max[0] = x; if (y > this.max[1]) this.max[1] = y; if (z > this.max[2]) this.max[2] = z;
+    }
+    this.nv += 4;
+    const I = this.idx;
+    if (ao && ao[0] + ao[2] < ao[1] + ao[3]) {
+      I[this.ni++] = base + 1; I[this.ni++] = base + 2; I[this.ni++] = base + 3;
+      I[this.ni++] = base + 1; I[this.ni++] = base + 3; I[this.ni++] = base;
+    } else {
+      I[this.ni++] = base; I[this.ni++] = base + 1; I[this.ni++] = base + 2;
+      I[this.ni++] = base; I[this.ni++] = base + 2; I[this.ni++] = base + 3;
+    }
+  }
+  face(n, x0, y0, z0, x1, y1, z1, col, ao, glow, flags, rnd) {
+    let P;
+    switch (n) {
+      case 0: P = [x1, y0, z1, x1, y0, z0, x1, y1, z0, x1, y1, z1]; break;
+      case 1: P = [x0, y0, z0, x0, y0, z1, x0, y1, z1, x0, y1, z0]; break;
+      case 2: P = [x0, y1, z1, x1, y1, z1, x1, y1, z0, x0, y1, z0]; break;
+      case 3: P = [x0, y0, z0, x1, y0, z0, x1, y0, z1, x0, y0, z1]; break;
+      case 4: P = [x0, y0, z1, x1, y0, z1, x1, y1, z1, x0, y1, z1]; break;
+      default: P = [x1, y0, z0, x0, y0, z0, x0, y1, z0, x1, y1, z0];
+    }
+    this.quad(P, n, col, ao, glow, flags, rnd);
+  }
+  // 世界坐标盒子。o: {top, bot, sx, sz, glow, fl, rnd, skip(位掩码), ao(竖面底部 AO)}
+  box(x0, y0, z0, x1, y1, z1, col, o) {
+    x0 = snap(x0); y0 = snap(y0); z0 = snap(z0); x1 = snap(x1); y1 = snap(y1); z1 = snap(z1);
+    if (x1 - x0 < 0.05 || y1 - y0 < 0.05 || z1 - z0 < 0.05) return;
+    o = o || EMPTY_O;
+    const skip = o.skip || 0, g = o.glow || 0, fl = o.fl || 0, r = o.rnd || 0;
+    const aob = o.ao !== undefined ? o.ao : (y1 - y0 > 1.2 ? 0.72 : 0.85);
+    const AV = [aob, aob, 1, 1];
+    const sx = o.sx || col, sz = o.sz || col;
+    if (!(skip & 1)) this.face(0, x0, y0, z0, x1, y1, z1, sx, AV, g, fl, r);
+    if (!(skip & 2)) this.face(1, x0, y0, z0, x1, y1, z1, sx, AV, g, fl, r);
+    if (!(skip & 4)) this.face(2, x0, y0, z0, x1, y1, z1, o.top || col, null, g, fl, r);
+    if (!(skip & 8)) this.face(3, x0, y0, z0, x1, y1, z1, o.bot || shade(col, 0.8), AO_UNDER, g, fl & ~FL.ROOF, r);
+    if (!(skip & 16)) this.face(4, x0, y0, z0, x1, y1, z1, sz, AV, g, fl, r);
+    if (!(skip & 32)) this.face(5, x0, y0, z0, x1, y1, z1, sz, AV, g, fl, r);
+  }
+}
+const EMPTY_O = {};
+const AO_ONE = [1, 1, 1, 1];
+const AO_UNDER = [0.6, 0.6, 0.6, 0.6];
+
+// 局部坐标系：原点=地块中心、地坪高度；局部 +z 为正面（朝向道路）
+const ROT_FACE = [
+  [0, 1, 2, 3, 4, 5],
+  [5, 4, 2, 3, 0, 1],
+  [1, 0, 2, 3, 5, 4],
+  [4, 5, 2, 3, 1, 0],
+];
+class Frame {
+  constructor(mb, cx, cy, cz, rot, md) { this.mb = mb; this.md = md || mb; this.cx = cx; this.cy = cy; this.cz = cz; this.rot = rot & 3; }
+  tx(lx, lz) {
+    switch (this.rot) {
+      case 0: return [this.cx + lx, this.cz + lz];
+      case 1: return [this.cx + lz, this.cz - lx];
+      case 2: return [this.cx - lx, this.cz - lz];
+      default: return [this.cx - lz, this.cz + lx];
+    }
+  }
+  // 局部盒子；o 同 MeshBuilder.box，但 sx/sz 与 skip 为局部定义
+  box(x0, y0, z0, x1, y1, z1, col, o, detail) {
+    const a = this.tx(x0, z0), b = this.tx(x1, z1);
+    let oo = o;
+    if (o && this.rot) {
+      oo = Object.assign({}, o);
+      if (this.rot & 1) { oo.sx = o.sz; oo.sz = o.sx; }
+      if (o.skip) {
+        let s = 0; const R = ROT_FACE[this.rot];
+        for (let i = 0; i < 6; i++) if (o.skip & (1 << i)) s |= 1 << R[i];
+        oo.skip = s;
+      }
+    }
+    (detail ? this.md : this.mb).box(Math.min(a[0], b[0]), this.cy + y0, Math.min(a[1], b[1]), Math.max(a[0], b[0]), this.cy + y1, Math.max(a[1], b[1]), col, oo);
+  }
+  d(x0, y0, z0, x1, y1, z1, col, o) { this.box(x0, y0, z0, x1, y1, z1, col, o, true); }
+  // 世界点
+  wp(lx, ly, lz) { const t = this.tx(lx, lz); return [t[0], this.cy + ly, t[1]]; }
+  sub(lx, ly, lz, rot) { // 子坐标系
+    const t = this.tx(lx, lz);
+    return new Frame(this.mb, t[0], this.cy + ly, t[1], (this.rot + (rot || 0)) & 3, this.md);
+  }
+}
+
+// ---------- 地形着色 ----------
+const TC = {
+  grass: hex(0x76905a), meadow: hex(0x939d62), forest: hex(0x496544), rockT: hex(0x7c8c80), rockS: hex(0x6b716a),
+  cliff: hex(0x86705a), cliffHi: hex(0x587a78), sand: hex(0xc9bd98), dirt: hex(0x86694b), earth: hex(0x7a6247),
+  pave: hex(0xa39c8e), plaza: hex(0xb8a484), platform: hex(0xafa692), platformS: hex(0x958d7e), retain: hex(0x8f887a),
+  bed: hex(0x5e6450), field: hex(0xa6b35c), garden: hex(0x5c8a4a), moss: hex(0x6d8a58), pave2: hex(0x8e8b84),
+  jade: hex(0x4d7f78), malachite: hex(0x5a9468),
+};
+function terrainTop(m, h, x, z) {
+  const v = Math.round(noise2(x / 41, z / 41) * 5) * 0.018 + Math.round(noise2(x / 13 + 9, z / 13) * 3) * 0.012;
+  const hi = smoothstep(70, 235, h);
+  let c;
+  switch (m) {
+    case MAT.GRASS: c = mixc(mixc(TC.grass, TC.meadow, smoothstep(40, 10, h) * 0.5), TC.malachite, hi * 0.8); break;
+    case MAT.MEADOW: c = mixc(TC.meadow, TC.malachite, hi * 0.6); break;
+    case MAT.FOREST: c = mixc(TC.forest, shade(TC.jade, 0.8), hi * 0.7); break;
+    case MAT.ROCK: c = mixc(TC.rockT, TC.jade, hi * 0.75); break;
+    case MAT.CLIFF: c = mixc(TC.cliff, TC.cliffHi, hi); break;
+    case MAT.SAND: c = TC.sand; break;
+    case MAT.DIRT: c = TC.dirt; break;
+    case MAT.PAVE: c = TC.pave; break;
+    case MAT.PLAZA: c = TC.plaza; break;
+    case MAT.PLATFORM: c = TC.platform; break;
+    case MAT.RETAIN: c = TC.retain; break;
+    case MAT.BED: c = TC.bed; break;
+    case MAT.FIELD: c = TC.field; break;
+    case MAT.GARDEN: c = TC.garden; break;
+    case MAT.MOSS: c = mixc(TC.moss, TC.jade, hi * 0.6); break;
+    case MAT.PAVE2: c = TC.pave2; break;
+    default: c = TC.grass;
+  }
+  const k = (m >= MAT.PAVE && m <= MAT.RETAIN) || m === MAT.PAVE2 ? 1 + v * 0.4 : 1 + v;
+  return shade(c, k);
+}
+function terrainSide(m, h, x, z) {
+  const hi = smoothstep(70, 235, h);
+  let c;
+  switch (m) {
+    case MAT.GRASS: case MAT.MEADOW: case MAT.FOREST: case MAT.GARDEN: case MAT.FIELD:
+      c = mixc(TC.earth, TC.rockS, 0.3 + hi * 0.4); break;
+    case MAT.ROCK: case MAT.MOSS: c = mixc(TC.rockS, shade(TC.jade, 0.85), hi * 0.6); break;
+    case MAT.CLIFF: c = mixc(shade(TC.cliff, 0.92), shade(TC.cliffHi, 0.9), hi); break;
+    case MAT.SAND: c = shade(TC.sand, 0.85); break;
+    case MAT.PAVE: case MAT.PAVE2: c = shade(TC.pave, 0.86); break;
+    case MAT.PLAZA: c = shade(TC.plaza, 0.86); break;
+    case MAT.PLATFORM: c = TC.platformS; break;
+    case MAT.RETAIN: c = shade(TC.retain, 0.92); break;
+    case MAT.BED: c = TC.bed; break;
+    default: c = TC.earth;
+  }
+  return c;
+}
+function sideFlags(m) { return (m === MAT.CLIFF || m === MAT.ROCK || m === MAT.MOSS) ? FL.STRATA : (m === MAT.RETAIN || m === MAT.PLATFORM || m === MAT.PAVE || m === MAT.PLAZA || m === MAT.PAVE2) ? FL.MASON : 0; }
+
+// ---------- 地形分块网格 ----------
+// Hs/Ms 为该 LOD 的高度与材质数组（边长 n，格尺寸 s）
+function buildTerrainChunk(mb, Hs, Ms, n, s, ci0, cj0, cs, skirt) {
+  const AO_K = [1, 0.8, 0.66, 0.55];
+  const at = (i, j) => (i < 0 || j < 0 || i >= n || j >= n) ? -1e4 : Hs[j * n + i];
+  for (let j = cj0; j < cj0 + cs; j++) {
+    let i = ci0;
+    while (i < ci0 + cs) {
+      const k = j * n + i, h = Hs[k], m = Ms[k];
+      const wx = i * s - WH, wz = j * s - WH;
+      const col = terrainTop(m, h, wx + s * 0.5, wz + s * 0.5);
+      // 顶面 AO（四角）
+      const occ = (di, dj) => at(i + di, j + dj) > h + 0.01 ? 1 : 0;
+      const cAO = (a, b, c) => AO_K[(a && b) ? 3 : a + b + c];
+      const l = occ(-1, 0), r = occ(1, 0), u = occ(0, -1), d = occ(0, 1);
+      const ao = s > 1 ? AO_ONE : [cAO(l, d, occ(-1, 1)), cAO(r, d, occ(1, 1)), cAO(r, u, occ(1, -1)), cAO(l, u, occ(-1, -1))];
+      let run = 1;
+      if (ao[0] === 1 && ao[1] === 1 && ao[2] === 1 && ao[3] === 1) {
+        while (i + run < ci0 + cs) {
+          const k2 = k + run, h2 = Hs[k2];
+          if (h2 !== h || Ms[k2] !== m) break;
+          const ii = i + run;
+          if (s === 1 && (at(ii + 1, j) > h || at(ii, j - 1) > h || at(ii, j + 1) > h || at(ii + 1, j - 1) > h || at(ii + 1, j + 1) > h)) break;
+          const c2 = terrainTop(m, h, wx + run * s + s * 0.5, wz + s * 0.5);
+          if (c2[0] !== col[0] || c2[1] !== col[1] || c2[2] !== col[2]) break;
+          run++;
+        }
+      }
+      mb.face(2, wx, h, wz, wx + run * s, h, wz + s, col, ao, 0, (m === MAT.PLAZA || m === MAT.PLATFORM) ? FL.MASON : 0, 0);
+      // 侧面
+      for (let q = i; q < i + run; q++) {
+        const kk = j * n + q, hh = Hs[kk], mm = Ms[kk];
+        const x0 = q * s - WH, z0 = wz;
+        const sc = terrainSide(mm, hh, x0, z0), sf = sideFlags(mm);
+        const nb = [[q + 1, j, 0], [q - 1, j, 1], [q, j + 1, 4], [q, j - 1, 5]];
+        for (const [ni, nj, fn] of nb) {
+          let nh = at(ni, nj);
+          const border = skirt && (ni < ci0 || nj < cj0 || ni >= ci0 + cs || nj >= cj0 + cs);
+          if (border) nh = Math.min(nh, hh) - 3;
+          if (nh >= hh) continue;
+          if (nh < -100) nh = hh - 80;
+          const aov = [0.62, 0.62, 1, 1];
+          mb.face(fn, x0, nh, z0, x0 + s, hh, z0 + s, sc, aov, 0, sf, 0);
+        }
+      }
+      i += run;
+    }
+  }
+}
+// 水面网格
+function buildWaterChunk(mb, world, ci0, cj0, cs) {
+  const N = WN, W = world.W, H = world.H;
+  for (let j = cj0; j < cj0 + cs; j++) {
+    let i = ci0;
+    while (i < ci0 + cs) {
+      const k = j * N + i, w = W[k];
+      if (w <= NOWATER || H[k] >= w) { i++; continue; }
+      let run = 1;
+      while (i + run < ci0 + cs && W[k + run] === w && H[k + run] < w) run++;
+      const x0 = i - WH, z0 = j - WH;
+      mb.face(2, x0, w - 0.12, z0, x0 + run, w - 0.12, z0 + 1, [0, 0, 0], null, 0, 0, 0);
+      i += run;
+    }
+  }
+}
+
+// ===== arch.js — 中式体素建筑构件与建筑类型 =====
+// 约定：Frame 局部坐标，原点 = 地块中心、地坪；+z 为正面；尺寸均为 0.2m 的倍数
+const PAL = {
+  wall: hex(0xe7e2d4), wall2: hex(0xd9d2c0), wallBase: hex(0x5b5f61), tile: hex(0x3c434b), tile2: hex(0x485059), ridge: hex(0x2a2f35),
+  wood: hex(0x5b3b2a), woodD: hex(0x3d2a20), woodL: hex(0x7d5537), red: hex(0x9a3322), redD: hex(0x732619), lattice: hex(0x6e4b32),
+  stone: hex(0xaea593), stoneD: hex(0x878073), stoneL: hex(0xc2baa8), gold: hex(0xdcae48), yellow: hex(0xd49a2a), yellow2: hex(0xc4891f),
+  green: hex(0x2e7b66), green2: hex(0x276a58), teal: hex(0x2b6b77), beam: hex(0x2f6079), beam2: hex(0x3d8a7b), paper: hex(0xeadfc2),
+  lantern: hex(0xcf3a22), flagR: hex(0xb3352a), flagB: hex(0x2b4c78), flagO: hex(0xc88b38), plaque: hex(0x2b2421), white: hex(0xf0ece2),
+  darkIn: hex(0x2a211c), bamboo: hex(0x8a9a5a), thatch: hex(0x9a8052),
+};
+const ROOFSETS = {
+  gray: { tile: PAL.tile, tile2: PAL.tile2, ridge: PAL.ridge, eave: PAL.woodD },
+  grayL: { tile: hex(0x505861), tile2: hex(0x5a636c), ridge: hex(0x343a41), eave: PAL.woodD },
+  yellow: { tile: PAL.yellow, tile2: PAL.yellow2, ridge: hex(0xa8741a), eave: PAL.redD, gold: true },
+  green: { tile: PAL.green, tile2: PAL.green2, ridge: hex(0x1f5446), eave: PAL.redD, gold: true },
+  teal: { tile: PAL.teal, tile2: hex(0x245c66), ridge: hex(0x1d4a52), eave: PAL.redD },
+  black: { tile: hex(0x2c3035), tile2: hex(0x33383e), ridge: hex(0x1f2226), eave: PAL.woodD },
+};
+
+// ---------- 屋顶 ----------
+// 在 [x0,x1]×[z0,z1]（含出檐）上建屋顶，檐口高 y；屋脊沿局部 x 轴
+// o: { type:'hip'|'xs'(歇山)|'gable'|'pyr', pitch, rs(ROOFSET), lift(起翘层数), gableC, noRidge, orn(脊饰) }
+function roof(F, x0, z0, x1, z1, y, o) {
+  const rs = o.rs || ROOFSETS.gray;
+  const W = x1 - x0, D = z1 - z0, hd = D / 2;
+  const type = o.type || 'gable';
+  const pitch = o.pitch || 0.6;
+  const rise = snap(Math.max(0.6, hd * pitch));
+  const nL = Math.round(rise / VOX);
+  const brk = type === 'xs' ? hd * 0.42 : 1e9;
+  const d = o.detail;
+  // 檐板（出檐的厚度，底面可见椽子色）
+  F.box(x0, y - 0.2, z0, x1, y, z1, rs.eave, { bot: shade(rs.eave, 0.85), top: rs.tile }, d);
+  let lastUx = 0, lastUz = 0, topY = y;
+  for (let i = 0; i < nL; i++) {
+    const t = (i + 1) / nL;
+    let uz = snap(hd * Math.pow(i / nL, 0.62));
+    if (uz > hd - 0.2) uz = snap(hd - 0.2);
+    let ux = 0;
+    if (type === 'hip' || type === 'pyr') ux = uz;
+    else if (type === 'xs') ux = Math.min(uz, snap(brk));
+    if (x0 + ux >= x1 - ux - 0.1) break;
+    const col = (i >> 1) & 1 ? rs.tile2 : rs.tile;
+    const endC = (type === 'xs' && uz > brk) ? (o.gableC || PAL.redD) : (type === 'gable' ? (o.gableC || shade(rs.tile, 0.8)) : shade(col, 0.82));
+    F.box(x0 + ux, y + i * VOX, z0 + uz, x1 - ux, y + (i + 1) * VOX, z1 - uz, shade(col, 0.8), { top: col, sx: endC, sz: shade(col, 0.78), fl: FL.ROOF, skip: 8 }, d);
+    lastUx = ux; lastUz = uz; topY = y + (i + 1) * VOX;
+  }
+  // 屋脊
+  if (!o.noRidge) {
+    const rx0 = x0 + lastUx, rx1 = x1 - lastUx, zc = (z0 + z1) / 2;
+    if (type === 'pyr' || rx1 - rx0 < 0.9) {
+      // 宝顶
+      const g = rs.gold ? PAL.gold : rs.ridge;
+      const xc = (x0 + x1) / 2;
+      F.box(xc - 0.4, topY, zc - 0.4, xc + 0.4, topY + 0.4, zc + 0.4, rs.ridge, null, d);
+      F.box(xc - 0.2, topY + 0.4, zc - 0.2, xc + 0.2, topY + 1.2, zc + 0.2, g, null, d);
+      if (o.big) F.box(xc - 0.4, topY + 1.2, zc - 0.4, xc + 0.4, topY + 1.6, zc + 0.4, g, null, d);
+    } else {
+      const rh = o.big ? 0.8 : 0.4;
+      F.box(rx0, topY, zc - 0.2, rx1, topY + rh, zc + 0.2, rs.ridge, null, d);
+      if (o.orn !== false) {
+        // 鸱吻/翘脊
+        const oh = o.big ? 1.2 : 0.6;
+        F.box(rx0 - 0.2, topY, zc - 0.2, rx0 + 0.2, topY + rh + oh, zc + 0.2, rs.ridge, null, d);
+        F.box(rx1 - 0.2, topY, zc - 0.2, rx1 + 0.2, topY + rh + oh, zc + 0.2, rs.ridge, null, d);
+        F.box(rx0 + 0.2, topY + rh + oh - 0.4, zc - 0.2, rx0 + 0.6, topY + rh + oh, zc + 0.2, rs.ridge, null, true);
+        F.box(rx1 - 0.6, topY + rh + oh - 0.4, zc - 0.2, rx1 - 0.2, topY + rh + oh, zc + 0.2, rs.ridge, null, true);
+        if (o.big && rs.gold) {
+          F.box((rx0 + rx1) / 2 - 0.4, topY + rh, zc - 0.2, (rx0 + rx1) / 2 + 0.4, topY + rh + 0.8, zc + 0.2, PAL.gold, null, true);
+        }
+      }
+    }
+  }
+  // 起翘：檐角逐级上扬
+  const lift = o.lift || 0;
+  if (lift > 0 && type !== 'gable') {
+    const corners = [[x0, z0, -1, -1], [x1, z0, 1, -1], [x0, z1, -1, 1], [x1, z1, 1, 1]];
+    const Lc = Math.min(W, D) * 0.28 + lift * 0.3;
+    for (const [cx, cz, sx, sz] of corners) {
+      for (let q = 1; q <= lift; q++) {
+        const s = snap(Lc * (1 - Math.sqrt(q / (lift + 1))));
+        if (s >= 0.2) {
+          // 沿 x 边
+          const xa = sx < 0 ? cx : cx - s, xb = sx < 0 ? cx + s : cx;
+          const za = sz < 0 ? cz : cz - 0.4, zb = sz < 0 ? cz + 0.4 : cz;
+          F.box(xa, y + (q - 1) * VOX, za, xb, y + q * VOX, zb, rs.tile, { fl: FL.ROOF, bot: rs.eave }, true);
+          // 沿 z 边
+          const xa2 = sx < 0 ? cx : cx - 0.4, xb2 = sx < 0 ? cx + 0.4 : cx;
+          const za2 = sz < 0 ? cz : cz - s, zb2 = sz < 0 ? cz + s : cz;
+          F.box(xa2, y + (q - 1) * VOX, za2, xb2, y + q * VOX, zb2, rs.tile, { fl: FL.ROOF, bot: rs.eave }, true);
+        }
+      }
+      // 翼角尖端
+      for (let k = 1; k <= Math.min(3, lift); k++) {
+        const ex = cx + sx * k * 0.2, ez = cz + sz * k * 0.2;
+        F.box(Math.min(ex, ex - sx * 0.4), y + (lift - 3 + k) * VOX - 0.2, Math.min(ez, ez - sz * 0.4), Math.max(ex, ex - sx * 0.4), y + (lift - 3 + k) * VOX, Math.max(ez, ez - sz * 0.4), rs.ridge, null, true);
+      }
+    }
+  }
+  return topY;
+}
+
+// 腰檐：绕楼身一圈的短檐（x0..x1,z0..z1 为外沿，bx,bz 为楼身半宽深）
+function skirtRoof(F, hw, hd, bw, bd, y, rs, lift) {
+  const n = Math.max(2, Math.round(Math.max(hw - bw, hd - bd) / 0.4));
+  F.box(-hw, y - 0.2, -hd, hw, y, hd, rs.eave, { top: rs.tile }, true);
+  for (let i = 0; i < n; i++) {
+    const t = i / n;
+    const ux = snap((hw - bw) * Math.pow(t, 0.7)), uz = snap((hd - bd) * Math.pow(t, 0.7));
+    const col = (i >> 1) & 1 ? rs.tile2 : rs.tile;
+    F.box(-hw + ux, y + i * VOX, -hd + uz, hw - ux, y + (i + 1) * VOX, hd - uz, shade(col, 0.8), { top: col, fl: FL.ROOF, skip: 8 });
+  }
+  if (lift) {
+    for (const [sx, sz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) {
+      for (let k = 1; k <= lift; k++) {
+        const ex = sx * (hw + k * 0.2 - 0.2), ez = sz * (hd + k * 0.2 - 0.2);
+        F.box(Math.min(ex, ex - sx * 0.8), y + (k - 1) * 0.2, Math.min(ez, ez - sz * 0.8), Math.max(ex, ex - sx * 0.8), y + k * 0.2, Math.max(ez, ez - sz * 0.8), rs.tile, { fl: FL.ROOF }, true);
+      }
+    }
+  }
+  return y + n * VOX;
+}
+
+// ---------- 通用构件 ----------
+function columns(F, x0, z0, x1, z1, y0, y1, bay, col, det) {
+  const nx = Math.max(1, Math.round((x1 - x0) / bay)), nz = Math.max(1, Math.round((z1 - z0) / bay));
+  for (let i = 0; i <= nx; i++) {
+    const x = snap(x0 + (x1 - x0) * i / nx);
+    F.box(x - 0.2, y0, z0 - 0.2, x + 0.2, y1, z0 + 0.2, col, null, det);
+    F.box(x - 0.2, y0, z1 - 0.2, x + 0.2, y1, z1 + 0.2, col, null, det);
+  }
+  for (let j = 1; j < nz; j++) {
+    const z = snap(z0 + (z1 - z0) * j / nz);
+    F.box(x0 - 0.2, y0, z - 0.2, x0 + 0.2, y1, z + 0.2, col, null, det);
+    F.box(x1 - 0.2, y0, z - 0.2, x1 + 0.2, y1, z + 0.2, col, null, det);
+  }
+}
+// 在正面(z=zf)开窗：窗格体素略凸出并在夜间发光
+function windowsRow(F, x0, x1, zf, y0, h, n, col, rnd, side, det) {
+  const w = x1 - x0; if (n <= 0) return;
+  const ww = snap(Math.min(1.4, w / n * 0.55));
+  for (let i = 0; i < n; i++) {
+    const xc = snap(x0 + w * (i + 0.5) / n);
+    const o = { glow: 250, rnd: (rnd + i * 3) & 255 };
+    if (side === 'x') F.box(zf - 0.2, y0, xc - ww / 2, zf + 0.2, y0 + h, xc + ww / 2, col, o, det);
+    else F.box(xc - ww / 2, y0, zf - 0.2, xc + ww / 2, y0 + h, zf + 0.2, col, o, det);
+  }
+}
+function railing(F, x0, z0, x1, z1, y, col, det) {
+  // 栏杆：扶手 + 望柱
+  const h = 0.8;
+  const segs = [[x0, z1, x1, z1], [x0, z0, x0, z1], [x1, z0, x1, z1]];
+  for (const [ax, az, bx, bz] of segs) {
+    if (az === bz) {
+      F.box(ax, y + h - 0.2, az - 0.2, bx, y + h, az, col, null, true);
+      for (let x = ax; x <= bx + 0.01; x += 1.2) F.box(snap(x), y, az - 0.2, snap(x) + 0.2, y + h, az, col, null, true);
+    } else {
+      F.box(ax, y + h - 0.2, az, ax + 0.2, y + h, bz, col, null, true);
+    }
+  }
+}
+function lantern(C, F, lx, ly, lz, big) {
+  const s = big ? 0.4 : 0.2;
+  F.box(lx - 0.02, ly, lz - 0.02, lx + 0.02, ly + 0.4, lz + 0.02, PAL.woodD, null, true);
+  F.box(lx - s, ly - (big ? 1.0 : 0.6), lz - s, lx + s, ly, lz + s, PAL.lantern, { glow: 255, fl: FL.LANTERN, rnd: 0 }, true);
+  const p = F.wp(lx, ly - (big ? 0.5 : 0.3), lz);
+  C.halo(p[0], p[1], p[2], big ? 5.5 : 3.6, 1.0, 0.42, 0.16, 0.9);
+}
+function banner(F, lx, ly, lz, h, col, axis) {
+  if (axis === 'x') F.box(lx - 0.1, ly - h, lz - 0.4, lx + 0.1, ly, lz + 0.4, col, null, true);
+  else F.box(lx - 0.4, ly - h, lz - 0.1, lx + 0.4, ly, lz + 0.1, col, null, true);
+}
+function platformBox(F, x0, z0, x1, z1, y0, y1, col, top) {
+  F.box(x0, y0, z0, x1, y1, z1, col, { top: top || PAL.stoneL, fl: FL.MASON });
+}
+function frontSteps(F, xc, width, zFront, h, col) {
+  const n = Math.round(h / 0.2);
+  for (let k = 0; k < n; k++) {
+    F.box(xc - width / 2, 0, zFront, xc + width / 2, h - k * 0.2, zFront + (k + 1) * 0.4, col, { top: PAL.stoneL });
+  }
+}
+
+// ---------- 建筑类型 ----------
+// 徽派民居：白墙黛瓦马头墙
+function houseHui(C, F, w, d, rng) {
+  const floors = w * d > 70 && rng.chance(0.75) ? 2 : 1;
+  const H = floors === 2 ? 6.4 : 3.8;
+  const rnd = rng.int(0, 255);
+  const hw = w / 2, hd = d / 2;
+  // 墙基与墙身
+  F.box(-hw - 0.2, 0, -hd - 0.2, hw + 0.2, 0.6, hd + 0.2, PAL.wallBase);
+  F.box(-hw, 0.6, -hd, hw, H, hd, PAL.wall, { sx: PAL.wall2 });
+  // 门与门罩
+  F.box(-0.8, 0.4, hd, 0.8, 2.6, hd + 0.2, PAL.woodD, { glow: 30, rnd });
+  F.box(-1.4, 2.8, hd, 1.4, 3.2, hd + 0.8, PAL.tile, { top: PAL.tile2, bot: PAL.woodD }, true);
+  F.box(-1.6, 3.0, hd + 0.6, -1.2, 3.4, hd + 0.8, PAL.ridge, null, true);
+  F.box(1.2, 3.0, hd + 0.6, 1.6, 3.4, hd + 0.8, PAL.ridge, null, true);
+  // 窗
+  const nw = Math.max(1, Math.floor(w / 3.2));
+  if (floors === 2) { windowsRow(F, -hw, hw, hd, 4.2, 1.0, nw, PAL.lattice, rnd, 'z'); windowsRow(F, -hw, hw, -hd, 4.2, 1.0, nw, PAL.lattice, rnd + 9, 'z'); }
+  else { windowsRow(F, -hw, -1.2, hd, 1.6, 0.8, 1, PAL.lattice, rnd, 'z'); windowsRow(F, 1.2, hw, hd, 1.6, 0.8, 1, PAL.lattice, rnd, 'z'); }
+  // 屋顶（双坡），两端马头墙
+  const R = snap(hd * 0.55);
+  roof(F, -hw + 0.4, -hd - 0.6, hw - 0.4, hd + 0.6, H, { type: 'gable', pitch: 0.55, rs: ROOFSETS.gray, orn: false });
+  const steps = d > 9 ? 3 : 2;
+  for (const sx of [-1, 1]) {
+    const xa = sx < 0 ? -hw - 0.2 : hw - 0.6, xb = sx < 0 ? -hw + 0.6 : hw + 0.2;
+    let prevTop = H;
+    for (let k = 0; k < steps; k++) {
+      const zk = snap((hd + 0.2) * (1 - k / steps));
+      const top = snap(H + R * (k + 1) / steps + 0.8);
+      F.box(xa, prevTop, -zk, xb, top, zk, PAL.wall, { sx: PAL.wall2 });
+      F.box(xa - 0.2, top, -zk - 0.4, xb + 0.2, top + 0.4, zk + 0.4, PAL.tile, { top: PAL.tile2 });
+      F.box(xa - 0.2, top + 0.4, -zk - 0.4, xb + 0.2, top + 0.6, -zk, PAL.ridge, null, true);
+      F.box(xa - 0.2, top + 0.4, zk, xb + 0.2, top + 0.6, zk + 0.4, PAL.ridge, null, true);
+      prevTop = top;
+    }
+  }
+}
+// 天井院落：前后两进 + 侧墙
+function courtyardHui(C, F, w, d, rng) {
+  const rnd = rng.int(0, 255);
+  const hw = w / 2, hd = d / 2;
+  const dFront = snap(d * 0.38), dBack = snap(d * 0.42);
+  const fF = F.sub(0, 0, hd - dFront / 2);
+  houseHui(C, fF, w, dFront, rng);
+  const fB = F.sub(0, 0, -hd + dBack / 2);
+  houseHui(C, fB, w, dBack, rng);
+  // 侧墙围合天井
+  const zc0 = -hd + dBack, zc1 = hd - dFront;
+  for (const sx of [-1, 1]) {
+    const x0 = sx < 0 ? -hw : hw - 0.6, x1 = sx < 0 ? -hw + 0.6 : hw;
+    F.box(x0, 0, zc0, x1, 4.4, zc1, PAL.wall, { sx: PAL.wall2 });
+    F.box(x0 - 0.2, 4.4, zc0, x1 + 0.2, 4.8, zc1, PAL.tile, { top: PAL.tile2 });
+  }
+  // 天井里的小树/水缸
+  if (zc1 - zc0 > 2.4) F.box(-0.6, 0, (zc0 + zc1) / 2 - 0.6, 0.6, 0.8, (zc0 + zc1) / 2 + 0.6, PAL.stoneD, { top: hex(0x355a5a) }, true);
+  C.pointTree(F.wp(hw * 0.5, 0, (zc0 + zc1) / 2), 'small');
+}
+// 商铺：木构两层、底层开敞、二层挑台、招幌与灯笼
+function shop(C, F, w, d, rng, o) {
+  o = o || {};
+  const rnd = rng.int(0, 255);
+  const hw = w / 2, hd = d / 2;
+  const floors = o.floors || (rng.chance(0.3) ? 3 : 2);
+  const fh = 3.4;
+  const H = floors * fh;
+  const wood = rng.chance(0.5) ? PAL.wood : PAL.woodL;
+  // 基座
+  F.box(-hw - 0.2, 0, -hd - 0.2, hw + 0.2, 0.4, hd + 0.2, PAL.stoneD, { top: PAL.stone });
+  // 底层：内凹暗色店面 + 柜台
+  F.box(-hw, 0.4, -hd, hw, fh, hd - 1.2, wood, { sz: shade(wood, 0.9) });
+  F.box(-hw + 0.4, 0.4, hd - 1.4, hw - 0.4, fh - 0.2, hd - 1.2, PAL.darkIn, { glow: 40, rnd });
+  F.box(-hw + 0.6, 0.4, hd - 1.0, hw - 0.6, 1.4, hd - 0.6, PAL.woodL, null, true);
+  // 上层
+  for (let f = 1; f < floors; f++) {
+    const y = f * fh;
+    F.box(-hw, y, -hd, hw, y + fh, hd - 0.4, wood, { sz: shade(wood, 0.92) });
+    windowsRow(F, -hw, hw, hd - 0.4, y + 0.8, 1.6, Math.max(2, Math.round(w / 2.6)), PAL.paper, rnd + f * 31, 'z');
+    windowsRow(F, -hw, hw, -hd, y + 0.8, 1.4, Math.max(1, Math.round(w / 3.4)), PAL.lattice, rnd + f * 31, 'z');
+    // 挑台 + 栏杆
+    F.box(-hw, y - 0.2, hd - 0.4, hw, y, hd + 0.8, PAL.woodD);
+    railing(F, -hw, hd - 0.4, hw, hd + 0.8, y, PAL.redD);
+    // 腰檐
+    if (f === 1 && floors === 3) F.box(-hw - 0.4, y - 0.6, hd + 0.8, hw + 0.4, y - 0.2, hd + 1.6, PAL.tile, { top: PAL.tile2, fl: FL.ROOF }, true);
+  }
+  columns(F, -hw, -hd, hw, hd, 0.4, H, 3.2, PAL.redD, true);
+  // 屋顶
+  const rt = o.roofType || (rng.chance(0.55) ? 'xs' : 'gable');
+  const lift = rt === 'gable' ? 0 : 3;
+  if (w >= d) roof(F, -hw - 0.8, -hd - 0.8, hw + 0.8, hd + 1.4, H, { type: rt, pitch: 0.58, rs: o.rs || ROOFSETS.gray, lift, gableC: PAL.wood });
+  else { const G = F.sub(0, 0, 0, 1); roof(G, -hd - 1.4, -hw - 0.8, hd + 0.8, hw + 0.8, H, { type: rt, pitch: 0.58, rs: o.rs || ROOFSETS.gray, lift, gableC: PAL.wood }); }
+  // 招幌、匾额、灯笼
+  const bc = rng.pick([PAL.flagR, PAL.flagB, PAL.flagO, PAL.flagR]);
+  banner(F, -hw + 0.4, fh + 1.2, hd + 1.0, 2.6, bc);
+  F.box(-1.4, fh - 0.8, hd - 1.2, 1.4, fh - 0.2, hd - 1.0, PAL.plaque, { sz: PAL.plaque }, true);
+  F.box(-1.2, fh - 0.6, hd - 1.0, 1.2, fh - 0.4, hd - 0.8, PAL.gold, null, true);
+  lantern(C, F, -hw + 0.8, fh - 0.2, hd + 0.4);
+  lantern(C, F, hw - 0.8, fh - 0.2, hd + 0.4);
+}
+// 吊脚楼：木构、立于柱上（用于陡坡）
+function stiltHouse(C, F, w, d, rng, drop) {
+  const rnd = rng.int(0, 255);
+  const hw = w / 2, hd = d / 2;
+  const posts = snap(Math.max(0.4, drop));
+  // 柱脚
+  for (const [px, pz] of [[-hw + 0.4, -hd + 0.4], [hw - 0.4, -hd + 0.4], [-hw + 0.4, hd - 0.4], [hw - 0.4, hd - 0.4], [0, hd - 0.4], [0, -hd + 0.4]])
+    F.box(px - 0.2, -posts, pz - 0.2, px + 0.2, 0, pz + 0.2, PAL.woodD);
+  F.box(-hw - 0.4, -0.4, -hd - 0.4, hw + 0.4, 0, hd + 1.2, PAL.woodD, { top: PAL.wood });
+  F.box(-hw, 0, -hd, hw, 3.2, hd, PAL.woodL, { sx: PAL.wood });
+  F.box(-hw, 3.2, -hd, hw, 6.0, hd, PAL.wood, { sx: shade(PAL.wood, 0.9) });
+  windowsRow(F, -hw, hw, hd, 1.2, 1.2, Math.max(1, Math.round(w / 3)), PAL.paper, rnd, 'z');
+  windowsRow(F, -hw, hw, hd, 4.0, 1.2, Math.max(1, Math.round(w / 3)), PAL.paper, rnd + 7, 'z');
+  railing(F, -hw - 0.4, hd, hw + 0.4, hd + 1.2, 0, PAL.woodD);
+  if (w >= d) roof(F, -hw - 0.8, -hd - 0.8, hw + 0.8, hd + 1.6, 6.0, { type: 'xs', pitch: 0.62, rs: ROOFSETS.black, lift: 2, gableC: PAL.woodD });
+  else { const G = F.sub(0, 0, 0, 1); roof(G, -hd - 1.6, -hw - 0.8, hd + 0.8, hw + 0.8, 6.0, { type: 'xs', pitch: 0.62, rs: ROOFSETS.black, lift: 2, gableC: PAL.woodD }); }
+  if (rng.chance(0.5)) lantern(C, F, hw - 0.4, 3.0, hd + 1.0);
+}
+// 殿堂：高台基、回廊红柱、斗拱彩画、重檐歇山
+function hall(C, F, w, d, rng, o) {
+  o = o || {};
+  const rnd = rng.int(0, 255);
+  const hw = w / 2, hd = d / 2;
+  const base = o.base !== undefined ? o.base : 1.2;
+  const rs = o.rs || ROOFSETS.gray;
+  if (base > 0) {
+    platformBox(F, -hw - 1.2, -hd - 1.2, hw + 1.2, hd + 1.2, 0, base, PAL.stone, PAL.stoneL);
+    frontSteps(F, 0, Math.min(w * 0.4, 6), hd + 1.2, base, PAL.stone);
+    if (o.balus !== false) {
+      F.box(-hw - 1.2, base, hd + 1.0, -Math.min(w * 0.2, 3) - 0.2, base + 0.6, hd + 1.2, PAL.stoneL, null, true);
+      F.box(Math.min(w * 0.2, 3) + 0.2, base, hd + 1.0, hw + 1.2, base + 0.6, hd + 1.2, PAL.stoneL, null, true);
+    }
+  }
+  const H = o.h || 5.6;
+  const y0 = base;
+  // 殿身（内收）、回廊柱
+  const ix = snap(hw - 1.8), iz = snap(hd - 1.8);
+  F.box(-ix, y0, -iz, ix, y0 + H, iz, PAL.red, { sx: PAL.redD });
+  // 隔扇门（发光）
+  const nb = Math.max(3, Math.round(w / 3.6));
+  for (let i = 0; i < nb; i++) {
+    const xc = snap(-ix + (2 * ix) * (i + 0.5) / nb), bw = snap((2 * ix) / nb * 0.7);
+    F.box(xc - bw / 2, y0 + 0.4, iz, xc + bw / 2, y0 + H - 1.2, iz + 0.2, PAL.lattice, { glow: 235, rnd: rnd + i });
+  }
+  columns(F, -hw + 0.4, -hd + 0.4, hw - 0.4, hd - 0.4, y0, y0 + H, 3.6, PAL.red, false);
+  // 额枋彩画（斗拱层）
+  F.box(-hw + 0.2, y0 + H - 0.8, -hd + 0.2, hw - 0.2, y0 + H - 0.2, hd - 0.2, PAL.beam, { top: PAL.beam2 });
+  F.box(-hw, y0 + H - 0.2, -hd, hw, y0 + H + 0.4, hd, PAL.beam2, { top: PAL.beam });
+  F.box(-hw - 0.2, y0 + H - 0.4, hd - 0.2, hw + 0.2, y0 + H - 0.2, hd + 0.2, PAL.gold, null, true);
+  let ry = y0 + H + 0.4;
+  const long = w >= d;
+  const G = long ? F : F.sub(0, 0, 0, 1);
+  const RW = long ? hw : hd, RD = long ? hd : hw;
+  if (o.double) {
+    // 下檐（腰檐）+ 上层殿身
+    const ov = 2.0;
+    skirtRoof(G, RW + ov, RD + ov, RW - 1.6, RD - 1.6, ry, rs, 4);
+    const y2 = ry + snap((ov + 1.6) * 0.45) + 0.2;
+    G.box(-(RW - 1.6), ry, -(RD - 1.6), RW - 1.6, y2 + 2.4, RD - 1.6, PAL.red, { sx: PAL.redD });
+    G.box(-(RW - 1.4), y2 + 1.6, -(RD - 1.4), RW - 1.4, y2 + 2.4, RD - 1.4, PAL.beam, { top: PAL.beam2 });
+    windowsRow(G, -(RW - 1.6), RW - 1.6, RD - 1.6, y2 + 0.2, 1.2, Math.round(RW / 1.8), PAL.lattice, rnd + 50, 'z');
+    ry = y2 + 2.4;
+    roof(G, -(RW - 1.6) - 2.2, -(RD - 1.6) - 2.2, RW - 1.6 + 2.2, RD - 1.6 + 2.2, ry, { type: o.type || 'xs', pitch: 0.7, rs, lift: 5, big: true, gableC: PAL.redD });
+  } else {
+    roof(G, -RW - 2.0, -RD - 2.0, RW + 2.0, RD + 2.0, ry, { type: o.type || 'xs', pitch: 0.66, rs, lift: 4, big: w > 14, gableC: PAL.redD });
+  }
+  if (o.lanterns !== false) { lantern(C, F, -hw + 0.4, y0 + H - 0.8, hd + 0.2, true); lantern(C, F, hw - 0.4, y0 + H - 0.8, hd + 0.2, true); }
+}
+// 楼阁：多层、每层平座栏杆与腰檐，顶为歇山或攒尖
+function tower(C, F, w, d, rng, o) {
+  o = o || {};
+  const rs = o.rs || ROOFSETS.gray;
+  const floors = o.floors || 3, fh = o.fh || 4.0;
+  const rnd = rng.int(0, 255);
+  let hw = w / 2, hd = d / 2, y = o.base || 0;
+  if (y > 0) { platformBox(F, -hw - 1.6, -hd - 1.6, hw + 1.6, hd + 1.6, 0, y, PAL.stone); frontSteps(F, 0, Math.min(5, w * 0.4), hd + 1.6, y, PAL.stone); }
+  for (let f = 0; f < floors; f++) {
+    const shrink = f === 0 ? 0 : snap(0.8 * f);
+    const bw = snap(hw - shrink), bd = snap(hd - shrink);
+    F.box(-bw + 0.8, y, -bd + 0.8, bw - 0.8, y + fh, bd - 0.8, f % 2 ? PAL.red : PAL.redD, { sx: PAL.redD });
+    columns(F, -bw + 0.4, -bd + 0.4, bw - 0.4, bd - 0.4, y, y + fh, 3.2, PAL.red, f > 0);
+    windowsRow(F, -bw + 0.8, bw - 0.8, bd - 0.8, y + 0.6, fh - 1.6, Math.max(2, Math.round(bw / 1.6)), PAL.lattice, rnd + f * 17, 'z');
+    windowsRow(F, -bw + 0.8, bw - 0.8, -bd + 0.8, y + 0.6, fh - 1.6, Math.max(2, Math.round(bw / 1.6)), PAL.lattice, rnd + f * 17 + 5, 'z');
+    windowsRow(F, -bd + 0.8, bd - 0.8, bw - 0.8, y + 0.6, fh - 1.6, Math.max(1, Math.round(bd / 1.8)), PAL.lattice, rnd + f * 17 + 9, 'x');
+    windowsRow(F, -bd + 0.8, bd - 0.8, -bw + 0.8, y + 0.6, fh - 1.6, Math.max(1, Math.round(bd / 1.8)), PAL.lattice, rnd + f * 17 + 11, 'x');
+    F.box(-bw, y + fh - 0.6, -bd, bw, y + fh, bd, PAL.beam, { top: PAL.beam2 });
+    y += fh;
+    if (f < floors - 1) {
+      // 腰檐 + 平座
+      const top = skirtRoof(F, bw + 1.6, bd + 1.6, bw - 0.8, bd - 0.8, y, rs, 3);
+      const nw = snap(hw - 0.8 * (f + 1)), nd = snap(hd - 0.8 * (f + 1));
+      F.box(-nw - 0.4, top - 0.4, -nd - 0.4, nw + 0.4, top, nd + 0.4, PAL.woodD, { top: PAL.wood });
+      const rh = 0.8;
+      F.box(-nw - 0.4, top, nd + 0.2, nw + 0.4, top + rh, nd + 0.4, PAL.redD, null, true);
+      F.box(-nw - 0.4, top, -nd - 0.4, nw + 0.4, top + rh, -nd - 0.2, PAL.redD, null, true);
+      F.box(-nw - 0.4, top, -nd - 0.4, -nw - 0.2, top + rh, nd + 0.4, PAL.redD, null, true);
+      F.box(nw + 0.2, top, -nd - 0.4, nw + 0.4, top + rh, nd + 0.4, PAL.redD, null, true);
+      lantern(C, F, -nw - 0.2, top + 2.8, nd + 0.2); lantern(C, F, nw + 0.2, top + 2.8, nd + 0.2);
+      y = top;
+    }
+  }
+  const tw = snap(hw - 0.8 * (floors - 1)), td = snap(hd - 0.8 * (floors - 1));
+  if (o.pyr || Math.abs(tw - td) < 0.1) roof(F, -tw - 2, -td - 2, tw + 2, td + 2, y, { type: 'pyr', pitch: 0.95, rs, lift: 5, big: true });
+  else if (tw >= td) roof(F, -tw - 2, -td - 2, tw + 2, td + 2, y, { type: 'xs', pitch: 0.72, rs, lift: 5, big: true, gableC: PAL.redD });
+  else { const G = F.sub(0, 0, 0, 1); roof(G, -td - 2, -tw - 2, td + 2, tw + 2, y, { type: 'xs', pitch: 0.72, rs, lift: 5, big: true, gableC: PAL.redD }); }
+  return y;
+}
+// 亭
+function pavilion(C, F, s, rng, o) {
+  o = o || {};
+  const rs = o.rs || ROOFSETS.gray;
+  const h = s / 2, base = o.base !== undefined ? o.base : 0.6;
+  if (base > 0) { platformBox(F, -h - 0.6, -h - 0.6, h + 0.6, h + 0.6, 0, base, PAL.stone); }
+  const ch = o.ch || 3.4;
+  for (const [x, z] of [[-h + 0.4, -h + 0.4], [h - 0.4, -h + 0.4], [-h + 0.4, h - 0.4], [h - 0.4, h - 0.4]])
+    F.box(x - 0.2, base, z - 0.2, x + 0.2, base + ch, z + 0.2, PAL.red);
+  if (s > 5) for (const [x, z] of [[0, -h + 0.4], [0, h - 0.4], [-h + 0.4, 0], [h - 0.4, 0]]) F.box(x - 0.2, base, z - 0.2, x + 0.2, base + ch, z + 0.2, PAL.red);
+  // 美人靠
+  for (const [a, b, c, dd] of [[-h + 0.2, -h + 0.2, h - 0.2, -h + 0.6], [-h + 0.2, h - 0.6, -0.8, h - 0.2], [0.8, h - 0.6, h - 0.2, h - 0.2], [-h + 0.2, -h + 0.2, -h + 0.6, h - 0.2], [h - 0.6, -h + 0.2, h - 0.2, h - 0.2]])
+    F.box(a, base, b, c, base + 0.6, dd, PAL.redD, null, true);
+  F.box(-h + 0.2, base + ch - 0.6, -h + 0.2, h - 0.2, base + ch, h - 0.2, PAL.beam, { top: PAL.beam2 });
+  let y = base + ch;
+  if (o.double) {
+    y = skirtRoof(F, h + 1.2, h + 1.2, h - 0.8, h - 0.8, y, rs, 3);
+    F.box(-h + 0.8, y - 0.4, -h + 0.8, h - 0.8, y + 1.6, h - 0.8, PAL.red, null);
+    F.box(-h + 0.6, y + 1.2, -h + 0.6, h - 0.6, y + 1.6, h - 0.6, PAL.beam, { top: PAL.beam2 });
+    y += 1.6;
+    roof(F, -h - 0.4, -h - 0.4, h + 0.4, h + 0.4, y, { type: 'pyr', pitch: 1.05, rs, lift: 4, big: true });
+  } else roof(F, -h - 1.2, -h - 1.2, h + 1.2, h + 1.2, y, { type: 'pyr', pitch: 0.95, rs, lift: 4, big: s > 5 });
+  const p = F.wp(0, base + ch - 0.4, 0); C.halo(p[0], p[1], p[2], 5, 1, 0.5, 0.2, 0.7);
+  F.box(-0.2, base + ch - 1.2, -0.2, 0.2, base + ch - 0.6, 0.2, PAL.lantern, { glow: 255, fl: FL.LANTERN }, true);
+}
+// 塔：方形密檐/楼阁式
+function pagoda(C, F, s, tiers, rng, o) {
+  o = o || {};
+  const rs = o.rs || ROOFSETS.black;
+  const wallC = o.wall || PAL.white;
+  let h = s / 2, y = 0;
+  platformBox(F, -h - 1.6, -h - 1.6, h + 1.6, h + 1.6, 0, 1.2, PAL.stone);
+  y = 1.2;
+  for (let t = 0; t < tiers; t++) {
+    const b = snap(h - t * (h * 0.45 / tiers));
+    const th = t === 0 ? 4.4 : snap(3.2 - t * 0.08);
+    F.box(-b, y, -b, b, y + th, b, wallC, { sx: shade(wallC, 0.94) });
+    // 各面拱门/窗
+    const o2 = { glow: 200, rnd: (t * 37) & 255 };
+    F.box(-0.6, y + 0.6, b, 0.6, y + th - 0.8, b + 0.2, PAL.woodD, o2, true);
+    F.box(-0.6, y + 0.6, -b - 0.2, 0.6, y + th - 0.8, -b, PAL.woodD, o2, true);
+    F.box(b, y + 0.6, -0.6, b + 0.2, y + th - 0.8, 0.6, PAL.woodD, o2, true);
+    F.box(-b - 0.2, y + 0.6, -0.6, -b, y + th - 0.8, 0.6, PAL.woodD, o2, true);
+    y += th;
+    const ov = snap(1.2 + b * 0.18);
+    F.box(-b - 0.2, y - 0.4, -b - 0.2, b + 0.2, y, b + 0.2, PAL.redD);
+    y = skirtRoof(F, b + ov, b + ov, b - 0.4, b - 0.4, y, rs, 3) - 0.4;
+    // 塔檐挂灯
+    if (t % 2 === 0) { const p = F.wp(b + ov - 0.2, y - 0.8, b + ov - 0.2); C.halo(p[0], p[1], p[2], 2.6, 1, 0.5, 0.2, 0.8); F.box(b + ov - 0.4, y - 1.2, b + ov - 0.4, b + ov, y - 0.6, b + ov, PAL.lantern, { glow: 255, fl: FL.LANTERN }, true); }
+  }
+  const b = snap(h - tiers * (h * 0.45 / tiers));
+  roof(F, -b - 0.8, -b - 0.8, b + 0.8, b + 0.8, y, { type: 'pyr', pitch: 1.1, rs, lift: 3, noRidge: true });
+  const top = y + snap((b + 0.8) * 1.1);
+  // 塔刹
+  F.box(-0.4, top - 0.4, -0.4, 0.4, top + 0.4, 0.4, PAL.gold);
+  for (let k = 0; k < 5; k++) F.box(-0.6 + k * 0.08, top + 0.4 + k * 0.8, -0.6 + k * 0.08, 0.6 - k * 0.08, top + 0.8 + k * 0.8, 0.6 - k * 0.08, PAL.gold);
+  F.box(-0.2, top + 4.4, -0.2, 0.2, top + 6.4, 0.2, PAL.gold);
+  return top + 6.4;
+}
+// 牌坊（跨路）
+function paifang(C, F, span, h, rng, o) {
+  o = o || {};
+  const rs = o.rs || ROOFSETS.gray;
+  const hs = span / 2;
+  const posts = [-hs, -hs * 0.36, hs * 0.36, hs];
+  for (const x of posts) {
+    F.box(x - 0.4, 0, -0.4, x + 0.4, h, 0.4, o.stone ? PAL.stoneL : PAL.red);
+    F.box(x - 0.6, 0, -0.8, x + 0.6, 1.0, 0.8, PAL.stoneD);
+  }
+  F.box(-hs - 0.4, h - 1.6, -0.3, hs + 0.4, h - 0.6, 0.3, PAL.beam, { top: PAL.beam2 });
+  F.box(-hs * 0.3, h - 3.0, -0.4, hs * 0.3, h - 1.6, 0.4, PAL.plaque);
+  F.box(-hs * 0.24, h - 2.8, 0.4, hs * 0.24, h - 1.8, 0.6, PAL.gold, null, true);
+  roof(F, -hs * 0.42, -1.4, hs * 0.42, 1.4, h, { type: 'hip', pitch: 0.7, rs, lift: 3 });
+  roof(F, -hs - 1.0, -1.2, -hs * 0.3, 1.2, h - 0.8, { type: 'hip', pitch: 0.65, rs, lift: 3 });
+  roof(F, hs * 0.3, -1.2, hs + 1.0, 1.2, h - 0.8, { type: 'hip', pitch: 0.65, rs, lift: 3 });
+  lantern(C, F, -hs * 0.36, h - 1.8, 0.8, true); lantern(C, F, hs * 0.36, h - 1.8, 0.8, true);
+}
+// 围墙（局部 x 方向一段）
+function compoundWall(F, x0, x1, z, h, col, capRs) {
+  F.box(x0, 0, z - 0.4, x1, h, z + 0.4, col || PAL.red, { top: PAL.tile });
+  F.box(x0 - 0.2, h, z - 0.8, x1 + 0.2, h + 0.4, z + 0.8, (capRs || ROOFSETS.gray).tile, { top: (capRs || ROOFSETS.gray).tile2, fl: FL.ROOF });
+  F.box(x0 - 0.2, h + 0.4, z - 0.2, x1 + 0.2, h + 0.8, z + 0.2, (capRs || ROOFSETS.gray).ridge);
+}
+// 水榭 / 小船 等
+function boat(C, F, rng) {
+  F.box(-0.8, -0.4, -3.2, 0.8, 0.4, 3.2, PAL.woodD, { top: PAL.wood });
+  F.box(-0.6, 0.4, -1.4, 0.6, 1.4, 1.4, hex(0x2c2c2a), { top: hex(0x3a3a36) });
+  F.box(-0.4, -0.2, 3.2, 0.4, 0.6, 3.8, PAL.woodD);
+  F.box(-0.4, -0.2, -3.8, 0.4, 0.6, -3.2, PAL.woodD);
+  if (rng.chance(0.6)) { F.box(-0.2, 0.4, -2.6, 0.2, 1.0, -2.2, PAL.lantern, { glow: 255, fl: FL.LANTERN }, true); const p = F.wp(0, 0.8, -2.4); C.halo(p[0], p[1], p[2], 2.6, 1, 0.45, 0.18, 0.8); }
+}
+
+// ===== city.js — 城市布局：道路、台地、桥、城墙、地块与建筑 =====
+const DIRV = { 'x+': [1, 0], 'x-': [-1, 0], 'z+': [0, 1], 'z-': [0, -1] };
+
+class City {
+  constructor(world) {
+    this.w = world;
+    this.rng = new RNG(20260923);
+    this.builders = new Array(NCH * NCH);
+    this.haloArr = [];
+    this.roads = [];
+    this.tourSegs = [];
+    this.treeSpots = [];
+    this.nBuild = 0;
+    this.labels = [];
+  }
+  B(x, z) {
+    const i = clamp(Math.floor((x + WH) / CH), 0, NCH - 1), j = clamp(Math.floor((z + WH) / CH), 0, NCH - 1);
+    const k = j * NCH + i;
+    if (!this.builders[k]) this.builders[k] = { s: new MeshBuilder(8192), d: new MeshBuilder(4096) };
+    return this.builders[k];
+  }
+  frame(x, y, z, rot) { const b = this.B(x, z); return new Frame(b.s, x, y, z, rot, b.d); }
+  wbox(x0, y0, z0, x1, y1, z1, col, o, det) {
+    const b = this.B((x0 + x1) / 2, (z0 + z1) / 2);
+    (det ? b.d : b.s).box(Math.min(x0, x1), Math.min(y0, y1), Math.min(z0, z1), Math.max(x0, x1), Math.max(y0, y1), Math.max(z0, z1), col, o);
+  }
+  halo(x, y, z, s, r, g, b, a) { this.haloArr.push(x, y, z, s, r, g, b, a); }
+  pointTree(p, kind) { this.treeSpots.push({ x: p[0], y: p[1], z: p[2], kind }); }
+  tour(pts) { this.tourSegs.push(pts); }
+
+  // ---------- 平台 ----------
+  plat(x0, z0, x1, z1, y, mat) { this.w.platform(x0, z0, x1, z1, snap(y), mat === undefined ? MAT.PLATFORM : mat, 4); }
+
+  // ---------- 台阶（轴对齐直跑） ----------
+  // 从 (x0,z0)（低端中点）沿 dir 攀升，水平长 run，宽 width，高度 y0→y1
+  flight(x0, z0, dir, run, width, y0, y1, o) {
+    o = o || {};
+    const w = this.w, dv = DIRV[dir];
+    y0 = snap(y0); y1 = snap(y1);
+    const n = Math.max(1, Math.round(Math.abs(y1 - y0) / VOX));
+    const up = y1 >= y0 ? 1 : -1;
+    const hw = width / 2;
+    const pts = [];
+    const col = o.col || PAL.stone, top = o.top || PAL.stoneL;
+    // 地形：切出阶梯槽
+    const cellsTarget = new Map();
+    const stepTop = (k) => snap(y0 + up * (k + 1) * VOX);
+    const s = (k) => snap(run * k / n);
+    for (let k = 0; k < n; k++) {
+      const a0 = s(k), a1 = s(k + 1);
+      if (a1 - a0 < 0.1) continue;
+      const tY = up > 0 ? stepTop(k) : snap(y0 - k * VOX);
+      const ax0 = x0 + dv[0] * a0, az0 = z0 + dv[1] * a0, ax1 = x0 + dv[0] * a1, az1 = z0 + dv[1] * a1;
+      let bx0, bx1, bz0, bz1;
+      if (dv[0] !== 0) { bx0 = Math.min(ax0, ax1); bx1 = Math.max(ax0, ax1); bz0 = z0 - hw; bz1 = z0 + hw; }
+      else { bz0 = Math.min(az0, az1); bz1 = Math.max(az0, az1); bx0 = x0 - hw; bx1 = x0 + hw; }
+      // 该踏步覆盖的格子
+      let base = 1e9;
+      for (let z = Math.floor(bz0); z < Math.ceil(bz1); z++) for (let x = Math.floor(bx0); x < Math.ceil(bx1); x++) {
+        if (!w.inside(x, z)) continue;
+        const k2 = w.idx(x, z);
+        const lowest = Math.min(tY, cellsTarget.has(k2) ? cellsTarget.get(k2) : 1e9);
+        cellsTarget.set(k2, lowest);
+      }
+      pts.push([(bx0 + bx1) / 2, tY, (bz0 + bz1) / 2]);
+      this._steps = this._steps || [];
+      this._steps.push([bx0, bz0, bx1, bz1, tY]);
+    }
+    // 先切地形，再按切后地形生成踏步
+    for (const [k2, t] of cellsTarget) {
+      const lowT = t - VOX;
+      if (w.H[k2] > lowT) w.H[k2] = snap(lowT);
+      w.M[k2] = MAT.PAVE; w.mod[k2] = 1; w.occ[k2] = 1;
+    }
+    for (const [bx0, bz0, bx1, bz1, tY] of this._steps) {
+      let base = 1e9;
+      for (let z = Math.floor(bz0); z < Math.ceil(bz1); z++) for (let x = Math.floor(bx0); x < Math.ceil(bx1); x++) if (w.inside(x, z)) base = Math.min(base, w.H[w.idx(x, z)]);
+      if (base > tY - 0.2) base = tY - 0.2;
+      this.wbox(bx0, base, bz0, bx1, tY, bz1, col, { top, sx: col, sz: col, fl: FL.MASON });
+      if (o.rail) {
+        if (dv[0] !== 0) {
+          this.wbox(bx0, tY, z0 - hw, bx1, tY + 0.8, z0 - hw + 0.4, PAL.stoneL, null, true);
+          this.wbox(bx0, tY, z0 + hw - 0.4, bx1, tY + 0.8, z0 + hw, PAL.stoneL, null, true);
+        } else {
+          this.wbox(x0 - hw, tY, bz0, x0 - hw + 0.4, tY + 0.8, bz1, PAL.stoneL, null, true);
+          this.wbox(x0 + hw - 0.4, tY, bz0, x0 + hw, tY + 0.8, bz1, PAL.stoneL, null, true);
+        }
+      }
+    }
+    this._steps = [];
+    return pts;
+  }
+  // 山径：沿折点生成曼哈顿折线台阶（Z 字形），高度取地形
+  trail(way, width, o) {
+    o = o || {};
+    const w = this.w;
+    const P = way.map(p => [p[0], p[1], p.length > 2 ? p[2] : w.hn(p[0], p[1])]);
+    const pts = [];
+    for (let i = 0; i < P.length - 1; i++) {
+      const a = P[i], b = P[i + 1];
+      const dx = b[0] - a[0], dz = b[1] - a[1];
+      const L1 = Math.abs(dx), L2 = Math.abs(dz), Lt = L1 + L2;
+      const firstX = (i % 2 === 0) ? L1 >= L2 : L1 < L2;
+      const legs = [];
+      if (firstX) { legs.push(['x', dx]); legs.push(['z', dz]); } else { legs.push(['z', dz]); legs.push(['x', dx]); }
+      let cx = a[0], cz = a[1], cy = a[2];
+      for (let li = 0; li < legs.length; li++) {
+        const [ax, dd] = legs[li];
+        if (Math.abs(dd) < 0.5) continue;
+        let ny;
+        const run0 = Math.abs(dd);
+        if (li === 0 && Math.abs(legs[1][1]) >= 0.5) {
+          const ex = ax === 'x' ? cx + dd : cx, ez = ax === 'z' ? cz + dd : cz;
+          const run2 = Math.abs(legs[1][1]);
+          ny = clamp(w.hn(ex, ez), cy - 0.85 * run0, cy + 0.85 * run0);
+          ny = snap(clamp(ny, b[2] - 0.85 * run2, b[2] + 0.85 * run2));
+        } else ny = snap(b[2]);
+        const dir = ax === 'x' ? (dd > 0 ? 'x+' : 'x-') : (dd > 0 ? 'z+' : 'z-');
+        // 转角平台
+        this.landing(cx, cz, width, cy);
+        const run = Math.abs(dd);
+        if (Math.abs(ny - cy) / run > 0.95) { /* 过陡：拉长 */ }
+        const fp = this.flight(cx, cz, dir, run, width, cy, ny, o);
+        for (const p of fp) pts.push(p);
+        if (ax === 'x') cx += dd; else cz += dd;
+        cy = ny;
+      }
+    }
+    this.landing(P[P.length - 1][0], P[P.length - 1][1], width, P[P.length - 1][2]);
+    return pts;
+  }
+  landing(x, z, width, y) {
+    const w = this.w, h = width / 2;
+    let base = 1e9;
+    for (let zz = Math.floor(z - h); zz < Math.ceil(z + h); zz++) for (let xx = Math.floor(x - h); xx < Math.ceil(x + h); xx++) {
+      if (!w.inside(xx, zz)) continue;
+      const k = w.idx(xx, zz);
+      if (w.H[k] > y - 0.2) w.H[k] = snap(y - 0.2);
+      w.mod[k] = 1; w.occ[k] = 1; w.M[k] = MAT.PAVE;
+      base = Math.min(base, w.H[k]);
+    }
+    this.wbox(x - h, base, z - h, x + h, snap(y), z + h, PAL.stone, { top: PAL.stoneL });
+  }
+
+  // ---------- 街道（栅格化入地形） ----------
+  road(ctrl, width, o) {
+    o = o || {};
+    const w = this.w;
+    const P2 = ctrl.map(p => [p[0], p[1]]);
+    const S = smoothPath(P2, 1.0);
+    const n = S.length;
+    // 锚点：控制点中给定高度者，或端点落在已有道路上
+    const anchors = [];
+    let si = 0;
+    for (let c = 0; c < ctrl.length; c++) {
+      // 找到最接近该控制点的采样
+      let best = 1e9, bi = si;
+      for (let i = si; i < n; i++) { const d = Math.hypot(S[i][0] - ctrl[c][0], S[i][1] - ctrl[c][1]); if (d < best) { best = d; bi = i; } if (d > best + 5) break; }
+      si = bi;
+      let y = ctrl[c].length > 2 ? ctrl[c][2] : null;
+      if (y === null && (c === 0 || c === ctrl.length - 1)) {
+        const k = w.idx(ctrl[c][0], ctrl[c][1]);
+        if (w.occ[k] === 1 || w.occ[k] === 4) y = w.H[k];
+      }
+      if (y !== null) anchors.push([bi, y]);
+    }
+    let Y = S.map(p => { const k = w.idx(p[0], p[1]); return w.W[k] > NOWATER ? NaN : w.hn(p[0], p[1]); });
+    // 水面处插值
+    for (let i = 0; i < n; i++) if (isNaN(Y[i])) { let a = i, b = i; while (a > 0 && isNaN(Y[a])) a--; while (b < n - 1 && isNaN(Y[b])) b++; Y[i] = isNaN(Y[a]) ? Y[b] : isNaN(Y[b]) ? Y[a] : lerp(Y[a], Y[b], (i - a) / Math.max(1, b - a)); }
+    const win = o.smooth || 10;
+    const Ys = Y.map((_, i) => { let s = 0, c = 0; for (let k = Math.max(0, i - win); k <= Math.min(n - 1, i + win); k++) { s += Y[k]; c++; } return s / c; });
+    if (anchors.length) {
+      const corr = new Float32Array(n);
+      for (let i = 0; i < n; i++) {
+        let v;
+        if (i <= anchors[0][0]) v = (anchors[0][1] - Ys[anchors[0][0]]) * clamp(1 - (anchors[0][0] - i) / 60, 0, 1);
+        else if (i >= anchors[anchors.length - 1][0]) { const A = anchors[anchors.length - 1]; v = (A[1] - Ys[A[0]]) * clamp(1 - (i - A[0]) / 60, 0, 1); }
+        else { for (let q = 0; q < anchors.length - 1; q++) { const A = anchors[q], B = anchors[q + 1]; if (i >= A[0] && i <= B[0]) { const t = (i - A[0]) / Math.max(1, B[0] - A[0]); v = lerp(A[1] - Ys[A[0]], B[1] - Ys[B[0]], t); break; } } }
+        corr[i] = v || 0;
+      }
+      for (let i = 0; i < n; i++) Ys[i] += corr[i];
+    }
+    const ms = o.maxSlope || 0.2;
+    for (let i = 1; i < n; i++) Ys[i] = clamp(Ys[i], Ys[i - 1] - ms, Ys[i - 1] + ms);
+    for (let i = n - 2; i >= 0; i--) Ys[i] = clamp(Ys[i], Ys[i + 1] - ms, Ys[i + 1] + ms);
+    for (const [ai, ay] of anchors) Ys[ai] = ay;
+    const pts = S.map((p, i) => [p[0], p[1], snap(Ys[i])]);
+    // 栅格化
+    const hw = width / 2, best = new Map();
+    for (let i = 0; i < n; i++) {
+      const [x, z, y] = pts[i];
+      for (let zz = Math.floor(z - hw - 1); zz <= Math.ceil(z + hw); zz++) for (let xx = Math.floor(x - hw - 1); xx <= Math.ceil(x + hw); xx++) {
+        if (!w.inside(xx, zz)) continue;
+        const d = Math.max(Math.abs(xx + 0.5 - x), Math.abs(zz + 0.5 - z)) * 0.5 + Math.hypot(xx + 0.5 - x, zz + 0.5 - z) * 0.5;
+        if (d > hw) continue;
+        const k = w.idx(xx, zz);
+        if (w.occ[k] === 2 || w.occ[k] === 4 || w.W[k] > NOWATER) continue;
+        const pr = best.get(k);
+        if (pr === undefined || d < pr[0]) best.set(k, [d, y]);
+      }
+    }
+    for (const [k, [d, y]] of best) {
+      if (w.occ[k] === 1 && !o.override) continue;
+      w.H[k] = y; w.M[k] = o.mat !== undefined ? o.mat : MAT.PAVE; w.mod[k] = 1; w.occ[k] = 1;
+    }
+    const r = { pts, width, o };
+    this.roads.push(r);
+    return r;
+  }
+
+  // ---------- 地块 ----------
+  // 沿道路一侧布置建筑。o.types: [[fn(C,F,w,d,rng,info), weight, [wmin,wmax], [dmin,dmax]]]
+  lotsAlong(road, side, o) {
+    const w = this.w, rng = this.rng, pts = road.pts, n = pts.length;
+    let s = o.start || rng.range(2, 8);
+    const end = n - 1 - (o.end || 4);
+    let placed = 0;
+    while (s < end) {
+      const i = Math.floor(s);
+      const p = pts[i];
+      const a = pts[Math.max(0, i - 3)], b = pts[Math.min(n - 1, i + 3)];
+      let tx = b[0] - a[0], tz = b[1] - a[1]; const tl = Math.hypot(tx, tz) || 1; tx /= tl; tz /= tl;
+      const nx = -tz * side, nz = tx * side;       // 指向地块一侧
+      const T = rng.wpick(o.types.map(t => [t, t[1]]));
+      const bw = Math.round(rng.range(T[2][0], T[2][1])), bd = Math.round(rng.range(T[3][0], T[3][1]));
+      // 正面朝向道路：front = -n → 选择最接近的轴向
+      const fronts = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+      let rot = 0, bestd = -2;
+      for (let r = 0; r < 4; r++) { const d = -(fronts[r][0] * nx + fronts[r][1] * nz); if (d > bestd) { bestd = d; rot = r; } }
+      const sx = (rot & 1) ? bd : bw, sz = (rot & 1) ? bw : bd;
+      const setback = o.setback !== undefined ? o.setback : 1;
+      let ok = false, cx, cz, floor, st;
+      for (let push = 0; push < 4 && !ok; push++) {
+        const dist = road.width / 2 + setback + push + ((rot & 1) ? sx : sz) / 2;
+        const fx = fronts[rot][0], fz = fronts[rot][1];
+        cx = p[0] - fx * dist; cz = p[1] - fz * dist;
+        cx = Math.round(cx - sx / 2) + sx / 2; cz = Math.round(cz - sz / 2) + sz / 2;
+        const m = o.margin !== undefined ? o.margin : 1;
+        if (!w.rectFree(cx - sx / 2 - m, cz - sz / 2 - m, cx + sx / 2 + m, cz + sz / 2 + m)) continue;
+        st = w.rectStats(cx - sx / 2, cz - sz / 2, cx + sx / 2, cz + sz / 2);
+        if (st.water || st.occ === 99) continue;
+        floor = snap(Math.max(p[2] + 0.2, p[2] + (st.mx - p[2]) * 0.3));
+        if (floor - p[2] > (o.maxRise || 2.4)) floor = snap(p[2] + (o.maxRise || 2.4));
+        const cut = st.mx - floor, fill = floor - st.mn;
+        if (cut > (o.maxCut || 6) || fill > (o.maxFill || 8)) continue;
+        ok = true;
+      }
+      if (ok) {
+        const fill = floor - st.mn;
+        const stilt = o.stilt && fill > 3.5 && rng.chance(0.7);
+        this.placeBuilding(T[0], cx, cz, sx, sz, rot, floor, bw, bd, { stilt, drop: fill, road: p, pad: o.pad !== undefined ? o.pad : 1 });
+        placed++;
+        s += bw + (o.gap ? rng.range(o.gap[0], o.gap[1]) : rng.range(1, 3));
+      } else s += 2;
+    }
+    return placed;
+  }
+  placeBuilding(fn, cx, cz, sx, sz, rot, floor, bw, bd, info) {
+    const w = this.w;
+    const pad = info.pad !== undefined ? info.pad : 1;
+    if (info.stilt) {
+      w.markOcc(cx - sx / 2 - pad, cz - sz / 2 - pad, cx + sx / 2 + pad, cz + sz / 2 + pad, 2);
+    } else {
+      w.platform(cx - sx / 2 - pad, cz - sz / 2 - pad, cx + sx / 2 + pad, cz + sz / 2 + pad, floor, MAT.PLATFORM, 2);
+    }
+    const F = this.frame(cx, floor, cz, rot);
+    const rng = new RNG((cx * 73856093) ^ (cz * 19349663) ^ 0x5bd1e995);
+    if (info.stilt) stiltHouse(this, F, bw - 1, bd - 1, rng, info.drop);
+    else fn(this, F, bw - 1, bd - 1, rng, info);
+    // 门前踏步：地坪高于道路时
+    if (info.road && floor - info.road[2] > 0.3) {
+      const fz = [[0, 1], [1, 0], [0, -1], [-1, 0]][rot];
+      const fx0 = cx + fz[0] * (((rot & 1) ? sx : sz) / 2 + pad), fz0 = cz + fz[1] * (((rot & 1) ? sx : sz) / 2 + pad);
+      const hgt = floor - info.road[2];
+      const nst = Math.round(hgt / 0.2);
+      for (let k = 0; k < nst; k++) {
+        const d0 = k * 0.4, d1 = (k + 1) * 0.4, top = snap(floor - k * 0.2);
+        const ax = fx0 + fz[0] * d0, az = fz0 + fz[1] * d0, bx = fx0 + fz[0] * d1, bz = fz0 + fz[1] * d1;
+        if (fz[0] !== 0) this.wbox(ax, info.road[2] - 0.4, cz - 1.2, bx, top, cz + 1.2, PAL.stone, { top: PAL.stoneL });
+        else this.wbox(cx - 1.2, info.road[2] - 0.4, az, cx + 1.2, top, bz, PAL.stone, { top: PAL.stoneL });
+      }
+    }
+    this.nBuild++;
+    // 夜间门前灯晕
+    const fz2 = [[0, 1], [1, 0], [0, -1], [-1, 0]][rot];
+    const hd2 = ((rot & 1) ? sx : sz) / 2;
+    this.halo(cx + fz2[0] * (hd2 + 0.6), floor + 2.4, cz + fz2[1] * (hd2 + 0.6), 7, 1, 0.55, 0.24, 0.32);
+  }
+  // 自由地块（院落/殿宇）
+  placeAt(fn, cx, cz, bw, bd, rot, floor, pad, opt) {
+    const sx = (rot & 1) ? bd : bw, sz = (rot & 1) ? bw : bd;
+    this.w.platform(cx - sx / 2 - pad, cz - sz / 2 - pad, cx + sx / 2 + pad, cz + sz / 2 + pad, snap(floor), MAT.PLATFORM, 2);
+    const F = this.frame(cx, snap(floor), cz, rot);
+    const rng = new RNG((cx * 7919) ^ (cz * 104729));
+    fn(this, F, bw, bd, rng, opt || {});
+    this.nBuild++;
+    return F;
+  }
+
+  // ---------- 桥 ----------
+  // 轴向石拱桥：沿 axis('x'|'z') 从 a 到 b，中心线坐标 c，桥面高 y，宽 wd
+  archBridge(axis, a, b, c, y, wd, o) {
+    o = o || {};
+    const L = b - a, hw = wd / 2, mid = (a + b) / 2;
+    const hump = o.hump !== undefined ? o.hump : Math.min(2.4, L * 0.06);
+    const col = o.col || PAL.stone, top = PAL.stoneL;
+    const water = o.water || (y - 3);
+    const spans = o.spans || (L > 34 ? 3 : 1);
+    const pts = [];
+    const put = (u0, u1, y0, y1, c0, c1, cl, opt, det) => {
+      if (axis === 'x') this.wbox(u0, y0, c0, u1, y1, c1, cl, opt, det);
+      else this.wbox(c0, y0, u0, c1, y1, u1, cl, opt, det);
+    };
+    // 分段（0.4m）生成桥身：拱洞之上为桥体，之下为空
+    const step = 0.4;
+    for (let u = a; u < b - 0.01; u += step) {
+      const t = (u + step / 2 - a) / L;
+      const deck = snap(y + hump * Math.sin(Math.PI * t));
+      // 拱：各跨半圆
+      let archTop = -1e9;
+      for (let sp = 0; sp < spans; sp++) {
+        const s0 = a + L * (0.12 + 0.76 * sp / spans), s1 = a + L * (0.12 + 0.76 * (sp + 1) / spans);
+        const sm = (s0 + s1) / 2, r = (s1 - s0) / 2 * 0.86;
+        const du = u + step / 2 - sm;
+        if (Math.abs(du) < r) archTop = Math.max(archTop, snap(water - 0.6 + Math.sqrt(r * r - du * du) * (o.archK || 1.0)));
+      }
+      const bot = water - 1.2;
+      if (archTop > -1e8) {
+        if (deck - 0.8 > archTop) put(u, u + step, archTop, deck, c - hw, c + hw, col, { top, bot: shade(col, 0.7) });
+      } else put(u, u + step, bot, deck, c - hw, c + hw, col, { top });
+      // 栏板
+      put(u, u + step, deck, deck + 0.8, c - hw, c - hw + 0.4, PAL.stoneL, null, true);
+      put(u, u + step, deck, deck + 0.8, c + hw - 0.4, c + hw, PAL.stoneL, null, true);
+      pts.push(axis === 'x' ? [u + step / 2, deck, c] : [c, deck, u + step / 2]);
+    }
+    // 桥头石狮/灯
+    for (const u of [a + 0.4, b - 0.8]) {
+      const t = (u - a) / L, deck = snap(y + hump * Math.sin(Math.PI * clamp(t, 0, 1)));
+      for (const cc of [c - hw + 0.4, c + hw - 0.8]) {
+        put(u, u + 0.4, deck, deck + 1.6, cc, cc + 0.4, PAL.stoneL, null, true);
+        const hp = axis === 'x' ? [u + 0.2, deck + 1.8, cc + 0.2] : [cc + 0.2, deck + 1.8, u + 0.2];
+        put(u - 0.1, u + 0.5, deck + 1.6, deck + 2.2, cc - 0.1, cc + 0.5, PAL.lantern, { glow: 230, fl: FL.LANTERN }, true);
+        this.halo(hp[0], hp[1], hp[2], 4.2, 1, 0.45, 0.18, 0.9);
+      }
+    }
+    return pts;
+  }
+  // 廊桥：平直桥面 + 廊顶 + 中亭
+  coveredBridge(axis, a, b, c, y, wd, water) {
+    const L = b - a, hw = wd / 2;
+    const put = (u0, u1, y0, y1, c0, c1, cl, opt, det) => { if (axis === 'x') this.wbox(u0, y0, c0, u1, y1, c1, cl, opt, det); else this.wbox(c0, y0, u0, c1, y1, u1, cl, opt, det); };
+    put(a, b, y - 0.6, y, c - hw, c + hw, PAL.woodD, { top: PAL.wood });
+    // 桥墩
+    const np = Math.max(2, Math.round(L / 10));
+    for (let i = 0; i <= np; i++) {
+      const u = snap(a + L * i / np);
+      put(u - 1.0, u + 1.0, water - 3, y - 0.6, c - hw - 0.4, c + hw + 0.4, PAL.stoneD, { top: PAL.stone });
+    }
+    // 柱与廊顶
+    for (let u = a; u <= b + 0.01; u += 3.2) {
+      put(u, u + 0.4, y, y + 3.2, c - hw, c - hw + 0.4, PAL.red, null, true);
+      put(u, u + 0.4, y, y + 3.2, c + hw - 0.4, c + hw, PAL.red, null, true);
+    }
+    put(a, b, y, y + 0.8, c - hw, c - hw + 0.2, PAL.redD, null, true);
+    put(a, b, y, y + 0.8, c + hw - 0.2, c + hw, PAL.redD, null, true);
+    // 顶：以 Frame 生成双坡顶
+    const mid = (a + b) / 2;
+    const F = axis === 'x' ? this.frame(mid, y, c, 0) : this.frame(c, y, mid, 1);
+    roof(F, -L / 2 - 0.6, -hw - 1.0, L / 2 + 0.6, hw + 1.0, 3.2, { type: 'gable', pitch: 0.6, rs: ROOFSETS.black, gableC: PAL.woodD });
+    const G = F.sub(0, 0, 0);
+    // 中亭
+    const P = axis === 'x' ? this.frame(mid, y, c, 0) : this.frame(c, y, mid, 0);
+    roof(P, -hw - 1.6, -hw - 1.6, hw + 1.6, hw + 1.6, 4.4, { type: 'pyr', pitch: 0.95, rs: ROOFSETS.black, lift: 4, big: true });
+    P.box(-hw - 0.4, 3.2, -hw - 0.4, hw + 0.4, 4.4, hw + 0.4, PAL.redD, { bot: PAL.woodD });
+    for (let u = a + 3; u < b - 2; u += 6.4) {
+      const hp = axis === 'x' ? [u, y + 2.6, c] : [c, y + 2.6, u];
+      this.wbox(hp[0] - 0.3, y + 2.2, hp[2] - 0.3, hp[0] + 0.3, y + 3.0, hp[2] + 0.3, PAL.lantern, { glow: 255, fl: FL.LANTERN }, true);
+      this.halo(hp[0], hp[1], hp[2], 4, 1, 0.45, 0.18, 0.9);
+    }
+    const pts = [];
+    for (let u = a; u <= b; u += 1) pts.push(axis === 'x' ? [u, y, c] : [c, y, u]);
+    return pts;
+  }
+
+  // ---------- 城墙（沿折线，轴对齐分段，随地形起伏） ----------
+  wall(poly, o) {
+    o = o || {};
+    const w = this.w, H = o.h || 7, T = o.t || 5;
+    const S = smoothPath(poly, 2.0);
+    // 以 4m 为节，每节轴对齐盒
+    let prev = null, px = null, pz = null;
+    const towers = [];
+    let acc = 0;
+    for (let i = 0; i < S.length; i++) {
+      const x = Math.round(S[i][0] / 4) * 4, z = Math.round(S[i][1] / 4) * 4;
+      const key = x + ',' + z;
+      if (key === prev) continue;
+      prev = key;
+      if (o.gates && o.gates.some(g => Math.hypot(g[0] - x, g[1] - z) < 6)) { px = null; continue; }
+      // 对角相接时补一节
+      if (px !== null && px !== x && pz !== z) {
+        const fx = px, fz = z; let mn2 = 1e9, mx2 = -1e9;
+        for (let dz = -2; dz < 2; dz++) for (let dx = -2; dx < 2; dx++) { const h = w.h(fx + dx, fz + dz); mn2 = Math.min(mn2, h); mx2 = Math.max(mx2, h); }
+        const t2 = snap(Math.round(mx2 + H)); const hs2 = T / 2;
+        this.wbox(fx - hs2, mn2 - 1, fz - hs2, fx + hs2, t2, fz + hs2, hex(0x9a9384), { top: hex(0xa8a191), sx: hex(0x938c7e), sz: hex(0x938c7e), fl: FL.MASON });
+        w.markOcc(fx - hs2, fz - hs2, fx + hs2, fz + hs2, 2);
+      }
+      px = x; pz = z;
+      let mn = 1e9, mx = -1e9;
+      for (let dz = -2; dz < 2; dz++) for (let dx = -2; dx < 2; dx++) { const h = w.h(x + dx, z + dz); mn = Math.min(mn, h); mx = Math.max(mx, h); }
+      const top = snap(Math.round((mx + H) / 1.0) * 1.0);
+      const hs = T / 2;
+      this.wbox(x - hs, mn - 1, z - hs, x + hs, top, z + hs, hex(0x9a9384), { top: hex(0xa8a191), sx: hex(0x938c7e), sz: hex(0x938c7e), fl: FL.MASON });
+      // 雉堞
+      for (const [ox, oz] of [[-hs, -hs], [hs - 0.8, -hs], [-hs, hs - 0.8], [hs - 0.8, hs - 0.8]]) {
+        this.wbox(x + ox, top, z + oz, x + ox + 0.8, top + 1.0, z + oz + 0.8, hex(0x8c8578), { top: hex(0x6f6a61) }, true);
+      }
+      w.markOcc(x - hs, z - hs, x + hs, z + hs, 2);
+      acc += 4;
+      if (acc >= (o.towerEvery || 96)) { acc = 0; towers.push([x, z, top]); }
+    }
+    for (const g of (o.gates || [])) {
+      const gy = w.h(g[0], g[1]);
+      const F = this.frame(g[0], gy, g[1], g[2] || 0);
+      for (const sx of [-1, 1]) F.box(sx * 5 - 2.4, -1, -3, sx * 5 + 2.4, H + 1, 3, hex(0x9a9384), { top: PAL.stone, fl: FL.MASON });
+      F.box(-7.4, H - 1.6, -3, 7.4, H + 1, 3, hex(0x9a9384), { top: PAL.stone, fl: FL.MASON });
+      const G = F.sub(0, H + 1, 0);
+      hall(this, G, 12, 5, this.rng, { base: 0, h: 3.6, rs: ROOFSETS.gray });
+    }
+    for (const [x, z, top] of towers) {
+      this.wbox(x - 4, top - 4, z - 4, x + 4, top + 1, z + 4, hex(0x857f73), { top: PAL.stone });
+      const F = this.frame(x, top + 1, z, 0);
+      pavilion(this, F, 6.4, this.rng, { base: 0, rs: ROOFSETS.gray, ch: 3.0 });
+    }
+  }
+}
+
+// =====================================================================
+function buildCity(world) {
+  const C = new City(world);
+  const R = C.rng;
+  // ---------------- 云瀑阁（瀑布旁地标）----------------
+  buildLandmark(C);
+  // ---------------- 东岭宫城 ----------------
+  buildPalace(C);
+  // ---------------- 上城 ----------------
+  buildUpper(C);
+  // ---------------- 下城街道 ----------------
+  buildLower(C);
+  // ---------------- 西山台城 ----------------
+  buildTerraces(C);
+  // ---------------- 湖畔 ----------------
+  buildLake(C);
+  // ---------------- 山顶亭与山径 ----------------
+  buildSummit(C);
+  // ---------------- 城墙 ----------------
+  C.wall([[292, -300], [296, -220], [302, -140], [308, -60], [318, 20], [328, 100], [338, 180], [352, 260], [384, 340]], { h: 7, t: 5 });
+  C.wall([[-176, -262], [-181, -300], [-186, -330], [-196, -400], [-190, -470], [-170, -530]], { h: 8, t: 5, towerEvery: 80, gates: [[-181, -300, 1]] });
+  // ---------------- 填充 ----------------
+  for (const r of C.roads) {
+    if (!r.o.lots) continue;
+    for (const side of [-1, 1]) if (r.o.lots[side > 0 ? 'r' : 'l']) C.lotsAlong(r, side, r.o.lots[side > 0 ? 'r' : 'l']);
+  }
+  infill(C);
+  streetLamps(C);
+  // 游览路线
+  C.tourPath = assembleTour(C);
+  return C;
+}
+
+// ----- 建筑类型组合 -----
+const T_SHOP = [shop, 5, [7, 10], [9, 11]];
+const T_HOUSE = [houseHui, 4, [8, 12], [8, 11]];
+const T_COURT = [courtyardHui, 3, [10, 14], [17, 22]];
+const T_HALL = [(C, F, w, d, rng) => hall(C, F, w, d, rng, { base: 0.6, h: 4.8, rs: ROOFSETS.gray, lanterns: rng.chance(0.5) }), 1, [12, 16], [10, 12]];
+const T_TOWER = [(C, F, w, d, rng) => tower(C, F, w, d, rng, { floors: 2 + rng.int(0, 1), fh: 3.8 }), 0.6, [10, 12], [10, 12]];
+const T_STILT = [(C, F, w, d, rng) => stiltHouse(C, F, w, d, rng, 0.6), 2, [7, 10], [7, 9]];
+const LOTS_MARKET = { types: [T_SHOP, [T_HOUSE[0], 1, T_HOUSE[2], T_HOUSE[3]], [T_TOWER[0], 0.35, [10, 12], [10, 12]]], gap: [0.5, 2], setback: 1 };
+const LOTS_RES = { types: [T_HOUSE, T_COURT, [T_SHOP[0], 1, T_SHOP[2], T_SHOP[3]], [T_HALL[0], 0.25, T_HALL[2], T_HALL[3]]], gap: [1, 4], setback: 1.5 };
+const LOTS_SLOPE = { types: [T_HOUSE, T_STILT, [T_SHOP[0], 0.6, T_SHOP[2], T_SHOP[3]]], gap: [1, 5], setback: 1, maxCut: 7, maxFill: 9, stilt: true, maxRise: 1.6 };
+const LOTS_UPPER = { types: [T_COURT, [T_HOUSE[0], 2, T_HOUSE[2], T_HOUSE[3]], [T_HALL[0], 0.5, T_HALL[2], T_HALL[3]], [T_SHOP[0], 1.5, T_SHOP[2], T_SHOP[3]], [T_TOWER[0], 0.3, [10, 12], [10, 12]]], gap: [1, 3], setback: 1.5 };
+
+function buildLandmark(C) {
+  const w = C.w;
+  // 台地
+  C.plat(-72, -158, 14, -124, 48, MAT.PLAZA);
+  C.plat(-66, -188, 8, -158, 56);
+  C.plat(-64, -222, 8, -188, 64);
+  C.plat(-64, -252, -14, -222, 76);
+  const tour = [];
+  // 牌坊
+  C.paifang = C.frame(-28, 48, -134, 0);
+  paifang(C, C.paifang, 14, 8.4, C.rng, { rs: ROOFSETS.yellow });
+  // S1 广场→一台
+  tour.push(...C.flight(-28, -142, 'z-', 16, 12, 48, 56, { rail: true }));
+  // 钟楼、鼓楼
+  C.placeAt((C2, F, bw, bd, rng) => tower(C2, F, bw, bd, rng, { floors: 2, fh: 4, rs: ROOFSETS.yellow, pyr: true }), -54, -174, 9, 9, 0, 56, 1);
+  C.placeAt((C2, F, bw, bd, rng) => tower(C2, F, bw, bd, rng, { floors: 2, fh: 4, rs: ROOFSETS.yellow, pyr: true }), -2, -174, 9, 9, 0, 56, 1);
+  // S2 一台→二台
+  tour.push(...C.flight(-28, -170, 'z-', 18, 12, 56, 64, { rail: true }));
+  // 云瀑阁主楼
+  const TF = C.placeAt((C2, F, bw, bd, rng) => tower(C2, F, bw, bd, rng, { floors: 9, fh: 5.0, base: 3.0, rs: ROOFSETS.yellow }), -28, -209, 24, 22, 0, 64, 0.2);
+  C.landmarkTop = 64 + 3 + 9 * 5;
+  // 听瀑亭
+  C.placeAt((C2, F, bw, bd, rng) => pavilion(C2, F, 7, rng, { double: true, rs: ROOFSETS.yellow }), -1, -203, 8, 8, 1, 64, 0.6);
+  // 配殿（二台东侧）
+  C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 0.4, h: 4.2, rs: ROOFSETS.yellow, lanterns: true }), -6, -216, 10, 8, 0, 64, 0.4);
+  // 二台上沿塔前向西，登 S3
+  for (let x = -28; x >= -56; x -= 2) tour.push([x, 64, -189.4]);
+  for (let z = -191; z >= -204; z -= 2) tour.push([-56, 64, z]);
+  tour.push(...C.flight(-56, -204, 'z-', 18, 8, 64, 76, { rail: true }));
+  // 三台大殿
+  C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 1.2, h: 6, double: true, rs: ROOFSETS.yellow }), -36, -240, 22, 12, 0, 76, 0.6);
+  for (let x = -56; x <= -14; x += 2) tour.push([x, 76, -227.5]);
+  // 天梯：Z 字形石阶直上台地
+  const rows = 7, x0 = -12, x1 = 4;
+  let y = 76;
+  const total = 126 - 76, per = [];
+  let rem = Math.round(total / VOX);
+  for (let r = 0; r < rows; r++) { const k = Math.round(rem / (rows - r)); per.push(k); rem -= k; }
+  for (let r = 0; r < rows; r++) {
+    const zs = -229 - 4 * r, zc = zs + 1.5;
+    const ny = snap(y + per[r] * VOX);
+    C.w.platform(-14, zs - 1, 6, zs + 3, y - 0.2, MAT.RETAIN, 1);
+    const dir = r % 2 === 0 ? 'x+' : 'x-';
+    const sx = r % 2 === 0 ? x0 : x1;
+    const lx0 = r % 2 === 0 ? x1 : -14;
+    tour.push(...C.flight(sx, zc, dir, x1 - x0, 3, y, ny, { rail: true }));
+    // 转角平台（连接上一行）
+    C.w.platform(lx0, zs - 4, lx0 + 2, zs + 3, ny, MAT.PAVE, 1);
+    tour.push([lx0 + 1, ny, zc], [lx0 + 1, ny, zc - 4]);
+    y = ny;
+  }
+  // 崖顶
+  C.plat(-6, -264, 14, -253, 126, MAT.PAVE);
+  tour.push([5, 126, -258], [2, 126, -264]);
+  // 观瀑亭（崖顶，瀑布西侧）
+  C.placeAt((C2, F, bw, bd, rng) => pavilion(C2, F, 7, rng, { double: true, rs: ROOFSETS.yellow }), 20, -212, 8, 8, 0, 126.4, 0.6);
+  C.tour(tour);
+  // 瀑布
+  buildFalls(C);
+  // 广场→东岸 石桥
+  C.bridgeEast = C.archBridge('x', 12, 60, -132, 48.2, 6, { water: 44, spans: 3, hump: 1.4 });
+  C.w.platform(56, -136, 64, -128, 48.2, MAT.PAVE, 1);
+}
+function buildFalls(C) {
+  const F = FALLS;
+  // 主瀑布：体素水帘（动画），分三层前后错落
+  const layers = [[F.z - 1.0, F.z + 1.0, 0], [F.z + 1.0, F.z + 2.4, 3]];
+  for (let x = F.x0; x < F.x1; x += 2) {
+    const jitter = Math.round(ihash(x, 7) * 3) * 0.2;
+    C.wbox(x, F.bottom - 1, F.z - 1.4 + jitter, x + 2, F.top + 0.6, F.z + 0.8 + jitter, [255, 255, 255], { fl: FL.FALL });
+    if (ihash(x, 3) > 0.35) C.wbox(x + 0.4, F.bottom - 1, F.z + 0.8 + jitter, x + 1.6, F.top - 8 - ihash(x, 9) * 20, F.z + 2.0 + jitter, [255, 255, 255], { fl: FL.FALL });
+  }
+  // 瀑口：水面翻出崖沿
+  C.wbox(F.x0 - 1, F.top - 0.6, F.z - 4, F.x1 + 1, F.top + 0.4, F.z + 0.2, [255, 255, 255], { fl: FL.FALL });
+  // 潭中白沫
+  for (let i = 0; i < 26; i++) {
+    const x = lerp(F.x0 - 2, F.x1 + 2, ihash(i, 11)), z = F.z + 2 + ihash(i, 13) * 12, s = 1 + ihash(i, 17) * 2.4;
+    C.wbox(x - s, POOL.level - 0.6, z - s, x + s, POOL.level + 0.2 + ihash(i, 19) * 0.8, z + s, [255, 255, 255], { fl: FL.FOAM });
+  }
+  // 两侧的小瀑（河道跌水）
+  const weirs = [];
+  for (let i = 0; i < RIVER.length - 1; i++) {
+    const a = RIVER[i], b = RIVER[i + 1];
+    if (a[2] !== b[2]) weirs.push([b[0], b[1], a[2], b[2], b[3]]);
+  }
+  C.weirs = weirs;
+  for (const [x, z, up, dn, wd] of weirs) {
+    for (let u = -wd / 2 - 2; u < wd / 2 + 2; u += 1) {
+      const xx = Math.floor(x + u);
+      const zz = Math.floor(z);
+      C.wbox(xx, dn - 0.5, zz - 1, xx + 1, up + 0.1, zz + 1, [255, 255, 255], { fl: FL.FALL });
+    }
+  }
+}
+
+function buildPalace(C) {
+  const w = C.w;
+  const zc = 0;
+  C.plat(176, -46, 198, 46, 36);
+  C.plat(198, -50, 224, 50, 46);
+  C.plat(224, -52, 250, 52, 58);
+  C.plat(250, -44, 276, 44, 70);
+  const tour = [];
+  // 宫门城楼
+  C.placeAt((C2, F, bw, bd, rng) => { F.box(-bw / 2, 0, -bd / 2, bw / 2, 6.4, bd / 2, hex(0x9c3a2a), { top: PAL.stone, sz: hex(0x8c3222) }); F.box(-2.4, 0, bd / 2, 2.4, 4.4, bd / 2 + 0.2, PAL.darkIn); const G = F.sub(0, 6.4, 0); hall(C2, G, bw - 4, bd - 2, rng, { base: 0, h: 4.6, rs: ROOFSETS.green, double: true }); }, 190, 0, 26, 10, 1, 36, 0.4);
+  // 中殿
+  C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 1.6, h: 5.6, rs: ROOFSETS.green }), 212, 0, 24, 14, 1, 46, 0.6);
+  // 正殿（重檐）
+  C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 2.4, h: 7.2, rs: ROOFSETS.green, double: true }), 238, 0, 34, 18, 1, 58, 0.6);
+  // 后阁
+  C.placeAt((C2, F, bw, bd, rng) => tower(C2, F, bw, bd, rng, { floors: 3, fh: 4.4, rs: ROOFSETS.green, base: 1.2 }), 264, 0, 16, 14, 1, 70, 0.6);
+  // 配殿
+  for (const sz of [-1, 1]) {
+    C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 0.8, h: 4.6, rs: ROOFSETS.green, lanterns: false }), 212, sz * 36, 16, 9, sz > 0 ? 2 : 0, 46, 0.4);
+    C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 0.8, h: 4.6, rs: ROOFSETS.green, lanterns: false }), 238, sz * 40, 18, 9, sz > 0 ? 2 : 0, 58, 0.4);
+    C.placeAt((C2, F, bw, bd, rng) => pavilion(C2, F, 7, rng, { double: true, rs: ROOFSETS.green }), 264, sz * 34, 8, 8, 0, 70, 0.4);
+  }
+  // 中轴台阶
+  C.flight(198 - 14, zc + 18, 'x+', 14, 6, 36, 46, { rail: true });
+  C.flight(198 - 14, zc - 18, 'x+', 14, 6, 36, 46, { rail: true });
+  C.flight(224 - 14, zc + 22, 'x+', 14, 6, 46, 58, { rail: true });
+  C.flight(224 - 14, zc - 22, 'x+', 14, 6, 46, 58, { rail: true });
+  C.flight(250 - 16, zc + 26, 'x+', 16, 6, 58, 70, { rail: true });
+  C.flight(250 - 16, zc - 26, 'x+', 16, 6, 58, 70, { rail: true });
+  // 宫墙
+  const F = C.frame(226, 0, 0, 0);
+  for (const sz of [-1, 1]) {
+    for (let x = 176; x < 276; x += 4) {
+      const hz = sz * 54;
+      const g = Math.min(w.h(x, hz), w.h(x + 4, hz));
+      C.wbox(x, g - 2, hz - 0.6, x + 4, g + 5, hz + 0.6, hex(0x9c3a2a), { top: PAL.tile });
+      C.wbox(x - 0.2, g + 5, hz - 1.0, x + 4.2, g + 5.6, hz + 1.0, PAL.tile, { top: PAL.green, fl: FL.ROOF });
+    }
+  }
+  // 宫前广场与御道
+  C.plat(160, -30, 176, 30, 36, MAT.PLAZA);
+  C.palaceFront = [168, 36, 0];
+}
+
+function buildUpper(C) {
+  const w = C.w;
+  const Y = 126;
+  // 主街（南北）
+  const main = C.road([[2, -262, 126], [0, -300], [-2, -360], [0, -420], [4, -480], [6, -520]], 7, { lots: { l: LOTS_UPPER, r: LOTS_UPPER }, smooth: 14, maxSlope: 0.08 });
+  C.upperMain = main;
+  // 东西大街与桥
+  const avenues = [-300, -372, -444, -510];
+  for (const z of avenues) {
+    const west = C.road([[-4, z], [-60, z + 2], [-120, z], [-168, z]], 6, { lots: { l: LOTS_UPPER, r: LOTS_UPPER }, smooth: 14, maxSlope: 0.08 });
+    // 过河
+    const [d, lv, hw, bi] = riverInfo(40, z, RIVER_UP);
+    const i0 = Math.floor(bi), a = RIVER_UP[i0], b = RIVER_UP[i0 + 1];
+    const rx = lerp(a[0], b[0], bi - i0);
+    const x0 = Math.floor(rx - hw - 4), x1 = Math.ceil(rx + hw + 4);
+    C.road([[4, z], [x0, z]], 6, { lots: { l: LOTS_UPPER, r: LOTS_UPPER }, smooth: 10 });
+    const deck = snap(Math.max(w.h(x0 - 1, z), w.h(x1 + 1, z)));
+    C.archBridge('x', x0, x1, z, deck, 6, { water: lv, spans: 1, hump: 1.2 });
+    C.road([[x1, z, deck], [120, z + 2], [200, z]], 6, { lots: { l: LOTS_UPPER, r: LOTS_UPPER }, smooth: 14, maxSlope: 0.08 });
+  }
+  // 次街（南北）
+  for (const x of [-100, 120, 180]) C.road([[x, -300], [x + 2, -372], [x, -444], [x - 2, -510]], 5, { lots: { l: LOTS_UPPER, r: LOTS_UPPER }, smooth: 14 });
+  // 钟鼓楼广场
+  C.plat(-58, -352, -24, -320, 126.2, MAT.PLAZA);
+  C.placeAt((C2, F, bw, bd, rng) => tower(C2, F, bw, bd, rng, { floors: 3, fh: 5, base: 3.6, rs: ROOFSETS.teal }), -41, -336, 16, 14, 0, 126.2, 0.6);
+  // 书院/寺（西北）
+  C.plat(-150, -500, -100, -454, 127, MAT.PLAZA);
+  C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 1.6, h: 6, double: true, rs: ROOFSETS.grayL }), -125, -488, 24, 14, 0, 127, 0.6);
+  C.placeAt((C2, F, bw, bd, rng) => pagoda(C2, F, 10, 9, rng, { rs: ROOFSETS.black }), -140, -464, 12, 12, 0, 127, 0.4);
+  // 东北大塔
+  C.plat(140, -470, 176, -436, 127, MAT.PLAZA);
+  C.placeAt((C2, F, bw, bd, rng) => pagoda(C2, F, 13, 13, rng, { rs: ROOFSETS.black }), 158, -453, 15, 15, 0, 127, 0.6);
+  // 通往西门 → 山径
+  C.upperWestGate = [-170, 126, -300];
+}
+
+function buildLower(C) {
+  const w = C.w;
+  // 长街（西岸主街）：湖畔码头 → 云瀑阁广场
+  const main = C.road([[-22, 292], [-34, 240], [-46, 180], [-52, 110], [-50, 40], [-44, -30], [-36, -90], [-28, -124, 48]], 7, { lots: { l: LOTS_MARKET, r: LOTS_MARKET }, smooth: 14, maxSlope: 0.12 });
+  C.mainStreet = main;
+  // 西岸滨河路
+  C.road([[-4, -118], [-6, -80], [-14, -20], [-20, 34], [-14, 70], [6, 118], [28, 172], [44, 212], [54, 252]], 5, { lots: { l: LOTS_RES }, smooth: 10 });
+  // 东街
+  C.road([[64, -132], [82, -110], [78, -60], [66, -20], [62, 40], [72, 100], [98, 160], [118, 210], [134, 262]], 7, { lots: { l: LOTS_MARKET, r: LOTS_MARKET }, smooth: 14 });
+  // 东岸滨河路
+  C.road([[62, -104], [46, -70], [34, -24], [34, 30], [42, 70], [60, 116], [84, 172], [98, 212], [110, 252]], 5, { lots: { r: LOTS_RES }, smooth: 10 });
+  // 桥与横街
+  const crossings = [
+    { z: -46, kind: 'arch' }, { z: 14, kind: 'cover' }, { z: 150, kind: 'arch' }, { z: 236, kind: 'arch3' }
+  ];
+  for (const cr of crossings) {
+    const z = cr.z;
+    const [d, lv, hw, bi] = riverInfo(20, z, RIVER);
+    const i0 = Math.floor(bi), a = RIVER[i0], b = RIVER[i0 + 1];
+    const rx = lerp(a[0], b[0], bi - i0);
+    const x0 = Math.floor(rx - hw - 5), x1 = Math.ceil(rx + hw + 5);
+    const deck = snap(Math.max(w.hn(x0 - 2, z), w.hn(x1 + 2, z), lv + 2.4));
+    let pts;
+    if (cr.kind === 'cover') pts = C.coveredBridge('x', x0, x1, z, deck, 5, lv);
+    else pts = C.archBridge('x', x0, x1, z, deck, cr.kind === 'arch3' ? 8 : 6, { water: lv, spans: cr.kind === 'arch3' ? 5 : (x1 - x0 > 34 ? 3 : 1), hump: 1.6 });
+    C.w.platform(x0 - 3, z - 3, x0, z + 3, deck, MAT.PAVE, 1);
+    C.w.platform(x1, z - 3, x1 + 3, z + 3, deck, MAT.PAVE, 1);
+    C.road([[x0 - 1, z, deck], [x0 - 40, z + 1], [-60, z]], 6, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 8 });
+    C.road([[x1 + 1, z, deck], [x1 + 40, z - 1], [x1 + 90, z]], 6, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 8 });
+  }
+  // 通往宫城的御道
+  C.road([[110, 14], [140, 6], [160, 0, 36]], 8, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 10, maxSlope: 0.1 });
+  // 西岸横巷
+  for (const z of [-80, 60, 110, 200]) C.road([[-50, z], [-90, z + 3], [-130, z]], 5, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 8 });
+  // 东岸横巷
+  for (const z of [-80, 60, 110, 200]) C.road([[80, z], [120, z], [168, z + 2]], 5, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 8 });
+  // 东岸纵巷
+  C.road([[130, -100], [134, -30], [136, 60], [150, 150], [170, 230]], 5, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 10 });
+  C.road([[-92, -110], [-96, -40], [-100, 30], [-104, 100], [-96, 180], [-80, 260]], 5, { lots: { l: LOTS_RES, r: LOTS_RES }, smooth: 10 });
+  // 西岸市场广场 + 戏楼
+  const my = Math.round(w.hn(-72, 0));
+  C.plat(-84, -12, -60, 12, my, MAT.PLAZA);
+  // 戏台
+  C.placeAt((C2, F, bw, bd, rng) => { platformBox(F, -bw / 2, -bd / 2, bw / 2, bd / 2, 0, 1.6, PAL.stone); const G = F.sub(0, 1.6, 0); hall(C2, G, bw - 2, bd - 2, rng, { base: 0, h: 4.4, rs: ROOFSETS.grayL, lanterns: true }); }, -78, 0, 10, 8, 1, my, 0.2);
+}
+
+function buildTerraces(C) {
+  const w = C.w;
+  // 在平滑地形上追踪等高线形成台城巷道
+  const levels = [54, 63, 72, 81, 90, 99, 108];
+  const lanes = [];
+  for (const L of levels) {
+    // 在 z=10 附近向西搜索起点
+    let seed = null;
+    for (let x = -120; x > -300; x -= 1) { if (w.hn(x, 10) >= L) { seed = [x, 10]; break; } }
+    if (!seed) continue;
+    const trace = (dirSign) => {
+      const out = [];
+      let p = seed.slice();
+      for (let k = 0; k < 170; k++) {
+        const e = 1.5;
+        const gx = (w.hn(p[0] + e, p[1]) - w.hn(p[0] - e, p[1])) / (2 * e);
+        const gz = (w.hn(p[0], p[1] + e) - w.hn(p[0], p[1] - e)) / (2 * e);
+        const gl = Math.hypot(gx, gz) || 1e-3;
+        // 沿等高线前进
+        p = [p[0] + (-gz / gl) * 2 * dirSign, p[1] + (gx / gl) * 2 * dirSign];
+        // 投影回等高线
+        for (let it = 0; it < 3; it++) {
+          const h = w.hn(p[0], p[1]);
+          const gx2 = (w.hn(p[0] + e, p[1]) - w.hn(p[0] - e, p[1])) / (2 * e), gz2 = (w.hn(p[0], p[1] + e) - w.hn(p[0], p[1] - e)) / (2 * e);
+          const g2 = gx2 * gx2 + gz2 * gz2 + 1e-3;
+          const step = clamp((L - h) / g2, -3, 3);
+          p = [p[0] + gx2 * step, p[1] + gz2 * step];
+        }
+        if (p[1] < -125 || p[1] > 175 || p[0] < -320 || p[0] > -95) break;
+        if (w.occ[w.idx(p[0], p[1])] === 4) break;
+        out.push(p.slice());
+      }
+      return out;
+    };
+    const A = trace(1), B = trace(-1);
+    const pts = B.reverse().concat([seed]).concat(A);
+    if (pts.length < 20) continue;
+    // 稀疏化为控制点
+    const ctrl = [];
+    for (let i = 0; i < pts.length; i += 6) ctrl.push([pts[i][0], pts[i][1], L]);
+    const r = C.road(ctrl, 4, { lots: { l: LOTS_SLOPE, r: LOTS_SLOPE }, smooth: 4, maxSlope: 0.15 });
+    lanes.push(r);
+  }
+  C.lanes = lanes;
+  // 巷道之间的台阶（沿坡向，轴对齐）
+  for (let li = 0; li < lanes.length - 1; li++) {
+    const A = lanes[li], Bl = lanes[li + 1];
+    for (let i = 10; i < A.pts.length - 10; i += 38 + (li * 7) % 13) {
+      const p = A.pts[i];
+      // 上坡方向（取主轴）
+      const gx = w.hn(p[0] + 2, p[1]) - w.hn(p[0] - 2, p[1]), gz = w.hn(p[0], p[1] + 2) - w.hn(p[0], p[1] - 2);
+      const dir = Math.abs(gx) > Math.abs(gz) ? (gx > 0 ? 'x+' : 'x-') : (gz > 0 ? 'z+' : 'z-');
+      const dv = DIRV[dir];
+      // 找到上一层巷道
+      let hit = -1;
+      for (let s = 3; s < 40; s++) {
+        const x = p[0] + dv[0] * s, z = p[1] + dv[1] * s;
+        let found = false;
+        for (const q of Bl.pts) if (Math.abs(q[0] - x) < 1.2 && Math.abs(q[1] - z) < 1.2) { found = true; break; }
+        if (found) { hit = s; break; }
+      }
+      if (hit < 0) continue;
+      const run = hit - 2;
+      if (run < 5) continue;
+      const rise = Bl.pts[0][2] - p[2];
+      if (rise / run > 1.0) continue;
+      const sx = p[0] + dv[0] * 2, sz = p[1] + dv[1] * 2;
+      C.flight(sx, sz, dir, run, 2.4, p[2], Bl.pts[0][2], {});
+    }
+  }
+  // 台城中段的古寺
+  const tx = -200, tz = -40;
+  let ty = 0; for (let x = -250; x < -150; x++) if (w.hn(x, tz) >= 84) { ty = x; break; }
+  const cx = ty || -210;
+  C.plat(cx - 20, tz - 18, cx + 14, tz + 18, 84, MAT.PLAZA);
+  C.placeAt((C2, F, bw, bd, rng) => hall(C2, F, bw, bd, rng, { base: 1.4, h: 5.6, double: true, rs: ROOFSETS.grayL }), cx - 10, tz, 20, 12, 1, 84, 0.6);
+  C.placeAt((C2, F, bw, bd, rng) => pagoda(C2, F, 8, 7, rng, { rs: ROOFSETS.black }), cx + 6, tz - 11, 10, 10, 1, 84, 0.4);
+  C.placeAt((C2, F, bw, bd, rng) => pavilion(C2, F, 6, rng, {}), cx + 7, tz + 11, 7, 7, 1, 84, 0.4);
+  C.temple = [cx, 84, tz];
+  // 从长街到台城的上山台阶
+  C.flight(-130, 30, 'x-', 14, 3, w.h(-130, 30), 54, {});
+}
+
+function buildLake(C) {
+  const w = C.w;
+  // 湖心岛
+  const ix = 100, iz = 418;
+  for (let z = iz - 22; z < iz + 22; z++) for (let x = ix - 22; x < ix + 22; x++) {
+    const d = Math.hypot(x + 0.5 - ix, z + 0.5 - iz) * (1 + 0.1 * noise2(x / 6, z / 6));
+    if (d < 20) { const k = w.idx(x, z); w.H[k] = d < 15 ? 12 : snap(lerp(12, 8, (d - 15) / 5)); w.M[k] = d < 15 ? MAT.GARDEN : MAT.SAND; w.W[k] = d < 16 ? NOWATER : w.W[k]; w.mod[k] = 1; w.occ[k] = d < 16 ? 5 : 3; }
+  }
+  C.plat(ix - 9, iz - 9, ix + 9, iz + 9, 12.4, MAT.PLATFORM);
+  C.placeAt((C2, F, bw, bd, rng) => pagoda(C2, F, 11, 11, rng, { rs: ROOFSETS.black }), ix, iz, 13, 13, 0, 12.4, 0.6);
+  C.island = [ix, 12, iz];
+  // 九曲桥：北岸 → 岛
+  const zz = [[64, 300], [64, 322], [78, 322], [78, 344], [90, 344], [90, 366], [100, 366], [100, 398]];
+  for (let i = 0; i < zz.length - 1; i++) {
+    const [ax, az] = zz[i], [bx, bz] = zz[i + 1];
+    const x0 = Math.min(ax, bx) - 1.4, x1 = Math.max(ax, bx) + 1.4, z0 = Math.min(az, bz) - 1.4, z1 = Math.max(az, bz) + 1.4;
+    C.wbox(x0, 7, z0, x1, 11, z1, PAL.stone, { top: PAL.stoneL });
+    for (let t = 0; t <= 1; t += 1 / Math.max(1, Math.round(Math.hypot(bx - ax, bz - az) / 4))) {
+      const px = lerp(ax, bx, t), pz = lerp(az, bz, t);
+      C.wbox(px - 1.4, 11, pz - 1.4, px - 1.2, 11.8, pz + 1.4, PAL.stoneL, null, true);
+    }
+    w.markOcc(x0, z0, x1, z1, 1);
+  }
+  // 湖畔长堤与水榭
+  C.road([[-120, 318], [-80, 300], [-40, 292], [-22, 292]], 5, { lots: { l: { types: [T_HOUSE, [T_HALL[0], 0.6, T_HALL[2], T_HALL[3]]], gap: [3, 8], setback: 2 } }, smooth: 8 });
+  C.road([[112, 262], [150, 276], [200, 300], [240, 330], [262, 372]], 5, { lots: { r: { types: [T_HOUSE, T_SHOP, [T_TOWER[0], 0.5, [10, 12], [10, 12]]], gap: [2, 6], setback: 2 } }, smooth: 8 });
+  // 湖东小山塔
+  const ph = Math.round(w.h(262, 402));
+  C.plat(252, 392, 272, 412, ph, MAT.PLATFORM);
+  C.placeAt((C2, F, bw, bd, rng) => pagoda(C2, F, 8, 7, rng, { rs: ROOFSETS.black }), 262, 402, 10, 10, 3, ph, 0.4);
+  // 水榭
+  for (const [x, z, r] of [[-60, 318, 0], [180, 318, 2], [20, 300, 0]]) {
+    const F = C.frame(x, 11, z, r);
+    C.wbox(x - 5, 7, z - 5, x + 5, 11, z + 5, PAL.stoneD, { top: PAL.stone });
+    pavilion(C, F, 8, C.rng, { base: 0, rs: ROOFSETS.black });
+  }
+  // 船
+  const rng = new RNG(99);
+  let nb = 0;
+  for (let t = 0; t < 400 && nb < 30; t++) {
+    const x = rng.range(-80, 260), z = rng.range(-150, 480);
+    const k = w.idx(x, z);
+    if (w.W[k] <= NOWATER || w.W[k] - w.H[k] < 1.2) continue;
+    let ok = true;
+    for (let dz = -5; dz <= 5 && ok; dz += 2) for (let dx = -5; dx <= 5; dx += 2) { const kk = w.idx(x + dx, z + dz); if (w.W[kk] <= NOWATER || w.H[kk] > w.W[kk] - 0.6) { ok = false; break; } }
+    if (!ok) continue;
+    const F = C.frame(snap(x), w.W[k] - 0.1, snap(z), rng.int(0, 3));
+    boat(C, F, rng); nb++;
+  }
+}
+
+function buildSummit(C) {
+  const w = C.w;
+  // 峰顶平台
+  const px = -330, pz = -40;
+  const hs = [];
+  for (let z = pz - 7; z < pz + 7; z++) for (let x = px - 7; x < px + 7; x++) hs.push(w.h(x, z));
+  hs.sort((a, b) => a - b);
+  const py = Math.round(hs[Math.floor(hs.length * 0.8)]);
+  C.plat(px - 7, pz - 7, px + 7, pz + 7, py, MAT.PLATFORM);
+  C.placeAt((C2, F, bw, bd, rng) => pavilion(C2, F, 8.4, rng, { double: true, base: 1.0, rs: ROOFSETS.teal }), px, pz, 9, 9, 0, py, 0.6);
+  C.summit = [px, py, pz];
+  for (const [dx, dz] of [[-9, -5], [9, -6], [-8, 8], [9, 7]]) C.pointTree([px + dx, w.h(px + dx, pz + dz), pz + dz], 'pine');
+  // 山径：上城西门 → 鞍部 → 峰顶
+  const way = [
+    [-172, -300, 126], [-196, -296], [-204, -274], [-214, -252], [-226, -230], [-238, -212], [-250, -194], [-262, -180],
+    [-274, -168], [-282, -156], [-290, -140], [-296, -124], [-304, -108], [-314, -94], [-320, -80], [-322, -66], [-326, -56], [px + 2, pz - 9, py]
+  ];
+  // 各点高度取地形并做单调化平滑
+  const ys = way.map(p => p.length > 2 ? p[2] : w.hn(p[0], p[1]));
+  for (let i = 1; i < ys.length - 1; i++) ys[i] = (ys[i - 1] + ys[i] * 2 + ys[i + 1]) / 4;
+  const W2 = way.map((p, i) => [p[0], p[1], snap(ys[i])]);
+  const pts = C.trail(W2, 2.4, { col: hex(0x9a9486), top: hex(0xb3ad9f) });
+  pts.push([px + 6, py, pz - 6], [px + 6, py, pz], [px + 6, py, pz + 2]);
+  C.summitTrail = pts;
+  C.tour(pts);
+}
+
+// 其余空地：在城区范围内补充院落（背街）
+function infill(C) {
+  const w = C.w, rng = new RNG(4242);
+  const zones = [
+    { x0: -130, x1: 20, z0: -110, z1: 270, types: [T_HOUSE, T_COURT], n: 900 },
+    { x0: 40, x1: 180, z0: -110, z1: 250, types: [T_HOUSE, T_COURT], n: 700 },
+    { x0: -160, x1: 220, z0: -520, z1: -280, types: [T_COURT, T_HOUSE], n: 1400 },
+  ];
+  for (const Z of zones) {
+    for (let t = 0; t < Z.n; t++) {
+      const x = Math.round(rng.range(Z.x0, Z.x1)), z = Math.round(rng.range(Z.z0, Z.z1));
+      // 需靠近道路（30m 内）
+      let near = false, nd = 1e9, nrot = 0;
+      for (let r = 4; r <= 30 && !near; r += 2) {
+        for (const [dx, dz, rot] of [[0, r, 0], [r, 0, 1], [0, -r, 2], [-r, 0, 3]]) {
+          const k = w.idx(x + dx, z + dz);
+          if (w.inside(x + dx, z + dz) && w.occ[k] === 1) { near = true; nrot = rot; break; }
+        }
+      }
+      if (!near) continue;
+      const T = rng.wpick(Z.types.map(q => [q, q[1]]));
+      const bw = Math.round(rng.range(T[2][0], T[2][1])), bd = Math.round(rng.range(T[3][0], T[3][1]));
+      const sx = (nrot & 1) ? bd : bw, sz = (nrot & 1) ? bw : bd;
+      const cx = x + (sx % 2) * 0.5, cz = z + (sz % 2) * 0.5;
+      if (!w.rectFree(cx - sx / 2 - 2, cz - sz / 2 - 2, cx + sx / 2 + 2, cz + sz / 2 + 2)) continue;
+      const st = w.rectStats(cx - sx / 2, cz - sz / 2, cx + sx / 2, cz + sz / 2);
+      if (st.water || st.mx - st.mn > 4) continue;
+      const floor = snap((st.mx + st.mn) / 2 + 0.2);
+      C.placeBuilding(T[0], cx, cz, sx, sz, nrot, floor, bw, bd, { pad: 1 });
+    }
+  }
+}
+
+// 街灯：沿道路两侧交替设置灯柱与灯笼
+function streetLamps(C) {
+  const w = C.w;
+  for (const r of C.roads) {
+    const pts = r.pts, n = pts.length;
+    const every = r.width >= 6 ? 9 : 13;
+    let side = 1;
+    for (let i = 4; i < n - 4; i += every) {
+      const p = pts[i], a = pts[i - 2], b = pts[i + 2];
+      let tx = b[0] - a[0], tz = b[1] - a[1]; const l = Math.hypot(tx, tz) || 1; tx /= l; tz /= l;
+      const nx = -tz * side, nz = tx * side;
+      const x = snap(p[0] + nx * (r.width / 2 - 0.4)), z = snap(p[1] + nz * (r.width / 2 - 0.4));
+      side = -side;
+      const k = w.idx(x, z);
+      if (w.occ[k] !== 1) continue;
+      const y = w.H[k];
+      C.wbox(x - 0.2, y, z - 0.2, x + 0.2, y + 3.2, z + 0.2, PAL.woodD, null, true);
+      C.wbox(x - 0.2, y + 3.0, z - 0.2, x + 0.2 + nx * -0.8, y + 3.2, z + 0.2 + nz * -0.8, PAL.woodD, null, true);
+      const lx = x - nx * 0.8, lz = z - nz * 0.8;
+      C.wbox(lx - 0.3, y + 2.2, lz - 0.3, lx + 0.3, y + 3.0, lz + 0.3, PAL.lantern, { glow: 255, fl: FL.LANTERN }, true);
+      C.halo(lx, y + 2.6, lz, 4.4, 1, 0.46, 0.18, 0.95);
+    }
+  }
+}
+
+function assembleTour(C) {
+  // 顺序：长街（南→北） → 云瀑阁 → 上城主街 → 西大街 → 山径
+  const P = [];
+  const add = (arr, eye) => { for (const p of arr) P.push([p[0], p[1] + eye, p[2]]); };
+  const mainPts = C.mainStreet.pts.map(p => [p[0], p[2], p[1]]);
+  add(mainPts, 1.7);
+  add(C.tourSegs[0], 1.7);
+  // 上城主街：取前段至 z=-300
+  const up = C.upperMain.pts.filter(p => p[1] > -302).map(p => [p[0], p[2], p[1]]);
+  add(up, 1.7);
+  // 西大街：从主街向西至西门
+  const wr = C.roads.find(r => r.pts.length && Math.abs(r.pts[0][1] + 300) < 3 && r.pts[r.pts.length - 1][0] < -150);
+  if (wr) add(wr.pts.map(p => [p[0], p[2], p[1]]), 1.7);
+  add(C.summitTrail, 1.7);
+  // 以 1m 重采样
+  const out = [P[0]];
+  for (let i = 1; i < P.length; i++) {
+    const a = out[out.length - 1], b = P[i];
+    const d = Math.hypot(b[0] - a[0], b[2] - a[2]);
+    if (d < 0.5) continue;
+    const n = Math.ceil(d);
+    for (let k = 1; k <= n; k++) out.push([lerp(a[0], b[0], k / n), lerp(a[1], b[1], k / n), lerp(a[2], b[2], k / n)]);
+  }
+  return out;
+}
+
+// ===== flora.js — 体素树木：松、阔叶、柳、枫、花树、竹 =====
+const TREE_COL = {
+  pine: [hex(0x2c4a3a), hex(0x355843), hex(0x2a4436)],
+  broad: [hex(0x44643e), hex(0x537247), hex(0x3b5c3b), hex(0x5c7646), hex(0x4a6a4a)],
+  maple: [hex(0xa2492f), hex(0xb46634), hex(0x94402c)],
+  blossom: [hex(0xd8a4b1), hex(0xe4bcc4), hex(0xcc93a4)],
+  willow: [hex(0x7a9656), hex(0x87a260), hex(0x6f8c4e)],
+  bamboo: [hex(0x7fa653), hex(0x6c9448)],
+  trunk: hex(0x4a3a2e), trunkL: hex(0x6b5642),
+};
+function tcol(kind, seed) { const a = TREE_COL[kind]; return a[Math.floor(seed * a.length) % a.length]; }
+
+function plantTrees(world, scene, city) {
+  const w = world, rng = new RNG(777);
+  const add = (t) => { const c = scene.chunkAt(t.x, t.z); if (c) c.trees.push(t); };
+  const S = 5.2;
+  for (let gz = -WH + 2; gz < WH - 2; gz += S) {
+    for (let gx = -WH + 2; gx < WH - 2; gx += S) {
+      const x = snap(gx + rng.range(-2, 2)), z = snap(gz + rng.range(-2, 2));
+      const k = w.idx(x, z);
+      if (w.occ[k] && w.occ[k] !== 5) continue;
+      if (w.W[k] > NOWATER) continue;
+      const m = w.M[k], h = w.H[k];
+      // 离建筑/道路留出一点空间
+      let blocked = false, nearRoad = false;
+      for (let dz = -2; dz <= 2 && !nearRoad; dz++) for (let dx = -2; dx <= 2; dx++) { const q = w.idx(x + dx, z + dz); const o = w.occ[q]; if (o === 1) { nearRoad = true; break; } if (o === 2 || o === 4) blocked = true; }
+      if (nearRoad) continue;
+      const i = Math.floor(x) + WH, j = Math.floor(z) + WH;
+      const slope = w.slopeAt(i, j);
+      const f = fbm(x / 70, z / 70, 3);
+      let p = 0, kind = 'broad';
+      if (m === MAT.CLIFF) { p = 0.08; kind = 'pine'; }
+      else if (m === MAT.ROCK || m === MAT.MOSS) { p = h > 70 ? 0.3 : 0.18; kind = 'pine'; }
+      else if (m === MAT.FOREST) { p = 0.62; kind = h > 120 ? 'pine' : 'broad'; }
+      else if (m === MAT.GRASS || m === MAT.MEADOW) { p = 0.08 + Math.max(0, f) * 0.5; kind = h > 140 ? 'pine' : 'broad'; }
+      else if (m === MAT.SAND) { p = 0.12; kind = 'willow'; }
+      else if (m === MAT.GARDEN) { p = 0.3; kind = 'blossom'; }
+      else if (m === MAT.PLATFORM || m === MAT.PLAZA) { p = 0.0; }
+      else if (m === MAT.RETAIN) { p = 0.02; kind = 'pine'; }
+      if (blocked) p *= 0.15;
+      // 城中偶有树
+      if (w.wnear && w.wnear[k] && h < 60) { kind = rng.chance(0.6) ? 'willow' : kind; p = Math.max(p, 0.25); }
+      if (kind === 'broad') {
+        const r = rng.f();
+        if (r < 0.025) kind = 'maple'; else if (r < 0.04 && h < 80) kind = 'blossom'; else if (r < 0.1 && h < 90) kind = 'bamboo';
+      }
+      if (h > 170) { kind = 'pine'; p *= 0.8; }
+      if (rng.f() > p) continue;
+      add({ x, y: h, z, kind, s: rng.range(0.75, 1.3), seed: rng.f() });
+    }
+  }
+  // 城市指定的树
+  for (const t of (city ? city.treeSpots : [])) add({ x: snap(t.x), y: t.y, z: snap(t.z), kind: t.kind === 'small' ? 'blossom' : (t.kind || 'broad'), s: t.kind === 'small' ? 0.6 : 1.0, seed: ihash(t.x | 0, t.z | 0) });
+  // 云瀑阁与湖畔花树、柳
+  const special = [[-70, -150, 'blossom'], [10, -150, 'blossom'], [-66, -176, 'pine'], [4, -176, 'pine'], [-60, -230, 'pine'], [-20, -248, 'pine']];
+  for (const [x, z, kind] of special) add({ x, y: w.h(x, z), z, kind, s: 1.1, seed: ihash(x, z) });
+}
+
+function buildTreeNear(mb, t) {
+  const r = new RNG((t.seed * 1e9) | 0);
+  const x = t.x, y = t.y, z = t.z, s = t.s;
+  const L = FL.LEAF;
+  const bx = (x0, y0, z0, x1, y1, z1, c, o) => mb.box(x + x0, y + y0, z + z0, x + x1, y + y1, z + z1, c, o);
+  switch (t.kind) {
+    case 'pine': {
+      const H = snap(5 + 5 * s), tw = s > 1.05 ? 0.6 : 0.4;
+      let lx = 0, lz = 0;
+      const col = tcol('pine', t.seed);
+      for (let yy = 0; yy < H; yy += 1.6) {
+        bx(lx - tw / 2, yy, lz - tw / 2, lx + tw / 2, Math.min(H, yy + 1.6), lz + tw / 2, TREE_COL.trunk);
+        if (yy > 1.5) { lx += snap(r.range(-0.2, 0.2)); lz += snap(r.range(-0.2, 0.2)); }
+      }
+      const pads = 3 + Math.floor(s * 2);
+      for (let p = 0; p < pads; p++) {
+        const py = snap(H * (0.45 + 0.55 * p / pads));
+        const rad = snap((2.2 - p * 0.3) * s + 0.4);
+        const ox = snap(r.range(-1, 1) * (1.2 - p * 0.2)), oz = snap(r.range(-1, 1) * (1.2 - p * 0.2));
+        const c = shade(col, 0.92 + p * 0.05);
+        bx(ox - rad, py, oz - rad * 0.6, ox + rad, py + 0.8, oz + rad * 0.6, c, { fl: L, top: shade(c, 1.12) });
+        bx(ox - rad * 0.6, py, oz - rad, ox + rad * 0.6, py + 0.8, oz + rad, c, { fl: L, top: shade(c, 1.12) });
+      }
+      bx(-0.6, H - 0.2, -0.6, 0.6, H + 0.6, 0.6, col, { fl: L });
+      break;
+    }
+    case 'bamboo': {
+      const n = 5 + r.int(0, 5), col = tcol('bamboo', t.seed);
+      for (let i = 0; i < n; i++) {
+        const ox = snap(r.range(-1.4, 1.4)), oz = snap(r.range(-1.4, 1.4)), H = snap(r.range(5, 8) * s);
+        bx(ox, 0, oz, ox + 0.2, H, oz + 0.2, shade(col, 0.85));
+        bx(ox - 0.6, H - 1.6, oz - 0.6, ox + 0.8, H, oz + 0.8, col, { fl: L });
+      }
+      break;
+    }
+    case 'willow': {
+      const H = snap(3.2 + 1.6 * s);
+      bx(-0.3, 0, -0.3, 0.3, H, 0.3, TREE_COL.trunk);
+      const col = tcol('willow', t.seed), R = snap(2.2 * s + 0.6);
+      bx(-R, H - 0.4, -R, R, H + 1.6, R, col, { fl: L, top: shade(col, 1.1) });
+      bx(-R * 0.6, H + 1.6, -R * 0.6, R * 0.6, H + 2.4, R * 0.6, col, { fl: L });
+      for (let i = 0; i < 10; i++) {
+        const a = i / 10 * TAU, px = snap(Math.cos(a) * (R - 0.2)), pz = snap(Math.sin(a) * (R - 0.2));
+        const dl = snap(r.range(1.4, H - 0.6));
+        bx(px - 0.2, H - 0.4 - dl, pz - 0.2, px + 0.2, H - 0.4, pz + 0.2, shade(col, 0.95), { fl: L });
+      }
+      break;
+    }
+    default: {
+      const kind = t.kind === 'broad' ? 'broad' : t.kind;
+      const H = snap(2.4 + 2.2 * s);
+      bx(-0.3, 0, -0.3, 0.3, H + 0.6, 0.3, TREE_COL.trunk);
+      const col = tcol(kind, t.seed);
+      const R = snap(1.6 + 1.2 * s);
+      bx(-R, H, -R * 0.85, R, H + R * 1.2, R * 0.85, col, { fl: L, top: shade(col, 1.12) });
+      bx(-R * 0.85, H + 0.2, -R, R * 0.85, H + R * 1.1, R, shade(col, 0.96), { fl: L, top: shade(col, 1.1) });
+      const nb = 2 + r.int(0, 2);
+      for (let i = 0; i < nb; i++) {
+        const a = r.range(0, TAU), rr = R * 0.8, cx = snap(Math.cos(a) * rr), cz = snap(Math.sin(a) * rr), cr = snap(R * r.range(0.45, 0.7)), cy = snap(H + r.range(0.2, R));
+        bx(cx - cr, cy, cz - cr, cx + cr, cy + cr * 1.4, cz + cr, shade(col, r.range(0.9, 1.08)), { fl: L });
+      }
+      bx(-R * 0.55, H + R * 1.2, -R * 0.55, R * 0.55, H + R * 1.6, R * 0.55, shade(col, 1.06), { fl: L });
+    }
+  }
+}
+function buildTreeFar(mb, t) {
+  const x = t.x, y = t.y, z = t.z, s = t.s, L = FL.LEAF;
+  if (t.kind === 'pine') {
+    const H = snap(5 + 5 * s), col = tcol('pine', t.seed), R = snap(1.8 * s + 0.4);
+    mb.box(x - 0.4, y, z - 0.4, x + 0.4, y + H * 0.5, z + 0.4, TREE_COL.trunk, { skip: 8 });
+    mb.box(x - R, y + H * 0.45, z - R, x + R, y + H * 0.75, z + R, col, { fl: L, skip: 8 });
+    mb.box(x - R * 0.6, y + H * 0.75, z - R * 0.6, x + R * 0.6, y + H + 0.4, z + R * 0.6, col, { fl: L, skip: 8 });
+  } else if (t.kind === 'bamboo') {
+    const col = tcol('bamboo', t.seed);
+    mb.box(x - 1.4, y, z - 1.4, x + 1.4, y + 6.5 * s, z + 1.4, col, { fl: L, skip: 8 });
+  } else {
+    const kind = t.kind;
+    const H = snap(2.4 + 2.2 * s), R = snap(1.6 + 1.2 * s), col = tcol(kind === 'willow' ? 'willow' : kind, t.seed);
+    mb.box(x - 0.3, y, z - 0.3, x + 0.3, y + H, z + 0.3, TREE_COL.trunk, { skip: 8 });
+    mb.box(x - R, y + H, z - R, x + R, y + H + R * 1.4, z + R, col, { fl: L, skip: 8 });
+  }
+}
+
+// ===== atmos.js — 灯晕、倒影、瀑布水雾、体素云、云海 =====
+function buildAtmos(scene, R, world, city) {
+  const w = world;
+  // ---- 灯晕与水中倒影 ----
+  const H = city.haloArr;
+  scene.halos = R.uploadPoints(new Float32Array(H));
+  const groups = new Map();
+  for (let i = 0; i < H.length; i += 8) {
+    const x = H[i], y = H[i + 1], z = H[i + 2];
+    let lv = null, best = 1e9;
+    for (let r = 0; r <= 40 && lv === null; r += 4) {
+      for (const [dx, dz] of [[r, 0], [-r, 0], [0, r], [0, -r], [r, r], [-r, -r], [r, -r], [-r, r]]) {
+        if (!w.inside(x + dx, z + dz)) continue;
+        const wl = w.W[w.idx(x + dx, z + dz)];
+        if (wl > NOWATER && y > wl && y - wl < 40) { lv = wl; break; }
+      }
+    }
+    if (lv === null) continue;
+    if (!groups.has(lv)) groups.set(lv, []);
+    const g = groups.get(lv); for (let q = 0; q < 8; q++) g.push(H[i + q]);
+  }
+  for (const [lv, arr] of groups) scene.reflHalos.push({ level: lv - 0.12, pts: R.uploadPoints(new Float32Array(arr)) });
+  // ---- 瀑布水雾 ----
+  const sp = [], rng = new RNG(5);
+  for (let i = 0; i < 700; i++) {
+    const x = rng.range(FALLS.x0 - 2, FALLS.x1 + 2), z = FALLS.z + rng.range(1, 8);
+    sp.push(x, POOL.level + rng.range(-0.5, 2), z, rng.range(3, 7), rng.f(), rng.f(), rng.f(), rng.f());
+  }
+  // 瀑布中段的飘散水汽
+  for (let i = 0; i < 160; i++) {
+    const x = rng.range(FALLS.x0, FALLS.x1), z = FALLS.z + rng.range(1, 3);
+    sp.push(x, rng.range(POOL.level + 10, FALLS.top - 10), z, rng.range(2, 4), rng.f(), rng.f() * 0.3, rng.f(), rng.f());
+  }
+  for (const [x, z, up, dn, wd] of (city.weirs || [])) {
+    for (let i = 0; i < 60; i++) sp.push(x + rng.range(-wd / 2, wd / 2), dn + 0.2, z + rng.range(-1, 4), rng.range(1.5, 3), rng.f(), rng.f() * 0.4, rng.f(), rng.f());
+  }
+  scene.spray = R.uploadPoints(new Float32Array(sp));
+  // ---- 体素云 ----
+  const crng = new RNG(31);
+  scene.cloudObjs = [];
+  const spots = [
+    [-520, 330, -700], [-120, 360, -900], [300, 345, -820], [700, 330, -600], [900, 320, -150], [-900, 340, -60],
+    [-760, 300, 420], [820, 310, 380], [-300, 380, -1100], [560, 360, -1000], [-1000, 330, -500], [1050, 350, -400],
+  ];
+  for (const [cx, cy, cz] of spots) {
+    const mb = new MeshBuilder(2048);
+    const cell = crng.chance(0.5) ? 5 : 6;
+    const nx = crng.int(14, 26), ny = crng.int(2, 3), nz = crng.int(7, 13);
+    const blobs = [];
+    const nbl = crng.int(5, 9);
+    for (let b = 0; b < nbl; b++) blobs.push([crng.range(0.15, 0.85) * nx, crng.range(0.3, 0.6) * ny, crng.range(0.25, 0.75) * nz, crng.range(2.5, 5.5), crng.range(1.0, 1.8)]);
+    const occ = (i, j, k) => {
+      if (i < 0 || j < 0 || k < 0 || i >= nx || j >= ny || k >= nz) return false;
+      for (const [bx, by, bz, r, ry] of blobs) { const d = ((i + 0.5 - bx) / r) ** 2 + ((j + 0.5 - by) / ry) ** 2 + ((k + 0.5 - bz) / r) ** 2; if (d < 1) return true; }
+      return false;
+    };
+    const white = [242, 244, 246], under = [196, 204, 214];
+    for (let i = 0; i < nx; i++) for (let j = 0; j < ny; j++) for (let k = 0; k < nz; k++) {
+      if (!occ(i, j, k)) continue;
+      const x0 = (i - nx / 2) * cell, y0 = j * cell, z0 = (k - nz / 2) * cell, x1 = x0 + cell, y1 = y0 + cell, z1 = z0 + cell;
+      const c = j === 0 ? under : white;
+      const f = FL.CLOUD;
+      if (!occ(i + 1, j, k)) mb.face(0, x0, y0, z0, x1, y1, z1, c, null, 0, f, 0);
+      if (!occ(i - 1, j, k)) mb.face(1, x0, y0, z0, x1, y1, z1, c, null, 0, f, 0);
+      if (!occ(i, j + 1, k)) mb.face(2, x0, y0, z0, x1, y1, z1, white, null, 0, f, 0);
+      if (!occ(i, j - 1, k)) mb.face(3, x0, y0, z0, x1, y1, z1, under, null, 0, f, 0);
+      if (!occ(i, j, k + 1)) mb.face(4, x0, y0, z0, x1, y1, z1, c, null, 0, f, 0);
+      if (!occ(i, j, k - 1)) mb.face(5, x0, y0, z0, x1, y1, z1, c, null, 0, f, 0);
+    }
+    const m = R.upload(mb);
+    if (m) scene.cloudObjs.push({ m, base: [cx, cy, cz], speed: crng.range(1.0, 2.6), off: new Float32Array([cx, cy, cz]), alpha: 0.5, a0: crng.range(0.32, 0.5) });
+  }
+  // ---- 云海雾层（两层大平面）----
+  const mk = (y, x0, z0, x1, z1) => { const mb = new MeshBuilder(8); mb.face(2, x0, y, z0, x1, y, z1, [0, 0, 0], null, 0, 0, 0); return R.upload(mb); };
+  scene.mistMesh = [
+    { m: mk(46, -1400, -1400, 1400, 1400), k: 0.55 },
+    { m: mk(148, -1400, -1400, 1400, 1400), k: 0.8 },
+  ];
+  // ---- 远山（界外，粗体素）----
+  buildBackdrop(scene, R);
+  scene.updateDynamic = function (cam, env, dt) {
+    const t = env.clock;
+    const list = [];
+    for (const c of this.cloudObjs) {
+      let x = c.base[0] + t * c.speed * 0.6;
+      x = ((x + 1300) % 2600 + 2600) % 2600 - 1300;
+      c.off[0] = x; c.off[1] = c.base[1] + Math.sin(t * 0.05 + c.base[2]) * 2; c.off[2] = c.base[2];
+      c.dist = Math.hypot(x - cam.pos[0], c.off[1] - cam.pos[1], c.off[2] - cam.pos[2]);
+      c.alpha = c.a0 * smoothstep(120, 420, c.dist);
+      if (c.alpha > 0.02) list.push(c);
+    }
+    list.sort((a, b) => b.dist - a.dist);
+    this.cloudList = list;
+  };
+}
+
+// 远景山峦：世界外圈，16m 体素，带雾
+function backdropHeight(x, z) {
+  const r = Math.max(Math.abs(x), Math.abs(z));
+  const n = ridged(x / 380, z / 380, 4);
+  const n2 = fbm(x / 160 + 3, z / 160, 3);
+  const base = Math.pow(fbm(x / 520, z / 520, 4) * 0.5 + 0.55, 1.6);
+  let far = base * 460 + n * 90 + n2 * 40 + 20;
+  if (z > 0) far *= lerp(1, 0.5, smoothstep(500, 1600, z));
+  const near = macroHeight(x, z);
+  return lerp(near, far, smoothstep(660, 1150, r));
+}
+function buildBackdrop(scene, R) {
+  const S = 12, E = 2400;
+  const mb = new MeshBuilder(65536);
+  const n = Math.ceil(2 * E / S);
+  const Hs = new Float32Array(n * n), Ms = new Uint8Array(n * n);
+  for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+    const x = -E + i * S + S / 2, z = -E + j * S + S / 2;
+    const inner = Math.abs(x) < WH - 8 && Math.abs(z) < WH - 8;
+    Hs[j * n + i] = inner ? -50 : Math.round(backdropHeight(x, z) / 4) * 4;
+    Ms[j * n + i] = Hs[j * n + i] > 220 ? MAT.ROCK : MAT.FOREST;
+  }
+  // 复用地形分块网格（坐标偏移：WH → E）
+  const save = WH;
+  for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+    const h = Hs[j * n + i]; if (h < -10) continue;
+    const x0 = -E + i * S, z0 = -E + j * S;
+    const col = terrainTop(Ms[j * n + i], h, x0, z0);
+    mb.face(2, x0, h, z0, x0 + S, h, z0 + S, col, null, 0, 0, 0);
+    const nb = [[i + 1, j, 0], [i - 1, j, 1], [i, j + 1, 4], [i, j - 1, 5]];
+    for (const [ni, nj, fn] of nb) {
+      const nh = (ni < 0 || nj < 0 || ni >= n || nj >= n) ? 0 : Hs[nj * n + ni];
+      if (nh >= h) continue;
+      mb.face(fn, x0, Math.max(nh, 0), z0, x0 + S, h, z0 + S, terrainSide(Ms[j * n + i], h, x0, z0), [0.7, 0.7, 1, 1], 0, FL.STRATA, 0);
+    }
+  }
+  const m = R.upload(mb);
+  if (m) scene.backdrop = m;
+}
+
+// ===== env.js — 日月与大气：由时刻计算天空、光照、雾、灯火 =====
+const LAT = 30 * Math.PI / 180, DECL = 12 * Math.PI / 180;
+function celestial(ha, dec) {
+  const P = [0, Math.sin(LAT), -Math.cos(LAT)], S = [0, Math.cos(LAT), Math.sin(LAT)];
+  const c = Math.cos(dec), s = Math.sin(dec);
+  return [c * (Math.cos(ha) * S[0] - Math.sin(ha)) + s * P[0], c * Math.cos(ha) * S[1] + s * P[1], c * Math.cos(ha) * S[2] + s * P[2]];
+}
+const SRGB = (h) => { const c = hex(h); return c.map(v => Math.pow(v / 255, 2.2)); };
+// 关键帧：太阳高度（度）
+const SKY_KEYS = [
+  { e: -20, zen: 0x040815, hor: 0x121a31, glow: 0x000000, light: 0x000000, sky: 0x1a2748, gnd: 0x0a0e17, fog: 0x18223c, fogSun: 0x18223c },
+  { e: -11, zen: 0x08112a, hor: 0x222a48, glow: 0x0c0a18, light: 0x000000, sky: 0x1d2a4e, gnd: 0x0b0f1a, fog: 0x1f2946, fogSun: 0x2a2a48 },
+  { e: -5, zen: 0x182a58, hor: 0x5e5474, glow: 0x5a2c3a, light: 0x000000, sky: 0x333f6c, gnd: 0x151623, fog: 0x4c4c6a, fogSun: 0x80566a },
+  { e: -1, zen: 0x2c4a82, hor: 0xd08a6a, glow: 0xc85a30, light: 0x7a3418, sky: 0x55609a, gnd: 0x2a2320, fog: 0x9a8290, fogSun: 0xe09060 },
+  { e: 3, zen: 0x3e629e, hor: 0xeab088, glow: 0xff8a40, light: 0xff9a50, sky: 0x7888b8, gnd: 0x4a3a2c, fog: 0xc6a898, fogSun: 0xf2b078 },
+  { e: 9, zen: 0x3f6fb4, hor: 0xe6cfb0, glow: 0xffb070, light: 0xffc890, sky: 0x8fa6cc, gnd: 0x5c5040, fog: 0xc8c4bc, fogSun: 0xf0cc9c },
+  { e: 22, zen: 0x3570bf, hor: 0xbcd2e2, glow: 0xf0d0a0, light: 0xfff0da, sky: 0x9ab4d6, gnd: 0x645e4c, fog: 0xadc4d6, fogSun: 0xe6dcc8 },
+  { e: 70, zen: 0x2f6cc0, hor: 0xb8d0e2, glow: 0xf0e0c0, light: 0xfff8ee, sky: 0xa0bade, gnd: 0x6a6654, fog: 0xaac2d6, fogSun: 0xe4e2d6 },
+];
+const SKY_KEYS_LIN = SKY_KEYS.map(k => ({
+  e: k.e, zen: SRGB(k.zen), hor: SRGB(k.hor), glow: SRGB(k.glow), light: SRGB(k.light), sky: SRGB(k.sky), gnd: SRGB(k.gnd), fog: SRGB(k.fog), fogSun: SRGB(k.fogSun)
+}));
+function keyLerp(e, f) {
+  const K = SKY_KEYS_LIN;
+  if (e <= K[0].e) return K[0][f];
+  for (let i = 0; i < K.length - 1; i++) {
+    if (e <= K[i + 1].e) {
+      const t = smoothstep(0, 1, (e - K[i].e) / (K[i + 1].e - K[i].e));
+      return mixc(K[i][f], K[i + 1][f], t);
+    }
+  }
+  return K[K.length - 1][f];
+}
+const SHICHEN = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
+function shichen(h) { return SHICHEN[Math.floor(((h + 1) % 24) / 2)] + '时'; }
+
+function computeEnv(hours, clock) {
+  const ha = (hours - 12) / 24 * TAU;
+  const sun = celestial(ha, DECL);
+  const moon = celestial(ha + Math.PI + 0.22, -0.08);
+  const e = Math.asin(clamp(sun[1], -1, 1)) * 180 / Math.PI;
+  const me = Math.asin(clamp(moon[1], -1, 1)) * 180 / Math.PI;
+  const env = { hours, clock, sunElev: e };
+  env.sunDir = new Float32Array(sun); env.moonDir = new Float32Array(moon);
+  env.zenith = new Float32Array(keyLerp(e, 'zen'));
+  env.horizon = new Float32Array(keyLerp(e, 'hor'));
+  const sunVis = smoothstep(-4, 2, e);
+  env.sunGlow = new Float32Array(keyLerp(e, 'glow').map(v => v * 1.2));
+  env.sunDisk = new Float32Array([18 * sunVis, 14 * sunVis, 9 * sunVis].map((v, i) => v * (e < 8 ? [1, 0.75, 0.5][i] : 1)));
+  const moonVis = smoothstep(-3, 4, me);
+  env.moonCol = new Float32Array([1.15, 1.18, 1.25].map(v => v * moonVis * (0.35 + 0.65 * smoothstep(0, -10, e))));
+  env.stars = smoothstep(-5, -13, e);
+  env.night = smoothstep(0, -12, e);
+  // 主光：日或月
+  const sunI = smoothstep(-1.5, 10, e) * 3.0 + smoothstep(10, 45, e) * 0.55;
+  const moonI = smoothstep(-2, 12, me) * smoothstep(-3, -9, e) * 0.34;
+  if (sunI >= moonI) {
+    env.lightDir = new Float32Array(sun); const lc = keyLerp(e, 'light');
+    env.lightCol = new Float32Array(lc.map(v => v * sunI));
+    env.shadowK = smoothstep(0, 5, e);
+  } else {
+    env.lightDir = new Float32Array(moon);
+    env.lightCol = new Float32Array([0.42 * moonI, 0.55 * moonI, 0.85 * moonI]);
+    env.shadowK = smoothstep(4, 14, me) * 0.75 * smoothstep(-4, -9, e);
+  }
+  const ambK = 0.66 + 0.16 * smoothstep(5, 40, e);
+  env.skyAmb = new Float32Array(keyLerp(e, 'sky').map(v => v * ambK));
+  env.gndAmb = new Float32Array(keyLerp(e, 'gnd'));
+  env.fogCol = new Float32Array(keyLerp(e, 'fog'));
+  env.fogSun = new Float32Array(keyLerp(e, 'fogSun'));
+  // 雾：清晨浓，正午淡
+  const morning = Math.exp(-Math.pow((hours - 6.8) / 1.7, 2));
+  const evening = Math.exp(-Math.pow((hours - 19.8) / 2.0, 2));
+  env.fogDen = 0.0012 + 0.0022 * morning + 0.0008 * evening + 0.0008 * env.night;
+  env.fogBase = 14; env.fogFall = 36 + 12 * morning;
+  env.haze = 0.00014 + 0.00006 * morning + 0.00006 * env.night;
+  env.mist = 0.22 + 0.6 * morning + 0.15 * evening + 0.1 * env.night;
+  env.mistCol = new Float32Array(mixc(keyLerp(e, 'fog'), keyLerp(e, 'light'), 0.35).map(v => v * 1.15 + 0.02 * env.night));
+  env.exposure = 1.0 + 0.9 * env.night + 0.15 * smoothstep(8, -2, e);
+  // 灯火
+  env.lamp = smoothstep(7, -3, e);
+  let wf;
+  const H = hours;
+  if (H >= 16 && H < 22) wf = 0.9; else if (H >= 22 || H < 1) wf = lerp(0.9, 0.5, ((H + 24 - 22) % 24) / 3);
+  else if (H < 5) wf = lerp(0.5, 0.2, (H - 1) / 4); else wf = lerp(0.2, 0.05, clamp((H - 5) / 2, 0, 1));
+  env.winFrac = wf;
+  return env;
+}
+
+// ===== render.js — WebGL2 渲染器（无第三方依赖） =====
+const GLSL_COMMON = `
+vec3 acesTM(vec3 x){ return clamp((x*(2.51*x+0.03))/(x*(2.43*x+0.59)+0.14),0.,1.); }
+float hash13(vec3 p){ p = fract(p*0.1031); p += dot(p, p.zyx+31.32); return fract((p.x+p.y)*p.z); }
+float hash12(vec2 p){ vec3 p3 = fract(vec3(p.xyx)*0.1031); p3 += dot(p3, p3.yzx+33.33); return fract((p3.x+p3.y)*p3.z); }
+float vnoise(vec2 p){ vec2 i=floor(p), f=fract(p); vec2 u=f*f*(3.-2.*f);
+  return mix(mix(hash12(i),hash12(i+vec2(1,0)),u.x), mix(hash12(i+vec2(0,1)),hash12(i+vec2(1,1)),u.x), u.y); }
+uniform vec3 uZenith, uHorizon, uSunDir, uSunGlow, uSunDisk, uMoonDir, uMoonCol;
+uniform vec3 uCam; uniform float uTime;
+uniform vec3 uFogCol, uFogSun; uniform float uFogDen, uFogBase, uFogFall, uHaze, uExposure;
+vec3 skyCol(vec3 d){
+  float y = d.y;
+  vec3 c = mix(uHorizon, uZenith, pow(clamp(y+0.02,0.,1.), 0.55));
+  if (y < 0.0) c = mix(uHorizon, uHorizon*0.82, clamp(-y*4.0,0.,1.));
+  float sd = max(dot(d,uSunDir),0.);
+  float hz = 1.0 - clamp(abs(y)*2.5,0.,1.);
+  c += uSunGlow * (pow(sd, 4.0)*0.2*(0.3+0.7*hz) + pow(sd, 48.0)*0.9);
+  return c;
+}
+vec3 applyFog(vec3 col, vec3 p){
+  vec3 V = p - uCam; float d = length(V); vec3 dir = V/max(d,1e-3);
+  float a = (uCam.y - uFogBase)/uFogFall, b = (p.y - uFogBase)/uFogFall;
+  a = clamp(a,-3.,40.); b = clamp(b,-3.,40.);
+  float ea = exp(-a), eb = exp(-b);
+  float integ = abs(b-a) > 1e-3 ? (ea-eb)/(b-a) : ea;
+  float f = 1.0 - exp(-(uFogDen*d*integ + d*uHaze*(1.0 + d/1400.0)));
+  float sa = pow(max(dot(dir, uSunDir),0.0), 6.0);
+  vec3 fc = mix(uFogCol, uFogSun, sa);
+  return mix(col, fc, clamp(f,0.,1.));
+}
+vec3 finish(vec3 c){ c = acesTM(c*uExposure); float l = dot(c, vec3(0.299,0.587,0.114)); c = max(mix(vec3(l), c, 1.14), 0.0); return pow(c, vec3(1.0/2.2)); }
+`;
+
+const VS_MAIN = `#version 300 es
+precision highp float; precision highp int;
+layout(location=0) in vec3 aPos; layout(location=1) in vec4 aCol; layout(location=2) in uvec4 aInfo;
+uniform mat4 uVP; uniform vec3 uOff;
+out vec3 vPos; out vec4 vCol; flat out uvec4 vInfo;
+void main(){ vec3 p = aPos + uOff; vPos=p; vCol=aCol; vInfo=aInfo; gl_Position=uVP*vec4(p,1.0); }`;
+
+const FS_MAIN = `#version 300 es
+precision highp float; precision highp int; precision highp sampler2DShadow;
+in vec3 vPos; in vec4 vCol; flat in uvec4 vInfo;
+uniform sampler2DShadow uShadow; uniform mat4 uLVP; uniform float uSTex, uShadowK;
+uniform vec3 uLightDir, uLightCol, uSkyAmb, uGndAmb;
+uniform float uLamp, uWinFrac, uAlpha, uNight;
+out vec4 oCol;
+${GLSL_COMMON}
+const vec3 NRM[6] = vec3[6](vec3(1,0,0),vec3(-1,0,0),vec3(0,1,0),vec3(0,-1,0),vec3(0,0,1),vec3(0,0,-1));
+float shadowF(vec3 N){
+  vec3 wp = vPos + N*0.14;
+  vec4 l = uLVP*vec4(wp,1.0); vec3 c = l.xyz*0.5+0.5;
+  if(c.x<0.001||c.x>0.999||c.y<0.001||c.y>0.999||c.z>0.999) return 1.0;
+  float t = uSTex; float z = c.z - 0.0004;
+  float s = texture(uShadow, vec3(c.xy+vec2(-0.6,-0.6)*t, z)) + texture(uShadow, vec3(c.xy+vec2(0.6,-0.6)*t, z))
+          + texture(uShadow, vec3(c.xy+vec2(-0.6,0.6)*t, z)) + texture(uShadow, vec3(c.xy+vec2(0.6,0.6)*t, z));
+  return s*0.25;
+}
+void main(){
+  int ni = int(vInfo.x); vec3 N = NRM[ni];
+  uint fl = vInfo.z; float rnd = float(vInfo.w)/255.0;
+  vec3 alb = pow(vCol.rgb, vec3(2.2)); float ao = vCol.a;
+  float dist = length(vPos - uCam);
+  vec3 q = vPos*5.0 - N*0.02; vec3 cell = floor(q);
+  float gk = 1.0 - smoothstep(25.0, 260.0, dist);
+  float h = hash13(cell);
+  alb *= 1.0 + (h-0.5)*0.13*gk;
+  vec3 f = fract(q); vec3 e = min(f, 1.0-f); vec3 an = abs(N);
+  float ed = min(an.x>0.5?1.0:e.x, min(an.y>0.5?1.0:e.y, an.z>0.5?1.0:e.z));
+  float edK = 1.0 - smoothstep(0.0, 0.1, ed);
+  alb *= 1.0 - edK*0.11*(1.0-smoothstep(6.0, 40.0, dist));
+  if ((fl & 1u) != 0u && ni == 2) { float rib = mod(cell.x + cell.z, 2.0); alb *= 0.88 + 0.12*rib; }
+  if ((fl & 8u) != 0u) { float band = hash12(vec2(floor(vPos.y*1.25), floor((vPos.x+vPos.z)*0.08))); alb *= 0.9 + 0.2*band; }
+  if ((fl & 16u) != 0u) {
+    bool hz = ni == 2 || ni == 3;
+    float along = hz ? cell.x : (an.x > 0.5 ? cell.z : cell.x);
+    float up = hz ? cell.z : cell.y;
+    float rowH = hz ? 5.0 : 3.0, bl = hz ? 5.0 : 6.0;
+    float row = floor(up / rowH);
+    float u2 = along + mod(row, 2.0) * bl * 0.5;
+    float colB = floor(u2 / bl);
+    float mortar = (mod(up, rowH) < 0.5 || mod(u2, bl) < 0.5) ? 1.0 : 0.0;
+    alb *= (0.93 + 0.14*hash12(vec2(row, colB))) * (1.0 - mortar*0.17*(1.0 - smoothstep(25.0, 140.0, dist)));
+  }
+  vec3 emis = vec3(0.0);
+  if ((fl & 4u) != 0u) {
+    float col = floor(vPos.x*5.0) + floor(vPos.z*5.0)*7.0;
+    float L = 3.0 + mod(col, 5.0);
+    float v = vPos.y*5.0 + uTime*55.0 + hash12(vec2(col,1.0))*40.0;
+    float seg = floor(v / L);
+    float s = hash12(vec2(col, seg));
+    float foam = (fl & 128u) != 0u ? 0.5 : 0.0;
+    alb = mix(vec3(0.42,0.62,0.66), vec3(0.93,0.97,1.0), clamp(s*1.1 + foam, 0.0, 1.0));
+    emis = alb * 0.10 * (1.0 - 0.75*uNight);
+  } else if ((fl & 128u) != 0u) {
+    float s = hash13(floor(vec3(vPos.x*5.0, vPos.y*5.0 + uTime*6.0, vPos.z*5.0)));
+    alb = mix(vec3(0.7,0.82,0.85), vec3(0.97,0.99,1.0), s);
+  }
+  float ndl = dot(N, uLightDir);
+  float sh = 1.0;
+  if ((fl & 64u) != 0u) { ndl = ndl*0.5+0.5; }
+  else {
+    if ((fl & 2u) != 0u) ndl = ndl*0.55 + 0.35;
+    if (ndl > 0.0 && uShadowK > 0.0) sh = mix(1.0, shadowF(N), uShadowK);
+  }
+  ndl = max(ndl, 0.0);
+  vec3 amb = mix(uGndAmb, uSkyAmb, N.y*0.5+0.5);
+  vec3 c = alb * (uLightCol*ndl*sh + amb*ao) + emis;
+  if (vInfo.y > 0u) {
+    bool lan = (fl & 32u) != 0u;
+    float g;
+    if (!lan && vInfo.y >= 128u) {
+      g = float(vInfo.y - 128u)/127.0;
+      vec2 uv = an.x > 0.5 ? cell.zy : (an.z > 0.5 ? cell.xy : cell.xz);
+      float paper = mod(uv.x, 2.0) * mod(uv.y, 2.0);
+      c = mix(vec3(0.045,0.032,0.024), vec3(0.50,0.42,0.30), paper) * (uLightCol*ndl*sh + amb*ao);
+      g *= mix(0.12, 0.62, paper);
+    } else g = lan ? float(vInfo.y)/255.0 : float(vInfo.y)/127.0;
+    float on = lan ? 1.0 : step(rnd, uWinFrac);
+    float fk = 0.88 + 0.12*sin(uTime*6.0 + rnd*60.0)*sin(uTime*2.3 + rnd*17.0);
+    vec3 ec = lan ? vec3(1.0,0.36,0.14) : vec3(1.0,0.52,0.20);
+    c += ec * g * on * uLamp * fk * (lan ? 5.0 : 3.4);
+  }
+  c = applyFog(c, vPos);
+  oCol = vec4(finish(c), uAlpha);
+}`;
+
+const VS_SHADOW = `#version 300 es
+layout(location=0) in vec3 aPos; uniform mat4 uLVP; uniform vec3 uOff;
+void main(){ gl_Position = uLVP*vec4(aPos+uOff,1.0); }`;
+const FS_SHADOW = `#version 300 es
+precision mediump float; out vec4 o; void main(){ o = vec4(1.0); }`;
+
+const VS_SKY = `#version 300 es
+precision highp float;
+uniform mat4 uInvVP; out vec3 vDir;
+void main(){ vec2 p = vec2((gl_VertexID<<1)&2, gl_VertexID&2)*2.0-1.0;
+  vec4 w = uInvVP*vec4(p, 1.0, 1.0); vDir = w.xyz/w.w; gl_Position = vec4(p, 0.9999, 1.0); }`;
+const FS_SKY = `#version 300 es
+precision highp float;
+in vec3 vDir; out vec4 oCol;
+uniform float uStars;
+${GLSL_COMMON}
+void main(){
+  vec3 d = normalize(vDir - uCam);
+  vec3 c = skyCol(d);
+  float sd = dot(d, uSunDir);
+  c += uSunDisk * smoothstep(0.99955, 0.99975, sd);
+  float md = dot(d, uMoonDir);
+  if (md > 0.9985) {
+    vec3 mcol = uMoonCol * (0.85 + 0.15*vnoise(d.xz*900.0));
+    c = mix(c, mcol, smoothstep(0.9990, 0.99925, md));
+  }
+  c += uMoonCol*0.10*pow(max(md,0.0), 300.0) + uMoonCol*0.04*pow(max(md,0.0),12.0)*uStars;
+  if (uStars > 0.01 && d.y > 0.0) {
+    float ang = uTime*0.004;
+    vec3 r = vec3(d.x*cos(ang)-d.z*sin(ang), d.y, d.x*sin(ang)+d.z*cos(ang));
+    vec3 g = floor(r*260.0); float hs = hash13(g);
+    float star = step(0.9965, hs) * (0.5 + 0.5*sin(uTime*2.0 + hs*300.0));
+    float mw = exp(-pow(dot(r, normalize(vec3(0.3,0.5,-0.8)))*3.2, 2.0));
+    star += step(0.992, hs)*0.35*mw;
+    c += vec3(0.85,0.9,1.0) * star * uStars * smoothstep(0.0, 0.25, d.y) * 1.4;
+    float mwn = vnoise(vec2(dot(r, vec3(12.9, 7.2, -9.4)), dot(r, vec3(-4.1, 15.3, 8.7)))) * 0.6 + vnoise(vec2(dot(r, vec3(31.0, -22.0, 17.0)), dot(r, vec3(9.0, 28.0, -35.0)))) * 0.4;
+    c += vec3(0.07,0.085,0.14) * mw * uStars * mwn;
+  }
+  oCol = vec4(finish(c), 1.0);
+}`;
+
+const VS_WATER = `#version 300 es
+precision highp float;
+layout(location=0) in vec3 aPos; uniform mat4 uVP; out vec3 vPos;
+void main(){ vPos = aPos; gl_Position = uVP*vec4(aPos,1.0); }`;
+const FS_WATER = `#version 300 es
+precision highp float; precision highp sampler2D; precision highp sampler2DShadow;
+in vec3 vPos; out vec4 oCol;
+uniform sampler2D uHeightTex; uniform sampler2DShadow uShadow; uniform mat4 uLVP; uniform float uShadowK;
+uniform vec3 uLightDir, uLightCol, uSkyAmb; uniform float uNight, uLamp;
+${GLSL_COMMON}
+float tH(vec2 xz){ ivec2 ij = clamp(ivec2(floor(xz + 640.0)), ivec2(0), ivec2(1279)); return texelFetch(uHeightTex, ij, 0).r; }
+float wave(vec2 p){ return vnoise(p*0.35 + vec2(uTime*0.25, uTime*0.18))*0.6 + vnoise(p*0.9 - vec2(uTime*0.4, -uTime*0.3))*0.4; }
+void main(){
+  float depth = vPos.y - tH(vPos.xz);
+  vec2 cp = (floor(vPos.xz*5.0)+0.5)/5.0;
+  float e = 0.2;
+  float w0 = wave(cp), wx = wave(cp+vec2(e,0.)), wz = wave(cp+vec2(0.,e));
+  vec3 N = normalize(vec3(-(wx-w0)*1.2, 1.0, -(wz-w0)*1.2));
+  vec3 V = normalize(vPos - uCam);
+  vec3 R = reflect(V, N); R.y = abs(R.y);
+  float fres = 0.04 + 0.96*pow(1.0 - max(dot(-V, N), 0.0), 5.0);
+  vec3 sky = skyCol(R);
+  vec3 shallow = vec3(0.16,0.34,0.30), deep = vec3(0.03,0.10,0.13);
+  vec3 base = mix(shallow, deep, smoothstep(0.3, 5.0, depth));
+  float sh = 1.0;
+  vec4 l = uLVP*vec4(vPos,1.0); vec3 c3 = l.xyz*0.5+0.5;
+  if (uShadowK > 0.0 && c3.x>0.0 && c3.x<1.0 && c3.y>0.0 && c3.y<1.0) sh = mix(1.0, texture(uShadow, vec3(c3.xy, c3.z-0.0006)), uShadowK);
+  base = base * (uLightCol*max(uLightDir.y,0.0)*sh*0.6 + uSkyAmb*0.9);
+  vec3 c = mix(base, sky, clamp(fres*0.85 + 0.12, 0.0, 1.0));
+  float spec = pow(max(dot(R, uLightDir), 0.0), 180.0);
+  c += uLightCol * spec * 3.0 * sh;
+  float foam = smoothstep(0.55, 0.0, depth) * (0.5 + 0.5*step(0.5, hash12(floor(vPos.xz*5.0) + floor(uTime*2.0))));
+  c = mix(c, (uSkyAmb + uLightCol*max(uLightDir.y,0.0)*sh)*0.85, foam*0.6);
+  float a = clamp(0.62 + depth*0.12 + fres*0.3, 0.6, 0.96);
+  c = applyFog(c, vPos);
+  oCol = vec4(finish(c), a);
+}`;
+
+const VS_PTS = `#version 300 es
+precision highp float;
+layout(location=0) in vec4 aP; layout(location=1) in vec4 aC;
+uniform mat4 uVP; uniform float uScale, uTime, uMode, uMirror;
+out vec4 vC; out float vMode;
+void main(){
+  vec3 p = aP.xyz; float size = aP.w; vec4 c = aC;
+  if (uMode > 1.5) { // 水雾：以时间驱动的上升/扩散
+    float ph = fract(uTime*0.08*(0.6+c.a) + c.b*7.0);
+    float ang = c.r*6.2832;
+    p += vec3(cos(ang), 0.0, sin(ang)) * ph * (6.0 + c.g*14.0) + vec3(0.0, ph*(10.0+c.g*22.0), 0.0);
+    size *= 0.5 + ph*1.6;
+    c = vec4(1.0,1.0,1.0, (1.0-ph)*ph*4.0*0.22);
+  }
+  if (uMirror > 0.0) { p.y = 2.0*uMirror - p.y; }
+  vec4 cp = uVP*vec4(p,1.0);
+  gl_Position = cp;
+  float px = size*uScale/max(cp.w,0.1);
+  gl_PointSize = clamp(px, uMode > 1.5 ? 1.5 : 3.0, 256.0);
+  if (uMode < 1.5 && px < 3.0) c.a *= 0.55 + 0.45*px/3.0;
+  vC = c; vMode = uMode;
+}`;
+const FS_PTS = `#version 300 es
+precision highp float;
+in vec4 vC; in float vMode; out vec4 oCol;
+uniform float uLamp, uTime; uniform float uMirror; uniform vec3 uTint;
+void main(){
+  vec2 d = gl_PointCoord*2.0-1.0; float r2 = dot(d,d);
+  if (vMode > 1.5) { // 雾粒（方形体素风格的柔边）
+    float m = max(abs(d.x),abs(d.y)); float a = vC.a * (1.0 - smoothstep(0.55, 1.0, m));
+    oCol = vec4(uTint*a, a); return;
+  }
+  float a = exp(-r2*4.0) * vC.a * uLamp;
+  float core = exp(-r2*40.0) * vC.a * uLamp;
+  if (uMirror > 0.0) { a *= 0.45; core *= 0.3; }
+  vec3 c = vC.rgb * a * 0.9 + vec3(1.0,0.85,0.6)*core*0.8;
+  oCol = vec4(c, 0.0);
+}`;
+
+const VS_MIST = `#version 300 es
+precision highp float;
+layout(location=0) in vec3 aPos; uniform mat4 uVP; out vec3 vPos;
+void main(){ vPos = aPos; gl_Position = uVP*vec4(aPos,1.0); }`;
+const FS_MIST = `#version 300 es
+precision highp float; precision highp sampler2D;
+in vec3 vPos; out vec4 oCol;
+uniform sampler2D uHeightTex; uniform float uMist; uniform vec3 uMistCol; uniform vec4 uClear0, uClear1;
+${GLSL_COMMON}
+float tH(vec2 xz){ ivec2 ij = clamp(ivec2(floor(xz + 640.0)), ivec2(0), ivec2(1279)); return texelFetch(uHeightTex, ij, 0).r; }
+void main(){
+  if (max(abs(vPos.x), abs(vPos.z)) > 700.0) discard;
+  vec2 g = floor(vPos.xz/5.0)*5.0;
+  float n = vnoise(g/70.0 + vec2(uTime*0.004, uTime*0.0025))*0.65 + vnoise(g/23.0 - vec2(uTime*0.006,0.0))*0.35;
+  float gap = vPos.y - tH(vPos.xz);
+  float a = smoothstep(0.42, 0.78, n) * smoothstep(2.0, 16.0, gap) * uMist;
+  float dc = length(vPos - uCam);
+  a *= smoothstep(15.0, 110.0, dc) * (1.0 - smoothstep(560.0, 690.0, max(abs(vPos.x), abs(vPos.z))));
+  float e0 = length((vPos.xz - uClear0.xy)/uClear0.zw), e1 = length((vPos.xz - uClear1.xy)/uClear1.zw);
+  a *= smoothstep(0.75, 1.25, min(e0, e1));
+  if (a < 0.003) discard;
+  vec3 c = applyFog(uMistCol, vPos);
+  oCol = vec4(finish(c), a);
+}`;
+
+class Renderer {
+  constructor(canvas) {
+    const gl = canvas.getContext('webgl2', { antialias: true, powerPreference: 'high-performance', alpha: false, preserveDrawingBuffer: /[?&]test/.test(location.search) });
+    if (!gl) throw new Error('需要支持 WebGL2 的浏览器');
+    this.gl = gl; this.canvas = canvas;
+    this.pMain = this.prog(VS_MAIN, FS_MAIN);
+    this.pShadow = this.prog(VS_SHADOW, FS_SHADOW);
+    this.pSky = this.prog(VS_SKY, FS_SKY);
+    this.pWater = this.prog(VS_WATER, FS_WATER);
+    this.pPts = this.prog(VS_PTS, FS_PTS);
+    this.pMist = this.prog(VS_MIST, FS_MIST);
+    this.shadowSize = 4096;
+    const maxTex = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+    if (maxTex < 4096) this.shadowSize = 2048;
+    this.initShadow();
+    this.emptyVao = gl.createVertexArray();
+  }
+  prog(vs, fs) {
+    const gl = this.gl;
+    const mk = (t, s) => { const sh = gl.createShader(t); gl.shaderSource(sh, s); gl.compileShader(sh); if (!gl.getShaderParameter(sh, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(sh) + '\n' + s.split('\n').map((l, i) => (i + 1) + ': ' + l).join('\n')); return sh; };
+    const p = gl.createProgram();
+    gl.attachShader(p, mk(gl.VERTEX_SHADER, vs)); gl.attachShader(p, mk(gl.FRAGMENT_SHADER, fs));
+    gl.linkProgram(p);
+    if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
+    const u = {}; const n = gl.getProgramParameter(p, gl.ACTIVE_UNIFORMS);
+    for (let i = 0; i < n; i++) { const info = gl.getActiveUniform(p, i); u[info.name] = gl.getUniformLocation(p, info.name); }
+    return { p, u };
+  }
+  initShadow() {
+    const gl = this.gl, S = this.shadowSize;
+    this.shadowTex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, this.shadowTex);
+    gl.texStorage2D(gl.TEXTURE_2D, 1, gl.DEPTH_COMPONENT24, S, S);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_COMPARE_MODE, gl.COMPARE_REF_TO_TEXTURE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_COMPARE_FUNC, gl.LEQUAL);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    this.shadowFbo = gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER, this.shadowFbo);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.TEXTURE_2D, this.shadowTex, 0);
+    gl.drawBuffers([gl.NONE]); gl.readBuffer(gl.NONE);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  }
+  heightTexture(world) {
+    const gl = this.gl;
+    const t = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, t);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.R32F, WN, WN, 0, gl.RED, gl.FLOAT, world.H);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    this.hTex = t;
+  }
+  // 上传 MeshBuilder
+  upload(mb) {
+    if (!mb || mb.nv === 0) return null;
+    const gl = this.gl;
+    const vao = gl.createVertexArray(); gl.bindVertexArray(vao);
+    const vbo = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+    gl.bufferData(gl.ARRAY_BUFFER, new Uint8Array(mb.buf, 0, mb.nv * 20), gl.STATIC_DRAW);
+    gl.enableVertexAttribArray(0); gl.vertexAttribPointer(0, 3, gl.FLOAT, false, 20, 0);
+    gl.enableVertexAttribArray(1); gl.vertexAttribPointer(1, 4, gl.UNSIGNED_BYTE, true, 20, 12);
+    gl.enableVertexAttribArray(2); gl.vertexAttribIPointer(2, 4, gl.UNSIGNED_BYTE, 20, 16);
+    const ibo = gl.createBuffer(); gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibo);
+    const small = mb.nv <= 65535;
+    gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, small ? Uint16Array.from(mb.idx.subarray(0, mb.ni)) : mb.idx.subarray(0, mb.ni), gl.STATIC_DRAW);
+    gl.bindVertexArray(null);
+    return { vao, vbo, ibo, n: mb.ni, it: small ? gl.UNSIGNED_SHORT : gl.UNSIGNED_INT, min: mb.min.slice(), max: mb.max.slice(), bytes: mb.nv * 20 + mb.ni * (small ? 2 : 4) };
+  }
+  free(m) { if (!m) return; const gl = this.gl; gl.deleteVertexArray(m.vao); gl.deleteBuffer(m.vbo); gl.deleteBuffer(m.ibo); }
+  uploadPoints(arr) { // Float32Array: x,y,z,size, r,g,b,a
+    const gl = this.gl;
+    const vao = gl.createVertexArray(); gl.bindVertexArray(vao);
+    const vbo = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+    gl.bufferData(gl.ARRAY_BUFFER, arr, gl.STATIC_DRAW);
+    gl.enableVertexAttribArray(0); gl.vertexAttribPointer(0, 4, gl.FLOAT, false, 32, 0);
+    gl.enableVertexAttribArray(1); gl.vertexAttribPointer(1, 4, gl.FLOAT, false, 32, 16);
+    gl.bindVertexArray(null);
+    return { vao, vbo, n: arr.length / 8 };
+  }
+  setCommon(P, env, cam) {
+    const gl = this.gl, u = P.u;
+    const v3 = (n, v) => { if (u[n]) gl.uniform3fv(u[n], v); };
+    const f1 = (n, v) => { if (u[n]) gl.uniform1f(u[n], v); };
+    v3('uZenith', env.zenith); v3('uHorizon', env.horizon); v3('uSunDir', env.sunDir); v3('uSunGlow', env.sunGlow);
+    v3('uSunDisk', env.sunDisk); v3('uMoonDir', env.moonDir); v3('uMoonCol', env.moonCol);
+    v3('uCam', cam.pos); f1('uTime', env.clock);
+    v3('uFogCol', env.fogCol); v3('uFogSun', env.fogSun); f1('uFogDen', env.fogDen); f1('uFogBase', env.fogBase); f1('uFogFall', env.fogFall);
+    f1('uHaze', env.haze); f1('uExposure', env.exposure);
+    v3('uLightDir', env.lightDir); v3('uLightCol', env.lightCol); v3('uSkyAmb', env.skyAmb); v3('uGndAmb', env.gndAmb);
+    f1('uLamp', env.lamp); f1('uWinFrac', env.winFrac); f1('uNight', env.night);
+  }
+  inFrustum(planes, m) {
+    for (let i = 0; i < 6; i++) {
+      const p = planes[i];
+      const x = p[0] > 0 ? m.max[0] : m.min[0], y = p[1] > 0 ? m.max[1] : m.min[1], z = p[2] > 0 ? m.max[2] : m.min[2];
+      if (p[0] * x + p[1] * y + p[2] * z + p[3] < 0) return false;
+    }
+    return true;
+  }
+  static planes(m) {
+    const P = [];
+    const r = (a, b, c, d) => { const l = Math.hypot(a, b, c); P.push([a / l, b / l, c / l, d / l]); };
+    r(m[3] + m[0], m[7] + m[4], m[11] + m[8], m[15] + m[12]);
+    r(m[3] - m[0], m[7] - m[4], m[11] - m[8], m[15] - m[12]);
+    r(m[3] + m[1], m[7] + m[5], m[11] + m[9], m[15] + m[13]);
+    r(m[3] - m[1], m[7] - m[5], m[11] - m[9], m[15] - m[13]);
+    r(m[3] + m[2], m[7] + m[6], m[11] + m[10], m[15] + m[14]);
+    r(m[3] - m[2], m[7] - m[6], m[11] - m[10], m[15] - m[14]);
+    return P;
+  }
+
+  render(scene, cam, env) {
+    const DBG = (typeof App !== 'undefined' && App.dbg) || {};
+    const gl = this.gl, cv = this.canvas;
+    const W = cv.width, H = cv.height;
+    const proj = M4.persp(cam.fov, W / H, cam.near, cam.far);
+    const view = M4.lookAt(cam.pos, cam.target, [0, 1, 0]);
+    const vp = M4.mul(proj, view);
+    const planes = Renderer.planes(vp);
+    const list = scene.opaque;   // [{m, off?}]
+    // ---- 阴影 ----
+    let lvp = M4.ident(), shadowK = env.shadowK;
+    if (shadowK > 0.01) {
+      const S = this.shadowSize;
+      const f = cam.shadowFocus, R = cam.shadowRadius;
+      const L = env.lightDir;
+      const lv = M4.lookAt([L[0] * 2000, L[1] * 2000, L[2] * 2000], [0, 0, 0], Math.abs(L[1]) > 0.99 ? [0, 0, 1] : [0, 1, 0]);
+      const tex = 2 * R / S;
+      const c = M4.xform(lv, f[0], f[1], f[2]);
+      const cx = Math.round(c[0] / tex) * tex, cy = Math.round(c[1] / tex) * tex;
+      const lp = M4.ortho(cx - R, cx + R, cy - R, cy + R, -c[2] - 1100, -c[2] + 1100);
+      lvp = M4.mul(lp, lv);
+      const lplanes = Renderer.planes(lvp);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this.shadowFbo);
+      gl.viewport(0, 0, S, S);
+      gl.clear(gl.DEPTH_BUFFER_BIT);
+      gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.disable(gl.BLEND);
+      gl.enable(gl.CULL_FACE); gl.cullFace(gl.BACK);
+      gl.enable(gl.POLYGON_OFFSET_FILL); gl.polygonOffset(1.5, 3.0);
+      gl.useProgram(this.pShadow.p);
+      gl.uniformMatrix4fv(this.pShadow.u.uLVP, false, lvp);
+      for (const it of scene.shadowCasters) {
+        if (!this.inFrustum(lplanes, it.m)) continue;
+        gl.uniform3fv(this.pShadow.u.uOff, it.off || ZERO3);
+        gl.bindVertexArray(it.m.vao);
+        gl.drawElements(gl.TRIANGLES, it.m.n, it.m.it, 0);
+      }
+      gl.disable(gl.POLYGON_OFFSET_FILL);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      this.shadowTexel = 1 / S;
+    }
+    gl.viewport(0, 0, W, H);
+    gl.clearColor(0, 0, 0, 1);
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    // ---- 天空 ----
+    gl.disable(gl.DEPTH_TEST); gl.disable(gl.CULL_FACE); gl.disable(gl.BLEND);
+    gl.useProgram(this.pSky.p);
+    this.setCommon(this.pSky, env, cam);
+    gl.uniformMatrix4fv(this.pSky.u.uInvVP, false, M4.invert(vp));
+    gl.uniform1f(this.pSky.u.uStars, env.stars);
+    gl.bindVertexArray(this.emptyVao);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    // ---- 不透明 ----
+    gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.depthMask(true);
+    gl.enable(gl.CULL_FACE); gl.cullFace(gl.BACK);
+    const P = this.pMain;
+    gl.useProgram(P.p);
+    this.setCommon(P, env, cam);
+    gl.uniformMatrix4fv(P.u.uVP, false, vp);
+    gl.uniformMatrix4fv(P.u.uLVP, false, lvp);
+    gl.uniform1f(P.u.uSTex, 1 / this.shadowSize);
+    gl.uniform1f(P.u.uShadowK, shadowK);
+    gl.uniform1f(P.u.uAlpha, 1);
+    gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, this.shadowTex);
+    gl.uniform1i(P.u.uShadow, 0);
+    let drawn = 0, tris = 0;
+    for (const it of list) {
+      if (!this.inFrustum(planes, it.m)) continue;
+      gl.uniform3fv(P.u.uOff, it.off || ZERO3);
+      gl.bindVertexArray(it.m.vao);
+      gl.drawElements(gl.TRIANGLES, it.m.n, it.m.it, 0);
+      drawn++; tris += it.m.n / 3;
+    }
+    // ---- 水 ----
+    gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    gl.depthMask(false);
+    const PW = this.pWater;
+    gl.useProgram(PW.p);
+    this.setCommon(PW, env, cam);
+    gl.uniformMatrix4fv(PW.u.uVP, false, vp);
+    gl.uniformMatrix4fv(PW.u.uLVP, false, lvp);
+    gl.uniform1f(PW.u.uShadowK, shadowK);
+    gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, this.shadowTex); gl.uniform1i(PW.u.uShadow, 0);
+    gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, this.hTex); gl.uniform1i(PW.u.uHeightTex, 1);
+    for (const m of scene.water) {
+      if (!this.inFrustum(planes, m)) continue;
+      gl.bindVertexArray(m.vao);
+      gl.drawElements(gl.TRIANGLES, m.n, m.it, 0);
+    }
+    // ---- 倒影灯火（加色） ----
+    const PP = this.pPts;
+    const scale = H * 0.5 / Math.tan(cam.fov / 2);
+    if (env.lamp > 0.01 && scene.halos) {
+      gl.useProgram(PP.p);
+      gl.uniformMatrix4fv(PP.u.uVP, false, vp);
+      gl.uniform1f(PP.u.uScale, scale); gl.uniform1f(PP.u.uTime, env.clock); gl.uniform1f(PP.u.uLamp, env.lamp);
+      gl.uniform1f(PP.u.uMode, 1);
+      gl.blendFunc(gl.ONE, gl.ONE);
+      for (const rh of scene.reflHalos) {
+        gl.uniform1f(PP.u.uMirror, rh.level);
+        gl.bindVertexArray(rh.pts.vao); gl.drawArrays(gl.POINTS, 0, rh.pts.n);
+      }
+    }
+    // ---- 云（半透明体素） ----
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    gl.useProgram(P.p);
+    gl.uniform1f(P.u.uShadowK, 0);
+    gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, this.shadowTex);
+    for (const c of (DBG.noClouds ? [] : scene.clouds)) {
+      gl.uniform1f(P.u.uAlpha, c.alpha);
+      gl.uniform3fv(P.u.uOff, c.off);
+      const mm = { min: [c.m.min[0] + c.off[0], c.m.min[1] + c.off[1], c.m.min[2] + c.off[2]], max: [c.m.max[0] + c.off[0], c.m.max[1] + c.off[1], c.m.max[2] + c.off[2]] };
+      if (!this.inFrustum(planes, mm)) continue;
+      gl.bindVertexArray(c.m.vao);
+      gl.drawElements(gl.TRIANGLES, c.m.n, c.m.it, 0);
+    }
+    // ---- 云海（体素化雾层） ----
+    if (env.mist > 0.01 && scene.mistMesh && !DBG.noMist) {
+      gl.disable(gl.CULL_FACE);
+      const PM = this.pMist;
+      gl.useProgram(PM.p);
+      this.setCommon(PM, env, cam);
+      gl.uniformMatrix4fv(PM.u.uVP, false, vp);
+      gl.uniform3fv(PM.u.uMistCol, env.mistCol);
+      gl.uniform4f(PM.u.uClear0, 30, 40, 250, 290); gl.uniform4f(PM.u.uClear1, 30, -400, 240, 180);
+      gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, this.hTex); gl.uniform1i(PM.u.uHeightTex, 1);
+      for (const ms of scene.mistMesh) {
+        gl.uniform1f(PM.u.uMist, env.mist * ms.k);
+        gl.bindVertexArray(ms.m.vao); gl.drawElements(gl.TRIANGLES, ms.m.n, ms.m.it, 0);
+      }
+    }
+    // ---- 粒子：瀑布水雾 ----
+    gl.useProgram(PP.p);
+    gl.uniformMatrix4fv(PP.u.uVP, false, vp);
+    gl.uniform1f(PP.u.uScale, scale); gl.uniform1f(PP.u.uTime, env.clock); gl.uniform1f(PP.u.uLamp, env.lamp);
+    gl.uniform1f(PP.u.uMirror, 0);
+    if (scene.spray && !DBG.noPts) {
+      gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+      gl.uniform1f(PP.u.uMode, 2);
+      const tn = [0, 1, 2].map(i => Math.min(1.0, env.skyAmb[i] * 0.9 + env.lightCol[i] * 0.3 + 0.03));
+      gl.uniform3f(PP.u.uTint, tn[0], tn[1], tn[2]);
+      gl.bindVertexArray(scene.spray.vao); gl.drawArrays(gl.POINTS, 0, scene.spray.n);
+    }
+    // ---- 灯晕 ----
+    if (env.lamp > 0.01 && scene.halos) {
+      gl.blendFunc(gl.ONE, gl.ONE);
+      gl.uniform1f(PP.u.uMode, 1);
+      gl.bindVertexArray(scene.halos.vao); gl.drawArrays(gl.POINTS, 0, scene.halos.n);
+    }
+    gl.depthMask(true); gl.disable(gl.BLEND);
+    gl.bindVertexArray(null);
+    this.stats = { drawn, tris };
+  }
+}
+const ZERO3 = new Float32Array([0, 0, 0]);
+
+// ===== scene.js — 分块、LOD 与场景组装 =====
+const CH = 64, NCH = WN / CH;   // 64m 分块，20×20
+const NEAR_IN = 250, NEAR_OUT = 330;
+
+class Scene {
+  constructor(world, R) {
+    this.world = world; this.R = R;
+    this.chunks = [];
+    for (let j = 0; j < NCH; j++) for (let i = 0; i < NCH; i++) {
+      this.chunks.push({ i, j, x0: i * CH - WH, z0: j * CH - WH, far: null, near: null, farTrees: null, struct: [], detail: [], water: null, trees: [], nearMin: null });
+    }
+    this.clouds = []; this.water = []; this.halos = null; this.reflHalos = []; this.spray = null; this.mistMesh = null;
+    this.extraOpaque = [];
+    this.buildQueue = 0;
+  }
+  chunkAt(x, z) {
+    const i = Math.floor((x + WH) / CH), j = Math.floor((z + WH) / CH);
+    if (i < 0 || j < 0 || i >= NCH || j >= NCH) return null;
+    return this.chunks[j * NCH + i];
+  }
+  makeLOD2() {
+    const w = this.world, n = WN / 2;
+    const H2 = new Float32Array(n * n), M2 = new Uint8Array(n * n);
+    for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+      let mn = 1e9, sum = 0, anyMod = false, m = 0, mh = -1e9;
+      for (let dj = 0; dj < 2; dj++) for (let di = 0; di < 2; di++) {
+        const k = (j * 2 + dj) * WN + i * 2 + di;
+        const h = w.H[k]; sum += h; if (h < mn) mn = h;
+        if (w.mod[k] || w.occ[k] === 1 || w.occ[k] === 2) anyMod = true;
+        if (h > mh) { mh = h; m = w.M[k]; }
+      }
+      H2[j * n + i] = anyMod ? mn : Math.round(sum / 4);
+      M2[j * n + i] = m;
+    }
+    this.H2 = H2; this.M2 = M2;
+  }
+  buildFar(c) {
+    const mb = new MeshBuilder(8192);
+    buildTerrainChunk(mb, this.H2, this.M2, WN / 2, 2, c.i * CH / 2, c.j * CH / 2, CH / 2, true);
+    for (const t of c.trees) buildTreeFar(mb, t);
+    this.R.free(c.far); c.far = this.R.upload(mb);
+  }
+  buildNear(c) {
+    const mb = new MeshBuilder(32768);
+    buildTerrainChunk(mb, this.world.H, this.world.M, WN, 1, c.i * CH, c.j * CH, CH, true);
+    for (const t of c.trees) buildTreeNear(mb, t);
+    this.R.free(c.near); c.near = this.R.upload(mb);
+  }
+  buildWater(c) {
+    const mb = new MeshBuilder(1024);
+    buildWaterChunk(mb, this.world, c.i * CH, c.j * CH, CH);
+    c.water = this.R.upload(mb);
+    if (c.water) this.water.push(c.water);
+  }
+  // 每帧：根据相机位置切换近景 LOD
+  update(cam, budget) {
+    const p = cam.pos;
+    const want = [];
+    for (const c of this.chunks) {
+      const cx = c.x0 + CH / 2, cz = c.z0 + CH / 2;
+      const dx = Math.max(Math.abs(p[0] - cx) - CH / 2, 0), dz = Math.max(Math.abs(p[2] - cz) - CH / 2, 0);
+      const d = Math.hypot(dx, dz, Math.max(0, p[1] - 160) * 0.8);
+      c.dist = d;
+      if (d < NEAR_IN && !c.near) want.push(c);
+      else if (d > NEAR_OUT && c.near) { this.R.free(c.near); c.near = null; }
+    }
+    want.sort((a, b) => a.dist - b.dist);
+    for (let k = 0; k < Math.min(budget, want.length); k++) this.buildNear(want[k]);
+    this.pending = want.length - Math.min(budget, want.length);
+  }
+  lists(cam) {
+    const opaque = [], casters = [];
+    const p = cam.pos;
+    for (const c of this.chunks) {
+      const t = c.near || c.far;
+      if (t) { opaque.push({ m: t }); casters.push({ m: t }); }
+      for (const s of c.struct) { opaque.push({ m: s }); casters.push({ m: s }); }
+      if (c.dist < 360) for (const s of c.detail) { opaque.push({ m: s }); if (c.dist < 200) casters.push({ m: s }); }
+    }
+    for (const e of this.extraOpaque) { opaque.push({ m: e }); casters.push({ m: e }); }
+    if (this.backdrop) opaque.push({ m: this.backdrop });
+    return { opaque, shadowCasters: casters, water: this.water, clouds: this.cloudList || [], halos: this.halos, reflHalos: this.reflHalos, spray: this.spray, mistMesh: this.mistMesh };
+  }
+}
+
+// ===== app.js — 生成流程、相机（自由/游览）、界面、主循环 =====
+const App = {
+  hours: 16.3, timeSpeed: 1, playing: true, clock: 0,
+  mode: 'orbit', tourS: 0, tourSpeed: 1, tourPlaying: true,
+};
+const DAY_SECONDS = 480; // ×1 时一昼夜约 8 分钟
+
+function yieldFrame() { return new Promise(r => setTimeout(r, 0)); }
+
+async function boot() {
+  const canvas = document.getElementById('gl');
+  const loadBar = document.getElementById('loadbar'), loadTxt = document.getElementById('loadtxt');
+  const step = async (t, p) => { if (loadTxt) loadTxt.textContent = t; if (loadBar) loadBar.style.width = (p * 100).toFixed(0) + '%'; await yieldFrame(); };
+  let R;
+  try { R = new Renderer(canvas); } catch (e) { showError(e.message); throw e; }
+  App.R = R;
+  const t0 = performance.now();
+  try {
+    await step('铺展群山', 0.04);
+    const world = new World(); world.generate();
+    App.world = world;
+    await step('营造城池', 0.22);
+    const city = buildCity(world);
+    App.city = city;
+    world.retainPass();
+    await step('植树造林', 0.52);
+    const scene = new Scene(world, R); App.scene = scene;
+    plantTrees(world, scene, city);
+    scene.makeLOD2();
+    R.heightTexture(world);
+    for (let k = 0; k < scene.chunks.length; k++) {
+      const c = scene.chunks[k];
+      scene.buildFar(c); scene.buildWater(c);
+      if (k % 50 === 49) await step('皴染山石', 0.6 + 0.25 * k / scene.chunks.length);
+    }
+    await step('点染灯火', 0.88);
+    uploadCity(city, scene, R);
+    buildAtmos(scene, R, world, city);
+    initTour(city);
+  } catch (e) { showError(e.message); console.error(e); throw e; }
+  App.genMs = performance.now() - t0;
+  initCamera();
+  initUI();
+  await step('开卷', 1);
+  App.scene.update(App.cam, 400);
+  document.body.classList.add('ready');
+  App.ready = true;
+  App.test = /[?&]test/.test(location.search);
+  if (!App.test) requestAnimationFrame(loop);
+}
+function showError(msg) {
+  const el = document.getElementById('loadtxt'); if (el) el.textContent = '无法启动：' + msg;
+  document.body.classList.add('failed');
+}
+function uploadCity(city, scene, R) {
+  for (const c of scene.chunks) {
+    const b = city.builders[c.j * NCH + c.i];
+    if (!b) continue;
+    const s = R.upload(b.s), d = R.upload(b.d);
+    if (s) c.struct.push(s); if (d) c.detail.push(d);
+  }
+  city.builders = null;
+}
+
+// ---------------- 景点视角 ----------------
+const VIEWS = [
+  { id: 'pano', name: '全景', t: [-10, 60, -120], yaw: 0.46, pitch: 0.3, dist: 900 },
+  { id: 'falls', name: '云瀑阁', t: [-2, 86, -205], yaw: 0.62, pitch: 0.16, dist: 170 },
+  { id: 'street', name: '长街', t: [-40, 44, 60], yaw: 2.2, pitch: 0.34, dist: 150 },
+  { id: 'terrace', name: '西山台城', t: [-180, 78, 20], yaw: 1.35, pitch: 0.3, dist: 260 },
+  { id: 'palace', name: '东岭宫城', t: [226, 58, 0], yaw: -1.0, pitch: 0.36, dist: 200 },
+  { id: 'lake', name: '湖心塔', t: [100, 30, 400], yaw: 2.6, pitch: 0.2, dist: 190 },
+  { id: 'upper', name: '上城', t: [20, 135, -390], yaw: 0.9, pitch: 0.42, dist: 330 },
+  { id: 'summit', name: '揽云亭', t: [-330, 238, -40], yaw: 1.9, pitch: 0.18, dist: 70 },
+];
+
+// ---------------- 相机 ----------------
+function initCamera() {
+  App.cam = { pos: [0, 0, 0], target: [0, 0, 0], fov: 50 * Math.PI / 180, near: 0.4, far: 7000, shadowFocus: [0, 0, 0], shadowRadius: 300 };
+  const V = VIEWS[0];
+  App.orbit = { tx: V.t[0], ty: V.t[1], tz: V.t[2], yaw: V.yaw, pitch: V.pitch, dist: V.dist };
+  App.fly = null;
+  applyOrbit();
+}
+function applyOrbit() {
+  const o = App.orbit, c = App.cam;
+  const cp = Math.cos(o.pitch), sp = Math.sin(o.pitch);
+  c.target = [o.tx, o.ty, o.tz];
+  c.pos = [o.tx + Math.sin(o.yaw) * cp * o.dist, o.ty + sp * o.dist, o.tz + Math.cos(o.yaw) * cp * o.dist];
+  const gh = groundAt(c.pos[0], c.pos[2]);
+  if (c.pos[1] < gh + 1.5) c.pos[1] = gh + 1.5;
+  c.fov = 50 * Math.PI / 180;
+  c.near = clamp(o.dist * 0.004, 0.3, 4);
+  c.shadowFocus = [o.tx, o.ty, o.tz];
+  c.shadowRadius = clamp(o.dist * 0.8, 90, 720);
+}
+function groundAt(x, z) {
+  const w = App.world; if (!w || !w.inside(x, z)) return 0;
+  const k = w.idx(x, z); return Math.max(w.H[k], w.W[k]);
+}
+function flyTo(V) {
+  App.setMode('orbit');
+  const o = App.orbit;
+  let dy = V.yaw - o.yaw; dy = ((dy + Math.PI) % TAU + TAU) % TAU - Math.PI;
+  App.fly = { from: Object.assign({}, o), to: { tx: V.t[0], ty: V.t[1], tz: V.t[2], yaw: o.yaw + dy, pitch: V.pitch, dist: V.dist }, t: 0, dur: 2.6 };
+}
+function updateFly(dt) {
+  const f = App.fly; if (!f) return;
+  f.t = Math.min(1, f.t + dt / f.dur);
+  const e = f.t < 0.5 ? 4 * f.t * f.t * f.t : 1 - Math.pow(-2 * f.t + 2, 3) / 2;
+  const o = App.orbit;
+  for (const key of ['tx', 'ty', 'tz', 'yaw', 'pitch']) o[key] = lerp(f.from[key], f.to[key], e);
+  const lift = Math.sin(Math.PI * e) * 0.25 * Math.hypot(f.to.tx - f.from.tx, f.to.tz - f.from.tz);
+  o.dist = Math.exp(lerp(Math.log(f.from.dist), Math.log(f.to.dist), e)) + lift;
+  if (f.t >= 1) App.fly = null;
+}
+
+// ---------------- 游览 ----------------
+function initTour(city) {
+  const P = city.tourPath;
+  const n = P.length, S = [];
+  for (let i = 0; i < n; i++) {
+    let x = 0, y = 0, z = 0, c = 0;
+    for (let k = -5; k <= 5; k++) { const q = P[clamp(i + k, 0, n - 1)]; x += q[0]; y += q[1]; z += q[2]; c++; }
+    S.push([x / c, y / c, z / c]);
+  }
+  const L = [0];
+  for (let i = 1; i < n; i++) L.push(L[i - 1] + Math.hypot(S[i][0] - S[i - 1][0], (S[i][1] - S[i - 1][1]) * 0.6, S[i][2] - S[i - 1][2]));
+  App.tour = { P: S, L, total: L[n - 1] };
+  const near = (x, z) => { let b = 1e9, bi = 0; for (let i = 0; i < n; i++) { const d = Math.hypot(S[i][0] - x, S[i][2] - z); if (d < b) { b = d; bi = i; } } return L[bi]; };
+  App.tour.near = near;
+  App.tour.stations = [
+    { name: '湖畔码头', s: 0 },
+    { name: '长街', s: near(-50, 60) },
+    { name: '云瀑阁', s: near(-28, -150) },
+    { name: '天梯', s: near(-12, -228) },
+    { name: '上城', s: near(2, -280) },
+    { name: '西门', s: near(-176, -300) },
+    { name: '揽云亭', s: Math.max(0, App.tour.total - 30) },
+  ];
+  const F3 = [42, 90, -200];
+  App.tour.attn = [
+    { s0: near(-44, -20), s1: near(-30, -118), t: [-28, 95, -206], k: 0.3 },
+    { s0: near(-28, -124), s1: near(-28, -186), t: [-28, 92, -210], k: 0.5 },
+    { s0: near(-40, -192), s1: near(-56, -218), t: F3, k: 0.3 },
+    { s0: near(-40, -227), s1: near(-15, -227), t: [-28, 108, -206], k: 0.45 },
+    { s0: near(-10, -229), s1: near(4, -254), t: [-10, 60, -80], k: 0.7 },
+    { s0: near(-182, -298), s1: near(-240, -200), t: [-330, 240, -40], k: 0.3 },
+    { s0: App.tour.total - 70, s1: App.tour.total + 40, t: [30, 50, 60], k: 0.8 },
+  ];
+  App.tourLook = { yaw: 0, pitch: 0, dYaw: 0, dPitch: 0, lastDrag: -10, init: false };
+}
+function tourPoint(s) {
+  const T = App.tour, L = T.L;
+  s = clamp(s, 0, T.total);
+  let lo = 0, hi = L.length - 1;
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (L[m] <= s) lo = m; else hi = m; }
+  const t = (s - L[lo]) / Math.max(1e-6, L[hi] - L[lo]);
+  const a = T.P[lo], b = T.P[hi];
+  return [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)];
+}
+App.tourStep = function (dt) {
+  const T = App.tour, c = App.cam, TL = App.tourLook;
+  if (App.tourPlaying) App.tourS += dt * 4.2 * App.tourSpeed;
+  if (App.tourS >= T.total) { if (App.tourPlaying) { App.tourPlaying = false; updateTourUI(); } App.tourS = T.total; }
+  const s = App.tourS;
+  const p = tourPoint(s);
+  const ahead = tourPoint(s + 14);
+  const dx = ahead[0] - p[0], dz = ahead[2] - p[2], dy = ahead[1] - p[1];
+  let yaw = Math.atan2(dx, dz), pitch = Math.atan2(dy, Math.hypot(dx, dz) + 1e-3) * 0.5;
+  for (const A of T.attn) {
+    const w = smoothstep(A.s0 - 15, A.s0 + 10, s) * (1 - smoothstep(A.s1 - 10, A.s1 + 15, s)) * A.k;
+    if (w <= 0) continue;
+    const tx = A.t[0] - p[0], ty = A.t[1] - p[1], tz = A.t[2] - p[2];
+    const ty2 = Math.atan2(tx, tz), tp = Math.atan2(ty, Math.hypot(tx, tz));
+    let d = ty2 - yaw; d = ((d + Math.PI) % TAU + TAU) % TAU - Math.PI;
+    yaw += d * w; pitch = lerp(pitch, tp, w);
+  }
+  pitch = clamp(pitch, -0.5, 0.6);
+  if (!TL.init) { TL.yaw = yaw; TL.pitch = pitch; TL.init = true; }
+  const k = 1 - Math.exp(-dt * 1.4);
+  let d = yaw - TL.yaw; d = ((d + Math.PI) % TAU + TAU) % TAU - Math.PI;
+  TL.yaw += d * k; TL.pitch += (pitch - TL.pitch) * k;
+  if (App.clock - TL.lastDrag > 2.5) { const r = 1 - Math.exp(-dt * 0.8); TL.dYaw -= TL.dYaw * r; TL.dPitch -= TL.dPitch * r; }
+  const Y = TL.yaw + TL.dYaw, Pt = clamp(TL.pitch + TL.dPitch, -1.2, 1.2);
+  c.pos = [p[0], p[1] + 0.3, p[2]];
+  c.target = [p[0] + Math.sin(Y) * Math.cos(Pt) * 10, p[1] + 0.3 + Math.sin(Pt) * 10, p[2] + Math.cos(Y) * Math.cos(Pt) * 10];
+  c.fov = 62 * Math.PI / 180;
+  c.near = 0.25;
+  c.shadowFocus = [p[0] + Math.sin(Y) * 50, p[1], p[2] + Math.cos(Y) * 50];
+  c.shadowRadius = 110;
+  const ui = App.ui;
+  if (ui && ui.tourFill) {
+    ui.tourFill.style.width = (100 * s / T.total).toFixed(2) + '%';
+    let cur = 0; T.stations.forEach((st, i) => { if (s >= st.s - 1) cur = i; });
+    if (cur !== ui.curStation) { ui.curStation = cur; ui.stationEls.forEach((el, i) => el.classList.toggle('on', i === cur)); ui.tourName.textContent = T.stations[cur].name; }
+  }
+};
+
+// ---------------- 界面 ----------------
+function $(id) { return document.getElementById(id); }
+function fmtTime(h) { const hh = Math.floor(h), mm = Math.floor((h - hh) * 60); return String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0'); }
+function initUI() {
+  const cv = $('gl');
+  const ui = App.ui = {};
+  ui.timeLbl = $('timeLbl'); ui.shichen = $('shichen'); ui.slider = $('timeSlider'); ui.play = $('timePlay');
+  ui.tourFill = $('tourFill'); ui.tourName = $('tourName');
+  ui.slider.addEventListener('input', () => { App.hours = parseFloat(ui.slider.value); updateTimeUI(); });
+  ui.play.addEventListener('click', () => { App.playing = !App.playing; updateTimeUI(); });
+  document.querySelectorAll('[data-speed]').forEach(b => b.addEventListener('click', () => {
+    App.timeSpeed = parseFloat(b.dataset.speed); App.playing = true;
+    document.querySelectorAll('[data-speed]').forEach(x => x.classList.toggle('on', x === b)); updateTimeUI();
+  }));
+  document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => { App.hours = parseFloat(b.dataset.preset); updateTimeUI(); }));
+  App.setMode = (m) => {
+    App.mode = m;
+    document.body.classList.toggle('touring', m === 'tour');
+    $('modeTour').classList.toggle('on', m === 'tour'); $('modeFree').classList.toggle('on', m === 'orbit');
+    $('modeTour').setAttribute('aria-pressed', String(m === 'tour')); $('modeFree').setAttribute('aria-pressed', String(m === 'orbit'));
+    if (m === 'tour') { App.fly = null; App.tourLook.init = false; }
+    updateTourUI();
+  };
+  $('modeTour').addEventListener('click', () => { if (App.tourS >= App.tour.total - 1) App.tourS = 0; App.tourPlaying = true; App.setMode('tour'); });
+  $('modeFree').addEventListener('click', () => {
+    if (App.mode === 'tour') {
+      const c = App.cam, o = App.orbit;
+      const dir = [c.target[0] - c.pos[0], c.target[1] - c.pos[1], c.target[2] - c.pos[2]]; const l = Math.hypot(...dir);
+      o.dist = 40; o.tx = c.pos[0] + dir[0] / l * 40; o.ty = c.pos[1] + dir[1] / l * 40; o.tz = c.pos[2] + dir[2] / l * 40;
+      o.yaw = Math.atan2(-dir[0], -dir[2]); o.pitch = Math.asin(clamp(-dir[1] / l, -1, 1));
+    }
+    App.setMode('orbit');
+  });
+  const vbox = $('views');
+  for (const V of VIEWS) {
+    const b = document.createElement('button'); b.className = 'chip'; b.textContent = V.name; b.type = 'button';
+    b.addEventListener('click', () => flyTo(V)); vbox.appendChild(b);
+  }
+  const rail = $('stations');
+  ui.stationEls = App.tour.stations.map((st) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'st'; b.textContent = st.name; b.dataset.n = st.name; b.setAttribute('aria-label', '跳至' + st.name);
+    b.style.left = (100 * st.s / App.tour.total) + '%';
+    b.addEventListener('click', (e) => { e.stopPropagation(); App.tourS = st.s; App.tourPlaying = true; App.tourLook.init = false; App.setMode('tour'); });
+    rail.appendChild(b); return b;
+  });
+  ui.curStation = -1;
+  $('tourPlay').addEventListener('click', () => { if (App.tourS >= App.tour.total - 1) { App.tourS = 0; App.tourLook.init = false; App.tourPlaying = true; } else App.tourPlaying = !App.tourPlaying; updateTourUI(); });
+  $('tourSpeed').addEventListener('click', () => { App.tourSpeed = App.tourSpeed >= 4 ? 1 : App.tourSpeed * 2; updateTourUI(); });
+  $('tourTrack').addEventListener('click', (e) => { const r = e.currentTarget.getBoundingClientRect(); App.tourS = clamp((e.clientX - r.left) / r.width, 0, 1) * App.tour.total; App.tourLook.init = false; });
+  $('helpBtn').addEventListener('click', () => { const h = $('help'); h.hidden = !h.hidden; });
+  $('helpClose').addEventListener('click', () => { $('help').hidden = true; });
+  $('hideBtn').addEventListener('click', () => document.body.classList.toggle('bare'));
+  // 画布交互
+  let drag = null; const pointers = new Map(); let pinch = null;
+  cv.addEventListener('pointerdown', e => {
+    pointers.set(e.pointerId, [e.clientX, e.clientY]);
+    try { cv.setPointerCapture(e.pointerId); } catch (_) { }
+    drag = { x: e.clientX, y: e.clientY, b: (e.button === 2 || e.shiftKey) ? 2 : 0 };
+    if (pointers.size === 2) { const [a, b] = [...pointers.values()]; pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), cx: (a[0] + b[0]) / 2, cy: (a[1] + b[1]) / 2 }; }
+    App.fly = null;
+  });
+  const up = e => { pointers.delete(e.pointerId); if (pointers.size < 2) pinch = null; if (pointers.size === 0) drag = null; };
+  cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+  cv.addEventListener('pointermove', e => {
+    if (!pointers.has(e.pointerId)) return;
+    pointers.set(e.pointerId, [e.clientX, e.clientY]);
+    const o = App.orbit;
+    if (pinch && pointers.size === 2) {
+      const [a, b] = [...pointers.values()];
+      const d = Math.hypot(a[0] - b[0], a[1] - b[1]), cx = (a[0] + b[0]) / 2, cy = (a[1] + b[1]) / 2;
+      if (App.mode === 'orbit') { o.dist = clamp(o.dist * pinch.d / Math.max(d, 1), 5, 1800); panBy(cx - pinch.cx, cy - pinch.cy); }
+      pinch = { d, cx, cy }; return;
+    }
+    if (!drag) return;
+    const dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.x = e.clientX; drag.y = e.clientY;
+    if (App.mode === 'tour') { const TL = App.tourLook; TL.dYaw -= dx * 0.004; TL.dPitch = clamp(TL.dPitch - dy * 0.003, -1, 1); TL.lastDrag = App.clock; return; }
+    if (drag.b === 0) { o.yaw -= dx * 0.005; o.pitch = clamp(o.pitch + dy * 0.004, -0.15, 1.5); }
+    else panBy(dx, dy);
+  });
+  cv.addEventListener('wheel', e => {
+    e.preventDefault();
+    if (App.mode === 'orbit') { App.fly = null; App.orbit.dist = clamp(App.orbit.dist * Math.exp(e.deltaY * 0.0012), 5, 1800); }
+    else { App.tourSpeed = clamp(App.tourSpeed * Math.exp(-e.deltaY * 0.002), 0.25, 6); updateTourUI(); }
+  }, { passive: false });
+  cv.addEventListener('contextmenu', e => e.preventDefault());
+  cv.addEventListener('dblclick', e => {
+    if (App.mode !== 'orbit') return;
+    const hit = pickGround(e.clientX, e.clientY);
+    if (hit) { const o = App.orbit; App.fly = { from: Object.assign({}, o), to: { tx: hit[0], ty: hit[1], tz: hit[2], yaw: o.yaw, pitch: o.pitch, dist: Math.max(30, o.dist * 0.45) }, t: 0, dur: 1.4 }; }
+  });
+  const keys = App.keys = new Set();
+  window.addEventListener('keydown', e => {
+    if (e.target && e.target.tagName === 'INPUT' && e.key !== ' ') return;
+    const k = e.key.toLowerCase();
+    if (k === ' ') { e.preventDefault(); if (App.mode === 'tour') { App.tourPlaying = !App.tourPlaying; updateTourUI(); } else { App.playing = !App.playing; updateTimeUI(); } }
+    else if (k === 'h') document.body.classList.toggle('bare');
+    else if (k === '[') { App.hours = (App.hours + 23) % 24; updateTimeUI(); }
+    else if (k === ']') { App.hours = (App.hours + 1) % 24; updateTimeUI(); }
+    else if (k === 't') { if (App.mode === 'tour') $('modeFree').click(); else $('modeTour').click(); }
+    keys.add(k);
+  });
+  window.addEventListener('keyup', e => keys.delete(e.key.toLowerCase()));
+  window.addEventListener('blur', () => keys.clear());
+  setTimeout(() => document.body.classList.add('hint-gone'), 14000);
+  updateTimeUI(); App.setMode('orbit');
+}
+function panBy(dx, dy) {
+  const o = App.orbit, s = o.dist * 0.0014;
+  o.tx -= (Math.cos(o.yaw) * dx + Math.sin(o.yaw) * dy) * s;
+  o.tz -= (-Math.sin(o.yaw) * dx + Math.cos(o.yaw) * dy) * s;
+  o.ty = lerp(o.ty, groundAt(o.tx, o.tz) + 2, 0.1);
+}
+function pickGround(px, py) {
+  const cv = App.R.canvas, c = App.cam;
+  const r = cv.getBoundingClientRect();
+  const nx = (px - r.left) / r.width * 2 - 1, ny = 1 - (py - r.top) / r.height * 2;
+  const proj = M4.persp(c.fov, cv.width / cv.height, c.near, c.far), view = M4.lookAt(c.pos, c.target, [0, 1, 0]);
+  const inv = M4.invert(M4.mul(proj, view));
+  const f = M4.xform(inv, nx, ny, 1); const far = [f[0] / f[3], f[1] / f[3], f[2] / f[3]];
+  const d = [far[0] - c.pos[0], far[1] - c.pos[1], far[2] - c.pos[2]]; const l = Math.hypot(d[0], d[1], d[2]); d[0] /= l; d[1] /= l; d[2] /= l;
+  for (let t = 0; t < 3000; t += 1.5) {
+    const x = c.pos[0] + d[0] * t, y = c.pos[1] + d[1] * t, z = c.pos[2] + d[2] * t;
+    if (!App.world.inside(x, z)) continue;
+    if (y <= groundAt(x, z)) return [x, groundAt(x, z), z];
+  }
+  return null;
+}
+function updateTimeUI() {
+  const ui = App.ui; if (!ui) return;
+  ui.timeLbl.textContent = fmtTime(App.hours);
+  ui.shichen.textContent = shichen(App.hours);
+  if (document.activeElement !== ui.slider) ui.slider.value = App.hours.toFixed(2);
+  ui.play.textContent = App.playing ? '❚❚' : '▶';
+  ui.play.setAttribute('aria-label', App.playing ? '暂停时间' : '继续时间');
+}
+function updateTourUI() {
+  const b = $('tourPlay'); if (!b || !App.tour) return;
+  const done = App.tourS >= App.tour.total - 1;
+  b.textContent = done ? '重游' : (App.tourPlaying ? '❚❚' : '▶');
+  $('tourSpeed').textContent = '×' + (Math.round(App.tourSpeed * 100) / 100);
+}
+
+// ---------------- 主循环 ----------------
+let lastT = performance.now(), lastUi = 0;
+function frame(dt) {
+  App.clock += dt;
+  if (App.playing) App.hours = (App.hours + dt * App.timeSpeed * 24 / DAY_SECONDS + 24) % 24;
+  resize();
+  if (App.mode === 'orbit') {
+    updateFly(dt);
+    const K = App.keys, o = App.orbit;
+    if (K && K.size) {
+      const sp = o.dist * 0.9 * dt;
+      const fx = -Math.sin(o.yaw), fz = -Math.cos(o.yaw), rx = Math.cos(o.yaw), rz = -Math.sin(o.yaw);
+      let moved = false;
+      if (K.has('w')) { o.tx += fx * sp; o.tz += fz * sp; moved = true; } if (K.has('s')) { o.tx -= fx * sp; o.tz -= fz * sp; moved = true; }
+      if (K.has('a')) { o.tx -= rx * sp; o.tz -= rz * sp; moved = true; } if (K.has('d')) { o.tx += rx * sp; o.tz += rz * sp; moved = true; }
+      if (K.has('q')) { o.ty -= sp * 0.6; moved = true; } if (K.has('e')) { o.ty += sp * 0.6; moved = true; }
+      if (moved) { o.ty = Math.max(o.ty, groundAt(o.tx, o.tz) + 1); App.fly = null; }
+    }
+    applyOrbit();
+  } else App.tourStep(dt);
+  const env = computeEnv(App.hours, App.clock); App.env = env;
+  App.scene.update(App.cam, 2);
+  App.scene.updateDynamic(App.cam, env, dt);
+  App.R.render(App.scene.lists(App.cam), App.cam, env);
+}
+// 自适应分辨率：持续掉帧时降低渲染分辨率
+const perf = { acc: 0, n: 0, level: 0 };
+function adapt(dtMs) {
+  perf.acc += dtMs; perf.n++;
+  if (perf.n < 90) return;
+  const avg = perf.acc / perf.n; perf.acc = 0; perf.n = 0;
+  const levels = [1.5, 1.25, 1.0, 0.8, 0.66];
+  if (avg > 38 && perf.level < levels.length - 1) perf.level++;
+  else if (avg < 18 && perf.level > 0) perf.level--;
+  App.maxDpr = levels[perf.level];
+}
+function loop(t) {
+  const dtMs = t - lastT;
+  const dt = Math.min(0.1, dtMs / 1000); lastT = t;
+  if (!document.hidden) adapt(dtMs);
+  frame(dt);
+  if (t - lastUi > 250) { lastUi = t; if (App.playing) updateTimeUI(); }
+  requestAnimationFrame(loop);
+}
+// 测试钩子：渲染一帧并返回图像
+App.snap = function (opts) {
+  opts = opts || {};
+  if (opts.hours !== undefined) App.hours = opts.hours;
+  if (opts.view !== undefined) { const V = VIEWS[opts.view]; Object.assign(App.orbit, { tx: V.t[0], ty: V.t[1], tz: V.t[2], yaw: V.yaw, pitch: V.pitch, dist: V.dist }); App.setMode('orbit'); }
+  if (opts.orbit) { Object.assign(App.orbit, opts.orbit); App.setMode('orbit'); }
+  if (opts.tour !== undefined) { App.setMode('tour'); App.tourS = opts.tour; App.tourLook.init = false; }
+  if (opts.fn) opts.fn(App);
+  const saveP = App.playing, saveT = App.tourPlaying; App.playing = false; App.tourPlaying = false;
+  frame(0.016); updateTimeUI();
+  App.playing = saveP; App.tourPlaying = saveT;
+  return App.R.canvas.toDataURL('image/jpeg', 0.9);
+};
+function resize() {
+  const cv = App.R.canvas, dpr = Math.min(window.devicePixelRatio || 1, App.maxDpr || 1.5);
+  const w = Math.max(1, Math.floor(cv.clientWidth * dpr)), h = Math.max(1, Math.floor(cv.clientHeight * dpr));
+  if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+}
+window.YS = App;
+window.addEventListener('load', boot);
+
+})();
+</script>
+</body>
+</html>

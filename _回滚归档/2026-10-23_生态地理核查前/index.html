@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>东山 · 山湖之间</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='5' fill='%238b4d38'/%3E%3Ctext x='12' y='45' fill='%23ede1c5' font-size='40'%3E山%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="scene" aria-label="东山镇连续体素地图，可拖动、平移和缩放"></canvas>
+<div id="mapLabels" aria-label="地图上的地点标记"></div>
+<header class="masthead"><div class="seal">东山</div><div><p class="eyebrow">TAIHU · DONGSHAN</p><h1>山湖之间</h1><p class="subtitle">陆巷 · 体素街村</p></div></header>
+<nav class="map-places" aria-label="移动相机前往地图上的地点"><span>前往</span><button data-place="luxiang" title="移动相机至陆巷，保持同一地图">陆巷</button><button data-place="dongshan-school" title="移动相机至东山中学，保持同一地图">东山中学</button><button data-place="chunzailou-garden" title="移动相机至春在楼，保持同一地图">春在楼</button><button data-place="all" title="拉远查看同一张完整地图">全图 ↗</button></nav>
+<div id="loading"><span class="loading-line"></span><p id="loadingText">构筑屋舍与山湖…</p></div>
+<aside class="view-caption"><span id="viewNumber">01 / 06</span><h2 id="viewTitle">湖岸入村</h2><p id="viewDesc">石岸、灰瓦与山前街巷</p></aside>
+<nav class="views" aria-label="固定视角">
+<button data-view="waterfront" class="active"><span>01</span>湖岸</button><button data-view="street"><span>02</span>街巷</button><button data-view="house"><span>03</span>屋舍</button><button data-view="court"><span>04</span>院落</button><button data-view="tree"><span>05</span>树下</button><button data-view="overview"><span>06</span>总览</button>
+</nav>
+<section class="tools"><button id="infoToggle" aria-label="资料与制作说明" title="资料与制作说明">i</button><button id="hideUi" title="隐藏界面 · H" aria-label="隐藏界面">◧</button><button id="resetView" title="重置当前视角" aria-label="重置当前视角">↺</button></section>
+<section class="light-control"><label for="daylight">日光 <span id="lightLabel">午后</span></label><input type="range" id="daylight" min="0" max="100" value="58" aria-label="日光时刻"><div><span>晨</span><span>午</span><span>暮</span></div></section>
+<footer><span class="live-dot"></span><span id="sceneStatus">构筑中</span><span class="controls-hint">拖动环视 · 右键平移 · 滚轮接近 · 双击聚焦 · WASD 移动</span></footer>
+<dialog id="info"><button class="close" id="closeInfo" aria-label="关闭">×</button><p class="eyebrow">THE MAKING OF DONGSHAN</p><h2>一张连续的东山地图</h2><p>陆巷、东山中学、春在楼宅园与中间山路、镇区肌理处在同一地形和路网中。拖动、缩放或平移可连续浏览；“前往”只移动相机，地图上的构筑物保持驻留。</p><div class="info-grid"><div><small>构件网格</small><strong>0.2 m</strong><p>细部房屋、开放外廊教学楼、跑马廊、池石与透空枝叶使用实体体素构件。</p></div><div><small>同图构筑</small><strong id="houseCount">—</strong><p>距离与重复内容作制图综合，完整构件保持各自尺度。</p></div></div><p class="muted">源坐标和地块约束位置关系；普通屋立面、学校分栋功能及宅园内细部作形制综合。三处沟头在源数据中尚未连明上游，采用原线内渐窄收口。约30米源DSM支撑山势，1—2米方阶显示不代表新增测量。</p><p class="links"><a href="README.html" target="_blank">制作与资料记录 ↗</a><a href="../东山镇_数据/数据入口.html" target="_blank">原始数据 ↗</a><a href="../云山巨城_学习档案/学习手册.html" target="_blank">参考研习 ↗</a></p></dialog>
+<div id="error" hidden></div>
+<script src="vendor/three.min.js"></script><script src="js/unified-map.js"></script><script src="js/town-context.js"></script><script src="js/architecture.js"></script><script src="js/content.js"></script><script src="js/vegetation.js"></script><script src="js/meshing.js"></script><script src="js/baked.js"></script><script src="js/scene.js"></script>
+</body></html>

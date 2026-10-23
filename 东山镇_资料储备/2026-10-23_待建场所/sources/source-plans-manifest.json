@@ -1,0 +1,70 @@
+{
+  "generated_on": "2026-10-23",
+  "plans": [
+    {
+      "id": "moli-middle-school",
+      "file": "images/moli-middle-school-source-plan.svg",
+      "source_id": "way/1101928343",
+      "source_snapshot": "2026-10-23",
+      "roads_snapshot": "2026-10-19",
+      "source_file": "sources/moli-middle-school-osm.json",
+      "road_count": 8,
+      "road_ids": [
+        "way/343590972",
+        "way/343590974",
+        "way/343590975",
+        "way/1003014808",
+        "way/1101928346",
+        "way/1101928347",
+        "way/1104691356",
+        "way/1332791314"
+      ],
+      "projection": "+proj=aeqd +lat_0=31.08426756 +lon_0=120.397304905 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
+      "scale_bar_m": 100,
+      "view_span_m": 400,
+      "is_photograph": false
+    },
+    {
+      "id": "moli-primary-school",
+      "file": "images/moli-primary-school-source-plan.svg",
+      "source_id": "way/1327190550",
+      "source_snapshot": "2026-10-23",
+      "roads_snapshot": "2026-10-19",
+      "source_file": "sources/moli-primary-school-osm.json",
+      "road_count": 7,
+      "road_ids": [
+        "way/154549326",
+        "way/343439936",
+        "way/343590971",
+        "way/1098305872",
+        "way/1098305873",
+        "way/1098305874",
+        "way/1104691356"
+      ],
+      "projection": "+proj=aeqd +lat_0=31.080852189 +lon_0=120.4017323 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
+      "scale_bar_m": 50,
+      "view_span_m": 350,
+      "is_photograph": false
+    },
+    {
+      "id": "dongshan-bus-terminal",
+      "file": "images/dongshan-bus-terminal-source-plan.svg",
+      "source_id": "way/1327188516",
+      "source_snapshot": "2026-10-19",
+      "roads_snapshot": "2026-10-19",
+      "source_file": "东山镇_数据/osm/selected_features_full_geometry.geojson",
+      "road_count": 4,
+      "road_ids": [
+        "way/154549325",
+        "way/1098230505",
+        "way/1104691356",
+        "way/1307423066"
+      ],
+      "projection": "+proj=aeqd +lat_0=31.084840747 +lon_0=120.405613266 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs",
+      "scale_bar_m": 50,
+      "view_span_m": 250,
+      "is_photograph": false
+    }
+  ],
+  "record_json_modified": false
+}

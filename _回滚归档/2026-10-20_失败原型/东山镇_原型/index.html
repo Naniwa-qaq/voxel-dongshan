@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#253a37">
+  <meta name="description" content="以真实地理为基础，概括表达太湖东山的山体、村落与湖岸。">
+  <title>东山 · 太湖山居</title>
+  <link rel="stylesheet" href="./ui.css">
+</head>
+<body>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-sliders" viewBox="0 0 24 24"><path d="M4 7h7m5 0h4M4 17h3m5 0h8M11 4v6M7 14v6"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m9 5 10 7-10 7Z"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="icon-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></symbol>
+  </svg>
+
+  <main id="scene-shell" aria-label="东山山湖三维观景" aria-busy="true">
+    <canvas id="world" tabindex="0" aria-label="东山三维场景，拖动环绕，滚轮调整远近">当前浏览器不能显示三维画布。</canvas>
+    <div class="scene-wash" aria-hidden="true"></div>
+  </main>
+
+  <header class="masthead ui-layer">
+    <span class="seal" aria-hidden="true">东<br>山</span>
+    <div class="masthead-copy">
+      <p class="eyebrow">洞庭东山 · 苏州</p>
+      <h1>东山 <span>·</span> 太湖山居</h1>
+      <p class="subtitle">真实地理 <span>·</span> 概括表达</p>
+    </div>
+  </header>
+
+  <nav class="view-tools ui-layer" aria-label="预设视角">
+    <div class="view-switch">
+      <button type="button" data-view="pano" data-app-control aria-pressed="true" disabled>全景</button>
+      <button type="button" data-view="top" data-app-control aria-pressed="false" disabled>俯瞰</button>
+      <button type="button" data-view="luxiang" data-app-control aria-pressed="false" disabled>陆巷</button>
+    </div>
+    <button id="settings-toggle" class="square-button" type="button" aria-label="收起场景设置" aria-controls="scene-controls" aria-expanded="true" title="场景设置">
+      <svg class="icon"><use href="#icon-sliders"></use></svg>
+    </button>
+  </nav>
+
+  <section id="scene-controls" class="settings-panel paper-panel ui-layer" aria-labelledby="settings-heading">
+    <div class="panel-heading"><h2 id="settings-heading">观景设置</h2><span class="small-mark" aria-hidden="true">山湖之间</span></div>
+    <div class="setting-block">
+      <div class="range-caption"><label for="relief-range">地形起伏</label><output id="relief-value" for="relief-range">2.4 ×</output></div>
+      <input id="relief-range" data-option="relief" data-app-control type="range" min="1" max="4" step="0.1" value="2.4" aria-label="地形起伏倍数" disabled>
+      <p class="setting-note">放大起伏，便于辨认山湖</p>
+    </div>
+    <div class="setting-block time-setting">
+      <div class="range-caption"><label for="time-range">明暗时刻</label><output id="time-value" for="time-range">午</output></div>
+      <input id="time-range" data-option="time" data-app-control type="range" min="0" max="1" step="0.01" value="0.52" aria-label="明暗时刻，从清晨到日暮" disabled>
+      <div class="time-stops" aria-hidden="true"><span>晨</span><span>午</span><span>暮</span></div>
+    </div>
+    <fieldset class="layer-toggles">
+      <legend>景物层次</legend>
+      <label class="toggle"><span><i class="layer-dot houses"></i>民居</span><input id="toggle-buildings" type="checkbox" data-option="buildings" data-app-control checked disabled><span class="switch" aria-hidden="true"></span></label>
+      <label class="toggle"><span><i class="layer-dot roads"></i>道路</span><input id="toggle-roads" type="checkbox" data-option="roads" data-app-control checked disabled><span class="switch" aria-hidden="true"></span></label>
+      <label class="toggle"><span><i class="layer-dot water"></i>水系</span><input id="toggle-water" type="checkbox" data-option="water" data-app-control checked disabled><span class="switch" aria-hidden="true"></span></label>
+      <label class="toggle"><span><i class="layer-dot trees"></i>林木</span><input id="toggle-trees" type="checkbox" data-option="trees" data-app-control checked disabled><span class="switch" aria-hidden="true"></span></label>
+      <label class="toggle"><span><i class="layer-dot labels"></i>地名</span><input id="toggle-labels" type="checkbox" data-option="labels" data-app-control checked disabled><span class="switch" aria-hidden="true"></span></label>
+    </fieldset>
+    <div class="scene-actions">
+      <button id="tour-button" type="button" class="tour-button" data-app-control aria-pressed="false" disabled><svg class="icon"><use id="tour-icon" href="#icon-play"></use></svg><span id="tour-label">自动环游</span></button>
+      <button id="screenshot-button" type="button" class="square-button" data-app-control aria-label="保存当前画面" title="保存画面" disabled><svg class="icon"><use href="#icon-camera"></use></svg></button>
+      <button id="reset-button" type="button" class="square-button" data-app-control aria-label="复位场景与设置" title="复位" disabled><svg class="icon"><use href="#icon-reset"></use></svg></button>
+    </div>
+  </section>
+
+  <div class="legend-corner ui-layer">
+    <div class="legend" aria-label="图例"><span><i class="layer-dot trees"></i>山林</span><span><i class="layer-dot houses"></i>聚落</span><span><i class="layer-dot water"></i>湖港</span></div>
+    <button id="sources-toggle" class="source-trigger" type="button" aria-controls="sources-drawer" aria-expanded="false"><svg class="icon"><use href="#icon-info"></use></svg><span>资料与表达</span><svg class="icon arrow"><use href="#icon-arrow"></use></svg></button>
+  </div>
+
+  <footer class="control-hint ui-layer"><span>拖动环绕</span><i></i><span>滚轮远近</span><i class="wide-only"></i><span class="wide-only">右键平移</span></footer>
+
+  <aside id="sources-drawer" class="source-drawer paper-panel ui-layer" role="dialog" aria-modal="false" aria-labelledby="sources-heading" hidden>
+    <div class="drawer-header"><div><p class="eyebrow">以地理为本</p><h2 id="sources-heading">资料与表达</h2></div><button id="sources-close" class="close-button" type="button" aria-label="关闭资料与表达"><svg class="icon"><use href="#icon-close"></use></svg></button></div>
+    <div class="drawer-content">
+      <p class="drawer-lead">留下山、村、湖的关系，<br>用少量形体读懂东山。</p>
+      <section><h3>怎样看这幅山居</h3><p>民房按街坊聚合，重复建筑适当省略；水系保留主要脉络，古建与湖港留下有辨识度的轮廓。</p><p>地形起伏作适度放大。这里呈现地理关系与地方气质，不作逐栋测绘复原。</p></section>
+      <section><h3>参考资料</h3><p>地方志、园林与文保信息用于核对名称和形制。公开照片用于内部研究参考，未直接用作场景贴图。</p><a class="text-link" href="../东山镇_数据/references/index.html" target="_blank" rel="noopener">浏览本地参考图库 <span aria-hidden="true">↗</span></a></section>
+      <details class="technical-details"><summary>数据与渲染记录</summary><dl class="stats-list"><div><dt>来源建筑</dt><dd id="stat-source-buildings">—</dd></div><div><dt>显示建筑</dt><dd id="stat-render-buildings">—</dd></div><div><dt>道路要素</dt><dd id="stat-roads">—</dd></div><div><dt>场景三角面</dt><dd id="stat-triangles">—</dd></div><div><dt>帧率</dt><dd id="stat-fps">—</dd></div><div><dt>视图</dt><dd id="stat-mode">—</dd></div></dl><p class="technical-note">计数用于理解综合程度与显示性能，不表示测绘精度。</p></details>
+    </div>
+    <p class="drawer-footnote">真实地理 · 概括表达 · 本地原型</p>
+  </aside>
+
+  <aside id="pick-card" class="pick-card paper-panel ui-layer" role="region" aria-labelledby="pick-title" hidden>
+    <button id="pick-close" class="close-button" type="button" aria-label="关闭地点介绍"><svg class="icon"><use href="#icon-close"></use></svg></button>
+    <p id="pick-category" class="eyebrow">山居一隅</p><h2 id="pick-title"></h2><p id="pick-description" class="pick-description"></p>
+    <div class="pick-meta"><span id="pick-status" class="status-tag">概括表达</span><details id="pick-evidence-wrap"><summary>资料依据</summary><p id="pick-evidence"></p></details></div>
+  </aside>
+
+  <div id="ui-toast" class="toast ui-layer" role="status" aria-live="polite" hidden></div>
+
+  <div id="loading-screen" class="loading-screen" role="status" aria-live="polite">
+    <div id="loading-content" class="loading-content"><span class="seal loading-seal" aria-hidden="true">东<br>山</span><p class="loading-eyebrow">太湖山居</p><h2 id="loading-title">山湖正在铺展</h2><div class="loading-line" aria-hidden="true"><span></span></div><p id="loading-description">整理地形与聚落，稍候片刻</p><p class="loading-caption">真实地理 · 概括表达</p></div>
+    <div id="error-content" class="error-content" hidden><span class="seal" aria-hidden="true">东<br>山</span><h2>暂时未能展开山湖</h2><p id="error-message">当前浏览器未能初始化三维场景。</p><button id="reload-button" class="solid-button" type="button">重新载入</button><a class="text-link" href="../东山镇_数据/references/index.html">先浏览参考资料 <span aria-hidden="true">↗</span></a></div>
+  </div>
+
+  <script src="./vendor/three.min.js" onerror="document.documentElement.dataset.assetError='three'"></script>
+  <script src="./data/scene-data.js" onerror="document.documentElement.dataset.assetError='data'"></script>
+  <script src="./ui.js"></script>
+  <script src="./scene.js" onerror="window.DSUI&amp;&amp;window.DSUI.showError('场景文件未能载入，请确认本地文件完整。')"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+{
+  "id": "hanshan-port",
+  "name": "寒山港",
+  "aliases": [
+    "寒山港（陆巷）"
+  ],
+  "category": "古村港道／驳岸与水岸空间",
+  "summary": "陆巷古村港道，地方志有明确题注实景。新增街巷水岸格局图与寒谷渡照片，可补充港道、村落、湖岸的相对关系；“寒山浜”名称与全线对应关系仍需核定。",
+  "location": {
+    "wgs84": null,
+    "crs": null,
+    "role": "港道线／水面及岸线；坐标和全线待核",
+    "address": "江苏省苏州市吴中区东山镇陆巷古村",
+    "sourceId": "luxiang-local-history-2026",
+    "confidence": "题注实景与村级归属可靠；全线/入湖接口待核",
+    "notes": [
+      "2026地方志题注为“寒山港”；2020规划摘要列三条古河道时用“寒山浜、陆巷浜、蒋湾浜”。两种名称相近，但本次未取得地名管理或测绘资料证明其全线严格等同。",
+      "2019论文图1北部蓝色港道标为寒山港（小字），并在村西侧接湖岸水系；仅可用于示意相对关系。",
+      "寒谷渡是附近古渡口/亭景的独立对象，不把渡口点直接当港道入口坐标。"
+    ]
+  },
+  "facts": [
+    {
+      "text": "地方志描述陆巷有三条港道向西汇入太湖，与一街六巷共同构成古村格局；正文并配有题注“寒山港”的照片。",
+      "sourceIds": [
+        "luxiang-local-history-2026"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2026-09-24"
+    },
+    {
+      "text": "规划摘要列三条古河道为寒山浜、陆巷浜、蒋湾浜，并列寒谷渡、陆巷渡、蒋湾渡三个古渡口。",
+      "sourceIds": [
+        "jiangsu-rural-housing-luxiang-2020"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2020-08-21"
+    },
+    {
+      "text": "寒山港题注照片可见石驳岸、窄水道、步道护栏、临水建筑和后方山体；只是一个视段。",
+      "sourceIds": [
+        "luxiang-local-history-2026"
+      ],
+      "status": "visual-observation",
+      "asOf": "影像拍摄日期未注明"
+    },
+    {
+      "text": "论文记2007年整治中疏浚寒山港，并绘村落水岸格局；这些资料只说明历史整治与相对水系，未给现状水位或断面。",
+      "sourceIds": [
+        "kong-wu-zhang-luxiang-2019"
+      ],
+      "status": "source-confirmed",
+      "asOf": "2019-12"
+    },
+    {
+      "text": "新增图中寒谷渡临水亭廊、栏杆和沿水步道可作邻近水岸构件参考；不能替代寒山港全线现状照片。",
+      "sourceIds": [
+        "jiangsu-rural-housing-luxiang-2020"
+      ],
+      "status": "visual-observation",
+      "asOf": "影像拍摄日期未注明"
+    }
+  ],
+  "sources": [
+    {
+      "id": "luxiang-local-history-2026",
+      "title": "古镇古村系列——吴中区陆巷村：太湖明珠，宰相故里",
+      "url": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "publisher": "苏州市地方志工作办公室",
+      "publishedOn": "2026-09-24",
+      "accessedOn": "2026-10-23",
+      "kind": "government-local-history"
+    },
+    {
+      "id": "jiangsu-rural-housing-luxiang-2020",
+      "title": "苏州市东山镇陆巷村陆巷",
+      "url": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "publisher": "江苏省住房和城乡建设厅主办·农房建设服务网",
+      "publishedOn": "2020-08-21",
+      "accessedOn": "2026-10-23",
+      "kind": "government-hosted-planning-and-village-archive-summary",
+      "notes": [
+        "页面自列资料来源为《苏州市东山镇陆巷历史文化名村保护规划》《中国传统村落档案》；图件原编制时间未逐图注明。"
+      ]
+    },
+    {
+      "id": "kong-wu-zhang-luxiang-2019",
+      "title": "社区参与模式下的传统村落旅游空间生产及影响初探——基于苏州东山陆巷古村的调研",
+      "url": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+      "publisher": "孔翔、吴栋、张纪娴；《世界地理研究》28(6):156–165；华东师范大学网站托管",
+      "publishedOn": "2019-12",
+      "accessedOn": "2026-10-23",
+      "kind": "primary-field-research-paper",
+      "doi": "10.3969/j.issn.1004-9479.2019.06.2019064",
+      "localPath": "images/zishi-street-commercial-pattern-paper.pdf",
+      "notes": [
+        "图1位于印刷页160、PDF第5页；有北箭头和0–150 m比例尺，无经纬网/坐标系说明。",
+        "研究为2018年调研，图件用于历史相对空间关系，不代表2026现状测绘。"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "02-luxiang-hanshan-port",
+      "title": "寒山港",
+      "sourceId": "luxiang-local-history-2026",
+      "pageUrl": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d.shtml",
+      "imageUrl": "https://dfzb.suzhou.gov.cn/dfzb/szdq/202609/74f82b260f3045e79aeb1cb2c5d0d15d/images/2e1d73198ab543ac92fa2ff4ec340227.png",
+      "localPath": "../../东山镇_数据/references/images/02-luxiang-hanshan-port.png",
+      "view": "题注寒山港的港道局部",
+      "observations": [
+        "可见港道、石驳岸、两岸步道与民居、远处山体。",
+        "用于水道—岸线—房屋的关系；不据单幅照片推断港道全线。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23复核来源页并重新目视本地原图；复用旧参考包，不重复下载。",
+      "imageDate": null,
+      "bytes": 397934,
+      "sha256": "b2f4d23451a7a9d92ec790970d5e11656580e8fa7ea4acbb159b080be9c6a7f5"
+    },
+    {
+      "id": "hangudu-and-old-well",
+      "title": "寒谷渡与古井（组合图）",
+      "sourceId": "jiangsu-rural-housing-luxiang-2020",
+      "pageUrl": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "imageUrl": "https://www.c-dwellings.com/images/article/237_content_1598006520419909.png",
+      "localPath": "images/hanshan-port-hangudu-and-well.png",
+      "view": "左为寒谷渡临水亭廊；右为古井",
+      "observations": [
+        "左图屋面山墙处可读“寒谷渡”，可见临水亭廊、护栏、石板步道与水面。",
+        "右为古井近景，原图组合不提供其与港道的精确距离；不能把古井或渡口自动吸附到港道端点。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23已核对来源上下文、下载原图并目视检查；无登录/错误页。",
+      "imageDate": null,
+      "bytes": 358073,
+      "sha256": "5a26b02894ed75e7a0dd48d97d26c3f34183daa67b0028bbec6ced8e005772db"
+    },
+    {
+      "id": "luxiang-settlement-evolution",
+      "title": "陆巷聚落演变示意图与历史时间轴",
+      "sourceId": "jiangsu-rural-housing-luxiang-2020",
+      "pageUrl": "https://www.c-dwellings.com/news_detail.php?id=380",
+      "imageUrl": "https://www.c-dwellings.com/images/article/237_content_1598005311818937.png",
+      "localPath": "images/hanshan-port-settlement-evolution.png",
+      "view": "聚落演变图组",
+      "observations": [
+        "图组概示聚落、湖侧水道与道路在历史阶段中的关系；最右两幅标2000年前、2009年。",
+        "图很小且有时序概化，不以其恢复寒山港现状岸线或精确拓扑。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23已核对来源上下文、下载原图并目视检查；无登录/错误页。",
+      "imageDate": null,
+      "bytes": 359417,
+      "sha256": "6f11d3c4a661cc024e5e36d631d7e5de20542eb38d2b3d6a27f6b4a49018b621"
+    },
+    {
+      "id": "luxiang-paper-figure1",
+      "title": "陆巷古村“一街六巷”格局与商业分布（论文图1，完整第160页）",
+      "sourceId": "kong-wu-zhang-luxiang-2019",
+      "pageUrl": "https://faculty.ecnu.edu.cn/_upload/article/files/71/c0/cdbcd566457b8af90879d23f0447/dcad72f2-4050-4e57-93ad-e668ac1c7f50.pdf",
+      "imageUrl": null,
+      "localPath": "images/zishi-street-paper-figure1.png",
+      "view": "PDF第5页渲染；图1及上下文",
+      "observations": [
+        "图1有北箭头和0–150 m比例尺；红线标一街六巷，蓝线标水岸，橙线为环山公路。",
+        "可辨紫石街、文宁巷、康庄巷及惠和堂位置；村落西侧为太湖，三个港道分别通向湖侧。",
+        "这是2019论文中的示意地图，未给CRS、基准点或测绘精度；可做历史相对空间关系，不输出精确WGS84线形。"
+      ],
+      "rightsStatus": "未确认开放许可；保留原署名/水印，仅作内部研究参考，不据此视为可公开贴图或再分发。",
+      "verificationStatus": "2026-10-23下载PDF；用Poppler渲染并目视完整第1页和第5页，核实标题、作者、图1、北箭头及比例尺。",
+      "imageDate": null,
+      "bytes": 891580,
+      "sha256": "ee38cc589db573f957f7b46e9715ce7bf585393e687327c5ae6ce4c9ef498186"
+    }
+  ],
+  "gaps": [
+    "寒山港与寒山浜的地名对应、法定起讫及全线范围。",
+    "水道与太湖的实际连通接口、桥涵/闸口、现状岸线和中心线。",
+    "可靠的坐标系、断面宽度、水位及岸顶高度。",
+    "从港内向湖侧、从湖口向村内的成组实景和桥涵特写。"
+  ],
+  "searchNotes": [
+    "保留“寒山港/寒山浜”来源差异，aliases未将“寒山浜”强行写为已核定同义词。",
+    "使用机构题注照片及带北箭头/比例尺的研究示意图；未从照片猜经纬度、流向或全线。"
+  ]
+}
